@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - href: sections/coordinate-systems.qmd
-        text: Coordinate Systems in OPALX
+        text: Coordinate Systems
       - href: sections/linear-compton.qmd
         text: Linear Compton
       - href: sections/gamma-gamma.qmd
@@ -19,7 +19,9 @@ website:
     style: docked
     contents:
       - index.qmd
-      - section: "Coordinate Systems in OPALX"
+      - section: "Coordinate Systems"
+        contents:
+          - sections/coordinate-systems.qmd
       - section: "Benchmarks"
         contents:
           - sections/linear-compton.qmd
