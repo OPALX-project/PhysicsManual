@@ -1,31 +1,17 @@
 project:
-  type: website
+  type: book
   output-dir: docs
 
-website:
+book:
   title: "OPALX Physics Manual"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: sections/coordinate-systems.qmd
-        text: Coordinate Systems
-      - href: sections/gamma-gamma/index.qmd
-        text: γ-γ Physics
+  subtitle: "Theory, numerical models, and benchmark problems"
+  chapters:
+    - index.qmd
+    - sections/coordinate-systems/index.qmd
+    - sections/gamma-gamma/index.qmd
 
-#- href: sections/gamma-gamma/linear-compton-benchmark.qmd
-#        text: Linear Compton
-#      - href: sections/gamma-gamma/BreitWheeler.qmd
-#        text: Breit-Wheeler
-
-  sidebar:
-    style: docked
-    contents:
-      - index.qmd
-      - sections/coordinate-systems.qmd
-      - sections/gamma-gamma/index.qmd
-#      - sections/gamma-gamma/linear-compton-benchmark.qmd
-#      - sections/gamma-gamma/BreitWheeler.qmd
+number-sections: true
+number-depth: 2
 
 format:
   html:
@@ -34,5 +20,8 @@ format:
     html-math-method: mathjax
     code-fold: false
     theme: cosmo
+  pdf:
+    include-in-header:
+      - includes/tikz-preamble.tex
 
 bibliography: references.bib
