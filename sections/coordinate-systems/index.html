@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Coordinate Systems – OPALX Physics Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../sections/field-solvers/index.html" rel="next">
+<link href="../../index.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/coordinate-systems/index.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">OPALX Physics Manual</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/beam-beam/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/decay-processes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#quick-reader" id="toc-quick-reader" class="nav-link active" data-scroll-target="#quick-reader"><span class="header-section-number">2.1</span> Quick Reader</a>
+  <ul class="collapse">
+  <li><a href="#symbols-and-notation" id="toc-symbols-and-notation" class="nav-link" data-scroll-target="#symbols-and-notation">Symbols and notation</a></li>
+  <li><a href="#a-geometric-viewpoint" id="toc-a-geometric-viewpoint" class="nav-link" data-scroll-target="#a-geometric-viewpoint">A geometric viewpoint</a></li>
+  <li><a href="#why-the-independent-variable-matters" id="toc-why-the-independent-variable-matters" class="nav-link" data-scroll-target="#why-the-independent-variable-matters">Why the independent variable matters</a></li>
+  </ul></li>
+  <li><a href="#geometry-design-principles" id="toc-geometry-design-principles" class="nav-link" data-scroll-target="#geometry-design-principles"><span class="header-section-number">2.2</span> Geometry Design Principles</a>
+  <ul class="collapse">
+  <li><a href="#forest-hirata-bundles-versus-differential-geometry" id="toc-forest-hirata-bundles-versus-differential-geometry" class="nav-link" data-scroll-target="#forest-hirata-bundles-versus-differential-geometry">Forest-Hirata bundles versus differential geometry</a></li>
+  <li><a href="#what-the-current-opalx-manual-already-provides" id="toc-what-the-current-opalx-manual-already-provides" class="nav-link" data-scroll-target="#what-the-current-opalx-manual-already-provides">What the current OPALX manual already provides</a></li>
+  <li><a href="#a-geometry-graph-and-placement-tuple" id="toc-a-geometry-graph-and-placement-tuple" class="nav-link" data-scroll-target="#a-geometry-graph-and-placement-tuple">A geometry graph and placement tuple</a></li>
+  <li><a href="#transition-maps-as-first-class-objects" id="toc-transition-maps-as-first-class-objects" class="nav-link" data-scroll-target="#transition-maps-as-first-class-objects">Transition maps as first-class objects</a></li>
+  <li><a href="#two-complementary-coordinate-charts" id="toc-two-complementary-coordinate-charts" class="nav-link" data-scroll-target="#two-complementary-coordinate-charts">Two complementary coordinate charts</a></li>
+  <li><a href="#minimal-front-end-semantics" id="toc-minimal-front-end-semantics" class="nav-link" data-scroll-target="#minimal-front-end-semantics">Minimal front-end semantics</a></li>
+  </ul></li>
+  <li><a href="#geometric-background" id="toc-geometric-background" class="nav-link" data-scroll-target="#geometric-background"><span class="header-section-number">2.3</span> Geometric Background</a>
+  <ul class="collapse">
+  <li><a href="#the-bookkeeping-base" id="toc-the-bookkeeping-base" class="nav-link" data-scroll-target="#the-bookkeeping-base">The bookkeeping base</a></li>
+  <li><a href="#local-charts-and-supports" id="toc-local-charts-and-supports" class="nav-link" data-scroll-target="#local-charts-and-supports">Local charts and supports</a></li>
+  <li><a href="#ports" id="toc-ports" class="nav-link" data-scroll-target="#ports">Ports</a></li>
+  <li><a href="#transition-maps-and-closure" id="toc-transition-maps-and-closure" class="nav-link" data-scroll-target="#transition-maps-and-closure">Transition maps and closure</a></li>
+  </ul></li>
+  <li><a href="#sec-coordinate-systems-literature" id="toc-sec-coordinate-systems-literature" class="nav-link" data-scroll-target="#sec-coordinate-systems-literature"><span class="header-section-number">2.4</span> Literature</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This chapter collects the current coordinate-system and placement language for OPALX. It is assembled from the older LaTeX note in <code>opalx/PhysicsManual/opalx-elemts-and-frames/opalx_element_placement.tex</code>, specifically its section 1, section 5, and Appendix A.</p>
+<section id="quick-reader" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="quick-reader"><span class="header-section-number">2.1</span> Quick Reader</h2>
+<section id="symbols-and-notation" class="level3">
+<h3 class="anchored" data-anchor-id="symbols-and-notation">Symbols and notation</h3>
+<p>To keep the formulas uniform, this chapter uses the following notation.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(K\)</span></td>
+<td>Laboratory or floor Cartesian frame with coordinates <span class="math inline">\(\mathbf r=(X,Y,Z)\)</span>.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\mathcal B\)</span></td>
+<td>Reference base of the lattice, typically an interval for a transfer line or a closed path for a ring.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(s\)</span></td>
+<td>Reference or reporting coordinate on <span class="math inline">\(\mathcal B\)</span>; in an <span class="math inline">\(s\)</span>-integrator it is also the independent variable.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(t\)</span></td>
+<td>Physical time; in OPAL-t, IMPACT-T, and the proposed OPALX runtime this is the independent variable.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(U_i\)</span>, <span class="math inline">\(u_i\)</span></td>
+<td>Canonical local chart of element <span class="math inline">\(i\)</span> and the corresponding local coordinates.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\psi_i:U_i\to\mathbb{R}^3\)</span></td>
+<td>Intrinsic geometry map of element <span class="math inline">\(i\)</span> in its canonical frame.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Omega_i\subset U_i\)</span></td>
+<td>Local support region on which the element field, aperture, or material model is defined.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\Sigma_{i,\alpha}\subset \partial\Omega_i\)</span></td>
+<td>Marked boundary chart of element <span class="math inline">\(i\)</span>; this is the geometric origin of a port.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(p_{i,\alpha}=(\Sigma_{i,\alpha},F_{i,\alpha})\)</span></td>
+<td>Port <span class="math inline">\(\alpha\)</span> of element <span class="math inline">\(i\)</span>, consisting of a boundary chart together with an adapted frame <span class="math inline">\(F_{i,\alpha}\)</span>.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(P_i(u_i,t)\)</span></td>
+<td>Placement map that embeds the local chart of element <span class="math inline">\(i\)</span> into the laboratory frame.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\mathcal S_i(t)=P_i(\Omega_i,t)\)</span></td>
+<td>Placed support of element <span class="math inline">\(i\)</span> in laboratory space at time <span class="math inline">\(t\)</span>.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T_i(t)\)</span></td>
+<td>Rigid placement transform of element <span class="math inline">\(i\)</span> at time <span class="math inline">\(t\)</span>; it may be written as a rotation matrix <span class="math inline">\(R_i(t)\)</span> together with a translation vector <span class="math inline">\(\mathbf a_i(t)\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Gamma_i(\ell)\)</span></td>
+<td>Optional local reference path of element <span class="math inline">\(i\)</span>, parameterized by the local longitudinal coordinate <span class="math inline">\(\ell\in[0,L_i]\)</span>.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(C_{pq}\)</span></td>
+<td>Rigid transition or patch transform from port <span class="math inline">\(p\)</span> to port <span class="math inline">\(q\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(g_{ij}\)</span></td>
+<td>Transition map between neighboring local charts.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a-geometric-viewpoint" class="level3">
+<h3 class="anchored" data-anchor-id="a-geometric-viewpoint">A geometric viewpoint</h3>
+<p>Following Forest and Hirata <span class="citation" data-cites="foresthirata">(<a href="index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>, one should distinguish the placed physical object from the coordinates used to describe it. In that spirit, an OPALX element is not first of all an interval in one global coordinate <span class="math inline">\(s\)</span>. It is a local chart <span class="math inline">\(U_i\)</span>, an intrinsic geometry map <span class="math inline">\(\psi_i\)</span>, a support region <span class="math inline">\(\Omega_i\subset U_i\)</span>, and a finite set of marked interfaces through which that local chart is connected to neighboring charts.</p>
+<p>This is the origin of the <em>port</em> notion used throughout this chapter. A port of element <span class="math inline">\(i\)</span> is a marked boundary chart</p>
+<p><span class="math display">\[
+\Sigma_{i,\alpha}\subset \partial\Omega_i .
+\]</span></p>
+<p>together with an adapted frame <span class="math inline">\(F_{i,\alpha}\)</span>. In ordinary beamline language these are simply the entrance face, exit face, branch face, fiducial interface, or closure interface of the object in case of a circular machine. The advantage of introducing the word “port” is that the same notion works for a straight drift, a curved bend, a patch, a branch, or a ring-closing connection.</p>
+<p>When two ports are connected, OPALX stores a transition datum between them. In differential-geometric language this is the chart-to-chart handoff across an interface. In fibre-bundle language it is the transition function relating two local trivializations <span class="citation" data-cites="foresthirata">(<a href="index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>. The port notion therefore does not introduce new physics. It is the implementation-level representative of how local charts are glued together.</p>
+<p>A transfer line is then an open chain of ports, while a ring is a closed chain, possibly only up to a prescribed symmetry transform. That is the geometric reason the same placement model can cover both linear and circular machines.</p>
+</section>
+<section id="why-the-independent-variable-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-independent-variable-matters">Why the independent variable matters</h3>
+<p>The earlier MAD-X-centered comparison established a useful baseline: MAD-X describes the machine primarily as an ordered sequence of elements along a reference orbit, and survey or optics calculations are performed relative to that backbone <span class="citation" data-cites="madxprimer madxptc">(<a href="index.html#ref-madxprimer" role="doc-biblioref">Herr and Schmidt 2004</a>; <a href="index.html#ref-madxptc" role="doc-biblioref">Skowronski et al. 2007</a>)</span>. The later code survey then showed four distinct placement philosophies relative to that baseline: Elegant remains strongly sequence-centric, MARYLIE is more map-first, IMPACT-T and OPAL are organized around ordered field regions with local frame changes, and Bmad exposes geometry operators such as patches and fiducials <span class="citation" data-cites="elegantmanual marylie impactt bmad">(<a href="index.html#ref-elegantmanual" role="doc-biblioref">Borland, n.d.</a>; <a href="index.html#ref-marylie" role="doc-biblioref">Dragt et al. 2003</a>; <a href="index.html#ref-impactt" role="doc-biblioref">Qiang 2022</a>; <a href="index.html#ref-bmad" role="doc-biblioref">Sagan, n.d.</a>)</span>.</p>
+<p>In an <strong><span class="math inline">\(s\)</span>-based code</strong>, placement is fundamentally one-dimensional. An element is placed by specifying where it begins and ends on the design curve. Once that curve is known, global survey coordinates are derived by transporting a local frame along it. The tracker can usually decide which element is active by asking where the particle is in <span class="math inline">\(s\)</span>.</p>
+<p>In a <strong><span class="math inline">\(t\)</span>-based code</strong>, placement is fundamentally spatial. A particle is advanced in laboratory time, self-fields are evaluated on a common time slice, and different particles in the bunch may simultaneously occupy different parts of the machine. Therefore the code cannot rely on a single global “current element” inferred from one common <span class="math inline">\(s\)</span>. Each element must instead have a placed spatial support, a local coordinate frame, ports that describe how it connects to neighbours, and usually timing metadata such as RF phase origin or trigger offset.</p>
+<p>This leads to the main OPALX conclusion:</p>
+<ol type="1">
+<li>topology,</li>
+<li>survey or reference-curve metadata,</li>
+<li>rigid placement in laboratory space, and</li>
+<li>physics field evaluation</li>
+</ol>
+<p>should be treated as separate concepts, even if they are often conflated in traditional <span class="math inline">\(s\)</span>-based lattice descriptions.</p>
+</section>
+</section>
+<section id="geometry-design-principles" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="geometry-design-principles"><span class="header-section-number">2.2</span> Geometry Design Principles</h2>
+<section id="forest-hirata-bundles-versus-differential-geometry" class="level3">
+<h3 class="anchored" data-anchor-id="forest-hirata-bundles-versus-differential-geometry">Forest-Hirata bundles versus differential geometry</h3>
+<p>The Forest-Hirata appendix gives a clean abstract reformulation of local element placement <span class="citation" data-cites="foresthirata">(<a href="index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>. The lattice is treated as a fibre bundle over the machine loop; local neighbourhoods are element intervals; the fibres may be coordinate frames, particle coordinates, maps, or envelopes; and the matching block between local descriptions is a transition function <span class="math inline">\(g_{ij}\in G\)</span>.</p>
+<p>The present OPALX note uses a more concrete differential-geometric language. Each element may carry a reference path <span class="math inline">\(\Gamma_i(\ell)\)</span>, a moving orthonormal frame, marked interface charts, and a placed support region in laboratory space. This is closer to implementation because it directly supports field evaluation, aperture checks, and coordinate conversion inside an element.</p>
+<p>The two viewpoints answer different questions:</p>
+<ol type="1">
+<li>use differential geometry locally inside an element whenever a curved or adapted chart is numerically useful;</li>
+<li>use fibre-bundle-style transition maps to connect neighboring charts, branches, anchors, and closures without pretending that there must be one globally preferred frame.</li>
+</ol>
+</section>
+<section id="what-the-current-opalx-manual-already-provides" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-current-opalx-manual-already-provides">What the current OPALX manual already provides</h3>
+<p>The current manual already contains much of the needed vocabulary <span class="citation" data-cites="opalxmanual">(<a href="index.html#ref-opalxmanual" role="doc-biblioref"><span class="nocase">Adelmann et al.</span> 2025</a>)</span>. On the OPAL-t side, the independent variable is physical time, the particle push is based on Boris-Buneman, and elements may be positioned by explicit 3D placement attributes or by a compatibility route. Beam lines already admit explicit floor-coordinate placement, and the manual describes a floor-coordinate recurrence in which an element or line frame is advanced by an exit displacement and an exit rotation.</p>
+<p>On the OPAL-cycl side, the manual introduces <code>RINGDEFINITION</code>-style anchor data, separate beam-reference initialization, and optional sector replication through symmetry. These features are not contradictory; they are ingredients of one common geometry layer.</p>
+<p>The design choice for OPALX should therefore be <em>not</em> to preserve the historical OPAL-t versus OPAL-cycl split internally. Instead, explicit 3D placement, reference-line ordering, anchor data, sector replication, and ring closure should all compile to one underlying geometry representation.</p>
+</section>
+<section id="a-geometry-graph-and-placement-tuple" class="level3">
+<h3 class="anchored" data-anchor-id="a-geometry-graph-and-placement-tuple">A geometry graph and placement tuple</h3>
+<p>The cleanest generalization is to represent machine geometry by a directed placement graph</p>
+<p><span class="math display">\[
+\mathcal G=(\mathcal N,\mathcal E) .
+\]</span></p>
+<p>Here <span class="math inline">\(\mathcal N\)</span> is the set of named ports and free anchors, and <span class="math inline">\(\mathcal E\)</span> is the set of placed objects that span those ports. A placed object may be a physics element, a pure drift, or a tracking-neutral geometry operator such as a patch or survey shift.</p>
+<p>This representation unifies linear and circular machines immediately:</p>
+<ol type="1">
+<li>a transfer line is an open connected path in <span class="math inline">\(\mathcal G\)</span> with two exposed boundary ports,</li>
+<li>a ring is a closed cycle in <span class="math inline">\(\mathcal G\)</span>,</li>
+<li>a sector machine is a subgraph together with one or more symmetry transforms that replicate it.</li>
+</ol>
+<p>Every placed object <span class="math inline">\(i\)</span> should be representable by a tuple</p>
+<p><span class="math display">\[
+\mathfrak E_i=
+\bigl(
+M_i,\,
+U_i,\,
+\Omega_i,\,
+\psi_i,\,
+p_i^{\mathrm{in}},\,
+p_i^{\mathrm{out}},\,
+A_i,\,
+B_i,\,
+\Delta T_i^{\mathrm{err}},\,
+\Delta T_i^{\mathrm{dyn}}(t),\,
+\tau_i
+\bigr) .
+\]</span></p>
+<p>Here <span class="math inline">\(M_i\)</span> is the physics model, <span class="math inline">\(U_i\)</span> the canonical local chart, <span class="math inline">\(\Omega_i\subset U_i\)</span> the local support, <span class="math inline">\(\psi_i\)</span> the intrinsic geometry map, <span class="math inline">\(p_i^{\mathrm{in}}\)</span> and <span class="math inline">\(p_i^{\mathrm{out}}\)</span> the named ports, <span class="math inline">\(A_i\)</span> and <span class="math inline">\(B_i\)</span> the nominal entrance and exit transforms, <span class="math inline">\(\Delta T_i^{\mathrm{err}}\)</span> the static alignment-error transform, <span class="math inline">\(\Delta T_i^{\mathrm{dyn}}(t)\)</span> any time-dependent motion, and <span class="math inline">\(\tau_i\)</span> timing metadata.</p>
+<p>If <span class="math inline">\(T(p_i^{\mathrm{in}})\)</span> denotes the laboratory-frame pose of the entrance port, then the runtime pose of the canonical element frame is</p>
+<p><span class="math display">\[
+T_i(t)=T(p_i^{\mathrm{in}})\,A_i\,\Delta T_i^{\mathrm{err}}\,\Delta T_i^{\mathrm{dyn}}(t) .
+\]</span></p>
+<p>The corresponding exit-port pose is</p>
+<p><span class="math display">\[
+T(p_i^{\mathrm{out}})=T_i(t)\,B_i .
+\]</span></p>
+</section>
+<section id="transition-maps-as-first-class-objects" class="level3">
+<h3 class="anchored" data-anchor-id="transition-maps-as-first-class-objects">Transition maps as first-class objects</h3>
+<p>Whenever two local charts meet, OPALX should store two closely related pieces of information:</p>
+<ol type="1">
+<li>the rigid port-to-port patch transform <span class="math inline">\(C_{pq}\)</span> attached to the named interface;</li>
+<li>the induced chart-change map <span class="math inline">\(g_{ij}(t)=P_i^{-1}(\cdot,t)\circ P_j(\cdot,t)\)</span> when an actual local chart conversion is needed.</li>
+</ol>
+<p>If the common region is only a glued entrance or exit face, <span class="math inline">\(g_{ij}\)</span> reduces to the familiar rigid handoff encoded by <span class="math inline">\(C_{pq}\)</span>. If there is volumetric overlap, <span class="math inline">\(g_{ij}\)</span> provides a precise way to translate diagnostics, apertures, or field-evaluation points from one local chart to the other.</p>
+</section>
+<section id="two-complementary-coordinate-charts" class="level3">
+<h3 class="anchored" data-anchor-id="two-complementary-coordinate-charts">Two complementary coordinate charts</h3>
+<p>For OPALX it is useful to distinguish explicitly between:</p>
+<ol type="1">
+<li>a <strong>reference chart</strong> <span class="math inline">\(s\)</span> for lattice description, sequence order, optics-style diagnostics, and survey reports;</li>
+<li>a <strong>world chart</strong> <span class="math inline">\((\mathbf r,t)\)</span> for actual field evaluation, particle pushing, aperture collisions, and self-field coupling.</li>
+</ol>
+<p>In a purely MAD-X-like mode the two charts nearly collapse onto one another. In a time-based OPALX mode they do not. The code should therefore allow both to coexist without forcing one to masquerade as the other.</p>
+</section>
+<section id="minimal-front-end-semantics" class="level3">
+<h3 class="anchored" data-anchor-id="minimal-front-end-semantics">Minimal front-end semantics</h3>
+<p>The front-end syntax should compile to the graph-based placement model above. The intent is to extend the present manual concepts rather than replace them with an unrelated syntax.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Input notion</th>
+<th>Keep or extend</th>
+<th>Proposed semantics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>LINE</code></td>
+<td>Keep</td>
+<td>Ordered open path in the placement graph; not a separate machine type.</td>
+</tr>
+<tr class="even">
+<td>Anchors and explicit placement data</td>
+<td>Keep</td>
+<td>Explicit anchor pose for a named frame or for the root of a line.</td>
+</tr>
+<tr class="odd">
+<td><code>ELEMEDGE</code></td>
+<td>Keep as compatibility mode</td>
+<td>Reference coordinate only; compile once into explicit transforms and do not use it directly for runtime ownership.</td>
+</tr>
+<tr class="even">
+<td>Alignment errors</td>
+<td>Keep</td>
+<td>Populate the static error transform <span class="math inline">\(\Delta T_i^{\mathrm{err}}\)</span>.</td>
+</tr>
+<tr class="odd">
+<td><code>RINGDEFINITION</code></td>
+<td>Reinterpret</td>
+<td>Convenience macro for anchor, closure, symmetry, and beam-reference defaults; not a distinct internal geometry species.</td>
+</tr>
+<tr class="even">
+<td><code>SYMMETRY</code></td>
+<td>Keep and generalize</td>
+<td>Replicate a subgraph by explicit symmetry transforms.</td>
+</tr>
+<tr class="odd">
+<td>Named ports and patches</td>
+<td>Add or expose explicitly</td>
+<td>Declare interface charts, pure geometry transforms, and closure constraints independently of the physics elements.</td>
+</tr>
+<tr class="even">
+<td>Chart and support attributes</td>
+<td>Add</td>
+<td>Declare <code>STRAIGHT</code>, <code>ARC</code>, or <code>USER</code> intrinsic charts, explicit support regions, and timing metadata.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="geometric-background" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="geometric-background"><span class="header-section-number">2.3</span> Geometric Background</h2>
+<p>This section records the small amount of differential-geometric and fibre-bundle language used in the placement discussion. The point, following Forest and Hirata <span class="citation" data-cites="foresthirata">(<a href="index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>, is to separate the placed object from any one chosen coordinate description.</p>
+<section id="the-bookkeeping-base" class="level3">
+<h3 class="anchored" data-anchor-id="the-bookkeeping-base">The bookkeeping base</h3>
+<p>Let <span class="math inline">\(\mathcal B\)</span> denote the <em>reference base</em> used for ordering and reporting. For a transfer line, <span class="math inline">\(\mathcal B\)</span> may be an interval. For a ring, <span class="math inline">\(\mathcal B\)</span> may be a circle. For a machine whose reference-order topology contains a junction, an extraction line, a splitter, or a switchyard, <span class="math inline">\(\mathcal B\)</span> may be a graph with labeled edges and junction nodes.</p>
+<p>The important point is that <span class="math inline">\(\mathcal B\)</span> is a bookkeeping base, not the full physical geometry.</p>
+</section>
+<section id="local-charts-and-supports" class="level3">
+<h3 class="anchored" data-anchor-id="local-charts-and-supports">Local charts and supports</h3>
+<p>An individual element is described locally by a chart</p>
+<p><span class="math display">\[
+\psi_i:U_i\to\mathbb{R}^3 ,
+\]</span></p>
+<p>where <span class="math inline">\(U_i\)</span> is the canonical local coordinate domain of element <span class="math inline">\(i\)</span>. The subset</p>
+<p><span class="math display">\[
+\Omega_i\subset U_i
+\]</span></p>
+<p>is the local support on which the field, aperture, material, or map model is defined. The local block picture is not yet the lab-frame placement. A placement map <span class="math inline">\(P_i\)</span> rotates and translates that local description into the laboratory frame.</p>
+</section>
+<section id="ports" class="level3">
+<h3 class="anchored" data-anchor-id="ports">Ports</h3>
+<p>A <em>port</em> is a distinguished interface chart on the boundary of that support. If</p>
+<p><span class="math display">\[
+\Sigma_{i,\alpha}\subset\partial\Omega_i
+\]</span></p>
+<p>is a marked boundary patch and <span class="math inline">\(F_{i,\alpha}\)</span> is an adapted frame attached to that patch, then</p>
+<p><span class="math display">\[
+p_{i,\alpha}=(\Sigma_{i,\alpha},F_{i,\alpha})
+\]</span></p>
+<p>is a port of the element.</p>
+<p>In the simplest case the ports are just the entrance and exit faces. Junctions, splitters, extraction devices, or ring closures introduce additional named interface charts, but they do not change the basic definition.</p>
+</section>
+<section id="transition-maps-and-closure" class="level3">
+<h3 class="anchored" data-anchor-id="transition-maps-and-closure">Transition maps and closure</h3>
+<p>When two local descriptions are joined, the relevant datum is a transition map between charts. On an overlap or a common interface one may write</p>
+<p><span class="math display">\[
+g_{ij}=P_i^{-1}\circ P_j .
+\]</span></p>
+<p>If the connection is localized to named ports <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span>, the same datum can be stored as a rigid port-to-port patch transform <span class="math inline">\(C_{pq}\)</span>. In that sense, the port notion is not an additional physical ingredient. It is the implementation-level representative of a chosen interface chart.</p>
+<p>This language is particularly useful for rings. Transporting local frames around a full loop need not return one to the original frame with the identity transform. The residual closure transform is part of the geometry. This is the fibre-bundle point emphasized by Forest and Hirata: one should not force one global chart when the machine is naturally assembled from local ones <span class="citation" data-cites="foresthirata">(<a href="index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>.</p>
+</section>
+</section>
+<section id="sec-coordinate-systems-literature" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-coordinate-systems-literature"><span class="header-section-number">2.4</span> Literature</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-opalxmanual" class="csl-entry" role="listitem">
+<span class="nocase">Adelmann, A. et al.</span> 2025. <em>The OPAL(x)
+Framework Documentation</em>.
+</div>
+<div id="ref-elegantmanual" class="csl-entry" role="listitem">
+Borland, M. n.d. <em>User’s Manual for Elegant</em>. Advanced Photon
+Source online manual.
+</div>
+<div id="ref-marylie" class="csl-entry" role="listitem">
+Dragt, A. J., E. Forest, L. M. Healy, P. Schütt, and J. van Zeijts.
+2003. <em>MARYLIE 3.0 Users’ Manual</em>.
+</div>
+<div id="ref-foresthirata" class="csl-entry" role="listitem">
+Forest, E., and K. Hirata. 1992. <em>A Contemporary Guide to Beam
+Dynamics</em>. KEK Report 92-12. KEK.
+</div>
+<div id="ref-madxprimer" class="csl-entry" role="listitem">
+Herr, W., and F. Schmidt. 2004. <em>A MAD-x Primer</em>. CERN.
+</div>
+<div id="ref-impactt" class="csl-entry" role="listitem">
+Qiang, J. 2022. <em>IMPACT-t User Document, Version 2.2</em>.
+</div>
+<div id="ref-bmad" class="csl-entry" role="listitem">
+Sagan, D. n.d. <em>Bmad Manual</em>.
+</div>
+<div id="ref-madxptc" class="csl-entry" role="listitem">
+Skowronski, P. K., F. Schmidt, and E. Forest. 2007. <em>Advances in
+MAD-x Using PTC</em>. LHC Project Report 1016. CERN.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../index.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../sections/field-solvers/index.html" class="pagination-link" aria-label="Field Solvers">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
