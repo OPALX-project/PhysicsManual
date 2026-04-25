@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Breit-Wheeler Theory – OPALX Physics Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d22b584035f135c269abed1b239a31db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">OPALX Physics Manual</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sections/coordinate-systems.html"> 
+<span class="menu-text">Coordinate Systems</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sections/gamma-gamma/index.html"> 
+<span class="menu-text">Gamma-Gamma</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sections/gamma-gamma/linear-compton-benchmark.html"> 
+<span class="menu-text">Linear Compton</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sections/gamma-gamma/BreitWheeler.html"> 
+<span class="menu-text">Breit-Wheeler</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/index.html">Gamma-Gamma Physics</a></li><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/BreitWheeler.html">Breit-Wheeler Theory</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OPALX Physics Manual</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Coordinate Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/coordinate-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coordinate Sytems in OPALX</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Gamma-Gamma Physics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gamma-Gamma Physics Notes for OPALX</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/gamma-gamma/linear-compton-benchmark.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linear Compton Benchmark</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/gamma-gamma/BreitWheeler.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Breit-Wheeler Theory</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#_scope" id="toc-_scope" class="nav-link active" data-scroll-target="#_scope"><span class="header-section-number">1</span> Scope</a></li>
+  <li><a href="#_linear_breit_wheeler_kinematics_in_cain" id="toc-_linear_breit_wheeler_kinematics_in_cain" class="nav-link" data-scroll-target="#_linear_breit_wheeler_kinematics_in_cain"><span class="header-section-number">2</span> Linear Breit-Wheeler Kinematics in CAIN</a></li>
+  <li><a href="#_opalx_validation_path" id="toc-_opalx_validation_path" class="nav-link" data-scroll-target="#_opalx_validation_path"><span class="header-section-number">3</span> OPALX Validation Path</a>
+  <ul class="collapse">
+  <li><a href="#deterministic-physics-helper" id="toc-deterministic-physics-helper" class="nav-link" data-scroll-target="#deterministic-physics-helper"><span class="header-section-number">3.0.1</span> Deterministic physics helper</a></li>
+  <li><a href="#host-only-sampled-event-generator" id="toc-host-only-sampled-event-generator" class="nav-link" data-scroll-target="#host-only-sampled-event-generator"><span class="header-section-number">3.0.2</span> Host-only sampled event generator</a></li>
+  <li><a href="#cain-comparison" id="toc-cain-comparison" class="nav-link" data-scroll-target="#cain-comparison"><span class="header-section-number">3.0.3</span> CAIN comparison</a></li>
+  </ul></li>
+  <li><a href="#_implemented_opalx_benchmark" id="toc-_implemented_opalx_benchmark" class="nav-link" data-scroll-target="#_implemented_opalx_benchmark"><span class="header-section-number">4</span> Implemented OPALX Benchmark</a>
+  <ul class="collapse">
+  <li><a href="#_local_kernel_tests" id="toc-_local_kernel_tests" class="nav-link" data-scroll-target="#_local_kernel_tests"><span class="header-section-number">4.1</span> Local Kernel Tests</a></li>
+  <li><a href="#_finite_photon_beam_folding_algorithm" id="toc-_finite_photon_beam_folding_algorithm" class="nav-link" data-scroll-target="#_finite_photon_beam_folding_algorithm"><span class="header-section-number">4.2</span> Finite-Photon-Beam Folding Algorithm</a></li>
+  </ul></li>
+  <li><a href="#_results_of_code_comparison" id="toc-_results_of_code_comparison" class="nav-link" data-scroll-target="#_results_of_code_comparison"><span class="header-section-number">5</span> Results of Code Comparison</a></li>
+  <li><a href="#_build_and_run" id="toc-_build_and_run" class="nav-link" data-scroll-target="#_build_and_run"><span class="header-section-number">6</span> Build and Run</a></li>
+  <li><a href="#_references" id="toc-_references" class="nav-link" data-scroll-target="#_references"><span class="header-section-number">7</span> References</a></li>
+  <li><a href="#_cain_structure" id="toc-_cain_structure" class="nav-link" data-scroll-target="#_cain_structure"><span class="header-section-number">8</span> CAIN Structure</a>
+  <ul class="collapse">
+  <li><a href="#input-and-model-selection" id="toc-input-and-model-selection" class="nav-link" data-scroll-target="#input-and-model-selection"><span class="header-section-number">8.0.1</span> Input and model selection</a></li>
+  <li><a href="#runtime-driver" id="toc-runtime-driver" class="nav-link" data-scroll-target="#runtime-driver"><span class="header-section-number">8.0.2</span> Runtime driver</a></li>
+  <li><a href="#event-generation" id="toc-event-generation" class="nav-link" data-scroll-target="#event-generation"><span class="header-section-number">8.0.3</span> Event generation</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/index.html">Gamma-Gamma Physics</a></li><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/BreitWheeler.html">Breit-Wheeler Theory</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Breit-Wheeler Theory</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="_scope" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Scope</h1>
+<p>This note describes the minimum Breit-Wheeler physics model needed for the next <em>OPALX</em> benchmark.</p>
+<p><img src="breit_wheeler_qed_style_tikz.png" class="img-fluid" style="width:85.0%" alt="Breit-Wheeler scattering"></p>
+<p>We follow closely the CAIN ansatz i.e.&nbsp;manual and source code.</p>
+<p>The goal is not yet a full tracking implementation. The immediate target is a host-side Monte Carlo and deterministic benchmark path that reproduces CAIN for the process</p>
+<p><span class="math display">\[\gamma + \gamma \rightarrow e^- + e^+ .\]</span></p>
+<p>The first benchmark will follow the same strategy as the linear ICS work:</p>
+<ul>
+<li><p>start from a fixed-geometry, unpolarized, linear process;</p></li>
+<li><p>implement the core event kernel in;</p></li>
+<li><p>validate deterministic and sampled spectra against CAIN;</p></li>
+<li><p>delay bunch population and tracker integration until the kernel is trusted.</p></li>
+</ul>
+</section>
+<section id="_linear_breit_wheeler_kinematics_in_cain" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Linear Breit-Wheeler Kinematics in CAIN</h1>
+<p>CAIN’s linear generator <code>LNBWGN</code> uses two incoming photons:</p>
+<ul>
+<li><p>a laser photon with energy <span class="math inline">\(W_1\)</span> and direction <span class="math inline">\(\mathbf{n}_1\)</span>,</p></li>
+<li><p>a high-energy photon with energy <span class="math inline">\(W_2\)</span> and direction <span class="math inline">\(\mathbf{n}_2\)</span>.</p></li>
+</ul>
+<p>Note: in a collider setup the laser photon is also a high-energy photon.</p>
+<p>The opening-angle dependence enters through</p>
+<p><span class="math display">\[Z_0 = \mathbf{n}_1 \cdot \mathbf{n}_2 .\]</span></p>
+<p>The two-photon invariant used in CAIN is</p>
+<p><span class="math display">\[S_0 = 2 W_1 W_2 (1 - Z_0) .
+\label{eq:bw-cain-s0}\]</span></p>
+<p>Pair creation is kinematically allowed only if</p>
+<p><span class="math display">\[S_0 \ge 4 m_e^2 .
+\label{eq:bw-threshold}\]</span></p>
+<p>This threshold appears directly in <code>LNBWGN</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode fortran code-with-copy"><code class="sourceCode fortranfixed"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>S0<span class="kw">=</span><span class="dv">2</span><span class="kw">*</span>W1<span class="kw">*</span>W2<span class="kw">*</span>(<span class="dv">1</span><span class="kw">-</span>Z0)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">IF</span> (<span class="dv">4</span><span class="kw">*</span>M<span class="kw">**</span><span class="fl">2.</span>GT.S0) <span class="kw">GOTO</span> <span class="dv">900</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In a head-on geometry, <span class="math inline">\(Z_0 = -1\)</span>, so the threshold reduces to</p>
+<p><span class="math display">\[W_1 W_2 \ge m_e^2 .
+\label{eq:bw-headon-threshold}\]</span></p>
+<p>This is the cleanest geometry for the first benchmark.</p>
+<p>CAIN constructs the center-of-momentum boost velocity from the two incoming photon momenta and then samples the final-state scattering variables in that frame.</p>
+<p>The code introduces a transformed photon energy <span class="math inline">\(W\)</span> and several auxiliary variables:</p>
+<p><span class="math display">\[W = \gamma W_1 V_R,
+\qquad
+X = \frac{\sqrt{W^2 - m_e^2}}{W},
+\qquad
+X_1 = \frac{m_e^2}{W^2 + W\sqrt{W^2 - m_e^2}} .
+\label{eq:bw-cain-aux}\]</span></p>
+<p>The random variable <span class="math inline">\(Y\)</span> is used to generate the CM scattering angle through</p>
+<p><span class="math display">\[\cos\theta = 1 - 2Y .
+\label{eq:bw-cain-costh}\]</span></p>
+<p>The resulting Mandelstam-like combinations in the CAIN implementation are</p>
+<p><span class="math display">\[s_m = \frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)-1\right],
+\qquad
+u_m = -\frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)+1\right] .
+\label{eq:bw-cain-sm-um}\]</span></p>
+<p>CAIN then builds the angular kernel from</p>
+<p><span class="math display">\[\cos\theta_1 = 1 + 2m_e^2\left(\frac{1}{u_m} + \frac{1}{s_m}\right)
+\label{eq:bw-cain-costh1}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
+\label{eq:bw-cain-d}\]</span></p>
+<p>For unpolarized incoming photons, the acceptance weight reduces to the unpolarized part of the full CAIN expression.</p>
+</section>
+<section id="_opalx_validation_path" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> OPALX Validation Path</h1>
+<section id="deterministic-physics-helper" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1" class="anchored" data-anchor-id="deterministic-physics-helper"><span class="header-section-number">3.0.1</span> Deterministic physics helper</h3>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">add <code>Physics::LinearBreitWheeler</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">implement threshold and invariant helpers</label></p></li>
+<li><p><label><input type="checkbox" checked="">implement deterministic spectra from the linear kernel</label></p></li>
+</ul>
+</section>
+<section id="host-only-sampled-event-generator" class="level3" data-number="3.0.2">
+<h3 data-number="3.0.2" class="anchored" data-anchor-id="host-only-sampled-event-generator"><span class="header-section-number">3.0.2</span> Host-only sampled event generator</h3>
+<ul>
+<li><p><label><input type="checkbox" checked="">fixed seed through <code>Options::seed</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">return one sampled electron-positron pair per accepted event</label></p></li>
+<li><p>no tracker, no photon bunch population, no GPU path yet</p></li>
+</ul>
+</section>
+<section id="cain-comparison" class="level3" data-number="3.0.3">
+<h3 data-number="3.0.3" class="anchored" data-anchor-id="cain-comparison"><span class="header-section-number">3.0.3</span> CAIN comparison</h3>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">generate a CAIN reference deck in the same style as the linear-Compton notes</label></p></li>
+<li><p><label><input type="checkbox" checked="">compare OPALX and CAIN histograms first in 1D, later in 2D</label></p></li>
+</ul>
+</section>
+</section>
+<section id="_implemented_opalx_benchmark" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Implemented OPALX Benchmark</h1>
+<p>The current <em>OPALX</em> implementation lives on the <code>laser-element-1</code> branch. The relevant files are:</p>
+<ul>
+<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearBreitWheeler.h"><code>src/Physics/LinearBreitWheeler.h</code></a></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearBreitWheeler.cpp"><code>src/Physics/LinearBreitWheeler.cpp</code></a></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearBreitWheeler.cpp"><code>unit_tests/Physics/TestLinearBreitWheeler.cpp</code></a></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h"><code>unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h</code></a></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearBreitWheelerBenchmark.cpp"><code>unit_tests/Physics/LinearBreitWheelerBenchmark.cpp</code></a></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp"><code>unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp</code></a></p></li>
+<li><p><code>~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh</code></p></li>
+<li><p><code>~/git/cain/linear-breit-wheeler-head-on.i</code></p></li>
+<li><p><code>~/git/cain/generate-linear-breit-wheeler-results.sh</code></p></li>
+</ul>
+<p>The benchmark remains deliberately narrow:</p>
+<ul>
+<li><p>no tracker integration,</p></li>
+<li><p>no bunch population,</p></li>
+<li><p>no GPU path.</p></li>
+</ul>
+<p>The validated observables are now:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">electron energy spectrum,</label></p></li>
+<li><p><label><input type="checkbox" checked="">positron energy spectrum,</label></p></li>
+<li><p><label><input type="checkbox" checked="">electron angle spectrum,</label></p></li>
+<li><p><label><input type="checkbox" checked="">positron angle spectrum,</label></p></li>
+<li><p><label><input type="checkbox" checked="">joint <span class="math inline">\(E\)</span> vs.&nbsp;<span class="math inline">\(\theta\)</span> spectrum for the electron,</label></p></li>
+<li><p><label><input type="checkbox" checked="">joint <span class="math inline">\(E\)</span> vs.&nbsp;<span class="math inline">\(\theta\)</span> spectrum for the positron.</label></p></li>
+</ul>
+<p>Finite incoming-photon-beam benchmark:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">electron energy spectrum with Gaussian photon-beam divergence,</label></p></li>
+<li><p><label><input type="checkbox" checked="">positron energy spectrum with Gaussian photon-beam divergence,</label></p></li>
+<li><p><label><input type="checkbox" checked="">electron angle spectrum with Gaussian photon-beam divergence,</label></p></li>
+<li><p><label><input type="checkbox" checked="">positron angle spectrum with Gaussian photon-beam divergence.</label></p></li>
+</ul>
+<p>The finite-photon-beam extension is still intentionally narrow:</p>
+<ul>
+<li><p>the high-energy photon beam is sampled only in momentum space,</p></li>
+<li><p>the reference beam axis is the head-on direction,</p></li>
+<li><p>the angular spread is Gaussian with <span class="math inline">\(\sigma_{\theta x} = \sigma_{\theta y} = 1\,\mathrm{mrad}\)</span>,</p></li>
+<li><p>the current published benchmark keeps the photon-beam relative energy spread at zero,</p></li>
+<li><p>there is still no transverse position spread or laser-overlap weighting in the <em>OPALX</em> benchmark path.</p></li>
+</ul>
+<section id="_local_kernel_tests" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="_local_kernel_tests"><span class="header-section-number">4.1</span> Local Kernel Tests</h2>
+<p>The current <em>OPALX</em> implementation now exposes the same proposal-coordinate view used by the CAIN rejection sampler. Two helper functions are validated directly in the unit tests:</p>
+<ul>
+<li><p>the map from the proposal variable <span class="math inline">\(z \in [-1,1\)</span>] to the center-of-momentum scattering cosine <span class="math inline">\(\cos\theta\)</span>,</p></li>
+<li><p>the corresponding unpolarized local angular weight in the same proposal coordinate.</p></li>
+</ul>
+<p>This gives a direct check of the differential kernel itself, not only of its integrated or sampled consequences. The pointwise tests use an independent reference implementation of the CAIN-aligned auxiliary variables <span class="math inline">\(Y(z)\)</span>, <span class="math inline">\(s_m\)</span>, <span class="math inline">\(u_m\)</span>, and the local acceptance weight.</p>
+</section>
+<section id="_finite_photon_beam_folding_algorithm" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="_finite_photon_beam_folding_algorithm"><span class="header-section-number">4.2</span> Finite-Photon-Beam Folding Algorithm</h2>
+<p>For the finite incoming-photon-beam benchmark, <em>OPALX</em> keeps the laser photon fixed and samples only the high-energy photon beam. For each event:</p>
+<ol type="1">
+<li><p>a high-energy photon direction is drawn from a Gaussian angular spread around the head-on reference axis,</p></li>
+<li><p>the photon energy is either kept fixed or, in the extended code path, drawn from a Gaussian relative energy spread,</p></li>
+<li><p>a per-event linear Breit-Wheeler sampling kernel is built from that sampled incoming photon state and the fixed laser photon,</p></li>
+<li><p>the electron-positron event is generated with the same host-side rejection sampler used in the fixed-geometry benchmark,</p></li>
+<li><p>the requested observable is histogrammed and compared to the matching CAIN reference.</p></li>
+</ol>
+<p>The present published finite-photon-beam result validates only the divergence broadening. The next benchmark extensions are:</p>
+<ul>
+<li><p>joint <span class="math inline">\(E\)</span>--<span class="math inline">\(\theta\)</span> maps for the finite incoming photon beam,</p></li>
+<li><p>finite-photon-beam benchmarks with nonzero photon-beam relative energy spread.</p></li>
+</ul>
+</section>
+</section>
+<section id="_results_of_code_comparison" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Results of Code Comparison</h1>
+<p>The current CAIN-backed <em>OPALX</em> benchmark compares the linear unpolarized process <code>LASERQED</code> <code>BREITWHEELER,</code> <code>NPH=0</code> for a weak-field setup with <span class="math inline">\(\xi = 0.25\)</span>. The benchmark observables are:</p>
+<ul>
+<li><p>electron energy spectrum,</p></li>
+<li><p>positron energy spectrum,</p></li>
+<li><p>electron angle spectrum,</p></li>
+<li><p>positron angle spectrum,</p></li>
+<li><p>joint <span class="math inline">\(E\)</span> vs.&nbsp;<span class="math inline">\(\theta\)</span> maps for electron and positron,</p></li>
+<li><p>and, in the extended benchmark, the same 1D observables for a finite incoming photon beam.</p></li>
+</ul>
+<p>The first fixed-geometry comparison point uses:</p>
+<ul>
+<li><p>head-on geometry,</p></li>
+<li><p><span class="math inline">\(E_\gamma = 0.5\,\mathrm{GeV}\)</span>,</p></li>
+<li><p><span class="math inline">\(\lambda_L = 1\,\mathrm{nm}\)</span>,</p></li>
+<li><p>unpolarized photons.</p></li>
+</ul>
+<p>With the current <em>OPALX</em> Monte Carlo benchmark and the stored CAIN references, the agreement is already tight.</p>
+<p>Electron:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">energy spectrum: mean-energy difference about <code>0.09%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0179</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">angle spectrum: mean-angle difference about <code>0.02%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0176</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">joint <span class="math inline">\(E\)</span>--<span class="math inline">\(\theta\)</span> map: mean-energy difference about <code>0.10%</code>, mean-angle difference about <code>0.02%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0281</code></label></p></li>
+</ul>
+<p>Positron:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">energy spectrum: mean-energy difference about <code>0.10%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0160</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">angle spectrum: mean-angle difference about <code>0.08%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0173</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">joint <span class="math inline">\(E\)</span>--<span class="math inline">\(\theta\)</span> map: mean-energy difference about <code>0.10%</code>, mean-angle difference about <code>0.08%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0266</code></label></p></li>
+</ul>
+<p>So the present benchmark already supports both 1D and 2D CAIN-backed regression coverage for the linear unpolarized kernel.</p>
+<p>Finite incoming-photon-beam point:</p>
+<ul>
+<li><p>head-on reference geometry,</p></li>
+<li><p><span class="math inline">\(E_\gamma = 0.5\,\mathrm{GeV}\)</span>,</p></li>
+<li><p><span class="math inline">\(\lambda_L = 1\,\mathrm{nm}\)</span>,</p></li>
+<li><p>Gaussian photon-beam divergence with <span class="math inline">\(\sigma_{\theta x} = \sigma_{\theta y} = 1\,\mathrm{mrad}\)</span>,</p></li>
+<li><p>zero photon-beam energy spread.</p></li>
+</ul>
+<p>Finite-photon-beam agreement:</p>
+<p>Electron:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">energy spectrum: mean-energy difference about <code>0.12%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0536</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">angle spectrum: mean-angle difference about <code>2.49%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0784</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">joint <span class="math inline">\(E\)</span>--<span class="math inline">\(\theta\)</span> map: mean-energy difference about <code>0.11%</code>, mean-angle difference about <code>2.77%</code>, <span class="math inline">\(L_1\)</span> about <code>0.4416</code></label></p></li>
+</ul>
+<p>Positron:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">energy spectrum: mean-energy difference about <code>0.13%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0535</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">angle spectrum: mean-angle difference about <code>2.89%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0696</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">joint <span class="math inline">\(E\)</span>--<span class="math inline">\(\theta\)</span> map: mean-energy difference about <code>0.07%</code>, mean-angle difference about <code>2.58%</code>, <span class="math inline">\(L_1\)</span> about <code>0.4230</code></label></p></li>
+</ul>
+<p>Finite-photon-beam plus energy-spread agreement:</p>
+<p>Electron:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">energy spectrum with photon-beam relative energy spread <code>1.0e-3</code>: mean-energy difference about <code>0.55%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0573</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">angle spectrum with photon-beam relative energy spread <code>1.0e-3</code>: mean-angle difference about <code>2.36%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0822</code></label></p></li>
+</ul>
+<p>Positron:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked="">energy spectrum with photon-beam relative energy spread <code>1.0e-3</code>: mean-energy difference about <code>0.55%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0601</code></label></p></li>
+<li><p><label><input type="checkbox" checked="">angle spectrum with photon-beam relative energy spread <code>1.0e-3</code>: mean-angle difference about <code>2.59%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0721</code></label></p></li>
+</ul>
+<p>The finite-photon-beam angle benchmarks are intentionally windowed to <span class="math inline">\(0 \le \theta \le 6\,\mathrm{mrad}\)</span>, so the stored CAIN angular histograms do not integrate to exactly one inside that clipped range.</p>
+<p>The fixed-geometry head-on comparisons are shown for the electron in <a href="#fig-bw-headon-electron-energy" class="cross-reference">fig-bw-headon-electron-energy</a>, <a href="#fig-bw-headon-electron-theta" class="cross-reference">fig-bw-headon-electron-theta</a>, and <a href="#fig-bw-headon-electron-joint" class="cross-reference">fig-bw-headon-electron-joint</a>, and for the positron in <a href="#fig-bw-headon-positron-energy" class="cross-reference">fig-bw-headon-positron-energy</a>, <a href="#fig-bw-headon-positron-theta" class="cross-reference">fig-bw-headon-positron-theta</a>, and <a href="#fig-bw-headon-positron-joint" class="cross-reference">fig-bw-headon-positron-joint</a>.</p>
+<p>The finite-photon-beam comparisons with Gaussian divergence and zero energy spread are shown for the electron in <a href="#fig-bw-finite-electron-energy" class="cross-reference">fig-bw-finite-electron-energy</a>, <a href="#fig-bw-finite-electron-theta" class="cross-reference">fig-bw-finite-electron-theta</a>, and <a href="#fig-bw-finite-electron-joint" class="cross-reference">fig-bw-finite-electron-joint</a>, and for the positron in <a href="#fig-bw-finite-positron-energy" class="cross-reference">fig-bw-finite-positron-energy</a>, <a href="#fig-bw-finite-positron-theta" class="cross-reference">fig-bw-finite-positron-theta</a>, and <a href="#fig-bw-finite-positron-joint" class="cross-reference">fig-bw-finite-positron-joint</a>.</p>
+<p>The finite-photon-beam plus energy-spread comparisons are shown for the electron in <a href="#fig-bw-finite-es-electron-energy" class="cross-reference">fig-bw-finite-es-electron-energy</a>, <a href="#fig-bw-finite-es-electron-theta" class="cross-reference">fig-bw-finite-es-electron-theta</a>, and <a href="#fig-bw-finite-es-electron-joint" class="cross-reference">fig-bw-finite-es-electron-joint</a>, and for the positron in <a href="#fig-bw-finite-es-positron-energy" class="cross-reference">fig-bw-finite-es-positron-energy</a>, <a href="#fig-bw-finite-es-positron-theta" class="cross-reference">fig-bw-finite-es-positron-theta</a>, and <a href="#fig-bw-finite-es-positron-joint" class="cross-reference">fig-bw-finite-es-positron-joint</a>.</p>
+<p>The overlap-restricted comparisons are shown for the electron in <a href="#fig-bw-overlap-electron-energy" class="cross-reference">fig-bw-overlap-electron-energy</a> and <a href="#fig-bw-overlap-electron-theta" class="cross-reference">fig-bw-overlap-electron-theta</a>, and for the positron in <a href="#fig-bw-overlap-positron-energy" class="cross-reference">fig-bw-overlap-positron-energy</a> and <a href="#fig-bw-overlap-positron-theta" class="cross-reference">fig-bw-overlap-positron-theta</a>.</p>
+<div id="fig-bw-headon-electron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-headon-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Fixed-geometry head-on outgoing electron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-headon-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-headon-electron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-headon-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Fixed-geometry head-on outgoing electron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-headon-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-headon-electron-joint" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-headon-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-headon-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-electron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam outgoing electron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-electron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam outgoing electron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-electron-joint" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-es-electron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-es-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam plus energy-spread outgoing electron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-es-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-es-electron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-es-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-es-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-es-electron-joint" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-es-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam plus energy-spread outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-es-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-overlap-electron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-overlap-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Overlap-restricted outgoing electron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-overlap-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-overlap-electron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-overlap-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Overlap-restricted outgoing electron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-overlap-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-headon-positron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-headon-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Fixed-geometry head-on outgoing positron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-headon-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-headon-positron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-headon-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Fixed-geometry head-on outgoing positron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-headon-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-headon-positron-joint" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-headon-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-headon-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-positron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam outgoing positron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-positron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam outgoing positron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-positron-joint" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-es-positron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-es-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam plus energy-spread outgoing positron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-es-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-es-positron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-es-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-es-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-finite-es-positron-joint" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-finite-es-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Finite-photon-beam plus energy-spread outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-finite-es-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-overlap-positron-energy" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-overlap-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Overlap-restricted outgoing positron energy spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-overlap-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;21
+</figcaption>
+</figure>
+</div>
+<div id="fig-bw-overlap-positron-theta" class="quarto-float quarto-figure quarto-figure-center anchored" data-wrapper="1" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bw-overlap-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<figcaption>Overlap-restricted outgoing positron polar-angle spectrum.</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bw-overlap-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="_build_and_run" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Build and Run</h1>
+<p>The preferred one-shot workflow is run from the docs tree:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/git/OPALX-project.github.io/gamma-gamma</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./generate-gamma-gamma-results.sh</span> <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--opalx-build</span> ~/git/opalx-laser/build_openmp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This top-level driver:</p>
+<ul>
+<li><p>builds the OPALX gamma-gamma benchmark targets,</p></li>
+<li><p>runs the inverse-Compton and Breit-Wheeler unit/regression suites,</p></li>
+<li><p>regenerates the CAIN and OPALX benchmark data for both notes,</p></li>
+<li><p>republishes the comparison figures, and</p></li>
+<li><p>renders the gamma-gamma note pages.</p></li>
+</ul>
+<p>If only the Breit-Wheeler assets need to be refreshed, use:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/git/cain</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./generate-linear-breit-wheeler-results.sh</span> <span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--opalx-build</span> ~/git/opalx-laser/build_openmp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This script:</p>
+<ul>
+<li><p>runs the CAIN decks <code>~/git/cain/linear-breit-wheeler-head-on.i</code>, <code>~/git/cain/linear-breit-wheeler-finite-photon-beam.i</code>, <code>~/git/cain/linear-breit-wheeler-finite-photon-beam-energy-spread.i</code>, and <code>~/git/cain/linear-breit-wheeler-overlap.i</code>,</p></li>
+<li><p>regenerates the stored CAIN histogram references in <code>~/git/opalx-laser/unit_tests/Physics/data</code>,</p></li>
+<li><p>runs the OPALX benchmark executable <code>LinearBreitWheelerBenchmark</code> for fixed-geometry, finite-photon-beam, finite-photon-beam-plus-energy-spread, and overlap cases,</p></li>
+<li><p>regenerates the 1D and 2D comparison plots in <code>~/git/cain/reference-data</code>.</p></li>
+</ul>
+<p>The script expects:</p>
+<ul>
+<li><p>a built OPALX benchmark executable in the supplied build directory,</p></li>
+<li><p>a CAIN executable at <code>~/git/cain/CAIN-build/cain</code>, unless overridden by <code>--cain-bin</code>.</p></li>
+</ul>
+<p>The relevant unit-test targets are:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cmake</span> <span class="at">--build</span> ~/git/opalx-laser/build_openmp <span class="dt">\</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--target</span> TestLinearBreitWheeler TestLinearBreitWheelerSpectrum LinearBreitWheelerBenchmark <span class="at">-j4</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">~/git/opalx-laser/build_openmp/unit_tests/Physics/TestLinearBreitWheeler</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">~/git/opalx-laser/build_openmp/unit_tests/Physics/TestLinearBreitWheelerSpectrum</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="_references" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> References</h1>
+<ul>
+<li><p>CAIN source parser: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/rdlqed.f"><code>src/rdlqed.f</code></a></p></li>
+<li><p>CAIN Breit-Wheeler runtime loop: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lsrqedbw.f"><code>src/lsrqedbw.f</code></a></p></li>
+<li><p>CAIN linear Breit-Wheeler generator: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lnbwgn.f"><code>src/lnbwgn.f</code></a></p></li>
+<li><p>CAIN nonlinear Breit-Wheeler generator: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/nlbwgn.f"><code>src/nlbwgn.f</code></a></p></li>
+<li><p>CAIN weighted event insertion: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lbwevent.f"><code>src/lbwevent.f</code></a></p></li>
+<li><p>CAIN manual: <a href="https://manualzilla.com/doc/5656761/user-s-manual-of-cain">User’s Manual of CAIN</a></p></li>
+</ul>
+</section>
+<section id="_cain_structure" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> CAIN Structure</h1>
+<p>CAIN separates Breit-Wheeler physics into three layers.</p>
+<section id="input-and-model-selection" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="input-and-model-selection"><span class="header-section-number">8.0.1</span> Input and model selection</h3>
+<ul>
+<li><p><code>LASERQED</code> <code>BREITWHEELER</code> is parsed in <a href="https://github.com/cfruhling2/CAIN/blob/main/src/rdlqed.f"><code>src/rdlqed.f</code></a>.</p></li>
+<li><p><code>NPH</code> <code>=</code> <code>0</code> selects the linear Breit-Wheeler model.</p></li>
+<li><p><code>NPH</code> <code>&gt;=</code> <code>1</code> selects the nonlinear model.</p></li>
+</ul>
+</section>
+<section id="runtime-driver" class="level3" data-number="8.0.2">
+<h3 data-number="8.0.2" class="anchored" data-anchor-id="runtime-driver"><span class="header-section-number">8.0.2</span> Runtime driver</h3>
+<ul>
+<li><p>The laser-particle loop is handled by <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lsrqedbw.f"><code>src/lsrqedbw.f</code></a>.</p></li>
+<li><p>Local laser geometry and power density are obtained from <code>LSRGEO</code>.</p></li>
+<li><p>The linear event generator is <code>LNBWGN</code>.</p></li>
+<li><p>The nonlinear event generator is <code>NLBWGN</code>.</p></li>
+<li><p>If an event happens, the produced electron and positron are inserted by <code>LBWEVENT</code>.</p></li>
+</ul>
+</section>
+<section id="event-generation" class="level3" data-number="8.0.3">
+<h3 data-number="8.0.3" class="anchored" data-anchor-id="event-generation"><span class="header-section-number">8.0.3</span> Event generation</h3>
+<ul>
+<li><p>Linear Breit-Wheeler: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lnbwgn.f"><code>src/lnbwgn.f</code></a></p></li>
+<li><p>Nonlinear Breit-Wheeler: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/nlbwgn.f"><code>src/nlbwgn.f</code></a></p></li>
+<li><p>Weighted particle insertion: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lbwevent.f"><code>src/lbwevent.f</code></a></p></li>
+</ul>
+<p>For the first <em>OPALX</em> benchmark only the linear event kernel is needed.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/OPALX-project\.github\.io\/PhysicsManual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
