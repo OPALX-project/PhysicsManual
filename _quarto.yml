@@ -8,6 +8,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: sections/coordinate-systems.qmd
+        text: Coordinate Systems in OPALX
       - href: sections/linear-compton.qmd
         text: Linear Compton
       - href: sections/gamma-gamma.qmd
