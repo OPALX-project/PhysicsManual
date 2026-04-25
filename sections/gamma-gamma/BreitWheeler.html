@@ -165,7 +165,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../sections/gamma-gamma/index.html"> 
-<span class="menu-text">Gamma-Gamma</span></a>
+<span class="menu-text">γ-γ Physics</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../sections/gamma-gamma/linear-compton-benchmark.html"> 
@@ -186,7 +186,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/index.html">Gamma-Gamma Physics</a></li><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/BreitWheeler.html">Breit-Wheeler Theory</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/BreitWheeler.html">Breit-Wheeler Theory</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -204,52 +204,30 @@ window.Quarto = {
  <span class="menu-text">OPALX Physics Manual</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Coordinate Systems</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/coordinate-systems.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coordinate Sytems in OPALX</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Gamma-Gamma Physics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gamma-Gamma Physics Notes for OPALX</span></a>
+ <span class="menu-text">γ-γ Physics</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/linear-compton-benchmark.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Linear Compton Benchmark</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/BreitWheeler.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Breit-Wheeler Theory</span></a>
   </div>
 </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -288,7 +266,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/index.html">Gamma-Gamma Physics</a></li><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/BreitWheeler.html">Breit-Wheeler Theory</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Breit-Wheeler Theory</h1>
 </div>
@@ -310,7 +288,7 @@ window.Quarto = {
 <section id="_scope" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Scope</h1>
 <p>This note describes the minimum Breit-Wheeler physics model needed for the next <em>OPALX</em> benchmark.</p>
-<p><img src="breit_wheeler_qed_style_tikz.png" class="img-fluid" style="width:85.0%" alt="Breit-Wheeler scattering"></p>
+<p><img src="figures/breit_wheeler_qed_style_tikz.png" class="img-fluid" style="width:85.0%" alt="Breit-Wheeler scattering"></p>
 <p>We follow closely the CAIN ansatz i.e.&nbsp;manual and source code.</p>
 <p>The goal is not yet a full tracking implementation. The immediate target is a host-side Monte Carlo and deterministic benchmark path that reproduces CAIN for the process</p>
 <p><span class="math display">\[\gamma + \gamma \rightarrow e^- + e^+ .\]</span></p>
@@ -539,7 +517,7 @@ u_m = -\frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)+1\right] .
 <div aria-describedby="fig-bw-headon-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Fixed-geometry head-on outgoing electron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -554,7 +532,7 @@ Figure&nbsp;1
 <div aria-describedby="fig-bw-headon-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Fixed-geometry head-on outgoing electron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -569,7 +547,7 @@ Figure&nbsp;2
 <div aria-describedby="fig-bw-headon-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.</figcaption>
 </figure>
 </div>
@@ -584,7 +562,7 @@ Figure&nbsp;3
 <div aria-describedby="fig-bw-finite-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam outgoing electron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -599,7 +577,7 @@ Figure&nbsp;4
 <div aria-describedby="fig-bw-finite-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam outgoing electron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -614,7 +592,7 @@ Figure&nbsp;5
 <div aria-describedby="fig-bw-finite-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.</figcaption>
 </figure>
 </div>
@@ -629,7 +607,7 @@ Figure&nbsp;6
 <div aria-describedby="fig-bw-finite-es-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam plus energy-spread outgoing electron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -644,7 +622,7 @@ Figure&nbsp;7
 <div aria-describedby="fig-bw-finite-es-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -659,7 +637,7 @@ Figure&nbsp;8
 <div aria-describedby="fig-bw-finite-es-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam plus energy-spread outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.</figcaption>
 </figure>
 </div>
@@ -674,7 +652,7 @@ Figure&nbsp;9
 <div aria-describedby="fig-bw-overlap-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Overlap-restricted outgoing electron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -689,7 +667,7 @@ Figure&nbsp;10
 <div aria-describedby="fig-bw-overlap-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Overlap-restricted outgoing electron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -704,7 +682,7 @@ Figure&nbsp;11
 <div aria-describedby="fig-bw-headon-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Fixed-geometry head-on outgoing positron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -719,7 +697,7 @@ Figure&nbsp;12
 <div aria-describedby="fig-bw-headon-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Fixed-geometry head-on outgoing positron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -734,7 +712,7 @@ Figure&nbsp;13
 <div aria-describedby="fig-bw-headon-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.</figcaption>
 </figure>
 </div>
@@ -749,7 +727,7 @@ Figure&nbsp;14
 <div aria-describedby="fig-bw-finite-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam outgoing positron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -764,7 +742,7 @@ Figure&nbsp;15
 <div aria-describedby="fig-bw-finite-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam outgoing positron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -779,7 +757,7 @@ Figure&nbsp;16
 <div aria-describedby="fig-bw-finite-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.</figcaption>
 </figure>
 </div>
@@ -794,7 +772,7 @@ Figure&nbsp;17
 <div aria-describedby="fig-bw-finite-es-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam plus energy-spread outgoing positron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -809,7 +787,7 @@ Figure&nbsp;18
 <div aria-describedby="fig-bw-finite-es-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.</figcaption>
 </figure>
 </div>
@@ -824,7 +802,7 @@ Figure&nbsp;19
 <div aria-describedby="fig-bw-finite-es-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Finite-photon-beam plus energy-spread outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.</figcaption>
 </figure>
 </div>
@@ -839,7 +817,7 @@ Figure&nbsp;20
 <div aria-describedby="fig-bw-overlap-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Overlap-restricted outgoing positron energy spectrum.</figcaption>
 </figure>
 </div>
@@ -854,7 +832,7 @@ Figure&nbsp;21
 <div aria-describedby="fig-bw-overlap-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png" class="img-fluid figure-img"></p>
+<p><img src="figures/reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png" class="img-fluid figure-img"></p>
 <figcaption>Overlap-restricted outgoing positron polar-angle spectrum.</figcaption>
 </figure>
 </div>

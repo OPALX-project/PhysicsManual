@@ -40,7 +40,6 @@
     "text": "This note describes the minimum Breit-Wheeler physics model needed for the next OPALX benchmark.\n\nWe follow closely the CAIN ansatz i.e. manual and source code.\nThe goal is not yet a full tracking implementation. The immediate target is a host-side Monte Carlo and deterministic benchmark path that reproduces CAIN for the process\n\\[\\gamma + \\gamma \\rightarrow e^- + e^+ .\\]\nThe first benchmark will follow the same strategy as the linear ICS work:\n\nstart from a fixed-geometry, unpolarized, linear process;\nimplement the core event kernel in;\nvalidate deterministic and sampled spectra against CAIN;\ndelay bunch population and tracker integration until the kernel is trusted.",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
       "Breit-Wheeler Theory"
     ]
   },
@@ -52,7 +51,6 @@
     "text": "4.1 Local Kernel Tests\nThe current OPALX implementation now exposes the same proposal-coordinate view used by the CAIN rejection sampler. Two helper functions are validated directly in the unit tests:\n\nthe map from the proposal variable \\(z \\in [-1,1\\)] to the center-of-momentum scattering cosine \\(\\cos\\theta\\),\nthe corresponding unpolarized local angular weight in the same proposal coordinate.\n\nThis gives a direct check of the differential kernel itself, not only of its integrated or sampled consequences. The pointwise tests use an independent reference implementation of the CAIN-aligned auxiliary variables \\(Y(z)\\), \\(s_m\\), \\(u_m\\), and the local acceptance weight.",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
       "Breit-Wheeler Theory"
     ]
   },
@@ -64,7 +62,6 @@
     "text": "4.2 Finite-Photon-Beam Folding Algorithm\nFor the finite incoming-photon-beam benchmark, OPALX keeps the laser photon fixed and samples only the high-energy photon beam. For each event:\n\na high-energy photon direction is drawn from a Gaussian angular spread around the head-on reference axis,\nthe photon energy is either kept fixed or, in the extended code path, drawn from a Gaussian relative energy spread,\na per-event linear Breit-Wheeler sampling kernel is built from that sampled incoming photon state and the fixed laser photon,\nthe electron-positron event is generated with the same host-side rejection sampler used in the fixed-geometry benchmark,\nthe requested observable is histogrammed and compared to the matching CAIN reference.\n\nThe present published finite-photon-beam result validates only the divergence broadening. The next benchmark extensions are:\n\njoint \\(E\\)--\\(\\theta\\) maps for the finite incoming photon beam,\nfinite-photon-beam benchmarks with nonzero photon-beam relative energy spread.",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
       "Breit-Wheeler Theory"
     ]
   },
@@ -76,7 +73,6 @@
     "text": "This note documents the current OPALX validation path for linear inverse Compton scattering in the weak-field regime. The immediate goal is not yet a full tracking implementation, but a CAIN-validated benchmark path for the process\n\\[e^- + \\gamma_L \\rightarrow e^- + \\gamma .\\]\nThe benchmark follows the same staged strategy as the Breit-Wheeler note:\n\nstart from a fixed-geometry, unpolarized, linear process,\nvalidate deterministic and sampled spectra against CAIN,\nthen extend to broader beam models without enabling tracked interaction yet.\n\nThe baseline geometry used here is a \\(90^\\circ\\) crossing between a 1 GeV electron beam along \\(\\hat z\\) and a laser photon beam along \\(\\hat x\\) with wavelength 1030 nm.",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
       "Linear Compton Benchmark"
     ]
   },
@@ -88,7 +84,6 @@
     "text": "2.1 Basic Kinematics\nFor a laser wavelength \\(\\lambda_L\\), the photon energy is\n\\[\\omega_L = \\frac{2 \\pi \\hbar c}{\\lambda_L} .\n\\label{eq:ics-laser-energy}\\]\nFor an electron with total energy \\(E_e\\) and momentum magnitude \\(p_e = \\sqrt{E_e^2 - m_e^2}\\), the exact forward-scattered photon energy in the 90 degree benchmark geometry is\n\\[\\omega_\\gamma' =\n\\frac{E_e \\, \\omega_L}\n     {\\omega_L + \\frac{m_e^2}{E_e + p_e}} .\n\\label{eq:ics-forward-energy}\\]\nThe current OPALX helper uses this numerically stable form directly in the unit benchmark.",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
       "Linear Compton Benchmark"
     ]
   },
@@ -100,20 +95,18 @@
     "text": "2.2 Rest-Frame Model\nThe exact linear Compton kernel is evaluated in the electron rest frame. Let \\(\\omega_1\\) be the incoming photon energy there and let \\(\\Theta^*\\) be the photon scattering angle. The scattered photon energy is\n\\[\\omega_2(\\Theta^*) =\n\\frac{\\omega_1}\n     {1 + (\\omega_1/m_e)(1 - \\cos \\Theta^*)} .\n\\label{eq:ics-erf-energy}\\]\nThe unpolarized Klein-Nishina differential cross section is\n\\[\\frac{d\\sigma}{d\\Omega^*}\n= \\frac{r_e^2}{2}\n  \\left(\\frac{\\omega_2}{\\omega_1}\\right)^2\n  \\left(\n    \\frac{\\omega_1}{\\omega_2}\n    +\n    \\frac{\\omega_2}{\\omega_1}\n    - \\sin^2 \\Theta^*\n  \\right) .\n\\label{eq:ics-klein-nishina}\\]\nChanging variables from \\(\\cos\\Theta^*\\) to \\(\\omega_2\\) gives the one-dimensional energy spectrum in the rest frame,\n\\[\\frac{d\\sigma}{d\\omega_2}\n= 2\\pi \\frac{d\\sigma}{d\\Omega^*} \\frac{m_e}{\\omega_2^2} .\n\\label{eq:ics-dsigma-domega}\\]\nwith exact support \\(\\omega_2 \\in [\\omega_1/(1+2\\omega_1/m_e),\\,\\omega_1]\\).\nThe exact total Klein-Nishina cross section can be written with \\(\\kappa = \\omega_1/m_e\\) as\n\\[\\sigma_{\\mathrm{KN}} = 2\\pi r_e^2\n\\left[\n  \\frac{1+\\kappa}{\\kappa^3}\n  \\left(\n    \\frac{2\\kappa(1+\\kappa)}{1+2\\kappa} - \\ln(1+2\\kappa)\n  \\right)\n  + \\frac{\\ln(1+2\\kappa)}{2\\kappa}\n  - \\frac{1+3\\kappa}{(1+2\\kappa)^2}\n\\right] .\n\\label{eq:ics-total-cross-section}\\]\nFor \\(\\kappa \\ll 1\\) this approaches the Thomson limit\n\\[\\sigma_T = \\frac{8\\pi}{3} r_e^2 .\n\\label{eq:ics-thomson}\\]",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
       "Linear Compton Benchmark"
     ]
   },
   {
     "objectID": "sections/gamma-gamma/index.html",
     "href": "sections/gamma-gamma/index.html",
-    "title": "Gamma-Gamma Physics Notes for OPALX",
+    "title": "γ-γ Physics",
     "section": "",
     "text": "This note collects the physics model and benchmarks of the laser and photon functionality in OPALX.\n\nLinear Compton Benchmark\nBreit-Wheeler Theory from CAIN\n\n\n1 Full Workflow\nThe top-level driver [generate-gamma-gamma-results.sh] regenerates the full published gamma-gamma benchmark state. It builds the required OPALX benchmark targets, runs the inverse-Compton and Breit-Wheeler physics tests, calls the shared CAIN helper scripts in ~/git/cain, and rerenders the physics notes.\nUse it when you want to refresh all benchmark figures and note pages in one pass:\ncd ~/git/OPALX-project.github.io/gamma-gamma\n./generate-gamma-gamma-results.sh --opalx-build ~/git/opalx-laser/build_openmp\nThe narrower CAIN-side helpers remain useful when only one of the two physics notes needs to be regenerated.",
     "crumbs": [
       "Home",
-      "Gamma-Gamma Physics",
-      "Gamma-Gamma Physics Notes for OPALX"
+      "γ-γ Physics"
     ]
   },
   {
@@ -124,7 +117,6 @@
     "text": "1 Definitions",
     "crumbs": [
       "Home",
-      "Coordinate Systems",
       "Coordinate Sytems in OPALX"
     ]
   }
