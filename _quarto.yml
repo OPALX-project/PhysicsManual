@@ -19,6 +19,7 @@ website:
     style: docked
     contents:
       - index.qmd
+      - section: "Coordinate Systems in OPALX"
       - section: "Benchmarks"
         contents:
           - sections/linear-compton.qmd
