@@ -1,0 +1,25 @@
+---
+title: "OPALX Physics Manual"
+subtitle: "Theory, numerical models, and benchmark problems"
+---
+
+# Overview
+
+The OPALX Physics Manual documents the physical models, numerical assumptions,
+and benchmark problems used in OPALX.
+
+## Scope
+
+- electromagnetic interactions
+- photon production processes
+- gamma-gamma and laser-electron benchmarks
+- implementation assumptions
+- validation examples
+
+## Example equation
+
+$$
+s = 2 E_1 E_2 (1 - \cos \theta),
+$$ {#eq-mandelstam-s}
+
+See @eq-mandelstam-s for reference.

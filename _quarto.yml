@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "OPALX Physics Manual"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: sections/linear-compton.qmd
+        text: Linear Compton
+      - href: sections/gamma-gamma.qmd
+        text: Gamma-Gamma
+
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Benchmarks"
+        contents:
+          - sections/linear-compton.qmd
+          - sections/gamma-gamma.qmd
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    html-math-method: mathjax
+    code-fold: false
+    theme: cosmo
+
+bibliography: references.bib
