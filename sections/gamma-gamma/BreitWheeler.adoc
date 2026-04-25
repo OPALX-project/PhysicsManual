@@ -11,7 +11,7 @@
 This note describes the minimum Breit-Wheeler physics model needed for the next
 _OPALX_ benchmark.
 
-image::breit_wheeler_qed_style_tikz.png[Breit-Wheeler scattering, width=85%] 
+image::figures/breit_wheeler_qed_style_tikz.png[Breit-Wheeler scattering, width=85%] 
 
 
 We follow closely the CAIN ansatz i.e. manual and source code.
@@ -344,91 +344,91 @@ for the positron in <<fig-bw-overlap-positron-energy>> and
 
 [[fig-bw-headon-electron-energy]]
 .Fixed-geometry head-on outgoing electron energy spectrum.
-image::reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png[width=82%]
 
 [[fig-bw-headon-electron-theta]]
 .Fixed-geometry head-on outgoing electron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png[width=82%]
 
 [[fig-bw-headon-electron-joint]]
 .Fixed-geometry head-on outgoing electron joint pass:[E<sub>e-</sub>]--pass:[&theta;<sub>e-</sub>] spectrum.
-image::reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png[width=100%]
+image::figures/reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png[width=100%]
 
 [[fig-bw-finite-electron-energy]]
 .Finite-photon-beam outgoing electron energy spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png[width=82%]
 
 [[fig-bw-finite-electron-theta]]
 .Finite-photon-beam outgoing electron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png[width=82%]
 
 [[fig-bw-finite-electron-joint]]
 .Finite-photon-beam outgoing electron joint pass:[E<sub>e-</sub>]--pass:[&theta;<sub>e-</sub>] spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png[width=100%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png[width=100%]
 
 [[fig-bw-finite-es-electron-energy]]
 .Finite-photon-beam plus energy-spread outgoing electron energy spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png[width=82%]
 
 [[fig-bw-finite-es-electron-theta]]
 .Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png[width=82%]
 
 [[fig-bw-finite-es-electron-joint]]
 .Finite-photon-beam plus energy-spread outgoing electron joint pass:[E<sub>e-</sub>]--pass:[&theta;<sub>e-</sub>] spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png[width=100%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png[width=100%]
 
 [[fig-bw-overlap-electron-energy]]
 .Overlap-restricted outgoing electron energy spectrum.
-image::reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png[width=82%]
 
 [[fig-bw-overlap-electron-theta]]
 .Overlap-restricted outgoing electron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png[width=82%]
 
 [[fig-bw-headon-positron-energy]]
 .Fixed-geometry head-on outgoing positron energy spectrum.
-image::reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png[width=82%]
 
 [[fig-bw-headon-positron-theta]]
 .Fixed-geometry head-on outgoing positron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png[width=82%]
 
 [[fig-bw-headon-positron-joint]]
 .Fixed-geometry head-on outgoing positron joint pass:[E<sub>e+</sub>]--pass:[&theta;<sub>e+</sub>] spectrum.
-image::reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png[width=100%]
+image::figures/reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png[width=100%]
 
 [[fig-bw-finite-positron-energy]]
 .Finite-photon-beam outgoing positron energy spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png[width=82%]
 
 [[fig-bw-finite-positron-theta]]
 .Finite-photon-beam outgoing positron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png[width=82%]
 
 [[fig-bw-finite-positron-joint]]
 .Finite-photon-beam outgoing positron joint pass:[E<sub>e+</sub>]--pass:[&theta;<sub>e+</sub>] spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png[width=100%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png[width=100%]
 
 [[fig-bw-finite-es-positron-energy]]
 .Finite-photon-beam plus energy-spread outgoing positron energy spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png[width=82%]
 
 [[fig-bw-finite-es-positron-theta]]
 .Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png[width=82%]
 
 [[fig-bw-finite-es-positron-joint]]
 .Finite-photon-beam plus energy-spread outgoing positron joint pass:[E<sub>e+</sub>]--pass:[&theta;<sub>e+</sub>] spectrum.
-image::reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png[width=100%]
+image::figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png[width=100%]
 
 [[fig-bw-overlap-positron-energy]]
 .Overlap-restricted outgoing positron energy spectrum.
-image::reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png[width=82%]
 
 [[fig-bw-overlap-positron-theta]]
 .Overlap-restricted outgoing positron polar-angle spectrum.
-image::reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png[width=82%]
+image::figures/reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png[width=82%]
 
 
 == Build and Run

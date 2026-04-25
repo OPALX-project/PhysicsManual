@@ -11,7 +11,7 @@ website:
       - href: sections/coordinate-systems.qmd
         text: Coordinate Systems
       - href: sections/gamma-gamma/index.qmd
-        text: Gamma-Gamma
+        text: γ-γ Physics
       - href: sections/gamma-gamma/linear-compton-benchmark.qmd
         text: Linear Compton
       - href: sections/gamma-gamma/BreitWheeler.qmd
@@ -21,14 +21,10 @@ website:
     style: docked
     contents:
       - index.qmd
-      - section: "Coordinate Systems"
-        contents:
-          - sections/coordinate-systems.qmd
-      - section: "Gamma-Gamma Physics"
-        contents:
-          - sections/gamma-gamma/index.qmd
-          - sections/gamma-gamma/linear-compton-benchmark.qmd
-          - sections/gamma-gamma/BreitWheeler.qmd
+      - sections/coordinate-systems.qmd
+      - sections/gamma-gamma/index.qmd
+      - sections/gamma-gamma/linear-compton-benchmark.qmd
+      - sections/gamma-gamma/BreitWheeler.qmd
 
 format:
   html:
