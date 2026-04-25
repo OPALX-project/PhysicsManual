@@ -2,6 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+PHYSICS_MANUAL_DIR=$(cd -- "${SCRIPT_DIR}/../.." && pwd)
 CAIN_DIR_DEFAULT="${HOME}/git/cain"
 CAIN_DIR="${CAIN_DIR_DEFAULT}"
 OPALX_BUILD_DIR=""
@@ -100,10 +101,8 @@ main() {
   echo "[5/6] Regenerating Breit-Wheeler benchmark data and figures"
   "${CAIN_DIR}/generate-linear-breit-wheeler-results.sh"     --opalx-root "${OPALX_SOURCE_DIR}"     --opalx-build "${OPALX_BUILD_DIR}"     --cain-bin "${CAIN_BIN}"
 
-  echo "[6/6] Rendering gamma-gamma note pages"
-  asciidoctor -o /tmp/gamma-gamma-index.html "${SCRIPT_DIR}/index.adoc"
-  asciidoctor -o /tmp/linear-compton-benchmark.html "${SCRIPT_DIR}/linear-compton-benchmark.adoc"
-  asciidoctor -o /tmp/breit-wheeler.html "${SCRIPT_DIR}/BreitWheeler.adoc"
+  echo "[6/6] Rendering Quarto manual pages"
+  quarto render "${PHYSICS_MANUAL_DIR}" --to html
 }
 
 main "$@"
