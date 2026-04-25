@@ -1,8 +1,4 @@
----
-title: "Linear Compton Benchmark"
----
-
-# Scope {#_scope}
+### Scope {#sec-ics-scope}
 
 This note documents the current *OPALX* validation path for linear
 inverse Compton scattering in the weak-field regime. The immediate goal
@@ -32,46 +28,50 @@ $\hat x$ with wavelength `1030` `nm`.
 ```{=latex}
 \begin{figure}[htbp]
 \centering
-\input{figures/tikz/ics_90deg_figure.tikz.tex}
+\input{sections/gamma-gamma/figures/tikz/ics_90deg_figure.tikz.tex}
 \caption{Inverse Compton scattering.}
 \end{figure}
 ```
 
-# Physics Models {#_physics_models}
+### Physics Models {#_physics_models}
 
-## Basic Kinematics {#_basic_kinematics}
+#### Basic Kinematics {#_basic_kinematics}
 
 For a laser wavelength $\lambda_L$, the photon energy is
 
-$$\omega_L = \frac{2 \pi \hbar c}{\lambda_L} .
-\label{eq:ics-laser-energy}$$
+$$
+\omega_L = \frac{2 \pi \hbar c}{\lambda_L} .
+$$ {#eq-ics-laser-energy}
 
 For an electron with total energy $E_e$ and momentum magnitude
 $p_e = \sqrt{E_e^2 - m_e^2}$, the exact forward-scattered photon energy
 in the `90` `degree` benchmark geometry is
 
-$$\omega_\gamma' =
+$$
+\omega_\gamma' =
 \frac{E_e \, \omega_L}
      {\omega_L + \frac{m_e^2}{E_e + p_e}} .
-\label{eq:ics-forward-energy}$$
+$$ {#eq-ics-forward-energy}
 
 The current OPALX helper uses this numerically stable form directly in
 the unit benchmark.
 
-## Rest-Frame Model {#_rest_frame_model}
+#### Rest-Frame Model {#_rest_frame_model}
 
 The exact linear Compton kernel is evaluated in the electron rest frame.
 Let $\omega_1$ be the incoming photon energy there and let $\Theta^*$ be
 the photon scattering angle. The scattered photon energy is
 
-$$\omega_2(\Theta^*) =
+$$
+\omega_2(\Theta^*) =
 \frac{\omega_1}
      {1 + (\omega_1/m_e)(1 - \cos \Theta^*)} .
-\label{eq:ics-erf-energy}$$
+$$ {#eq-ics-erf-energy}
 
 The unpolarized Klein-Nishina differential cross section is
 
-$$\frac{d\sigma}{d\Omega^*}
+$$
+\frac{d\sigma}{d\Omega^*}
 = \frac{r_e^2}{2}
   \left(\frac{\omega_2}{\omega_1}\right)^2
   \left(
@@ -80,14 +80,15 @@ $$\frac{d\sigma}{d\Omega^*}
     \frac{\omega_2}{\omega_1}
     - \sin^2 \Theta^*
   \right) .
-\label{eq:ics-klein-nishina}$$
+$$ {#eq-ics-klein-nishina}
 
 Changing variables from $\cos\Theta^*$ to $\omega_2$ gives the
 one-dimensional energy spectrum in the rest frame,
 
-$$\frac{d\sigma}{d\omega_2}
+$$
+\frac{d\sigma}{d\omega_2}
 = 2\pi \frac{d\sigma}{d\Omega^*} \frac{m_e}{\omega_2^2} .
-\label{eq:ics-dsigma-domega}$$
+$$ {#eq-ics-dsigma-domega}
 
 with exact support
 $\omega_2 \in [\omega_1/(1+2\omega_1/m_e),\,\omega_1]$.
@@ -95,7 +96,8 @@ $\omega_2 \in [\omega_1/(1+2\omega_1/m_e),\,\omega_1]$.
 The exact total Klein-Nishina cross section can be written with
 $\kappa = \omega_1/m_e$ as
 
-$$\sigma_{\mathrm{KN}} = 2\pi r_e^2
+$$
+\sigma_{\mathrm{KN}} = 2\pi r_e^2
 \left[
   \frac{1+\kappa}{\kappa^3}
   \left(
@@ -104,14 +106,15 @@ $$\sigma_{\mathrm{KN}} = 2\pi r_e^2
   + \frac{\ln(1+2\kappa)}{2\kappa}
   - \frac{1+3\kappa}{(1+2\kappa)^2}
 \right] .
-\label{eq:ics-total-cross-section}$$
+$$ {#eq-ics-total-cross-section}
 
 For $\kappa \ll 1$ this approaches the Thomson limit
 
-$$\sigma_T = \frac{8\pi}{3} r_e^2 .
-\label{eq:ics-thomson}$$
+$$
+\sigma_T = \frac{8\pi}{3} r_e^2 .
+$$ {#eq-ics-thomson}
 
-# Implemented OPALX Benchmark {#_implemented_opalx_benchmark}
+### Implemented OPALX Benchmark {#sec-ics-implemented-opalx-benchmark}
 
 The current *OPALX* implementation is the CAIN-validated benchmark path
 on the `laser-element-1` branch. The relevant code files are:
@@ -154,7 +157,7 @@ The validated observables are now:
 
 - [x] overlap-restricted finite-beam energy and angle spectra.
 
-# Results of Code Comparison {#_results_of_code_comparison}
+### Results of Code Comparison {#sec-ics-results-of-code-comparison}
 
 The current CAIN-backed *OPALX* benchmark covers weak-field linear
 inverse Compton scattering for:
@@ -309,7 +312,7 @@ angular histogram
 grid.](figures/reference-data/linear-compton-90deg-xi029-finite-beam-overlap-theta-comparison.png)
 :::
 
-# Build and Run {#_build_and_run}
+### Build and Run {#sec-ics-build-and-run}
 
 The CAIN build helper is now shared across the gamma-gamma notes in the
 common workspace `~/git/cain`.
@@ -378,7 +381,7 @@ cmake --build /path/to/opalx-laser/build_openmp \
   --target LinearComptonSpectrumBenchmark TestLinearCompton TestLinearComptonSpectrum -j4
 ```
 
-# References {#_references}
+### References {#sec-ics-references}
 
 - CAIN linear Compton generator:
   [`src/lncpgn.f`](https://github.com/cfruhling2/CAIN/blob/main/src/lncpgn.f)
@@ -389,20 +392,22 @@ cmake --build /path/to/opalx-laser/build_openmp \
 - CAIN manual: [User's Manual of
   CAIN](https://manualzilla.com/doc/5656761/user-s-manual-of-cain)
 
-# CAIN Mapping {#_cain_mapping}
+### CAIN Mapping {#_cain_mapping}
 
 CAIN evaluates the linear Compton kinematics by boosting the laser
 photon into the electron rest frame, applying the recoil there, and
 boosting the scattered photon back to the laboratory frame. In CAIN's
 `LNCPGN`, the incoming photon energy in the electron rest frame is
 
-$$\omega_1 = \gamma \, \omega_L \, (1 - \beta \cos \alpha) .
-\label{eq:ics-cain-w1}$$
+$$
+\omega_1 = \gamma \, \omega_L \, (1 - \beta \cos \alpha) .
+$$ {#eq-ics-cain-w1}
 
 For the present benchmark $\cos\alpha = 0$, so
 
-$$\omega_1 = \gamma \, \omega_L .
-\label{eq:ics-cain-w1-90deg}$$
+$$
+\omega_1 = \gamma \, \omega_L .
+$$ {#eq-ics-cain-w1-90deg}
 
 This is the CAIN mapping reproduced by the current OPALX helper and
 benchmark path.

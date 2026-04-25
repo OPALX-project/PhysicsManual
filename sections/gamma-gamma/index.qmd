@@ -5,11 +5,7 @@ title: "γ-γ Physics"
 This note collects the physics model and benchmarks of the laser and
 photon functionality in *OPALX*.
 
-- [Linear Compton Benchmark](linear-compton-benchmark.qmd)
-
-- [Breit-Wheeler Theory from CAIN](BreitWheeler.qmd)
-
-# Full Workflow {#_full_workflow}
+## Full Workflow {#_full_workflow}
 
 The top-level driver \[generate-gamma-gamma-results.sh\] regenerates the
 full published gamma-gamma benchmark state. It builds the required OPALX
@@ -27,3 +23,11 @@ cd ~/git/OPALX-project.github.io/gamma-gamma
 
 The narrower CAIN-side helpers remain useful when only one of the two
 physics notes needs to be regenerated.
+
+## Linear Compton Benchmark {#sec-gamma-gamma-linear-compton}
+
+{{< include _linear-compton-benchmark.qmd >}}
+
+## Breit-Wheeler Theory {#sec-gamma-gamma-breit-wheeler}
+
+{{< include _BreitWheeler.qmd >}}

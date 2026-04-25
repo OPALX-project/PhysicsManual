@@ -1,8 +1,4 @@
----
-title: "Breit-Wheeler Theory"
----
-
-# Scope {#_scope}
+### Scope {#sec-bw-scope}
 
 This note describes the minimum Breit-Wheeler physics model needed for
 the next *OPALX* benchmark.
@@ -14,7 +10,7 @@ the next *OPALX* benchmark.
 ```{=latex}
 \begin{figure}[htbp]
 \centering
-\input{figures/tikz/breit_wheeler_qed_style_tikz.tikz.tex}
+\input{sections/gamma-gamma/figures/tikz/breit_wheeler_qed_style_tikz.tikz.tex}
 \caption{Breit-Wheeler scattering.}
 \end{figure}
 ```
@@ -39,7 +35,7 @@ work:
 - delay bunch population and tracker integration until the kernel is
   trusted.
 
-# Linear Breit-Wheeler Kinematics in CAIN {#_linear_breit_wheeler_kinematics_in_cain}
+### Linear Breit-Wheeler Kinematics in CAIN {#_linear_breit_wheeler_kinematics_in_cain}
 
 CAIN's linear generator `LNBWGN` uses two incoming photons:
 
@@ -55,13 +51,15 @@ $$Z_0 = \mathbf{n}_1 \cdot \mathbf{n}_2 .$$
 
 The two-photon invariant used in CAIN is
 
-$$S_0 = 2 W_1 W_2 (1 - Z_0) .
-\label{eq:bw-cain-s0}$$
+$$
+S_0 = 2 W_1 W_2 (1 - Z_0) .
+$$ {#eq-bw-cain-s0}
 
 Pair creation is kinematically allowed only if
 
-$$S_0 \ge 4 m_e^2 .
-\label{eq:bw-threshold}$$
+$$
+S_0 \ge 4 m_e^2 .
+$$ {#eq-bw-threshold}
 
 This threshold appears directly in `LNBWGN`:
 
@@ -72,8 +70,9 @@ IF (4*M**2.GT.S0) GOTO 900
 
 In a head-on geometry, $Z_0 = -1$, so the threshold reduces to
 
-$$W_1 W_2 \ge m_e^2 .
-\label{eq:bw-headon-threshold}$$
+$$
+W_1 W_2 \ge m_e^2 .
+$$ {#eq-bw-headon-threshold}
 
 This is the cleanest geometry for the first benchmark.
 
@@ -84,43 +83,48 @@ variables in that frame.
 The code introduces a transformed photon energy $W$ and several
 auxiliary variables:
 
-$$W = \gamma W_1 V_R,
+$$
+W = \gamma W_1 V_R,
 \qquad
 X = \frac{\sqrt{W^2 - m_e^2}}{W},
 \qquad
 X_1 = \frac{m_e^2}{W^2 + W\sqrt{W^2 - m_e^2}} .
-\label{eq:bw-cain-aux}$$
+$$ {#eq-bw-cain-aux}
 
 The random variable $Y$ is used to generate the CM scattering angle
 through
 
-$$\cos\theta = 1 - 2Y .
-\label{eq:bw-cain-costh}$$
+$$
+\cos\theta = 1 - 2Y .
+$$ {#eq-bw-cain-costh}
 
 The resulting Mandelstam-like combinations in the CAIN implementation
 are
 
-$$s_m = \frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)-1\right],
+$$
+s_m = \frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)-1\right],
 \qquad
 u_m = -\frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)+1\right] .
-\label{eq:bw-cain-sm-um}$$
+$$ {#eq-bw-cain-sm-um}
 
 CAIN then builds the angular kernel from
 
-$$\cos\theta_1 = 1 + 2m_e^2\left(\frac{1}{u_m} + \frac{1}{s_m}\right)
-\label{eq:bw-cain-costh1}$$
+$$
+\cos\theta_1 = 1 + 2m_e^2\left(\frac{1}{u_m} + \frac{1}{s_m}\right)
+$$ {#eq-bw-cain-costh1}
 
 and
 
-$$D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
-\label{eq:bw-cain-d}$$
+$$
+D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
+$$ {#eq-bw-cain-d}
 
 For unpolarized incoming photons, the acceptance weight reduces to the
 unpolarized part of the full CAIN expression.
 
-# OPALX Validation Path {#_opalx_validation_path}
+### OPALX Validation Path {#_opalx_validation_path}
 
-### Deterministic physics helper
+##### Deterministic physics helper
 
 - [x] add `Physics::LinearBreitWheeler`
 
@@ -128,7 +132,7 @@ unpolarized part of the full CAIN expression.
 
 - [x] implement deterministic spectra from the linear kernel
 
-### Host-only sampled event generator
+##### Host-only sampled event generator
 
 - [x] fixed seed through `Options::seed`
 
@@ -136,14 +140,14 @@ unpolarized part of the full CAIN expression.
 
 - no tracker, no photon bunch population, no GPU path yet
 
-### CAIN comparison
+##### CAIN comparison
 
 - [x] generate a CAIN reference deck in the same style as the
   linear-Compton notes
 
 - [x] compare OPALX and CAIN histograms first in 1D, later in 2D
 
-# Implemented OPALX Benchmark {#_implemented_opalx_benchmark}
+### Implemented OPALX Benchmark {#sec-bw-implemented-opalx-benchmark}
 
 The current *OPALX* implementation lives on the `laser-element-1`
 branch. The relevant files are:
@@ -213,7 +217,7 @@ The finite-photon-beam extension is still intentionally narrow:
 - there is still no transverse position spread or laser-overlap
   weighting in the *OPALX* benchmark path.
 
-## Local Kernel Tests {#_local_kernel_tests}
+#### Local Kernel Tests {#_local_kernel_tests}
 
 The current *OPALX* implementation now exposes the same
 proposal-coordinate view used by the CAIN rejection sampler. Two helper
@@ -230,7 +234,7 @@ its integrated or sampled consequences. The pointwise tests use an
 independent reference implementation of the CAIN-aligned auxiliary
 variables $Y(z)$, $s_m$, $u_m$, and the local acceptance weight.
 
-## Finite-Photon-Beam Folding Algorithm {#_finite_photon_beam_folding_algorithm}
+#### Finite-Photon-Beam Folding Algorithm {#_finite_photon_beam_folding_algorithm}
 
 For the finite incoming-photon-beam benchmark, *OPALX* keeps the laser
 photon fixed and samples only the high-energy photon beam. For each
@@ -259,7 +263,7 @@ divergence broadening. The next benchmark extensions are:
 - finite-photon-beam benchmarks with nonzero photon-beam relative energy
   spread.
 
-# Results of Code Comparison {#_results_of_code_comparison}
+### Results of Code Comparison {#sec-bw-results-of-code-comparison}
 
 The current CAIN-backed *OPALX* benchmark compares the linear
 unpolarized process `LASERQED` `BREITWHEELER,` `NPH=0` for a weak-field
@@ -487,7 +491,7 @@ spectrum.](figures/reference-data/linear-breit-wheeler-overlap-positron-energy-c
 ![Overlap-restricted outgoing positron polar-angle
 spectrum.](figures/reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png){#fig-bw-overlap-positron-theta width="82%"}
 
-# Build and Run {#_build_and_run}
+### Build and Run {#sec-bw-build-and-run}
 
 The preferred one-shot workflow is run from the docs tree:
 
@@ -551,7 +555,7 @@ cmake --build ~/git/opalx-laser/build_openmp \
 ~/git/opalx-laser/build_openmp/unit_tests/Physics/TestLinearBreitWheelerSpectrum
 ```
 
-# References {#_references}
+### References {#sec-bw-references}
 
 - CAIN source parser:
   [`src/rdlqed.f`](https://github.com/cfruhling2/CAIN/blob/main/src/rdlqed.f)
@@ -571,11 +575,11 @@ cmake --build ~/git/opalx-laser/build_openmp \
 - CAIN manual: [User's Manual of
   CAIN](https://manualzilla.com/doc/5656761/user-s-manual-of-cain)
 
-# CAIN Structure {#_cain_structure}
+### CAIN Structure {#_cain_structure}
 
 CAIN separates Breit-Wheeler physics into three layers.
 
-### Input and model selection
+##### Input and model selection
 
 - `LASERQED` `BREITWHEELER` is parsed in
   [`src/rdlqed.f`](https://github.com/cfruhling2/CAIN/blob/main/src/rdlqed.f).
@@ -584,7 +588,7 @@ CAIN separates Breit-Wheeler physics into three layers.
 
 - `NPH` `>=` `1` selects the nonlinear model.
 
-### Runtime driver
+##### Runtime driver
 
 - The laser-particle loop is handled by
   [`src/lsrqedbw.f`](https://github.com/cfruhling2/CAIN/blob/main/src/lsrqedbw.f).
@@ -598,7 +602,7 @@ CAIN separates Breit-Wheeler physics into three layers.
 - If an event happens, the produced electron and positron are inserted
   by `LBWEVENT`.
 
-### Event generation
+##### Event generation
 
 - Linear Breit-Wheeler:
   [`src/lnbwgn.f`](https://github.com/cfruhling2/CAIN/blob/main/src/lnbwgn.f)
