@@ -25,7 +25,17 @@ The baseline geometry used here is a $90^\circ$ crossing between a `1`
 `GeV` electron beam along $\hat z$ and a laser photon beam along
 $\hat x$ with wavelength `1030` `nm`.
 
+::: {.content-visible when-format="html"}
 ![](figures/ics_90deg_figure.png){fig-alt="Inverse Compton scattering" width="85%"}
+:::
+
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\input{figures/tikz/ics_90deg_figure.tikz.tex}
+\caption{Inverse Compton scattering.}
+\end{figure}
+```
 
 # Physics Models {#_physics_models}
 
