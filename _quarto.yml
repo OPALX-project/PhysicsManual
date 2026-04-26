@@ -7,6 +7,7 @@ book:
   subtitle: "Theory, numerical models, and benchmark problems"
   chapters:
     - index.qmd
+    - sections/overview/index.qmd
     - sections/coordinate-systems/index.qmd
     - sections/field-solvers/index.qmd
     - sections/beam-beam/index.qmd
@@ -25,6 +26,8 @@ format:
     html-math-method: mathjax
     code-fold: false
     theme: cosmo
+    include-in-header:
+      - includes/html-numbering-fix.html
   pdf:
     include-in-header:
       - includes/tikz-preamble.tex

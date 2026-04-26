@@ -1,24 +1,12 @@
 ---
-title: "Overview"
+title: "Home"
 ---
 
-# Overview
+OPALX is an open-source, exascale-ready, performance-portable accelerator simulation framework.
 
-The OPALX Physics Manual documents the physical models, numerical assumptions,
-and benchmark problems used in OPALX.
+The OPALX Physics Manual collects the underlying theory, numerical models, and
+benchmark problems used throughout the code base.
 
-## Scope
+Here you can find the [OPALX USer Manual](https://opalx-project.github.io/Manual/).
 
-- electromagnetic interactions
-- photon production processes
-- gamma-gamma and laser-electron benchmarks
-- implementation assumptions
-- validation examples
-
-## Example equation
-
-$$
-s = 2 E_1 E_2 (1 - \cos \theta),
-$$ {#eq-mandelstam-s}
-
-See @eq-mandelstam-s for reference.
+The source code is locate in [OPALX's Git Repository](https://github.com/OPALX-project/OPALX).
