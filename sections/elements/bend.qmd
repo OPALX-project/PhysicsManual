@@ -1,0 +1,181 @@
+## Analytic sector and rectangular bends {#sec-elements-bends}
+
+The current OPALX-native analytic `SBEND` and `RBEND` implementation is a
+field-based bend model with explicit body placement, explicit field-support
+extent, and first-order fringe optics. The implementation does not replace
+bend tracking by transfer matrices. Instead, the reference particle and the
+bunch are integrated through the magnetic field that is evaluated in the local
+bend chart.
+
+### Body extent and field-support extent
+
+The **nominal body extent** is the placed hardware interval
+$$
+z \in [0, L],
+$$
+where \(L\) is the body length used for placement, body ports, and geometry
+export.
+
+The **field-support extent** may extend beyond the body through entry and exit
+fringe regions,
+$$
+z \in [-\ell_{\mathrm{entry}},\, L + \ell_{\mathrm{exit}}],
+$$
+with
+$$
+\ell_{\mathrm{entry}} = \frac{h_{\mathrm{gap}} F_{\mathrm{int}}}{|\cos E_1|},
+\qquad
+\ell_{\mathrm{exit}} = \frac{h_{\mathrm{gap}} F_{\mathrm{int}}}{|\cos E_2|}.
+$$
+Here \(h_{\mathrm{gap}}\) is the half gap (`HGAP`), \(F_{\mathrm{int}}\) is the
+fringe integral (`FINT`), and \(E_1\), \(E_2\) are the entrance and exit
+pole-face angles. If `HGAP` is not given, OPALX uses the fallback
+$$
+h_{\mathrm{gap}} = \frac{\mathrm{GAP}}{2}.
+$$
+
+The body extent drives placement and visualization. The field-support extent
+drives field evaluation, active-set occupancy, and timestep sanity checks.
+This is why OPALX can export both body markers (`ENTRY EDGE`, `EXIT EDGE`) and
+field-support markers (`FIELD BEGIN`, `FIELD END`) for the same bend.
+
+### Effective field length and bend normalization
+
+The implemented fringe-support model uses a linear hard-edge ramp at both
+faces. The effective field length is therefore defined as
+$$
+L_{\mathrm{eff}} = L_{\mathrm{ref}} +
+\frac{\ell_{\mathrm{entry}} + \ell_{\mathrm{exit}}}{2},
+$$
+where \(L_{\mathrm{ref}}\) is the body length measured along the design
+reference path.
+
+For `SBEND`, the design reference-path body length equals the sector-bend body
+length,
+$$
+L_{\mathrm{ref}}^{\mathrm{SBEND}} = L.
+$$
+For `RBEND`, the design reference-path body length is the curved reference-path
+length between the rotated entrance and exit faces,
+$$
+L_{\mathrm{ref}}^{\mathrm{RBEND}} = L_{\mathrm{arc}},
+$$
+not the straight body chord. This distinction is required to normalize the
+analytic rectangular-bend field on the actual design orbit rather than on the
+mechanical chord.
+
+`ANGLE` is the primary geometric input. The analytic dipole coefficient is
+normalized against the effective field length,
+$$
+k_0 = \frac{\theta}{L_{\mathrm{eff}}},
+$$
+with total bend angle \(\theta\). `K0` is treated only as a secondary
+consistency-check quantity.
+
+Internally, OPALX stores the analytic bend strengths in normalized lattice form
+and converts them to physical Tesla coefficients only when a reference
+rigidity is available. If `DESIGNENERGY` is given, that kinetic energy is used
+together with the bunch species mass and charge. Otherwise the scaling is taken
+from the bunch reference momentum. This avoids tying bend tracking strength to
+the parser-global quantity \(P_0\).
+
+### Longitudinal field profile
+
+The body field is multiplied by a longitudinal scale function
+\(\lambda(z)\) defined by
+$$
+\lambda(z) =
+\begin{cases}
+0, & z < -\ell_{\mathrm{entry}}, \\
+\dfrac{z + \ell_{\mathrm{entry}}}{\ell_{\mathrm{entry}}},
+& -\ell_{\mathrm{entry}} \le z \le 0, \\
+1, & 0 \le z \le L, \\
+\dfrac{L + \ell_{\mathrm{exit}} - z}{\ell_{\mathrm{exit}}},
+& L \le z \le L + \ell_{\mathrm{exit}}, \\
+0, & z > L + \ell_{\mathrm{exit}}.
+\end{cases}
+$$
+
+This is a field-support model, not a body-length remapping. Particles begin to
+see the bend field at `FIELD BEGIN`, not necessarily at `ENTRY EDGE`.
+
+### First-order fringe optics
+
+In addition to the longitudinal field ramp, the implementation includes a
+first-order edge-focusing model. With signed curvature
+$$
+h = \frac{\theta}{L_{\mathrm{eff}}},
+$$
+the horizontal hard-edge relation is
+$$
+x'_{\mathrm{out}} = x'_{\mathrm{in}} + h \tan(E)\,x.
+$$
+
+The vertical edge focusing includes the standard fringe correction
+$$
+\psi = h\,h_{\mathrm{gap}}\,F_{\mathrm{int}}
+\frac{1 + \sin^2(E)}{\cos(E)},
+$$
+so the implemented vertical law is
+$$
+y'_{\mathrm{out}} = y'_{\mathrm{in}} - h \tan(E - \psi)\,y.
+$$
+
+In OPALX these optics effects are realized through an equivalent distributed
+fringe-field correction across the entry and exit support regions. The model is
+therefore field-based and first-order accurate in the edge optics, but it is
+not yet a full three-dimensional fringe-field model.
+
+### Code-to-code and analytic comparisons
+
+The current implementation has been benchmarked against Bmad for the two
+simplest no-fringe constant-field cases:
+
+- a proton `SBEND` with kinetic energy `590 MeV`, body length `1 m`, and bend
+  angle `45^\circ`,
+- an electron `RBEND` with kinetic energy `1 GeV`, rectangular body length
+  `1 m`, and bend angle `45^\circ`.
+
+For the `SBEND` benchmark, the OPALX trajectory has also been compared with the
+analytic circular-orbit solution. The comparison plot below shows the current
+code-to-code agreement. The `SBEND` benchmark agrees with
+the analytic endpoint at the exported-design-path level to within
+approximately \(2\times 10^{-5}\,\mathrm{m}\) for `DT = 10^{-10}` and improves
+below \(10^{-6}\,\mathrm{m}\) for smaller time steps. The `RBEND` benchmark now
+agrees with Bmad to within the displayed plotting resolution for the simple
+constant-field case.
+
+::: {.content-visible when-format="html"}
+![Comparison of the current OPALX `SBEND` and `RBEND` benchmarks against Bmad. The `SBEND` panel also includes the analytic circular-orbit solution. The right axis in each panel shows \(\Delta x = x_{\mathrm{OPALX}} - x_{\mathrm{Bmad}}\).](figures/bend_code_comparison.png){#fig-elements-bend-code-comparison fig-align="center" width="100%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\input{sections/elements/figures/tikz/bend_code_comparison.tikz.tex}
+\caption{Comparison of the current OPALX `SBEND` and `RBEND` benchmarks against Bmad. The `SBEND` panel also includes the analytic circular-orbit solution. The right axis in each panel shows $\Delta x = x_{\mathrm{OPALX}} - x_{\mathrm{Bmad}}$.}\label{fig-elements-bend-code-comparison}
+\end{figure}
+```
+:::
+
+The timestep study for the simple `SBEND` case is shown below. The reported
+metric is the discrete path-wise \(L^2\) error between the OPALX design path
+and the analytic reference curve, computed over the full bend interval. The
+dashed reference line shows the expected second-order decay \(\propto \Delta t^2\). The measured convergence is second order over the
+practical range until it reaches the numerical floor of the current benchmark
+setup.
+
+::: {.content-visible when-format="html"}
+![`SBEND` timestep study using the path-wise \(L^2\) error between OPALX and the analytic circular-orbit solution. The dashed line shows the theoretical second-order reference decay.](figures/sbend_dt_l2_error.png){#fig-elements-sbend-dt-l2 fig-align="center" width="80%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\input{sections/elements/figures/tikz/sbend_dt_l2_error.tikz.tex}
+\caption{`SBEND` timestep study using the path-wise $L^2$ error between OPALX and the analytic circular-orbit solution. The dashed line shows the theoretical second-order reference decay.}\label{fig-elements-sbend-dt-l2}
+\end{figure}
+```
+:::

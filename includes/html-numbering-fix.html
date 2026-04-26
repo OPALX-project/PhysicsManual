@@ -10,6 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
     return parts.join(".");
   }
 
+  function shiftQualifiedLabel(text, kind) {
+    const pattern = new RegExp("^(" + kind + "\\s+)([0-9]+(?:\\.[0-9]+)*)(:?.*)$");
+    const match = text.match(pattern);
+    if (!match) return text;
+    return match[1] + shiftLeadingInteger(match[2]) + match[3];
+  }
+
+  function inferVisibleChapterNumber() {
+    const heading = document.querySelector("h1.title .chapter-number");
+    if (!heading) return null;
+    const raw = heading.textContent.trim();
+    const shifted = shiftLeadingInteger(raw);
+    const value = Number.parseInt(shifted, 10);
+    return Number.isFinite(value) ? value : null;
+  }
+
+  const figureLabels = new Map();
+  const tableLabels = new Map();
+
   document.querySelectorAll(".chapter-number").forEach(function (node) {
     const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
     const titleText = titleNode ? titleNode.textContent.trim() : "";
@@ -34,6 +53,85 @@ document.addEventListener("DOMContentLoaded", function () {
   if (heading) {
     heading.textContent = shiftLeadingInteger(heading.textContent);
   }
+
+  const visibleChapterNumber = inferVisibleChapterNumber();
+
+  document.querySelectorAll("figcaption.quarto-float-caption").forEach(function (caption) {
+    const original = caption.textContent.trim();
+    const figureLabelMatch = original.match(/^(Figure\s+)([0-9]+(?:\.[0-9]+)*)(:.*)$/);
+    const tableLabelMatch = original.match(/^(Table\s+)([0-9]+(?:\.[0-9]+)*)(:.*)$/);
+    const figure = caption.closest(".quarto-float");
+    const figureId = figure ? figure.id : null;
+
+    if (figureLabelMatch) {
+      const shifted = figureLabelMatch[1] + shiftLeadingInteger(figureLabelMatch[2]) + figureLabelMatch[3];
+      caption.textContent = shifted;
+      if (figureId) {
+        figureLabels.set(figureId, shifted.replace(/:.*$/, ""));
+      }
+    } else if (tableLabelMatch) {
+      const shifted = tableLabelMatch[1] + shiftLeadingInteger(tableLabelMatch[2]) + tableLabelMatch[3];
+      caption.textContent = shifted;
+      if (figureId) {
+        tableLabels.set(figureId, shifted.replace(/:.*$/, ""));
+      }
+    }
+  });
+
+  if (visibleChapterNumber !== null) {
+    let legacyFigureCount = 0;
+    document.querySelectorAll(".quarto-figure figcaption:not(.quarto-float-caption)").forEach(function (caption) {
+      legacyFigureCount += 1;
+      const figure = caption.closest(".quarto-figure");
+      const figureId = figure ? figure.id : null;
+      const label = "Figure " + visibleChapterNumber + "." + legacyFigureCount;
+      caption.innerHTML = label + ": " + caption.innerHTML;
+      if (figureId) {
+        figureLabels.set(figureId, label);
+      }
+    });
+
+    let legacyTableCount = 0;
+    document.querySelectorAll("table caption").forEach(function (caption) {
+      const original = caption.textContent.trim();
+      if (/^(Figure|Table)\s+[0-9]/.test(original)) {
+        const shifted = shiftQualifiedLabel(original, "Table");
+        caption.textContent = shifted;
+        const table = caption.closest("table");
+        if (table && table.id) {
+          tableLabels.set(table.id, shifted.replace(/:.*$/, ""));
+        }
+        return;
+      }
+
+      legacyTableCount += 1;
+      const label = "Table " + visibleChapterNumber + "." + legacyTableCount;
+      caption.innerHTML = label + ": " + caption.innerHTML;
+      const table = caption.closest("table");
+      if (table && table.id) {
+        tableLabels.set(table.id, label);
+      }
+    });
+  }
+
+  document.querySelectorAll("a[href^='#']").forEach(function (link) {
+    const targetId = link.getAttribute("href").slice(1);
+    if (!targetId) return;
+
+    if (figureLabels.has(targetId)) {
+      const text = link.textContent.trim();
+      if (/^Figure\s+[0-9]+(?:\.[0-9]+)*$/.test(text) || /^fig[-_]/.test(text)) {
+        link.textContent = figureLabels.get(targetId);
+      }
+    }
+
+    if (tableLabels.has(targetId)) {
+      const text = link.textContent.trim();
+      if (/^Table\s+[0-9]+(?:\.[0-9]+)*$/.test(text) || /^tbl[-_]/.test(text)) {
+        link.textContent = tableLabels.get(targetId);
+      }
+    }
+  });
 
   if (document.title) {
     document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {

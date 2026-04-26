@@ -114,19 +114,19 @@ $$\frac{\mathrm{d}}{\mathrm{d} t} = \frac{\mathrm{d}}{\mathrm{d}\mathbf{s}}\frac
 
 We define the global cartesian coordinate system, also known as floor
 coordinate system with $K$, a point in this coordinate system is denoted
-by $(X, Y, Z) \in K$. In [Figure 1](#fig_KS1) of the accelerator is
+by $(X, Y, Z) \in K$. In @fig-ks1 the geometry of the accelerator is
 uniquely defined by the sequence of physical elements in $K$. The beam
 elements are numbered $e_0, \ldots , e_i, \ldots e_n$.
 
 ![Illustration of local and global
-coordinates.](../../figures/opalt/coords.png){#fig_KS1 alt="coords"
+coordinates.](figures/coords.png){#fig-ks1 alt="coords"
 width="12cm"}
 
 ### Local Cartesian Coordinate System {#sec.opalt.local-cartesian-coordinate-system}
 
 A local coordinate system $K'_i$ is attached to each element $e_i$. This
 is simply a frame in which $(0,0,0)$ is at the entrance of each element.
-For an illustration see [Figure 1](#fig_KS1). The local reference system
+For an illustration see @fig-ks1. The local reference system
 $(x, y, z) \in K'_n$ may thus be referred to a global Cartesian
 coordinate system $(X, Y, Z) \in K$.
 
@@ -205,10 +205,10 @@ perpendicular to the reference orbit and are labelled $x$ (in the bend
 plane) and $y$ (perpendicular to the bend plane).
 
 ![Illustration of $K_\text{sc}$ and
-$K_s$](../../figures/opalt/curvcoords.png){#fig_KS2 alt="curvcoords"
+$K_s$](figures/curvcoords.png){#fig-ks2 alt="curvcoords"
 width="10cm"}
 
-Both coordinate systems are described in [Figure 2](#fig_KS2).
+Both coordinate systems are described in @fig-ks2.
 
 ### Design or Reference Orbit {#sec.opalt.design-or-reference-orbit}
 
@@ -250,7 +250,7 @@ search for elements that influence the particles at a given position in
 3D space by minimizing the looping over elements when integrating an
 ensemble of particles. For each time step, `IndexMap` returns a set of
 elements $\mathcal{S}_{\text{e}} \subset {e_0 \ldots e_n}$ in case of
-the example given in [Figure 1](#fig_KS1). An implicit drift is modelled
+the example given in @fig-ks1. An implicit drift is modelled
 as an empty set $\emptyset$. The `IndexMap` therefore
 represents an occupancy model on the reference coordinate: each interval
 stores the set of elements whose field-support extents are active on
@@ -262,11 +262,11 @@ determined by integrating this combined field.
 ## Flow Diagram of OPALX {#sec.opalt.flow-diagram-of-opal-t}
 
 ![Schematic workflow of OPALX's execute
-method.](../../figures/opalt/flowdiagram.png){#fig_OPALTSchemeSimple
+method.](figures/flowdiagram.png){#fig-opaltscheme-simple
 alt="flowdiagram" width="12cm"}
 
-A regular time step in OPALX is sketched in [Figure
-3](#fig_OPALTSchemeSimple). In order to compute the coordinate system
+A regular time step in OPALX is sketched in @fig-opaltscheme-simple. In
+order to compute the coordinate system
 transformation from the reference coordinate system $K_s$ to the local
 coordinate systems $K'_n$ we join the transformation from floor
 coordinate system $K$ to $K'_n$ to the transformation from $K_s$ to $K$.
@@ -276,7 +276,7 @@ resulting quaternions are then converted to the appropriate matrix
 representation before applying the rotation operation onto the particle
 positions and momenta.
 
-As can be seen from [Figure 3](#fig_OPALTSchemeSimple) the integration
+As can be seen from @fig-opaltscheme-simple the integration
 of the trajectories of the particles are integrated and the computation
 of the statistics of the six-dimensional phase space are performed in
 the reference coordinate system.

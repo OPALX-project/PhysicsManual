@@ -9,6 +9,7 @@ book:
     - index.qmd
     - sections/overview/index.qmd
     - sections/coordinate-systems/index.qmd
+    - sections/elements/index.qmd
     - sections/field-solvers/index.qmd
     - sections/beam-beam/index.qmd
     - sections/decay-processes/index.qmd
@@ -26,8 +27,6 @@ format:
     html-math-method: mathjax
     code-fold: false
     theme: cosmo
-    include-in-header:
-      - includes/html-numbering-fix.html
   pdf:
     include-in-header:
       - includes/tikz-preamble.tex

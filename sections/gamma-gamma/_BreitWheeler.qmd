@@ -380,48 +380,28 @@ $0 \le \theta \le 6\,\mathrm{mrad}$, so the stored CAIN angular
 histograms do not integrate to exactly one inside that clipped range.
 
 The fixed-geometry head-on comparisons are shown for the electron in
-[fig-bw-headon-electron-energy](#fig-bw-headon-electron-energy){.cross-reference},
-[fig-bw-headon-electron-theta](#fig-bw-headon-electron-theta){.cross-reference},
-and
-[fig-bw-headon-electron-joint](#fig-bw-headon-electron-joint){.cross-reference},
-and for the positron in
-[fig-bw-headon-positron-energy](#fig-bw-headon-positron-energy){.cross-reference},
-[fig-bw-headon-positron-theta](#fig-bw-headon-positron-theta){.cross-reference},
-and
-[fig-bw-headon-positron-joint](#fig-bw-headon-positron-joint){.cross-reference}.
+@fig-bw-headon-electron-energy, @fig-bw-headon-electron-theta, and
+@fig-bw-headon-electron-joint, and for the positron in
+@fig-bw-headon-positron-energy, @fig-bw-headon-positron-theta, and
+@fig-bw-headon-positron-joint.
 
 The finite-photon-beam comparisons with Gaussian divergence and zero
 energy spread are shown for the electron in
-[fig-bw-finite-electron-energy](#fig-bw-finite-electron-energy){.cross-reference},
-[fig-bw-finite-electron-theta](#fig-bw-finite-electron-theta){.cross-reference},
-and
-[fig-bw-finite-electron-joint](#fig-bw-finite-electron-joint){.cross-reference},
-and for the positron in
-[fig-bw-finite-positron-energy](#fig-bw-finite-positron-energy){.cross-reference},
-[fig-bw-finite-positron-theta](#fig-bw-finite-positron-theta){.cross-reference},
-and
-[fig-bw-finite-positron-joint](#fig-bw-finite-positron-joint){.cross-reference}.
+@fig-bw-finite-electron-energy, @fig-bw-finite-electron-theta, and
+@fig-bw-finite-electron-joint, and for the positron in
+@fig-bw-finite-positron-energy, @fig-bw-finite-positron-theta, and
+@fig-bw-finite-positron-joint.
 
 The finite-photon-beam plus energy-spread comparisons are shown for the
-electron in
-[fig-bw-finite-es-electron-energy](#fig-bw-finite-es-electron-energy){.cross-reference},
-[fig-bw-finite-es-electron-theta](#fig-bw-finite-es-electron-theta){.cross-reference},
-and
-[fig-bw-finite-es-electron-joint](#fig-bw-finite-es-electron-joint){.cross-reference},
-and for the positron in
-[fig-bw-finite-es-positron-energy](#fig-bw-finite-es-positron-energy){.cross-reference},
-[fig-bw-finite-es-positron-theta](#fig-bw-finite-es-positron-theta){.cross-reference},
-and
-[fig-bw-finite-es-positron-joint](#fig-bw-finite-es-positron-joint){.cross-reference}.
+electron in @fig-bw-finite-es-electron-energy,
+@fig-bw-finite-es-electron-theta, and @fig-bw-finite-es-electron-joint,
+and for the positron in @fig-bw-finite-es-positron-energy,
+@fig-bw-finite-es-positron-theta, and @fig-bw-finite-es-positron-joint.
 
 The overlap-restricted comparisons are shown for the electron in
-[fig-bw-overlap-electron-energy](#fig-bw-overlap-electron-energy){.cross-reference}
-and
-[fig-bw-overlap-electron-theta](#fig-bw-overlap-electron-theta){.cross-reference},
-and for the positron in
-[fig-bw-overlap-positron-energy](#fig-bw-overlap-positron-energy){.cross-reference}
-and
-[fig-bw-overlap-positron-theta](#fig-bw-overlap-positron-theta){.cross-reference}.
+@fig-bw-overlap-electron-energy and @fig-bw-overlap-electron-theta, and
+for the positron in @fig-bw-overlap-positron-energy and
+@fig-bw-overlap-positron-theta.
 
 ![Fixed-geometry head-on outgoing electron energy
 spectrum.](figures/reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png){#fig-bw-headon-electron-energy width="82%"}
