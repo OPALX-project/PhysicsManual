@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; γ-γ Physics – OPALX Physics Manual</title>
+<title>8&nbsp; γ-γ Physics – OPALX Physics Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -107,6 +107,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function shiftLeadingInteger(text) {
+    const trimmed = text.trim();
+    if (!trimmed) return text;
+    const parts = trimmed.split(".");
+    const first = Number.parseInt(parts[0], 10);
+    if (!Number.isFinite(first) || first <= 1) return text;
+    parts[0] = String(first - 1);
+    return parts.join(".");
+  }
+
+  document.querySelectorAll(".chapter-number").forEach(function (node) {
+    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
+    const titleText = titleNode ? titleNode.textContent.trim() : "";
+    const current = node.textContent.trim();
+    const value = Number.parseInt(current, 10);
+
+    if (titleText === "Home" && value === 1) {
+      node.textContent = "";
+      return;
+    }
+
+    if (Number.isFinite(value) && value > 1) {
+      node.textContent = String(value - 1);
+    }
+  });
+
+  document.querySelectorAll(".header-section-number").forEach(function (node) {
+    node.textContent = shiftLeadingInteger(node.textContent);
+  });
+
+  const heading = document.querySelector("h1.title .chapter-number");
+  if (heading) {
+    heading.textContent = shiftLeadingInteger(heading.textContent);
+  }
+
+  if (document.title) {
+    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
+      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
+    });
+  }
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -149,7 +193,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/index.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/gamma-gamma/index.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -177,49 +221,55 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/beam-beam/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/decay-processes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/literature/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
   </div>
 </li>
     </ul>
@@ -232,8 +282,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#_full_workflow" id="toc-_full_workflow" class="nav-link active" data-scroll-target="#_full_workflow"><span class="header-section-number">7.1</span> Full Workflow</a></li>
-  <li><a href="#sec-gamma-gamma-linear-compton" id="toc-sec-gamma-gamma-linear-compton" class="nav-link" data-scroll-target="#sec-gamma-gamma-linear-compton"><span class="header-section-number">7.2</span> Linear Compton Benchmark</a>
+  <li><a href="#_full_workflow" id="toc-_full_workflow" class="nav-link active" data-scroll-target="#_full_workflow"><span class="header-section-number">8.1</span> Full Workflow</a></li>
+  <li><a href="#sec-gamma-gamma-linear-compton" id="toc-sec-gamma-gamma-linear-compton" class="nav-link" data-scroll-target="#sec-gamma-gamma-linear-compton"><span class="header-section-number">8.2</span> Linear Compton Benchmark</a>
   <ul class="collapse">
   <li><a href="#sec-ics-scope" id="toc-sec-ics-scope" class="nav-link" data-scroll-target="#sec-ics-scope">Scope</a></li>
   <li><a href="#_physics_models" id="toc-_physics_models" class="nav-link" data-scroll-target="#_physics_models">Physics Models</a></li>
@@ -243,7 +293,7 @@ window.Quarto = {
   <li><a href="#sec-ics-references" id="toc-sec-ics-references" class="nav-link" data-scroll-target="#sec-ics-references">References</a></li>
   <li><a href="#_cain_mapping" id="toc-_cain_mapping" class="nav-link" data-scroll-target="#_cain_mapping">CAIN Mapping</a></li>
   </ul></li>
-  <li><a href="#sec-gamma-gamma-breit-wheeler" id="toc-sec-gamma-gamma-breit-wheeler" class="nav-link" data-scroll-target="#sec-gamma-gamma-breit-wheeler"><span class="header-section-number">7.3</span> Breit-Wheeler Theory</a>
+  <li><a href="#sec-gamma-gamma-breit-wheeler" id="toc-sec-gamma-gamma-breit-wheeler" class="nav-link" data-scroll-target="#sec-gamma-gamma-breit-wheeler"><span class="header-section-number">8.3</span> Breit-Wheeler Theory</a>
   <ul class="collapse">
   <li><a href="#sec-bw-scope" id="toc-sec-bw-scope" class="nav-link" data-scroll-target="#sec-bw-scope">Scope</a></li>
   <li><a href="#_linear_breit_wheeler_kinematics_in_cain" id="toc-_linear_breit_wheeler_kinematics_in_cain" class="nav-link" data-scroll-target="#_linear_breit_wheeler_kinematics_in_cain">Linear Breit-Wheeler Kinematics in CAIN</a></li>
@@ -262,7 +312,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></h1>
 </div>
 
 
@@ -280,16 +330,16 @@ window.Quarto = {
 
 
 <p>This note collects the physics model and benchmarks of the laser and photon functionality in <em>OPALX</em>.</p>
-<section id="_full_workflow" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="_full_workflow"><span class="header-section-number">7.1</span> Full Workflow</h2>
+<section id="_full_workflow" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="_full_workflow"><span class="header-section-number">8.1</span> Full Workflow</h2>
 <p>The top-level driver [generate-gamma-gamma-results.sh] regenerates the full published gamma-gamma benchmark state. It builds the required OPALX benchmark targets, runs the inverse-Compton and Breit-Wheeler physics tests, calls the shared CAIN helper scripts in <code>~/git/cain</code>, and rerenders the physics notes.</p>
 <p>Use it when you want to refresh all benchmark figures and note pages in one pass:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/git/OPALX-project.github.io/gamma-gamma</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./generate-gamma-gamma-results.sh</span> <span class="at">--opalx-build</span> ~/git/opalx-laser/build_openmp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The narrower CAIN-side helpers remain useful when only one of the two physics notes needs to be regenerated.</p>
 </section>
-<section id="sec-gamma-gamma-linear-compton" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="sec-gamma-gamma-linear-compton"><span class="header-section-number">7.2</span> Linear Compton Benchmark</h2>
+<section id="sec-gamma-gamma-linear-compton" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sec-gamma-gamma-linear-compton"><span class="header-section-number">8.2</span> Linear Compton Benchmark</h2>
 <section id="sec-ics-scope" class="level3">
 <h3 class="anchored" data-anchor-id="sec-ics-scope">Scope</h3>
 <p>This note documents the current <em>OPALX</em> validation path for linear inverse Compton scattering in the weak-field regime. The immediate goal is not yet a full tracking implementation, but a CAIN-validated benchmark path for the process</p>
@@ -310,13 +360,13 @@ window.Quarto = {
 <p>For a laser wavelength <span class="math inline">\(\lambda_L\)</span>, the photon energy is</p>
 <p><span id="eq-ics-laser-energy"><span class="math display">\[
 \omega_L = \frac{2 \pi \hbar c}{\lambda_L} .
-\tag{7.1}\]</span></span></p>
+\tag{8.1}\]</span></span></p>
 <p>For an electron with total energy <span class="math inline">\(E_e\)</span> and momentum magnitude <span class="math inline">\(p_e = \sqrt{E_e^2 - m_e^2}\)</span>, the exact forward-scattered photon energy in the <code>90</code> <code>degree</code> benchmark geometry is</p>
 <p><span id="eq-ics-forward-energy"><span class="math display">\[
 \omega_\gamma' =
 \frac{E_e \, \omega_L}
      {\omega_L + \frac{m_e^2}{E_e + p_e}} .
-\tag{7.2}\]</span></span></p>
+\tag{8.2}\]</span></span></p>
 <p>The current OPALX helper uses this numerically stable form directly in the unit benchmark.</p>
 </section>
 <section id="_rest_frame_model" class="level4">
@@ -326,7 +376,7 @@ window.Quarto = {
 \omega_2(\Theta^*) =
 \frac{\omega_1}
      {1 + (\omega_1/m_e)(1 - \cos \Theta^*)} .
-\tag{7.3}\]</span></span></p>
+\tag{8.3}\]</span></span></p>
 <p>The unpolarized Klein-Nishina differential cross section is</p>
 <p><span id="eq-ics-klein-nishina"><span class="math display">\[
 \frac{d\sigma}{d\Omega^*}
@@ -338,12 +388,12 @@ window.Quarto = {
     \frac{\omega_2}{\omega_1}
     - \sin^2 \Theta^*
   \right) .
-\tag{7.4}\]</span></span></p>
+\tag{8.4}\]</span></span></p>
 <p>Changing variables from <span class="math inline">\(\cos\Theta^*\)</span> to <span class="math inline">\(\omega_2\)</span> gives the one-dimensional energy spectrum in the rest frame,</p>
 <p><span id="eq-ics-dsigma-domega"><span class="math display">\[
 \frac{d\sigma}{d\omega_2}
 = 2\pi \frac{d\sigma}{d\Omega^*} \frac{m_e}{\omega_2^2} .
-\tag{7.5}\]</span></span></p>
+\tag{8.5}\]</span></span></p>
 <p>with exact support <span class="math inline">\(\omega_2 \in [\omega_1/(1+2\omega_1/m_e),\,\omega_1]\)</span>.</p>
 <p>The exact total Klein-Nishina cross section can be written with <span class="math inline">\(\kappa = \omega_1/m_e\)</span> as</p>
 <p><span id="eq-ics-total-cross-section"><span class="math display">\[
@@ -356,11 +406,11 @@ window.Quarto = {
   + \frac{\ln(1+2\kappa)}{2\kappa}
   - \frac{1+3\kappa}{(1+2\kappa)^2}
 \right] .
-\tag{7.6}\]</span></span></p>
+\tag{8.6}\]</span></span></p>
 <p>For <span class="math inline">\(\kappa \ll 1\)</span> this approaches the Thomson limit</p>
 <p><span id="eq-ics-thomson"><span class="math display">\[
 \sigma_T = \frac{8\pi}{3} r_e^2 .
-\tag{7.7}\]</span></span></p>
+\tag{8.7}\]</span></span></p>
 </section>
 </section>
 <section id="sec-ics-implemented-opalx-benchmark" class="level3">
@@ -541,16 +591,16 @@ window.Quarto = {
 <p>CAIN evaluates the linear Compton kinematics by boosting the laser photon into the electron rest frame, applying the recoil there, and boosting the scattered photon back to the laboratory frame. In CAIN’s <code>LNCPGN</code>, the incoming photon energy in the electron rest frame is</p>
 <p><span id="eq-ics-cain-w1"><span class="math display">\[
 \omega_1 = \gamma \, \omega_L \, (1 - \beta \cos \alpha) .
-\tag{7.8}\]</span></span></p>
+\tag{8.8}\]</span></span></p>
 <p>For the present benchmark <span class="math inline">\(\cos\alpha = 0\)</span>, so</p>
 <p><span id="eq-ics-cain-w1-90deg"><span class="math display">\[
 \omega_1 = \gamma \, \omega_L .
-\tag{7.9}\]</span></span></p>
+\tag{8.9}\]</span></span></p>
 <p>This is the CAIN mapping reproduced by the current OPALX helper and benchmark path.</p>
 </section>
 </section>
-<section id="sec-gamma-gamma-breit-wheeler" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="sec-gamma-gamma-breit-wheeler"><span class="header-section-number">7.3</span> Breit-Wheeler Theory</h2>
+<section id="sec-gamma-gamma-breit-wheeler" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sec-gamma-gamma-breit-wheeler"><span class="header-section-number">8.3</span> Breit-Wheeler Theory</h2>
 <section id="sec-bw-scope" class="level3">
 <h3 class="anchored" data-anchor-id="sec-bw-scope">Scope</h3>
 <p>This note describes the minimum Breit-Wheeler physics model needed for the next <em>OPALX</em> benchmark.</p>
@@ -579,18 +629,18 @@ window.Quarto = {
 <p>The two-photon invariant used in CAIN is</p>
 <p><span id="eq-bw-cain-s0"><span class="math display">\[
 S_0 = 2 W_1 W_2 (1 - Z_0) .
-\tag{7.10}\]</span></span></p>
+\tag{8.10}\]</span></span></p>
 <p>Pair creation is kinematically allowed only if</p>
 <p><span id="eq-bw-threshold"><span class="math display">\[
 S_0 \ge 4 m_e^2 .
-\tag{7.11}\]</span></span></p>
+\tag{8.11}\]</span></span></p>
 <p>This threshold appears directly in <code>LNBWGN</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode fortran code-with-copy"><code class="sourceCode fortranfixed"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>S0<span class="kw">=</span><span class="dv">2</span><span class="kw">*</span>W1<span class="kw">*</span>W2<span class="kw">*</span>(<span class="dv">1</span><span class="kw">-</span>Z0)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">IF</span> (<span class="dv">4</span><span class="kw">*</span>M<span class="kw">**</span><span class="fl">2.</span>GT.S0) <span class="kw">GOTO</span> <span class="dv">900</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>In a head-on geometry, <span class="math inline">\(Z_0 = -1\)</span>, so the threshold reduces to</p>
 <p><span id="eq-bw-headon-threshold"><span class="math display">\[
 W_1 W_2 \ge m_e^2 .
-\tag{7.12}\]</span></span></p>
+\tag{8.12}\]</span></span></p>
 <p>This is the cleanest geometry for the first benchmark.</p>
 <p>CAIN constructs the center-of-momentum boost velocity from the two incoming photon momenta and then samples the final-state scattering variables in that frame.</p>
 <p>The code introduces a transformed photon energy <span class="math inline">\(W\)</span> and several auxiliary variables:</p>
@@ -600,25 +650,25 @@ W = \gamma W_1 V_R,
 X = \frac{\sqrt{W^2 - m_e^2}}{W},
 \qquad
 X_1 = \frac{m_e^2}{W^2 + W\sqrt{W^2 - m_e^2}} .
-\tag{7.13}\]</span></span></p>
+\tag{8.13}\]</span></span></p>
 <p>The random variable <span class="math inline">\(Y\)</span> is used to generate the CM scattering angle through</p>
 <p><span id="eq-bw-cain-costh"><span class="math display">\[
 \cos\theta = 1 - 2Y .
-\tag{7.14}\]</span></span></p>
+\tag{8.14}\]</span></span></p>
 <p>The resulting Mandelstam-like combinations in the CAIN implementation are</p>
 <p><span id="eq-bw-cain-sm-um"><span class="math display">\[
 s_m = \frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)-1\right],
 \qquad
 u_m = -\frac{2m_e^2}{(1+X)X_1}\left[X(1-2Y)+1\right] .
-\tag{7.15}\]</span></span></p>
+\tag{8.15}\]</span></span></p>
 <p>CAIN then builds the angular kernel from</p>
 <p><span id="eq-bw-cain-costh1"><span class="math display">\[
 \cos\theta_1 = 1 + 2m_e^2\left(\frac{1}{u_m} + \frac{1}{s_m}\right)
-\tag{7.16}\]</span></span></p>
+\tag{8.16}\]</span></span></p>
 <p>and</p>
 <p><span id="eq-bw-cain-d"><span class="math display">\[
 D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
-\tag{7.17}\]</span></span></p>
+\tag{8.17}\]</span></span></p>
 <p>For unpolarized incoming photons, the acceptance weight reduces to the unpolarized part of the full CAIN expression.</p>
 </section>
 <section id="_opalx_validation_path" class="level3">
@@ -792,7 +842,7 @@ D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
 <img src="figures/reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.1: Fixed-geometry head-on outgoing electron energy spectrum.
+Figure&nbsp;8.1: Fixed-geometry head-on outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -802,7 +852,7 @@ Figure&nbsp;7.1: Fixed-geometry head-on outgoing electron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.2: Fixed-geometry head-on outgoing electron polar-angle spectrum.
+Figure&nbsp;8.2: Fixed-geometry head-on outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -812,7 +862,7 @@ Figure&nbsp;7.2: Fixed-geometry head-on outgoing electron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.3: Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
+Figure&nbsp;8.3: Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -822,7 +872,7 @@ Figure&nbsp;7.3: Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.4: Finite-photon-beam outgoing electron energy spectrum.
+Figure&nbsp;8.4: Finite-photon-beam outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -832,7 +882,7 @@ Figure&nbsp;7.4: Finite-photon-beam outgoing electron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.5: Finite-photon-beam outgoing electron polar-angle spectrum.
+Figure&nbsp;8.5: Finite-photon-beam outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -842,7 +892,7 @@ Figure&nbsp;7.5: Finite-photon-beam outgoing electron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.6: Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
+Figure&nbsp;8.6: Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -852,7 +902,7 @@ Figure&nbsp;7.6: Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<s
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.7: Finite-photon-beam plus energy-spread outgoing electron energy spectrum.
+Figure&nbsp;8.7: Finite-photon-beam plus energy-spread outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -862,7 +912,7 @@ Figure&nbsp;7.7: Finite-photon-beam plus energy-spread outgoing electron energy 
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.8: Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.
+Figure&nbsp;8.8: Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -872,7 +922,7 @@ Figure&nbsp;7.8: Finite-photon-beam plus energy-spread outgoing electron polar-a
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.9: Finite-photon-beam plus energy-spread outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
+Figure&nbsp;8.9: Finite-photon-beam plus energy-spread outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -882,7 +932,7 @@ Figure&nbsp;7.9: Finite-photon-beam plus energy-spread outgoing electron joint E
 <img src="figures/reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.10: Overlap-restricted outgoing electron energy spectrum.
+Figure&nbsp;8.10: Overlap-restricted outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -892,7 +942,7 @@ Figure&nbsp;7.10: Overlap-restricted outgoing electron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.11: Overlap-restricted outgoing electron polar-angle spectrum.
+Figure&nbsp;8.11: Overlap-restricted outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -902,7 +952,7 @@ Figure&nbsp;7.11: Overlap-restricted outgoing electron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.12: Fixed-geometry head-on outgoing positron energy spectrum.
+Figure&nbsp;8.12: Fixed-geometry head-on outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -912,7 +962,7 @@ Figure&nbsp;7.12: Fixed-geometry head-on outgoing positron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.13: Fixed-geometry head-on outgoing positron polar-angle spectrum.
+Figure&nbsp;8.13: Fixed-geometry head-on outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -922,7 +972,7 @@ Figure&nbsp;7.13: Fixed-geometry head-on outgoing positron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.14: Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
+Figure&nbsp;8.14: Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -932,7 +982,7 @@ Figure&nbsp;7.14: Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>-
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.15: Finite-photon-beam outgoing positron energy spectrum.
+Figure&nbsp;8.15: Finite-photon-beam outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -942,7 +992,7 @@ Figure&nbsp;7.15: Finite-photon-beam outgoing positron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.16: Finite-photon-beam outgoing positron polar-angle spectrum.
+Figure&nbsp;8.16: Finite-photon-beam outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -952,7 +1002,7 @@ Figure&nbsp;7.16: Finite-photon-beam outgoing positron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.17: Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
+Figure&nbsp;8.17: Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -962,7 +1012,7 @@ Figure&nbsp;7.17: Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.18: Finite-photon-beam plus energy-spread outgoing positron energy spectrum.
+Figure&nbsp;8.18: Finite-photon-beam plus energy-spread outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -972,7 +1022,7 @@ Figure&nbsp;7.18: Finite-photon-beam plus energy-spread outgoing positron energy
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.19: Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.
+Figure&nbsp;8.19: Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -982,7 +1032,7 @@ Figure&nbsp;7.19: Finite-photon-beam plus energy-spread outgoing positron polar-
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.20: Finite-photon-beam plus energy-spread outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
+Figure&nbsp;8.20: Finite-photon-beam plus energy-spread outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -992,7 +1042,7 @@ Figure&nbsp;7.20: Finite-photon-beam plus energy-spread outgoing positron joint 
 <img src="figures/reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.21: Overlap-restricted outgoing positron energy spectrum.
+Figure&nbsp;8.21: Overlap-restricted outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1002,7 +1052,7 @@ Figure&nbsp;7.21: Overlap-restricted outgoing positron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.22: Overlap-restricted outgoing positron polar-angle spectrum.
+Figure&nbsp;8.22: Overlap-restricted outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1494,12 +1544,12 @@ Figure&nbsp;7.22: Overlap-restricted outgoing positron polar-angle spectrum.
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../sections/beam-matter-interactions/index.html" class="pagination-link" aria-label="Beam Matter Interactions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../sections/literature/index.html" class="pagination-link" aria-label="Literature">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literature</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

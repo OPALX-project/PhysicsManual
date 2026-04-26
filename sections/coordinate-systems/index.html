@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Coordinate Systems – OPALX Physics Manual</title>
+<title>3&nbsp; Coordinate Systems – OPALX Physics Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -53,7 +53,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../sections/field-solvers/index.html" rel="next">
-<link href="../../index.html" rel="prev">
+<link href="../../sections/overview/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -91,6 +91,50 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function shiftLeadingInteger(text) {
+    const trimmed = text.trim();
+    if (!trimmed) return text;
+    const parts = trimmed.split(".");
+    const first = Number.parseInt(parts[0], 10);
+    if (!Number.isFinite(first) || first <= 1) return text;
+    parts[0] = String(first - 1);
+    return parts.join(".");
+  }
+
+  document.querySelectorAll(".chapter-number").forEach(function (node) {
+    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
+    const titleText = titleNode ? titleNode.textContent.trim() : "";
+    const current = node.textContent.trim();
+    const value = Number.parseInt(current, 10);
+
+    if (titleText === "Home" && value === 1) {
+      node.textContent = "";
+      return;
+    }
+
+    if (Number.isFinite(value) && value > 1) {
+      node.textContent = String(value - 1);
+    }
+  });
+
+  document.querySelectorAll(".header-section-number").forEach(function (node) {
+    node.textContent = shiftLeadingInteger(node.textContent);
+  });
+
+  const heading = document.querySelector("h1.title .chapter-number");
+  if (heading) {
+    heading.textContent = shiftLeadingInteger(heading.textContent);
+  }
+
+  if (document.title) {
+    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
+      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
+    });
+  }
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -133,7 +177,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/coordinate-systems/index.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/coordinate-systems/index.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -161,49 +205,55 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/beam-beam/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/decay-processes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/literature/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
   </div>
 </li>
     </ul>
@@ -216,13 +266,13 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#quick-reader" id="toc-quick-reader" class="nav-link active" data-scroll-target="#quick-reader"><span class="header-section-number">2.1</span> Quick Reader</a>
+  <li><a href="#quick-reader" id="toc-quick-reader" class="nav-link active" data-scroll-target="#quick-reader"><span class="header-section-number">3.1</span> Quick Reader</a>
   <ul class="collapse">
   <li><a href="#symbols-and-notation" id="toc-symbols-and-notation" class="nav-link" data-scroll-target="#symbols-and-notation">Symbols and notation</a></li>
   <li><a href="#a-geometric-viewpoint" id="toc-a-geometric-viewpoint" class="nav-link" data-scroll-target="#a-geometric-viewpoint">A geometric viewpoint</a></li>
   <li><a href="#why-the-independent-variable-matters" id="toc-why-the-independent-variable-matters" class="nav-link" data-scroll-target="#why-the-independent-variable-matters">Why the independent variable matters</a></li>
   </ul></li>
-  <li><a href="#geometry-design-principles" id="toc-geometry-design-principles" class="nav-link" data-scroll-target="#geometry-design-principles"><span class="header-section-number">2.2</span> Geometry Design Principles</a>
+  <li><a href="#geometry-design-principles" id="toc-geometry-design-principles" class="nav-link" data-scroll-target="#geometry-design-principles"><span class="header-section-number">3.2</span> Geometry Design Principles</a>
   <ul class="collapse">
   <li><a href="#forest-hirata-bundles-versus-differential-geometry" id="toc-forest-hirata-bundles-versus-differential-geometry" class="nav-link" data-scroll-target="#forest-hirata-bundles-versus-differential-geometry">Forest-Hirata bundles versus differential geometry</a></li>
   <li><a href="#what-the-current-opalx-manual-already-provides" id="toc-what-the-current-opalx-manual-already-provides" class="nav-link" data-scroll-target="#what-the-current-opalx-manual-already-provides">What the current OPALX manual already provides</a></li>
@@ -231,7 +281,7 @@ window.Quarto = {
   <li><a href="#two-complementary-coordinate-charts" id="toc-two-complementary-coordinate-charts" class="nav-link" data-scroll-target="#two-complementary-coordinate-charts">Two complementary coordinate charts</a></li>
   <li><a href="#minimal-front-end-semantics" id="toc-minimal-front-end-semantics" class="nav-link" data-scroll-target="#minimal-front-end-semantics">Minimal front-end semantics</a></li>
   </ul></li>
-  <li><a href="#geometric-background" id="toc-geometric-background" class="nav-link" data-scroll-target="#geometric-background"><span class="header-section-number">2.3</span> Geometric Background</a>
+  <li><a href="#geometric-background" id="toc-geometric-background" class="nav-link" data-scroll-target="#geometric-background"><span class="header-section-number">3.3</span> Geometric Background</a>
   <ul class="collapse">
   <li><a href="#the-bookkeeping-base" id="toc-the-bookkeeping-base" class="nav-link" data-scroll-target="#the-bookkeeping-base">The bookkeeping base</a></li>
   <li><a href="#local-charts-and-supports" id="toc-local-charts-and-supports" class="nav-link" data-scroll-target="#local-charts-and-supports">Local charts and supports</a></li>
@@ -246,7 +296,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></h1>
 </div>
 
 
@@ -264,8 +314,8 @@ window.Quarto = {
 
 
 <p>This chapter collects the current coordinate-system and placement language for OPALX. It is assembled from the older LaTeX note in <code>opalx/PhysicsManual/opalx-elemts-and-frames/opalx_element_placement.tex</code>, specifically its section 1, section 5, and Appendix A.</p>
-<section id="quick-reader" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="quick-reader"><span class="header-section-number">2.1</span> Quick Reader</h2>
+<section id="quick-reader" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="quick-reader"><span class="header-section-number">3.1</span> Quick Reader</h2>
 <section id="symbols-and-notation" class="level3">
 <h3 class="anchored" data-anchor-id="symbols-and-notation">Symbols and notation</h3>
 <p>To keep the formulas uniform, this chapter uses the following notation.</p>
@@ -370,8 +420,8 @@ window.Quarto = {
 <p>should be treated as separate concepts, even if they are often conflated in traditional <span class="math inline">\(s\)</span>-based lattice descriptions.</p>
 </section>
 </section>
-<section id="geometry-design-principles" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="geometry-design-principles"><span class="header-section-number">2.2</span> Geometry Design Principles</h2>
+<section id="geometry-design-principles" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="geometry-design-principles"><span class="header-section-number">3.2</span> Geometry Design Principles</h2>
 <section id="forest-hirata-bundles-versus-differential-geometry" class="level3">
 <h3 class="anchored" data-anchor-id="forest-hirata-bundles-versus-differential-geometry">Forest-Hirata bundles versus differential geometry</h3>
 <p>The Forest-Hirata appendix gives a clean abstract reformulation of local element placement <span class="citation" data-cites="foresthirata">(<a href="../literature/index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>. The lattice is treated as a fibre bundle over the machine loop; local neighbourhoods are element intervals; the fibres may be coordinate frames, particle coordinates, maps, or envelopes; and the matching block between local descriptions is a transition function <span class="math inline">\(g_{ij}\in G\)</span>.</p>
@@ -507,8 +557,8 @@ T(p_i^{\mathrm{out}})=T_i(t)\,B_i .
 </table>
 </section>
 </section>
-<section id="geometric-background" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="geometric-background"><span class="header-section-number">2.3</span> Geometric Background</h2>
+<section id="geometric-background" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="geometric-background"><span class="header-section-number">3.3</span> Geometric Background</h2>
 <p>This section records the small amount of differential-geometric and fibre-bundle language used in the placement discussion. The point, following Forest and Hirata <span class="citation" data-cites="foresthirata">(<a href="../literature/index.html#ref-foresthirata" role="doc-biblioref">Forest and Hirata 1992</a>)</span>, is to separate the placed object from any one chosen coordinate description.</p>
 <section id="the-bookkeeping-base" class="level3">
 <h3 class="anchored" data-anchor-id="the-bookkeeping-base">The bookkeeping base</h3>
@@ -982,13 +1032,13 @@ Skowronski, P. K., F. Schmidt, and E. Forest. 2007. <em>Advances in MAD-x Using 
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../index.html" class="pagination-link" aria-label="Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span>
+      <a href="../../sections/overview/index.html" class="pagination-link" aria-label="Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../sections/field-solvers/index.html" class="pagination-link" aria-label="Field Solvers">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Beam Matter Interactions – OPALX Physics Manual</title>
+<title>7&nbsp; Beam Matter Interactions – OPALX Physics Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,6 +72,50 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function shiftLeadingInteger(text) {
+    const trimmed = text.trim();
+    if (!trimmed) return text;
+    const parts = trimmed.split(".");
+    const first = Number.parseInt(parts[0], 10);
+    if (!Number.isFinite(first) || first <= 1) return text;
+    parts[0] = String(first - 1);
+    return parts.join(".");
+  }
+
+  document.querySelectorAll(".chapter-number").forEach(function (node) {
+    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
+    const titleText = titleNode ? titleNode.textContent.trim() : "";
+    const current = node.textContent.trim();
+    const value = Number.parseInt(current, 10);
+
+    if (titleText === "Home" && value === 1) {
+      node.textContent = "";
+      return;
+    }
+
+    if (Number.isFinite(value) && value > 1) {
+      node.textContent = String(value - 1);
+    }
+  });
+
+  document.querySelectorAll(".header-section-number").forEach(function (node) {
+    node.textContent = shiftLeadingInteger(node.textContent);
+  });
+
+  const heading = document.querySelector("h1.title .chapter-number");
+  if (heading) {
+    heading.textContent = shiftLeadingInteger(heading.textContent);
+  }
+
+  if (document.title) {
+    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
+      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
+    });
+  }
+});
+</script>
 
 
 </head>
@@ -85,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/beam-matter-interactions/index.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/beam-matter-interactions/index.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -113,49 +157,55 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/beam-beam/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/decay-processes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/literature/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
   </div>
 </li>
     </ul>
@@ -171,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></h1>
 </div>
 
 
@@ -595,12 +645,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../sections/decay-processes/index.html" class="pagination-link" aria-label="Decay Processes">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Decay Processes</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Decay Processes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../sections/gamma-gamma/index.html" class="pagination-link" aria-label="γ-γ Physics">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

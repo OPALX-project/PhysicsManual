@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./sections/coordinate-systems/index.html" rel="next">
+<link href="./sections/overview/index.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,36 +71,51 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function shiftLeadingInteger(text) {
+    const trimmed = text.trim();
+    if (!trimmed) return text;
+    const parts = trimmed.split(".");
+    const first = Number.parseInt(parts[0], 10);
+    if (!Number.isFinite(first) || first <= 1) return text;
+    parts[0] = String(first - 1);
+    return parts.join(".");
   }
-}
-window.Quarto = {
-  typesetMath
-};
+
+  document.querySelectorAll(".chapter-number").forEach(function (node) {
+    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
+    const titleText = titleNode ? titleNode.textContent.trim() : "";
+    const current = node.textContent.trim();
+    const value = Number.parseInt(current, 10);
+
+    if (titleText === "Home" && value === 1) {
+      node.textContent = "";
+      return;
+    }
+
+    if (Number.isFinite(value) && value > 1) {
+      node.textContent = String(value - 1);
+    }
+  });
+
+  document.querySelectorAll(".header-section-number").forEach(function (node) {
+    node.textContent = shiftLeadingInteger(node.textContent);
+  });
+
+  const heading = document.querySelector("h1.title .chapter-number");
+  if (heading) {
+    heading.textContent = shiftLeadingInteger(heading.textContent);
+  }
+
+  if (document.title) {
+    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
+      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
+    });
+  }
+});
 </script>
+
 
 </head>
 
@@ -113,7 +128,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -141,49 +156,55 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sections/overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/beam-beam/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/decay-processes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/literature/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
   </div>
 </li>
     </ul>
@@ -191,18 +212,8 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a>
-  <ul class="collapse">
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope"><span class="header-section-number">1.1</span> Scope</a></li>
-  <li><a href="#example-equation" id="toc-example-equation" class="nav-link" data-scroll-target="#example-equation"><span class="header-section-number">1.2</span> Example equation</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -227,29 +238,12 @@ window.Quarto = {
 </header>
 
 
-<section id="overview" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Overview</h1>
-<p>The OPALX Physics Manual documents the physical models, numerical assumptions, and benchmark problems used in OPALX.</p>
-<section id="scope" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="scope"><span class="header-section-number">1.1</span> Scope</h2>
-<ul>
-<li>electromagnetic interactions</li>
-<li>photon production processes</li>
-<li>gamma-gamma and laser-electron benchmarks</li>
-<li>implementation assumptions</li>
-<li>validation examples</li>
-</ul>
-</section>
-<section id="example-equation" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="example-equation"><span class="header-section-number">1.2</span> Example equation</h2>
-<p><span id="eq-mandelstam-s"><span class="math display">\[
-s = 2 E_1 E_2 (1 - \cos \theta),
-\tag{1.1}\]</span></span></p>
-<p>See <a href="#eq-mandelstam-s" class="quarto-xref">Equation&nbsp;<span>1.1</span></a> for reference.</p>
+<p>OPALX is an open-source, exascale-ready, performance-portable accelerator simulation framework.</p>
+<p>The OPALX Physics Manual collects the underlying theory, numerical models, and benchmark problems used throughout the code base.</p>
+<p>Here you can find the <a href="https://opalx-project.github.io/Manual/">OPALX USer Manual</a>.</p>
+<p>The source code is locate in <a href="https://github.com/OPALX-project/OPALX">OPALX’s Git Repository</a>.</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -656,8 +650,8 @@ s = 2 E_1 E_2 (1 - \cos \theta),
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./sections/coordinate-systems/index.html" class="pagination-link" aria-label="Coordinate Systems">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./sections/overview/index.html" class="pagination-link" aria-label="Overview">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
