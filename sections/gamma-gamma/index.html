@@ -107,50 +107,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  function shiftLeadingInteger(text) {
-    const trimmed = text.trim();
-    if (!trimmed) return text;
-    const parts = trimmed.split(".");
-    const first = Number.parseInt(parts[0], 10);
-    if (!Number.isFinite(first) || first <= 1) return text;
-    parts[0] = String(first - 1);
-    return parts.join(".");
-  }
-
-  document.querySelectorAll(".chapter-number").forEach(function (node) {
-    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
-    const titleText = titleNode ? titleNode.textContent.trim() : "";
-    const current = node.textContent.trim();
-    const value = Number.parseInt(current, 10);
-
-    if (titleText === "Home" && value === 1) {
-      node.textContent = "";
-      return;
-    }
-
-    if (Number.isFinite(value) && value > 1) {
-      node.textContent = String(value - 1);
-    }
-  });
-
-  document.querySelectorAll(".header-section-number").forEach(function (node) {
-    node.textContent = shiftLeadingInteger(node.textContent);
-  });
-
-  const heading = document.querySelector("h1.title .chapter-number");
-  if (heading) {
-    heading.textContent = shiftLeadingInteger(heading.textContent);
-  }
-
-  if (document.title) {
-    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
-      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
-    });
-  }
-});
-</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -221,19 +177,25 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/overview/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/elements/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -473,71 +435,115 @@ window.Quarto = {
 <li><p><label><input type="checkbox" checked="">overlap-restricted finite-beam angle spectrum: mean difference about <code>0.084%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0135</code></label></p></li>
 </ul>
 <p>Single-electron overlays:</p>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Weak-field 90-degree linear-Compton photon energy spectrum. The figure compares the CAIN reference, the OPALX deterministic benchmark, and the OPALX Monte Carlo benchmark for E<sub>e</sub> = 1 GeV, λ<sub>L</sub> = 1030 nm, and ξ = 0.2955.</figcaption>
+<div id="fig-ics-weak-energy" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-weak-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-weak-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Weak-field 90-degree linear-Compton photon energy spectrum. The figure compares the CAIN reference, the OPALX deterministic benchmark, and the OPALX Monte Carlo benchmark for E<sub>e</sub> = 1 GeV, λ<sub>L</sub> = 1030 nm, and ξ = 0.2955.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-theta-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Weak-field 90-degree linear-Compton photon laboratory polar-angle spectrum. The figure compares the CAIN reference, the OPALX deterministic benchmark, and the OPALX Monte Carlo benchmark on the common angular histogram grid.</figcaption>
+<div id="fig-ics-weak-theta" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-weak-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-theta-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-weak-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Weak-field 90-degree linear-Compton photon laboratory polar-angle spectrum. The figure compares the CAIN reference, the OPALX deterministic benchmark, and the OPALX Monte Carlo benchmark on the common angular histogram grid.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="100%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-joint-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Weak-field 90-degree linear-Compton joint photon spectrum. The panels show the CAIN reference, the OPALX deterministic benchmark, and the OPALX Monte Carlo E<sub>γ</sub> versus θ<sub>γ</sub> density on the common 2D grid.</figcaption>
+<div id="fig-ics-weak-joint" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-weak-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-joint-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-weak-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Weak-field 90-degree linear-Compton joint photon spectrum. The panels show the CAIN reference, the OPALX deterministic benchmark, and the OPALX Monte Carlo E<sub>γ</sub> versus θ<sub>γ</sub> density on the common 2D grid.
+</figcaption>
 </figure>
 </div>
 <p>Finite-beam overlays:</p>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Finite-beam linear-Compton photon energy spectrum for the benchmark beam with σ<sub>x</sub> = σ<sub>y</sub> = 1 mm and σ<sub>x’</sub> = σ<sub>y’</sub> = 1 mrad. The figure compares CAIN and the OPALX Monte Carlo benchmark.</figcaption>
+<div id="fig-ics-finite-energy" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-finite-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-finite-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: Finite-beam linear-Compton photon energy spectrum for the benchmark beam with σ<sub>x</sub> = σ<sub>y</sub> = 1 mm and σ<sub>x’</sub> = σ<sub>y’</sub> = 1 mrad. The figure compares CAIN and the OPALX Monte Carlo benchmark.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-theta-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Finite-beam linear-Compton photon laboratory polar-angle spectrum for the same benchmark beam. The figure compares CAIN and the OPALX Monte Carlo benchmark on the common angular histogram grid.</figcaption>
+<div id="fig-ics-finite-theta" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-finite-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-theta-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-finite-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: Finite-beam linear-Compton photon laboratory polar-angle spectrum for the same benchmark beam. The figure compares CAIN and the OPALX Monte Carlo benchmark on the common angular histogram grid.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-energy-spread-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Finite-beam linear-Compton photon energy spectrum with additional electron-beam relative energy spread σ<sub>E</sub>/E = 1e-3. The figure compares CAIN and the OPALX Monte Carlo benchmark.</figcaption>
+<div id="fig-ics-finite-es-energy" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-finite-es-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-energy-spread-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-finite-es-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: Finite-beam linear-Compton photon energy spectrum with additional electron-beam relative energy spread σ<sub>E</sub>/E = 1e-3. The figure compares CAIN and the OPALX Monte Carlo benchmark.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-energy-spread-theta-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Finite-beam linear-Compton photon laboratory polar-angle spectrum with additional electron-beam relative energy spread σ<sub>E</sub>/E = 1e-3. The figure compares CAIN and the OPALX Monte Carlo benchmark.</figcaption>
+<div id="fig-ics-finite-es-theta" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-finite-es-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-energy-spread-theta-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-finite-es-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.7: Finite-beam linear-Compton photon laboratory polar-angle spectrum with additional electron-beam relative energy spread σ<sub>E</sub>/E = 1e-3. The figure compares CAIN and the OPALX Monte Carlo benchmark.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="100%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-joint-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Finite-beam joint linear-Compton photon spectrum for the benchmark beam with σ<sub>x</sub> = σ<sub>y</sub> = 1 mm and σ<sub>x’</sub> = σ<sub>y’</sub> = 1 mrad. The panels compare the CAIN reference and the OPALX Monte Carlo E<sub>γ</sub> versus θ<sub>γ</sub> density on the common 2D grid.</figcaption>
+<div id="fig-ics-finite-joint" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-finite-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-joint-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-finite-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.8: Finite-beam joint linear-Compton photon spectrum for the benchmark beam with σ<sub>x</sub> = σ<sub>y</sub> = 1 mm and σ<sub>x’</sub> = σ<sub>y’</sub> = 1 mrad. The panels compare the CAIN reference and the OPALX Monte Carlo E<sub>γ</sub> versus θ<sub>γ</sub> density on the common 2D grid.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="100%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-energy-spread-joint-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Finite-beam joint linear-Compton photon spectrum with additional electron-beam relative energy spread σ<sub>E</sub>/E = 1e-3. The panels compare the CAIN reference and the OPALX Monte Carlo E<sub>γ</sub> versus θ<sub>γ</sub> density on the common 2D grid.</figcaption>
+<div id="fig-ics-finite-es-joint" class="quarto-float quarto-figure quarto-figure-center anchored" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-finite-es-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-energy-spread-joint-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-finite-es-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.9: Finite-beam joint linear-Compton photon spectrum with additional electron-beam relative energy spread σ<sub>E</sub>/E = 1e-3. The panels compare the CAIN reference and the OPALX Monte Carlo E<sub>γ</sub> versus θ<sub>γ</sub> density on the common 2D grid.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-overlap-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Overlap-restricted finite-beam linear-Compton photon energy spectrum. The benchmark keeps the same finite beam and conditions the interaction on the beam-laser overlap through the benchmark Rayleigh and pulse-length scales. The figure compares CAIN and the OPALX Monte Carlo benchmark.</figcaption>
+<div id="fig-ics-overlap-energy" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-overlap-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-overlap-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-overlap-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.10: Overlap-restricted finite-beam linear-Compton photon energy spectrum. The benchmark keeps the same finite beam and conditions the interaction on the beam-laser overlap through the benchmark Rayleigh and pulse-length scales. The figure compares CAIN and the OPALX Monte Carlo benchmark.
+</figcaption>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center" width="82%">
-<figure class="figure">
-<p><img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-overlap-theta-comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Overlap-restricted finite-beam linear-Compton photon laboratory polar-angle spectrum for the same overlap-conditioned benchmark. The figure compares CAIN and the OPALX Monte Carlo benchmark on the common angular histogram grid.</figcaption>
+<div id="fig-ics-overlap-theta" class="quarto-float quarto-figure quarto-figure-center anchored" width="82%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ics-overlap-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/reference-data/linear-compton-90deg-xi029-finite-beam-overlap-theta-comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ics-overlap-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.11: Overlap-restricted finite-beam linear-Compton photon laboratory polar-angle spectrum for the same overlap-conditioned benchmark. The figure compares CAIN and the OPALX Monte Carlo benchmark on the common angular histogram grid.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -832,17 +838,17 @@ D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
 <li><p><label><input type="checkbox" checked="">angle spectrum with photon-beam relative energy spread <code>1.0e-3</code>: mean-angle difference about <code>2.59%</code>, <span class="math inline">\(L_1\)</span> about <code>0.0721</code></label></p></li>
 </ul>
 <p>The finite-photon-beam angle benchmarks are intentionally windowed to <span class="math inline">\(0 \le \theta \le 6\,\mathrm{mrad}\)</span>, so the stored CAIN angular histograms do not integrate to exactly one inside that clipped range.</p>
-<p>The fixed-geometry head-on comparisons are shown for the electron in <a href="#fig-bw-headon-electron-energy" class="cross-reference">fig-bw-headon-electron-energy</a>, <a href="#fig-bw-headon-electron-theta" class="cross-reference">fig-bw-headon-electron-theta</a>, and <a href="#fig-bw-headon-electron-joint" class="cross-reference">fig-bw-headon-electron-joint</a>, and for the positron in <a href="#fig-bw-headon-positron-energy" class="cross-reference">fig-bw-headon-positron-energy</a>, <a href="#fig-bw-headon-positron-theta" class="cross-reference">fig-bw-headon-positron-theta</a>, and <a href="#fig-bw-headon-positron-joint" class="cross-reference">fig-bw-headon-positron-joint</a>.</p>
-<p>The finite-photon-beam comparisons with Gaussian divergence and zero energy spread are shown for the electron in <a href="#fig-bw-finite-electron-energy" class="cross-reference">fig-bw-finite-electron-energy</a>, <a href="#fig-bw-finite-electron-theta" class="cross-reference">fig-bw-finite-electron-theta</a>, and <a href="#fig-bw-finite-electron-joint" class="cross-reference">fig-bw-finite-electron-joint</a>, and for the positron in <a href="#fig-bw-finite-positron-energy" class="cross-reference">fig-bw-finite-positron-energy</a>, <a href="#fig-bw-finite-positron-theta" class="cross-reference">fig-bw-finite-positron-theta</a>, and <a href="#fig-bw-finite-positron-joint" class="cross-reference">fig-bw-finite-positron-joint</a>.</p>
-<p>The finite-photon-beam plus energy-spread comparisons are shown for the electron in <a href="#fig-bw-finite-es-electron-energy" class="cross-reference">fig-bw-finite-es-electron-energy</a>, <a href="#fig-bw-finite-es-electron-theta" class="cross-reference">fig-bw-finite-es-electron-theta</a>, and <a href="#fig-bw-finite-es-electron-joint" class="cross-reference">fig-bw-finite-es-electron-joint</a>, and for the positron in <a href="#fig-bw-finite-es-positron-energy" class="cross-reference">fig-bw-finite-es-positron-energy</a>, <a href="#fig-bw-finite-es-positron-theta" class="cross-reference">fig-bw-finite-es-positron-theta</a>, and <a href="#fig-bw-finite-es-positron-joint" class="cross-reference">fig-bw-finite-es-positron-joint</a>.</p>
-<p>The overlap-restricted comparisons are shown for the electron in <a href="#fig-bw-overlap-electron-energy" class="cross-reference">fig-bw-overlap-electron-energy</a> and <a href="#fig-bw-overlap-electron-theta" class="cross-reference">fig-bw-overlap-electron-theta</a>, and for the positron in <a href="#fig-bw-overlap-positron-energy" class="cross-reference">fig-bw-overlap-positron-energy</a> and <a href="#fig-bw-overlap-positron-theta" class="cross-reference">fig-bw-overlap-positron-theta</a>.</p>
+<p>The fixed-geometry head-on comparisons are shown for the electron in <a href="#fig-bw-headon-electron-energy" class="quarto-xref">Figure&nbsp;<span>8.12</span></a>, <a href="#fig-bw-headon-electron-theta" class="quarto-xref">Figure&nbsp;<span>8.13</span></a>, and <a href="#fig-bw-headon-electron-joint" class="quarto-xref">Figure&nbsp;<span>8.14</span></a>, and for the positron in <a href="#fig-bw-headon-positron-energy" class="quarto-xref">Figure&nbsp;<span>8.23</span></a>, <a href="#fig-bw-headon-positron-theta" class="quarto-xref">Figure&nbsp;<span>8.24</span></a>, and <a href="#fig-bw-headon-positron-joint" class="quarto-xref">Figure&nbsp;<span>8.25</span></a>.</p>
+<p>The finite-photon-beam comparisons with Gaussian divergence and zero energy spread are shown for the electron in <a href="#fig-bw-finite-electron-energy" class="quarto-xref">Figure&nbsp;<span>8.15</span></a>, <a href="#fig-bw-finite-electron-theta" class="quarto-xref">Figure&nbsp;<span>8.16</span></a>, and <a href="#fig-bw-finite-electron-joint" class="quarto-xref">Figure&nbsp;<span>8.17</span></a>, and for the positron in <a href="#fig-bw-finite-positron-energy" class="quarto-xref">Figure&nbsp;<span>8.26</span></a>, <a href="#fig-bw-finite-positron-theta" class="quarto-xref">Figure&nbsp;<span>8.27</span></a>, and <a href="#fig-bw-finite-positron-joint" class="quarto-xref">Figure&nbsp;<span>8.28</span></a>.</p>
+<p>The finite-photon-beam plus energy-spread comparisons are shown for the electron in <a href="#fig-bw-finite-es-electron-energy" class="quarto-xref">Figure&nbsp;<span>8.18</span></a>, <a href="#fig-bw-finite-es-electron-theta" class="quarto-xref">Figure&nbsp;<span>8.19</span></a>, and <a href="#fig-bw-finite-es-electron-joint" class="quarto-xref">Figure&nbsp;<span>8.20</span></a>, and for the positron in <a href="#fig-bw-finite-es-positron-energy" class="quarto-xref">Figure&nbsp;<span>8.29</span></a>, <a href="#fig-bw-finite-es-positron-theta" class="quarto-xref">Figure&nbsp;<span>8.30</span></a>, and <a href="#fig-bw-finite-es-positron-joint" class="quarto-xref">Figure&nbsp;<span>8.31</span></a>.</p>
+<p>The overlap-restricted comparisons are shown for the electron in <a href="#fig-bw-overlap-electron-energy" class="quarto-xref">Figure&nbsp;<span>8.21</span></a> and <a href="#fig-bw-overlap-electron-theta" class="quarto-xref">Figure&nbsp;<span>8.22</span></a>, and for the positron in <a href="#fig-bw-overlap-positron-energy" class="quarto-xref">Figure&nbsp;<span>8.32</span></a> and <a href="#fig-bw-overlap-positron-theta" class="quarto-xref">Figure&nbsp;<span>8.33</span></a>.</p>
 <div id="fig-bw-headon-electron-energy" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bw-headon-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/reference-data/linear-breit-wheeler-head-on-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.1: Fixed-geometry head-on outgoing electron energy spectrum.
+Figure&nbsp;8.12: Fixed-geometry head-on outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -852,7 +858,7 @@ Figure&nbsp;8.1: Fixed-geometry head-on outgoing electron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.2: Fixed-geometry head-on outgoing electron polar-angle spectrum.
+Figure&nbsp;8.13: Fixed-geometry head-on outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -862,7 +868,7 @@ Figure&nbsp;8.2: Fixed-geometry head-on outgoing electron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-electron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.3: Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
+Figure&nbsp;8.14: Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -872,7 +878,7 @@ Figure&nbsp;8.3: Fixed-geometry head-on outgoing electron joint E<sub>e-</sub>--
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.4: Finite-photon-beam outgoing electron energy spectrum.
+Figure&nbsp;8.15: Finite-photon-beam outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -882,7 +888,7 @@ Figure&nbsp;8.4: Finite-photon-beam outgoing electron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.5: Finite-photon-beam outgoing electron polar-angle spectrum.
+Figure&nbsp;8.16: Finite-photon-beam outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -892,7 +898,7 @@ Figure&nbsp;8.5: Finite-photon-beam outgoing electron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-electron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.6: Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
+Figure&nbsp;8.17: Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -902,7 +908,7 @@ Figure&nbsp;8.6: Finite-photon-beam outgoing electron joint E<sub>e-</sub>--θ<s
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.7: Finite-photon-beam plus energy-spread outgoing electron energy spectrum.
+Figure&nbsp;8.18: Finite-photon-beam plus energy-spread outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -912,7 +918,7 @@ Figure&nbsp;8.7: Finite-photon-beam plus energy-spread outgoing electron energy 
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.8: Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.
+Figure&nbsp;8.19: Finite-photon-beam plus energy-spread outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -922,7 +928,7 @@ Figure&nbsp;8.8: Finite-photon-beam plus energy-spread outgoing electron polar-a
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-electron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-electron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.9: Finite-photon-beam plus energy-spread outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
+Figure&nbsp;8.20: Finite-photon-beam plus energy-spread outgoing electron joint E<sub>e-</sub>--θ<sub>e-</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -932,7 +938,7 @@ Figure&nbsp;8.9: Finite-photon-beam plus energy-spread outgoing electron joint E
 <img src="figures/reference-data/linear-breit-wheeler-overlap-electron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-electron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.10: Overlap-restricted outgoing electron energy spectrum.
+Figure&nbsp;8.21: Overlap-restricted outgoing electron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -942,7 +948,7 @@ Figure&nbsp;8.10: Overlap-restricted outgoing electron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-overlap-electron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-electron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.11: Overlap-restricted outgoing electron polar-angle spectrum.
+Figure&nbsp;8.22: Overlap-restricted outgoing electron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -952,7 +958,7 @@ Figure&nbsp;8.11: Overlap-restricted outgoing electron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.12: Fixed-geometry head-on outgoing positron energy spectrum.
+Figure&nbsp;8.23: Fixed-geometry head-on outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -962,7 +968,7 @@ Figure&nbsp;8.12: Fixed-geometry head-on outgoing positron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.13: Fixed-geometry head-on outgoing positron polar-angle spectrum.
+Figure&nbsp;8.24: Fixed-geometry head-on outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -972,7 +978,7 @@ Figure&nbsp;8.13: Fixed-geometry head-on outgoing positron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-head-on-positron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-headon-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.14: Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
+Figure&nbsp;8.25: Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -982,7 +988,7 @@ Figure&nbsp;8.14: Fixed-geometry head-on outgoing positron joint E<sub>e+</sub>-
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.15: Finite-photon-beam outgoing positron energy spectrum.
+Figure&nbsp;8.26: Finite-photon-beam outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -992,7 +998,7 @@ Figure&nbsp;8.15: Finite-photon-beam outgoing positron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.16: Finite-photon-beam outgoing positron polar-angle spectrum.
+Figure&nbsp;8.27: Finite-photon-beam outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1002,7 +1008,7 @@ Figure&nbsp;8.16: Finite-photon-beam outgoing positron polar-angle spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-positron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.17: Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
+Figure&nbsp;8.28: Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1012,7 +1018,7 @@ Figure&nbsp;8.17: Finite-photon-beam outgoing positron joint E<sub>e+</sub>--θ<
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.18: Finite-photon-beam plus energy-spread outgoing positron energy spectrum.
+Figure&nbsp;8.29: Finite-photon-beam plus energy-spread outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1022,7 +1028,7 @@ Figure&nbsp;8.18: Finite-photon-beam plus energy-spread outgoing positron energy
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.19: Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.
+Figure&nbsp;8.30: Finite-photon-beam plus energy-spread outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1032,7 +1038,7 @@ Figure&nbsp;8.19: Finite-photon-beam plus energy-spread outgoing positron polar-
 <img src="figures/reference-data/linear-breit-wheeler-finite-photon-beam-energy-spread-positron-joint-comparison.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-finite-es-positron-joint-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.20: Finite-photon-beam plus energy-spread outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
+Figure&nbsp;8.31: Finite-photon-beam plus energy-spread outgoing positron joint E<sub>e+</sub>--θ<sub>e+</sub> spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1042,7 +1048,7 @@ Figure&nbsp;8.20: Finite-photon-beam plus energy-spread outgoing positron joint 
 <img src="figures/reference-data/linear-breit-wheeler-overlap-positron-energy-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-positron-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.21: Overlap-restricted outgoing positron energy spectrum.
+Figure&nbsp;8.32: Overlap-restricted outgoing positron energy spectrum.
 </figcaption>
 </figure>
 </div>
@@ -1052,7 +1058,7 @@ Figure&nbsp;8.21: Overlap-restricted outgoing positron energy spectrum.
 <img src="figures/reference-data/linear-breit-wheeler-overlap-positron-theta-comparison.png" class="img-fluid figure-img" style="width:82.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bw-overlap-positron-theta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8.22: Overlap-restricted outgoing positron polar-angle spectrum.
+Figure&nbsp;8.33: Overlap-restricted outgoing positron polar-angle spectrum.
 </figcaption>
 </figure>
 </div>

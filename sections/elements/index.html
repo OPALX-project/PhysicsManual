@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Field Solvers – OPALX Physics Manual</title>
+<title>3&nbsp; Elements – OPALX Physics Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../sections/beam-beam/index.html" rel="next">
-<link href="../../sections/elements/index.html" rel="prev">
+<link href="../../sections/field-solvers/index.html" rel="next">
+<link href="../../sections/coordinate-systems/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/field-solvers/index.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/elements/index.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,13 +159,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sections/elements/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sections/elements/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
   </div>
 </li>
@@ -175,15 +204,28 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-elements-bends" id="toc-sec-elements-bends" class="nav-link active" data-scroll-target="#sec-elements-bends"><span class="header-section-number">3.1</span> Analytic sector and rectangular bends</a>
+  <ul class="collapse">
+  <li><a href="#body-extent-and-field-support-extent" id="toc-body-extent-and-field-support-extent" class="nav-link" data-scroll-target="#body-extent-and-field-support-extent">Body extent and field-support extent</a></li>
+  <li><a href="#effective-field-length-and-bend-normalization" id="toc-effective-field-length-and-bend-normalization" class="nav-link" data-scroll-target="#effective-field-length-and-bend-normalization">Effective field length and bend normalization</a></li>
+  <li><a href="#longitudinal-field-profile" id="toc-longitudinal-field-profile" class="nav-link" data-scroll-target="#longitudinal-field-profile">Longitudinal field profile</a></li>
+  <li><a href="#first-order-fringe-optics" id="toc-first-order-fringe-optics" class="nav-link" data-scroll-target="#first-order-fringe-optics">First-order fringe optics</a></li>
+  <li><a href="#code-to-code-and-analytic-comparisons" id="toc-code-to-code-and-analytic-comparisons" class="nav-link" data-scroll-target="#code-to-code-and-analytic-comparisons">Code-to-code and analytic comparisons</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></h1>
 </div>
 
 
@@ -200,8 +242,106 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This chapter documents element models whose geometry, field support, or runtime semantics require more than the generic placement conventions.</p>
+<section id="sec-elements-bends" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-elements-bends"><span class="header-section-number">3.1</span> Analytic sector and rectangular bends</h2>
+<p>The current OPALX-native analytic <code>SBEND</code> and <code>RBEND</code> implementation is a field-based bend model with explicit body placement, explicit field-support extent, and first-order fringe optics. The implementation does not replace bend tracking by transfer matrices. Instead, the reference particle and the bunch are integrated through the magnetic field that is evaluated in the local bend chart.</p>
+<section id="body-extent-and-field-support-extent" class="level3">
+<h3 class="anchored" data-anchor-id="body-extent-and-field-support-extent">Body extent and field-support extent</h3>
+<p>The <strong>nominal body extent</strong> is the placed hardware interval <span class="math display">\[
+z \in [0, L],
+\]</span> where (L) is the body length used for placement, body ports, and geometry export.</p>
+<p>The <strong>field-support extent</strong> may extend beyond the body through entry and exit fringe regions, <span class="math display">\[
+z \in [-\ell_{\mathrm{entry}},\, L + \ell_{\mathrm{exit}}],
+\]</span> with <span class="math display">\[
+\ell_{\mathrm{entry}} = \frac{h_{\mathrm{gap}} F_{\mathrm{int}}}{|\cos E_1|},
+\qquad
+\ell_{\mathrm{exit}} = \frac{h_{\mathrm{gap}} F_{\mathrm{int}}}{|\cos E_2|}.
+\]</span> Here (h_{}) is the half gap (<code>HGAP</code>), (F_{}) is the fringe integral (<code>FINT</code>), and (E_1), (E_2) are the entrance and exit pole-face angles. If <code>HGAP</code> is not given, OPALX uses the fallback <span class="math display">\[
+h_{\mathrm{gap}} = \frac{\mathrm{GAP}}{2}.
+\]</span></p>
+<p>The body extent drives placement and visualization. The field-support extent drives field evaluation, active-set occupancy, and timestep sanity checks. This is why OPALX can export both body markers (<code>ENTRY EDGE</code>, <code>EXIT EDGE</code>) and field-support markers (<code>FIELD BEGIN</code>, <code>FIELD END</code>) for the same bend.</p>
+</section>
+<section id="effective-field-length-and-bend-normalization" class="level3">
+<h3 class="anchored" data-anchor-id="effective-field-length-and-bend-normalization">Effective field length and bend normalization</h3>
+<p>The implemented fringe-support model uses a linear hard-edge ramp at both faces. The effective field length is therefore defined as <span class="math display">\[
+L_{\mathrm{eff}} = L_{\mathrm{ref}} +
+\frac{\ell_{\mathrm{entry}} + \ell_{\mathrm{exit}}}{2},
+\]</span> where (L_{}) is the body length measured along the design reference path.</p>
+<p>For <code>SBEND</code>, the design reference-path body length equals the sector-bend body length, <span class="math display">\[
+L_{\mathrm{ref}}^{\mathrm{SBEND}} = L.
+\]</span> For <code>RBEND</code>, the design reference-path body length is the curved reference-path length between the rotated entrance and exit faces, <span class="math display">\[
+L_{\mathrm{ref}}^{\mathrm{RBEND}} = L_{\mathrm{arc}},
+\]</span> not the straight body chord. This distinction is required to normalize the analytic rectangular-bend field on the actual design orbit rather than on the mechanical chord.</p>
+<p><code>ANGLE</code> is the primary geometric input. The analytic dipole coefficient is normalized against the effective field length, <span class="math display">\[
+k_0 = \frac{\theta}{L_{\mathrm{eff}}},
+\]</span> with total bend angle (). <code>K0</code> is treated only as a secondary consistency-check quantity.</p>
+<p>Internally, OPALX stores the analytic bend strengths in normalized lattice form and converts them to physical Tesla coefficients only when a reference rigidity is available. If <code>DESIGNENERGY</code> is given, that kinetic energy is used together with the bunch species mass and charge. Otherwise the scaling is taken from the bunch reference momentum. This avoids tying bend tracking strength to the parser-global quantity (P_0).</p>
+</section>
+<section id="longitudinal-field-profile" class="level3">
+<h3 class="anchored" data-anchor-id="longitudinal-field-profile">Longitudinal field profile</h3>
+<p>The body field is multiplied by a longitudinal scale function ((z)) defined by <span class="math display">\[
+\lambda(z) =
+\begin{cases}
+0, &amp; z &lt; -\ell_{\mathrm{entry}}, \\
+\dfrac{z + \ell_{\mathrm{entry}}}{\ell_{\mathrm{entry}}},
+&amp; -\ell_{\mathrm{entry}} \le z \le 0, \\
+1, &amp; 0 \le z \le L, \\
+\dfrac{L + \ell_{\mathrm{exit}} - z}{\ell_{\mathrm{exit}}},
+&amp; L \le z \le L + \ell_{\mathrm{exit}}, \\
+0, &amp; z &gt; L + \ell_{\mathrm{exit}}.
+\end{cases}
+\]</span></p>
+<p>This is a field-support model, not a body-length remapping. Particles begin to see the bend field at <code>FIELD BEGIN</code>, not necessarily at <code>ENTRY EDGE</code>.</p>
+</section>
+<section id="first-order-fringe-optics" class="level3">
+<h3 class="anchored" data-anchor-id="first-order-fringe-optics">First-order fringe optics</h3>
+<p>In addition to the longitudinal field ramp, the implementation includes a first-order edge-focusing model. With signed curvature <span class="math display">\[
+h = \frac{\theta}{L_{\mathrm{eff}}},
+\]</span> the horizontal hard-edge relation is <span class="math display">\[
+x'_{\mathrm{out}} = x'_{\mathrm{in}} + h \tan(E)\,x.
+\]</span></p>
+<p>The vertical edge focusing includes the standard fringe correction <span class="math display">\[
+\psi = h\,h_{\mathrm{gap}}\,F_{\mathrm{int}}
+\frac{1 + \sin^2(E)}{\cos(E)},
+\]</span> so the implemented vertical law is <span class="math display">\[
+y'_{\mathrm{out}} = y'_{\mathrm{in}} - h \tan(E - \psi)\,y.
+\]</span></p>
+<p>In OPALX these optics effects are realized through an equivalent distributed fringe-field correction across the entry and exit support regions. The model is therefore field-based and first-order accurate in the edge optics, but it is not yet a full three-dimensional fringe-field model.</p>
+</section>
+<section id="code-to-code-and-analytic-comparisons" class="level3">
+<h3 class="anchored" data-anchor-id="code-to-code-and-analytic-comparisons">Code-to-code and analytic comparisons</h3>
+<p>The current implementation has been benchmarked against Bmad for the two simplest no-fringe constant-field cases:</p>
+<ul>
+<li>a proton <code>SBEND</code> with kinetic energy <code>590 MeV</code>, body length <code>1 m</code>, and bend angle <code>45^\circ</code>,</li>
+<li>an electron <code>RBEND</code> with kinetic energy <code>1 GeV</code>, rectangular body length <code>1 m</code>, and bend angle <code>45^\circ</code>.</li>
+</ul>
+<p>For the <code>SBEND</code> benchmark, the OPALX trajectory has also been compared with the analytic circular-orbit solution. The comparison plot below shows the current code-to-code agreement. The <code>SBEND</code> benchmark agrees with the analytic endpoint at the exported-design-path level to within approximately (2^{-5},) for <code>DT = 10^{-10}</code> and improves below (10^{-6},) for smaller time steps. The <code>RBEND</code> benchmark now agrees with Bmad to within the displayed plotting resolution for the simple constant-field case.</p>
+<div id="fig-elements-bend-code-comparison" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elements-bend-code-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/bend_code_comparison.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-bend-code-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Comparison of the current OPALX <code>SBEND</code> and <code>RBEND</code> benchmarks against Bmad. The <code>SBEND</code> panel also includes the analytic circular-orbit solution. The right axis in each panel shows (x = x_{} - x_{}).
+</figcaption>
+</figure>
+</div>
+<p>The timestep study for the simple <code>SBEND</code> case is shown below. The reported metric is the discrete path-wise (L^2) error between the OPALX design path and the analytic reference curve, computed over the full bend interval. The dashed reference line shows the expected second-order decay (t^2). The measured convergence is second order over the practical range until it reaches the numerical floor of the current benchmark setup.</p>
+<div id="fig-elements-sbend-dt-l2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elements-sbend-dt-l2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/sbend_dt_l2_error.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-sbend-dt-l2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: <code>SBEND</code> timestep study using the path-wise (L^2) error between OPALX and the analytic circular-orbit solution. The dashed line shows the theoretical second-order reference decay.
+</figcaption>
+</figure>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -606,13 +746,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../sections/elements/index.html" class="pagination-link" aria-label="Elements">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></span>
+      <a href="../../sections/coordinate-systems/index.html" class="pagination-link" aria-label="Coordinate Systems">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../sections/beam-beam/index.html" class="pagination-link" aria-label="Beam-Beam">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../sections/field-solvers/index.html" class="pagination-link" aria-label="Field Solvers">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

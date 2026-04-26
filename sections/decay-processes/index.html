@@ -72,50 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  function shiftLeadingInteger(text) {
-    const trimmed = text.trim();
-    if (!trimmed) return text;
-    const parts = trimmed.split(".");
-    const first = Number.parseInt(parts[0], 10);
-    if (!Number.isFinite(first) || first <= 1) return text;
-    parts[0] = String(first - 1);
-    return parts.join(".");
-  }
-
-  document.querySelectorAll(".chapter-number").forEach(function (node) {
-    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
-    const titleText = titleNode ? titleNode.textContent.trim() : "";
-    const current = node.textContent.trim();
-    const value = Number.parseInt(current, 10);
-
-    if (titleText === "Home" && value === 1) {
-      node.textContent = "";
-      return;
-    }
-
-    if (Number.isFinite(value) && value > 1) {
-      node.textContent = String(value - 1);
-    }
-  });
-
-  document.querySelectorAll(".header-section-number").forEach(function (node) {
-    node.textContent = shiftLeadingInteger(node.textContent);
-  });
-
-  const heading = document.querySelector("h1.title .chapter-number");
-  if (heading) {
-    heading.textContent = shiftLeadingInteger(heading.textContent);
-  }
-
-  if (document.title) {
-    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
-      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
-    });
-  }
-});
-</script>
 
 
 </head>
@@ -157,19 +113,25 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/overview/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/elements/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">

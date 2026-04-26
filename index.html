@@ -71,50 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  function shiftLeadingInteger(text) {
-    const trimmed = text.trim();
-    if (!trimmed) return text;
-    const parts = trimmed.split(".");
-    const first = Number.parseInt(parts[0], 10);
-    if (!Number.isFinite(first) || first <= 1) return text;
-    parts[0] = String(first - 1);
-    return parts.join(".");
-  }
-
-  document.querySelectorAll(".chapter-number").forEach(function (node) {
-    const titleNode = node.parentElement && node.parentElement.querySelector(".chapter-title");
-    const titleText = titleNode ? titleNode.textContent.trim() : "";
-    const current = node.textContent.trim();
-    const value = Number.parseInt(current, 10);
-
-    if (titleText === "Home" && value === 1) {
-      node.textContent = "";
-      return;
-    }
-
-    if (Number.isFinite(value) && value > 1) {
-      node.textContent = String(value - 1);
-    }
-  });
-
-  document.querySelectorAll(".header-section-number").forEach(function (node) {
-    node.textContent = shiftLeadingInteger(node.textContent);
-  });
-
-  const heading = document.querySelector("h1.title .chapter-number");
-  if (heading) {
-    heading.textContent = shiftLeadingInteger(heading.textContent);
-  }
-
-  if (document.title) {
-    document.title = document.title.replace(/^([2-9]\d*)\u00A0/, function (_, num) {
-      return String(Number.parseInt(num, 10) - 1) + "\u00A0";
-    });
-  }
-});
-</script>
 
 
 </head>
@@ -128,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -156,19 +112,25 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Home</span></span></a>
+ <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/overview/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sections/elements/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -212,8 +174,14 @@ document.addEventListener("DOMContentLoaded", function () {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#home" id="toc-home" class="nav-link active" data-scroll-target="#home">Home</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -238,12 +206,15 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
+<section id="home" class="level1 unnumbered">
+<h1 class="unnumbered">Home</h1>
 <p>OPALX is an open-source, exascale-ready, performance-portable accelerator simulation framework.</p>
 <p>The OPALX Physics Manual collects the underlying theory, numerical models, and benchmark problems used throughout the code base.</p>
 <p>Here you can find the <a href="https://opalx-project.github.io/Manual/">OPALX USer Manual</a>.</p>
 <p>The source code is locate in <a href="https://github.com/OPALX-project/OPALX">OPALX’s Git Repository</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -651,7 +622,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./sections/overview/index.html" class="pagination-link" aria-label="Overview">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
