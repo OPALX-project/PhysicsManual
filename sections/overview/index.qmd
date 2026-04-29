@@ -75,6 +75,182 @@ abbreviations for the electric field $\mathbf{E}(\mathbf{x},t)$ and
 magnetic field $\mathbf{B}(\mathbf{x},t)$. To update the positions and
 momenta OPALX uses the Boris-Buneman algorithm [@langdon].
 
+### Implemented split-step update
+
+The present OPALX tracker is the time-based `ParallelTracker` path. At the
+algorithmic level it implements a second-order leap-frog (`LF2`) style update
+with a Boris-Buneman momentum kick.
+
+For a particle state $(\mathbf{x}^n,\mathbf{P}^{n-1/2})$, where
+$\mathbf{P}=\gamma \mathbf{v}/c$, one full step is organized as:
+
+$$
+\mathbf{x}^{n+1/2} = \mathbf{x}^{n} + \frac{\Delta t}{2}\frac{\mathbf{P}^{n-1/2}}
+{\sqrt{1 + |\mathbf{P}^{n-1/2}|^2}},
+$$
+
+then fields are assembled at that half-step position,
+
+$$
+\mathbf{E}^{n+1/2} = \mathbf{E}_{sc}^{n+1/2} + \mathbf{E}_{ext}^{n+1/2},
+\qquad
+\mathbf{B}^{n+1/2} = \mathbf{B}_{sc}^{n+1/2} + \mathbf{B}_{ext}^{n+1/2},
+$$
+
+then the Boris momentum update is applied,
+
+$$
+\mathbf{P}^{n+1/2}
+\xleftarrow{\;\frac{1}{2}\mathbf{E}\;}
+\xleftarrow{\;\mathbf{B}\;}
+\xleftarrow{\;\frac{1}{2}\mathbf{E}\;}
+\mathbf{P}^{n-1/2},
+$$
+
+and finally the second half drift is performed,
+
+$$
+\mathbf{x}^{n+1} = \mathbf{x}^{n+1/2} + \frac{\Delta t}{2}
+\frac{\mathbf{P}^{n+1/2}}{\sqrt{1 + |\mathbf{P}^{n+1/2}|^2}}.
+$$
+
+In the actual code this appears as:
+
+1. `timeIntegration1()`: first half position push
+2. `resetFields()`
+3. `computeSpaceChargeFields()`
+4. `emitFromEmissionSources()`
+5. `computeExternalFields()`
+6. `timeIntegration2()`: Boris kick plus second half position push
+7. `incrementT()` and `updateReference()`
+
+So the implemented method is not just “a Boris pusher in isolation”; it is a
+split PIC/tracking loop in which the field solve and external-element queries
+are placed between two half drifts.
+
+### Frame handling during field assembly
+
+One important implementation detail is that space-charge and external fields
+are not evaluated in the same coordinate frame.
+
+For space charge, `computeSpaceChargeFields()` temporarily transforms the bunch
+from the reference frame into a beam-aligned frame whose $z$-axis follows the
+mean momentum. Self-fields are computed there, then the particle positions and
+the computed $\mathbf{E}$ and $\mathbf{B}$ contributions are rotated back
+to the reference frame.
+
+For external fields, `computeExternalFields()` queries the `OrbitThreader`
+active-set model and then transforms each particle container from the current
+reference frame into the local frame of each active element. The element field
+is applied there, and the bunch is transformed back afterwards. This is why
+OPALX can handle overlapping field supports and explicit element placement
+without reducing the machine to a purely one-dimensional owner-in-$s$ model.
+
+### Boris momentum update
+
+The implemented Boris kernel follows the standard relativistic
+Birdsall-Langdon form. In the notation of the code:
+
+1. half electric impulse
+   $$
+   \mathbf{P}^{-} = \mathbf{P}^{n-1/2} +
+   \frac{\Delta t}{2}\frac{q c}{m}\mathbf{E},
+   $$
+2. magnetic rotation with
+   $$
+   \gamma^- = \sqrt{1 + |\mathbf{P}^{-}|^2},
+   \qquad
+   \mathbf{t} = \frac{\Delta t}{2}\frac{q c^2}{\gamma^- m}\mathbf{B},
+   \qquad
+   \mathbf{s} = \frac{2\mathbf{t}}{1 + |\mathbf{t}|^2},
+   $$
+   and
+   $$
+   \mathbf{w} = \mathbf{P}^{-} + \mathbf{P}^{-}\times\mathbf{t},
+   \qquad
+   \mathbf{P}^{+} = \mathbf{P}^{-} + \mathbf{w}\times\mathbf{s},
+   $$
+3. second half electric impulse
+   $$
+   \mathbf{P}^{n+1/2} = \mathbf{P}^{+} +
+   \frac{\Delta t}{2}\frac{q c}{m}\mathbf{E}.
+   $$
+
+This is the update implemented in the `BorisPusher` used by
+`ParallelTracker`.
+
+### Integration class structure
+
+The current integration stack is shown below.
+
+```{mermaid}
+%%| label: fig-overview-integration-class-diagram
+%%| fig-cap: "Current time-integration structure used by the OPALX parallel tracker."
+classDiagram
+  direction TB
+
+  class TrackRun {
+    +execute()
+  }
+
+  class Tracker {
+    +execute()
+  }
+
+  class ParallelTracker {
+    +execute()
+    +timeIntegration1(pusher)
+    +timeIntegration2(pusher)
+    +computeSpaceChargeFields(step)
+    +computeExternalFields(oth)
+    +emitFromEmissionSources(t, dt)
+    +updateReference(pusher)
+  }
+
+  class PartBunch {
+    +bunchUpdate()
+    +computeSelfFields()
+    +incrementT()
+    +getParticleContainer(i)
+  }
+
+  class ParticleContainer {
+    +R
+    +P
+    +E
+    +B
+    +dt
+    +transformBunch(trafo)
+  }
+
+  class OrbitThreader {
+    +execute()
+    +query(s, dz)
+  }
+
+  class BorisPusher {
+    +kick(R, P, E, B, dt, mass, charge)
+    +push(R, P, dt)
+  }
+
+  class LF2 {
+    <<leap-frog integrator>>
+  }
+
+  TrackRun --> ParallelTracker : constructs/runs
+  Tracker <|-- ParallelTracker
+  ParallelTracker --> PartBunch : advances
+  PartBunch --> ParticleContainer : owns
+  ParallelTracker --> OrbitThreader : active-element queries
+  ParallelTracker --> BorisPusher : push/kick kernel
+  LF2 ..> BorisPusher : same split-step scheme
+```
+
+The main point is that `ParallelTracker` orchestrates the full step, while
+`BorisPusher` only provides the local momentum and position update kernel.
+Field assembly, coordinate-frame changes, emission, and reference-particle
+updates are handled outside the pusher in the tracker loop itself.
+
 ## Positioning of Elements {#sec.opalt.positioning-of-elements}
 
 Since *OPAL* version 2.0 of *OPAL* elements can be placed in space using
