@@ -7,10 +7,11 @@ photon functionality in *OPALX*.
 
 ## Full Workflow {#_full_workflow}
 
-The top-level driver \[generate-gamma-gamma-results.sh\] regenerates the
-full published gamma-gamma benchmark state. It builds the required OPALX
-benchmark targets, runs the inverse-Compton and Breit-Wheeler physics
-tests, calls the shared CAIN helper scripts in `~/git/cain`, and
+The top-level driver
+[`generate-gamma-gamma-results.sh`](https://github.com/OPALX-project/OPALX-project.github.io/blob/master/gamma-gamma/generate-gamma-gamma-results.sh)
+regenerates the full published gamma-gamma benchmark state. It builds the
+required OPALX benchmark targets, runs the inverse-Compton and Breit-Wheeler
+physics tests, calls the shared CAIN helper scripts in `~/git/cain`, and
 rerenders the physics notes.
 
 Use it when you want to refresh all benchmark figures and note pages in
