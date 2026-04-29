@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -211,11 +214,22 @@ window.Quarto = {
   <ul>
   <li><a href="#sec-elements-bends" id="toc-sec-elements-bends" class="nav-link active" data-scroll-target="#sec-elements-bends"><span class="header-section-number">3.1</span> Analytic sector and rectangular bends</a>
   <ul class="collapse">
-  <li><a href="#body-extent-and-field-support-extent" id="toc-body-extent-and-field-support-extent" class="nav-link" data-scroll-target="#body-extent-and-field-support-extent">Body extent and field-support extent</a></li>
-  <li><a href="#effective-field-length-and-bend-normalization" id="toc-effective-field-length-and-bend-normalization" class="nav-link" data-scroll-target="#effective-field-length-and-bend-normalization">Effective field length and bend normalization</a></li>
-  <li><a href="#longitudinal-field-profile" id="toc-longitudinal-field-profile" class="nav-link" data-scroll-target="#longitudinal-field-profile">Longitudinal field profile</a></li>
-  <li><a href="#first-order-fringe-optics" id="toc-first-order-fringe-optics" class="nav-link" data-scroll-target="#first-order-fringe-optics">First-order fringe optics</a></li>
-  <li><a href="#code-to-code-and-analytic-comparisons" id="toc-code-to-code-and-analytic-comparisons" class="nav-link" data-scroll-target="#code-to-code-and-analytic-comparisons">Code-to-code and analytic comparisons</a></li>
+  <li><a href="#body-extent-and-field-support-extent" id="toc-body-extent-and-field-support-extent" class="nav-link" data-scroll-target="#body-extent-and-field-support-extent"><span class="header-section-number">3.1.1</span> Body extent and field-support extent</a></li>
+  <li><a href="#effective-field-length-and-bend-normalization" id="toc-effective-field-length-and-bend-normalization" class="nav-link" data-scroll-target="#effective-field-length-and-bend-normalization"><span class="header-section-number">3.1.2</span> Effective field length and bend normalization</a></li>
+  <li><a href="#longitudinal-field-profile" id="toc-longitudinal-field-profile" class="nav-link" data-scroll-target="#longitudinal-field-profile"><span class="header-section-number">3.1.3</span> Longitudinal field profile</a></li>
+  <li><a href="#first-order-fringe-optics" id="toc-first-order-fringe-optics" class="nav-link" data-scroll-target="#first-order-fringe-optics"><span class="header-section-number">3.1.4</span> First-order fringe optics</a></li>
+  <li><a href="#sliced-bend-model" id="toc-sliced-bend-model" class="nav-link" data-scroll-target="#sliced-bend-model"><span class="header-section-number">3.1.5</span> Sliced Bend Model</a></li>
+  <li><a href="#code-to-code-and-analytic-comparisons" id="toc-code-to-code-and-analytic-comparisons" class="nav-link" data-scroll-target="#code-to-code-and-analytic-comparisons"><span class="header-section-number">3.1.6</span> Code-to-code and analytic comparisons</a></li>
+  <li><a href="#sbend-and-rbend-class-structure" id="toc-sbend-and-rbend-class-structure" class="nav-link" data-scroll-target="#sbend-and-rbend-class-structure"><span class="header-section-number">3.1.7</span> <code>SBEND</code> and <code>RBEND</code> class structure</a></li>
+  </ul></li>
+  <li><a href="#sec-elements-multipoles" id="toc-sec-elements-multipoles" class="nav-link" data-scroll-target="#sec-elements-multipoles"><span class="header-section-number">3.2</span> Multipole family</a>
+  <ul class="collapse">
+  <li><a href="#field-expansion-and-conventions" id="toc-field-expansion-and-conventions" class="nav-link" data-scroll-target="#field-expansion-and-conventions"><span class="header-section-number">3.2.1</span> Field expansion and conventions</a></li>
+  <li><a href="#multipole" id="toc-multipole" class="nav-link" data-scroll-target="#multipole"><span class="header-section-number">3.2.2</span> <code>MULTIPOLE</code></a></li>
+  <li><a href="#quadrupole" id="toc-quadrupole" class="nav-link" data-scroll-target="#quadrupole"><span class="header-section-number">3.2.3</span> <code>QUADRUPOLE</code></a></li>
+  <li><a href="#sextupole" id="toc-sextupole" class="nav-link" data-scroll-target="#sextupole"><span class="header-section-number">3.2.4</span> <code>SEXTUPOLE</code></a></li>
+  <li><a href="#runtime-geometry-and-current-implementation-status" id="toc-runtime-geometry-and-current-implementation-status" class="nav-link" data-scroll-target="#runtime-geometry-and-current-implementation-status"><span class="header-section-number">3.2.5</span> Runtime geometry and current implementation status</a></li>
+  <li><a href="#class-structure" id="toc-class-structure" class="nav-link" data-scroll-target="#class-structure"><span class="header-section-number">3.2.6</span> Class structure</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -246,8 +260,8 @@ window.Quarto = {
 <section id="sec-elements-bends" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="sec-elements-bends"><span class="header-section-number">3.1</span> Analytic sector and rectangular bends</h2>
 <p>The current OPALX-native analytic <code>SBEND</code> and <code>RBEND</code> implementation is a field-based bend model with explicit body placement, explicit field-support extent, and first-order fringe optics. The implementation does not replace bend tracking by transfer matrices. Instead, the reference particle and the bunch are integrated through the magnetic field that is evaluated in the local bend chart.</p>
-<section id="body-extent-and-field-support-extent" class="level3">
-<h3 class="anchored" data-anchor-id="body-extent-and-field-support-extent">Body extent and field-support extent</h3>
+<section id="body-extent-and-field-support-extent" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="body-extent-and-field-support-extent"><span class="header-section-number">3.1.1</span> Body extent and field-support extent</h3>
 <p>The <strong>nominal body extent</strong> is the placed hardware interval <span class="math display">\[
 z \in [0, L],
 \]</span> where (L) is the body length used for placement, body ports, and geometry export.</p>
@@ -262,8 +276,8 @@ h_{\mathrm{gap}} = \frac{\mathrm{GAP}}{2}.
 \]</span></p>
 <p>The body extent drives placement and visualization. The field-support extent drives field evaluation, active-set occupancy, and timestep sanity checks. This is why OPALX can export both body markers (<code>ENTRY EDGE</code>, <code>EXIT EDGE</code>) and field-support markers (<code>FIELD BEGIN</code>, <code>FIELD END</code>) for the same bend.</p>
 </section>
-<section id="effective-field-length-and-bend-normalization" class="level3">
-<h3 class="anchored" data-anchor-id="effective-field-length-and-bend-normalization">Effective field length and bend normalization</h3>
+<section id="effective-field-length-and-bend-normalization" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="effective-field-length-and-bend-normalization"><span class="header-section-number">3.1.2</span> Effective field length and bend normalization</h3>
 <p>The implemented fringe-support model uses a linear hard-edge ramp at both faces. The effective field length is therefore defined as <span class="math display">\[
 L_{\mathrm{eff}} = L_{\mathrm{ref}} +
 \frac{\ell_{\mathrm{entry}} + \ell_{\mathrm{exit}}}{2},
@@ -278,8 +292,8 @@ k_0 = \frac{\theta}{L_{\mathrm{eff}}},
 \]</span> with total bend angle (). <code>K0</code> is treated only as a secondary consistency-check quantity.</p>
 <p>Internally, OPALX stores the analytic bend strengths in normalized lattice form and converts them to physical Tesla coefficients only when a reference rigidity is available. If <code>DESIGNENERGY</code> is given, that kinetic energy is used together with the bunch species mass and charge. Otherwise the scaling is taken from the bunch reference momentum. This avoids tying bend tracking strength to the parser-global quantity (P_0).</p>
 </section>
-<section id="longitudinal-field-profile" class="level3">
-<h3 class="anchored" data-anchor-id="longitudinal-field-profile">Longitudinal field profile</h3>
+<section id="longitudinal-field-profile" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="longitudinal-field-profile"><span class="header-section-number">3.1.3</span> Longitudinal field profile</h3>
 <p>The body field is multiplied by a longitudinal scale function ((z)) defined by <span class="math display">\[
 \lambda(z) =
 \begin{cases}
@@ -294,8 +308,8 @@ k_0 = \frac{\theta}{L_{\mathrm{eff}}},
 \]</span></p>
 <p>This is a field-support model, not a body-length remapping. Particles begin to see the bend field at <code>FIELD BEGIN</code>, not necessarily at <code>ENTRY EDGE</code>.</p>
 </section>
-<section id="first-order-fringe-optics" class="level3">
-<h3 class="anchored" data-anchor-id="first-order-fringe-optics">First-order fringe optics</h3>
+<section id="first-order-fringe-optics" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="first-order-fringe-optics"><span class="header-section-number">3.1.4</span> First-order fringe optics</h3>
 <p>In addition to the longitudinal field ramp, the implementation includes a first-order edge-focusing model. With signed curvature <span class="math display">\[
 h = \frac{\theta}{L_{\mathrm{eff}}},
 \]</span> the horizontal hard-edge relation is <span class="math display">\[
@@ -309,8 +323,150 @@ y'_{\mathrm{out}} = y'_{\mathrm{in}} - h \tan(E - \psi)\,y.
 \]</span></p>
 <p>In OPALX these optics effects are realized through an equivalent distributed fringe-field correction across the entry and exit support regions. The model is therefore field-based and first-order accurate in the edge optics, but it is not yet a full three-dimensional fringe-field model.</p>
 </section>
-<section id="code-to-code-and-analytic-comparisons" class="level3">
-<h3 class="anchored" data-anchor-id="code-to-code-and-analytic-comparisons">Code-to-code and analytic comparisons</h3>
+<section id="sliced-bend-model" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="sliced-bend-model"><span class="header-section-number">3.1.5</span> Sliced Bend Model</h3>
+<p>The current analytic <code>SBEND</code> and <code>RBEND</code> field model is already expressed in the local bend chart and is used consistently for the reference particle. The remaining many-particle tracking problem is geometric rather than magnetic: a quadrupole can be tracked in one rigid local frame, while a bend requires a local chart whose tangent direction rotates along the design path. The planned many-particle bend tracker therefore replaces a single rigid bend frame by a set of short rigid <strong>tracking slices</strong>.</p>
+<p>The guiding idea is to make bend tracking follow the same Kokkos execution pattern as a straight multipole:</p>
+<ul>
+<li>transform the particle container into one local frame,</li>
+<li>evaluate the field locally with a Kokkos kernel,</li>
+<li>transform back.</li>
+</ul>
+<p>For a quadrupole this is done once. For a bend it is done slice by slice along the reference path. The field law stays the analytic bend field described above; only the particle-level geometric approximation is changed.</p>
+<section id="slice-geometry" class="level4">
+<h4 class="anchored" data-anchor-id="slice-geometry">Slice geometry</h4>
+<p>Let (s) denote the longitudinal coordinate along the bend design reference path. The reference path is split into (N) slices with intervals <span class="math display">\[
+I_j = [s_j, s_{j+1}], \qquad j = 0, \dots, N-1,
+\]</span> with slice length <span class="math display">\[
+\Delta s_j = s_{j+1} - s_j.
+\]</span></p>
+<p>Each slice is represented by a rigid local frame attached at the slice center <span class="math display">\[
+s_{j+\frac12} = \frac{s_j + s_{j+1}}{2}.
+\]</span> Let (r_{}(s)) be the reference-path position and ((e_x(s), e_y(s), e_s(s))) the local right-handed bend basis consisting of horizontal transverse, vertical transverse, and tangent directions. The slice frame is then <span class="math display">\[
+\mathcal F_j =
+\left(
+\mathbf r_{\mathrm{ref}}(s_{j+\frac12}),
+\mathbf e_x(s_{j+\frac12}),
+\mathbf e_y(s_{j+\frac12}),
+\mathbf e_s(s_{j+\frac12})
+\right).
+\]</span></p>
+<p>Within the slice, particle coordinates are approximated by the straight local chart <span class="math display">\[
+\mathbf r \approx
+\mathbf r_{\mathrm{ref}}(s_{j+\frac12})
++ x\,\mathbf e_x(s_{j+\frac12})
++ y\,\mathbf e_y(s_{j+\frac12})
++ z\,\mathbf e_s(s_{j+\frac12}),
+\]</span> with (z ). The approximation becomes exact in the limit (_j s_j ).</p>
+<p>This means that many-particle bend tracking is planned as a <strong>slice-wise rigid tangent-frame approximation</strong> to the curved local chart. It is not a transfer matrix model and it is not a replacement of the bend field by a different straight-element field law.</p>
+</section>
+<section id="body-entry-fringe-and-exit-fringe-slices" class="level4">
+<h4 class="anchored" data-anchor-id="body-entry-fringe-and-exit-fringe-slices">Body, entry-fringe, and exit-fringe slices</h4>
+<p>The slice construction must respect the field-support extent rather than only the placed body extent. In the local bend chart the three tracking regions are <span class="math display">\[
+[-\ell_{\mathrm{entry}}, 0], \qquad [0, L_{\mathrm{ref}}], \qquad
+[L_{\mathrm{ref}}, L_{\mathrm{ref}} + \ell_{\mathrm{exit}}],
+\]</span> corresponding to:</p>
+<ol type="1">
+<li>entry fringe,</li>
+<li>body,</li>
+<li>exit fringe.</li>
+</ol>
+<p>The body slices carry the full field scale (= 1). The fringe slices carry the longitudinal ramp already defined in the analytic bend model. Using the local slice coordinate (z), the slice-local field scale is <span class="math display">\[
+\lambda_j(z) =
+\begin{cases}
+\dfrac{z - z_{j,\mathrm{begin}}}
+      {z_{j,\mathrm{end}} - z_{j,\mathrm{begin}}},
+&amp; \text{entry fringe slice}, \\
+1,
+&amp; \text{body slice}, \\
+\dfrac{z_{j,\mathrm{end}} - z}
+      {z_{j,\mathrm{end}} - z_{j,\mathrm{begin}}},
+&amp; \text{exit fringe slice},
+\end{cases}
+\]</span> with the obvious clipping to ([0,1]).</p>
+<p>This preserves the currently implemented body-vs-field-support split:</p>
+<ul>
+<li>body geometry, ports, and visualization are still tied to the placed body,</li>
+<li>field activity and many-particle tracking support extend over the fringe intervals.</li>
+</ul>
+</section>
+<section id="pole-face-rotations-and-slice-support-lengths" class="level4">
+<h4 class="anchored" data-anchor-id="pole-face-rotations-and-slice-support-lengths">Pole-face rotations and slice support lengths</h4>
+<p>The pole-face angles (E_1) and (E_2) do <strong>not</strong> rotate the slice frames. Each slice frame remains tangent to the design path. The pole-face angles only determine:</p>
+<ol type="1">
+<li>how far the entry and exit fringe regions extend in (s),</li>
+<li>what first-order edge focusing strength is distributed over those fringe slices.</li>
+</ol>
+<p>The support lengths remain <span class="math display">\[
+\ell_{\mathrm{entry}} =
+\frac{h_{\mathrm{gap}} F_{\mathrm{int}}}{|\cos E_1|},
+\qquad
+\ell_{\mathrm{exit}} =
+\frac{h_{\mathrm{gap}} F_{\mathrm{int}}}{|\cos E_2|}.
+\]</span></p>
+<p>Therefore the slice builder must explicitly create entry-fringe slices over ([-_{}, 0]) and exit-fringe slices over ([L_{}, L_{} + _{}]). A uniform body slicing alone is not sufficient.</p>
+</section>
+<section id="hgap-and-fringe-optics-inside-slices" class="level4">
+<h4 class="anchored" data-anchor-id="hgap-and-fringe-optics-inside-slices"><code>HGAP</code> and fringe optics inside slices</h4>
+<p>The half gap (h_{}) remains a physical parameter of the field support and edge optics, not a geometrical rotation parameter. It enters the sliced model in exactly the same two ways as in the unsliced analytic model:</p>
+<ol type="1">
+<li>through the fringe support lengths (<em>{}) and (</em>{}),</li>
+<li>through the vertical fringe correction <span class="math display">\[
+\psi = h\,h_{\mathrm{gap}}\,F_{\mathrm{int}}
+\frac{1 + \sin^2(E)}{\cos(E)}.
+\]</span></li>
+</ol>
+<p>With signed curvature <span class="math display">\[
+h = \frac{\theta}{L_{\mathrm{eff}}},
+\]</span> the edge strengths are <span class="math display">\[
+k_{x,\mathrm{entry}} = h \tan(E_1),
+\qquad
+k_{x,\mathrm{exit}} = h \tan(E_2),
+\]</span> and <span class="math display">\[
+k_{y,\mathrm{entry}} = -h \tan(E_1 - \psi_1),
+\qquad
+k_{y,\mathrm{exit}} = -h \tan(E_2 - \psi_2),
+\]</span> with <span class="math display">\[
+\psi_1 = h\,h_{\mathrm{gap}}\,F_{\mathrm{int}}
+\frac{1 + \sin^2(E_1)}{\cos(E_1)},
+\qquad
+\psi_2 = h\,h_{\mathrm{gap}}\,F_{\mathrm{int}}
+\frac{1 + \sin^2(E_2)}{\cos(E_2)}.
+\]</span></p>
+<p>In the sliced model these thin-lens strengths are distributed over the fringe slice lengths. A natural first-order choice is <span class="math display">\[
+G_{x,\mathrm{entry}} =
+\frac{k_{x,\mathrm{entry}}}{\ell_{\mathrm{entry}}},
+\qquad
+G_{y,\mathrm{entry}} =
+\frac{k_{y,\mathrm{entry}}}{\ell_{\mathrm{entry}}},
+\]</span> and likewise for the exit face. The slice-local field correction then acts as an equivalent normal quadrupole contribution over the fringe slices, <span class="math display">\[
+B_x^{\mathrm{edge}} = G_y\,y,
+\qquad
+B_y^{\mathrm{edge}} = G_x\,x,
+\]</span> so that integration through the slice stack reproduces the first-order edge optics in the limit of sufficient slicing.</p>
+</section>
+<section id="sbend-versus-rbend" class="level4">
+<h4 class="anchored" data-anchor-id="sbend-versus-rbend"><code>SBEND</code> versus <code>RBEND</code></h4>
+<p>For <code>SBEND</code>, the body reference-path length equals the sector-bend body length, <span class="math display">\[
+L_{\mathrm{ref}}^{\mathrm{SBEND}} = L.
+\]</span> For <code>RBEND</code>, the slice construction must use the curved reference-path length between the rotated faces, <span class="math display">\[
+L_{\mathrm{ref}}^{\mathrm{RBEND}} = L_{\mathrm{arc}},
+\]</span> not the mechanical body chord. This is the same distinction already required for the effective field length and dipole normalization, and it must also be used consistently when building the body and fringe slice intervals.</p>
+</section>
+<section id="numerical-interpretation" class="level4">
+<h4 class="anchored" data-anchor-id="numerical-interpretation">Numerical interpretation</h4>
+<p>The sliced bend model is therefore a controlled geometric approximation for many-particle tracking:</p>
+<ul>
+<li>the <strong>field law</strong> remains the analytic OPALX bend field,</li>
+<li>the <strong>curved chart</strong> is approximated by a sequence of short rigid tangent frames,</li>
+<li>the approximation error decreases as the slice size decreases,</li>
+<li>the OpenMP/Kokkos execution model remains the same as for straight local elements.</li>
+</ul>
+<p>This makes <code>SBEND</code> and <code>RBEND</code> many-particle tracking structurally consistent with the straight-element tracker while preserving the bend-specific body placement, field-support extent, pole-face angles, and <code>HGAP</code>/<code>FINT</code> fringe semantics.</p>
+</section>
+</section>
+<section id="code-to-code-and-analytic-comparisons" class="level3" data-number="3.1.6">
+<h3 data-number="3.1.6" class="anchored" data-anchor-id="code-to-code-and-analytic-comparisons"><span class="header-section-number">3.1.6</span> Code-to-code and analytic comparisons</h3>
 <p>The current implementation has been benchmarked against Bmad for the two simplest no-fringe constant-field cases:</p>
 <ul>
 <li>a proton <code>SBEND</code> with kinetic energy <code>590 MeV</code>, body length <code>1 m</code>, and bend angle <code>45^\circ</code>,</li>
@@ -338,6 +494,265 @@ Figure&nbsp;3.2: <code>SBEND</code> timestep study using the path-wise (L^2) err
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="sbend-and-rbend-class-structure" class="level3" data-number="3.1.7">
+<h3 data-number="3.1.7" class="anchored" data-anchor-id="sbend-and-rbend-class-structure"><span class="header-section-number">3.1.7</span> <code>SBEND</code> and <code>RBEND</code> class structure</h3>
+<p>The current implementation splits bend handling into a parser-facing OPAL layer and a runtime representation layer. <code>OpalSBend</code> and <code>OpalRBend</code> inherit the common bend attributes and update logic from <code>OpalBend</code>, then instantiate and configure <code>SBendRep</code> and <code>RBendRep</code> respectively.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-elements-bend-class-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elements-bend-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-elements-bend-class-diagram">classDiagram
+  direction TB
+
+  class OpalElement
+
+  class OpalBend {
+    +clone(name)
+    +print(os)
+    +deriveAnalyticDipoleCoefficient(Leff, angle)
+    +validateAnalyticBendDefinition(name, hasAngle, hasK0, Leff, angle, k0)
+  }
+
+  class OpalSBend {
+    +OpalSBend()
+    +clone(name)
+    +update()
+  }
+
+  class OpalRBend {
+    +OpalRBend()
+    +clone(name)
+    +update()
+  }
+
+  class SBend {
+    &lt;&lt;runtime bend&gt;&gt;
+  }
+
+  class RBend {
+    &lt;&lt;runtime bend&gt;&gt;
+  }
+
+  class SBendRep {
+    +clone()
+    +getGeometry()
+    +getField()
+    +setField(field)
+  }
+
+  class RBendRep {
+    +clone()
+    +getGeometry()
+    +getField()
+    +setField(field)
+  }
+
+  class PlanarArcGeometry
+  class RBendGeometry
+  class BMultipoleField
+
+  OpalElement &lt;|-- OpalBend
+  OpalBend &lt;|-- OpalSBend
+  OpalBend &lt;|-- OpalRBend
+
+  SBend &lt;|-- SBendRep
+  RBend &lt;|-- RBendRep
+
+  OpalSBend ..&gt; SBendRep : creates/configures
+  OpalRBend ..&gt; RBendRep : creates/configures
+
+  SBendRep *-- PlanarArcGeometry : geometry_m
+  SBendRep *-- BMultipoleField : field_m
+  RBendRep *-- RBendGeometry : geometry_m
+  RBendRep *-- BMultipoleField : field_m
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-bend-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Parser-side and runtime-side class structure for the current OPALX-native <code>SBEND</code> and <code>RBEND</code> implementation.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The key distinction is that <code>OpalSBend</code> and <code>OpalRBend</code> are the input and update front ends, while <code>SBendRep</code> and <code>RBendRep</code> own the actual geometry and local normalized multipole field used during tracking.</p>
+</section>
+</section>
+<section id="sec-elements-multipoles" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-elements-multipoles"><span class="header-section-number">3.2</span> Multipole family</h2>
+<p>The OPALX <code>MULTIPOLE</code> implementation is the common straight-magnet path for normal and skew magnetic multipole expansions. The present <code>QUADRUPOLE</code> front-end is a convenience wrapper on top of that common path. A dedicated <code>SEXTUPOLE</code> parser-side wrapper is not present in this checkout; sextupole content is therefore expressed through the generic <code>MULTIPOLE</code> coefficient arrays.</p>
+<section id="field-expansion-and-conventions" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="field-expansion-and-conventions"><span class="header-section-number">3.2.1</span> Field expansion and conventions</h3>
+<p>The underlying magnetic field class <code>BMultipoleField</code> (<code>src/Fields/BMultipoleField.h</code>) uses the complex transverse expansion <span class="math display">\[
+B_y + i B_x = \sum_{m=0}^{N-1} (B_m + i A_m) (x + i y)^m,
+\]</span> where:</p>
+<ul>
+<li>(m = 0) is the dipole term,</li>
+<li>(m = 1) is the quadrupole term,</li>
+<li>(m = 2) is the sextupole term,</li>
+<li>(B_m) are normal coefficients,</li>
+<li>(A_m) are skew coefficients.</li>
+</ul>
+<p>In the abstract multipole interface <code>Multipole</code> (<code>src/AbsBeamline/Multipole.h</code>), the same indexing is used explicitly: <code>n = 0</code> corresponds to dipole, <code>n = 1</code> to quadrupole, <code>n = 2</code> to sextupole, and so on.</p>
+<p>For the first three nontrivial components, the transverse magnetic field is:</p>
+<p><span class="math display">\[
+\text{normal quadrupole:}\qquad
+B_x = B_1\,y,\qquad
+B_y = B_1\,x,
+\]</span></p>
+<p><span class="math display">\[
+\text{skew quadrupole:}\qquad
+B_x = -A_1\,x,\qquad
+B_y = A_1\,y,
+\]</span></p>
+<p><span class="math display">\[
+\text{normal sextupole:}\qquad
+B_x = 2 B_2\,x y,\qquad
+B_y = B_2 (x^2 - y^2),
+\]</span></p>
+<p><span class="math display">\[
+\text{skew sextupole:}\qquad
+B_x = -A_2 (x^2 - y^2),\qquad
+B_y = 2 A_2\,x y.
+\]</span></p>
+<p>These formulas match the host-side field evaluation in <code>src/AbsBeamline/Multipole.cpp</code>.</p>
+</section>
+<section id="multipole" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="multipole"><span class="header-section-number">3.2.2</span> <code>MULTIPOLE</code></h3>
+<p>The parser-side element <code>OpalMultipole</code> (<code>src/Elements/OpalMultipole.cpp</code>) accepts the coefficient arrays:</p>
+<ul>
+<li><code>KN</code>: normal normalized strengths</li>
+<li><code>DKN</code>: normal strength errors</li>
+<li><code>KS</code>: skew normalized strengths</li>
+<li><code>DKS</code>: skew strength errors</li>
+</ul>
+<p>The element semantics are:</p>
+<ul>
+<li>if <code>L != 0</code>, the strengths are interpreted per unit length</li>
+<li>if <code>L == 0</code>, they are interpreted as integrated strengths</li>
+</ul>
+<p>At update time, <code>OpalMultipole</code> creates or updates a <code>MultipoleRep</code> (<code>src/BeamlineCore/MultipoleRep.h</code>), copies the element length into its straight geometry, and fills a <code>BMultipoleField</code> plus the runtime coefficient storage in the shared <code>Multipole</code> (<code>src/AbsBeamline/Multipole.h</code>) base.</p>
+<p>Internally the generic mapping is:</p>
+<p><span class="math display">\[
+\texttt{KN}[0] \to \text{dipole},\qquad
+\texttt{KN}[1] \to \text{quadrupole},\qquad
+\texttt{KN}[2] \to \text{sextupole},
+\]</span></p>
+<p>and likewise for <code>KS</code>.</p>
+</section>
+<section id="quadrupole" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="quadrupole"><span class="header-section-number">3.2.3</span> <code>QUADRUPOLE</code></h3>
+<p>The parser-side <code>OpalQuadrupole</code> (<code>src/Elements/OpalQuadrupole.cpp</code>) is not a separate runtime field model. It is a convenience wrapper that instantiates the same <code>MultipoleRep</code> (<code>src/BeamlineCore/MultipoleRep.h</code>) used by <code>MULTIPOLE</code>, but exposes scalar quadrupole attributes instead of full coefficient arrays:</p>
+<ul>
+<li><code>K1</code>, <code>DK1</code>: normal quadrupole strength and error</li>
+<li><code>K1S</code>, <code>DK1S</code>: skew quadrupole strength and error</li>
+</ul>
+<p>The implementation writes those values into the multipole representation as:</p>
+<p><span class="math display">\[
+\texttt{KN} = \{0, K_1\},\qquad
+\texttt{KS} = \{0, K_{1s}\}.
+\]</span></p>
+<p>So <code>QUADRUPOLE</code> is best understood as a named restricted view of the generic multipole interface with only the (m = 1) term exposed.</p>
+</section>
+<section id="sextupole" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="sextupole"><span class="header-section-number">3.2.4</span> <code>SEXTUPOLE</code></h3>
+<p>There is currently no dedicated <code>OpalSextupole</code> front-end class in this checkout. The sextupole physics is nevertheless available through the generic <code>MULTIPOLE</code> representation by populating the order-2 coefficients:</p>
+<p><span class="math display">\[
+\texttt{KN} = \{0, 0, K_2\},\qquad
+\texttt{KS} = \{0, 0, K_{2s}\}.
+\]</span></p>
+<p>That means the sextupole is currently a <em>configuration of <code>MULTIPOLE</code></em>, not a distinct parser-side wrapper parallel to <code>QUADRUPOLE</code>.</p>
+<p>For a nonzero body length (L), (K_2) and (K_{2s}) are interpreted as distributed sextupole strengths; for (L = 0), they are integrated strengths, consistent with the generic <code>MULTIPOLE</code> element description.</p>
+</section>
+<section id="runtime-geometry-and-current-implementation-status" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="runtime-geometry-and-current-implementation-status"><span class="header-section-number">3.2.5</span> Runtime geometry and current implementation status</h3>
+<p>The runtime representation <code>MultipoleRep</code> (<code>src/BeamlineCore/MultipoleRep.h</code>) inherits from <code>Multipole</code> (<code>src/AbsBeamline/Multipole.h</code>) and owns:</p>
+<ul>
+<li>a <code>StraightGeometry</code></li>
+<li>a <code>BMultipoleField</code></li>
+</ul>
+<p>So the current multipole family described here is a straight-element model with field support over <span class="math display">\[
+z \in [0, L].
+\]</span></p>
+<p>One important current detail from <code>src/AbsBeamline/Multipole.cpp</code> is that the device-side <code>computeField()</code> kernel still contains explicit special cases only for dipole and quadrupole, while the host-side <code>computeFieldHost()</code> implements sextupole and higher orders as well. For the manual this means:</p>
+<ul>
+<li>the interface is generic up to higher order,</li>
+<li>the host/orbit-threader path includes sextupole formulas,</li>
+<li>the current device kernel is still more limited than the abstract interface.</li>
+</ul>
+<p>That distinction matters when documenting present implementation status versus intended generality.</p>
+</section>
+<section id="class-structure" class="level3" data-number="3.2.6">
+<h3 data-number="3.2.6" class="anchored" data-anchor-id="class-structure"><span class="header-section-number">3.2.6</span> Class structure</h3>
+<p>The current parser-side and runtime-side structure is shown below.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-elements-multipole-class-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elements-multipole-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-elements-multipole-class-diagram">classDiagram
+  direction TB
+
+  class OpalElement
+  class OpalMultipole {
+    +clone(name)
+    +print(os)
+    +update()
+  }
+  class OpalQuadrupole {
+    +clone(name)
+    +print(os)
+    +update()
+  }
+
+  class Component
+  class Multipole {
+    +getNormalComponent(n)
+    +setNormalComponent(n, v)
+    +getSkewComponent(n)
+    +setSkewComponent(n, v)
+    +apply(...)
+    +getField()
+    +getGeometry()
+  }
+
+  class MultipoleRep {
+    +clone()
+    +getChannel(key)
+    +getField()
+    +getGeometry()
+    +setField(field)
+  }
+
+  class StraightGeometry
+  class BMultipoleField
+
+  OpalElement &lt;|-- OpalMultipole
+  OpalElement &lt;|-- OpalQuadrupole
+
+  Component &lt;|-- Multipole
+  Multipole &lt;|-- MultipoleRep
+
+  OpalMultipole ..&gt; MultipoleRep : creates/configures
+  OpalQuadrupole ..&gt; MultipoleRep : creates/configures
+
+  MultipoleRep *-- StraightGeometry : geometry
+  MultipoleRep *-- BMultipoleField : field
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-multipole-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Parser-side and runtime-side class structure for the current <code>MULTIPOLE</code> and <code>QUADRUPOLE</code> implementation. Sextupole content currently enters through the generic <code>MULTIPOLE</code> coefficient path.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>In other words, <code>QUADRUPOLE</code> is presently a thin parser-side specialization of the generic multipole path, and sextupole behavior is likewise represented through <code>MultipoleRep</code>, but without a dedicated <code>OpalSextupole</code> wrapper yet.</p>
 
 
 </section>

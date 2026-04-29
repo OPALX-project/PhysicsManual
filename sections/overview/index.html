@@ -91,6 +91,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -230,25 +233,31 @@ window.Quarto = {
   <ul>
   <li><a href="#sec.opalt.introduction" id="toc-sec.opalt.introduction" class="nav-link active" data-scroll-target="#sec.opalt.introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
   <li><a href="#sec.opalt.variablesopalt" id="toc-sec.opalt.variablesopalt" class="nav-link" data-scroll-target="#sec.opalt.variablesopalt"><span class="header-section-number">1.2</span> Variables in OPALX</a></li>
-  <li><a href="#sec.opalt.integration-of-the-equation-of-motion" id="toc-sec.opalt.integration-of-the-equation-of-motion" class="nav-link" data-scroll-target="#sec.opalt.integration-of-the-equation-of-motion"><span class="header-section-number">1.3</span> Integration of the Equation of Motion</a></li>
+  <li><a href="#sec.opalt.integration-of-the-equation-of-motion" id="toc-sec.opalt.integration-of-the-equation-of-motion" class="nav-link" data-scroll-target="#sec.opalt.integration-of-the-equation-of-motion"><span class="header-section-number">1.3</span> Integration of the Equation of Motion</a>
+  <ul class="collapse">
+  <li><a href="#implemented-split-step-update" id="toc-implemented-split-step-update" class="nav-link" data-scroll-target="#implemented-split-step-update"><span class="header-section-number">1.3.1</span> Implemented split-step update</a></li>
+  <li><a href="#frame-handling-during-field-assembly" id="toc-frame-handling-during-field-assembly" class="nav-link" data-scroll-target="#frame-handling-during-field-assembly"><span class="header-section-number">1.3.2</span> Frame handling during field assembly</a></li>
+  <li><a href="#boris-momentum-update" id="toc-boris-momentum-update" class="nav-link" data-scroll-target="#boris-momentum-update"><span class="header-section-number">1.3.3</span> Boris momentum update</a></li>
+  <li><a href="#integration-class-structure" id="toc-integration-class-structure" class="nav-link" data-scroll-target="#integration-class-structure"><span class="header-section-number">1.3.4</span> Integration class structure</a></li>
+  </ul></li>
   <li><a href="#sec.opalt.positioning-of-elements" id="toc-sec.opalt.positioning-of-elements" class="nav-link" data-scroll-target="#sec.opalt.positioning-of-elements"><span class="header-section-number">1.4</span> Positioning of Elements</a></li>
   <li><a href="#sec.opalt.CoordinateSystems" id="toc-sec.opalt.CoordinateSystems" class="nav-link" data-scroll-target="#sec.opalt.CoordinateSystems"><span class="header-section-number">1.5</span> Coordinate Systems</a>
   <ul class="collapse">
-  <li><a href="#sec.opalt.global-cartesian-coordinate-system" id="toc-sec.opalt.global-cartesian-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.global-cartesian-coordinate-system">Global Cartesian Coordinate System</a></li>
-  <li><a href="#sec.opalt.local-cartesian-coordinate-system" id="toc-sec.opalt.local-cartesian-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.local-cartesian-coordinate-system">Local Cartesian Coordinate System</a></li>
-  <li><a href="#sec.opalt.space-charge-coordinate-system" id="toc-sec.opalt.space-charge-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.space-charge-coordinate-system">Space Charge Coordinate System</a></li>
-  <li><a href="#sec.opalt.curvilinear-coordinate-system" id="toc-sec.opalt.curvilinear-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.curvilinear-coordinate-system">Curvilinear Coordinate System</a></li>
-  <li><a href="#sec.opalt.design-or-reference-orbit" id="toc-sec.opalt.design-or-reference-orbit" class="nav-link" data-scroll-target="#sec.opalt.design-or-reference-orbit">Design or Reference Orbit</a></li>
-  <li><a href="#sec.opalt.compatibility-mode" id="toc-sec.opalt.compatibility-mode" class="nav-link" data-scroll-target="#sec.opalt.compatibility-mode">Compatibility Mode</a></li>
-  <li><a href="#sec.opalt.sec.orbitthreader" id="toc-sec.opalt.sec.orbitthreader" class="nav-link" data-scroll-target="#sec.opalt.sec.orbitthreader">Orbit Threader and Autophasing</a></li>
+  <li><a href="#sec.opalt.global-cartesian-coordinate-system" id="toc-sec.opalt.global-cartesian-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.global-cartesian-coordinate-system"><span class="header-section-number">1.5.1</span> Global Cartesian Coordinate System</a></li>
+  <li><a href="#sec.opalt.local-cartesian-coordinate-system" id="toc-sec.opalt.local-cartesian-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.local-cartesian-coordinate-system"><span class="header-section-number">1.5.2</span> Local Cartesian Coordinate System</a></li>
+  <li><a href="#sec.opalt.space-charge-coordinate-system" id="toc-sec.opalt.space-charge-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.space-charge-coordinate-system"><span class="header-section-number">1.5.3</span> Space Charge Coordinate System</a></li>
+  <li><a href="#sec.opalt.curvilinear-coordinate-system" id="toc-sec.opalt.curvilinear-coordinate-system" class="nav-link" data-scroll-target="#sec.opalt.curvilinear-coordinate-system"><span class="header-section-number">1.5.4</span> Curvilinear Coordinate System</a></li>
+  <li><a href="#sec.opalt.design-or-reference-orbit" id="toc-sec.opalt.design-or-reference-orbit" class="nav-link" data-scroll-target="#sec.opalt.design-or-reference-orbit"><span class="header-section-number">1.5.5</span> Design or Reference Orbit</a></li>
+  <li><a href="#sec.opalt.compatibility-mode" id="toc-sec.opalt.compatibility-mode" class="nav-link" data-scroll-target="#sec.opalt.compatibility-mode"><span class="header-section-number">1.5.6</span> Compatibility Mode</a></li>
+  <li><a href="#sec.opalt.sec.orbitthreader" id="toc-sec.opalt.sec.orbitthreader" class="nav-link" data-scroll-target="#sec.opalt.sec.orbitthreader"><span class="header-section-number">1.5.7</span> Orbit Threader and Autophasing</a></li>
   </ul></li>
   <li><a href="#sec.opalt.flow-diagram-of-opal-t" id="toc-sec.opalt.flow-diagram-of-opal-t" class="nav-link" data-scroll-target="#sec.opalt.flow-diagram-of-opal-t"><span class="header-section-number">1.6</span> Flow Diagram of OPALX</a></li>
   <li><a href="#sec.opalt.multipoles-in-different-coordinate-systems" id="toc-sec.opalt.multipoles-in-different-coordinate-systems" class="nav-link" data-scroll-target="#sec.opalt.multipoles-in-different-coordinate-systems"><span class="header-section-number">1.7</span> Multipoles in different Coordinate systems</a>
   <ul class="collapse">
-  <li><a href="#sec.opalt.fringe-field-models" id="toc-sec.opalt.fringe-field-models" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-models">Fringe field models</a></li>
-  <li><a href="#sec.opalt.fringe-field-of-a-curved-multipole" id="toc-sec.opalt.fringe-field-of-a-curved-multipole" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-of-a-curved-multipole">Fringe field of a curved multipole</a></li>
-  <li><a href="#sec.opalt.fringe-field-of-a-curved-multipole-1" id="toc-sec.opalt.fringe-field-of-a-curved-multipole-1" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-of-a-curved-multipole-1">Fringe field of a curved multipole</a></li>
-  <li><a href="#sec.opalt.fringe-field-of-a-multipole" id="toc-sec.opalt.fringe-field-of-a-multipole" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-of-a-multipole">Fringe field of a multipole</a></li>
+  <li><a href="#sec.opalt.fringe-field-models" id="toc-sec.opalt.fringe-field-models" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-models"><span class="header-section-number">1.7.1</span> Fringe field models</a></li>
+  <li><a href="#sec.opalt.fringe-field-of-a-curved-multipole" id="toc-sec.opalt.fringe-field-of-a-curved-multipole" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-of-a-curved-multipole"><span class="header-section-number">1.7.2</span> Fringe field of a curved multipole</a></li>
+  <li><a href="#sec.opalt.fringe-field-of-a-curved-multipole-1" id="toc-sec.opalt.fringe-field-of-a-curved-multipole-1" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-of-a-curved-multipole-1"><span class="header-section-number">1.7.3</span> Fringe field of a curved multipole</a></li>
+  <li><a href="#sec.opalt.fringe-field-of-a-multipole" id="toc-sec.opalt.fringe-field-of-a-multipole" class="nav-link" data-scroll-target="#sec.opalt.fringe-field-of-a-multipole"><span class="header-section-number">1.7.4</span> Fringe field of a multipole</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -315,6 +324,156 @@ window.Quarto = {
 <p>OPALX integrates the relativistic Lorentz equation</p>
 <p><span class="math display">\[\frac{\mathrm{d}\gamma\mathbf{v}}{\mathrm{d}t} =   \frac{q}{m}[\mathbf{E}_{ext} + \mathbf{E}_{sc} + \mathbf{v} \times (\mathbf{B}_{ext} + \mathbf{B}_{sc})]\]</span></p>
 <p>where <span class="math inline">\(\gamma\)</span> is the relativistic factor, <span class="math inline">\(q\)</span> is the charge, and <span class="math inline">\(m\)</span> is the rest mass of the particle. <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> are abbreviations for the electric field <span class="math inline">\(\mathbf{E}(\mathbf{x},t)\)</span> and magnetic field <span class="math inline">\(\mathbf{B}(\mathbf{x},t)\)</span>. To update the positions and momenta OPALX uses the Boris-Buneman algorithm <span class="citation" data-cites="langdon">(<a href="../literature/index.html#ref-langdon" role="doc-biblioref">Birdsall and Langdon 1985</a>)</span>.</p>
+<section id="implemented-split-step-update" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="implemented-split-step-update"><span class="header-section-number">1.3.1</span> Implemented split-step update</h3>
+<p>The present OPALX tracker is the time-based <code>ParallelTracker</code> path. At the algorithmic level it implements a second-order leap-frog (<code>LF2</code>) style update with a Boris-Buneman momentum kick.</p>
+<p>For a particle state <span class="math inline">\((\mathbf{x}^n,\mathbf{P}^{n-1/2})\)</span>, where <span class="math inline">\(\mathbf{P}=\gamma \mathbf{v}/c\)</span>, one full step is organized as:</p>
+<p><span class="math display">\[
+\mathbf{x}^{n+1/2} = \mathbf{x}^{n} + \frac{\Delta t}{2}\frac{\mathbf{P}^{n-1/2}}
+{\sqrt{1 + |\mathbf{P}^{n-1/2}|^2}},
+\]</span></p>
+<p>then fields are assembled at that half-step position,</p>
+<p><span class="math display">\[
+\mathbf{E}^{n+1/2} = \mathbf{E}_{sc}^{n+1/2} + \mathbf{E}_{ext}^{n+1/2},
+\qquad
+\mathbf{B}^{n+1/2} = \mathbf{B}_{sc}^{n+1/2} + \mathbf{B}_{ext}^{n+1/2},
+\]</span></p>
+<p>then the Boris momentum update is applied,</p>
+<p><span class="math display">\[
+\mathbf{P}^{n+1/2}
+\xleftarrow{\;\frac{1}{2}\mathbf{E}\;}
+\xleftarrow{\;\mathbf{B}\;}
+\xleftarrow{\;\frac{1}{2}\mathbf{E}\;}
+\mathbf{P}^{n-1/2},
+\]</span></p>
+<p>and finally the second half drift is performed,</p>
+<p><span class="math display">\[
+\mathbf{x}^{n+1} = \mathbf{x}^{n+1/2} + \frac{\Delta t}{2}
+\frac{\mathbf{P}^{n+1/2}}{\sqrt{1 + |\mathbf{P}^{n+1/2}|^2}}.
+\]</span></p>
+<p>In the actual code this appears as:</p>
+<ol type="1">
+<li><code>timeIntegration1()</code>: first half position push</li>
+<li><code>resetFields()</code></li>
+<li><code>computeSpaceChargeFields()</code></li>
+<li><code>emitFromEmissionSources()</code></li>
+<li><code>computeExternalFields()</code></li>
+<li><code>timeIntegration2()</code>: Boris kick plus second half position push</li>
+<li><code>incrementT()</code> and <code>updateReference()</code></li>
+</ol>
+<p>So the implemented method is not just “a Boris pusher in isolation”; it is a split PIC/tracking loop in which the field solve and external-element queries are placed between two half drifts.</p>
+</section>
+<section id="frame-handling-during-field-assembly" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="frame-handling-during-field-assembly"><span class="header-section-number">1.3.2</span> Frame handling during field assembly</h3>
+<p>One important implementation detail is that space-charge and external fields are not evaluated in the same coordinate frame.</p>
+<p>For space charge, <code>computeSpaceChargeFields()</code> temporarily transforms the bunch from the reference frame into a beam-aligned frame whose <span class="math inline">\(z\)</span>-axis follows the mean momentum. Self-fields are computed there, then the particle positions and the computed <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span> contributions are rotated back to the reference frame.</p>
+<p>For external fields, <code>computeExternalFields()</code> queries the <code>OrbitThreader</code> active-set model and then transforms each particle container from the current reference frame into the local frame of each active element. The element field is applied there, and the bunch is transformed back afterwards. This is why OPALX can handle overlapping field supports and explicit element placement without reducing the machine to a purely one-dimensional owner-in-<span class="math inline">\(s\)</span> model.</p>
+</section>
+<section id="boris-momentum-update" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="boris-momentum-update"><span class="header-section-number">1.3.3</span> Boris momentum update</h3>
+<p>The implemented Boris kernel follows the standard relativistic Birdsall-Langdon form. In the notation of the code:</p>
+<ol type="1">
+<li>half electric impulse <span class="math display">\[
+\mathbf{P}^{-} = \mathbf{P}^{n-1/2} +
+\frac{\Delta t}{2}\frac{q c}{m}\mathbf{E},
+\]</span></li>
+<li>magnetic rotation with <span class="math display">\[
+\gamma^- = \sqrt{1 + |\mathbf{P}^{-}|^2},
+\qquad
+\mathbf{t} = \frac{\Delta t}{2}\frac{q c^2}{\gamma^- m}\mathbf{B},
+\qquad
+\mathbf{s} = \frac{2\mathbf{t}}{1 + |\mathbf{t}|^2},
+\]</span> and <span class="math display">\[
+\mathbf{w} = \mathbf{P}^{-} + \mathbf{P}^{-}\times\mathbf{t},
+\qquad
+\mathbf{P}^{+} = \mathbf{P}^{-} + \mathbf{w}\times\mathbf{s},
+\]</span></li>
+<li>second half electric impulse <span class="math display">\[
+\mathbf{P}^{n+1/2} = \mathbf{P}^{+} +
+\frac{\Delta t}{2}\frac{q c}{m}\mathbf{E}.
+\]</span></li>
+</ol>
+<p>This is the update implemented in the <code>BorisPusher</code> used by <code>ParallelTracker</code>.</p>
+</section>
+<section id="integration-class-structure" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="integration-class-structure"><span class="header-section-number">1.3.4</span> Integration class structure</h3>
+<p>The current integration stack is shown below.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-overview-integration-class-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overview-integration-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-overview-integration-class-diagram">classDiagram
+  direction TB
+
+  class TrackRun {
+    +execute()
+  }
+
+  class Tracker {
+    +execute()
+  }
+
+  class ParallelTracker {
+    +execute()
+    +timeIntegration1(pusher)
+    +timeIntegration2(pusher)
+    +computeSpaceChargeFields(step)
+    +computeExternalFields(oth)
+    +emitFromEmissionSources(t, dt)
+    +updateReference(pusher)
+  }
+
+  class PartBunch {
+    +bunchUpdate()
+    +computeSelfFields()
+    +incrementT()
+    +getParticleContainer(i)
+  }
+
+  class ParticleContainer {
+    +R
+    +P
+    +E
+    +B
+    +dt
+    +transformBunch(trafo)
+  }
+
+  class OrbitThreader {
+    +execute()
+    +query(s, dz)
+  }
+
+  class BorisPusher {
+    +kick(R, P, E, B, dt, mass, charge)
+    +push(R, P, dt)
+  }
+
+  class LF2 {
+    &lt;&lt;leap-frog integrator&gt;&gt;
+  }
+
+  TrackRun --&gt; ParallelTracker : constructs/runs
+  Tracker &lt;|-- ParallelTracker
+  ParallelTracker --&gt; PartBunch : advances
+  PartBunch --&gt; ParticleContainer : owns
+  ParallelTracker --&gt; OrbitThreader : active-element queries
+  ParallelTracker --&gt; BorisPusher : push/kick kernel
+  LF2 ..&gt; BorisPusher : same split-step scheme
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overview-integration-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Current time-integration structure used by the OPALX parallel tracker.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The main point is that <code>ParallelTracker</code> orchestrates the full step, while <code>BorisPusher</code> only provides the local momentum and position update kernel. Field assembly, coordinate-frame changes, emission, and reference-particle updates are handled outside the pusher in the tracker loop itself.</p>
+</section>
 </section>
 <section id="sec.opalt.positioning-of-elements" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="sec.opalt.positioning-of-elements"><span class="header-section-number">1.4</span> Positioning of Elements</h2>
@@ -326,23 +485,23 @@ window.Quarto = {
 <h2 data-number="1.5" class="anchored" data-anchor-id="sec.opalt.CoordinateSystems"><span class="header-section-number">1.5</span> Coordinate Systems</h2>
 <p>The motion of a charged particle in an accelerator can be described by relativistic Hamilton mechanics. A particular motion is that of the reference particle, having the central energy and traveling on the so-called reference trajectory. Motion of a particle close to this fictitious reference particle can be described by linearized equations for the displacement of the particle under study, relative to the reference particle. In OPALX, the time <span class="math inline">\(t\)</span> is used as independent variable instead of the path length <span class="math inline">\(s\)</span>. The relation between them can be expressed as</p>
 <p><span class="math display">\[\frac{\mathrm{d}}{\mathrm{d} t} = \frac{\mathrm{d}}{\mathrm{d}\mathbf{s}}\frac{\mathrm{d}\mathbf{s}}{\mathrm{d} t} = \mathbf{\beta}c\frac{\mathrm{d}}{\mathrm{d}\mathbf{s}}.\]</span></p>
-<section id="sec.opalt.global-cartesian-coordinate-system" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.global-cartesian-coordinate-system">Global Cartesian Coordinate System</h3>
-<p>We define the global cartesian coordinate system, also known as floor coordinate system with <span class="math inline">\(K\)</span>, a point in this coordinate system is denoted by <span class="math inline">\((X, Y, Z) \in K\)</span>. In <a href="#fig-ks1" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> the geometry of the accelerator is uniquely defined by the sequence of physical elements in <span class="math inline">\(K\)</span>. The beam elements are numbered <span class="math inline">\(e_0, \ldots , e_i, \ldots e_n\)</span>.</p>
+<section id="sec.opalt.global-cartesian-coordinate-system" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="sec.opalt.global-cartesian-coordinate-system"><span class="header-section-number">1.5.1</span> Global Cartesian Coordinate System</h3>
+<p>We define the global cartesian coordinate system, also known as floor coordinate system with <span class="math inline">\(K\)</span>, a point in this coordinate system is denoted by <span class="math inline">\((X, Y, Z) \in K\)</span>. In <a href="#fig-ks1" class="quarto-xref">Figure&nbsp;<span>1.2</span></a> the geometry of the accelerator is uniquely defined by the sequence of physical elements in <span class="math inline">\(K\)</span>. The beam elements are numbered <span class="math inline">\(e_0, \ldots , e_i, \ldots e_n\)</span>.</p>
 <div id="fig-ks1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ks1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/coords.png" class="img-fluid figure-img" style="width:12cm">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ks1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.1: Illustration of local and global coordinates.
+Figure&nbsp;1.2: Illustration of local and global coordinates.
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="sec.opalt.local-cartesian-coordinate-system" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.local-cartesian-coordinate-system">Local Cartesian Coordinate System</h3>
-<p>A local coordinate system <span class="math inline">\(K'_i\)</span> is attached to each element <span class="math inline">\(e_i\)</span>. This is simply a frame in which <span class="math inline">\((0,0,0)\)</span> is at the entrance of each element. For an illustration see <a href="#fig-ks1" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>. The local reference system <span class="math inline">\((x, y, z) \in K'_n\)</span> may thus be referred to a global Cartesian coordinate system <span class="math inline">\((X, Y, Z) \in K\)</span>.</p>
+<section id="sec.opalt.local-cartesian-coordinate-system" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="sec.opalt.local-cartesian-coordinate-system"><span class="header-section-number">1.5.2</span> Local Cartesian Coordinate System</h3>
+<p>A local coordinate system <span class="math inline">\(K'_i\)</span> is attached to each element <span class="math inline">\(e_i\)</span>. This is simply a frame in which <span class="math inline">\((0,0,0)\)</span> is at the entrance of each element. For an illustration see <a href="#fig-ks1" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>. The local reference system <span class="math inline">\((x, y, z) \in K'_n\)</span> may thus be referred to a global Cartesian coordinate system <span class="math inline">\((X, Y, Z) \in K\)</span>.</p>
 <p>The local coordinates <span class="math inline">\((x_i, y_i, z_i)\)</span> at element <span class="math inline">\(e_i\)</span> with respect to the global coordinates <span class="math inline">\((X, Y, Z)\)</span> are defined by three displacements <span class="math inline">\((X_i, Y_i, Z_i)\)</span> and three angles <span class="math inline">\((\Theta_i, \Phi_i, \Psi_i)\)</span>.</p>
 <p><span class="math inline">\(\Psi\)</span> is the roll angle about the global <span class="math inline">\(Z\)</span>-axis. <span class="math inline">\(\Phi\)</span> is the yaw angle about the global <span class="math inline">\(Y\)</span>-axis. Lastly, <span class="math inline">\(\Theta\)</span> is the pitch angle about the global <span class="math inline">\(X\)</span>-axis. All three angles form right-handed screws with their corresponding axes. The angles (<span class="math inline">\(\Theta,\Phi,\Psi\)</span>) are the Tait-Bryan angles <span class="citation" data-cites="tait_bryan_opalt">(<a href="../literature/index.html#ref-tait_bryan_opalt" role="doc-biblioref"><em>Tait-Bryan Angles</em>, n.d.</a>)</span>.</p>
 <p>The displacement is described by a vector <span class="math inline">\(\mathbf{v}\)</span> and the orientation by a unitary matrix <span class="math inline">\(\mathcal{W}\)</span>. The column vectors of <span class="math inline">\(\mathcal{W}\)</span> are unit vectors spanning the local coordinate axes in the order <span class="math inline">\((x, y, z)\)</span>. <span class="math inline">\(\mathbf{v}\)</span> and <span class="math inline">\(\mathcal{W}\)</span> have the values:</p>
@@ -377,12 +536,12 @@ Figure&nbsp;1.1: Illustration of local and global coordinates.
 \mathcal{W}_i = \mathcal{W}_{i-1}\mathcal{S}_i,\]</span></p>
 <p>where <span class="math inline">\(\mathbf{v}_0\)</span> corresponds to the origin of the <code>LINE</code> and <span class="math inline">\(\mathcal{W}_0\)</span> to its orientation. In OPALX they can be defined using either <code>X</code>, <code>Y</code>, <code>Z</code>, <code>THETA</code>, <code>PHI</code> and <code>PSI</code> or <code>ORIGIN</code> and <code>ORIENTATION</code>, see Simple Beam Lines.</p>
 </section>
-<section id="sec.opalt.space-charge-coordinate-system" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.space-charge-coordinate-system">Space Charge Coordinate System</h3>
+<section id="sec.opalt.space-charge-coordinate-system" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="sec.opalt.space-charge-coordinate-system"><span class="header-section-number">1.5.3</span> Space Charge Coordinate System</h3>
 <p>In order to calculate space charge in the electrostatic approximation, we introduce a co-moving coordinate system <span class="math inline">\(K_{\text{sc}}\)</span>, in which the origin coincides with the mean position of the particles and the mean momentum is parallel to the z-axis.</p>
 </section>
-<section id="sec.opalt.curvilinear-coordinate-system" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.curvilinear-coordinate-system">Curvilinear Coordinate System</h3>
+<section id="sec.opalt.curvilinear-coordinate-system" class="level3" data-number="1.5.4">
+<h3 data-number="1.5.4" class="anchored" data-anchor-id="sec.opalt.curvilinear-coordinate-system"><span class="header-section-number">1.5.4</span> Curvilinear Coordinate System</h3>
 <p>In order to compute statistics of the particle ensemble, <span class="math inline">\(K_s\)</span> is introduced. The accompanying tripod (Dreibein) of the reference orbit spans a local curvilinear right handed system <span class="math inline">\((x,y,s)\)</span>. The local <span class="math inline">\(s\)</span>-axis is the tangent to the reference orbit. The two other axes are perpendicular to the reference orbit and are labelled&nbsp;<span class="math inline">\(x\)</span> (in the bend plane) and&nbsp;<span class="math inline">\(y\)</span> (perpendicular to the bend plane).</p>
 <div id="fig-ks2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -390,26 +549,26 @@ Figure&nbsp;1.1: Illustration of local and global coordinates.
 <img src="figures/curvcoords.png" class="img-fluid figure-img" style="width:10cm">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ks2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.2: Illustration of <span class="math inline">\(K_\text{sc}\)</span> and <span class="math inline">\(K_s\)</span>
+Figure&nbsp;1.3: Illustration of <span class="math inline">\(K_\text{sc}\)</span> and <span class="math inline">\(K_s\)</span>
 </figcaption>
 </figure>
 </div>
-<p>Both coordinate systems are described in <a href="#fig-ks2" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>.</p>
+<p>Both coordinate systems are described in <a href="#fig-ks2" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>.</p>
 </section>
-<section id="sec.opalt.design-or-reference-orbit" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.design-or-reference-orbit">Design or Reference Orbit</h3>
+<section id="sec.opalt.design-or-reference-orbit" class="level3" data-number="1.5.5">
+<h3 data-number="1.5.5" class="anchored" data-anchor-id="sec.opalt.design-or-reference-orbit"><span class="header-section-number">1.5.5</span> Design or Reference Orbit</h3>
 <p>The reference orbit consists of a series of straight sections and circular arcs and is <strong>computed</strong> by the Orbit Threader i.e.&nbsp;deduced from the element placement in the floor coordinate system.</p>
 </section>
-<section id="sec.opalt.compatibility-mode" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.compatibility-mode">Compatibility Mode</h3>
+<section id="sec.opalt.compatibility-mode" class="level3" data-number="1.5.6">
+<h3 data-number="1.5.6" class="anchored" data-anchor-id="sec.opalt.compatibility-mode"><span class="header-section-number">1.5.6</span> Compatibility Mode</h3>
 <p>To facilitate the change for users we will provide a compatibility mode. The idea is that the user does not have to change the input file. Instead OPALX will compute the positions of the elements. For this it uses the bend angle and chord length of the dipoles and the position of the elements along the trajectory. The user can choose whether effects due to fringe fields are considered when computing the path length of dipoles or not. The option to toggle OPALX’s behavior is called <code>IDEALIZED</code>. OPALX assumes per default that provided <code>ELEMEDGE</code> for elements downstream of a dipole are computed without any effects due to fringe fields.</p>
 <p>Elements that overlap with the fields of a dipole have to be handled separately by the user to position them in 3D.</p>
 <p>We split the positioning of the elements into two steps. In a first step we compute the positions of the dipoles. Here we assume that their fields don’t overlap. In a second step we can then compute the positions and orientations of all other elements.</p>
 <p>The accuracy of this method is good for all elements except for those that overlap with the field of a dipole.</p>
 </section>
-<section id="sec.opalt.sec.orbitthreader" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.sec.orbitthreader">Orbit Threader and Autophasing</h3>
-<p>The <code>OrbitThreader</code> integrates a design particle through the lattice and setups up a multi map structure (<code>IndexMap</code>). Furthermore when the reference particle hits an rf-structure for the first time then it auto-phases the rf-structure, see Appendix Auto-phasing Algorithm. The multi map structure speeds up the search for elements that influence the particles at a given position in 3D space by minimizing the looping over elements when integrating an ensemble of particles. For each time step, <code>IndexMap</code> returns a set of elements <span class="math inline">\(\mathcal{S}_{\text{e}} \subset {e_0 \ldots e_n}\)</span> in case of the example given in <a href="#fig-ks1" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>. An implicit drift is modelled as an empty set <span class="math inline">\(\emptyset\)</span>. The <code>IndexMap</code> therefore represents an occupancy model on the reference coordinate: each interval stores the set of elements whose field-support extents are active on that interval. This is distinct from the geometric placement of the corresponding element bodies. In overlapping regions the design particle sees the superposition of all active fields, and the reference path is determined by integrating this combined field.</p>
+<section id="sec.opalt.sec.orbitthreader" class="level3" data-number="1.5.7">
+<h3 data-number="1.5.7" class="anchored" data-anchor-id="sec.opalt.sec.orbitthreader"><span class="header-section-number">1.5.7</span> Orbit Threader and Autophasing</h3>
+<p>The <code>OrbitThreader</code> integrates a design particle through the lattice and setups up a multi map structure (<code>IndexMap</code>). Furthermore when the reference particle hits an rf-structure for the first time then it auto-phases the rf-structure, see Appendix Auto-phasing Algorithm. The multi map structure speeds up the search for elements that influence the particles at a given position in 3D space by minimizing the looping over elements when integrating an ensemble of particles. For each time step, <code>IndexMap</code> returns a set of elements <span class="math inline">\(\mathcal{S}_{\text{e}} \subset {e_0 \ldots e_n}\)</span> in case of the example given in <a href="#fig-ks1" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>. An implicit drift is modelled as an empty set <span class="math inline">\(\emptyset\)</span>. The <code>IndexMap</code> therefore represents an occupancy model on the reference coordinate: each interval stores the set of elements whose field-support extents are active on that interval. This is distinct from the geometric placement of the corresponding element bodies. In overlapping regions the design particle sees the superposition of all active fields, and the reference path is determined by integrating this combined field.</p>
 </section>
 </section>
 <section id="sec.opalt.flow-diagram-of-opal-t" class="level2" data-number="1.6">
@@ -420,18 +579,18 @@ Figure&nbsp;1.2: Illustration of <span class="math inline">\(K_\text{sc}\)</span
 <img src="figures/flowdiagram.png" class="img-fluid figure-img" style="width:12cm">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-opaltscheme-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.3: Schematic workflow of OPALX’s execute method.
+Figure&nbsp;1.4: Schematic workflow of OPALX’s execute method.
 </figcaption>
 </figure>
 </div>
-<p>A regular time step in OPALX is sketched in <a href="#fig-opaltscheme-simple" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>. In order to compute the coordinate system transformation from the reference coordinate system <span class="math inline">\(K_s\)</span> to the local coordinate systems <span class="math inline">\(K'_n\)</span> we join the transformation from floor coordinate system <span class="math inline">\(K\)</span> to <span class="math inline">\(K'_n\)</span> to the transformation from <span class="math inline">\(K_s\)</span> to <span class="math inline">\(K\)</span>. All computations of rotations which are involved in the computation of coordinate system transformations are performed using quaternions. The resulting quaternions are then converted to the appropriate matrix representation before applying the rotation operation onto the particle positions and momenta.</p>
-<p>As can be seen from <a href="#fig-opaltscheme-simple" class="quarto-xref">Figure&nbsp;<span>1.3</span></a> the integration of the trajectories of the particles are integrated and the computation of the statistics of the six-dimensional phase space are performed in the reference coordinate system.</p>
+<p>A regular time step in OPALX is sketched in <a href="#fig-opaltscheme-simple" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>. In order to compute the coordinate system transformation from the reference coordinate system <span class="math inline">\(K_s\)</span> to the local coordinate systems <span class="math inline">\(K'_n\)</span> we join the transformation from floor coordinate system <span class="math inline">\(K\)</span> to <span class="math inline">\(K'_n\)</span> to the transformation from <span class="math inline">\(K_s\)</span> to <span class="math inline">\(K\)</span>. All computations of rotations which are involved in the computation of coordinate system transformations are performed using quaternions. The resulting quaternions are then converted to the appropriate matrix representation before applying the rotation operation onto the particle positions and momenta.</p>
+<p>As can be seen from <a href="#fig-opaltscheme-simple" class="quarto-xref">Figure&nbsp;<span>1.4</span></a> the integration of the trajectories of the particles are integrated and the computation of the statistics of the six-dimensional phase space are performed in the reference coordinate system.</p>
 </section>
 <section id="sec.opalt.multipoles-in-different-coordinate-systems" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="sec.opalt.multipoles-in-different-coordinate-systems"><span class="header-section-number">1.7</span> Multipoles in different Coordinate systems</h2>
 <p>In the following sections there are three models presented for the fringe field of a multipole. The first one deals with a straight multipole, while the second one treats a curved multipole, both starting with a power expansion for the magnetic field. The last model tries to be different by starting with a more compact functional form of the field which is then adapted to straight and curved geometries.</p>
-<section id="sec.opalt.fringe-field-models" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.fringe-field-models">Fringe field models</h3>
+<section id="sec.opalt.fringe-field-models" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="sec.opalt.fringe-field-models"><span class="header-section-number">1.7.1</span> Fringe field models</h3>
 <p><em>(for a straight multipole)</em></p>
 <p>Most accelerator modeling codes use the hard-edge model for magnets - constant Hamiltonian. Real magnets always have a smooth transition at the edges - fringe fields. To obtain a multipole description of a field we can apply the theory of analytic functions.</p>
 <p><span class="math display">\[\begin{aligned}
@@ -509,8 +668,8 @@ Figure&nbsp;1.3: Schematic workflow of OPALX’s execute method.
     \end{aligned}\]</span></p>
 <p>where <span class="math inline">\(d(z)\)</span> is the distance to the field boundary and <span class="math inline">\(\lambda\)</span> characterizes the fringe field length.</p>
 </section>
-<section id="sec.opalt.fringe-field-of-a-curved-multipole" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.fringe-field-of-a-curved-multipole">Fringe field of a curved multipole</h3>
+<section id="sec.opalt.fringe-field-of-a-curved-multipole" class="level3" data-number="1.7.2">
+<h3 data-number="1.7.2" class="anchored" data-anchor-id="sec.opalt.fringe-field-of-a-curved-multipole"><span class="header-section-number">1.7.2</span> Fringe field of a curved multipole</h3>
 <p><em>(fixed radius)</em></p>
 <p>We consider the Frenet-Serret coordinate system $ ( , , )$ with the radius of curvature $ $ constant and the scale factor $ h_s = 1 + x/ $. A conversion to these coordinates implies that</p>
 <p><span class="math display">\[\begin{aligned}
@@ -553,14 +712,14 @@ Figure&nbsp;1.3: Schematic workflow of OPALX’s execute method.
 <p><span class="math display">\[B_z(z=0) = B_{0,0} + B_{1,0}x + B_{2,0} x^2 + B_{3,0} x^3 + \ldots\]</span></p>
 <p>where <span class="math inline">\(B_{i,0}\)</span> are functions of <span class="math inline">\(s\)</span> and they can model the fringe field for each multipole term <span class="math inline">\(x^n\)</span>. As an example, for a dipole magnet, the <span class="math inline">\(B_{1,0}\)</span> function can be model as an Enge function or <span class="math inline">\(tanh\)</span>.</p>
 </section>
-<section id="sec.opalt.fringe-field-of-a-curved-multipole-1" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.fringe-field-of-a-curved-multipole-1">Fringe field of a curved multipole</h3>
+<section id="sec.opalt.fringe-field-of-a-curved-multipole-1" class="level3" data-number="1.7.3">
+<h3 data-number="1.7.3" class="anchored" data-anchor-id="sec.opalt.fringe-field-of-a-curved-multipole-1"><span class="header-section-number">1.7.3</span> Fringe field of a curved multipole</h3>
 <p><em>(variable radius of curvature)</em></p>
 <p>The difference between this case and the above is that <span class="math inline">\(\rho\)</span> is now a function of <span class="math inline">\(s\)</span>, <span class="math inline">\(\rho(s)\)</span>. We can obtain the same result starting with the same functional forms for the field (the general-form equation). The result of the previous section also holds in this case since no derivative <span class="math inline">\(\frac{\partial}{\partial s}\)</span> is applied to the scale factor <span class="math inline">\(h_s\)</span>. If the radius of curvature is set to be proportional to the dipole filed observed by some reference particle that stays in the centre of the dipole</p>
 <p><span class="math display">\[\rho (s) \propto B(z=0, x=0, s) = B_x (z=0,x=0) = b_{0,0}(s)\]</span></p>
 </section>
-<section id="sec.opalt.fringe-field-of-a-multipole" class="level3">
-<h3 class="anchored" data-anchor-id="sec.opalt.fringe-field-of-a-multipole">Fringe field of a multipole</h3>
+<section id="sec.opalt.fringe-field-of-a-multipole" class="level3" data-number="1.7.4">
+<h3 data-number="1.7.4" class="anchored" data-anchor-id="sec.opalt.fringe-field-of-a-multipole"><span class="header-section-number">1.7.4</span> Fringe field of a multipole</h3>
 <p><em>This is a different, more compact treatment</em> The derivation is more clear if we gather the variables together in functions. We assume again mid-plane symmetry and that the z-component of the field in the mid-plane has the form</p>
 <p><span class="math display">\[B_z (x, z=0, s) = T(x) S(s)\]</span></p>
 <p>where <span class="math inline">\(T(s)\)</span> is the transverse field profile and <span class="math inline">\(S(s)\)</span> is the fringe field. One of the requirements of the symmetry is that <span class="math inline">\(B_z(z) = B_z(-z)\)</span> which using a scalar potential <span class="math inline">\(\psi\)</span> requires <span class="math inline">\(\frac{\partial \psi}{\partial z}\)</span> to be an even function in z. Therefore, <span class="math inline">\(\psi\)</span> is an odd function in z and can be written as</p>
