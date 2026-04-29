@@ -19,6 +19,21 @@ quarto render /Users/adelmann/git/PhysicsManual/sections/gamma-gamma/index.qmd -
 
 The website output is written to `docs/`.
 
+## OPALX Doxygen API
+
+Build the local OPALX API documentation after rendering the HTML manual:
+
+```bash
+./scripts/build-opalx-doxygen.sh
+```
+
+By default the script clones `https://github.com/OPALX-project/OPALX.git` at
+`master` into `.external/OPALX` and writes Doxygen HTML to
+`docs/api/opalx/html`. Override `OPALX_REF`, `OPALX_SRC_DIR`, or
+`OPALX_DOXYGEN_OUTPUT` when you need a different OPALX checkout or output path.
+Manual links use `/api/opalx/html/...`, so the API pages must be present under
+`docs/api/opalx/html` before publishing.
+
 ## TikZ Workflow
 
 For the `gamma-gamma` notes, TikZ is handled with one source of truth and two output paths:

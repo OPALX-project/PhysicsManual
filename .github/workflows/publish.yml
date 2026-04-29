@@ -21,6 +21,12 @@ jobs:
       - name: Render HTML
         run: quarto render . --to html
 
+      - name: Install Doxygen
+        run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+      - name: Build OPALX API documentation
+        run: ./scripts/build-opalx-doxygen.sh
+
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:

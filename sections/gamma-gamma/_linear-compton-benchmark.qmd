@@ -116,18 +116,18 @@ $$ {#eq-ics-thomson}
 
 ### Implemented OPALX Benchmark {#sec-ics-implemented-opalx-benchmark}
 
-The current *OPALX* implementation is the CAIN-validated benchmark path
-on the `laser-element-1` branch. The relevant code files are:
+The current *OPALX* implementation is the CAIN-validated benchmark path.
+The relevant Doxygen pages are:
 
-- [`src/Physics/LinearCompton.h`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearCompton.h)
+- [`src/Physics/LinearCompton.h`](/api/opalx/html/LinearCompton_8h.html)
 
-- [`src/Physics/LinearCompton.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearCompton.cpp)
+- [`src/Physics/LinearCompton.cpp`](/api/opalx/html/LinearCompton_8cpp.html)
 
-- [`unit_tests/Physics/TestLinearCompton.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearCompton.cpp)
+- [`unit_tests/Physics/TestLinearCompton.cpp`](/api/opalx/html/TestLinearCompton_8cpp.html)
 
-- [`unit_tests/Physics/TestLinearComptonSpectrum.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearComptonSpectrum.cpp)
+- [`unit_tests/Physics/TestLinearComptonSpectrum.cpp`](/api/opalx/html/TestLinearComptonSpectrum_8cpp.html)
 
-- [`unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp)
+- [`unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp`](/api/opalx/html/LinearComptonSpectrumBenchmark_8cpp.html)
 
 - `~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh`
 

@@ -149,20 +149,20 @@ unpolarized part of the full CAIN expression.
 
 ### Implemented OPALX Benchmark {#sec-bw-implemented-opalx-benchmark}
 
-The current *OPALX* implementation lives on the `laser-element-1`
-branch. The relevant files are:
+The current *OPALX* implementation is documented in the local Doxygen
+build. The relevant pages are:
 
-- [`src/Physics/LinearBreitWheeler.h`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearBreitWheeler.h)
+- [`src/Physics/LinearBreitWheeler.h`](/api/opalx/html/LinearBreitWheeler_8h.html)
 
-- [`src/Physics/LinearBreitWheeler.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearBreitWheeler.cpp)
+- [`src/Physics/LinearBreitWheeler.cpp`](/api/opalx/html/LinearBreitWheeler_8cpp.html)
 
-- [`unit_tests/Physics/TestLinearBreitWheeler.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearBreitWheeler.cpp)
+- [`unit_tests/Physics/TestLinearBreitWheeler.cpp`](/api/opalx/html/TestLinearBreitWheeler_8cpp.html)
 
-- [`unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h)
+- [`unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h`](/api/opalx/html/LinearBreitWheelerBenchmarkCommon_8h.html)
 
-- [`unit_tests/Physics/LinearBreitWheelerBenchmark.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearBreitWheelerBenchmark.cpp)
+- [`unit_tests/Physics/LinearBreitWheelerBenchmark.cpp`](/api/opalx/html/LinearBreitWheelerBenchmark_8cpp.html)
 
-- [`unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp`](https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp)
+- [`unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp`](/api/opalx/html/TestLinearBreitWheelerSpectrum_8cpp.html)
 
 - `~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh`
 

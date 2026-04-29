@@ -5,6 +5,9 @@ project:
 book:
   title: "OPALX Physics Manual"
   subtitle: "Theory, numerical models, and benchmark problems"
+  repo-url: https://github.com/OPALX-project/PhysicsManual
+  repo-branch: main
+  repo-actions: [edit, issue]
   chapters:
     - index.qmd
     - sections/overview/index.qmd
