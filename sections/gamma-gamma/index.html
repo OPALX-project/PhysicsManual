@@ -297,7 +297,7 @@ window.Quarto = {
 <p>This note collects the physics model and benchmarks of the laser and photon functionality in <em>OPALX</em>.</p>
 <section id="_full_workflow" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="_full_workflow"><span class="header-section-number">8.1</span> Full Workflow</h2>
-<p>The top-level driver [generate-gamma-gamma-results.sh] regenerates the full published gamma-gamma benchmark state. It builds the required OPALX benchmark targets, runs the inverse-Compton and Breit-Wheeler physics tests, calls the shared CAIN helper scripts in <code>~/git/cain</code>, and rerenders the physics notes.</p>
+<p>The top-level driver <a href="https://github.com/OPALX-project/OPALX-project.github.io/blob/master/gamma-gamma/generate-gamma-gamma-results.sh"><code>generate-gamma-gamma-results.sh</code></a> regenerates the full published gamma-gamma benchmark state. It builds the required OPALX benchmark targets, runs the inverse-Compton and Breit-Wheeler physics tests, calls the shared CAIN helper scripts in <code>~/git/cain</code>, and rerenders the physics notes.</p>
 <p>Use it when you want to refresh all benchmark figures and note pages in one pass:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/git/OPALX-project.github.io/gamma-gamma</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">./generate-gamma-gamma-results.sh</span> <span class="at">--opalx-build</span> ~/git/opalx-laser/build_openmp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -387,7 +387,7 @@ window.Quarto = {
 <li><p><a href="../../api/opalx/html/TestLinearCompton_8cpp.html"><code>unit_tests/Physics/TestLinearCompton.cpp</code></a></p></li>
 <li><p><a href="../../api/opalx/html/TestLinearComptonSpectrum_8cpp.html"><code>unit_tests/Physics/TestLinearComptonSpectrum.cpp</code></a></p></li>
 <li><p><a href="../../api/opalx/html/LinearComptonSpectrumBenchmark_8cpp.html"><code>unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp</code></a></p></li>
-<li><p><code>~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh</code></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX-project.github.io/blob/master/gamma-gamma/generate-gamma-gamma-results.sh"><code>gamma-gamma/generate-gamma-gamma-results.sh</code></a></p></li>
 <li><p><code>~/git/cain/generate-linear-compton-results.sh</code></p></li>
 <li><p><code>~/git/cain/build-cain.sh</code></p></li>
 </ul>
@@ -592,7 +592,7 @@ Figure&nbsp;8.11: Overlap-restricted finite-beam linear-Compton photon laborator
 <ul>
 <li><p>CAIN linear Compton generator: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lncpgn.f"><code>src/lncpgn.f</code></a></p></li>
 <li><p>CAIN laser geometry helper: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lsrgeo.f"><code>src/lsrgeo.f</code></a></p></li>
-<li><p>CAIN manual: <a href="https://manualzilla.com/doc/5656761/user-s-manual-of-cain">User’s Manual of CAIN</a></p></li>
+<li><p>CAIN manual: <a href="https://www-jlc.kek.jp/~tauchi/index/cain/manual-cain21e.pdf">User’s Manual of CAIN</a></p></li>
 </ul>
 </section>
 <section id="_cain_mapping" class="level3" data-number="8.2.7">
@@ -716,7 +716,7 @@ D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
 <li><p><a href="../../api/opalx/html/LinearBreitWheelerBenchmarkCommon_8h.html"><code>unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h</code></a></p></li>
 <li><p><a href="../../api/opalx/html/LinearBreitWheelerBenchmark_8cpp.html"><code>unit_tests/Physics/LinearBreitWheelerBenchmark.cpp</code></a></p></li>
 <li><p><a href="../../api/opalx/html/TestLinearBreitWheelerSpectrum_8cpp.html"><code>unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp</code></a></p></li>
-<li><p><code>~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh</code></p></li>
+<li><p><a href="https://github.com/OPALX-project/OPALX-project.github.io/blob/master/gamma-gamma/generate-gamma-gamma-results.sh"><code>gamma-gamma/generate-gamma-gamma-results.sh</code></a></p></li>
 <li><p><code>~/git/cain/linear-breit-wheeler-head-on.i</code></p></li>
 <li><p><code>~/git/cain/generate-linear-breit-wheeler-results.sh</code></p></li>
 </ul>
@@ -1111,7 +1111,7 @@ Figure&nbsp;8.33: Overlap-restricted outgoing positron polar-angle spectrum.
 <li><p>CAIN linear Breit-Wheeler generator: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lnbwgn.f"><code>src/lnbwgn.f</code></a></p></li>
 <li><p>CAIN nonlinear Breit-Wheeler generator: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/nlbwgn.f"><code>src/nlbwgn.f</code></a></p></li>
 <li><p>CAIN weighted event insertion: <a href="https://github.com/cfruhling2/CAIN/blob/main/src/lbwevent.f"><code>src/lbwevent.f</code></a></p></li>
-<li><p>CAIN manual: <a href="https://manualzilla.com/doc/5656761/user-s-manual-of-cain">User’s Manual of CAIN</a></p></li>
+<li><p>CAIN manual: <a href="https://www-jlc.kek.jp/~tauchi/index/cain/manual-cain21e.pdf">User’s Manual of CAIN</a></p></li>
 </ul>
 </section>
 <section id="_cain_structure" class="level3" data-number="8.3.8">
