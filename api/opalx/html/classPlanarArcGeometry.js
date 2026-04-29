@@ -1,0 +1,28 @@
+var classPlanarArcGeometry =
+[
+    [ "PlanarArcGeometry", "classPlanarArcGeometry.html#ae47bf0f3e15aacd631ef27c8f8792452", null ],
+    [ "PlanarArcGeometry", "classPlanarArcGeometry.html#aad0d546a3251ee239c31bf7789dafeec", null ],
+    [ "PlanarArcGeometry", "classPlanarArcGeometry.html#a8aa0c01992ed435665150e878754aeb4", null ],
+    [ "~PlanarArcGeometry", "classPlanarArcGeometry.html#a4789b8d1d2499b2ad1dd1d7a16886425", null ],
+    [ "getArcLength", "classPlanarArcGeometry.html#ab1a617cbba9106cb0c63f6fa4c07bd2a", null ],
+    [ "getBendAngle", "classPlanarArcGeometry.html#a7116d2987d32778f02bc0f5ccfa9d84a", null ],
+    [ "getCurvature", "classPlanarArcGeometry.html#a595628320769c9c6b05dd3e90b89f97f", null ],
+    [ "getElementLength", "classPlanarArcGeometry.html#af38f3dc994f45cb28fe925b9eb8c64a7", null ],
+    [ "getEntrance", "classPlanarArcGeometry.html#ae31a307f1a6f40a1de976d2136d403a6", null ],
+    [ "getEntranceFrame", "classPlanarArcGeometry.html#a0972198c2c5bbbd1fd960562e4f386f7", null ],
+    [ "getEntrancePatch", "classPlanarArcGeometry.html#ac49a4bc6e22058d0deeb76cdf9ec0a2a", null ],
+    [ "getExit", "classPlanarArcGeometry.html#a0770f6e0cd703dc2c55d434a7822bf05", null ],
+    [ "getExitFrame", "classPlanarArcGeometry.html#acc78b86025728adc31409ce31c8a4802", null ],
+    [ "getExitPatch", "classPlanarArcGeometry.html#a35f57fcb562b5abab7a459d4752065f0", null ],
+    [ "getOrigin", "classPlanarArcGeometry.html#aa2f0d09524ca4849bc7b3b26f607ad9b", null ],
+    [ "getTotalTransform", "classPlanarArcGeometry.html#afbfe8d8e030b3c08a26089f489ef51d3", null ],
+    [ "getTransform", "classPlanarArcGeometry.html#afb5554bef0100826b31f5b51a088ba84", null ],
+    [ "getTransform", "classPlanarArcGeometry.html#a0d701e1301f8bcc093fa8236288abec6", null ],
+    [ "operator=", "classPlanarArcGeometry.html#af512a794bef0559aa7ee69a93d1c670a", null ],
+    [ "setBendAngle", "classPlanarArcGeometry.html#ac4902dd62579cc65da02d75e762106d0", null ],
+    [ "setCurvature", "classPlanarArcGeometry.html#a6263642c7a579fbb8e8ac653199b36fe", null ],
+    [ "setElementLength", "classPlanarArcGeometry.html#ab279211707d7355edaa4b55d31e4fe97", null ],
+    [ "angle", "classPlanarArcGeometry.html#a05f71b09af4a7d5f1712eb77f1b33673", null ],
+    [ "h", "classPlanarArcGeometry.html#a0966ea846411ff7c1392852c77f41f34", null ],
+    [ "len", "classPlanarArcGeometry.html#a3d38427ae1eb9810174d37d9586a3742", null ]
+];

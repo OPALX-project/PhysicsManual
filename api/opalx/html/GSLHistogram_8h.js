@@ -1,0 +1,28 @@
+var GSLHistogram_8h =
+[
+    [ "gsl_histogram", "classgsl__histogram.html", "classgsl__histogram" ],
+    [ "gsl_histogram2d", "classgsl__histogram2d.html", "classgsl__histogram2d" ],
+    [ "gsl_histogram2d_pdf", "classgsl__histogram2d__pdf.html", "classgsl__histogram2d__pdf" ],
+    [ "gsl_histogram2d_accumulate", "GSLHistogram_8h.html#a6649bd380c145f8ab562fd256e2c4aeb", null ],
+    [ "gsl_histogram2d_alloc", "GSLHistogram_8h.html#a122e6c9c83acfe3e23692b1577f1e506", null ],
+    [ "gsl_histogram2d_fprintf", "GSLHistogram_8h.html#a205a0c8f680eef257184fefa85485835", null ],
+    [ "gsl_histogram2d_free", "GSLHistogram_8h.html#af40a6180d2c5a60b4f93abd91478ddfa", null ],
+    [ "gsl_histogram2d_get", "GSLHistogram_8h.html#a6b3c4f2156fcd0e250c12044ed9d9d94", null ],
+    [ "gsl_histogram2d_increment", "GSLHistogram_8h.html#a287cdfbbfb952af4ed5d94902c8f7bbb", null ],
+    [ "gsl_histogram2d_nx", "GSLHistogram_8h.html#a7a6ccfbc9105a57d0be6a7fa3731a770", null ],
+    [ "gsl_histogram2d_ny", "GSLHistogram_8h.html#a9e0e220c671085830a6b54b2e82adf18", null ],
+    [ "gsl_histogram2d_pdf_alloc", "GSLHistogram_8h.html#aee08fa039832a3486fc23569b1f1e1a8", null ],
+    [ "gsl_histogram2d_pdf_free", "GSLHistogram_8h.html#a191ca10cdb90f92f7d1b9d112b09e9ce", null ],
+    [ "gsl_histogram2d_pdf_init", "GSLHistogram_8h.html#a6d8fed29f97735916dae246ffd1f41f5", null ],
+    [ "gsl_histogram2d_pdf_sample", "GSLHistogram_8h.html#a96165f28b653c11a707a0a4e5b3dc1cc", null ],
+    [ "gsl_histogram2d_set_ranges", "GSLHistogram_8h.html#a3300d2e93ba120eab3161a3397465d95", null ],
+    [ "gsl_histogram2d_set_ranges_uniform", "GSLHistogram_8h.html#acab328bfe3c77e29d2c54d6abaf064b4", null ],
+    [ "gsl_histogram_alloc", "GSLHistogram_8h.html#aa990c80b1abdbed6a810ab5f7e66cea2", null ],
+    [ "gsl_histogram_bins", "GSLHistogram_8h.html#aff88c24d97671269bee31e7a77d8505b", null ],
+    [ "gsl_histogram_free", "GSLHistogram_8h.html#a2e043c1eeee003978c84cb38473e21d1", null ],
+    [ "gsl_histogram_get", "GSLHistogram_8h.html#ad359a26d9176ee6744c72db95dbd7943", null ],
+    [ "gsl_histogram_get_range", "GSLHistogram_8h.html#a34a524e154a279bc83ac9f809d097b87", null ],
+    [ "gsl_histogram_increment", "GSLHistogram_8h.html#a452a141f459fea14f4d39cd8f35dc598", null ],
+    [ "gsl_histogram_set_ranges", "GSLHistogram_8h.html#aaa768233bf25c9d9b6de81edad29ae52", null ],
+    [ "gsl_histogram_set_ranges_uniform", "GSLHistogram_8h.html#a91d5578112cced8ac201906eeeae6209", null ]
+];

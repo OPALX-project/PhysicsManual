@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['r0x_0',['R0X',['../classEmissionSource.html#aa283548c68b7c7c940fe41c8f8ad5c66a21268cecc80c2a258779d8c399c191f6',1,'EmissionSource']]],
+  ['r0y_1',['R0Y',['../classEmissionSource.html#aa283548c68b7c7c940fe41c8f8ad5c66a0109a0ee6d749feb3614ea44e6addd89',1,'EmissionSource']]],
+  ['r0z_2',['R0Z',['../classEmissionSource.html#aa283548c68b7c7c940fe41c8f8ad5c66a80d01b5a9ec3dc55e4c69d7510f1c27d',1,'EmissionSource']]],
+  ['r_5fstart_3',['R_START',['../classDumpEMFields.html#aa95a61cf42bfcd786a11e032167a8c2fa4af84903234ebce59d5e956c79112351',1,'DumpEMFields']]],
+  ['r_5fsteps_4',['R_STEPS',['../classDumpEMFields.html#aa95a61cf42bfcd786a11e032167a8c2faf872d8e7bee95c5baeba1a60ffe97a7a',1,'DumpEMFields']]],
+  ['ray_5',['RAY',['../classBoundaryGeometry.html#a365e0f5cfa17b5e89fcc5aa0794f437ca0cde65a21388e5eca43449abb72c49ce',1,'BoundaryGeometry']]],
+  ['rbend_6',['RBEND',['../ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a75edd14c548d6fae30013b090cd86c88',1,'ElementBase.h']]],
+  ['rbend3d_7',['RBEND3D',['../ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a12c772b13dc2c537de8c0f3806b4ec96',1,'ElementBase.h']]],
+  ['rectangular_8',['rectangular',['../BoundaryGeometry_8h.html#adb5d9e8876d74875a68a71e67f72faf9a47428d834e54119100c608d0d1448e51',1,'RECTANGULAR:&#160;BoundaryGeometry.h'],['../ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a47428d834e54119100c608d0d1448e51',1,'RECTANGULAR:&#160;ElementBase.h']]],
+  ['reference_9',['REFERENCE',['../Options_8h.html#acd22617257a8ed81fc3eb5e5e53c69b5adcd320d017d7f3c317bc8b234287bc9f',1,'Options.h']]],
+  ['regular_10',['REGULAR',['../ParticleProperties_8h.html#a68ce8628f9eb7e1c10dbd5e4e1abf71ea820ead78f0fa32544c7ba38fe7ff53d9',1,'ParticleProperties.h']]],
+  ['relativefftlowpass_11',['RELATIVEFFTLOWPASS',['../classOpalFilter.html#a684fb6fe08039179e8c1a29ab6d4efa5a5d8aeac0aec2d2df8d8f05bd8b0c0788',1,'OpalFilter']]],
+  ['rfcavity_12',['rfcavity',['../ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8ac04b3cc5b1a13dc2463b809070bbb67e',1,'RFCAVITY:&#160;ElementBase.h'],['../IndexMap_8cpp.html#aa9aaa650bacb9b91c82437c2ce48f50ca2d0d323a858416da9e540afc7e0ff719',1,'RFCAVITY:&#160;IndexMap.cpp'],['../classMeshGenerator.html#aaabeccbde558039934e92e0cbc8721b5aff3f3415b357cb96b267f00bb7f610b6',1,'MeshGenerator::RFCAVITY']]],
+  ['rffreq_13',['RFFREQ',['../classOpalRingDefinition.html#a2a9ee435417d97965e8d4df7f9cead15a61f5097b6c9bfe667088aad48241a917',1,'OpalRingDefinition']]],
+  ['rfringe_14',['RFRINGE',['../classOpalMultipoleT.html#a82585346e24adda80950d7b6c1dc57f2ab6a6475143dafa3d78eaf77699ed0f2e',1,'OpalMultipoleT']]],
+  ['ring_15',['RING',['../ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8ae69b8a2544417fb71e2767e95d7ac8f3',1,'ElementBase.h']]],
+  ['rk4_16',['RK4',['../namespaceSteppers.html#a7eab9239ce282f0848816013973b560cabf3dcdc52206565bf9085180efe37ad9',1,'Steppers']]],
+  ['rmax_17',['RMAX',['../classOpalCavity.html#a94e22714b29df871d67acbb8a5cab73ea1f46429e9d0c87406857b3bd01bd37ba',1,'OpalCavity']]],
+  ['rmin_18',['RMIN',['../classOpalCavity.html#a94e22714b29df871d67acbb8a5cab73ea6715e72ba3118486719766315da00ab6',1,'OpalCavity']]],
+  ['rotate180_19',['ROTATE180',['../classLaserProfile.html#a07e52bb32267df16433b5d2a8aa97be8ad5aa499354b84ffd6f9ab6b33bd27c8d',1,'LaserProfile']]],
+  ['rotate270_20',['ROTATE270',['../classLaserProfile.html#a07e52bb32267df16433b5d2a8aa97be8a80d6378d2ba22b2a8708f1051fa416f7',1,'LaserProfile']]],
+  ['rotate90_21',['ROTATE90',['../classLaserProfile.html#a07e52bb32267df16433b5d2a8aa97be8a09987b6fb75da95db8743352dd50d3cb',1,'LaserProfile']]],
+  ['rotation_22',['ROTATION',['../classOpalMultipoleT.html#a82585346e24adda80950d7b6c1dc57f2a3163731573332a6d60fbd83443df2ea9',1,'OpalMultipoleT']]]
+];

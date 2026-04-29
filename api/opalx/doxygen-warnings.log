@@ -1,0 +1,943 @@
+error: Tag file 'YES' does not exist or is not a file. Skipping it...
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/BeamlineCore/TestConstantEzRep.cpp:2: warning: the name 'TestConstantEFieldCavityRep.cpp' supplied as the argument in the \file statement is not an input file
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Gaussian.h:17: warning: the name 'Distribution' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTCurvedConstRadius.cpp:30: warning: no uniquely matching class member found for 
+  void MultipoleTCurvedConstRadius::getField(const Kokkos::View< ippl::Vector< T, Dim >< double, 3 > * > R, Kokkos::View< Vector_t< double, 3 > * >, const Kokkos::View< Vector_t< double, 3 > * > B, const double scaling, const size_t count)
+Possible candidates:
+  'virtual EMField & Component::getField()=0' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h
+  'virtual const EMField & Component::getField() const =0' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h
+  'virtual BDipoleField & Corrector::getField()=0' at line 64 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Corrector.h
+  'virtual const BDipoleField & Corrector::getField() const =0' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Corrector.h
+  'virtual BMultipoleField & Multipole::getField() override=0' at line 130 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h
+  'virtual const BMultipoleField & Multipole::getField() const override=0' at line 133 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h
+  'EMField & MultipoleT::getField() override' at line 91 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleT.h
+  'const EMField & MultipoleT::getField() const override' at line 93 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleT.h
+  'virtual void MultipoleTBase::getField(Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, double, size_t)=0' at line 91 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTBase.h
+  'virtual bool MultipoleTBase::getField(const Vector_t< double, 3 > &, Vector_t< double, 3 > &, Vector_t< double, 3 > &, double)=0' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTBase.h
+  'void MultipoleTCurvedConstRadius::getField(Kokkos::View< Vector_t< double, 3 > * > R, Kokkos::View< Vector_t< double, 3 > * > E, Kokkos::View< Vector_t< double, 3 > * > B, double scaling, size_t count) override' at line 79 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTCurvedConstRadius.h
+  'bool MultipoleTCurvedConstRadius::getField(const Vector_t< double, 3 > &R, Vector_t< double, 3 > &E, Vector_t< double, 3 > &B, double scaling) override' at line 82 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTCurvedConstRadius.h
+  'void MultipoleTStraight::getField(Kokkos::View< Vector_t< double, 3 > * > R, Kokkos::View< Vector_t< double, 3 > * > E, Kokkos::View< Vector_t< double, 3 > * > B, double scaling, size_t count) override' at line 80 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTStraight.h
+  'bool MultipoleTStraight::getField(const Vector_t< double, 3 > &R, Vector_t< double, 3 > &E, Vector_t< double, 3 > &B, double scaling) override' at line 83 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTStraight.h
+  'virtual EMField & Ring::getField() override' at line 183 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h
+  'virtual const EMField & Ring::getField() const override' at line 188 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h
+  'EMField & ScalingFFAMagnet::getField() override' at line 135 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h
+  'const EMField & ScalingFFAMagnet::getField() const override' at line 138 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h
+  'EMField & VariableRFCavity::getField() override' at line 208 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VariableRFCavity.h
+  'const EMField & VariableRFCavity::getField() const override' at line 210 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VariableRFCavity.h
+  'EMField & VerticalFFAMagnet::getField()' at line 116 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h
+  'const EMField & VerticalFFAMagnet::getField() const' at line 119 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h
+  'ConstEzField & ConstantEFieldCavityRep::getField() override' at line 19 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ConstantEFieldCavityRep.h
+  'const ConstEzField & ConstantEFieldCavityRep::getField() const override' at line 20 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ConstantEFieldCavityRep.h
+  'virtual NullField & DriftRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/DriftRep.h
+  'virtual const NullField & DriftRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/DriftRep.h
+  'NullField & LaserRep::getField() override' at line 18 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/LaserRep.h
+  'const NullField & LaserRep::getField() const override' at line 19 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/LaserRep.h
+  'virtual NullField & MarkerRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MarkerRep.h
+  'virtual const NullField & MarkerRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MarkerRep.h
+  'virtual NullField & MonitorRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MonitorRep.h
+  'virtual const NullField & MonitorRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MonitorRep.h
+  'virtual BMultipoleField & MultipoleRep::getField()' at line 47 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MultipoleRep.h
+  'virtual const BMultipoleField & MultipoleRep::getField() const' at line 51 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MultipoleRep.h
+  'virtual NullField & ProbeRep::getField()' at line 48 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ProbeRep.h
+  'virtual const NullField & ProbeRep::getField() const' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ProbeRep.h
+  'virtual AcceleratingField & RFCavityRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/RFCavityRep.h
+  'virtual const AcceleratingField & RFCavityRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/RFCavityRep.h
+  'virtual ConstBzField & SolenoidRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/SolenoidRep.h
+  'virtual const ConstBzField & SolenoidRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/SolenoidRep.h
+  'virtual AcceleratingField & TravelingWaveRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/TravelingWaveRep.h
+  'virtual const AcceleratingField & TravelingWaveRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/TravelingWaveRep.h
+  'void MultipoleTBaseTest::getField(const Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, double, size_t) override' at line 35 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestMultipoleTBase.cpp
+  'bool MultipoleTBaseTest::getField(const Vector_t< double, 3 > &, Vector_t< double, 3 > &, Vector_t< double, 3 > &, double) override' at line 39 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestMultipoleTBase.cpp
+  'EMField & TestRFCavity::getField() override' at line 156 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestRFCavity.cpp
+  'const EMField & TestRFCavity::getField() const override' at line 157 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestRFCavity.cpp
+  'EMField & TestTravelingWave::getField() override' at line 174 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestTravelingWave.cpp
+  'const EMField & TestTravelingWave::getField() const override' at line 175 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestTravelingWave.cpp
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTStraight.cpp:28: warning: no uniquely matching class member found for 
+  void MultipoleTStraight::getField(const Kokkos::View< ippl::Vector< T, Dim >< double, 3 > * > R, Kokkos::View< Vector_t< double, 3 > * >, const Kokkos::View< Vector_t< double, 3 > * > B, const double scaling, const size_t count)
+Possible candidates:
+  'virtual EMField & Component::getField()=0' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h
+  'virtual const EMField & Component::getField() const =0' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h
+  'virtual BDipoleField & Corrector::getField()=0' at line 64 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Corrector.h
+  'virtual const BDipoleField & Corrector::getField() const =0' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Corrector.h
+  'virtual BMultipoleField & Multipole::getField() override=0' at line 130 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h
+  'virtual const BMultipoleField & Multipole::getField() const override=0' at line 133 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h
+  'EMField & MultipoleT::getField() override' at line 91 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleT.h
+  'const EMField & MultipoleT::getField() const override' at line 93 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleT.h
+  'virtual void MultipoleTBase::getField(Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, double, size_t)=0' at line 91 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTBase.h
+  'virtual bool MultipoleTBase::getField(const Vector_t< double, 3 > &, Vector_t< double, 3 > &, Vector_t< double, 3 > &, double)=0' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTBase.h
+  'void MultipoleTCurvedConstRadius::getField(Kokkos::View< Vector_t< double, 3 > * > R, Kokkos::View< Vector_t< double, 3 > * > E, Kokkos::View< Vector_t< double, 3 > * > B, double scaling, size_t count) override' at line 79 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTCurvedConstRadius.h
+  'bool MultipoleTCurvedConstRadius::getField(const Vector_t< double, 3 > &R, Vector_t< double, 3 > &E, Vector_t< double, 3 > &B, double scaling) override' at line 82 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTCurvedConstRadius.h
+  'void MultipoleTStraight::getField(Kokkos::View< Vector_t< double, 3 > * > R, Kokkos::View< Vector_t< double, 3 > * > E, Kokkos::View< Vector_t< double, 3 > * > B, double scaling, size_t count) override' at line 80 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTStraight.h
+  'bool MultipoleTStraight::getField(const Vector_t< double, 3 > &R, Vector_t< double, 3 > &E, Vector_t< double, 3 > &B, double scaling) override' at line 83 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/MultipoleTStraight.h
+  'virtual EMField & Ring::getField() override' at line 183 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h
+  'virtual const EMField & Ring::getField() const override' at line 188 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h
+  'EMField & ScalingFFAMagnet::getField() override' at line 135 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h
+  'const EMField & ScalingFFAMagnet::getField() const override' at line 138 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h
+  'EMField & VariableRFCavity::getField() override' at line 208 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VariableRFCavity.h
+  'const EMField & VariableRFCavity::getField() const override' at line 210 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VariableRFCavity.h
+  'EMField & VerticalFFAMagnet::getField()' at line 116 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h
+  'const EMField & VerticalFFAMagnet::getField() const' at line 119 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h
+  'ConstEzField & ConstantEFieldCavityRep::getField() override' at line 19 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ConstantEFieldCavityRep.h
+  'const ConstEzField & ConstantEFieldCavityRep::getField() const override' at line 20 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ConstantEFieldCavityRep.h
+  'virtual NullField & DriftRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/DriftRep.h
+  'virtual const NullField & DriftRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/DriftRep.h
+  'NullField & LaserRep::getField() override' at line 18 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/LaserRep.h
+  'const NullField & LaserRep::getField() const override' at line 19 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/LaserRep.h
+  'virtual NullField & MarkerRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MarkerRep.h
+  'virtual const NullField & MarkerRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MarkerRep.h
+  'virtual NullField & MonitorRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MonitorRep.h
+  'virtual const NullField & MonitorRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MonitorRep.h
+  'virtual BMultipoleField & MultipoleRep::getField()' at line 47 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MultipoleRep.h
+  'virtual const BMultipoleField & MultipoleRep::getField() const' at line 51 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MultipoleRep.h
+  'virtual NullField & ProbeRep::getField()' at line 48 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ProbeRep.h
+  'virtual const NullField & ProbeRep::getField() const' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ProbeRep.h
+  'virtual AcceleratingField & RFCavityRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/RFCavityRep.h
+  'virtual const AcceleratingField & RFCavityRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/RFCavityRep.h
+  'virtual ConstBzField & SolenoidRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/SolenoidRep.h
+  'virtual const ConstBzField & SolenoidRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/SolenoidRep.h
+  'virtual AcceleratingField & TravelingWaveRep::getField()' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/TravelingWaveRep.h
+  'virtual const AcceleratingField & TravelingWaveRep::getField() const' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/TravelingWaveRep.h
+  'void MultipoleTBaseTest::getField(const Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, Kokkos::View< Vector_t< double, 3 > * >, double, size_t) override' at line 35 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestMultipoleTBase.cpp
+  'bool MultipoleTBaseTest::getField(const Vector_t< double, 3 > &, Vector_t< double, 3 > &, Vector_t< double, 3 > &, double) override' at line 39 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestMultipoleTBase.cpp
+  'EMField & TestRFCavity::getField() override' at line 156 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestRFCavity.cpp
+  'const EMField & TestRFCavity::getField() const override' at line 157 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestRFCavity.cpp
+  'EMField & TestTravelingWave::getField() override' at line 174 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestTravelingWave.cpp
+  'const EMField & TestTravelingWave::getField() const override' at line 175 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests/AbsBeamline/TestTravelingWave.cpp
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h:298: warning: no matching class member found for 
+  template < T >
+  Expressions::Scalar< T >::Scalar(const Expressions::Scalar< double > &)
+Possible candidates:
+  'Expressions::Scalar< T >::Scalar()' at line 75 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'Expressions::Scalar< T >::Scalar(const Scalar &)' at line 76 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h:322: warning: no matching class member found for 
+  template < T >
+  Expressions::OArray< T >::OArray(const Expressions::OArray< double > &)
+Possible candidates:
+  'Expressions::OArray< T >::OArray()' at line 159 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'Expressions::OArray< T >::OArray(const OArray &)' at line 160 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h:434: warning: no uniquely matching class member found for 
+  template < T >
+  PtrToArray< T > & Expressions::PtrToArray< T >::operator=(const Expressions::PtrToArray< T > &rhs)
+Possible candidates:
+  'const AttributeSet & AttributeSet::operator=(const AttributeSet &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/AttributeSet.h
+  'void BeamlineVisitor::operator=(const BeamlineVisitor &)' at line 121 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/BeamlineVisitor.h
+  'void ConstantEFieldCavity::operator=(const ConstantEFieldCavity &)' at line 55 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ConstantEFieldCavity.h
+  'void Corrector::operator=(const Corrector &)' at line 126 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Corrector.h
+  'void Drift::operator=(const Drift &)' at line 66 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Drift.h
+  'void ElementBase::operator=(const ElementBase &)' at line 363 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ElementBase.h
+  'Enge & endfieldmodel::Enge::operator=(const Enge &enge)' at line 141 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/EndFieldModel/Enge.h
+  'void Marker::operator=(const Marker &)' at line 61 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Marker.h
+  'void Monitor::operator=(const Monitor &)' at line 103 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Monitor.h
+  'void Multipole::operator=(const Multipole &)' at line 174 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h
+  'void PluginElement::operator=(const PluginElement &)=delete' at line 34 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/PluginElement.h
+  'void Probe::operator=(const Probe &)=delete' at line 36 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Probe.h
+  'void RFCavity::operator=(const RFCavity &)' at line 242 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/RFCavity.h
+  'Ring & Ring::operator=(const Ring &ring)' at line 407 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h
+  'ScalingFFAMagnet & ScalingFFAMagnet::operator=(const ScalingFFAMagnet &rhs)' at line 276 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h
+  'void Solenoid::operator=(const Solenoid &)' at line 187 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Solenoid.h
+  'void TravelingWave::operator=(const TravelingWave &)' at line 129 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/TravelingWave.h
+  'VariableRFCavity & VariableRFCavity::operator=(const VariableRFCavity &)' at line 48 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VariableRFCavity.h
+  'VerticalFFAMagnet & VerticalFFAMagnet::operator=(const VerticalFFAMagnet &rhs)' at line 224 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h
+  'void Action::operator=(const Action &)' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Action.h
+  'const Attribute & Attribute::operator=(const Attribute &)' at line 72 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Attribute.h
+  'void AttributeBase::operator=(AttributeBase &)' at line 60 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/AttributeBase.h
+  'void AttributeHandler::operator=(const AttributeHandler &)' at line 144 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/AttributeHandler.h
+  'void BeamSequence::operator=(const BeamSequence &)' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/BeamSequence.h
+  'void Definition::operator=(const Definition &)' at line 63 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Definition.h
+  'void Element::operator=(const Element &)' at line 110 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Element.h
+  'void Expressions::Scalar< T >::operator=(const Scalar &)' at line 100 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'PtrToScalar & Expressions::PtrToScalar< T >::operator=(const PtrToScalar &)' at line 119 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'PtrToScalar & Expressions::PtrToScalar< T >::operator=(PtrToScalar &&) noexcept=default' at line 120 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'PtrToScalar & Expressions::PtrToScalar< T >::operator=(Scalar< T > *rhs)' at line 121 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'void Expressions::OArray< T >::operator=(const OArray &)' at line 184 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'PtrToArray & Expressions::PtrToArray< T >::operator=(const PtrToArray< T > &)' at line 203 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'PtrToArray & Expressions::PtrToArray< T >::operator=(PtrToArray &&) noexcept=default' at line 204 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'PtrToArray & Expressions::PtrToArray< T >::operator=(OArray< T > *rhs)' at line 205 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Expressions.h
+  'void Object::operator=(const Object &)' at line 246 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Object.h
+  'void OpalData::operator=(const OpalData &)' at line 268 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/OpalData.h
+  'const PlaceRep & PlaceRep::operator=(const PlaceRep &)' at line 55 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/PlaceRep.h
+  'const RangeRep & RangeRep::operator=(const RangeRep &)' at line 47 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/RangeRep.h
+  'void Table::operator=(const Table &)' at line 165 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/Table.h
+  'const TableRowRep & TableRowRep::operator=(const TableRowRep &)' at line 51 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/TableRowRep.h
+  'void ValueDefinition::operator=(const ValueDefinition &)' at line 102 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbstractObjects/ValueDefinition.h
+  'void AbstractTracker::operator=(const AbstractTracker &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/AbstractTracker.h
+  'CoordinateSystemTrafo & CoordinateSystemTrafo::operator=(const CoordinateSystemTrafo &right)=default' at line 51 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/CoordinateSystemTrafo.h
+  'void DefaultVisitor::operator=(const DefaultVisitor &)=delete' at line 114 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/DefaultVisitor.h
+  'void Flagger::operator=(const Flagger &)' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/Flagger.h
+  'KOKKOS_INLINE_FUNCTION matrix_t & matrix_t< Rows, Cols >::operator=(const matrix_t &right)' at line 70 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/Matrix.h
+  'Quaternion & Quaternion::operator=(const Quaternion &)=default' at line 21 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/Quaternion.hpp
+  'void StepSizeConfig::operator=(const StepSizeConfig &)=delete' at line 35 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/StepSizeConfig.h
+  'void Tracker::operator=(const Tracker &)' at line 126 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/Tracker.h
+  'void Attributes::Bool::operator=(const Bool &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/Bool.h
+  'void Attributes::BoolArray::operator=(const BoolArray &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/BoolArray.h
+  'void Attributes::String::operator=(const String &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/OpalString.h
+  'void Attributes::Place::operator=(const Place &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/Place.h
+  'void Attributes::PredefinedString::operator=(const PredefinedString &)' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/PredefinedString.h
+  'void Attributes::Range::operator=(const Range &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/Range.h
+  'void Attributes::Real::operator=(const Real &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/Real.h
+  'void Attributes::RealArray::operator=(const RealArray &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/RealArray.h
+  'void Attributes::Reference::operator=(const Reference &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/Reference.h
+  'void Attributes::StringArray::operator=(const StringArray &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/StringArray.h
+  'void Attributes::TableRow::operator=(const TableRow &)' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/TableRow.h
+  'void Attributes::TokenList::operator=(const TokenList &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/TokenList.h
+  'void Attributes::TokenListArray::operator=(const TokenListArray &)' at line 59 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/TokenListArray.h
+  'void Attributes::UpperCaseString::operator=(const UpperCaseString &)' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/UpperCaseString.h
+  'void Attributes::UpperCaseStringArray::operator=(const UpperCaseStringArray &)' at line 55 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Attributes/UpperCaseStringArray.h
+  'void Call::operator=(const Call &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Call.h
+  'DumpEMFields & DumpEMFields::operator=(const DumpEMFields &dump)=delete' at line 166 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h
+  'void Echo::operator=(const Echo &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Echo.h
+  'void Help::operator=(const Help &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Help.h
+  'void Option::operator=(const Option &)' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Option.h
+  'void PSystem::operator=(const PSystem &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/PSystem.h
+  'void Quit::operator=(const Quit &)' at line 43 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Quit.h
+  'void Select::operator=(const Select &)' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Select.h
+  'void Stop::operator=(const Stop &)' at line 43 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Stop.h
+  'void System::operator=(const System &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/System.h
+  'void Title::operator=(const Title &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Title.h
+  'void Value::operator=(const Value &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/Value.h
+  'void ConstantEFieldCavityRep::operator=(const ConstantEFieldCavityRep &)' at line 29 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ConstantEFieldCavityRep.h
+  'void DriftRep::operator=(const DriftRep &)' at line 66 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/DriftRep.h
+  'void MarkerRep::operator=(const MarkerRep &)' at line 82 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MarkerRep.h
+  'void MonitorRep::operator=(const MonitorRep &)' at line 88 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MonitorRep.h
+  'void MultipoleRep::operator=(const MultipoleRep &)' at line 75 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/MultipoleRep.h
+  'void ProbeRep::operator=(const ProbeRep &)' at line 84 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/ProbeRep.h
+  'void RFCavityRep::operator=(const RFCavityRep &)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/RFCavityRep.h
+  'void SolenoidRep::operator=(const SolenoidRep &)' at line 74 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/SolenoidRep.h
+  'void TravelingWaveRep::operator=(const TravelingWaveRep &)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineCore/TravelingWaveRep.h
+  'const Euclid3DGeometry & Euclid3DGeometry::operator=(const Euclid3DGeometry &right)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineGeometry/Euclid3DGeometry.h
+  'const BGeometryBase & BGeometryBase::operator=(const BGeometryBase &right)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineGeometry/Geometry.h
+  'const NullGeometry & NullGeometry::operator=(const NullGeometry &)' at line 38 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineGeometry/NullGeometry.h
+  'const PlanarArcGeometry & PlanarArcGeometry::operator=(const PlanarArcGeometry &)' at line 69 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineGeometry/PlanarArcGeometry.h
+  'const RBendGeometry & RBendGeometry::operator=(const RBendGeometry &)' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineGeometry/RBendGeometry.h
+  'const StraightGeometry & StraightGeometry::operator=(const StraightGeometry &right)' at line 43 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BeamlineGeometry/StraightGeometry.h
+  'void Beamline::operator=(const Beamline &)' at line 55 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Beamlines/Beamline.h
+  'void BeamlineGeometry::operator=(const BeamlineGeometry &)' at line 99 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Beamlines/BeamlineGeometry.h
+  'double Channel::operator=(double value)' at line 43 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Channels/Channel.h
+  'const Channel & Channel::operator=(const Channel &)' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Channels/Channel.h
+  'const ConstChannel & ConstChannel::operator=(const ConstChannel &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Channels/ConstChannel.h
+  'const DirectChannel & DirectChannel::operator=(const DirectChannel &)' at line 62 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Channels/DirectChannel.h
+  'const IndexedChannel & IndexedChannel< T >::operator=(const IndexedChannel &)' at line 75 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Channels/IndexedChannel.h
+  'const IndirectChannel & IndirectChannel< T >::operator=(const IndirectChannel &)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Channels/IndirectChannel.h
+  'void Distribution::operator=(const Distribution &)=delete' at line 141 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Distribution.h
+  'void OpalCavity::operator=(const OpalCavity &)' at line 69 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalCavity.h
+  'void OpalConstantEFieldCavity::operator=(const OpalConstantEFieldCavity &)' at line 24 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalConstantEFieldCavity.h
+  'void OpalDrift::operator=(const OpalDrift &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalDrift.h
+  'void OpalElement::operator=(const OpalElement &)' at line 135 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalElement.h
+  'void OpalLaser::operator=(const OpalLaser &)' at line 27 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalLaser.h
+  'void OpalMarker::operator=(const OpalMarker &)' at line 51 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalMarker.h
+  'void OpalMonitor::operator=(const OpalMonitor &)' at line 42 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalMonitor.h
+  'void OpalMultipole::operator=(const OpalMultipole &)' at line 56 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalMultipole.h
+  'void OpalMultipoleT::operator=(const OpalMultipoleT &)=delete' at line 70 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalMultipoleT.h
+  'void OpalPolynomialTimeDependence::operator=(const OpalPolynomialTimeDependence &)=delete' at line 56 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalPolynomialTimeDependence.h
+  'void OpalProbe::operator=(const OpalProbe &)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalProbe.h
+  'void OpalQuadrupole::operator=(const OpalQuadrupole &)' at line 60 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalQuadrupole.h
+  'void OpalRingDefinition::operator=(const OpalRingDefinition &)' at line 78 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalRingDefinition.h
+  'OpalSinusoidalTimeDependence & OpalSinusoidalTimeDependence::operator=(const OpalSinusoidalTimeDependence &)=delete' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalSinusoidalTimeDependence.h
+  'void OpalSolenoid::operator=(const OpalSolenoid &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalSolenoid.h
+  'void OpalSource::operator=(const OpalSource &)' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalSource.h
+  'void OpalSplineTimeDependence::operator=(const OpalSplineTimeDependence &)=delete' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalSplineTimeDependence.h
+  'void OpalTravelingWave::operator=(const OpalTravelingWave &)' at line 58 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalTravelingWave.h
+  'void OpalVacuum::operator=(const OpalVacuum &)' at line 59 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalVacuum.h
+  'void OpalVariableRFCavity::operator=(const OpalVariableRFCavity &)=delete' at line 62 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalVariableRFCavity.h
+  'void OpalVerticalFFAMagnet::operator=(const OpalVerticalFFAMagnet &)' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Elements/OpalVerticalFFAMagnet.h
+  'void Expressions::AAutomatic< T >::operator=(const AAutomatic &)' at line 69 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AAutomatic.h
+  'void Expressions::ABinary< T, U >::operator=(const ABinary &)' at line 66 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ABinary.h
+  'const AColumn & Expressions::AColumn::operator=(const AColumn &)' at line 62 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AColumn.h
+  'void Expressions::ADeferred< T >::operator=(const ADeferred< T > &)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ADeferred.h
+  'void Expressions::AList< T >::operator=(const AList &)' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AList.h
+  'void Expressions::ARefExpr< T >::operator=(const ARefExpr &)' at line 66 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ARefExpr.h
+  'const ARow & Expressions::ARow::operator=(const ARow &)' at line 62 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ARow.h
+  'void Expressions::ASUnary< T >::operator=(const ASUnary &)' at line 73 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ASUnary.h
+  'const ATable & Expressions::ATable::operator=(const ATable &)' at line 70 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ATable.h
+  'void Expressions::AUnary< T, U >::operator=(const AUnary &)' at line 64 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AUnary.h
+  'void Expressions::AValue< T >::operator=(const AValue< T > &)' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AValue.h
+  'void Expressions::Indexer< T >::operator=(const Indexer &)' at line 64 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/Indexer.h
+  'void Expressions::SAutomatic< T >::operator=(const SAutomatic< T > &)' at line 64 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SAutomatic.h
+  'void Expressions::SBinary< T, U >::operator=(const SBinary &)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SBinary.h
+  'void Expressions::SCell::operator=(const SCell &)' at line 61 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SCell.h
+  'void Expressions::SConstant< T >::operator=(const SConstant< T > &)' at line 63 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SConstant.h
+  'void Expressions::SDeferred< T >::operator=(const SDeferred< T > &)' at line 73 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SDeferred.h
+  'void SFunction::operator=(const SFunction &)' at line 64 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SFunction.h
+  'void Expressions::SHash::operator=(const SHash &)' at line 61 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SHash.h
+  'void Expressions::SNull< T >::operator=(const SNull &)' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SNull.h
+  'void Expressions::SRefAttr< T >::operator=(const SRefAttr &)' at line 86 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SRefAttr.h
+  'void Expressions::SRefExpr< T >::operator=(const SRefExpr &)' at line 69 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SRefExpr.h
+  'void Expressions::SUnary< T, U >::operator=(const SUnary &)' at line 70 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SUnary.h
+  'void Expressions::SValue< T >::operator=(const SValue< T > &)' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SValue.h
+  'BMultipoleField & BMultipoleField::operator=(const BMultipoleField &)' at line 26 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/BMultipoleField.h
+  'void BMultipoleField::Pair::operator=(const Pair &)' at line 107 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/BMultipoleField.h
+  'const EMField & EMField::operator=(const EMField &right)' at line 198 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/EMField.h
+  'const Mesh::Iterator & interpolation::Mesh::Iterator::operator=(const Mesh::Iterator &rhs)' at line 189 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/Mesh.h
+  'MMatrix< Tmplt > & interpolation::MMatrix< Tmplt >::operator=(const MMatrix< Tmplt > &mm)' at line 158 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'MVector< Tmplt > & interpolation::MVector< Tmplt >::operator=(const MVector< Tmplt > &mv)' at line 138 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'PolynomialPatch & interpolation::PolynomialPatch::operator=(const PolynomialPatch &rhs)' at line 135 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/PolynomialPatch.h
+  'SquarePolynomialVector & interpolation::SquarePolynomialVector::operator=(const SquarePolynomialVector &)=default' at line 83 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/SquarePolynomialVector.h
+  'const NullField & NullField::operator=(const NullField &right)' at line 37 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/NullField.h
+  'void EmissionSourceList::operator=(const EmissionSourceList &)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/EmissionSourceList.h
+  'void Line::operator=(const Line &)' at line 69 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/Line.h
+  'void LineTemplate::operator=(const LineTemplate &)' at line 65 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/LineTemplate.h
+  'void Replacer::operator=(const Replacer &)' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/Replacer.h
+  'void Sequence::operator=(const Sequence &)' at line 103 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/Sequence.h
+  'void SequenceMember::operator=(const SequenceMember &)' at line 81 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/SequenceMember.h
+  'void SequenceParser::operator=(const SequenceParser &)' at line 79 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/SequenceParser.h
+  'void SequenceTemplate::operator=(const SequenceTemplate &)' at line 66 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Lines/SequenceTemplate.h
+  'void AbsFileStream::operator=(const AbsFileStream &)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/AbsFileStream.h
+  'void CompoundStatement::operator=(const CompoundStatement &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/CompoundStatement.h
+  'void FileStream::operator=(const FileStream &)' at line 60 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/FileStream.h
+  'void IfStatement::operator=(const IfStatement &)' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/IfStatement.h
+  'void Macro::operator=(const Macro &)' at line 89 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/Macro.h
+  'void MacroCmd::operator=(const MacroCmd &)' at line 61 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/MacroCmd.h
+  'void MacroStream::operator=(const MacroStream &)' at line 55 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/MacroStream.h
+  'void OpalParser::operator=(const OpalParser &)' at line 104 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/OpalParser.h
+  'void Parser::operator=(const Parser &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/Parser.h
+  'void StringStream::operator=(const StringStream &)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/StringStream.h
+  'const Token & Token::operator=(const Token &)' at line 76 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/Token.h
+  'void TokenStream::operator=(const TokenStream &)' at line 72 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/TokenStream.h
+  'void WhileStatement::operator=(const WhileStatement &)' at line 54 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/OpalParser/WhileStatement.h
+  'Histogram & ParticleBinning::Histogram< size_type, bin_index_type, value_type, UseDualView, Properties >::operator=(const Histogram &other)' at line 132 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h
+  'KOKKOS_INLINE_FUNCTION ArrayReduction & ParticleBinning::ArrayReduction< SizeType, IndexType, N >::operator=(const ArrayReduction &rhs)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/ParallelReduceTools.h
+  'HostArrayReduction & ParticleBinning::HostArrayReduction< SizeType, IndexType >::operator=(const HostArrayReduction &rhs)' at line 261 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/ParallelReduceTools.h
+  'void Beam::operator=(const Beam &)' at line 109 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/Beam.h
+  'void BinningCmd::operator=(const BinningCmd &)' at line 102 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BinningCmd.h
+  'const Ray & Ray::operator=(const Ray &a)=delete' at line 834 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.cpp
+  'void BoundaryGeometry::operator=(const BoundaryGeometry &)' at line 245 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.h
+  'DataSink & DataSink::operator=(const DataSink &)=delete' at line 180 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/DataSink.h
+  'void EmissionSource::operator=(const EmissionSource &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/EmissionSource.h
+  'void FieldSolverCmd::operator=(const FieldSolverCmd &)' at line 112 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/FieldSolverCmd.h
+  'void RangeSelector::operator=(const RangeSelector &)' at line 62 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Tables/RangeSelector.h
+  'void Selector::operator=(const Selector &)' at line 57 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Tables/Selector.h
+  'void Track::operator=(const Track &)' at line 100 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Track/Track.h
+  'void TrackCmd::operator=(const TrackCmd &)' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Track/TrackCmd.h
+  'void TrackEnd::operator=(const TrackEnd &)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Track/TrackEnd.h
+  'void TrackParser::operator=(const TrackParser &)' at line 44 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Track/TrackParser.h
+  'void TrackRun::operator=(const TrackRun &)' at line 70 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Track/TrackRun.h
+  'BoundingBox2D & mslang::BoundingBox2D::operator=(const BoundingBox2D &)=default' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/BoundingBox2D.h
+  'recursive_wrapper & matheval::detail::recursive_wrapper< T >::operator=(const recursive_wrapper &other)' at line 91 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/matheval.hpp
+  'recursive_wrapper & matheval::detail::recursive_wrapper< T >::operator=(recursive_wrapper &&other) noexcept=default' at line 98 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/matheval.hpp
+  'unary_op & matheval::detail::unary_op< real_t >::operator=(const unary_op &other)' at line 180 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/matheval.hpp
+  'unary_op & matheval::detail::unary_op< real_t >::operator=(unary_op &&) noexcept=default' at line 188 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/matheval.hpp
+  'binary_op & matheval::detail::binary_op< real_t >::operator=(const binary_op &other)' at line 216 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/matheval.hpp
+  'binary_op & matheval::detail::binary_op< real_t >::operator=(binary_op &&) noexcept=default' at line 225 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/matheval.hpp
+  'void mslang::QuadTree::operator=(const QuadTree &right)' at line 33 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/MSLang/QuadTree.h
+  'void OpalFilter::operator=(const OpalFilter &)' at line 73 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/OpalFilter.h
+  'void RegularExpression::operator=(const RegularExpression &)' at line 52 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/RegularExpression.h
+  'RingSection & RingSection::operator=(const RingSection &sec)' at line 76 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/RingSection.h
+  'void OPALTimer::Timer::operator=(const Timer &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/Timer.h
+  'void BoolConstant::operator=(const BoolConstant &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/ValueDefinitions/BoolConstant.h
+  'void RealConstant::operator=(const RealConstant &)' at line 56 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/ValueDefinitions/RealConstant.h
+  'void RealVariable::operator=(const RealVariable &)' at line 56 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/ValueDefinitions/RealVariable.h
+  'void RealVector::operator=(const RealVector &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/ValueDefinitions/RealVector.h
+  'void StringConstant::operator=(const StringConstant &)' at line 53 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/ValueDefinitions/StringConstant.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AAutomatic.h:80: warning: no matching class member found for 
+  template < T >
+  Expressions::AAutomatic< T >::AAutomatic(const Expressions::AAutomatic< double > &rhs)
+Possible candidates:
+  'Expressions::AAutomatic< T >::AAutomatic(PtrToArray< T > expr)' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AAutomatic.h
+  'Expressions::AAutomatic< T >::AAutomatic(ArrayOfPtrs< T > expr)' at line 49 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AAutomatic.h
+  'Expressions::AAutomatic< T >::AAutomatic(const AAutomatic &)' at line 51 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AAutomatic.h
+  'Expressions::AAutomatic< T >::AAutomatic()' at line 68 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AAutomatic.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ABinary.h:81: warning: no matching class member found for 
+  template < T, U >
+  Expressions::ABinary< T, U >::ABinary(const Expressions::ABinary< T, U > &rhs)
+Possible candidates:
+  'Expressions::ABinary< T, U >::ABinary(const TFunction2< T, U > &function, PtrToArray< U > left, PtrToArray< U > right)' at line 47 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ABinary.h
+  'Expressions::ABinary< T, U >::ABinary(const ABinary< T, U > &)' at line 50 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ABinary.h
+  'Expressions::ABinary< T, U >::ABinary()' at line 65 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/ABinary.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AList.h:82: warning: no matching class member found for 
+  template < T >
+  Expressions::AList< T >::AList(const Expressions::AList< double > &rhs)
+Possible candidates:
+  'Expressions::AList< T >::AList()' at line 42 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AList.h
+  'Expressions::AList< T >::AList(const ArrayOfPtrs< T > &)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AList.h
+  'Expressions::AList< T >::AList(const AList &)' at line 48 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AList.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AValue.h:82: warning: no matching class member found for 
+  template < T >
+  Expressions::AValue< T >::AValue(const Expressions::AValue< double > &rhs)
+Possible candidates:
+  'Expressions::AValue< T >::AValue()' at line 41 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AValue.h
+  'Expressions::AValue< T >::AValue(const std::vector< T > &val)' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AValue.h
+  'Expressions::AValue< T >::AValue(const AValue &)' at line 47 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/AValue.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/Indexer.h:76: warning: no matching class member found for 
+  template < T >
+  Expressions::Indexer< T >::Indexer(const Expressions::Indexer< T > &rhs)
+Possible candidates:
+  'Expressions::Indexer< T >::Indexer(PtrToArray< T > array, PtrToScalar< double > index)' at line 46 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/Indexer.h
+  'Expressions::Indexer< T >::Indexer(const Indexer< T > &)' at line 48 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/Indexer.h
+  'Expressions::Indexer< T >::Indexer()' at line 63 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/Indexer.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SBinary.h:86: warning: no matching class member found for 
+  template < T, U >
+  Expressions::SBinary< T, U >::SBinary(const Expressions::SBinary< T, U > &rhs)
+Possible candidates:
+  'Expressions::SBinary< T, U >::SBinary(const TFunction2< T, U > &function, PtrToScalar< U > left, PtrToScalar< U > right)' at line 45 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SBinary.h
+  'Expressions::SBinary< T, U >::SBinary(const SBinary< T, U > &)' at line 48 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SBinary.h
+  'Expressions::SBinary< T, U >::SBinary()' at line 70 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Expressions/SBinary.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.cpp:52: warning: no matching class member found for 
+  template interpolation::MMatrix< Tmplt >::MMatrix(size_t i, size_t j, double *data_beg)
+Possible candidates:
+  'interpolation::MMatrix< Tmplt >::MMatrix()' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(const MMatrix< Tmplt > &mv)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt *data_beginning)' at line 81 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt value)' at line 89 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.cpp:53: warning: no matching class member found for 
+  template interpolation::MMatrix< Tmplt >::MMatrix(size_t i, size_t j, gsl_complex *data_beg)
+Possible candidates:
+  'interpolation::MMatrix< Tmplt >::MMatrix()' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(const MMatrix< Tmplt > &mv)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt *data_beginning)' at line 81 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt value)' at line 89 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.cpp:54: warning: no matching class member found for 
+  template interpolation::MMatrix< Tmplt >::MMatrix(size_t i, size_t j, double value)
+Possible candidates:
+  'interpolation::MMatrix< Tmplt >::MMatrix()' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(const MMatrix< Tmplt > &mv)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt *data_beginning)' at line 81 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt value)' at line 89 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.cpp:55: warning: no matching class member found for 
+  template interpolation::MMatrix< Tmplt >::MMatrix(size_t i, size_t j, gsl_complex value)
+Possible candidates:
+  'interpolation::MMatrix< Tmplt >::MMatrix()' at line 67 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(const MMatrix< Tmplt > &mv)' at line 71 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt *data_beginning)' at line 81 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols, Tmplt value)' at line 89 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+  'interpolation::MMatrix< Tmplt >::MMatrix(size_t nrows, size_t ncols)' at line 96 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MMatrix.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.cpp:53: warning: no matching class member found for 
+  template interpolation::MVector< Tmplt >::MVector(const interpolation::MVector< double > &)
+Possible candidates:
+  'interpolation::MVector< Tmplt >::MVector()' at line 121 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const MVector< Tmplt > &mv)' at line 122 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const Tmplt *ta_beg, const Tmplt *ta_end)' at line 123 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(std::vector< Tmplt > tv)' at line 124 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i)' at line 125 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i, Tmplt value)' at line 126 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'template < Tmplt2 >
+  interpolation::MVector< Tmplt >::MVector(MVector< Tmplt2 >)' at line 127 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.cpp:54: warning: no matching class member found for 
+  template interpolation::MVector< Tmplt >::MVector(const interpolation::MVector< gsl_complex > &)
+Possible candidates:
+  'interpolation::MVector< Tmplt >::MVector()' at line 121 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const MVector< Tmplt > &mv)' at line 122 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const Tmplt *ta_beg, const Tmplt *ta_end)' at line 123 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(std::vector< Tmplt > tv)' at line 124 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i)' at line 125 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i, Tmplt value)' at line 126 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'template < Tmplt2 >
+  interpolation::MVector< Tmplt >::MVector(MVector< Tmplt2 >)' at line 127 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.cpp:55: warning: no matching class member found for 
+  template interpolation::MVector< Tmplt >::MVector(size_t i, double value)
+Possible candidates:
+  'interpolation::MVector< Tmplt >::MVector()' at line 121 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const MVector< Tmplt > &mv)' at line 122 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const Tmplt *ta_beg, const Tmplt *ta_end)' at line 123 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(std::vector< Tmplt > tv)' at line 124 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i)' at line 125 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i, Tmplt value)' at line 126 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'template < Tmplt2 >
+  interpolation::MVector< Tmplt >::MVector(MVector< Tmplt2 >)' at line 127 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.cpp:56: warning: no matching class member found for 
+  template interpolation::MVector< Tmplt >::MVector(size_t i, gsl_complex value)
+Possible candidates:
+  'interpolation::MVector< Tmplt >::MVector()' at line 121 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const MVector< Tmplt > &mv)' at line 122 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(const Tmplt *ta_beg, const Tmplt *ta_end)' at line 123 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(std::vector< Tmplt > tv)' at line 124 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i)' at line 125 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'interpolation::MVector< Tmplt >::MVector(size_t i, Tmplt value)' at line 126 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'template < Tmplt2 >
+  interpolation::MVector< Tmplt >::MVector(MVector< Tmplt2 >)' at line 127 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.cpp:58: warning: no matching class member found for 
+  template void interpolation::MVector< Tmplt >::build_vector(const double *data_begin, const double *data_end)
+Possible candidates:
+  'void interpolation::MVector< Tmplt >::build_vector(size_t size)' at line 153 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'void interpolation::MVector< Tmplt >::build_vector(const Tmplt *data_start, const Tmplt *data_end)' at line 154 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.cpp:59: warning: no matching class member found for 
+  template void interpolation::MVector< Tmplt >::build_vector(const gsl_complex *data_begin, const m_complex *data_end)
+Possible candidates:
+  'void interpolation::MVector< Tmplt >::build_vector(size_t size)' at line 153 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+  'void interpolation::MVector< Tmplt >::build_vector(const Tmplt *data_start, const Tmplt *data_end)' at line 154 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:104: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:104: warning: Found unknown command '\gamma'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:241: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+warning: Included by graph for 'AbstractObjects/Expressions.h' not generated, too many nodes (51), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Included by graph for 'OpalData.h' not generated, too many nodes (83), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Included by graph for 'Attributes.h' not generated, too many nodes (74), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Included by graph for 'Physics.h' not generated, too many nodes (68), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:90: warning: argument 'w' of command @param is not found in the argument list of gsl_eigen_nonsymm(gsl_matrix *A, gsl_vector_complex *eval, gsl_eigen_nonsymm_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:56: warning: argument 'balance' of command @param is not found in the argument list of gsl_eigen_nonsymm_params(int, int, gsl_eigen_nonsymm_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:56: warning: argument 'compute_shur' of command @param is not found in the argument list of gsl_eigen_nonsymm_params(int, int, gsl_eigen_nonsymm_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:56: warning: argument 'w' of command @param is not found in the argument list of gsl_eigen_nonsymm_params(int, int, gsl_eigen_nonsymm_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:308: warning: argument 'wavetable' of command @param is not found in the argument list of gsl_fft_complex_forward(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:308: warning: argument 'workspace' of command @param is not found in the argument list of gsl_fft_complex_forward(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:329: warning: argument 'wavetable' of command @param is not found in the argument list of gsl_fft_complex_inverse(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:329: warning: argument 'workspace' of command @param is not found in the argument list of gsl_fft_complex_inverse(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:260: warning: argument 'wavetable' of command @param is not found in the argument list of gsl_fft_halfcomplex_inverse(double *data, size_t stride, size_t n, gsl_fft_halfcomplex_wavetable *, gsl_fft_real_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:260: warning: argument 'workspace' of command @param is not found in the argument list of gsl_fft_halfcomplex_inverse(double *data, size_t stride, size_t n, gsl_fft_halfcomplex_wavetable *, gsl_fft_real_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:202: warning: argument 'wavetable' of command @param is not found in the argument list of gsl_fft_halfcomplex_transform(double *data, size_t stride, size_t n, gsl_fft_halfcomplex_wavetable *, gsl_fft_halfcomplex_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:202: warning: argument 'workspace' of command @param is not found in the argument list of gsl_fft_halfcomplex_transform(double *data, size_t stride, size_t n, gsl_fft_halfcomplex_wavetable *, gsl_fft_halfcomplex_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:146: warning: argument 'wavetable' of command @param is not found in the argument list of gsl_fft_real_transform(double *data, size_t stride, size_t n, gsl_fft_real_wavetable *, gsl_fft_real_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLFFT.h:146: warning: argument 'workspace' of command @param is not found in the argument list of gsl_fft_real_transform(double *data, size_t stride, size_t n, gsl_fft_real_wavetable *, gsl_fft_real_workspace *)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLHistogram.h:474: warning: argument 'nx' of command @param is not found in the argument list of gsl_histogram2d_pdf_alloc(size_t, size_t)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLHistogram.h:474: warning: argument 'ny' of command @param is not found in the argument list of gsl_histogram2d_pdf_alloc(size_t, size_t)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLIntegration.h:109: warning: argument 'limit' of command @param is not found in the argument list of gsl_integration_qag(const gsl_function *f, double a, double b, double epsabs, double epsrel, size_t, int, gsl_integration_workspace *, double *result, double *abserr)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLIntegration.h:109: warning: argument 'key' of command @param is not found in the argument list of gsl_integration_qag(const gsl_function *f, double a, double b, double epsabs, double epsrel, size_t, int, gsl_integration_workspace *, double *result, double *abserr)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLIntegration.h:109: warning: argument 'workspace' of command @param is not found in the argument list of gsl_integration_qag(const gsl_function *f, double a, double b, double epsabs, double epsrel, size_t, int, gsl_integration_workspace *, double *result, double *abserr)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLSpline.h:35: warning: argument 'size' of command @param is not found in the argument list of gsl_spline_alloc(const int type, size_t)
+warning: Included by graph for 'OpalException.h' not generated, too many nodes (101), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Included by graph for 'Options.h' not generated, too many nodes (60), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:303: warning: argument 'scale' of command @param is not found in the argument list of Astra1DDynamic::applyField(std::shared_ptr< ParticleContainer_t > pc, double)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:303: warning: argument 'pc' from the argument list of Astra1DDynamic::applyField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:430: warning: argument 'R' from the argument list of Astra1DDynamic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:430: warning: argument 'E' from the argument list of Astra1DDynamic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:430: warning: argument 'B' from the argument list of Astra1DDynamic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'Filename' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'fast' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/BinnedFieldSolver.h:264: warning: The following parameter of BinnedFieldSolver::prepareRhoForBin(PartBunch_t &bunch, std::shared_ptr< AdaptBins_t > bins, const bin_index_type binIndex, const size_type nPartGlobal, const double gammaBin, ImageScatterMode mode=ImageScatterMode::PrimaryAndImage) is not documented:
+  parameter 'mode'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/BinnedFieldSolver.h:188: warning: argument 'tableName' of command @param is not found in the argument list of BinnedFieldSolver< T, Dim >::printBinStatsTable(const std::string &binningCmdName, const std::vector< BinStatsRow > &rows)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/BinnedFieldSolver.h:188: warning: argument 'nBinsOrZero' of command @param is not found in the argument list of BinnedFieldSolver< T, Dim >::printBinStatsTable(const std::string &binningCmdName, const std::vector< BinStatsRow > &rows)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/BinnedFieldSolver.h:188: warning: The following parameter of BinnedFieldSolver::printBinStatsTable(const std::string &binningCmdName, const std::vector< BinStatsRow > &rows) is not documented:
+  parameter 'binningCmdName'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.cpp:2232: warning: argument 'momenta' of command @param is not found in the argument list of BoundaryGeometry::partInside(const Vector_t< double, 3 > &r, const Vector_t< double, 3 > &v, const double dt, Vector_t< double, 3 > &intersect_pt, int &triangle_id)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.cpp:2232: warning: unexpected token TK_COMMAND_AT in comment block while parsing the argument of command param
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.cpp:2232: warning: The following parameters of BoundaryGeometry::partInside(const Vector_t< double, 3 > &r, const Vector_t< double, 3 > &v, const double dt, Vector_t< double, 3 > &intersect_pt, int &triangle_id) are not documented:
+  parameter 'v'
+  parameter 'intersect_pt'
+  parameter 'triangle_id'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/DataSink.h:93: warning: The following parameters of DataSink::dumpH5(PartBunch_t &beam, Vector_t< double, 3 > FDext[], double meanEnergy, double refPr, double refPt, double refPz, double refR, double refTheta, double refZ, double azimuth, double elevation, bool local) const are not documented:
+  parameter 'FDext'
+  parameter 'meanEnergy'
+  parameter 'refPr'
+  parameter 'refPt'
+  parameter 'refPz'
+  parameter 'refR'
+  parameter 'refTheta'
+  parameter 'refZ'
+  parameter 'azimuth'
+  parameter 'elevation'
+  parameter 'local'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/DataSink.h:102: warning: The following parameters of DataSink::dumpSDDS(PartBunch_t &beam, const std::vector< std::array< Vector_t< double, 3 >, 2 > > &fdextPerContainer, const double &azimuth) const are not documented:
+  parameter 'fdextPerContainer'
+  parameter 'azimuth'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/DataSink.h:111: warning: The following parameters of DataSink::dumpSDDS(PartBunch_t &beam, const std::vector< std::array< Vector_t< double, 3 >, 2 > > &fdextPerContainer, const losses_t &losses, const double &azimuth) const are not documented:
+  parameter 'fdextPerContainer'
+  parameter 'losses'
+  parameter 'azimuth'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/DataSink.h:125: warning: The following parameter of DataSink::writeGeomToVtk(BoundaryGeometry &bg, std::string fn) is not documented:
+  parameter 'bg'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/DataSink.h:134: warning: The following parameters of DataSink::writeImpactStatistics(const PartBunch_t &beam, long long int &step, size_t &impact, double &sey_num, size_t numberOfFieldEmittedParticles, bool nEmissionMode, std::string fn) are not documented:
+  parameter 'beam'
+  parameter 'step'
+  parameter 'impact'
+  parameter 'sey_num'
+  parameter 'numberOfFieldEmittedParticles'
+  parameter 'nEmissionMode'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Distribution.h:146: warning: argument 'massIneV' of command @param is not found in the argument list of Distribution::calcPartPerDist(size_t numberOfParticles)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Distribution.h:146: warning: argument 'charge' of command @param is not found in the argument list of Distribution::calcPartPerDist(size_t numberOfParticles)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Distribution.cpp:183: warning: explicit link request to 'cores' could not be resolved
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Distribution.cpp:185: warning: unexpected end of comment block while parsing the argument of command param
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/DistributionMoments.cpp:420: warning: Unsupported xml/html tag <x> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:113: warning: Unsupported xml/html tag <number> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:114: warning: Unsupported xml/html tag <units> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:115: warning: Unsupported xml/html tag <units> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:116: warning: Unsupported xml/html tag <units> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:117: warning: Unsupported xml/html tag <units> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:118: warning: Unsupported xml/html tag <units> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:119: warning: Unsupported xml/html tag <units> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/BasicActions/DumpEMFields.h:121: warning: Unsupported xml/html tag <field> found
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'Filename' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'fast' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'Filename' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'fast' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'Filename' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'fast' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:227: warning: argument 'pc' from the argument list of FM2DDynamic::applyField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:363: warning: argument 'R' from the argument list of FM2DDynamic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:363: warning: argument 'E' from the argument list of FM2DDynamic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:363: warning: argument 'B' from the argument list of FM2DDynamic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'Filename' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'fast' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:326: warning: argument 'R' from the argument list of FM2DDynamic::getFieldstrength has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:326: warning: argument 'E' from the argument list of FM2DDynamic::getFieldstrength has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DDynamic.cpp:326: warning: argument 'B' from the argument list of FM2DDynamic::getFieldstrength has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.h:164: warning: The following parameter of FM2DMagnetoStatic::applyField(std::shared_ptr< ParticleContainer_t > pc, double scale=1.0) is not documented:
+  parameter 'scale'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.cpp:249: warning: argument 'R' from the argument list of FM2DMagnetoStatic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.cpp:249: warning: argument 'E' from the argument list of FM2DMagnetoStatic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.cpp:249: warning: argument 'B' from the argument list of FM2DMagnetoStatic::getFieldDerivative has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'Filename' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Fieldmap.cpp:59: warning: argument 'fast' from the argument list of Fieldmap::getFieldmap has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.cpp:228: warning: argument 'R' from the argument list of FM2DMagnetoStatic::getFieldstrength has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.cpp:228: warning: argument 'E' from the argument list of FM2DMagnetoStatic::getFieldstrength has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/FM2DMagnetoStatic.cpp:228: warning: argument 'B' from the argument list of FM2DMagnetoStatic::getFieldstrength has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Gaussian.h:32: warning: Found unknown command '\in'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Gaussian.cpp:59: warning: argument 'numberOfParticles' from the argument list of Gaussian::generateParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/Gaussian.cpp:59: warning: argument 'nr' from the argument list of Gaussian::generateParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/H5Writer.h:53: warning: The following parameters of H5Writer::writePhaseSpace(PartBunch_t &beam, Vector_t< double, 3 > FDext[], double E, double refPr, double refPt, double refPz, double refR, double refTheta, double refZ, double azimuth, double elevation, bool local, size_t particleContainerIndex=0) are not documented:
+  parameter 'refPr'
+  parameter 'refPt'
+  parameter 'refPz'
+  parameter 'refR'
+  parameter 'refTheta'
+  parameter 'refZ'
+  parameter 'azimuth'
+  parameter 'elevation'
+  parameter 'local'
+  parameter 'particleContainerIndex'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/H5Writer.h:39: warning: The following parameter of H5Writer::writePhaseSpace(PartBunch_t &beam, Vector_t< double, 3 > FDext[], size_t particleContainerIndex=0) is not documented:
+  parameter 'particleContainerIndex'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:294: warning: argument 'i' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:294: warning: argument 'E' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:294: warning: argument 'B' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:335: warning: argument 'R' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:335: warning: argument 'E' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:335: warning: argument 'B' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:366: warning: argument 'R' from the argument list of Multipole::applyToReferenceParticle has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:366: warning: argument 'E' from the argument list of Multipole::applyToReferenceParticle has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:366: warning: argument 'B' from the argument list of Multipole::applyToReferenceParticle has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'R' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'E' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'B' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'NormalComponents' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'SkewComponents' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'max_NormalComponent' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'max_SkewComponent' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:517: warning: argument 'R' from the argument list of Multipole::computeFieldHost has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:517: warning: argument 'E' from the argument list of Multipole::computeFieldHost has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:517: warning: argument 'B' from the argument list of Multipole::computeFieldHost has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h:141: warning: argument 'endFied' of command @param is not found in the argument list of Multipole::initialise(PartBunch_t *bunch, double &startField, double &endField)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h:141: warning: The following parameter of Multipole::initialise(PartBunch_t *bunch, double &startField, double &endField) is not documented:
+  parameter 'endField'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:294: warning: argument 'i' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:294: warning: argument 'E' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:294: warning: argument 'B' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:335: warning: argument 'R' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:335: warning: argument 'E' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:335: warning: argument 'B' from the argument list of Multipole::apply has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:366: warning: argument 'R' from the argument list of Multipole::applyToReferenceParticle has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:366: warning: argument 'E' from the argument list of Multipole::applyToReferenceParticle has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:366: warning: argument 'B' from the argument list of Multipole::applyToReferenceParticle has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'R' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'E' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'B' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'NormalComponents' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'SkewComponents' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'max_NormalComponent' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:425: warning: argument 'max_SkewComponent' from the argument list of Multipole::computeField has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:517: warning: argument 'R' from the argument list of Multipole::computeFieldHost has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:517: warning: argument 'E' from the argument list of Multipole::computeFieldHost has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.cpp:517: warning: argument 'B' from the argument list of Multipole::computeFieldHost has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h:141: warning: argument 'endFied' of command @param is not found in the argument list of Multipole::initialise(PartBunch_t *bunch, double &startField, double &endField)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Multipole.h:141: warning: The following parameter of Multipole::initialise(PartBunch_t *bunch, double &startField, double &endField) is not documented:
+  parameter 'endField'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/MultiVariateGaussian.h:44: warning: The following parameter of MultiVariateGaussian::MultiVariateGaussian(std::shared_ptr< ParticleContainer_t > pc, const Vector_t< double, 3 > &meanR, const Vector_t< double, 3 > &meanP, const Vector_t< double, 3 > &sigmaR, const Vector_t< double, 3 > &sigmaP, const Vector_t< double, 3 > &cutoffR, const Vector_t< double, 3 > &cutoffP, bool fixMeanR=true, bool fixMeanP=true) is not documented:
+  parameter 'pc'
+warning: Call graph for 'ParallelTracker::execute' not generated, too many nodes (62), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:851: warning: argument 'pusher' from the argument list of ParallelTracker::kickParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:851: warning: argument 'pc' from the argument list of ParallelTracker::kickParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:816: warning: argument 'pusher' from the argument list of ParallelTracker::pushParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:816: warning: argument 'pc' from the argument list of ParallelTracker::pushParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:241: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:241: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:104: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:104: warning: Found unknown command '\gamma'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:104: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:104: warning: Found unknown command '\gamma'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:79: warning: argument 'i' of command @param is not found in the argument list of Ring::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:79: warning: argument 't' of command @param is not found in the argument list of Ring::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:79: warning: argument 'E' of command @param is not found in the argument list of Ring::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:79: warning: argument 'B' of command @param is not found in the argument list of Ring::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:79: warning: The following parameter of Ring::apply(const std::shared_ptr< ParticleContainer_t > &pc) is not documented:
+  parameter 'pc'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:97: warning: argument 'centroid' of command @param is not found in the argument list of Ring::apply(const Vector_t< double, 3 > &R, const Vector_t< double, 3 > &P, const double &t, Vector_t< double, 3 > &E, Vector_t< double, 3 > &B)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:117: warning: argument 'scaleFactor' of command @param is not found in the argument list of Ring::initialise(PartBunch_t *bunch, double &startField, double &endField)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:215: warning: argument 'sink' of command @param is not found in the argument list of Ring::setRefPartBunch(PartBunch_t *bunch)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Ring.h:215: warning: The following parameter of Ring::setRefPartBunch(PartBunch_t *bunch) is not documented:
+  parameter 'bunch'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Steppers/RK4.h:43: warning: argument 'Pindex' of command @param is not found in the argument list of RK4< FieldFunction, Arguments >::derivate_m(PartBunch_t *bunch, double *y, const double &t, double *yp, const size_t &i, Arguments &... args) const
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Steppers/RK4.h:43: warning: The following parameters of RK4::derivate_m(PartBunch_t *bunch, double *y, const double &t, double *yp, const size_t &i, Arguments &... args) const are not documented:
+  parameter 'bunch'
+  parameter 'i'
+  parameter 'args'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:61: warning: argument 'i' of command @param is not found in the argument list of ScalingFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:61: warning: argument 't' of command @param is not found in the argument list of ScalingFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:61: warning: argument 'E' of command @param is not found in the argument list of ScalingFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:61: warning: argument 'B' of command @param is not found in the argument list of ScalingFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:61: warning: The following parameter of ScalingFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc) is not documented:
+  parameter 'pc'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:227: warning: Found unknown command '\psi'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/ScalingFFAMagnet.h:231: warning: Found unknown command '\psi'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/StatWriter.h:33: warning: The following parameters of StatWriter::write(PartBunch_t &beam, Vector_t< double, 3 > FDext[], const losses_t &losses=losses_t(), const double &azimuth=-1, const size_t npOutside=0, size_t particleContainerIndex=0) are not documented:
+  parameter 'losses'
+  parameter 'azimuth'
+  parameter 'npOutside'
+  parameter 'particleContainerIndex'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Steppers/Stepper.h:28: warning: Found unknown command '@precondition'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/Tracker.h:87: warning: The following parameters of Tracker::Tracker(const Beamline &beamline, PartBunch_t &bunch, bool backBeam, bool backTrack) are not documented:
+  parameter 'beamline'
+  parameter 'backBeam'
+  parameter 'backTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h:42: warning: argument 'i' of command @param is not found in the argument list of VerticalFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h:42: warning: argument 't' of command @param is not found in the argument list of VerticalFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h:42: warning: argument 'E' of command @param is not found in the argument list of VerticalFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h:42: warning: argument 'B' of command @param is not found in the argument list of VerticalFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/VerticalFFAMagnet.h:42: warning: The following parameter of VerticalFFAMagnet::apply(const std::shared_ptr< ParticleContainer_t > &pc) is not documented:
+  parameter 'pc'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:154: warning: argument 'phi' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:209: warning: The following parameters of Component::trackBunch(PartBunch_t &bunch, const PartData &, bool revBeam, bool revTrack) const are not documented:
+  parameter 'revBeam'
+  parameter 'revTrack'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/SolveFactory.h:46: warning: argument 'polynomial_order' of command @param is not found in the argument list of interpolation::SolveFactory::SolveFactory(int smoothing_order, int point_dim, int value_dim, std::vector< std::vector< double > > positions, std::vector< std::vector< double > > deriv_positions, std::vector< std::vector< int > > &deriv_indices)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinningTools.h:171: warning: argument 'postSum' of command @param is not found in the argument list of ParticleBinning::computeFixSum(const ViewType &input_view, const ViewType &post_sum_view)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/ParallelReduceTools.h:169: warning: Found unknown command '\leq'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinningTools.h:13: warning: The following parameter of ParticleBinning::determineHistoReductionMode(HistoReductionMode modePreference, bin_index_type binCount) is not documented:
+  parameter 'binCount'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/AdaptBins.h:109: warning: The following parameter of ParticleBinning::AdaptBins::AdaptBins(BunchType &bunch, BinningSelector var_selector, bin_index_type maxBins, value_type binningAlpha, value_type binningBeta, value_type desiredWidth, const std::string &binningCmdName) is not documented:
+  parameter 'binningCmdName'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/AdaptBins.h:348: warning: found documented return type for ParticleBinning::AdaptBins::initGlobalHistogram that does not return anything
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinningTools.h:101: warning: argument 'data_' of command @param is not found in the argument list of ParticleBinning::CoordinateSelector< bunch_type >::CoordinateSelector(int axis_)
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:93: warning: Found unknown command '\mathrm'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:93: warning: Found unknown command '\mathrm'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:459: warning: Found unknown command '\mathrm'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:460: warning: Found unknown command '\Delta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:460: warning: Found unknown command '\mathrm'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:461: warning: Found unknown command '\Delta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:461: warning: Found unknown command '\mathrm'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:462: warning: Found unknown command '\alpha'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:463: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h:464: warning: Found unknown command '\Theta'

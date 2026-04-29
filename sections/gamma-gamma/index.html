@@ -165,6 +165,9 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">OPALX Physics Manual</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/OPALX-project/PhysicsManual" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -267,7 +270,7 @@ window.Quarto = {
   <li><a href="#_cain_structure" id="toc-_cain_structure" class="nav-link" data-scroll-target="#_cain_structure"><span class="header-section-number">8.3.8</span> CAIN Structure</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/gamma-gamma/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -377,13 +380,13 @@ window.Quarto = {
 </section>
 <section id="sec-ics-implemented-opalx-benchmark" class="level3" data-number="8.2.3">
 <h3 data-number="8.2.3" class="anchored" data-anchor-id="sec-ics-implemented-opalx-benchmark"><span class="header-section-number">8.2.3</span> Implemented OPALX Benchmark</h3>
-<p>The current <em>OPALX</em> implementation is the CAIN-validated benchmark path on the <code>laser-element-1</code> branch. The relevant code files are:</p>
+<p>The current <em>OPALX</em> implementation is the CAIN-validated benchmark path. The relevant Doxygen pages are:</p>
 <ul>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearCompton.h"><code>src/Physics/LinearCompton.h</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearCompton.cpp"><code>src/Physics/LinearCompton.cpp</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearCompton.cpp"><code>unit_tests/Physics/TestLinearCompton.cpp</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearComptonSpectrum.cpp"><code>unit_tests/Physics/TestLinearComptonSpectrum.cpp</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp"><code>unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearCompton_8h.html"><code>src/Physics/LinearCompton.h</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearCompton_8cpp.html"><code>src/Physics/LinearCompton.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/TestLinearCompton_8cpp.html"><code>unit_tests/Physics/TestLinearCompton.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/TestLinearComptonSpectrum_8cpp.html"><code>unit_tests/Physics/TestLinearComptonSpectrum.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearComptonSpectrumBenchmark_8cpp.html"><code>unit_tests/Physics/LinearComptonSpectrumBenchmark.cpp</code></a></p></li>
 <li><p><code>~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh</code></p></li>
 <li><p><code>~/git/cain/generate-linear-compton-results.sh</code></p></li>
 <li><p><code>~/git/cain/build-cain.sh</code></p></li>
@@ -705,14 +708,14 @@ D = -\left(\frac{s_m}{u_m} + \frac{u_m}{s_m}\right) .
 </section>
 <section id="sec-bw-implemented-opalx-benchmark" class="level3" data-number="8.3.4">
 <h3 data-number="8.3.4" class="anchored" data-anchor-id="sec-bw-implemented-opalx-benchmark"><span class="header-section-number">8.3.4</span> Implemented OPALX Benchmark</h3>
-<p>The current <em>OPALX</em> implementation lives on the <code>laser-element-1</code> branch. The relevant files are:</p>
+<p>The current <em>OPALX</em> implementation is documented in the local Doxygen build. The relevant pages are:</p>
 <ul>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearBreitWheeler.h"><code>src/Physics/LinearBreitWheeler.h</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/src/Physics/LinearBreitWheeler.cpp"><code>src/Physics/LinearBreitWheeler.cpp</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearBreitWheeler.cpp"><code>unit_tests/Physics/TestLinearBreitWheeler.cpp</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h"><code>unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/LinearBreitWheelerBenchmark.cpp"><code>unit_tests/Physics/LinearBreitWheelerBenchmark.cpp</code></a></p></li>
-<li><p><a href="https://github.com/OPALX-project/OPALX/blob/laser-element-1/unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp"><code>unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearBreitWheeler_8h.html"><code>src/Physics/LinearBreitWheeler.h</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearBreitWheeler_8cpp.html"><code>src/Physics/LinearBreitWheeler.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/TestLinearBreitWheeler_8cpp.html"><code>unit_tests/Physics/TestLinearBreitWheeler.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearBreitWheelerBenchmarkCommon_8h.html"><code>unit_tests/Physics/LinearBreitWheelerBenchmarkCommon.h</code></a></p></li>
+<li><p><a href="../../api/opalx/html/LinearBreitWheelerBenchmark_8cpp.html"><code>unit_tests/Physics/LinearBreitWheelerBenchmark.cpp</code></a></p></li>
+<li><p><a href="../../api/opalx/html/TestLinearBreitWheelerSpectrum_8cpp.html"><code>unit_tests/Physics/TestLinearBreitWheelerSpectrum.cpp</code></a></p></li>
 <li><p><code>~/git/OPALX-project.github.io/gamma-gamma/generate-gamma-gamma-results.sh</code></p></li>
 <li><p><code>~/git/cain/linear-breit-wheeler-head-on.i</code></p></li>
 <li><p><code>~/git/cain/generate-linear-breit-wheeler-results.sh</code></p></li>
@@ -1564,4 +1567,4 @@ Figure&nbsp;8.33: Overlap-restricted outgoing positron polar-angle spectrum.
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/gamma-gamma/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

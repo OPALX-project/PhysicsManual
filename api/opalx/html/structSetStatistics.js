@@ -1,0 +1,26 @@
+var structSetStatistics =
+[
+    [ "SetStatistics", "structSetStatistics.html#ae4c673321dc8f71c433d1cfad0009a0f", null ],
+    [ "eps2_m", "structSetStatistics.html#a1ccdee4b25268269534650b51cc70e8c", null ],
+    [ "eps_norm_m", "structSetStatistics.html#a642d1417328ce22aa947c97437b33261", null ],
+    [ "fac_m", "structSetStatistics.html#ab347fbae2db3978b24c7c4689c96ab87", null ],
+    [ "normEmit_m", "structSetStatistics.html#a15e9ff6e1956e362cca7d69df612a7e0", null ],
+    [ "nTotal_m", "structSetStatistics.html#aa3f75dc189daaebafb2e036e41ccfbbd", null ],
+    [ "outputName_m", "structSetStatistics.html#a32de43b370cdf7dab0dea32c94c8f7aa", null ],
+    [ "pmean_m", "structSetStatistics.html#ab2fc1ccf68005f2ea0865432577da124", null ],
+    [ "prms_m", "structSetStatistics.html#a86e724ddf22f9099e402ea9a8658d7cf", null ],
+    [ "psqsum_m", "structSetStatistics.html#abdfdf23fbd293b1e07567b7514d40284", null ],
+    [ "RefPartP_m", "structSetStatistics.html#a4032ed68be1529a58f03a7614605be82", null ],
+    [ "RefPartR_m", "structSetStatistics.html#a3b6426e27a75776d665b9c6d4885354d", null ],
+    [ "refTime_m", "structSetStatistics.html#ae9f0694da12d1e67d8a4a6e64c8a28fc", null ],
+    [ "rmax_m", "structSetStatistics.html#a81f8c1ba746f0ec38d5b27351b43fa7b", null ],
+    [ "rmean_m", "structSetStatistics.html#af5db990b8c190209f4821b4ff04d1e22", null ],
+    [ "rmin_m", "structSetStatistics.html#ad425060a427ae2a4da053d1a3e277daa", null ],
+    [ "rprms_m", "structSetStatistics.html#a01ebab118179f93d973c540f7d26e7bd", null ],
+    [ "rpsum_m", "structSetStatistics.html#abe560243f57c70e238698a0a60e8aee3", null ],
+    [ "rrms_m", "structSetStatistics.html#a409dcf53e8b8b450e342a1480f1fa13c", null ],
+    [ "rsqsum_m", "structSetStatistics.html#a2a157000b216c6c24dcede492c985f49", null ],
+    [ "spos_m", "structSetStatistics.html#adba4df7dcd7de007e115e77c16613a2a", null ],
+    [ "tmean_m", "structSetStatistics.html#a81ae040b4b6e287d18e2d28f0d471233", null ],
+    [ "trms_m", "structSetStatistics.html#a8a79706e49e548858c3fef99c291e260", null ]
+];

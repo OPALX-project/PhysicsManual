@@ -1,0 +1,28 @@
+var classendfieldmodel_1_1Enge =
+[
+    [ "Enge", "classendfieldmodel_1_1Enge.html#a0d1d347d332e241f85c6a9f7e800e80d", null ],
+    [ "Enge", "classendfieldmodel_1_1Enge.html#a635b11785fb9e5b361309efb408114cd", null ],
+    [ "~Enge", "classendfieldmodel_1_1Enge.html#a1cec978dcb07b750d2d83eadec83251d", null ],
+    [ "Enge", "classendfieldmodel_1_1Enge.html#abf0d166ab1ba17ea9921e11449d6178a", null ],
+    [ "clone", "classendfieldmodel_1_1Enge.html#a10a07de59516f982e00f1f8255932787", null ],
+    [ "function", "classendfieldmodel_1_1Enge.html#ab282f5813557e765a8144e5cef9632e6", null ],
+    [ "getCentreLength", "classendfieldmodel_1_1Enge.html#ac0eebdae74e5a872478671dd7bcfe3b5", null ],
+    [ "getCoefficients", "classendfieldmodel_1_1Enge.html#a04d3e71defd660e83008e6baabf7e3db", null ],
+    [ "getDoubleEnge", "classendfieldmodel_1_1Enge.html#a218a9502e6eacbb953d8978f9e2af0cd", null ],
+    [ "getEndLength", "classendfieldmodel_1_1Enge.html#a13c6a817b0f21da33922173701260d46", null ],
+    [ "getEnge", "classendfieldmodel_1_1Enge.html#ab7cf738c24111dbdf1919664166a9e40", null ],
+    [ "getLambda", "classendfieldmodel_1_1Enge.html#aadfd312861efb07f7ef9f98c83ccff1a", null ],
+    [ "getX0", "classendfieldmodel_1_1Enge.html#a335479a827dcba54bf571f570959960e", null ],
+    [ "gN", "classendfieldmodel_1_1Enge.html#a55621a3d4d116084606d2f7eb27461fc", null ],
+    [ "hN", "classendfieldmodel_1_1Enge.html#aab414519062f95dc9e90ec1062ffe131", null ],
+    [ "operator=", "classendfieldmodel_1_1Enge.html#a07749939514b406af40e394270acaf23", null ],
+    [ "print", "classendfieldmodel_1_1Enge.html#abad831e1eb2fc0a5317786b85a1c6e90", null ],
+    [ "rescale", "classendfieldmodel_1_1Enge.html#a08124a32f80c7ca6794ecdd8cb7e4048", null ],
+    [ "setCoefficients", "classendfieldmodel_1_1Enge.html#a78a9302eb352addc0bf648e7f3614089", null ],
+    [ "setLambda", "classendfieldmodel_1_1Enge.html#a2bbee5780b676f92eb5a3dfc73293c07", null ],
+    [ "setMaximumDerivative", "classendfieldmodel_1_1Enge.html#a08c922d7102e2a786d93f1b2b5907068", null ],
+    [ "setX0", "classendfieldmodel_1_1Enge.html#a84da3b5261baa17f133b54cd026703d2", null ],
+    [ "_a", "classendfieldmodel_1_1Enge.html#a1b95f639570f257db5f02dc653db7ca4", null ],
+    [ "_lambda", "classendfieldmodel_1_1Enge.html#a17d9a6717dca34d3d2e8b4c386fd888f", null ],
+    [ "_x0", "classendfieldmodel_1_1Enge.html#ad2bf6d56d6a78566fe900e13cf67e711", null ]
+];

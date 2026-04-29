@@ -1,0 +1,17 @@
+<map id="FlatTop::emitParticles" name="FlatTop::emitParticles">
+<area shape="rect" id="Node000001" title="Emits new particles within a given time interval." alt="" coords="5,169,168,194"/>
+<area shape="rect" id="Node000002" href="$classFlatTop.html#ae59df1c7e2dc7503000a807ff13cc04b" title="Counts the number of particles entering per rank in a given time interval." alt="" coords="216,112,439,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,166,215,152,216,157,150,171"/>
+<area shape="rect" id="Node000007" href="$classFlatTop.html#a17147ac4da8a969f258bb5197f2ce20e" title="Generates particles (x,y) uniformly on a disk distribution." alt="" coords="219,197,436,222"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="169,188,205,192,205,198,168,193"/>
+<area shape="rect" id="Node000003" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="499,5,714,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,110,421,82,486,55,509,47,511,52,488,60,423,87,367,114"/>
+<area shape="rect" id="Node000004" href="$classFlatTop.html#a7f4b759081ce89b112073272bb3341dc" title="Computes the local number of particles uniformly distributed among ranks." alt="" coords="487,70,727,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="438,110,520,95,521,100,439,115"/>
+<area shape="rect" id="Node000005" href="$classFlatTop.html#a26dac9221a7d23f41602dfdc33864ead" title="Computes the flat&#45;top profile value at a given time." alt="" coords="524,119,689,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="439,129,510,129,510,135,439,135"/>
+<area shape="rect" id="Node000006" href="$classFlatTop.html#a773ee38218141908061b8429d84db01b" title="Integrates using the trapezoidal rule." alt="" coords="501,169,712,194"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="439,149,521,164,520,169,438,154"/>
+<area shape="rect" id="Node000008" href="$VectorMath_8h.html#ae35e3c7b11f541ba1edcdb0e58e20a99" title=" " alt="" coords="543,218,670,243"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="436,215,530,222,530,228,436,220"/>
+</map>

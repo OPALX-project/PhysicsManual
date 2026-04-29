@@ -1,0 +1,12 @@
+@INCLUDE = /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/Doxyfile.in
+PROJECT_NUMBER = master (99cf8df077ee)
+OUTPUT_DIRECTORY = /home/runner/work/PhysicsManual/PhysicsManual/docs/api/opalx
+HTML_OUTPUT = html
+INPUT = /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests
+STRIP_FROM_PATH = /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX
+WARN_LOGFILE = /home/runner/work/PhysicsManual/PhysicsManual/docs/api/opalx/doxygen-warnings.log
+CREATE_SUBDIRS = NO
+SHORT_NAMES = NO
+GENERATE_TREEVIEW = YES
+SEARCHENGINE = YES
+QUIET = YES

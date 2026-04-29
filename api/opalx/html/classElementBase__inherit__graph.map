@@ -1,0 +1,77 @@
+<map id="ElementBase" name="ElementBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1061,5,1263,1031"/>
+<area shape="rect" id="Node000002" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="184,1229,340,1454"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1052,623,342,1271,338,1267,1048,619"/>
+<area shape="rect" id="Node000005" href="$classComponent.html" title=" " alt="" coords="2082,1079,2285,1604"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1276,607,2083,1256,2080,1260,1273,612"/>
+<area shape="rect" id="Node000003" href="$classDummyBeamline.html" title=" " alt="" coords="5,2262,159,2447"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,1468,197,1558,174,1653,144,1820,120,1988,92,2262,86,2262,115,1987,138,1819,169,1651,192,1557,218,1466"/>
+<area shape="rect" id="Node000004" href="$classTBeamline.html" title=" " alt="" coords="183,2092,341,2617"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="265,1468,265,2092,259,2092,259,1468"/>
+<area shape="rect" id="Node000006" href="$classConstantEFieldCavity.html" title="Component applying a constant accelerating electric field (Ex,Ey,Ez)." alt="" coords="365,2092,567,2617"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="2068,1351,1725,1376,1506,1399,1278,1429,1055,1469,950,1493,854,1519,766,1549,690,1581,628,1616,581,1654,544,1699,513,1749,489,1803,471,1860,458,1918,449,1977,443,2092,438,2092,444,1977,452,1917,466,1859,484,1802,508,1747,539,1696,577,1650,625,1611,688,1576,764,1544,852,1514,949,1488,1054,1464,1277,1424,1506,1393,1725,1371,2068,1346"/>
+<area shape="rect" id="Node000008" href="$classCorrector.html" title="Interface for general corrector." alt="" coords="591,2022,805,2687"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="2069,1355,1772,1388,1588,1414,1396,1447,1211,1487,1044,1535,972,1562,909,1590,857,1621,819,1654,787,1692,760,1734,737,1779,719,1825,694,1923,682,2022,676,2022,689,1922,714,1824,733,1777,755,1731,782,1689,815,1650,854,1617,907,1586,970,1557,1042,1530,1210,1482,1395,1442,1587,1409,1771,1383,2068,1350"/>
+<area shape="rect" id="Node000009" href="$classDrift.html" title="Interface for drift space." alt="" coords="829,2182,1082,2527"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="2069,1363,1829,1405,1685,1434,1537,1469,1395,1509,1268,1554,1213,1577,1165,1602,1126,1627,1096,1654,1052,1711,1017,1774,990,1842,971,1912,957,1983,949,2053,945,2182,940,2182,944,2052,952,1982,965,1911,985,1840,1012,1772,1047,1708,1092,1650,1123,1623,1162,1597,1211,1572,1266,1549,1394,1504,1536,1464,1684,1429,1828,1400,2068,1357"/>
+<area shape="rect" id="Node000011" href="$classLaser.html" title="Passive OPALX laser element." alt="" coords="1106,1975,1359,2735"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="2069,1355,1995,1365,1910,1381,1817,1403,1721,1433,1625,1472,1532,1521,1447,1581,1409,1616,1373,1654,1347,1688,1324,1725,1286,1805,1259,1889,1241,1975,1236,1974,1254,1888,1281,1803,1319,1723,1343,1685,1369,1650,1405,1612,1444,1577,1529,1516,1622,1467,1719,1428,1816,1398,1909,1375,1994,1360,2068,1349"/>
+<area shape="rect" id="Node000013" href="$classMarker.html" title="Interface for a marker." alt="" coords="1383,2212,1637,2497"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="2070,1380,1967,1420,1853,1479,1796,1515,1742,1556,1693,1602,1651,1654,1611,1719,1579,1789,1554,1863,1536,1938,1522,2012,1514,2084,1508,2212,1502,2212,1509,2083,1517,2011,1530,1937,1549,1861,1574,1787,1606,1716,1646,1650,1689,1599,1739,1552,1793,1511,1850,1474,1965,1416,2068,1375"/>
+<area shape="rect" id="Node000015" href="$classMonitor.html" title=" " alt="" coords="1661,2015,1914,2695"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="2075,1450,1995,1544,1959,1598,1928,1653,1892,1740,1863,1831,1840,1924,1822,2015,1817,2014,1835,1923,1858,1830,1887,1738,1924,1651,1954,1595,1991,1541,2071,1447"/>
+<area shape="rect" id="Node000017" href="$classMultipole.html" title="Interface for general multipole." alt="" coords="1939,2042,2185,2667"/>
+<area shape="poly" id="edge16_Node000005_Node000017" title=" " alt="" coords="2153,1618,2102,2042,2097,2041,2148,1617"/>
+<area shape="rect" id="Node000019" href="$classMultipoleT.html" title=" " alt="" coords="2210,2052,2399,2657"/>
+<area shape="poly" id="edge18_Node000005_Node000019" title=" " alt="" coords="2219,1617,2271,2051,2266,2052,2214,1618"/>
+<area shape="rect" id="Node000023" href="$classPluginElement.html" title=" " alt="" coords="2423,1652,2626,3057"/>
+<area shape="poly" id="edge22_Node000005_Node000023" title=" " alt="" coords="2295,1462,2360,1551,2389,1600,2414,1651,2426,1681,2421,1683,2409,1653,2385,1603,2356,1554,2291,1465"/>
+<area shape="rect" id="Node000026" href="$classRFCavity.html" title="Interface for standing wave cavities." alt="" coords="2650,1762,2823,2947"/>
+<area shape="poly" id="edge25_Node000005_Node000026" title=" " alt="" coords="2299,1385,2386,1429,2479,1488,2525,1523,2568,1562,2607,1604,2640,1651,2670,1704,2694,1761,2689,1763,2665,1707,2636,1653,2603,1608,2564,1565,2522,1527,2476,1492,2383,1434,2296,1390"/>
+<area shape="rect" id="Node000032" href="$classRing.html" title="Ring describes a ring type geometry for tracking." alt="" coords="2847,1792,3045,2917"/>
+<area shape="poly" id="edge31_Node000005_Node000032" title=" " alt="" coords="2299,1361,2427,1395,2500,1420,2574,1452,2648,1490,2718,1535,2782,1589,2837,1650,2880,1718,2912,1791,2907,1793,2875,1720,2833,1654,2779,1592,2715,1539,2645,1494,2572,1456,2498,1425,2425,1400,2297,1366"/>
+<area shape="rect" id="Node000033" href="$classScalingFFAMagnet.html" title=" " alt="" coords="3069,1922,3265,2787"/>
+<area shape="poly" id="edge32_Node000005_Node000033" title=" " alt="" coords="2299,1345,2378,1353,2470,1366,2572,1387,2677,1416,2783,1456,2885,1507,2933,1537,2978,1571,3020,1609,3059,1650,3101,1711,3134,1778,3158,1848,3174,1921,3169,1922,3153,1850,3129,1780,3096,1714,3055,1654,3017,1613,2975,1575,2930,1542,2883,1511,2781,1461,2676,1421,2570,1392,2469,1372,2377,1358,2298,1350"/>
+<area shape="rect" id="Node000034" href="$classSolenoid.html" title="Abstract class for a solenoid magnet." alt="" coords="3290,2002,3493,2707"/>
+<area shape="poly" id="edge33_Node000005_Node000034" title=" " alt="" coords="2299,1357,2540,1398,2685,1428,2834,1463,2977,1503,3105,1547,3160,1571,3209,1596,3248,1623,3279,1650,3308,1688,3333,1728,3355,1771,3372,1815,3397,1908,3411,2002,3405,2002,3392,1909,3367,1817,3350,1773,3329,1730,3304,1691,3275,1654,3245,1627,3206,1601,3158,1576,3103,1552,2975,1508,2833,1468,2684,1433,2539,1404,2298,1362"/>
+<area shape="rect" id="Node000036" href="$classVariableRFCavity.html" title=" " alt="" coords="3517,2012,3719,2697"/>
+<area shape="poly" id="edge35_Node000005_Node000036" title=" " alt="" coords="2299,1351,2587,1385,2765,1412,2949,1445,3128,1485,3288,1532,3358,1559,3419,1587,3469,1618,3507,1650,3538,1688,3564,1729,3586,1773,3604,1819,3629,1915,3641,2011,3636,2012,3623,1916,3599,1821,3581,1775,3559,1732,3533,1691,3503,1654,3466,1622,3416,1592,3356,1564,3287,1537,3126,1490,2948,1450,2764,1417,2586,1390,2298,1356"/>
+<area shape="rect" id="Node000038" href="$classVerticalFFAMagnet.html" title=" " alt="" coords="3743,1972,3933,2737"/>
+<area shape="poly" id="edge37_Node000005_Node000038" title=" " alt="" coords="2299,1346,2631,1373,2842,1396,3063,1428,3277,1468,3377,1491,3470,1517,3554,1546,3627,1578,3688,1612,3733,1650,3762,1684,3786,1720,3807,1759,3824,1799,3849,1884,3863,1971,3858,1972,3844,1886,3819,1801,3802,1761,3782,1723,3758,1687,3729,1654,3685,1617,3625,1583,3552,1551,3469,1522,3376,1496,3276,1473,3062,1433,2842,1402,2631,1378,2298,1352"/>
+<area shape="rect" id="Node000007" href="$classConstantEFieldCavityRep.html" title=" " alt="" coords="359,3405,573,3731"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="469,2631,469,3405,463,3405,463,2631"/>
+<area shape="rect" id="Node000010" href="$classDriftRep.html" title=" " alt="" coords="893,3425,1018,3711"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="958,2541,958,3425,953,3425,953,2541"/>
+<area shape="rect" id="Node000012" href="$classLaserRep.html" title=" " alt="" coords="1170,3435,1295,3701"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1235,2748,1235,3435,1230,3435,1230,2748"/>
+<area shape="rect" id="Node000014" href="$classMarkerRep.html" title="Representation for a marker element." alt="" coords="1354,3415,1511,3721"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1503,2511,1445,3415,1440,3415,1497,2511"/>
+<area shape="rect" id="Node000016" href="$classMonitorRep.html" title=" " alt="" coords="1535,3395,1661,3741"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1735,2709,1627,3395,1622,3395,1730,2708"/>
+<area shape="rect" id="Node000018" href="$classMultipoleRep.html" title=" " alt="" coords="1685,3415,1821,3721"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="2061,2681,2045,2779,2019,2878,1981,2972,1956,3017,1928,3059,1917,3071,1904,3078,1880,3084,1856,3090,1845,3096,1835,3107,1813,3141,1794,3179,1769,3258,1754,3339,1748,3415,1743,3415,1749,3338,1763,3257,1790,3177,1808,3139,1831,3104,1842,3092,1854,3085,1879,3079,1902,3073,1913,3066,1924,3056,1952,3014,1976,2970,2014,2876,2040,2778,2056,2681"/>
+<area shape="rect" id="Node000020" href="$classTestMultipoleT.html" title=" " alt="" coords="1845,3315,2050,3821"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="2327,2671,2316,2773,2293,2875,2276,2924,2255,2972,2229,3017,2199,3059,2182,3074,2165,3081,2130,3085,2096,3087,2080,3094,2064,3107,2029,3153,2002,3205,1982,3260,1967,3316,1962,3315,1977,3258,1997,3203,2025,3150,2060,3103,2077,3089,2095,3082,2130,3079,2164,3076,2180,3069,2195,3056,2225,3014,2250,2970,2271,2922,2288,2873,2311,2772,2321,2671"/>
+<area shape="rect" id="Node000021" href="$classTestMultipoleTCurvedConstRadius.html" title=" " alt="" coords="2075,3441,2297,3695"/>
+<area shape="poly" id="edge20_Node000019_Node000021" title=" " alt="" coords="2276,2671,2201,3441,2196,3440,2271,2671"/>
+<area shape="rect" id="Node000022" href="$classTestMultipoleTStraight.html" title=" " alt="" coords="2321,3455,2544,3681"/>
+<area shape="poly" id="edge21_Node000019_Node000022" title=" " alt="" coords="2341,2671,2424,3455,2418,3455,2335,2671"/>
+<area shape="rect" id="Node000024" href="$classProbe.html" title=" " alt="" coords="2567,3395,2685,3741"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="2587,3071,2614,3395,2609,3395,2582,3071"/>
+<area shape="rect" id="Node000025" href="$classProbeRep.html" title=" " alt="" coords="2563,4209,2689,4534"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="2629,3755,2629,4208,2623,4208,2623,3755"/>
+<area shape="rect" id="Node000027" href="$classRFCavityRep.html" title=" " alt="" coords="2709,3345,2842,3791"/>
+<area shape="poly" id="edge26_Node000026_Node000027" title=" " alt="" coords="2759,2961,2771,3345,2766,3345,2753,2961"/>
+<area shape="rect" id="Node000028" href="$classTestRFCavity.html" title=" " alt="" coords="2866,3335,3042,3801"/>
+<area shape="poly" id="edge27_Node000026_Node000028" title=" " alt="" coords="2815,2960,2838,3057,2857,3105,2888,3219,2914,3334,2909,3335,2882,3221,2851,3106,2833,3058,2810,2961"/>
+<area shape="rect" id="Node000029" href="$classTravelingWave.html" title="Interface for traveling wave cavities." alt="" coords="3066,3105,3269,4031"/>
+<area shape="poly" id="edge28_Node000026_Node000029" title=" " alt="" coords="2771,2958,2801,3009,2837,3055,2862,3075,2888,3083,2915,3084,2943,3080,2971,3076,3000,3076,3028,3084,3056,3103,3068,3116,3064,3120,3052,3107,3026,3089,2999,3081,2972,3082,2944,3085,2916,3089,2888,3088,2860,3080,2833,3059,2796,3012,2767,2961"/>
+<area shape="rect" id="Node000030" href="$classTestTravelingWave.html" title=" " alt="" coords="2976,4079,3159,4664"/>
+<area shape="poly" id="edge29_Node000029_Node000030" title=" " alt="" coords="3111,4045,3106,4079,3101,4078,3105,4044"/>
+<area shape="rect" id="Node000031" href="$classTravelingWaveRep.html" title=" " alt="" coords="3183,4149,3352,4594"/>
+<area shape="poly" id="edge30_Node000029_Node000031" title=" " alt="" coords="3229,4044,3242,4148,3237,4149,3224,4045"/>
+<area shape="rect" id="Node000035" href="$classSolenoidRep.html" title=" " alt="" coords="3326,3405,3457,3731"/>
+<area shape="poly" id="edge34_Node000034_Node000035" title=" " alt="" coords="3394,2721,3394,3405,3389,3405,3389,2721"/>
+<area shape="rect" id="Node000037" href="$classTestVariableRFCavity.html" title=" " alt="" coords="3515,3295,3721,3841"/>
+<area shape="poly" id="edge36_Node000036_Node000037" title=" " alt="" coords="3621,2711,3621,3295,3615,3295,3615,2711"/>
+</map>

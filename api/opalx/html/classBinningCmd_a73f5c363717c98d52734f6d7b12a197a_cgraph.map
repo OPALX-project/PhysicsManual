@@ -1,0 +1,47 @@
+<map id="BinningCmd::execute" name="BinningCmd::execute">
+<area shape="rect" id="Node000001" title="Execute the BINNING command (currently a thin wrapper around update())." alt="" coords="5,195,165,220"/>
+<area shape="rect" id="Node000002" href="$classBinningCmd.html#a1370e700b4dd827d2824cff311915deb" title="Recompute the enum&#45;valued parameter from the string attribute." alt="" coords="213,169,440,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,196,199,193,200,198,166,202"/>
+<area shape="rect" id="Node000013" href="$classBinningCmd.html#a2eddb414880fb5674057eb6eb1abedfa" title="Update the binning data (internal cache of attributes)." alt="" coords="509,220,664,245"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="166,209,496,225,496,231,166,214"/>
+<area shape="rect" id="Node000003" href="$classBinningCmd.html#a945e99026feeefd5a101373f0976a181" title=" " alt="" coords="488,169,685,195"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,179,474,179,474,185,440,185"/>
+<area shape="rect" id="Node000004" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="733,169,887,195"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="685,179,719,179,719,185,685,185"/>
+<area shape="rect" id="Node000005" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="949,105,1111,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="859,167,939,145,941,151,860,172"/>
+<area shape="rect" id="Node000006" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="960,169,1100,195"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="887,179,947,179,947,185,887,185"/>
+<area shape="rect" id="Node000007" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="951,317,1109,343"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="868,192,888,205,900,218,907,231,913,256,919,280,926,291,936,303,945,309,942,313,933,307,921,295,914,282,908,257,902,233,895,221,885,209,865,197"/>
+<area shape="rect" id="Node000008" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="947,5,1113,31"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="817,168,860,106,894,70,933,40,945,33,948,38,936,44,898,74,865,110,821,171"/>
+<area shape="rect" id="Node000010" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="957,219,1103,244"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="868,192,960,213,959,218,867,197"/>
+<area shape="rect" id="Node000011" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="935,268,1125,293"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="861,192,888,205,903,218,913,230,922,242,936,253,952,261,950,266,933,258,918,246,908,233,899,221,885,210,859,197"/>
+<area shape="rect" id="Node000012" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="977,55,1083,80"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="824,167,870,129,933,90,963,79,965,84,936,95,873,134,827,171"/>
+<area shape="rect" id="Node000009" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1173,5,1325,31"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1114,15,1159,15,1159,21,1114,21"/>
+<area shape="poly" id="edge19_Node000013_Node000004" title=" " alt="" coords="643,217,739,195,741,200,644,222"/>
+<area shape="rect" id="Node000014" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="738,220,882,245"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="665,230,724,230,724,235,665,235"/>
+<area shape="rect" id="Node000015" href="$namespaceAttributes.html#a7b38ec248b1a35f814b6243e38a9a6ad" title="Set string value." alt="" coords="734,293,886,319"/>
+<area shape="poly" id="edge20_Node000013_Node000015" title=" " alt="" coords="627,243,758,286,757,291,626,248"/>
+<area shape="poly" id="edge14_Node000014_Node000005" title=" " alt="" coords="857,218,885,204,899,192,908,180,918,167,933,154,944,148,947,153,936,159,922,171,913,183,903,195,888,208,859,222"/>
+<area shape="poly" id="edge15_Node000014_Node000006" title=" " alt="" coords="866,217,960,195,962,200,867,222"/>
+<area shape="poly" id="edge16_Node000014_Node000007" title=" " alt="" coords="833,243,888,276,936,302,960,311,958,316,934,307,885,281,830,248"/>
+<area shape="poly" id="edge17_Node000014_Node000010" title=" " alt="" coords="882,230,943,229,943,235,883,235"/>
+<area shape="poly" id="edge18_Node000014_Node000011" title=" " alt="" coords="870,243,958,262,957,268,868,248"/>
+<area shape="poly" id="edge22_Node000015_Node000006" title=" " alt="" coords="832,291,885,255,908,228,917,216,933,204,946,197,948,202,936,208,921,220,912,231,888,259,835,295"/>
+<area shape="poly" id="edge23_Node000015_Node000007" title=" " alt="" coords="886,312,937,317,937,323,886,317"/>
+<area shape="poly" id="edge24_Node000015_Node000010" title=" " alt="" coords="838,291,934,253,959,245,961,250,936,258,840,296"/>
+<area shape="poly" id="edge25_Node000015_Node000011" title=" " alt="" coords="886,295,921,291,921,296,886,300"/>
+<area shape="rect" id="Node000016" href="$classExpressions_1_1SValue.html#a57f881a2c660170aeab462b6880fc5a0" title="Evaluate." alt="" coords="954,367,1106,407"/>
+<area shape="poly" id="edge21_Node000015_Node000016" title=" " alt="" coords="844,316,936,352,959,360,957,365,934,356,842,321"/>
+<area shape="rect" id="Node000017" href="$classAttribute.html#a6cd34bcfad889b4215734cbc0b5eafc2" title="Define new value." alt="" coords="977,432,1083,457"/>
+<area shape="poly" id="edge26_Node000015_Node000017" title=" " alt="" coords="824,317,869,366,901,394,936,417,964,429,962,434,933,422,898,398,865,370,820,321"/>
+<area shape="rect" id="Node000018" href="$classExpressions_1_1SRefAttr.html#a9f2de4ecdd67c51008baf6f6d247c0b1" title="Store new value." alt="" coords="935,481,1125,507"/>
+<area shape="poly" id="edge27_Node000015_Node000018" title=" " alt="" coords="820,318,836,348,861,389,895,431,936,466,949,474,946,478,933,471,891,434,857,392,831,351,815,320"/>
+</map>

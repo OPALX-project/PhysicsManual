@@ -1,0 +1,43 @@
+<map id="SequenceParser" name="SequenceParser">
+<area shape="rect" id="Node000001" title="The parser for SEQUENCE members." alt="" coords="97,5443,287,5728"/>
+<area shape="rect" id="Node000002" href="$classOpalParser.html" title="The default parser for OPAL&#45;9." alt="" coords="5,4895,152,5380"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,5392,159,5442,153,5443,141,5394"/>
+<area shape="rect" id="Node000003" href="$classParser.html" title="Interface for abstract language parser." alt="" coords="8,4567,144,4752"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,4766,80,4894,75,4895,74,4766"/>
+<area shape="rect" id="Node000004" href="$classSequence.html" title=" " alt="" coords="113,3489,274,4015"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,4015,195,4454,195,5139,195,5426,189,5426,189,5139,189,4454,190,4015"/>
+<area shape="rect" id="Node000005" href="$classBeamSequence.html" title="The base class for all OPAL beam lines and sequences." alt="" coords="126,1775,277,2021"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,2035,197,3489,192,3489,198,2035"/>
+<area shape="rect" id="Node000006" href="$classElement.html" title=" " alt="" coords="159,840,300,1265"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="225,1279,208,1775,203,1775,219,1279"/>
+<area shape="rect" id="Node000007" href="$classObject.html" title="The base class for all OPAL objects." alt="" coords="425,5,559,751"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="422,566,303,871,298,869,417,564"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="562,304,571,314,579,329,584,351,586,378,583,414,574,439,569,437,577,413,581,378,579,351,574,331,567,317,558,308"/>
+<area shape="rect" id="Node000016" href="$classDefinition.html" title="The base class for all OPAL definitions." alt="" coords="682,940,811,1165"/>
+<area shape="poly" id="edge17_Node000016_Node000007" title=" " alt="" coords="567,541,620,666,672,799,718,939,712,941,667,801,615,668,562,543"/>
+<area shape="rect" id="Node000008" href="$classTBeamline.html" title=" " alt="" coords="265,4895,423,5380"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="268,5370,248,5428,243,5426,263,5368"/>
+<area shape="rect" id="Node000009" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="387,4119,543,4344"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="428,4358,397,4487,382,4590,370,4695,354,4895,349,4894,364,4694,376,4589,392,4486,423,4357"/>
+<area shape="rect" id="Node000018" href="$classBeamlineGeometry.html" title="Implements the composite geometry of a beam line." alt="" coords="407,4487,585,4832"/>
+<area shape="poly" id="edge21_Node000018_Node000009" title=" " alt="" coords="476,4344,485,4470,480,4470,471,4345"/>
+<area shape="rect" id="Node000010" href="$classElementBase.html" title=" " alt="" coords="456,2520,659,3465"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="524,3479,476,4119,471,4118,519,3479"/>
+<area shape="rect" id="Node000011" href="$classCoordinateSystemTrafo.html" title=" " alt="" coords="530,1675,721,2121"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="614,2121,590,2504,585,2503,609,2121"/>
+<area shape="rect" id="Node000012" href="$classQuaternion.html" title=" " alt="" coords="353,800,511,1305"/>
+<area shape="poly" id="edge22_Node000008_Node000012" title=" " alt="" coords="359,1306,347,1368,327,1516,320,1631,321,1897,321,4661,328,4878,323,4878,316,4661,316,1897,315,1631,322,1515,341,1368,354,1305"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="487,1305,502,1343,511,1354,520,1367,547,1438,570,1512,601,1658,596,1659,564,1513,542,1440,515,1369,507,1358,498,1345,482,1307"/>
+<area shape="rect" id="Node000013" href="$structmatrix__t.html" title=" " alt="" coords="535,950,657,1155"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="602,1156,620,1659,614,1659,597,1156"/>
+<area shape="rect" id="Node000014" href="$classAttributeSet.html" title="Map of std::string versus double value." alt="" coords="356,1755,505,2041"/>
+<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="450,2041,503,2503,498,2504,444,2041"/>
+<area shape="rect" id="Node000015" href="$classBoundaryGeometry.html" title=" " alt="" coords="745,1368,988,2428"/>
+<area shape="poly" id="edge15_Node000010_Node000015" title=" " alt="" coords="761,2429,743,2497,707,2611,667,2723,662,2722,702,2609,737,2495,756,2428"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="767,1178,794,1368,789,1368,762,1179"/>
+<area shape="rect" id="Node000017" href="$classgsl__rng.html" title=" " alt="" coords="836,960,953,1145"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="894,1145,887,1351,882,1351,889,1145"/>
+<area shape="poly" id="edge19_Node000008_Node000018" title=" " alt="" coords="444,4833,429,4879,424,4878,439,4831"/>
+<area shape="rect" id="Node000019" href="$classBGeometryBase.html" title="Abstract base class for accelerator geometry classes." alt="" coords="568,4039,725,4424"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="577,4438,559,4487,554,4485,572,4436"/>
+</map>

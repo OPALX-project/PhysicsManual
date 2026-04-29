@@ -1,0 +1,43 @@
+<map id="ParallelTracker::updateReference" name="ParallelTracker::updateReference">
+<area shape="rect" id="Node000001" title="Update reference trajectories and lab/reference coordinate transforms." alt="" coords="5,161,240,187"/>
+<area shape="rect" id="Node000002" href="$classParallelTracker.html#a808d69ec5c23ca45be93dc68f20005a8" title="Advance reference positions/momenta through the beamline for one step." alt="" coords="288,261,523,301"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,184,340,253,338,258,157,189"/>
+<area shape="rect" id="Node000019" href="$classParallelTracker.html#a4bc0c1ba0b738ba798c596d5e46bcf97" title="Refresh each container&#39;s reference&#45;to&#45;lab transform from current state." alt="" coords="310,47,501,87"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="157,159,338,90,340,95,159,164"/>
+<area shape="rect" id="Node000003" href="$classOpalBeamline.html#aa1395281d59f6828b25dcd7f8c3e1a1f" title=" " alt="" coords="577,446,769,486"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,299,486,364,527,400,572,432,584,438,582,443,569,436,524,405,482,368,421,303"/>
+<area shape="rect" id="Node000004" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="607,55,739,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="416,259,440,222,474,176,518,129,569,89,592,78,594,83,572,94,521,133,478,179,444,225,420,262"/>
+<area shape="rect" id="Node000005" href="$classOpalBeamline.html#aa8747acdec0bc10a08dd3f679f406d64" title=" " alt="" coords="571,511,775,536"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="418,300,440,342,474,395,519,450,544,474,572,496,585,503,583,508,569,500,541,478,515,453,470,398,436,344,414,302"/>
+<area shape="rect" id="Node000006" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="613,560,732,585"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="415,300,434,351,467,418,512,488,541,519,572,546,601,561,599,566,569,551,537,523,508,491,462,420,430,353,410,302"/>
+<area shape="rect" id="Node000007" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="614,609,731,635"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="413,300,430,359,460,440,481,482,507,524,537,563,572,596,602,611,599,616,569,600,533,566,502,527,476,485,455,442,424,361,408,301"/>
+<area shape="rect" id="Node000008" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="611,104,735,129"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="423,258,484,199,525,167,569,140,597,129,599,133,572,144,528,171,487,203,427,262"/>
+<area shape="rect" id="Node000009" href="$classPartBunch.html#ad95a98af63183a4ead37e30ffc624f7f" title=" " alt="" coords="591,5,754,31"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="417,259,498,135,541,73,569,40,579,34,582,39,572,44,545,76,502,138,422,262"/>
+<area shape="rect" id="Node000010" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="605,219,740,244"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="514,258,591,244,592,249,515,263"/>
+<area shape="rect" id="Node000013" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="603,268,742,293"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="523,278,590,278,590,283,523,283"/>
+<area shape="rect" id="Node000014" href="$classCoordinateSystemTrafo.html#a49f1fafd3a435349fe366d60e13b23b2" title=" " alt="" coords="585,154,760,194"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="446,258,570,204,591,196,592,201,572,208,448,263"/>
+<area shape="rect" id="Node000016" href="$classCoordinateSystemTrafo.html#a5583369ce3a7b7d3a918c3ac1a648427" title=" " alt="" coords="585,318,760,358"/>
+<area shape="poly" id="edge16_Node000002_Node000016" title=" " alt="" coords="500,298,573,314,571,319,499,303"/>
+<area shape="rect" id="Node000018" href="$classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title=" " alt="" coords="585,382,760,422"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="440,298,500,333,572,368,590,375,588,380,570,372,498,337,438,303"/>
+<area shape="rect" id="Node000011" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="880,219,936,244"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="740,229,866,229,866,234,740,234"/>
+<area shape="rect" id="Node000012" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="887,268,929,293"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="734,241,874,271,872,276,733,247"/>
+<area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="743,278,872,278,872,283,743,283"/>
+<area shape="rect" id="Node000015" href="$Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de" title=" " alt="" coords="823,161,993,187"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="761,171,809,171,809,177,761,177"/>
+<area shape="rect" id="Node000017" href="$Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1" title=" " alt="" coords="859,357,957,383"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="761,347,845,359,845,364,760,353"/>
+<area shape="poly" id="edge19_Node000018_Node000017" title=" " alt="" coords="760,387,845,376,845,381,761,393"/>
+<area shape="poly" id="edge21_Node000019_Node000004" title=" " alt="" coords="501,65,593,65,593,70,501,70"/>
+<area shape="poly" id="edge22_Node000019_Node000009" title=" " alt="" coords="500,47,590,30,591,36,501,52"/>
+</map>

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['n_0',['n',['../classgsl__histogram.html#af0f9d8c72aa59928be637dbbbdc371c1',1,'gsl_histogram']]],
+  ['ndgrid_1',['ndgrid',['../classinterpolation_1_1NDGrid.html#a8b3f8851f7b5979e3c41ef25dbee8b84',1,'interpolation::NDGrid::NDGrid()'],['../classinterpolation_1_1NDGrid.html#a948ed7565a8e13b019ada88c9bec87ce',1,'interpolation::NDGrid::NDGrid(int nDimensions, int *size, double *spacing, double *min)'],['../classinterpolation_1_1NDGrid.html#a3b55ad5c769294afacbbbd0e7c8e1a8e',1,'interpolation::NDGrid::NDGrid(std::vector&lt; int &gt; size, std::vector&lt; const double * &gt; gridCoordinates)'],['../classinterpolation_1_1NDGrid.html#a78ad63731c67222702511fd8b26eeb0d',1,'interpolation::NDGrid::NDGrid(std::vector&lt; std::vector&lt; double &gt; &gt; gridCoordinates)'],['../classinterpolation_1_1NDGrid.html#a4ce202ce55cc9324ee4fe2381b586ad5',1,'interpolation::NDGrid::NDGrid(const NDGrid &amp;grid)']]],
+  ['ne_2',['Ne',['../namespaceExpressions.html#a8c80382af15acac704c1e4d3c09261b5',1,'Expressions']]],
+  ['nearbypointsrecursive_3',['nearbyPointsRecursive',['../classinterpolation_1_1PPSolveFactory.html#a62508eb3d6167d64e3e44d2aaad354a4',1,'interpolation::PPSolveFactory']]],
+  ['neg_4',['Neg',['../namespaceExpressions.html#a44e1a5c743497c78ccc9f9b27974916b',1,'Expressions']]],
+  ['newcoordarray_5',['newCoordArray',['../classinterpolation_1_1NDGrid.html#a6b1fe34006249fefc7ce158973c370b2',1,'interpolation::NDGrid']]],
+  ['newxarray_6',['newXArray',['../classinterpolation_1_1ThreeDGrid.html#ad520abb999418b27f71f6d84089c4050',1,'interpolation::ThreeDGrid']]],
+  ['newyarray_7',['newYArray',['../classinterpolation_1_1ThreeDGrid.html#ab48a85cd0dfebe27c103746a6e3402e4',1,'interpolation::ThreeDGrid']]],
+  ['newzarray_8',['newZArray',['../classinterpolation_1_1ThreeDGrid.html#adb4a5e5e7bdd7df729a5d268a3b0669e',1,'interpolation::ThreeDGrid']]],
+  ['nofieldmapwarning_9',['noFieldmapWarning',['../classFieldmap.html#ae5c0d93d3c9d4a023e52252a87a16424',1,'Fieldmap']]],
+  ['norm_10',['Norm',['../classQuaternion.html#afd6f04fe42007759224bbfb5c7727eb0',1,'Quaternion']]],
+  ['normal_11',['normal',['../classBMultipoleField.html#a97daf23b488d9b212b078aa5a936dd41',1,'BMultipoleField::normal(int)'],['../classBMultipoleField.html#ad21445017342652fae6975e982e5a4be',1,'BMultipoleField::normal(int) const']]],
+  ['normalise_12',['normalise',['../classRingSection.html#a36dd3190b4e320f56f48aaba23ff20ee',1,'RingSection']]],
+  ['normalize_13',['normalize',['../classQuaternion.html#a08f7aca94b3e3e4c429d22f9c8155d6d',1,'Quaternion']]],
+  ['normalizecolumnname_14',['normalizeColumnName',['../classFromFile.html#a6ba39198f10b102910ff28fbc2120a61',1,'FromFile']]],
+  ['normalizeprofiledata_15',['normalizeProfileData',['../classLaserProfile.html#a0f07d573ed891779bf548aadf42ed0ef',1,'LaserProfile']]],
+  ['nullfield_16',['nullfield',['../classNullField.html#a9f2f192677ff52c97f24ff808c33741f',1,'NullField::NullField(const NullField &amp;right)'],['../classNullField.html#a9faa353cb65792cd90f81ead3843ec69',1,'NullField::NullField()']]],
+  ['nullgeometry_17',['nullgeometry',['../classNullGeometry.html#abcbfe2c071752ef423f9bd31afdbe31a',1,'NullGeometry::NullGeometry()'],['../classNullGeometry.html#a97497c322cba7124c7d8232d85d6cc2d',1,'NullGeometry::NullGeometry(const NullGeometry &amp;)']]],
+  ['num_5fcol_18',['num_col',['../classinterpolation_1_1MMatrix.html#a485ae568ec26cd973074cf3704bc6938',1,'interpolation::MMatrix::num_col() const'],['../classinterpolation_1_1MMatrix.html#a0e7754924dd48bd68619284ed2902333',1,'interpolation::MMatrix::num_col() const'],['../classinterpolation_1_1MMatrix.html#a31fe0dedbef9b37d8fd36409dc9b0040',1,'interpolation::MMatrix::num_col() const']]],
+  ['num_5frow_19',['num_row',['../classinterpolation_1_1MMatrix.html#a885f1a7f322a023feb4f156338a83076',1,'interpolation::MMatrix::num_row()'],['../classinterpolation_1_1MVector.html#ae985411ee21fc1ecbd260ce544ecaa60',1,'interpolation::MVector::num_row()'],['../classinterpolation_1_1MMatrix.html#affbb0a19db49d2b57fca567b2ef4cb3c',1,'interpolation::MMatrix::num_row() const'],['../classinterpolation_1_1MMatrix.html#acbcc26502d13a082d1c4cba01dd921c4',1,'interpolation::MMatrix::num_row() const']]],
+  ['numberofpolynomialcoefficients_20',['NumberOfPolynomialCoefficients',['../classinterpolation_1_1SquarePolynomialVector.html#a30a72c5bc2a48d94809af1fcfb7c9a2e',1,'interpolation::SquarePolynomialVector']]],
+  ['numelements_21',['numElements',['../classIndexMap.html#a3d8085d3155ed5425aadac285310f056',1,'IndexMap']]],
+  ['nx_22',['nx',['../classgsl__histogram2d.html#abab035c6a8ec2dbe54f6dcfe598a376c',1,'gsl_histogram2d']]],
+  ['ny_23',['ny',['../classgsl__histogram2d.html#ae5e1c97c6d009f956e7569076f0cdf17',1,'gsl_histogram2d']]]
+];

@@ -1,0 +1,26 @@
+var classCoordinateSystemTrafo =
+[
+    [ "CoordinateSystemTrafo", "classCoordinateSystemTrafo.html#a68f172f6cca275ce7f67356efca7b219", null ],
+    [ "CoordinateSystemTrafo", "classCoordinateSystemTrafo.html#a23d55db6ce827c97c510c01257c7bac4", null ],
+    [ "CoordinateSystemTrafo", "classCoordinateSystemTrafo.html#ada0bf3fabe5757bdfd703c1e04a14e66", null ],
+    [ "getOrigin", "classCoordinateSystemTrafo.html#a17f938c9700317a28a3498d08d6aaf82", null ],
+    [ "getRotation", "classCoordinateSystemTrafo.html#af4ebb12a99b64d119dcfdbe184b7d467", null ],
+    [ "getRotationMatrix", "classCoordinateSystemTrafo.html#a4a5064de58fdff884d672727356e945a", null ],
+    [ "invert", "classCoordinateSystemTrafo.html#afdcb12eb2455fcba3d0503b6be30df24", null ],
+    [ "inverted", "classCoordinateSystemTrafo.html#ae5f60c7777720c99b382b87952bd9e8a", null ],
+    [ "operator*", "classCoordinateSystemTrafo.html#af04167f13d1628a0979ae2fcffcc844f", null ],
+    [ "operator*=", "classCoordinateSystemTrafo.html#a7d0668cf1b5fe2aa27153311f0ec8556", null ],
+    [ "operator=", "classCoordinateSystemTrafo.html#a9ee7e5c37ba8434fc6e3d273e08ec573", null ],
+    [ "print", "classCoordinateSystemTrafo.html#ae4fe55abd2178911d5ee96b8463b0272", null ],
+    [ "rotateBunchFrom", "classCoordinateSystemTrafo.html#a3a0e29c7adf2097e3b47fe1509155f2f", null ],
+    [ "rotateBunchTo", "classCoordinateSystemTrafo.html#a8e69ce620abb876984afb4f015e3ef90", null ],
+    [ "rotateFrom", "classCoordinateSystemTrafo.html#a49f1fafd3a435349fe366d60e13b23b2", null ],
+    [ "rotateTo", "classCoordinateSystemTrafo.html#a5583369ce3a7b7d3a918c3ac1a648427", null ],
+    [ "transformBunchFrom", "classCoordinateSystemTrafo.html#ad4fbcdc8ca9c4a68f37f849cb26f37af", null ],
+    [ "transformBunchTo", "classCoordinateSystemTrafo.html#aa03ad0665666fcaec6733a59e8730141", null ],
+    [ "transformFrom", "classCoordinateSystemTrafo.html#a43312e2759a35c7d3f91b6ff99d701c1", null ],
+    [ "transformTo", "classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0", null ],
+    [ "orientation_m", "classCoordinateSystemTrafo.html#af0be4a59e6f82b7bbc33f40e355de06d", null ],
+    [ "origin_m", "classCoordinateSystemTrafo.html#aeb9a3c06a76ee0f6381a09e648c4f075", null ],
+    [ "rotationMatrix_m", "classCoordinateSystemTrafo.html#a2da62345c2ccbac56100d70c8e58658d", null ]
+];

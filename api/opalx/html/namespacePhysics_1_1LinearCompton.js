@@ -1,0 +1,27 @@
+var namespacePhysics_1_1LinearCompton =
+[
+    [ "SampledEvent", "namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SampledEvent", "namespacePhysics_1_1LinearCompton_structPhysics_1_1LinearCompton_1_1SampledEvent_dup" ],
+    [ "SamplingKernel", "namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SamplingKernel", "namespacePhysics_1_1LinearCompton_structPhysics_1_1LinearCompton_1_1SamplingKernel_dup" ],
+    [ "differentialCrossSectionOmegaERF", "namespacePhysics_1_1LinearCompton.html#a09c09d203aefd66ace4ea6513db55909", null ],
+    [ "differentialCrossSectionSolidAngleERF", "namespacePhysics_1_1LinearCompton.html#a620e1392118ef779b1ea0af24b95d45f", null ],
+    [ "electronBeta", "namespacePhysics_1_1LinearCompton.html#ae5d0fb2022d822c8ec85fd7443c0a919", null ],
+    [ "electronGamma", "namespacePhysics_1_1LinearCompton.html#a3ef4d38a4307f7a1a96ee05485e7a14b", null ],
+    [ "invariantKappa", "namespacePhysics_1_1LinearCompton.html#afe9e8d02b6fb8390c51970925967fc55", null ],
+    [ "invariantX", "namespacePhysics_1_1LinearCompton.html#a999ad206919209d8079bb62a170b5ef9", null ],
+    [ "invariantX", "namespacePhysics_1_1LinearCompton.html#a8463844ae04674a56fb059f1bcf1e33a", null ],
+    [ "labForwardPhotonEnergyGeV", "namespacePhysics_1_1LinearCompton.html#a28e8a980233aeed0838b98516aa78abb", null ],
+    [ "labPhotonDirection", "namespacePhysics_1_1LinearCompton.html#a4ecac654b4841572d78b6887c25a9f85", null ],
+    [ "labPhotonEnergyGeV", "namespacePhysics_1_1LinearCompton.html#a9435d6ec9922769a7ceabcfb69b189ac", null ],
+    [ "makeHostRandomEngine", "namespacePhysics_1_1LinearCompton.html#a6900cdec1c41c7e8ee67c4be6e4bf06d", null ],
+    [ "makeSamplingKernel", "namespacePhysics_1_1LinearCompton.html#a2666897964b2b05d17d85a8c2793fd76", null ],
+    [ "photonEnergyFromWavelengthGeV", "namespacePhysics_1_1LinearCompton.html#afbbcf80a184e9798f2790e02be8e9a19", null ],
+    [ "restFrameIncomingPhotonDirection", "namespacePhysics_1_1LinearCompton.html#ac97cb1cf66cf65b1fd6cd7090d709eaf", null ],
+    [ "restFrameIncomingPhotonEnergyGeV", "namespacePhysics_1_1LinearCompton.html#af1dc480fe18b0e751cacad16f5928980", null ],
+    [ "restFrameScatteringCosineForLabForwardPhoton", "namespacePhysics_1_1LinearCompton.html#a0a638742164e053ee8aaaf0579dad00e", null ],
+    [ "sampleEvent", "namespacePhysics_1_1LinearCompton.html#a6ee1bcf8f9d9b94a337629cc96725a48", null ],
+    [ "scatteredPhotonEnergyERFGeV", "namespacePhysics_1_1LinearCompton.html#add69fdb209ad5eca98deb3cd41192bfa", null ],
+    [ "scatteredPhotonEnergyMaxERFGeV", "namespacePhysics_1_1LinearCompton.html#aba79fa66e5a85a75a0906636745e5dca", null ],
+    [ "scatteredPhotonEnergyMinERFGeV", "namespacePhysics_1_1LinearCompton.html#afce1542dee6f1a8e6dc78cfe09b09ac0", null ],
+    [ "thomsonCrossSection", "namespacePhysics_1_1LinearCompton.html#ab391bef970b9be73cbcbc612f7a15f32", null ],
+    [ "totalCrossSection", "namespacePhysics_1_1LinearCompton.html#a57968b529b0dff5d5011d8d449197dc3", null ]
+];

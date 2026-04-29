@@ -1,0 +1,27 @@
+var Definitions_8h =
+[
+    [ "Astra1DDynamic", "Definitions_8h.html#a2a18d104edf25044c5f1994ce188029e", null ],
+    [ "Astra1DDynamic_fast", "Definitions_8h.html#a0d0b1f87983fff67a9a39252f5c22ef7", null ],
+    [ "Astra1DElectroStatic", "Definitions_8h.html#ac5a71c8041dc5a18f87776718a6c6798", null ],
+    [ "Astra1DElectroStatic_fast", "Definitions_8h.html#a73bf1e081ce4425e8acaa1a459df03e0", null ],
+    [ "Astra1DMagnetoStatic", "Definitions_8h.html#a665b0f5b0b01638744afb10759a08e13", null ],
+    [ "Astra1DMagnetoStatic_fast", "Definitions_8h.html#ae1cd4a9e9dde44c54c933e91b96c3977", null ],
+    [ "Fieldmap", "Definitions_8h.html#a64c0cc6d02c3c00b8a386931b14c0f84", null ],
+    [ "FM1DDynamic", "Definitions_8h.html#a85f55d119f30db2d8933fe83c7acf001", null ],
+    [ "FM1DDynamic_fast", "Definitions_8h.html#abc1bea49065a5b362784e918a2ba294b", null ],
+    [ "FM1DElectroStatic", "Definitions_8h.html#af82dd7bb797c08dc9be336167a7b9974", null ],
+    [ "FM1DElectroStatic_fast", "Definitions_8h.html#a752ec9c3dd0b664fb85602708d5a9d32", null ],
+    [ "FM1DMagnetoStatic", "Definitions_8h.html#ad6d25cd825673841caed92d84728ae99", null ],
+    [ "FM1DMagnetoStatic_fast", "Definitions_8h.html#a3265a7fcc542b5deea8694fa9397d2eb", null ],
+    [ "FM1DProfile1", "Definitions_8h.html#a88733cd02dfa0af1f3189f18080c3bde", null ],
+    [ "FM1DProfile2", "Definitions_8h.html#a78029b04cd2a3f7e39fb39125aa6ba6f", null ],
+    [ "FM2DDynamic", "Definitions_8h.html#a0ead1f8ec38347d53d794061f0bfe7f9", null ],
+    [ "FM2DElectroStatic", "Definitions_8h.html#aa56037aab805392e5a59fc8784b19e8d", null ],
+    [ "FM2DMagnetoStatic", "Definitions_8h.html#a5365de543c5668696174b1bfd516bb98", null ],
+    [ "FM3DDynamic", "Definitions_8h.html#a5b0347e5bb47c31b577f08087aa325c3", null ],
+    [ "FM3DH5Block", "Definitions_8h.html#a163c1a7daaf3dcbfc1b040da4117b5a9", null ],
+    [ "FM3DH5Block_nonscale", "Definitions_8h.html#a9bd6a1faf5e01ba9da8c8d62069fac97", null ],
+    [ "FM3DMagnetoStatic", "Definitions_8h.html#a8b6399bd0353d5eac4544d629a9c1102", null ],
+    [ "FM3DMagnetoStaticExtended", "Definitions_8h.html#a8fc8977045c926cf975b8a57d4a5fdd4", null ],
+    [ "FM3DMagnetoStaticH5Block", "Definitions_8h.html#a27c45755f35b0847f49b5b908b6937a9", null ]
+];

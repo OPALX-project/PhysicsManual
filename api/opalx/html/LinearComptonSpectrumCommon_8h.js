@@ -1,0 +1,86 @@
+var LinearComptonSpectrumCommon_8h =
+[
+    [ "LinearComptonBenchmark::SpectrumConfig", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1SpectrumConfig", [
+      [ "azimuthPanels", "namespaceLinearComptonBenchmark.html#a46a6f585cd50db5e01c77516507b6c09", null ],
+      [ "beamDirection", "namespaceLinearComptonBenchmark.html#a48073b88b84d0474dd3e1ac8189167a7", null ],
+      [ "bins", "namespaceLinearComptonBenchmark.html#a6b477e7a84043d31c7db0d0416fd5557", null ],
+      [ "cosinePanels", "namespaceLinearComptonBenchmark.html#ad06a2e8564456fda3fee641cb950a454", null ],
+      [ "electronTotalEnergyGeV", "namespaceLinearComptonBenchmark.html#a34f4cf9e5920d6baae261ddfe0d7a68f", null ],
+      [ "energyMaxGeV", "namespaceLinearComptonBenchmark.html#ad96af448d43255b4299a024124cdb4c8", null ],
+      [ "energyMinGeV", "namespaceLinearComptonBenchmark.html#a477ef8cf1610ab9587cc648ef3ab7a00", null ],
+      [ "laserDirection", "namespaceLinearComptonBenchmark.html#a30de8cf35742eb11108a945fd81a4576", null ],
+      [ "wavelength_m", "namespaceLinearComptonBenchmark.html#a3359bcdcb4207d9f6c9dff7d73a377ff", null ]
+    ] ],
+    [ "LinearComptonBenchmark::SpectrumHistogram", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1SpectrumHistogram", [
+      [ "binWidthGeV", "namespaceLinearComptonBenchmark.html#a99d321198bd212e35fd0fe1a6cc29a45", null ],
+      [ "centersGeV", "namespaceLinearComptonBenchmark.html#a3dc5cc324453474ba1db847b5b821af2", null ],
+      [ "counts", "namespaceLinearComptonBenchmark.html#a942e8b0002ee60f27d53ad1b7d27e6f4", null ],
+      [ "densityPerGeV", "namespaceLinearComptonBenchmark.html#a85ffc38ecb2249bd9efa08a22be97bab", null ],
+      [ "totalWeight", "namespaceLinearComptonBenchmark.html#a1d043cfa43cb97a9599d7c79caf20739", null ]
+    ] ],
+    [ "LinearComptonBenchmark::AngleConfig", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1AngleConfig", [
+      [ "azimuthPanels", "namespaceLinearComptonBenchmark.html#a2379834d2b0bddc474017389c8e924da", null ],
+      [ "beamDirection", "namespaceLinearComptonBenchmark.html#a669230e4495da7148d505eb755ec50fc", null ],
+      [ "bins", "namespaceLinearComptonBenchmark.html#a9735e8e7ed8bc4721412773240dd4b51", null ],
+      [ "cosinePanels", "namespaceLinearComptonBenchmark.html#a318a3d71a750dd90292e791721794c5e", null ],
+      [ "electronTotalEnergyGeV", "namespaceLinearComptonBenchmark.html#ad6ee040dc9809f54675f296d25105965", null ],
+      [ "laserDirection", "namespaceLinearComptonBenchmark.html#a6f867b0f4ed74ecd7024832323ad2042", null ],
+      [ "thetaMaxRad", "namespaceLinearComptonBenchmark.html#a3166406599a94aaf9dffe60fbcbbd597", null ],
+      [ "thetaMinRad", "namespaceLinearComptonBenchmark.html#a4a2b18f11dcf0f174ca4f7d6376f7955", null ],
+      [ "wavelength_m", "namespaceLinearComptonBenchmark.html#ac419504ae864d268c5dfc1a5ac2bbf08", null ]
+    ] ],
+    [ "LinearComptonBenchmark::AngleHistogram", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1AngleHistogram", [
+      [ "binWidthRad", "namespaceLinearComptonBenchmark.html#acea8d4345b6d9088d85ada103e8f49a0", null ],
+      [ "centersRad", "namespaceLinearComptonBenchmark.html#ad1f7c5bb644cdd980e5f1b939fe16365", null ],
+      [ "counts", "namespaceLinearComptonBenchmark.html#aad6fb4c43ef892d246d41c10f8145689", null ],
+      [ "densityPerRad", "namespaceLinearComptonBenchmark.html#a5ca4c59f1baae116b8d0ae959c46b2e4", null ],
+      [ "totalWeight", "namespaceLinearComptonBenchmark.html#a5a2c2fa6e4e0ebfc3ae7910a526dcb3c", null ]
+    ] ],
+    [ "LinearComptonBenchmark::JointConfig", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1JointConfig", [
+      [ "azimuthPanels", "namespaceLinearComptonBenchmark.html#a98efec587f01b91b4d1ed00e1c12d2b5", null ],
+      [ "beamDirection", "namespaceLinearComptonBenchmark.html#a8db32fb3982dee53543232ecfbc7807e", null ],
+      [ "cosinePanels", "namespaceLinearComptonBenchmark.html#aac668064499dbb0c66ee396951b4210f", null ],
+      [ "electronTotalEnergyGeV", "namespaceLinearComptonBenchmark.html#ad397e057e91c25dd041e254a5b4e7df6", null ],
+      [ "energyBins", "namespaceLinearComptonBenchmark.html#a247e0b4ea5dd8de435bd090b7708cc2c", null ],
+      [ "energyMaxGeV", "namespaceLinearComptonBenchmark.html#abe77e148f0583e3dfb9f35d7fdf214f9", null ],
+      [ "energyMinGeV", "namespaceLinearComptonBenchmark.html#aa38130483454251394861b9faab6d01e", null ],
+      [ "laserDirection", "namespaceLinearComptonBenchmark.html#a3497984e06d6d3b9c091ccd2257e8f18", null ],
+      [ "thetaBins", "namespaceLinearComptonBenchmark.html#a2bbfc7949733e3ca87c17b2fed9c5cb2", null ],
+      [ "thetaMaxRad", "namespaceLinearComptonBenchmark.html#ab630cfb58b092fd8a78acf64c089705c", null ],
+      [ "thetaMinRad", "namespaceLinearComptonBenchmark.html#a75bd3ed6e1418682c7049f6ce8dda2bb", null ],
+      [ "wavelength_m", "namespaceLinearComptonBenchmark.html#a52880c3a5e1885ecf87c067bfac8ad49", null ]
+    ] ],
+    [ "LinearComptonBenchmark::JointHistogram", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1JointHistogram", [
+      [ "counts", "namespaceLinearComptonBenchmark.html#aea21a5be77816fe457e9fca0667f9b35", null ],
+      [ "densityPerGeVRad", "namespaceLinearComptonBenchmark.html#a3922b60f104b188b38abc858928715dd", null ],
+      [ "energyBinWidthGeV", "namespaceLinearComptonBenchmark.html#a8479ab463241cd340a2cd95d31cfdf71", null ],
+      [ "energyCentersGeV", "namespaceLinearComptonBenchmark.html#a13b9b21e6939bb9281f800a633e27d43", null ],
+      [ "thetaBinWidthRad", "namespaceLinearComptonBenchmark.html#a0e4b27b9aead01253dff1e456f57c4ce", null ],
+      [ "thetaCentersRad", "namespaceLinearComptonBenchmark.html#a64d67de5fd3a09f85d81eeed143c7a88", null ],
+      [ "totalWeight", "namespaceLinearComptonBenchmark.html#a96ed3fa759c09a06bfa589eed0719e5c", null ]
+    ] ],
+    [ "angleHistogramArea", "LinearComptonSpectrumCommon_8h.html#a7fdb82a79d72a12c2ed802c76b969f2d", null ],
+    [ "angleHistogramL1Distance", "LinearComptonSpectrumCommon_8h.html#a23fb61e744fbd0a44d5d32c1423178a3", null ],
+    [ "angleHistogramMeanRad", "LinearComptonSpectrumCommon_8h.html#a66495c6e1ff5278206a48f9fc8320d5b", null ],
+    [ "histogramArea", "LinearComptonSpectrumCommon_8h.html#a0347b99e9d9a6c014ae88128e80ef7af", null ],
+    [ "histogramL1Distance", "LinearComptonSpectrumCommon_8h.html#a6fdb97a0ef811197716004e704ebedb7", null ],
+    [ "histogramMeanEnergyGeV", "LinearComptonSpectrumCommon_8h.html#acd43156ff07ca8d1e4f0bbaa8c1c110b", null ],
+    [ "integrateLabAngularSpectrum", "LinearComptonSpectrumCommon_8h.html#ae40e109ca241024f0cee3def329493b3", null ],
+    [ "integrateLabJointSpectrum", "LinearComptonSpectrumCommon_8h.html#a35afb135b2463d375a430db76f118b5d", null ],
+    [ "integrateLabSpectrum", "LinearComptonSpectrumCommon_8h.html#a9cb3234fb4f039c384708ce2a8ae3016", null ],
+    [ "jointHistogramArea", "LinearComptonSpectrumCommon_8h.html#a781a7565b29c0d026caa565fbb7a7ea8", null ],
+    [ "jointHistogramIndex", "LinearComptonSpectrumCommon_8h.html#a8c88ff63cbb839601a1a20bee8295dcc", null ],
+    [ "jointHistogramL1Distance", "LinearComptonSpectrumCommon_8h.html#a6d12d6da74f2e151bfcebedfc9c2661f", null ],
+    [ "jointHistogramMeanEnergyGeV", "LinearComptonSpectrumCommon_8h.html#ae97e8e755c1b3c6bd1f3ef4bedc2fdd6", null ],
+    [ "jointHistogramMeanThetaRad", "LinearComptonSpectrumCommon_8h.html#aaff3b096dc12279739b530a3b9ddc287", null ],
+    [ "photonPolarAngleRad", "LinearComptonSpectrumCommon_8h.html#a5e0852c58eea3a3c223bdda152914e5e", null ],
+    [ "readAngleCSV", "LinearComptonSpectrumCommon_8h.html#a54f2d3fdeb47bd95b2315f7482fba6f5", null ],
+    [ "readJointCSV", "LinearComptonSpectrumCommon_8h.html#ae695aaf4b940b0695d83e027082eaea4", null ],
+    [ "readSpectrumCSV", "LinearComptonSpectrumCommon_8h.html#a0e4e00937106329b76bd54a33c87d439", null ],
+    [ "sampleLabAngularSpectrum", "LinearComptonSpectrumCommon_8h.html#ae8cc9575c6af2910a99f47292a56240e", null ],
+    [ "sampleLabJointSpectrum", "LinearComptonSpectrumCommon_8h.html#ad6ac4b189c363fabf383124037c9e7fe", null ],
+    [ "sampleLabSpectrum", "LinearComptonSpectrumCommon_8h.html#ae1890fae370dc06f2b99358cf6e72501", null ],
+    [ "writeAngleCSV", "LinearComptonSpectrumCommon_8h.html#a1a4a62a283b29c9bba94ee83fd4bf6ff", null ],
+    [ "writeJointCSV", "LinearComptonSpectrumCommon_8h.html#a512e7e2c5f4ae3ea0011f8e555653ff7", null ],
+    [ "writeSpectrumCSV", "LinearComptonSpectrumCommon_8h.html#a0487b69957539c9b9d4674080e6ada73", null ]
+];
