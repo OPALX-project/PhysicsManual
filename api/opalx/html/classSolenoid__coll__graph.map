@@ -1,12 +1,12 @@
 <map id="Solenoid" name="Solenoid">
-<area shape="rect" id="Node000001" title="Abstract class for a solenoid magnet." alt="" coords="587,4816,789,5501"/>
+<area shape="rect" id="Node000001" title="Abstract class for a solenoid magnet." alt="" coords="587,4816,789,5521"/>
 <area shape="rect" id="Node000002" href="$classComponent.html" title=" " alt="" coords="468,3918,671,4423"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="604,4437,650,4816,644,4816,599,4438"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="604,4437,649,4815,643,4816,598,4437"/>
 <area shape="rect" id="Node000003" href="$classElementBase.html" title=" " alt="" coords="341,2550,544,3495"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,3509,544,3918,539,3918,494,3510"/>
-<area shape="rect" id="Node000004" href="$classCoordinateSystemTrafo.html" title=" " alt="" coords="179,1675,370,2121"/>
+<area shape="rect" id="Node000004" href="$classCoordinateSystemTrafo.html" title="Rigid spatial transform between a parent frame and a local frame." alt="" coords="179,1675,370,2121"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,2121,305,2304,329,2496,341,2566,336,2567,324,2496,300,2305,284,2121"/>
-<area shape="rect" id="Node000005" href="$classQuaternion.html" title=" " alt="" coords="236,800,393,1305"/>
+<area shape="rect" id="Node000005" href="$classQuaternion.html" title="Quaternion storage and rotation algebra used by OPALX geometry code." alt="" coords="236,800,393,1305"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="305,1306,289,1659,283,1659,300,1306"/>
 <area shape="rect" id="Node000006" href="$structmatrix__t.html" title=" " alt="" coords="89,950,212,1155"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="159,1155,176,1344,200,1503,228,1658,223,1659,195,1504,171,1344,153,1156"/>
@@ -31,5 +31,5 @@
 <area shape="rect" id="Node000015" href="$classDataSink.html" title=" " alt="" coords="797,1605,1019,2191"/>
 <area shape="poly" id="edge16_Node000012_Node000015" title=" " alt="" coords="882,2191,848,2496,847,2504,842,2503,843,2496,876,2191"/>
 <area shape="rect" id="Node000016" href="$classFieldmap.html" title="Abstract base class for all field maps. It acts as a factory for creating specific field map types ba..." alt="" coords="695,3588,921,4753"/>
-<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="740,4754,734,4800,729,4799,735,4753"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="741,4754,735,4800,730,4800,735,4753"/>
 </map>

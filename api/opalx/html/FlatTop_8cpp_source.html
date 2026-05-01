@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -511,9 +511,9 @@ $(document).ready(function(){initNavTree('FlatTop_8cpp_source.html',''); initRes
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="comment">// Intended design: fill only into pre-allocated slice [nextEmitIndex, nextEmitIndex+nNew)</span></div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="comment">// (no create), when ParticleContainer supports reserve(total) + setActiveSize. Until then</span></div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="comment">// we extend the container each step.</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="comment">// Note that create can be safely called with nNew=0 (no-op), but it NEEDS to be called, since</span></div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="comment">// other ranks might have != 0 leading to a MPI_Allreduce.</span></div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;create(nNew);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="comment">// Note that createParticles can be safely called with nNew=0 (no-op), but it NEEDS to be</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="comment">// called, since other ranks might have != 0 leading to a MPI_Allreduce.</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;createParticles(nNew);</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <span class="comment">// Generate new particles on uniform disc (sample into [nlocal, nlocal+nNew)).</span></div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="comment">// Each particle receives a fractional per-particle dt for sub-timestep spreading.</span></div>
@@ -551,7 +551,7 @@ $(document).ready(function(){initNavTree('FlatTop_8cpp_source.html',''); initRes
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        <a class="code hl_typedef" href="classFlatTop.html#af72b43e33e2b976e0905389395055f1f">size_type</a> nlocal = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        <span class="comment">// extend particle container to accomodate new particles</span></div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;create(nNew);</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;createParticles(nNew);</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="comment">// generate new particles on uniform disc</span></div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        <a class="code hl_function" href="classFlatTop.html#a17147ac4da8a969f258bb5197f2ce20e">generateUniformDisk</a>(nlocal, nNew, dt);</div>
@@ -657,7 +657,7 @@ $(document).ready(function(){initNavTree('FlatTop_8cpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4043ae54a69fe9133a0541b78a48bd8d.html">Distribution</a></li><li class="navelem"><a class="el" href="FlatTop_8cpp.html">FlatTop.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:23 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,45 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classInvalidator.html" title="Abstract base class for references which must be invalidated when an." alt="" coords="55,112,147,137"/>
-<area shape="rect" id="Node000001" href="$classAttributeBase.html" title="Abstract base class for attribute values of different types." alt="" coords="295,59,405,84"/>
-<area shape="poly" id="edge172_Node000000_Node000001" title=" " alt="" coords="159,110,294,80,295,86,160,115"/>
-<area shape="rect" id="Node000009" href="$classExpressions_1_1ARefExpr.html" title="An expression defined as a reference to an array." alt="" coords="247,112,453,137"/>
-<area shape="poly" id="edge180_Node000000_Node000009" title=" " alt="" coords="160,122,247,122,247,127,160,127"/>
-<area shape="rect" id="Node000014" href="$classExpressions_1_1SRefExpr.html" title="An expression defined as a reference to a scalar." alt="" coords="247,211,453,236"/>
-<area shape="poly" id="edge181_Node000000_Node000014" title=" " alt="" coords="161,132,197,146,213,159,222,172,231,184,245,196,275,208,272,213,243,200,227,188,218,175,209,163,195,151,159,137"/>
-<area shape="rect" id="Node000002" href="$classExpressions_1_1AValue.html" title="Object attribute with a constant array value." alt="" coords="509,5,699,31"/>
-<area shape="poly" id="edge173_Node000001_Node000002" title=" " alt="" coords="419,54,542,28,544,33,420,60"/>
-<area shape="rect" id="Node000005" href="$classExpressions_1_1SRefAttr.html" title="An attribute defined as a reference to a scalar." alt="" coords="504,55,704,80"/>
-<area shape="poly" id="edge176_Node000001_Node000005" title=" " alt="" coords="419,68,504,66,504,72,419,73"/>
-<area shape="rect" id="Node000006" href="$classExpressions_1_1SValue.html" title="Object attribute with a constant scalar value." alt="" coords="509,104,699,129"/>
-<area shape="poly" id="edge177_Node000001_Node000006" title=" " alt="" coords="420,81,532,101,532,107,419,86"/>
-<area shape="rect" id="Node000003" href="$classExpressions_1_1ADeferred.html" title="Object attribute with a `‘deferred’&#39; array value." alt="" coords="752,5,964,31"/>
-<area shape="poly" id="edge174_Node000002_Node000003" title=" " alt="" coords="713,15,752,15,752,21,713,21"/>
-<area shape="rect" id="Node000004" href="$classExpressions_1_1AAutomatic.html" title="Object attribute with an `‘automatic’&#39; array value." alt="" coords="1012,5,1235,31"/>
-<area shape="poly" id="edge175_Node000003_Node000004" title=" " alt="" coords="978,15,1012,15,1012,21,978,21"/>
-<area shape="rect" id="Node000007" href="$classExpressions_1_1SDeferred.html" title="Object attribute with a `‘deferred’&#39; scalar value." alt="" coords="753,104,963,129"/>
-<area shape="poly" id="edge178_Node000006_Node000007" title=" " alt="" coords="713,114,753,114,753,119,713,119"/>
-<area shape="rect" id="Node000008" href="$classExpressions_1_1SAutomatic.html" title="Object attribute with an `‘automatic’&#39; scalar value." alt="" coords="1012,104,1235,129"/>
-<area shape="poly" id="edge179_Node000007_Node000008" title=" " alt="" coords="977,114,1012,114,1012,119,977,119"/>
-<area shape="rect" id="Node000010" href="$classExpressions_1_1OArray.html" title="An array expression." alt="" coords="5,161,196,187"/>
-<area shape="poly" id="edge185_Node000010_Node000009" title=" " alt="" coords="178,156,284,135,285,140,179,161"/>
-<area shape="rect" id="Node000011" href="$classExpressions_1_1AList.html" title="An array expression defined by a list of scalar expressions." alt="" coords="261,161,439,187"/>
-<area shape="poly" id="edge182_Node000010_Node000011" title=" " alt="" coords="210,171,260,171,260,177,210,177"/>
-<area shape="rect" id="Node000012" href="$classExpressions_1_1ABinary.html" title="An array expression with two array operands." alt="" coords="525,218,683,258"/>
-<area shape="poly" id="edge183_Node000011_Node000012" title=" " alt="" coords="423,187,457,195,532,215,531,221,455,201,422,192"/>
-<area shape="rect" id="Node000013" href="$classExpressions_1_1AUnary.html" title="An array expression with one array operand." alt="" coords="526,154,682,194"/>
-<area shape="poly" id="edge184_Node000011_Node000013" title=" " alt="" coords="453,171,526,171,526,177,453,177"/>
-<area shape="rect" id="Node000015" href="$classExpressions_1_1Scalar.html" title="A scalar expression." alt="" coords="7,367,194,392"/>
-<area shape="poly" id="edge191_Node000015_Node000014" title=" " alt="" coords="119,354,171,300,205,271,243,246,274,234,276,238,245,251,208,275,174,304,123,358"/>
-<area shape="rect" id="Node000016" href="$classExpressions_1_1ASUnary.html" title="A scalar expression with one array operand." alt="" coords="249,260,451,285"/>
-<area shape="poly" id="edge186_Node000015_Node000016" title=" " alt="" coords="130,357,182,325,243,296,283,283,284,288,245,300,184,330,133,361"/>
-<area shape="rect" id="Node000017" href="$classExpressions_1_1Indexer.html" title="A scalar expression to retrieve an indexed component from an array." alt="" coords="253,309,447,335"/>
-<area shape="poly" id="edge187_Node000015_Node000017" title=" " alt="" coords="170,361,293,332,295,337,171,366"/>
-<area shape="rect" id="Node000018" href="$classExpressions_1_1SBinary.html" title="A scalar expression with two scalar operands." alt="" coords="271,359,429,399"/>
-<area shape="poly" id="edge188_Node000015_Node000018" title=" " alt="" coords="208,377,270,377,270,382,208,382"/>
-<area shape="rect" id="Node000019" href="$classExpressions_1_1SConstant.html" title="A scalar constant expression." alt="" coords="244,424,456,449"/>
-<area shape="poly" id="edge189_Node000015_Node000019" title=" " alt="" coords="171,393,295,421,293,427,170,398"/>
-<area shape="rect" id="Node000020" href="$classExpressions_1_1SNull.html" title="A scalar expression without operands." alt="" coords="260,473,440,499"/>
-<area shape="poly" id="edge190_Node000015_Node000020" title=" " alt="" coords="133,398,184,429,245,460,280,471,279,476,243,464,181,434,130,402"/>
-<area shape="rect" id="Node000021" href="$classExpressions_1_1SUnary.html" title="A scalar expression with one scalar operand." alt="" coords="273,523,427,563"/>
-<area shape="poly" id="edge192_Node000015_Node000021" title=" " alt="" coords="123,401,175,455,209,484,245,509,274,522,271,527,243,514,205,488,171,459,119,405"/>
+<area shape="rect" id="Node000000" href="$classinterpolation_1_1VectorMap.html" title=" " alt="" coords="5,77,188,102"/>
+<area shape="rect" id="Node000001" href="$classinterpolation_1_1Interpolator3dGridTo1d.html" title=" " alt="" coords="236,5,441,45"/>
+<area shape="poly" id="edge177_Node000000_Node000001" title=" " alt="" coords="158,70,262,43,263,48,160,76"/>
+<area shape="rect" id="Node000003" href="$classinterpolation_1_1Interpolator3dGridTo3d.html" title=" " alt="" coords="236,69,441,109"/>
+<area shape="poly" id="edge179_Node000000_Node000003" title=" " alt="" coords="202,87,236,87,236,92,202,92"/>
+<area shape="rect" id="Node000004" href="$classinterpolation_1_1PolynomialPatch.html" title="Patches together many SquarePolynomialVectors to make a multidimensional polynomial spline." alt="" coords="245,133,432,173"/>
+<area shape="poly" id="edge180_Node000000_Node000004" title=" " alt="" coords="160,103,263,131,262,136,158,108"/>
+<area shape="rect" id="Node000002" href="$classinterpolation_1_1TriLinearInterpolator.html" title=" " alt="" coords="489,5,657,45"/>
+<area shape="poly" id="edge178_Node000001_Node000002" title=" " alt="" coords="455,23,489,23,489,28,455,28"/>
 </map>

@@ -4,6 +4,7 @@ var dir_e7c608ee7a349a990cecd74a7d13d4b1 =
     [ "Algorithms", "dir_71b07a0b7aa950201707a486a17867c4.html", "dir_71b07a0b7aa950201707a486a17867c4" ],
     [ "BasicActions", "dir_b394baf367572524e7ea5c8e675900e7.html", "dir_b394baf367572524e7ea5c8e675900e7" ],
     [ "BeamlineCore", "dir_5b997a27beb12890e523380c5ee602f0.html", "dir_5b997a27beb12890e523380c5ee602f0" ],
+    [ "BeamlineGeometry", "dir_f016d44adb49b13b2901425941bee843.html", "dir_f016d44adb49b13b2901425941bee843" ],
     [ "Distribution", "dir_4419891e8ec270b791a51348daa2ee9c.html", "dir_4419891e8ec270b791a51348daa2ee9c" ],
     [ "Elements", "dir_8e0dba5562e76ac36a0e68fe199ab368.html", "dir_8e0dba5562e76ac36a0e68fe199ab368" ],
     [ "Fields", "dir_c2b4005a27c62ad7ae40b1743a380200.html", "dir_c2b4005a27c62ad7ae40b1743a380200" ],

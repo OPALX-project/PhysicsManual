@@ -10,5 +10,6 @@ var searchData=
   ['const_5fiterator_5ft_7',['const_iterator_t',['../classSpecificElementVisitor.html#a6cdd46b1f74e03b460883ce5024f9844',1,'SpecificElementVisitor']]],
   ['const_5freference_5ft_8',['const_reference_t',['../classSpecificElementVisitor.html#aa0482fb1f133c503b4dd0313dbc46547',1,'SpecificElementVisitor']]],
   ['container_5ft_9',['container_t',['../classStepSizeConfig.html#a90c21f6bcec83978cc0209c04bc1c3a5',1,'StepSizeConfig::container_t'],['../classPeakFinder.html#a1ebe39a564c074c957bf335e9ec31f82',1,'PeakFinder::container_t'],['../TestBinning_8cpp.html#a098d80ff9d9afd3fc7c2ba9eed881feb',1,'Container_t:&#160;TestBinning.cpp']]],
-  ['coordinateselector_5ft_10',['CoordinateSelector_t',['../classPartBunch.html#a0493b8975ebe9233c035e72d9012c24d',1,'PartBunch']]]
+  ['container_5ftype_10',['container_type',['../classReferencePathModel.html#ac82dfb920d34022aa1e8a123d02bc1e5',1,'ReferencePathModel']]],
+  ['coordinateselector_5ft_11',['CoordinateSelector_t',['../classPartBunch.html#a0493b8975ebe9233c035e72d9012c24d',1,'PartBunch']]]
 ];

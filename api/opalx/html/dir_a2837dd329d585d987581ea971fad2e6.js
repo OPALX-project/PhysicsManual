@@ -30,6 +30,8 @@ var dir_a2837dd329d585d987581ea971fad2e6 =
     [ "PolynomialTimeDependence.h", "PolynomialTimeDependence_8h.html", "PolynomialTimeDependence_8h" ],
     [ "Quaternion.cpp", "Quaternion_8cpp.html", "Quaternion_8cpp" ],
     [ "Quaternion.hpp", "Quaternion_8hpp.html", "Quaternion_8hpp" ],
+    [ "ReferencePathModel.h", "ReferencePathModel_8h.html", "ReferencePathModel_8h" ],
+    [ "ReferencePathSegment.h", "ReferencePathSegment_8h.html", "ReferencePathSegment_8h" ],
     [ "SinusoidalTimeDependence.cpp", "SinusoidalTimeDependence_8cpp.html", null ],
     [ "SinusoidalTimeDependence.h", "SinusoidalTimeDependence_8h.html", "SinusoidalTimeDependence_8h" ],
     [ "SplineTimeDependence.cpp", "SplineTimeDependence_8cpp.html", null ],

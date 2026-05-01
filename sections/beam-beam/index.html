@@ -23,7 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +127,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -178,8 +261,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-beam-beam-theory-3d" id="toc-sec-beam-beam-theory-3d" class="nav-link active" data-scroll-target="#sec-beam-beam-theory-3d"><span class="header-section-number">5.1</span> Theory of colliding beams in 3D</a></li>
+  <li><a href="#sec-beam-beam-analytic-solution" id="toc-sec-beam-beam-analytic-solution" class="nav-link" data-scroll-target="#sec-beam-beam-analytic-solution"><span class="header-section-number">5.2</span> Analytic solution</a></li>
+  <li><a href="#sec-beam-beam-1v-testcase" id="toc-sec-beam-beam-1v-testcase" class="nav-link" data-scroll-target="#sec-beam-beam-1v-testcase"><span class="header-section-number">5.3</span> One-volt-per-meter test case</a></li>
+  <li><a href="#sec-beam-beam-results" id="toc-sec-beam-beam-results" class="nav-link" data-scroll-target="#sec-beam-beam-results"><span class="header-section-number">5.4</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#sec-beam-beam-reproducibility" id="toc-sec-beam-beam-reproducibility" class="nav-link" data-scroll-target="#sec-beam-beam-reproducibility"><span class="header-section-number">5.4.1</span> Reproducibility</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/beam-beam/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -203,8 +298,251 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="sec-beam-beam-theory-3d" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-beam-beam-theory-3d"><span class="header-section-number">5.1</span> Theory of colliding beams in 3D</h2>
+<p>The <code>BEAMBEAM</code> element models the electromagnetic interaction of two counter-propagating bunches near an interaction point (IP). The validation problem used here isolates the field solve from the transport dynamics: the two bunches are represented in the solver frame as a static electrostatic pair of identical three-dimensional Gaussian charge densities. This is the correct manufactured solution for checking the density deposition, open-boundary Poisson solve, and electric-field reconstruction used by the beam-beam diagnostics.</p>
+<p>Let the solver-frame coordinate be <span class="math inline">\(\mathbf r=(x,y,z)\)</span>. The OPALX bunch is centered at <span class="math inline">\(\mathbf c_1\)</span>, and the copied collision partner is obtained by mirror reflection about the local IP position <span class="math inline">\(z_{\mathrm{IP}}\)</span>, <span class="math display">\[
+\mathbf c_2 =
+\begin{pmatrix}
+c_{1x} \\
+c_{1y} \\
+2z_{\mathrm{IP}} - c_{1z}
+\end{pmatrix}.
+\]</span></p>
+<p>For the static validation case the total charge density is <span class="math display">\[
+\rho(\mathbf r) =
+\sum_{a=1}^{2}
+\frac{Q}{(2\pi)^{3/2}\sigma^3}
+\exp\!\left[
+-\frac{|\mathbf r-\mathbf c_a|^2}{2\sigma^2}
+\right],
+\]</span> where <span class="math inline">\(Q\)</span> is the charge of one bunch and <span class="math inline">\(\sigma\)</span> is the common rms size in all three spatial directions. OPALX solves <span class="math display">\[
+\nabla^2 \phi(\mathbf r) = -\frac{\rho(\mathbf r)}{\epsilon_0},
+\qquad
+\mathbf E(\mathbf r) = -\nabla \phi(\mathbf r),
+\]</span> with open boundary conditions. In the validation below no Lorentz transformation is applied: the comparison is deliberately performed in the solver frame against the electrostatic manufactured solution. Beam-energy parameters still appear in the input file because the normal OPALX tracking driver requires a reference beam, but the analytic field comparison is not a laboratory-frame boosted-field calculation.</p>
+</section>
+<section id="sec-beam-beam-analytic-solution" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-beam-beam-analytic-solution"><span class="header-section-number">5.2</span> Analytic solution</h2>
+<p>For a single spherical Gaussian bunch centered at <span class="math inline">\(\mathbf c\)</span>, define <span class="math display">\[
+\mathbf R = \mathbf r-\mathbf c, \qquad R = |\mathbf R|,
+\qquad u = \frac{R}{\sqrt{2}\sigma}.
+\]</span> Convolving this density with the free-space Green function of Poisson’s equation gives the standard electrostatic Gaussian potential <span class="citation" data-cites="jackson1999">(<a href="../literature/index.html#ref-jackson1999" role="doc-biblioref">Jackson 1999</a>)</span>, <span class="math display">\[
+\phi_G(\mathbf r;\mathbf c,Q,\sigma)
+=
+\frac{Q}{4\pi\epsilon_0}
+\frac{\operatorname{erf}(u)}{R},
+\]</span> with the finite limiting value <span class="math display">\[
+\phi_G(\mathbf c;\mathbf c,Q,\sigma)
+=
+\frac{Q}{4\pi\epsilon_0}\frac{\sqrt{2/\pi}}{\sigma}.
+\]</span> The electric field is <span class="math display">\[
+\mathbf E_G(\mathbf r;\mathbf c,Q,\sigma)
+=
+\frac{Q}{4\pi\epsilon_0}
+\frac{
+\operatorname{erf}(u)
+-
+\sqrt{\frac{2}{\pi}}\frac{R}{\sigma}
+\exp\!\left(-\frac{R^2}{2\sigma^2}\right)
+}{R^3}
+\mathbf R,
+\]</span> where the field vanishes at <span class="math inline">\(R=0\)</span> by symmetry.</p>
+<p>The analytic two-bunch manufactured solution is the linear superposition <span class="math display">\[
+\phi(\mathbf r) =
+\phi_G(\mathbf r;\mathbf c_1,Q,\sigma)
++ \phi_G(\mathbf r;\mathbf c_2,Q,\sigma),
+\]</span> and <span class="math display">\[
+\mathbf E(\mathbf r) =
+\mathbf E_G(\mathbf r;\mathbf c_1,Q,\sigma)
++ \mathbf E_G(\mathbf r;\mathbf c_2,Q,\sigma).
+\]</span> For equal bunch charges and symmetric placement, the exact field at the IP is zero: <span class="math display">\[
+\mathbf E(0,0,z_{\mathrm{IP}})=\mathbf 0.
+\]</span> The useful scalar reference value is instead the longitudinal field at the center of one bunch due to the other bunch. With separation <span class="math inline">\(d = |\mathbf c_2-\mathbf c_1|\)</span>, this is <span class="math display">\[
+E_z(\mathbf c_1)
+=
+\frac{Q}{4\pi\epsilon_0}
+\frac{
+\operatorname{erf}\!\left(\frac{d}{\sqrt{2}\sigma}\right)
+-
+\sqrt{\frac{2}{\pi}}\frac{d}{\sigma}
+\exp\!\left(-\frac{d^2}{2\sigma^2}\right)
+}{d^2}
+\operatorname{sgn}(c_{1z}-c_{2z}).
+\]</span></p>
+</section>
+<section id="sec-beam-beam-1v-testcase" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-beam-beam-1v-testcase"><span class="header-section-number">5.3</span> One-volt-per-meter test case</h2>
+<p>A special manufactured solution reads <span class="math display">\[
+\sigma = 1\,\mathrm{mm}, \qquad d = 10\,\mathrm{mm},
+\qquad |Q| = 1.112650055\times 10^{-14}\,\mathrm{C}.
+\]</span> For an electron bunch, <span class="math inline">\(Q&lt;0\)</span>. With these parameters the field at the center of one bunch due to the copied partner is approximately <span class="math display">\[
+|E_z(\mathbf c_1)| = 1.0\,\mathrm{V/m}.
+\]</span> At the IP the exact field remains zero by symmetry. The potential at the IP is approximately <span class="math display">\[
+\phi(0,0,z_{\mathrm{IP}}) = -3.9999977\times 10^{-2}\,\mathrm{V}
+\]</span> for the electron-sign convention used in the OPALX input. This value is not a contradiction of the zero-field result: the electric field is the gradient of the scalar potential, so the equal and opposite gradients from the two bunches cancel at the IP, while the two scalar potential contributions add.</p>
+<p>The OPALX run below uses a <span class="math inline">\(32^3\)</span> open field-solver mesh and <span class="math inline">\(8N^3=262144\)</span> macroparticles. The <code>COPY=TRUE</code> option instructs the BeamBeam element to build the mirrored bunch in the interaction window.</p>
+<pre class="opal"><code>OPTION, PSDUMPFREQ    = -1;
+OPTION, STATDUMPFREQ  = 1;
+OPTION, BOUNDPDESTROY = 10;
+OPTION, AUTOPHASE     = 4;
+OPTION, VERSION       = 900;
+
+TITLE, STRING="BeamBeam static Gaussian 1 V/m analytic validation ";
+
+REAL N                 = 32;
+REAL n_particles       = 8*N*N*N;
+REAL beam_bunch_charge = 1.112650055e-14;
+
+REAL Edes  = 0.25;
+REAL gamma = (Edes+EMASS)/EMASS;
+REAL beta  = sqrt(1-(1/gamma^2));
+REAL P0    = gamma*beta*EMASS;
+
+DR1: DRIFT,    L = 0.008425397, ELEMEDGE = 0.0;
+BB1: BEAMBEAM, L = 0.02, ELEMEDGE = 0.008425397,
+               VISUALIZE=FALSE, COPY=TRUE;
+DR2: DRIFT,    L = 0.031574603, ELEMEDGE = 0.028425397;
+
+myLine: Line = (DR1,BB1,DR2);
+
+FS1: FIELDSOLVER, TYPE=OPEN,
+    NX=N, NY=N, NZ=N,
+    PARFFTX=TRUE, PARFFTY=TRUE, PARFFTZ=FALSE,
+    BCFFTX=OPEN, BCFFTY=OPEN, BCFFTZ=OPEN,
+    BBOXINCR = 1, GREENSF = STANDARD;
+
+Dist1: DISTRIBUTION, TYPE=GAUSS,
+    SIGMAX=1e-3,  SIGMAY=1e-3,  SIGMAZ=1e-3,
+    SIGMAPX=1e-12, SIGMAPY=1e-12, SIGMAPZ=1e-12,
+    NPARTDIST = n_particles;
+
+ES1: EMISSIONSOURCE, DISTRIBUTION = Dist1;
+mySources: EMISSIONSOURCELIST = (ES1);
+
+BEAM1: BEAM, PARTICLE = ELECTRON, pc = P0, NALLOC = n_particles,
+       SOURCES = mySources, BCHARGE = beam_bunch_charge, CHARGE = -1;
+
+TRACK, LINE = myLine, BEAM = BEAM1,
+       MAXSTEPS = {4,15,3}, DT = {1e-11,3e-12,1e-11};
+    RUN, METHOD = "PARALLEL", FIELDSOLVER = FS1;
+ENDTRACK;
+QUIT;</code></pre>
+</section>
+<section id="sec-beam-beam-results" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sec-beam-beam-results"><span class="header-section-number">5.4</span> Results</h2>
+<p>The OPALX field diagnostics were compared directly to the analytic Gaussian pair on the same solver mesh. The active diagnostic snapshot used here has solver-frame centers <span class="math display">\[
+c_{1z}=7.49479585743\,\mathrm{mm},
+\qquad
+c_{2z}=17.38792638917\,\mathrm{mm},
+\]</span> so the realized separation is <span class="math display">\[
+d_{\mathrm{OPALX}} = 9.89313053174\,\mathrm{mm}.
+\]</span> This is close to, but not exactly, the nominal <span class="math inline">\(10\,\mathrm{mm}\)</span> reference because the active BeamBeam window is entered on the tracker step sequence and the diagnostic samples the actual solver-frame geometry.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th style="text-align: right;">Relative <span class="math inline">\(L_2\)</span> error</th>
+<th style="text-align: right;">Maximum absolute error</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\rho\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(5.221859\times 10^{-2}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(5.746384\times 10^{-8}\,\mathrm{C/m^3}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\phi\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(3.042248\times 10^{-3}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.087451\times 10^{-3}\,\mathrm{V}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(E_x\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.503024\times 10^{-2}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(8.676369\times 10^{-1}\,\mathrm{V/m}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(E_y\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.582187\times 10^{-2}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(8.807832\times 10^{-1}\,\mathrm{V/m}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(E_z\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(2.427369\times 10^{-2}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.031355\,\mathrm{V/m}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>At the nearest on-axis grid sample to the IP, the longitudinal field is <span class="math display">\[
+E_z^{\mathrm{analytic}} = 1.038298\,\mathrm{V/m},
+\qquad
+E_z^{\mathrm{OPALX}} = 1.072345\,\mathrm{V/m}.
+\]</span> Interpolating the same on-axis samples to the mathematical IP gives the symmetry check <span class="math display">\[
+E_z^{\mathrm{analytic}}(z_{\mathrm{IP}}) \approx -5.88\times 10^{-8}\,\mathrm{V/m},
+\qquad
+E_z^{\mathrm{OPALX}}(z_{\mathrm{IP}}) \approx 3.77\times 10^{-6}\,\mathrm{V/m}.
+\]</span> This confirms that the field at the interaction point is numerically consistent with the exact zero-field symmetry of the manufactured solution.</p>
+<div id="fig-beambeam-static-1v-ez" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-beambeam-static-1v-ez-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/beambeam-static-1v-ez-on-axis.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-beambeam-static-1v-ez-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Longitudinal electric field for the static Gaussian BeamBeam validation. The markers are OPALX grid samples and the line is the exact electrostatic Gaussian-pair field.
+</figcaption>
+</figure>
+</div>
+<p>The remaining few-percent field differences are consistent with the stochastic macroparticle realization and the <span class="math inline">\(32^3\)</span> mesh used in this diagnostic run. For a stricter regression test of the solver alone, the next step is to inject the analytic density directly on the mesh, bypassing particle sampling noise.</p>
+<section id="sec-beam-beam-reproducibility" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="sec-beam-beam-reproducibility"><span class="header-section-number">5.4.1</span> Reproducibility</h3>
+<p>The files needed to reproduce <a href="#fig-beambeam-static-1v-ez" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> and the table above are stored with this manual in <a href="reproducers/"><code>sections/beam-beam/reproducers/</code></a>:</p>
+<ul>
+<li><a href="reproducers/BeamBeam-static-1V.in"><code>BeamBeam-static-1V.in</code></a>: OPALX input deck for the static Gaussian-pair run.</li>
+<li><a href="reproducers/beam-beam-manufactured-solution.py"><code>beam-beam-manufactured-solution.py</code></a>: Python comparison script for the OPALX ASCII field diagnostics.</li>
+<li><a href="reproducers/README.md"><code>README.md</code></a>: compact command-line recipe.</li>
+</ul>
+<p>The assumptions are that OPALX has already been cloned and built, and that the executable is available as <code>build_openmp/src/opalx</code> from the OPALX repository root. The Python environment must provide <code>numpy</code>, <code>pandas</code>, and <code>matplotlib</code>; in the OPALX development checkout this is typically the <code>.venv-h6</code> environment.</p>
+<p>From the OPALX repository root, copy the input deck into <code>sandbox/</code> and run the single-rank OpenMP case:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">REPRO</span><span class="op">=</span>~/git/physics-manual-opalx/sections/beam-beam/reproducers</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">IN</span><span class="op">=</span>sandbox/BeamBeam-static-1V.in</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> sandbox data/sandbox</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="st">"</span><span class="va">$REPRO</span><span class="st">/BeamBeam-static-1V.in"</span> <span class="st">"</span><span class="va">$IN</span><span class="st">"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">mpiexec</span> <span class="at">-n</span> 1 build_openmp/src/opalx <span class="at">--info</span> 1 <span class="st">"</span><span class="va">$IN</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The run writes active BeamBeam diagnostics under <code>data/sandbox/</code>. For the configuration documented here, the comparison uses</p>
+<pre class="text"><code>data/sandbox/BeamBeam-static-1V-RHO_scalar-beambeam_rho_pre-000003.dat
+data/sandbox/BeamBeam-static-1V-PHI_scalar-beambeam_phi-000004.dat
+data/sandbox/BeamBeam-static-1V-EF_vector-beambeam_e-000004.dat</code></pre>
+<p>Run the analytic comparison with</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">REPRO</span><span class="op">=</span>~/git/physics-manual-opalx/sections/beam-beam/reproducers</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">D</span><span class="op">=</span>data/sandbox</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="va">SCRIPT</span><span class="op">=</span><span class="st">"</span><span class="va">$REPRO</span><span class="st">/beam-beam-manufactured-solution.py"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="va">RHO</span><span class="op">=</span><span class="st">"</span><span class="va">$D</span><span class="st">/BeamBeam-static-1V-RHO_scalar-beambeam_rho_pre-000003.dat"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="va">PHI</span><span class="op">=</span><span class="st">"</span><span class="va">$D</span><span class="st">/BeamBeam-static-1V-PHI_scalar-beambeam_phi-000004.dat"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="va">EF</span><span class="op">=</span><span class="st">"</span><span class="va">$D</span><span class="st">/BeamBeam-static-1V-EF_vector-beambeam_e-000004.dat"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="st">"</span><span class="va">$SCRIPT</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--compare-rho-dump</span> <span class="st">"</span><span class="va">$RHO</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">--compare-phi-dump</span> <span class="st">"</span><span class="va">$PHI</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">--compare-e-dump</span> <span class="st">"</span><span class="va">$EF</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">--sigma</span> 1e-3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The relevant output is the set of relative <span class="math inline">\(L_2\)</span> errors for <span class="math inline">\(\rho\)</span>, <span class="math inline">\(\phi\)</span>, <span class="math inline">\(E_x\)</span>, <span class="math inline">\(E_y\)</span>, and <span class="math inline">\(E_z\)</span>, plus the on-axis value nearest to the IP. The reference values for this run are those listed in the results table above: <span class="math inline">\(\rho\)</span> at about <span class="math inline">\(5.22\times 10^{-2}\)</span>, <span class="math inline">\(\phi\)</span> at about <span class="math inline">\(3.04\times 10^{-3}\)</span>, and the field components at about <span class="math inline">\(1.5\times 10^{-2}\)</span> to <span class="math inline">\(2.4\times 10^{-2}\)</span> relative error. The line <code>Ez(nearest grid sample to IP)</code> should report approximately <span class="math inline">\(1.038298\,\mathrm{V/m}\)</span> for the analytic value and <span class="math inline">\(1.072345\,\mathrm{V/m}\)</span> for OPALX.</p>
+<p>If the tracker step sequence or diagnostic naming changes, the numeric suffixes of the dump files may change. In that case choose the active <code>beambeam_rho_pre</code>, <code>beambeam_phi</code>, and <code>beambeam_e</code> files with matching diagnostic headers and with a solver-frame copied-bunch separation closest to <span class="math inline">\(10\,\mathrm{mm}\)</span>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-jackson1999" class="csl-entry" role="listitem">
+Jackson, J. D. 1999. <em>Classical Electrodynamics</em>. 3rd ed. Wiley.
+</div>
+</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -624,4 +962,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/beam-beam/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/beam-beam/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -1,39 +1,28 @@
 <map id="RFCavity::trackOnAxisParticle" name="RFCavity::trackOnAxisParticle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,303,220,329"/>
-<area shape="rect" id="Node000002" href="$classRFCavity.html#aea1f8376a359364df059c0e2aaef3e57" title="Apply to reference particle with position R and momemtum P." alt="" coords="268,112,472,152"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,301,180,239,221,202,267,168,291,155,294,160,269,173,225,206,184,243,127,305"/>
-<area shape="rect" id="Node000003" href="$classRFCavity.html#adf914d956cbf7ecaf6f979f764c1ddce" title="Get design length." alt="" coords="520,66,727,91"/>
-<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="116,302,134,261,164,203,209,144,236,119,267,98,299,82,334,71,406,59,476,57,538,62,538,67,476,62,406,64,335,76,301,87,269,102,239,123,213,148,169,206,138,263,121,304"/>
-<area shape="rect" id="Node000009" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="602,477,645,502"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="166,301,231,290,309,285,393,291,434,300,473,315,498,329,520,346,560,386,591,428,612,463,607,466,586,431,556,389,517,350,495,333,471,320,432,306,392,296,309,290,231,295,167,306"/>
-<area shape="rect" id="Node000010" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="560,202,687,227"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="126,301,184,255,224,230,267,212,340,197,414,192,485,194,546,200,546,205,485,199,414,197,341,202,269,217,226,235,187,259,129,305"/>
-<area shape="rect" id="Node000011" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="288,227,452,253"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="156,301,312,254,313,259,157,306"/>
-<area shape="rect" id="Node000012" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="311,329,429,354"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="220,324,298,332,297,337,220,329"/>
-<area shape="rect" id="Node000013" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="311,378,429,403"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="151,326,269,364,299,372,298,377,267,369,149,331"/>
-<area shape="rect" id="Node000014" href="$classPartBunch.html#ab312ee7cffe005fc4cd43d41ff5253ff" title=" " alt="" coords="279,427,461,453"/>
-<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="131,327,190,369,228,393,269,414,289,421,287,426,267,418,226,398,187,374,128,331"/>
-<area shape="rect" id="Node000015" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="303,526,437,551"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="123,328,142,365,174,415,217,468,242,492,269,512,291,523,288,528,267,517,239,496,213,472,170,418,138,368,118,330"/>
-<area shape="rect" id="Node000017" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="301,477,439,502"/>
-<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="125,327,181,393,222,431,269,463,288,472,286,476,267,468,219,435,177,396,121,330"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,109,549,92,550,97,466,115"/>
-<area shape="rect" id="Node000008" href="$classFieldmap.html#a02b2453d94e652c04010373f0ef352f4" title="Get the field strength at a given point." alt="" coords="525,119,721,145"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="472,129,511,129,511,135,472,135"/>
-<area shape="rect" id="Node000004" href="$classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="775,42,1009,67"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="727,67,761,64,761,69,727,72"/>
-<area shape="rect" id="Node000007" href="$classFieldmap.html#a0a0aff97e6e62b388b5001a9d20c3154" title="Get the longitudinal dimensions of the field." alt="" coords="783,91,1001,117"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="727,86,769,90,769,95,726,91"/>
-<area shape="rect" id="Node000005" href="$classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="1057,5,1268,45"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1009,39,1043,36,1044,41,1010,45"/>
-<area shape="rect" id="Node000006" href="$classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="1061,70,1264,95"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1010,64,1048,68,1047,73,1009,69"/>
-<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="452,229,546,220,547,225,452,234"/>
-<area shape="poly" id="edge18_Node000015_Node000009" title=" " alt="" coords="435,523,588,493,589,499,436,529"/>
-<area shape="rect" id="Node000016" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="595,526,651,551"/>
-<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="438,536,581,536,581,541,438,541"/>
-<area shape="poly" id="edge20_Node000017_Node000009" title=" " alt="" coords="440,487,588,487,588,492,440,492"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,222,220,247"/>
+<area shape="rect" id="Node000002" href="$classRFCavity.html#aea1f8376a359364df059c0e2aaef3e57" title="Apply to reference particle with position R and momemtum P." alt="" coords="268,5,472,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,220,176,147,218,102,266,62,289,49,292,53,270,66,222,106,180,150,125,223"/>
+<area shape="rect" id="Node000004" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="597,370,639,395"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,219,211,201,294,186,339,183,385,185,430,193,473,208,497,222,519,239,557,279,587,321,607,357,603,359,582,324,553,283,516,243,494,226,471,213,429,198,384,190,339,189,294,191,212,206,149,225"/>
+<area shape="rect" id="Node000005" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="555,95,681,121"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="122,220,145,194,179,161,220,129,267,106,338,88,411,82,480,84,541,91,540,96,480,90,411,88,339,93,269,110,223,134,182,165,149,197,126,223"/>
+<area shape="rect" id="Node000006" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="288,121,452,146"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="139,220,267,163,311,148,313,153,269,168,141,224"/>
+<area shape="rect" id="Node000007" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="311,222,429,247"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="220,232,297,232,297,237,220,237"/>
+<area shape="rect" id="Node000008" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="311,271,429,297"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="180,245,298,268,297,273,179,250"/>
+<area shape="rect" id="Node000009" href="$classPartBunch.html#ab312ee7cffe005fc4cd43d41ff5253ff" title=" " alt="" coords="279,321,461,346"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="138,245,196,276,269,307,293,315,292,320,267,312,194,280,135,250"/>
+<area shape="rect" id="Node000010" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="303,419,437,445"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="124,246,145,279,178,322,220,368,269,406,291,416,288,421,267,410,216,372,173,326,140,282,119,249"/>
+<area shape="rect" id="Node000012" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="301,370,439,395"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="128,245,185,299,225,330,269,356,289,364,287,369,267,361,222,335,182,303,124,249"/>
+<area shape="rect" id="Node000003" href="$classFieldmap.html#a02b2453d94e652c04010373f0ef352f4" title="Get the field strength at a given point." alt="" coords="520,13,716,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="472,23,506,23,506,28,472,28"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="452,122,541,113,541,118,452,128"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="434,417,582,387,583,392,435,422"/>
+<area shape="rect" id="Node000011" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="590,419,646,445"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="438,429,576,429,576,435,438,435"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="440,380,583,380,583,385,440,385"/>
 </map>

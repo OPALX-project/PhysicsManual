@@ -121,6 +121,7 @@ var hierarchy =
     [ "DirichletPlaneWriter", "classDirichletPlaneWriter.html", null ],
     [ "DistributionMoments", "classDistributionMoments.html", null ],
     [ "EBVectors", "classEBVectors.html", null ],
+    [ "ElementGeometry", "classElementGeometry.html", null ],
     [ "OrbitThreader::elementPosition", "classOrbitThreader.html#structOrbitThreader_1_1elementPosition", null ],
     [ "OrbitThreader::elementPositionComp", "structOrbitThreader_1_1elementPositionComp.html", null ],
     [ "ElmPtr", "classElmPtr.html", [
@@ -149,9 +150,19 @@ var hierarchy =
       [ "ElementBase", "classElementBase.html", [
         [ "Beamline", "classBeamline.html", [
           [ "DummyBeamline", "classDummyBeamline.html", null ],
+          [ "DummyBeamline", "classDummyBeamline.html", null ],
+          [ "DummyBeamline", "classDummyBeamline.html", null ],
           [ "TBeamline< T >", "classTBeamline.html", null ]
         ] ],
         [ "Component", "classComponent.html", [
+          [ "BendBase", "classBendBase.html", [
+            [ "RBend", "classRBend.html", [
+              [ "RBendRep", "classRBendRep.html", null ]
+            ] ],
+            [ "SBend", "classSBend.html", [
+              [ "SBendRep", "classSBendRep.html", null ]
+            ] ]
+          ] ],
           [ "ConstantEFieldCavity", "classConstantEFieldCavity.html", [
             [ "ConstantEFieldCavityRep", "classConstantEFieldCavityRep.html", null ]
           ] ],
@@ -366,6 +377,7 @@ var hierarchy =
     [ "Mesher", "classMesher.html", null ],
     [ "MeshGenerator", "classMeshGenerator.html", null ],
     [ "MinArray< N >", "structMinArray.html", null ],
+    [ "Misalignment", "classMisalignment.html", null ],
     [ "interpolation::MMatrix< Tmplt >", "classinterpolation_1_1MMatrix.html", null ],
     [ "interpolation::MMatrix< double >", "classinterpolation_1_1MMatrix.html", null ],
     [ "MultipoleTBase", "classMultipoleTBase.html", [
@@ -418,6 +430,8 @@ var hierarchy =
         [ "EmissionSource", "classEmissionSource.html", null ],
         [ "EmissionSourceList", "classEmissionSourceList.html", null ],
         [ "FieldSolverCmd", "classFieldSolverCmd.html", [
+          [ "OpalBeamlinePlacementTest::TestableFieldSolverCmd", "classOpalBeamlinePlacementTest_1_1TestableFieldSolverCmd.html", null ],
+          [ "OrbitThreaderTest::TestableFieldSolverCmd", "classOrbitThreaderTest_1_1TestableFieldSolverCmd.html", null ],
           [ "SolenoidPlacementTest::TestableFieldSolverCmd", "classSolenoidPlacementTest_1_1TestableFieldSolverCmd.html", null ],
           [ "TestMultipoleT::TestableFieldSolverCmd", "classTestMultipoleT_1_1TestableFieldSolverCmd.html", null ],
           [ "TestMultipoleTCurvedConstRadius::TestableFieldSolverCmd", "classTestMultipoleTCurvedConstRadius_1_1TestableFieldSolverCmd.html", null ],
@@ -432,6 +446,10 @@ var hierarchy =
           [ "Sequence", "classSequence.html", null ]
         ] ],
         [ "OpalElement", "classOpalElement.html", [
+          [ "OpalBend", "classOpalBend.html", [
+            [ "OpalRBend", "classOpalRBend.html", null ],
+            [ "OpalSBend", "classOpalSBend.html", null ]
+          ] ],
           [ "OpalCavity", "classOpalCavity.html", null ],
           [ "OpalConstantEFieldCavity", "classOpalConstantEFieldCavity.html", null ],
           [ "OpalDrift", "classOpalDrift.html", null ],
@@ -511,11 +529,14 @@ var hierarchy =
     [ "ippl::PicManager", null, [
       [ "PartBunch< T, Dim >", "classPartBunch.html", null ]
     ] ],
+    [ "PlacedElement", "classPlacedElement.html", null ],
+    [ "PlacementPose", "classPlacementPose.html", null ],
     [ "PlaceRep", "classPlaceRep.html", null ],
     [ "DirichletPlaneWriter::PlaneDiagnostics", "classDirichletPlaneWriter.html#structDirichletPlaneWriter_1_1PlaneDiagnostics", null ],
     [ "Point", "Component_8h.html#structPoint", null ],
     [ "Point3D", "classPoint3D.html", null ],
     [ "interpolation::PolynomialCoefficient", "classinterpolation_1_1PolynomialCoefficient.html", null ],
+    [ "Port", "classPort.html", null ],
     [ "PortableBitmapReader", "classPortableBitmapReader.html", null ],
     [ "PortableGraymapReader", "classPortableGraymapReader.html", null ],
     [ "interpolation::PPSolveFactory", "classinterpolation_1_1PPSolveFactory.html", null ],
@@ -539,6 +560,8 @@ var hierarchy =
     [ "ParticleBinning::ReductionVariantHelper< SizeType, IndexType, Sequence >", "namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper", null ],
     [ "ParticleBinning::ReductionVariantHelper< SizeType, IndexType, std::integer_sequence< IndexType, Sizes... > >", "namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper_3_01SizeType_00_01IndexType_00_01std_1_1integer_55c9385a69efdb00c91b14d74281a80d", null ],
     [ "SequenceParser::Reference", "structSequenceParser_1_1Reference.html", null ],
+    [ "ReferencePathModel", "classReferencePathModel.html", null ],
+    [ "ReferencePathSegment", "classReferencePathSegment.html", null ],
     [ "regex_t", null, [
       [ "RegularExpression::Expression", "classRegularExpression_1_1Expression.html", null ]
     ] ],
@@ -608,6 +631,7 @@ var hierarchy =
     [ "StepSizeConfig", "classStepSizeConfig.html", null ],
     [ "SumArray< N >", "structSumArray.html", null ],
     [ "SumMatrix6x6", "structSumMatrix6x6.html", null ],
+    [ "SupportPlacement", "classSupportPlacement.html", null ],
     [ "TableRowRep", "classTableRowRep.html", null ],
     [ "testing::Test", null, [
       [ "Astra1DDynamicTest", "classAstra1DDynamicTest.html", null ],
@@ -617,6 +641,7 @@ var hierarchy =
       [ "BinningCmdTest", "classBinningCmdTest.html", null ],
       [ "BinningTest", "classBinningTest.html", null ],
       [ "BunchStateHandlerTest", "classBunchStateHandlerTest.html", null ],
+      [ "CoordinateSystemTrafoTest", "classCoordinateSystemTrafoTest.html", null ],
       [ "CubicSplineTest", "classCubicSplineTest.html", null ],
       [ "DirichletPlaneWriterTest", "classDirichletPlaneWriterTest.html", null ],
       [ "DistributionMomentsTest", "classDistributionMomentsTest.html", null ],
@@ -637,6 +662,9 @@ var hierarchy =
       [ "LinearSplineTest", "classLinearSplineTest.html", null ],
       [ "MultiVariateGaussianTest", "classMultiVariateGaussianTest.html", null ],
       [ "MultipoleTBaseTest", "classMultipoleTBaseTest.html", null ],
+      [ "OpalBeamlinePlacementTest", "classOpalBeamlinePlacementTest.html", null ],
+      [ "OrbitThreaderTest", "classOrbitThreaderTest.html", null ],
+      [ "PlacedElementTest", "classPlacedElementTest.html", null ],
       [ "QuasiRandomTest", "classQuasiRandomTest.html", null ],
       [ "QuaternionTest", "classQuaternionTest.html", null ],
       [ "RFCavityTest", "classRFCavityTest.html", null ],

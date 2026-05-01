@@ -4,12 +4,12 @@ var searchData=
   ['next_1',['NEXT',['../classSequenceMember.html#a36853af7b41cb6430a70f684f466438aa25509fc07c261e0d117bb5ca11ee8bbf',1,'SequenceMember']]],
   ['no_5frow_5fcount_2',['NO_ROW_COUNT',['../structSDDS_1_1data.html#abb0f982cb4ff473f0a5284cc4ca5581dad9666de7674d0ebc2be445e00bde37c7',1,'SDDS::data']]],
   ['nodist_3',['NODIST',['../Distribution_8h.html#add802868496e19113f6924d041d7d9aba6e2eaa6cc46b2287c12cc7ef9569d426',1,'Distribution.h']]],
-  ['none_4',['none',['../classTrackRun.html#a0e71895bdb34a2b47d71602fa559ecaaab50339a10e1de285ac99d4c3990b8693',1,'TrackRun::NONE'],['../FieldSolverCmd_8h.html#a83376dde2aa7fee5cf454ff4ba8e8f88ab50339a10e1de285ac99d4c3990b8693',1,'NONE:&#160;FieldSolverCmd.h'],['../classDistribution.html#a119f4db049ae102dfd062b8bce3835b6ab50339a10e1de285ac99d4c3990b8693',1,'Distribution::NONE'],['../classDistribution.html#aded07da2c47998306c5dc571bd0a8cbcab50339a10e1de285ac99d4c3990b8693',1,'Distribution::NONE'],['../classAttributeHandler.html#af49b435ea66b9b42763f9627092769cca7688f5df968af8fc09c716528439c13d',1,'AttributeHandler::NONE']]],
+  ['none_4',['none',['../classAttributeHandler.html#af49b435ea66b9b42763f9627092769cca7688f5df968af8fc09c716528439c13d',1,'AttributeHandler::NONE'],['../classDistribution.html#aded07da2c47998306c5dc571bd0a8cbcab50339a10e1de285ac99d4c3990b8693',1,'Distribution::NONE'],['../classDistribution.html#a119f4db049ae102dfd062b8bce3835b6ab50339a10e1de285ac99d4c3990b8693',1,'Distribution::NONE'],['../classTrackRun.html#a0e71895bdb34a2b47d71602fa559ecaaab50339a10e1de285ac99d4c3990b8693',1,'TrackRun::NONE'],['../FieldSolverCmd_8h.html#a83376dde2aa7fee5cf454ff4ba8e8f88ab50339a10e1de285ac99d4c3990b8693',1,'NONE:&#160;FieldSolverCmd.h']]],
   ['nonequil_5',['NONEQUIL',['../classDistribution.html#aded07da2c47998306c5dc571bd0a8cbcab4c6f64149e392199cf0570abe0b0eb1',1,'Distribution']]],
   ['npartdist_6',['NPARTDIST',['../namespaceDISTRIBUTION.html#a708d64eec0e7ee789d15dd81bd53671aa955ef72714d5f98313961a4c70b5b4c4',1,'DISTRIBUTION']]],
-  ['nslices_7',['NSLICES',['../classOpalDrift.html#a69fd880d6fe90593e8a06003139925b4a23823f3a732e2ce512b00c84e503548f',1,'OpalDrift']]],
-  ['numcells_8',['NUMCELLS',['../classOpalTravelingWave.html#a2c6fb2ee21e3e4264a46978e4e7dfa6caf1421b14af2f9706b53cc620dc4ecb4d',1,'OpalTravelingWave']]],
-  ['nx_9',['NX',['../namespaceFIELDSOLVER.html#a85613d337f5ae59ac3b0d904eb7ef8d8a9a8abec2508a86d679531c2a33dc9bd6',1,'FIELDSOLVER']]],
-  ['ny_10',['NY',['../namespaceFIELDSOLVER.html#a85613d337f5ae59ac3b0d904eb7ef8d8a60a44ea5875bdddbda280f401776f6a4',1,'FIELDSOLVER']]],
-  ['nz_11',['NZ',['../namespaceFIELDSOLVER.html#a85613d337f5ae59ac3b0d904eb7ef8d8a8026a54aea7e9b75658cd9684f12374b',1,'FIELDSOLVER']]]
+  ['nslices_7',['nslices',['../classOpalDrift.html#afba1bf4adc28d6f281530751c7fe541da23823f3a732e2ce512b00c84e503548f',1,'OpalDrift::NSLICES'],['../classOpalBend.html#a74ac3e25e78cf869217059375487d69ca2b665c845901098e562148894d332c47',1,'OpalBend::NSLICES']]],
+  ['numcells_8',['NUMCELLS',['../classOpalTravelingWave.html#a43a39e363153c15d552ef6cfc4fd25c6af1421b14af2f9706b53cc620dc4ecb4d',1,'OpalTravelingWave']]],
+  ['nx_9',['NX',['../namespaceFIELDSOLVER.html#a65a8eaff41d451663cf9a20922c95617a9a8abec2508a86d679531c2a33dc9bd6',1,'FIELDSOLVER']]],
+  ['ny_10',['NY',['../namespaceFIELDSOLVER.html#a65a8eaff41d451663cf9a20922c95617a60a44ea5875bdddbda280f401776f6a4',1,'FIELDSOLVER']]],
+  ['nz_11',['NZ',['../namespaceFIELDSOLVER.html#a65a8eaff41d451663cf9a20922c95617a8026a54aea7e9b75658cd9684f12374b',1,'FIELDSOLVER']]]
 ];

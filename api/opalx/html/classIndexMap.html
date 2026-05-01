@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('classIndexMap.html',''); initResizable
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -116,7 +117,9 @@ Collaboration diagram for IndexMap:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIndexMap__coll__graph.png" border="0" usemap="#aIndexMap_coll__map" alt="Collaboration graph"/></div>
 <map name="aIndexMap_coll__map" id="aIndexMap_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,187,331"/>
+<area shape="rect" title=" " alt="" coords="5,233,223,619"/>
+<area shape="rect" href="classReferencePathModel.html" title="Ordered collection of reference&#45;path segments." alt="" coords="40,5,188,171"/>
+<area shape="poly" title=" " alt="" coords="117,171,117,217,111,217,111,171"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -152,6 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbda3af54b28804d3b605734bb06670f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350d14014d460db284d5414a73ff36c7" id="r_a350d14014d460db284d5414a73ff36c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a350d14014d460db284d5414a73ff36c7">size</a> () const</td></tr>
 <tr class="separator:a350d14014d460db284d5414a73ff36c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6cd2820854ac2457801ff3e158e061" id="r_aab6cd2820854ac2457801ff3e158e061"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classReferencePathModel.html">ReferencePathModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#aab6cd2820854ac2457801ff3e158e061">getReferencePathModel</a> () const</td></tr>
+<tr class="separator:aab6cd2820854ac2457801ff3e158e061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8085d3155ed5425aadac285310f056" id="r_a3d8085d3155ed5425aadac285310f056"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a3d8085d3155ed5425aadac285310f056">numElements</a> () const</td></tr>
 <tr class="separator:a3d8085d3155ed5425aadac285310f056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a3d22c5767ee2288aafc1f063cb40be" id="r_a8a3d22c5767ee2288aafc1f063cb40be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexMap.html#a8473ada2c6e7a7afc4b01e12dedacb91">key_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a8a3d22c5767ee2288aafc1f063cb40be">getRange</a> (const IndexMap::value_t::value_type &amp;element, double position) const</td></tr>
@@ -166,6 +171,11 @@ Private Types</h2></td></tr>
 <tr class="memitem:ac6460315b33a9c9fc2f646afaa3d6942" id="r_ac6460315b33a9c9fc2f646afaa3d6942"><td class="memItemLeft" align="right" valign="top">typedef std::multimap&lt; value_t::value_type, <a class="el" href="classIndexMap.html#a8473ada2c6e7a7afc4b01e12dedacb91">key_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#ac6460315b33a9c9fc2f646afaa3d6942">invertedMap_t</a></td></tr>
 <tr class="separator:ac6460315b33a9c9fc2f646afaa3d6942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5dfa42281a323a7aa1c357d9c9b18cdb" id="r_a5dfa42281a323a7aa1c357d9c9b18cdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a5dfa42281a323a7aa1c357d9c9b18cdb">rebuildReferencePathModel</a> () const</td></tr>
+<tr class="separator:a5dfa42281a323a7aa1c357d9c9b18cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:acb47caa1696b71ef0fcdf43a64aab3d3" id="r_acb47caa1696b71ef0fcdf43a64aab3d3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#acb47caa1696b71ef0fcdf43a64aab3d3">almostEqual</a> (double, double)</td></tr>
@@ -177,6 +187,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8a9b970127b7320d20b6ea8481b09fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a5ee957743ade615e027768a0e81d0" id="r_a63a5ee957743ade615e027768a0e81d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexMap.html#ac6460315b33a9c9fc2f646afaa3d6942">invertedMap_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a63a5ee957743ade615e027768a0e81d0">mapElement2Range_m</a></td></tr>
 <tr class="separator:a63a5ee957743ade615e027768a0e81d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb917204024a0cace93b9ea9c128e40" id="r_a4fb917204024a0cace93b9ea9c128e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classReferencePathModel.html">ReferencePathModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a4fb917204024a0cace93b9ea9c128e40">referencePathModel_m</a></td></tr>
+<tr class="separator:a4fb917204024a0cace93b9ea9c128e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376fb273b9b5fc89d6487acd337008b4" id="r_a376fb273b9b5fc89d6487acd337008b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a376fb273b9b5fc89d6487acd337008b4">referencePathModelDirty_m</a></td></tr>
+<tr class="separator:a376fb273b9b5fc89d6487acd337008b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9490cc68a7ef907dea800c762b8660" id="r_a2e9490cc68a7ef907dea800c762b8660"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIndexMap.html#a2e9490cc68a7ef907dea800c762b8660">totalPathLength_m</a></td></tr>
 <tr class="separator:a2e9490cc68a7ef907dea800c762b8660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -187,7 +201,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00036">36</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00037">37</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 </div><hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structIndexMap_1_1Range" id="structIndexMap_1_1Range"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structIndexMap_1_1Range">&#9670;&#160;</a></span>IndexMap::Range</h2>
@@ -264,7 +278,7 @@ end</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00095">95</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00092">92</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +294,7 @@ end</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00046">46</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00045">45</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +318,7 @@ end</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00094">94</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00091">91</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
 </div>
 </div>
@@ -320,7 +334,7 @@ end</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00047">47</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00046">46</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
 </div>
 </div>
@@ -377,11 +391,11 @@ end</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00106">106</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00111">111</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8cpp_source.html#l00378">almostEqual()</a>, <a class="el" href="IndexMap_8h_source.html#l00044">IndexMap::Range::end</a>, <a class="el" href="IndexMap_8h_source.html#l00097">mapElement2Range_m</a>, <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>, <a class="el" href="IndexMap_8h_source.html#l00102">oneMinusEpsilon_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00099">totalPathLength_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8cpp_source.html#l00389">almostEqual()</a>, <a class="el" href="IndexMap_8h_source.html#l00043">IndexMap::Range::end</a>, <a class="el" href="IndexMap_8h_source.html#l00094">mapElement2Range_m</a>, <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>, <a class="el" href="IndexMap_8h_source.html#l00102">oneMinusEpsilon_m</a>, <a class="el" href="IndexMap_8h_source.html#l00096">referencePathModelDirty_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00098">totalPathLength_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OrbitThreader_8cpp_source.html#l00114">OrbitThreader::execute()</a>, and <a class="el" href="TestSolenoid_8cpp_source.html#l00262">TEST_F()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8cpp_source.html#l00122">OrbitThreader::execute()</a>, <a class="el" href="TestIndexMap_8cpp_source.html#l00008">TEST()</a>, and <a class="el" href="TestSolenoid_8cpp_source.html#l00290">TEST_F()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -429,9 +443,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00378">378</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00389">389</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00106">add()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00365">getTouchingElements()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00111">add()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00376">getTouchingElements()</a>.</p>
 
 </div>
 </div>
@@ -461,11 +475,56 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00343">343</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00354">354</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00097">mapElement2Range_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00094">mapElement2Range_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00135">OrbitThreader::getRange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00154">OrbitThreader::getRange()</a>.</p>
+
+</div>
+</div>
+<a id="aab6cd2820854ac2457801ff3e158e061" name="aab6cd2820854ac2457801ff3e158e061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6cd2820854ac2457801ff3e158e061">&#9670;&#160;</a></span>getReferencePathModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classReferencePathModel.html">ReferencePathModel</a> &amp; IndexMap::getReferencePathModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00107">107</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="IndexMap_8cpp_source.html#l00160">rebuildReferencePathModel()</a>, <a class="el" href="IndexMap_8h_source.html#l00095">referencePathModel_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00096">referencePathModelDirty_m</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00165">OrbitThreader::getReferencePathModel()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00182">saveSDDS()</a>, and <a class="el" href="TestIndexMap_8cpp_source.html#l00008">TEST()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexMap_aab6cd2820854ac2457801ff3e158e061_cgraph.png" border="0" usemap="#aclassIndexMap_aab6cd2820854ac2457801ff3e158e061_cgraph" alt=""/></div>
+<map name="aclassIndexMap_aab6cd2820854ac2457801ff3e158e061_cgraph" id="aclassIndexMap_aab6cd2820854ac2457801ff3e158e061_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,215,77"/>
+<area shape="rect" href="classIndexMap.html#a5dfa42281a323a7aa1c357d9c9b18cdb" title=" " alt="" coords="263,37,468,77"/>
+<area shape="poly" title=" " alt="" coords="215,55,249,55,249,60,215,60"/>
+<area shape="rect" href="classReferencePathModel.html#af74189e637d14a5ecf17d8a715efb167" title=" " alt="" coords="516,5,672,45"/>
+<area shape="poly" title=" " alt="" coords="468,40,502,35,503,41,469,46"/>
+<area shape="rect" href="classReferencePathModel.html#ad268d23691f7f6d37e9bb7a78b41dc61" title=" " alt="" coords="516,69,672,109"/>
+<area shape="poly" title=" " alt="" coords="469,69,503,74,502,79,468,74"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -485,11 +544,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00365">365</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00376">376</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8cpp_source.html#l00378">almostEqual()</a>, <a class="el" href="IndexMap_8h_source.html#l00043">IndexMap::Range::begin</a>, <a class="el" href="IndexMap_8h_source.html#l00044">IndexMap::Range::end</a>, and <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8cpp_source.html#l00389">almostEqual()</a>, <a class="el" href="IndexMap_8h_source.html#l00042">IndexMap::Range::begin</a>, <a class="el" href="IndexMap_8h_source.html#l00043">IndexMap::Range::end</a>, and <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00141">OrbitThreader::getTouchingElements()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00159">OrbitThreader::getTouchingElements()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -536,9 +595,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00045">45</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00050">50</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00043">IndexMap::Range::begin</a>, <a class="el" href="IndexMap_8h_source.html#l00044">IndexMap::Range::end</a>, and <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00042">IndexMap::Range::begin</a>, <a class="el" href="IndexMap_8h_source.html#l00043">IndexMap::Range::end</a>, and <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>.</p>
 
 </div>
 </div>
@@ -568,11 +627,54 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00069">69</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00074">74</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00099">totalPathLength_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00098">totalPathLength_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00129">OrbitThreader::query()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8h_source.html#l00149">OrbitThreader::query()</a>.</p>
+
+</div>
+</div>
+<a id="a5dfa42281a323a7aa1c357d9c9b18cdb" name="a5dfa42281a323a7aa1c357d9c9b18cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfa42281a323a7aa1c357d9c9b18cdb">&#9670;&#160;</a></span>rebuildReferencePathModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IndexMap::rebuildReferencePathModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00160">160</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="ReferencePathModel_8h_source.html#l00022">ReferencePathModel::addSegment()</a>, <a class="el" href="ReferencePathModel_8h_source.html#l00023">ReferencePathModel::clear()</a>, <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>, <a class="el" href="IndexMap_8h_source.html#l00095">referencePathModel_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00096">referencePathModelDirty_m</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="IndexMap_8h_source.html#l00107">getReferencePathModel()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexMap_a5dfa42281a323a7aa1c357d9c9b18cdb_cgraph.png" border="0" usemap="#aclassIndexMap_a5dfa42281a323a7aa1c357d9c9b18cdb_cgraph" alt=""/></div>
+<map name="aclassIndexMap_a5dfa42281a323a7aa1c357d9c9b18cdb_cgraph" id="aclassIndexMap_a5dfa42281a323a7aa1c357d9c9b18cdb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,211,77"/>
+<area shape="rect" href="classReferencePathModel.html#af74189e637d14a5ecf17d8a715efb167" title=" " alt="" coords="259,5,415,45"/>
+<area shape="poly" title=" " alt="" coords="211,40,245,35,245,41,211,46"/>
+<area shape="rect" href="classReferencePathModel.html#ad268d23691f7f6d37e9bb7a78b41dc61" title=" " alt="" coords="259,69,415,109"/>
+<area shape="poly" title=" " alt="" coords="211,69,245,74,245,79,211,74"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -592,27 +694,37 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00167">167</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00182">182</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Util_8cpp_source.html#l00197">Util::combineFilePath()</a>, <a class="el" href="OpalData_8cpp_source.html#l00677">OpalData::getAuxiliaryOutputDirectory()</a>, <a class="el" href="OpalData_8cpp_source.html#l00685">OpalData::getInputBasename()</a>, <a class="el" href="OpalData_8cpp_source.html#l00195">OpalData::getInstance()</a>, <a class="el" href="IndexMap_8h_source.html#l00097">mapElement2Range_m</a>, <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>, <a class="el" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8ac04b3cc5b1a13dc2463b809070bbb67e">RFCAVITY</a>, <a class="el" href="IndexMap_8cpp_source.html#l00164">SIZE</a>, and <a class="el" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a9c24e63e39e2b85641a916911209a0e3">TRAVELINGWAVE</a>.</p>
+<p class="reference">References <a class="el" href="Util_8cpp_source.html#l00197">Util::combineFilePath()</a>, <a class="el" href="OpalData_8cpp_source.html#l00677">OpalData::getAuxiliaryOutputDirectory()</a>, <a class="el" href="OpalData_8cpp_source.html#l00685">OpalData::getInputBasename()</a>, <a class="el" href="OpalData_8cpp_source.html#l00195">OpalData::getInstance()</a>, <a class="el" href="IndexMap_8h_source.html#l00107">getReferencePathModel()</a>, <a class="el" href="ReferencePathModel_8h_source.html#l00026">ReferencePathModel::getSegments()</a>, <a class="el" href="IndexMap_8h_source.html#l00094">mapElement2Range_m</a>, <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>, <a class="el" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8ac04b3cc5b1a13dc2463b809070bbb67e">RFCAVITY</a>, <a class="el" href="IndexMap_8cpp_source.html#l00179">SIZE</a>, and <a class="el" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a9c24e63e39e2b85641a916911209a0e3">TRAVELINGWAVE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OrbitThreader_8cpp_source.html#l00114">OrbitThreader::execute()</a>, and <a class="el" href="TestSolenoid_8cpp_source.html#l00262">TEST_F()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8cpp_source.html#l00122">OrbitThreader::execute()</a>, and <a class="el" href="TestSolenoid_8cpp_source.html#l00290">TEST_F()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIndexMap_acbda3af54b28804d3b605734bb06670f_cgraph.png" border="0" usemap="#aclassIndexMap_acbda3af54b28804d3b605734bb06670f_cgraph" alt=""/></div>
 <map name="aclassIndexMap_acbda3af54b28804d3b605734bb06670f_cgraph" id="aclassIndexMap_acbda3af54b28804d3b605734bb06670f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,92,167,117"/>
+<area shape="rect" title=" " alt="" coords="5,145,167,171"/>
 <area shape="rect" href="namespaceUtil.html#a11460f59ebd4d9f7dc2f12724dece886" title=" " alt="" coords="242,5,402,31"/>
-<area shape="poly" title=" " alt="" coords="109,89,156,65,214,41,244,31,246,37,216,46,159,70,111,94"/>
+<area shape="poly" title=" " alt="" coords="96,143,143,93,176,65,213,41,233,33,235,37,216,46,179,69,147,97,100,147"/>
 <area shape="rect" href="classOpalData.html#af5404b3339d48c4531df60b77ce628c3" title="get the name of the the additional data directory" alt="" coords="215,55,429,95"/>
-<area shape="poly" title=" " alt="" coords="167,92,201,88,201,93,167,97"/>
+<area shape="poly" title=" " alt="" coords="116,143,214,105,237,97,239,102,216,110,118,148"/>
 <area shape="rect" href="classOpalData.html#a3539361fbd2937b2b70723d6470ba8a6" title="get input file name without extension" alt="" coords="215,120,429,145"/>
-<area shape="poly" title=" " alt="" coords="167,112,202,116,201,121,167,117"/>
+<area shape="poly" title=" " alt="" coords="167,147,201,143,201,148,167,152"/>
 <area shape="rect" href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="239,169,405,195"/>
-<area shape="poly" title=" " alt="" coords="116,115,216,154,248,163,246,169,214,159,114,120"/>
-<area shape="rect" href="classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="477,169,629,195"/>
-<area shape="poly" title=" " alt="" coords="406,179,464,179,464,185,406,185"/>
+<area shape="poly" title=" " alt="" coords="167,164,225,169,225,175,167,169"/>
+<area shape="rect" href="classIndexMap.html#aab6cd2820854ac2457801ff3e158e061" title=" " alt="" coords="217,219,427,259"/>
+<area shape="poly" title=" " alt="" coords="121,168,216,203,242,212,241,218,214,209,119,173"/>
+<area shape="rect" href="classReferencePathModel.html#a4e46761e09c7c65d5a4bd2783342e707" title=" " alt="" coords="244,283,400,323"/>
+<area shape="poly" title=" " alt="" coords="100,169,147,218,180,245,216,269,232,277,230,282,213,274,177,249,144,221,96,173"/>
+<area shape="rect" href="classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="504,169,656,195"/>
+<area shape="poly" title=" " alt="" coords="406,179,490,179,490,185,406,185"/>
+<area shape="rect" href="classIndexMap.html#a5dfa42281a323a7aa1c357d9c9b18cdb" title=" " alt="" coords="477,219,683,259"/>
+<area shape="poly" title=" " alt="" coords="427,237,463,237,463,242,427,242"/>
+<area shape="rect" href="classReferencePathModel.html#af74189e637d14a5ecf17d8a715efb167" title=" " alt="" coords="731,187,887,227"/>
+<area shape="poly" title=" " alt="" coords="683,222,717,217,717,223,683,228"/>
+<area shape="rect" href="classReferencePathModel.html#ad268d23691f7f6d37e9bb7a78b41dc61" title=" " alt="" coords="731,251,887,291"/>
+<area shape="poly" title=" " alt="" coords="683,251,717,256,717,261,683,256"/>
 </map>
 </div>
 
@@ -641,9 +753,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00106">106</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00105">105</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>.</p>
 
 </div>
 </div>
@@ -663,11 +775,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00141">141</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8cpp_source.html#l00147">147</a> of file <a class="el" href="IndexMap_8cpp_source.html">IndexMap.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00043">IndexMap::Range::begin</a>, and <a class="el" href="IndexMap_8h_source.html#l00096">mapRange2Element_m</a>.</p>
+<p class="reference">References <a class="el" href="IndexMap_8h_source.html#l00042">IndexMap::Range::begin</a>, <a class="el" href="IndexMap_8h_source.html#l00093">mapRange2Element_m</a>, and <a class="el" href="IndexMap_8h_source.html#l00096">referencePathModelDirty_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OrbitThreader_8cpp_source.html#l00114">OrbitThreader::execute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OrbitThreader_8cpp_source.html#l00122">OrbitThreader::execute()</a>.</p>
 
 </div>
 </div>
@@ -692,9 +804,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00097">97</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00094">94</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00106">add()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00343">getRange()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00167">saveSDDS()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00111">add()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00354">getRange()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00182">saveSDDS()</a>.</p>
 
 </div>
 </div>
@@ -718,9 +830,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00096">96</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00093">93</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00106">add()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00365">getTouchingElements()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00045">print()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00069">query()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00167">saveSDDS()</a>, <a class="el" href="IndexMap_8h_source.html#l00106">size()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00141">tidyUp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00111">add()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00376">getTouchingElements()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00050">print()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00074">query()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00160">rebuildReferencePathModel()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00182">saveSDDS()</a>, <a class="el" href="IndexMap_8h_source.html#l00105">size()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00147">tidyUp()</a>.</p>
 
 </div>
 </div>
@@ -746,7 +858,59 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00102">102</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00106">add()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00111">add()</a>.</p>
+
+</div>
+</div>
+<a id="a4fb917204024a0cace93b9ea9c128e40" name="a4fb917204024a0cace93b9ea9c128e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb917204024a0cace93b9ea9c128e40">&#9670;&#160;</a></span>referencePathModel_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classReferencePathModel.html">ReferencePathModel</a> IndexMap::referencePathModel_m</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00095">95</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="IndexMap_8h_source.html#l00107">getReferencePathModel()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00160">rebuildReferencePathModel()</a>.</p>
+
+</div>
+</div>
+<a id="a376fb273b9b5fc89d6487acd337008b4" name="a376fb273b9b5fc89d6487acd337008b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376fb273b9b5fc89d6487acd337008b4">&#9670;&#160;</a></span>referencePathModelDirty_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IndexMap::referencePathModelDirty_m</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00096">96</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00111">add()</a>, <a class="el" href="IndexMap_8h_source.html#l00107">getReferencePathModel()</a>, <a class="el" href="IndexMap_8cpp_source.html#l00160">rebuildReferencePathModel()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00147">tidyUp()</a>.</p>
 
 </div>
 </div>
@@ -770,9 +934,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00099">99</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IndexMap_8h_source.html#l00098">98</a> of file <a class="el" href="IndexMap_8h_source.html">IndexMap.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00106">add()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00069">query()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="IndexMap_8cpp_source.html#l00111">add()</a>, and <a class="el" href="IndexMap_8cpp_source.html#l00074">query()</a>.</p>
 
 </div>
 </div>
@@ -786,7 +950,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classIndexMap.html">IndexMap</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:25 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:15 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,21 +1,11 @@
 <map id="TravelingWave::apply" name="TravelingWave::apply">
-<area shape="rect" id="Node000001" title="Apply to particle i." alt="" coords="5,93,167,118"/>
-<area shape="rect" id="Node000002" href="$classTravelingWave.html#afa83b0fa5d13beeac3729e8a8c07f74b" title="Applies the Traveling Wave RF Cavity field to all particles inside the RF cavity Note: The field is a..." alt="" coords="215,67,376,93"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,93,201,89,202,94,168,98"/>
-<area shape="rect" id="Node000010" href="$classPartBunch.html#a01d1474e4564a031f13f792825c4894a" title="Do not use; throws (access positions via ParticleContainer::R)." alt="" coords="243,117,347,142"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="168,112,230,119,229,125,167,117"/>
-<area shape="rect" id="Node000003" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="461,18,593,43"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,65,453,44,454,49,356,70"/>
-<area shape="rect" id="Node000004" href="$classRFCavity.html#adf914d956cbf7ecaf6f979f764c1ddce" title="Get design length." alt="" coords="424,67,631,93"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="376,77,410,77,410,83,376,83"/>
-<area shape="rect" id="Node000009" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="465,117,589,142"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="356,90,454,111,453,116,355,95"/>
-<area shape="rect" id="Node000005" href="$classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="679,42,913,67"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="630,68,665,64,665,70,631,73"/>
-<area shape="rect" id="Node000008" href="$classFieldmap.html#a0a0aff97e6e62b388b5001a9d20c3154" title="Get the longitudinal dimensions of the field." alt="" coords="687,91,905,117"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="631,87,673,90,673,96,631,92"/>
-<area shape="rect" id="Node000006" href="$classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="961,5,1172,45"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="913,39,947,36,948,41,914,45"/>
-<area shape="rect" id="Node000007" href="$classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="965,70,1168,95"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="914,64,952,68,951,73,913,69"/>
+<area shape="rect" id="Node000001" title="Apply to particle i." alt="" coords="5,55,167,80"/>
+<area shape="rect" id="Node000002" href="$classTravelingWave.html#afa83b0fa5d13beeac3729e8a8c07f74b" title="Applies the Traveling Wave RF Cavity field to all particles inside the RF cavity Note: The field is a..." alt="" coords="215,29,376,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,55,201,51,202,56,168,60"/>
+<area shape="rect" id="Node000005" href="$classPartBunch.html#a01d1474e4564a031f13f792825c4894a" title="Do not use; throws (access positions via ParticleContainer::R)." alt="" coords="243,79,347,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="168,74,230,81,229,87,167,79"/>
+<area shape="rect" id="Node000003" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="424,5,556,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,29,410,25,410,30,377,35"/>
+<area shape="rect" id="Node000004" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="428,55,552,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="377,50,415,55,414,60,376,55"/>
 </map>

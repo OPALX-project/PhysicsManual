@@ -1,18 +1,18 @@
 <map id="Selector" name="Selector">
-<area shape="rect" id="Node000001" title=" " alt="" coords="289,5464,426,5689"/>
-<area shape="rect" id="Node000002" href="$classRangeSelector.html" title=" " alt="" coords="277,5176,438,5401"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="360,5415,360,5464,355,5464,355,5415"/>
-<area shape="rect" id="Node000003" href="$classDefaultVisitor.html" title=" " alt="" coords="180,4488,385,5113"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,5127,343,5175,338,5176,330,5128"/>
-<area shape="rect" id="Node000004" href="$classBeamlineVisitor.html" title=" " alt="" coords="91,3925,296,4411"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,4424,241,4487,236,4488,227,4425"/>
-<area shape="rect" id="Node000005" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="321,4055,477,4281"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="381,4281,346,4472,340,4471,376,4280"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="289,5584,426,5809"/>
+<area shape="rect" id="Node000002" href="$classRangeSelector.html" title=" " alt="" coords="277,5296,438,5521"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="360,5535,360,5584,355,5584,355,5535"/>
+<area shape="rect" id="Node000003" href="$classDefaultVisitor.html" title=" " alt="" coords="180,4548,385,5233"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="337,5247,344,5295,339,5296,332,5248"/>
+<area shape="rect" id="Node000004" href="$classBeamlineVisitor.html" title=" " alt="" coords="91,3925,296,4471"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="233,4484,241,4548,236,4548,228,4485"/>
+<area shape="rect" id="Node000005" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="321,4085,477,4311"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="383,4311,345,4532,340,4531,377,4311"/>
 <area shape="rect" id="Node000006" href="$classElementBase.html" title=" " alt="" coords="279,2931,481,3876"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="395,3890,399,4055,393,4055,389,3890"/>
-<area shape="rect" id="Node000007" href="$classCoordinateSystemTrafo.html" title=" " alt="" coords="514,2086,705,2531"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="394,3890,399,4085,393,4085,389,3890"/>
+<area shape="rect" id="Node000007" href="$classCoordinateSystemTrafo.html" title="Rigid spatial transform between a parent frame and a local frame." alt="" coords="514,2086,705,2531"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="567,2533,504,2839,487,2918,482,2917,499,2838,562,2531"/>
-<area shape="rect" id="Node000008" href="$classQuaternion.html" title=" " alt="" coords="649,800,807,1305"/>
+<area shape="rect" id="Node000008" href="$classQuaternion.html" title="Quaternion storage and rotation algebra used by OPALX geometry code." alt="" coords="649,800,807,1305"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="727,1306,719,1525,701,1755,681,1915,657,2070,651,2069,676,1914,696,1754,713,1524,722,1305"/>
 <area shape="rect" id="Node000009" href="$structmatrix__t.html" title=" " alt="" coords="503,950,625,1155"/>
 <area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="567,1156,570,1426,579,1755,595,2069,590,2070,573,1755,565,1426,562,1156"/>
@@ -29,13 +29,13 @@
 <area shape="poly" id="edge18_Node000017_Node000013" title=" " alt="" coords="121,764,92,1329,87,1329,116,764"/>
 <area shape="rect" id="Node000014" href="$classgsl__rng.html" title=" " alt="" coords="163,960,280,1145"/>
 <area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="229,1145,247,1418,262,1586,280,1754,281,1762,276,1763,275,1755,257,1587,242,1419,224,1146"/>
-<area shape="rect" id="Node000015" href="$classRangeRep.html" title="Representation of a range within a beam line or sequence." alt="" coords="410,4668,526,4933"/>
-<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="441,4934,400,5114,389,5161,384,5160,395,5113,436,4933"/>
-<area shape="rect" id="Node000016" href="$classPlaceRep.html" title="Representation of a place within a beam line or sequence." alt="" coords="501,3995,611,4341"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="535,4341,491,4652,486,4651,529,4341"/>
-<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="63,1755,45,1987,27,2269,13,2576,8,2883,8,5290,15,5338,35,5382,65,5420,102,5454,144,5484,189,5509,274,5546,272,5551,186,5514,141,5488,98,5458,61,5424,30,5384,10,5340,3,5290,3,2883,8,2576,22,2268,40,1986,57,1755"/>
-<area shape="rect" id="Node000018" href="$classRegularExpression.html" title="A regular expression." alt="" coords="500,5176,671,5401"/>
-<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="502,5399,439,5478,434,5475,498,5395"/>
-<area shape="rect" id="Node000019" href="$classRegularExpression_1_1Expression.html" title=" " alt="" coords="550,4761,693,4841"/>
-<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="621,4841,597,5160,592,5160,616,4841"/>
+<area shape="rect" id="Node000015" href="$classRangeRep.html" title="Representation of a range within a beam line or sequence." alt="" coords="410,4758,526,5023"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="444,5024,400,5234,390,5281,384,5279,395,5233,439,5023"/>
+<area shape="rect" id="Node000016" href="$classPlaceRep.html" title="Representation of a place within a beam line or sequence." alt="" coords="501,4025,611,4371"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="537,4371,489,4742,484,4741,531,4370"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="63,1755,45,1987,27,2269,13,2576,8,2883,8,5410,15,5458,35,5502,65,5540,102,5574,144,5604,189,5629,274,5666,272,5671,186,5634,141,5608,98,5578,61,5544,30,5504,10,5460,3,5410,3,2883,8,2576,22,2268,40,1986,57,1755"/>
+<area shape="rect" id="Node000018" href="$classRegularExpression.html" title="A regular expression." alt="" coords="500,5296,671,5521"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="502,5519,439,5598,434,5595,498,5515"/>
+<area shape="rect" id="Node000019" href="$classRegularExpression_1_1Expression.html" title=" " alt="" coords="550,4851,693,4931"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="621,4931,597,5280,592,5279,616,4931"/>
 </map>

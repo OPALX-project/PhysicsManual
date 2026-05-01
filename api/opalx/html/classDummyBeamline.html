@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -115,7 +115,9 @@ Inheritance diagram for DummyBeamline:</div>
 <map name="aDummyBeamline_inherit__map" id="aDummyBeamline_inherit__map">
 <area shape="rect" title=" " alt="" coords="30,1352,183,1537"/>
 <area shape="rect" href="classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="29,1079,185,1304"/>
+<area shape="poly" title=" " alt="" coords="91,1318,92,1352,87,1352,86,1318"/>
 <area shape="poly" title=" " alt="" coords="109,1318,109,1352,104,1352,104,1318"/>
+<area shape="poly" title=" " alt="" coords="127,1318,127,1352,121,1352,122,1318"/>
 <area shape="rect" href="classElementBase.html" title=" " alt="" coords="5,5,208,1031"/>
 <area shape="poly" title=" " alt="" coords="109,1045,109,1078,104,1078,104,1045"/>
 </map>
@@ -125,14 +127,16 @@ Collaboration diagram for DummyBeamline:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDummyBeamline__coll__graph.png" border="0" usemap="#aDummyBeamline_coll__map" alt="Collaboration graph"/></div>
 <map name="aDummyBeamline_coll__map" id="aDummyBeamline_coll__map">
-<area shape="rect" title=" " alt="" coords="363,3803,517,3988"/>
+<area shape="rect" title=" " alt="" coords="274,3803,427,3988"/>
 <area shape="rect" href="classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="273,3515,429,3740"/>
-<area shape="poly" title=" " alt="" coords="395,3752,412,3802,407,3803,390,3754"/>
+<area shape="poly" title=" " alt="" coords="335,3754,336,3803,331,3803,330,3754"/>
+<area shape="poly" title=" " alt="" coords="353,3754,353,3803,348,3803,348,3754"/>
+<area shape="poly" title=" " alt="" coords="371,3754,371,3803,365,3803,366,3754"/>
 <area shape="rect" href="classElementBase.html" title=" " alt="" coords="235,2520,437,3465"/>
 <area shape="poly" title=" " alt="" coords="350,3479,351,3515,345,3515,345,3479"/>
-<area shape="rect" href="classCoordinateSystemTrafo.html" title=" " alt="" coords="46,1675,237,2121"/>
+<area shape="rect" href="classCoordinateSystemTrafo.html" title="Rigid spatial transform between a parent frame and a local frame." alt="" coords="46,1675,237,2121"/>
 <area shape="poly" title=" " alt="" coords="149,2121,162,2304,173,2401,188,2496,208,2587,233,2680,227,2681,203,2589,183,2496,168,2402,156,2305,143,2121"/>
-<area shape="rect" href="classQuaternion.html" title=" " alt="" coords="5,800,163,1305"/>
+<area shape="rect" href="classQuaternion.html" title="Quaternion storage and rotation algebra used by OPALX geometry code." alt="" coords="5,800,163,1305"/>
 <area shape="poly" title=" " alt="" coords="104,1306,128,1659,123,1659,98,1306"/>
 <area shape="rect" href="structmatrix__t.html" title=" " alt="" coords="187,950,309,1155"/>
 <area shape="poly" title=" " alt="" coords="238,1156,174,1659,169,1659,232,1155"/>
@@ -148,7 +152,7 @@ Collaboration diagram for DummyBeamline:</div>
 <area shape="rect" href="classgsl__rng.html" title=" " alt="" coords="545,960,663,1145"/>
 <area shape="poly" title=" " alt="" coords="601,1146,590,1351,584,1351,596,1145"/>
 <area shape="rect" href="classNullGeometry.html" title="Geometry representing an identity transform." alt="" coords="459,3515,616,3740"/>
-<area shape="poly" title=" " alt="" coords="499,3741,482,3788,477,3786,494,3739"/>
+<area shape="poly" title=" " alt="" coords="461,3742,427,3791,422,3788,457,3739"/>
 <area shape="rect" href="classBGeometryBase.html" title="Abstract base class for accelerator geometry classes." alt="" coords="461,2800,619,3185"/>
 <area shape="poly" title=" " alt="" coords="542,3199,540,3514,535,3514,536,3199"/>
 </map>
@@ -200,6 +204,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2b59853ce20c48c2436d0c136adeea69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set design length.  <br /></td></tr>
 <tr class="separator:a2b59853ce20c48c2436d0c136adeea69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e3bee91e75d43ef6a60387e98ead5b" id="r_ae8e3bee91e75d43ef6a60387e98ead5b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#ae8e3bee91e75d43ef6a60387e98ead5b">getElementDimensions</a> (double &amp;begin, double &amp;end) const</td></tr>
+<tr class="memdesc:ae8e3bee91e75d43ef6a60387e98ead5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the nominal body extent of the element.  <br /></td></tr>
 <tr class="separator:ae8e3bee91e75d43ef6a60387e98ead5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61c5f558acc417678fb8e270362b49e3" id="r_a61c5f558acc417678fb8e270362b49e3"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a61c5f558acc417678fb8e270362b49e3">getOrigin</a> () const</td></tr>
 <tr class="memdesc:a61c5f558acc417678fb8e270362b49e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get origin position.  <br /></td></tr>
@@ -296,6 +301,33 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9866c163d61dbd33e24080668a16c9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d2f9d1f052ac44376cdf3714b0ef56" id="r_ae4d2f9d1f052ac44376cdf3714b0ef56"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCoordinateSystemTrafo.html">CoordinateSystemTrafo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56">getEdgeToEnd</a> () const</td></tr>
 <tr class="separator:ae4d2f9d1f052ac44376cdf3714b0ef56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a50530883b99a534bbdd6458a7f67f0" id="r_a6a50530883b99a534bbdd6458a7f67f0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPort.html">Port</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a6a50530883b99a534bbdd6458a7f67f0">getEntryPort</a> () const</td></tr>
+<tr class="memdesc:a6a50530883b99a534bbdd6458a7f67f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entrance port of the canonical local chart.  <br /></td></tr>
+<tr class="separator:a6a50530883b99a534bbdd6458a7f67f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b5775556b4b923aa5bfaaa3d252ac2" id="r_a91b5775556b4b923aa5bfaaa3d252ac2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPort.html">Port</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a91b5775556b4b923aa5bfaaa3d252ac2">getBodyPort</a> () const</td></tr>
+<tr class="memdesc:a91b5775556b4b923aa5bfaaa3d252ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the body port of the canonical local chart.  <br /></td></tr>
+<tr class="separator:a91b5775556b4b923aa5bfaaa3d252ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b6cd062d18282811039d9c7f286e0f" id="r_ab4b6cd062d18282811039d9c7f286e0f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classPort.html">Port</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#ab4b6cd062d18282811039d9c7f286e0f">getExitPort</a> () const</td></tr>
+<tr class="memdesc:ab4b6cd062d18282811039d9c7f286e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the exit port of the canonical local chart.  <br /></td></tr>
+<tr class="separator:ab4b6cd062d18282811039d9c7f286e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab40737bbca9bd1b8cf620430f78ff94" id="r_aab40737bbca9bd1b8cf620430f78ff94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlacementPose.html">PlacementPose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#aab40737bbca9bd1b8cf620430f78ff94">getPlacementPose</a> () const</td></tr>
+<tr class="memdesc:aab40737bbca9bd1b8cf620430f78ff94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the nominal rigid placement transform of the element.  <br /></td></tr>
+<tr class="separator:aab40737bbca9bd1b8cf620430f78ff94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211a6b1f52852166ede31c35f73c2662" id="r_a211a6b1f52852166ede31c35f73c2662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a211a6b1f52852166ede31c35f73c2662">setPlacementPose</a> (const <a class="el" href="classPlacementPose.html">PlacementPose</a> &amp;pose)</td></tr>
+<tr class="memdesc:a211a6b1f52852166ede31c35f73c2662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the nominal rigid placement transform of the element.  <br /></td></tr>
+<tr class="separator:a211a6b1f52852166ede31c35f73c2662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944a5705dd7278c07f6729924af3d81f" id="r_a944a5705dd7278c07f6729924af3d81f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMisalignment.html">Misalignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a944a5705dd7278c07f6729924af3d81f">getPlacementMisalignment</a> () const</td></tr>
+<tr class="memdesc:a944a5705dd7278c07f6729924af3d81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the local nominal-to-actual correction stored for the element.  <br /></td></tr>
+<tr class="separator:a944a5705dd7278c07f6729924af3d81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd534e87823a1941ece7137d1f864e8" id="r_a7cd534e87823a1941ece7137d1f864e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElementGeometry.html">ElementGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a7cd534e87823a1941ece7137d1f864e8">getPlacementGeometry</a> () const</td></tr>
+<tr class="memdesc:a7cd534e87823a1941ece7137d1f864e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the bridge geometry ports assembled from legacy edge state.  <br /></td></tr>
+<tr class="separator:a7cd534e87823a1941ece7137d1f864e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d0d105094e75c94dac7fd08f1edd47" id="r_ae0d0d105094e75c94dac7fd08f1edd47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSupportPlacement.html">SupportPlacement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#ae0d0d105094e75c94dac7fd08f1edd47">getPlacementSupport</a> () const</td></tr>
+<tr class="memdesc:ae0d0d105094e75c94dac7fd08f1edd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the support-frame bridge object. The default is the body frame.  <br /></td></tr>
+<tr class="separator:ae0d0d105094e75c94dac7fd08f1edd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69c1fcd88cacef5fc48b911a8f928c5" id="r_ae69c1fcd88cacef5fc48b911a8f928c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlacedElement.html">PlacedElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#ae69c1fcd88cacef5fc48b911a8f928c5">getPlacedElement</a> () const</td></tr>
+<tr class="memdesc:ae69c1fcd88cacef5fc48b911a8f928c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a placed-element view assembled from the current bridge objects.  <br /></td></tr>
+<tr class="separator:ae69c1fcd88cacef5fc48b911a8f928c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14dd20e65c467dfa110245c52f4f2b5e" id="r_a14dd20e65c467dfa110245c52f4f2b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a14dd20e65c467dfa110245c52f4f2b5e">setAperture</a> (const <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799">ApertureType</a> &amp;type, const std::vector&lt; double &gt; &amp;args)</td></tr>
 <tr class="separator:a14dd20e65c467dfa110245c52f4f2b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f0892aef1944a47f4c51990729b833" id="r_a23f0892aef1944a47f4c51990729b833"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799">ApertureType</a>, std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElementBase.html#a23f0892aef1944a47f4c51990729b833">getAperture</a> () const</td></tr>
@@ -549,7 +581,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00205">205</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classElementBase.html#a50a34a1b9a7db73b407bc5100a07030c">ElementBase::clone()</a>, and <a class="el" href="ElementBase_8h_source.html#l00446">ElementBase::isSharable()</a>.</p>
+<p class="reference">References <a class="el" href="classElementBase.html#a50a34a1b9a7db73b407bc5100a07030c">ElementBase::clone()</a>, and <a class="el" href="ElementBase_8h_source.html#l00505">ElementBase::isSharable()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Sequence_8cpp_source.html#l00098">Sequence::copy()</a>, <a class="el" href="Line_8cpp_source.html#l00151">Line::parse()</a>, <a class="el" href="SequenceParser_8cpp_source.html#l00234">SequenceParser::parseMember()</a>, and <a class="el" href="Replacer_8cpp_source.html#l00045">Replacer::visitFlaggedElmPtr()</a>.</p>
 <div class="dynheader">
@@ -590,11 +622,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00523">523</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00595">595</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00379">ElementBase::positionIsFixed</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00462">ElementBase::positionIsFixed</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>, <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, and <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>.</p>
 
 </div>
 </div>
@@ -621,11 +653,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00502">502</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00580">580</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00355">ElementBase::aperture_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00438">ElementBase::aperture_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00241">Solenoid::getSupportEnvelope()</a>, and <a class="el" href="MeshGenerator_8cpp_source.html#l00045">MeshGenerator::getTransverseSupport()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00248">Solenoid::getSupportEnvelope()</a>, and <a class="el" href="MeshGenerator_8cpp_source.html#l00045">MeshGenerator::getTransverseSupport()</a>.</p>
 
 </div>
 </div>
@@ -656,7 +688,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classMarkerRep.html#a8be56712d3ef8f49b12775b94440e134">MarkerRep</a>, and <a class="el" href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00394">394</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00477">477</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classBGeometryBase.html#ad65fbb978aab956e163378ef589d74c0">BGeometryBase::getArcLength()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 
@@ -722,6 +754,38 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a91b5775556b4b923aa5bfaaa3d252ac2" name="a91b5775556b4b923aa5bfaaa3d252ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b5775556b4b923aa5bfaaa3d252ac2">&#9670;&#160;</a></span>getBodyPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPort.html">Port</a> ElementBase::getBodyPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the body port of the canonical local chart. </p>
+<p>The body port \(p_{i,\mathrm{body}}\) is the identity port of the element's canonical local chart. Its rigid transform is therefore the identity element of \(SE(3)\) in the first redesign stage. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00545">545</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00561">ElementBase::getPlacementGeometry()</a>, and <a class="el" href="TestPlacedElement_8cpp_source.html#l00107">TEST_F()</a>.</p>
+
+</div>
+</div>
 <a id="a9282add8d8a2e8973b3cabc1450a4b9b" name="a9282add8d8a2e8973b3cabc1450a4b9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9282add8d8a2e8973b3cabc1450a4b9b">&#9670;&#160;</a></span>getBoundaryGeometry()</h2>
 
@@ -747,9 +811,9 @@ Here is the call graph for this function:</div>
 
 <p>return the attached boundary geometrt object if there is any </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00458">458</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00511">511</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00375">ElementBase::bgeometry_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00458">ElementBase::bgeometry_m</a>.</p>
 
 </div>
 </div>
@@ -778,7 +842,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00273">273</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00355">ElementBase::aperture_m</a>, <a class="el" href="ElementBase_8h_source.html#l00352">ElementBase::csTrafoGlobal2Local_m</a>, <a class="el" href="BoundingBox_8cpp_source.html#l00032">BoundingBox::getBoundingBox()</a>, <a class="el" href="ElementBase_8h_source.html#l00485">ElementBase::getEdgeToBegin()</a>, <a class="el" href="ElementBase_8h_source.html#l00490">ElementBase::getEdgeToEnd()</a>, and <a class="el" href="CoordinateSystemTrafo_8h_source.html#l00100">CoordinateSystemTrafo::transformFrom()</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00438">ElementBase::aperture_m</a>, <a class="el" href="ElementBase_8h_source.html#l00435">ElementBase::csTrafoGlobal2Local_m</a>, <a class="el" href="BoundingBox_8cpp_source.html#l00032">BoundingBox::getBoundingBox()</a>, <a class="el" href="ElementBase_8h_source.html#l00531">ElementBase::getEdgeToBegin()</a>, <a class="el" href="ElementBase_8h_source.html#l00536">ElementBase::getEdgeToEnd()</a>, and <a class="el" href="CoordinateSystemTrafo_8h_source.html#l00154">CoordinateSystemTrafo::transformFrom()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -791,7 +855,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="204,88,239,84,240,89,205,93"/>
 <area shape="rect" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56" title=" " alt="" coords="260,111,467,137"/>
 <area shape="poly" title=" " alt="" coords="204,107,247,111,246,116,204,112"/>
-<area shape="rect" href="classCoordinateSystemTrafo.html#a43312e2759a35c7d3f91b6ff99d701c1" title=" " alt="" coords="276,161,451,201"/>
+<area shape="rect" href="classCoordinateSystemTrafo.html#a43312e2759a35c7d3f91b6ff99d701c1" title="Map a point from the local frame back to the parent frame." alt="" coords="276,161,451,201"/>
 <area shape="poly" title=" " alt="" coords="164,117,253,147,279,155,278,160,251,152,163,123"/>
 <area shape="rect" href="classBoundingBox.html#a755a82dacb5cf92554c5d2eb596b8cb0" title=" " alt="" coords="525,5,755,45"/>
 <area shape="poly" title=" " alt="" coords="475,23,511,23,511,28,475,28"/>
@@ -801,7 +865,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="705,109,795,91,796,96,706,114"/>
 <area shape="rect" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="809,115,1012,141"/>
 <area shape="poly" title=" " alt="" coords="758,123,796,124,796,129,758,128"/>
-<area shape="rect" href="classCoordinateSystemTrafo.html#a49f1fafd3a435349fe366d60e13b23b2" title=" " alt="" coords="553,161,727,201"/>
+<area shape="rect" href="classCoordinateSystemTrafo.html#a49f1fafd3a435349fe366d60e13b23b2" title="Rotate a vector from the local frame back into the parent frame." alt="" coords="553,161,727,201"/>
 <area shape="poly" title=" " alt="" coords="451,179,539,179,539,184,451,184"/>
 <area shape="rect" href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de" title=" " alt="" coords="825,169,996,194"/>
 <area shape="poly" title=" " alt="" coords="728,179,811,179,811,184,728,184"/>
@@ -846,13 +910,13 @@ Here is the call graph for this function:</div>
 
 <p>Construct a read/write channel. </p>
 
-<p>Reimplemented in <a class="el" href="classLaserRep.html#ab690ddc584c41d01acbaadffcb287357">LaserRep</a>, <a class="el" href="classDriftRep.html#a5b69c934dc970c5cf4fd3fd8aff43554">DriftRep</a>, <a class="el" href="classMonitorRep.html#a70144d85264214a188924ad33c712a0f">MonitorRep</a>, <a class="el" href="classMultipoleRep.html#a5cac06b760ba161492abdc5ed58110a1">MultipoleRep</a>, <a class="el" href="classProbeRep.html#a6b1b9fee82acd7eb0569f2469defea71">ProbeRep</a>, <a class="el" href="classRFCavityRep.html#a37461282522648ab9577e03748b8a797">RFCavityRep</a>, <a class="el" href="classSolenoidRep.html#a4bd3d344d5fae7fabcf4732b6f6e4eb4">SolenoidRep</a>, <a class="el" href="classTravelingWaveRep.html#ae61d12da2875bb753bfa79d540eec2ff">TravelingWaveRep</a>, and <a class="el" href="classConstantEFieldCavityRep.html#a93b6e8c5bbf95395a3953cbf154bacbd">ConstantEFieldCavityRep</a>.</p>
+<p>Reimplemented in <a class="el" href="classLaserRep.html#ab690ddc584c41d01acbaadffcb287357">LaserRep</a>, <a class="el" href="classRBendRep.html#ab5c5429c57bb0e4b96075be2cf794192">RBendRep</a>, <a class="el" href="classSBendRep.html#a23fb131e21e916f68ede29669378cb49">SBendRep</a>, <a class="el" href="classDriftRep.html#a5b69c934dc970c5cf4fd3fd8aff43554">DriftRep</a>, <a class="el" href="classMonitorRep.html#a70144d85264214a188924ad33c712a0f">MonitorRep</a>, <a class="el" href="classMultipoleRep.html#a5cac06b760ba161492abdc5ed58110a1">MultipoleRep</a>, <a class="el" href="classProbeRep.html#a6b1b9fee82acd7eb0569f2469defea71">ProbeRep</a>, <a class="el" href="classRFCavityRep.html#a37461282522648ab9577e03748b8a797">RFCavityRep</a>, <a class="el" href="classSolenoidRep.html#a4bd3d344d5fae7fabcf4732b6f6e4eb4">SolenoidRep</a>, <a class="el" href="classTravelingWaveRep.html#ae61d12da2875bb753bfa79d540eec2ff">TravelingWaveRep</a>, and <a class="el" href="classConstantEFieldCavityRep.html#a93b6e8c5bbf95395a3953cbf154bacbd">ConstantEFieldCavityRep</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00191">191</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AttributeSet_8cpp_source.html#l00079">AttributeSet::getChannel()</a>, and <a class="el" href="ElementBase_8h_source.html#l00371">ElementBase::userAttribs</a>.</p>
+<p class="reference">References <a class="el" href="AttributeSet_8cpp_source.html#l00079">AttributeSet::getChannel()</a>, and <a class="el" href="ElementBase_8h_source.html#l00454">ElementBase::userAttribs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LaserRep_8cpp_source.html#l00043">LaserRep::getChannel()</a>, <a class="el" href="DriftRep_8cpp_source.html#l00067">DriftRep::getChannel()</a>, <a class="el" href="MonitorRep_8cpp_source.html#l00064">MonitorRep::getChannel()</a>, <a class="el" href="MultipoleRep_8cpp_source.html#l00074">MultipoleRep::getChannel()</a>, <a class="el" href="ProbeRep_8cpp_source.html#l00064">ProbeRep::getChannel()</a>, <a class="el" href="RFCavityRep_8cpp_source.html#l00082">RFCavityRep::getChannel()</a>, <a class="el" href="SolenoidRep_8cpp_source.html#l00072">SolenoidRep::getChannel()</a>, <a class="el" href="TravelingWaveRep_8cpp_source.html#l00080">TravelingWaveRep::getChannel()</a>, <a class="el" href="ConstantEFieldCavityRep_8cpp_source.html#l00037">ConstantEFieldCavityRep::getChannel()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00195">ElementBase::getConstChannel()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00181">ElementBase::setAttribute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LaserRep_8cpp_source.html#l00043">LaserRep::getChannel()</a>, <a class="el" href="RBendRep_8cpp_source.html#l00033">RBendRep::getChannel()</a>, <a class="el" href="SBendRep_8cpp_source.html#l00033">SBendRep::getChannel()</a>, <a class="el" href="DriftRep_8cpp_source.html#l00067">DriftRep::getChannel()</a>, <a class="el" href="MonitorRep_8cpp_source.html#l00064">MonitorRep::getChannel()</a>, <a class="el" href="MultipoleRep_8cpp_source.html#l00074">MultipoleRep::getChannel()</a>, <a class="el" href="ProbeRep_8cpp_source.html#l00064">ProbeRep::getChannel()</a>, <a class="el" href="RFCavityRep_8cpp_source.html#l00082">RFCavityRep::getChannel()</a>, <a class="el" href="SolenoidRep_8cpp_source.html#l00072">SolenoidRep::getChannel()</a>, <a class="el" href="TravelingWaveRep_8cpp_source.html#l00080">TravelingWaveRep::getChannel()</a>, <a class="el" href="ConstantEFieldCavityRep_8cpp_source.html#l00037">ConstantEFieldCavityRep::getChannel()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00195">ElementBase::getConstChannel()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00181">ElementBase::setAttribute()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -935,11 +999,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00481">481</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00527">527</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00352">ElementBase::csTrafoGlobal2Local_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00435">ElementBase::csTrafoGlobal2Local_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00549">ElementBase::getPlacementPose()</a>, <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, and <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>.</p>
 
 </div>
 </div>
@@ -966,11 +1030,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classRFCavity.html#a7b8cfb9b303452b0f1de4b8884d4c77d">RFCavity</a>, <a class="el" href="classSolenoid.html#a030825e659b2600b76228dd415783ea4">Solenoid</a>, and <a class="el" href="classTravelingWave.html#acb6d6e209bb415e62158b814db0093f3">TravelingWave</a>.</p>
+<p>Reimplemented in <a class="el" href="classBendBase.html#a6d85cd082c4b076e6b8703e5a0f28f55">BendBase</a>, <a class="el" href="classRFCavity.html#a7b8cfb9b303452b0f1de4b8884d4c77d">RFCavity</a>, <a class="el" href="classSolenoid.html#a030825e659b2600b76228dd415783ea4">Solenoid</a>, and <a class="el" href="classTravelingWave.html#acb6d6e209bb415e62158b814db0093f3">TravelingWave</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00485">485</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00531">531</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, <a class="el" href="ElementBase_8h_source.html#l00543">ElementBase::getEntryPort()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>.</p>
 
 </div>
 </div>
@@ -997,13 +1061,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classRFCavity.html#ab25b52a4c1a6f224b07f1659c2d1c5cf">RFCavity</a>, <a class="el" href="classSolenoid.html#a4f0a0822d37da91d675cf471c08d7871">Solenoid</a>, and <a class="el" href="classTravelingWave.html#aa93a631877fff405eb11a327ccb8a60f">TravelingWave</a>.</p>
+<p>Reimplemented in <a class="el" href="classBendBase.html#a8ccdb96b867e6989d630a9f7a4286a47">BendBase</a>, <a class="el" href="classRFCavity.html#ab25b52a4c1a6f224b07f1659c2d1c5cf">RFCavity</a>, <a class="el" href="classSolenoid.html#a4f0a0822d37da91d675cf471c08d7871">Solenoid</a>, and <a class="el" href="classTravelingWave.html#aa93a631877fff405eb11a327ccb8a60f">TravelingWave</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00490">490</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00536">536</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00398">ElementBase::getElementLength()</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00479">ElementBase::getElementLength()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, and <a class="el" href="ElementBase_8h_source.html#l00547">ElementBase::getExitPort()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1055,11 +1119,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Return the nominal body extent of the element. </p>
+<p>The first placement redesign stage distinguishes between the nominal body extent and the field-support extent. The body extent is the canonical longitudinal interval of the placed hardware, \([z_\mathrm{body}^{\mathrm{begin}}, z_\mathrm{body}^{\mathrm{end}}]\), and therefore drives ports, placement, and visualization. By default it coincides with the geometry length \([0, L]\) in the local chart. </p>
+
 <p>Reimplemented in <a class="el" href="classRFCavity.html#a54f458a31524ef7b51186703dffdbc19">RFCavity</a>, <a class="el" href="classTravelingWave.html#acfb313d248e29c55b7273ce11a79fced">TravelingWave</a>, and <a class="el" href="classSolenoid.html#a1fa8e3bc35c2dbb2cf4bb4fbc0501562">Solenoid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00161">161</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00176">176</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00398">ElementBase::getElementLength()</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00479">ElementBase::getElementLength()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>.</p>
 <div class="dynheader">
@@ -1067,7 +1134,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classElementBase_ae8e3bee91e75d43ef6a60387e98ead5b_cgraph.png" border="0" usemap="#aclassElementBase_ae8e3bee91e75d43ef6a60387e98ead5b_cgraph" alt=""/></div>
 <map name="aclassElementBase_ae8e3bee91e75d43ef6a60387e98ead5b_cgraph" id="aclassElementBase_ae8e3bee91e75d43ef6a60387e98ead5b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,42,273,67"/>
+<area shape="rect" title="Return the nominal body extent of the element." alt="" coords="5,42,273,67"/>
 <area shape="rect" href="classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="321,42,556,67"/>
 <area shape="poly" title=" " alt="" coords="273,52,307,52,307,57,273,57"/>
 <area shape="rect" href="classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="604,5,815,45"/>
@@ -1104,13 +1171,13 @@ Here is the call graph for this function:</div>
 
 <p>Get design length. </p>
 
-<p>Reimplemented in <a class="el" href="classMarkerRep.html#ae9678a44d1a4c067f87ffe3d74539d6a">MarkerRep</a>, <a class="el" href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">TBeamline&lt; T &gt;</a>, <a class="el" href="classRFCavity.html#adf914d956cbf7ecaf6f979f764c1ddce">RFCavity</a>, and <a class="el" href="classTestTravelingWave.html#ad68b4ddd3e3ba778850acf12beff86ea">TestTravelingWave</a>.</p>
+<p>Reimplemented in <a class="el" href="classMarkerRep.html#ae9678a44d1a4c067f87ffe3d74539d6a">MarkerRep</a>, <a class="el" href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">TBeamline&lt; T &gt;</a>, and <a class="el" href="classRFCavity.html#adf914d956cbf7ecaf6f979f764c1ddce">RFCavity</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00398">398</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00479">479</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e">BGeometryBase::getElementLength()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00093">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00303">Multipole::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00072">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00258">Multipole::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00127">Component::apply()</a>, <a class="el" href="Corrector_8cpp_source.html#l00069">Corrector::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00110">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00345">Multipole::apply()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00106">Solenoid::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00151">Component::applyToReferenceParticle()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00124">ConstantEFieldCavity::applyToReferenceParticle()</a>, <a class="el" href="Multipole_8cpp_source.html#l00376">Multipole::applyToReferenceParticle()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00134">Solenoid::applyToReferenceParticle()</a>, <a class="el" href="Corrector_8cpp_source.html#l00146">Corrector::getDimensions()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00043">ConstantEFieldCavity::getDimensions()</a>, <a class="el" href="Drift_8cpp_source.html#l00079">Drift::getDimensions()</a>, <a class="el" href="Laser_8cpp_source.html#l00055">Laser::getDimensions()</a>, <a class="el" href="Multipole_8cpp_source.html#l00699">Multipole::getDimensions()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00217">Solenoid::getDimensions()</a>, <a class="el" href="ElementBase_8h_source.html#l00490">ElementBase::getEdgeToEnd()</a>, <a class="el" href="Solenoid_8h_source.html#l00205">Solenoid::getEdgeToEnd()</a>, <a class="el" href="ElementBase_8h_source.html#l00161">ElementBase::getElementDimensions()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00236">Solenoid::getElementDimensions()</a>, <a class="el" href="BeamlineGeometry_8cpp_source.html#l00042">BeamlineGeometry::getElementLength()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00766">RFCavity::getElementLength()</a>, <a class="el" href="Corrector_8cpp_source.html#l00093">Corrector::initialise()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00027">ConstantEFieldCavity::initialise()</a>, <a class="el" href="Drift_8cpp_source.html#l00055">Drift::initialise()</a>, <a class="el" href="Laser_8cpp_source.html#l00042">Laser::initialise()</a>, <a class="el" href="Multipole_8cpp_source.html#l00681">Multipole::initialise()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00167">Solenoid::initialise()</a>, <a class="el" href="ElementBase_8h_source.html#l00506">ElementBase::isInside()</a>, <a class="el" href="Monitor_8h_source.html#l00123">Monitor::isInside()</a>, <a class="el" href="Multipole_8cpp_source.html#l00708">Multipole::isInside()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>, and <a class="el" href="TestSolenoid_8cpp_source.html#l00174">TEST_F()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00073">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00290">Multipole::apply()</a>, <a class="el" href="VariableRFCavity_8cpp_source.html#l00113">VariableRFCavity::apply()</a>, <a class="el" href="BendBase_8cpp_source.html#l00092">BendBase::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00052">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00245">Multipole::apply()</a>, <a class="el" href="VariableRFCavity_8cpp_source.html#l00136">VariableRFCavity::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00127">Component::apply()</a>, <a class="el" href="Corrector_8cpp_source.html#l00063">Corrector::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00088">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00325">Multipole::apply()</a>, <a class="el" href="VariableRFCavity_8cpp_source.html#l00127">VariableRFCavity::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00151">Component::applyToReferenceParticle()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00100">ConstantEFieldCavity::applyToReferenceParticle()</a>, <a class="el" href="Multipole_8cpp_source.html#l00349">Multipole::applyToReferenceParticle()</a>, <a class="el" href="ElementBase_8h_source.html#l00536">ElementBase::getEdgeToEnd()</a>, <a class="el" href="Solenoid_8h_source.html#l00224">Solenoid::getEdgeToEnd()</a>, <a class="el" href="ElementBase_8h_source.html#l00176">ElementBase::getElementDimensions()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00243">Solenoid::getElementDimensions()</a>, <a class="el" href="BeamlineGeometry_8cpp_source.html#l00042">BeamlineGeometry::getElementLength()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00710">RFCavity::getElementLength()</a>, <a class="el" href="Corrector_8cpp_source.html#l00136">Corrector::getFieldExtend()</a>, <a class="el" href="BendBase_8cpp_source.html#l00194">BendBase::getFieldExtend()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00035">ConstantEFieldCavity::getFieldExtend()</a>, <a class="el" href="Drift_8cpp_source.html#l00056">Drift::getFieldExtend()</a>, <a class="el" href="Laser_8cpp_source.html#l00044">Laser::getFieldExtend()</a>, <a class="el" href="Multipole_8cpp_source.html#l00644">Multipole::getFieldExtend()</a>, <a class="el" href="MultipoleT_8h_source.html#l00220">MultipoleT::getFieldExtend()</a>, <a class="el" href="VariableRFCavity_8h_source.html#l00129">VariableRFCavity::getFieldExtend()</a>, <a class="el" href="BendBase_8h_source.html#l00188">BendBase::getLength()</a>, <a class="el" href="Corrector_8cpp_source.html#l00086">Corrector::initialise()</a>, <a class="el" href="BendBase_8cpp_source.html#l00082">BendBase::initialise()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00023">ConstantEFieldCavity::initialise()</a>, <a class="el" href="Drift_8cpp_source.html#l00040">Drift::initialise()</a>, <a class="el" href="Laser_8cpp_source.html#l00034">Laser::initialise()</a>, <a class="el" href="Multipole_8cpp_source.html#l00634">Multipole::initialise()</a>, <a class="el" href="ElementBase_8h_source.html#l00584">ElementBase::isInside()</a>, <a class="el" href="BendBase_8cpp_source.html#l00199">BendBase::isInside()</a>, <a class="el" href="Monitor_8h_source.html#l00120">Monitor::isInside()</a>, <a class="el" href="Multipole_8cpp_source.html#l00651">Multipole::isInside()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>, and <a class="el" href="TestSolenoid_8cpp_source.html#l00174">TEST_F()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1149,9 +1216,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00555">555</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00616">616</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00382">ElementBase::elemedgeSet_m</a>, <a class="el" href="ElementBase_8h_source.html#l00381">ElementBase::elementPosition_m</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00133">ElementBase::getName()</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00465">ElementBase::elemedgeSet_m</a>, <a class="el" href="ElementBase_8h_source.html#l00464">ElementBase::elementPosition_m</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00133">ElementBase::getName()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1192,11 +1259,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00410">410</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00485">485</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="Geometry_8cpp_source.html#l00041">BGeometryBase::getEntrance()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BeamlineGeometry_8cpp_source.html#l00052">BeamlineGeometry::getEntrance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00220">BendBase::getDesignPath()</a>, and <a class="el" href="BeamlineGeometry_8cpp_source.html#l00052">BeamlineGeometry::getEntrance()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1243,11 +1310,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00430">430</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00497">497</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="Geometry_8cpp_source.html#l00061">BGeometryBase::getEntranceFrame()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BeamlineGeometry_8cpp_source.html#l00077">BeamlineGeometry::getEntranceFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00211">BendBase::getChordLength()</a>, <a class="el" href="BendBase_8cpp_source.html#l00203">BendBase::getEdgeToBegin()</a>, and <a class="el" href="BeamlineGeometry_8cpp_source.html#l00077">BeamlineGeometry::getEntranceFrame()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1296,7 +1363,7 @@ Here is the call graph for this function:</div>
 
 <p>Get patch. </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00438">438</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00501">501</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="Geometry_8cpp_source.html#l00071">BGeometryBase::getEntrancePatch()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 <div class="dynheader">
@@ -1313,6 +1380,50 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="463,23,497,23,497,28,463,28"/>
 <area shape="rect" href="classEuclid3D.html#a6f9d1a9cfd2fa832bc3ad4ae1fb170d3" title="Default constructor." alt="" coords="696,13,840,38"/>
 <area shape="poly" title=" " alt="" coords="648,23,682,23,682,28,648,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6a50530883b99a534bbdd6458a7f67f0" name="a6a50530883b99a534bbdd6458a7f67f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a50530883b99a534bbdd6458a7f67f0">&#9670;&#160;</a></span>getEntryPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPort.html">Port</a> ElementBase::getEntryPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the entrance port of the canonical local chart. </p>
+<p>In the placement-note language, this is the marked entrance port \(p_{i,\mathrm{entry}}\) of element \(i\). For straight elements in the bridge stage, the body-to-entry transform is taken from the legacy <code><a class="el" href="classElementBase.html#a9866c163d61dbd33e24080668a16c9e2">getEdgeToBegin()</a></code> result. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00543">543</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00531">ElementBase::getEdgeToBegin()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00561">ElementBase::getPlacementGeometry()</a>, and <a class="el" href="TestPlacedElement_8cpp_source.html#l00107">TEST_F()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_a6a50530883b99a534bbdd6458a7f67f0_cgraph.png" border="0" usemap="#aclassElementBase_a6a50530883b99a534bbdd6458a7f67f0_cgraph" alt=""/></div>
+<map name="aclassElementBase_a6a50530883b99a534bbdd6458a7f67f0_cgraph" id="aclassElementBase_a6a50530883b99a534bbdd6458a7f67f0_cgraph">
+<area shape="rect" title="Return the entrance port of the canonical local chart." alt="" coords="5,5,203,31"/>
+<area shape="rect" href="classElementBase.html#a9866c163d61dbd33e24080668a16c9e2" title=" " alt="" coords="251,5,471,31"/>
+<area shape="poly" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
 </map>
 </div>
 
@@ -1345,11 +1456,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00414">414</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00487">487</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="Geometry_8cpp_source.html#l00046">BGeometryBase::getExit()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BeamlineGeometry_8cpp_source.html#l00057">BeamlineGeometry::getExit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00220">BendBase::getDesignPath()</a>, and <a class="el" href="BeamlineGeometry_8cpp_source.html#l00057">BeamlineGeometry::getExit()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1397,11 +1508,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00434">434</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00499">499</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="Geometry_8cpp_source.html#l00066">BGeometryBase::getExitFrame()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BeamlineGeometry_8cpp_source.html#l00082">BeamlineGeometry::getExitFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00211">BendBase::getChordLength()</a>, <a class="el" href="BendBase_8cpp_source.html#l00207">BendBase::getEdgeToEnd()</a>, and <a class="el" href="BeamlineGeometry_8cpp_source.html#l00082">BeamlineGeometry::getExitFrame()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1451,7 +1562,7 @@ Here is the call graph for this function:</div>
 
 <p>Get patch. </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00442">442</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00503">503</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="Geometry_8cpp_source.html#l00076">BGeometryBase::getExitPatch()</a>, and <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>.</p>
 <div class="dynheader">
@@ -1468,6 +1579,56 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="468,15,502,15,502,21,468,21"/>
 <area shape="rect" href="classEuclid3D.html#a6f9d1a9cfd2fa832bc3ad4ae1fb170d3" title="Default constructor." alt="" coords="701,5,845,31"/>
 <area shape="poly" title=" " alt="" coords="654,15,687,15,687,21,654,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab4b6cd062d18282811039d9c7f286e0f" name="ab4b6cd062d18282811039d9c7f286e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b6cd062d18282811039d9c7f286e0f">&#9670;&#160;</a></span>getExitPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPort.html">Port</a> ElementBase::getExitPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the exit port of the canonical local chart. </p>
+<p>In the placement-note language, this is the marked exit port \(p_{i,\mathrm{exit}}\). For straight elements in the bridge stage, the body-to-exit transform is taken from the legacy <code><a class="el" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56">getEdgeToEnd()</a></code> result. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00547">547</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00536">ElementBase::getEdgeToEnd()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00561">ElementBase::getPlacementGeometry()</a>, and <a class="el" href="TestPlacedElement_8cpp_source.html#l00107">TEST_F()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_ab4b6cd062d18282811039d9c7f286e0f_cgraph.png" border="0" usemap="#aclassElementBase_ab4b6cd062d18282811039d9c7f286e0f_cgraph" alt=""/></div>
+<map name="aclassElementBase_ab4b6cd062d18282811039d9c7f286e0f_cgraph" id="aclassElementBase_ab4b6cd062d18282811039d9c7f286e0f_cgraph">
+<area shape="rect" title="Return the exit port of the canonical local chart." alt="" coords="5,42,193,67"/>
+<area shape="rect" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56" title=" " alt="" coords="241,42,448,67"/>
+<area shape="poly" title=" " alt="" coords="193,52,228,52,228,57,193,57"/>
+<area shape="rect" href="classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="496,42,731,67"/>
+<area shape="poly" title=" " alt="" coords="448,52,482,52,482,57,448,57"/>
+<area shape="rect" href="classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="779,5,989,45"/>
+<area shape="poly" title=" " alt="" coords="730,39,765,36,765,41,731,45"/>
+<area shape="rect" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="783,70,985,95"/>
+<area shape="poly" title=" " alt="" coords="731,64,769,68,769,73,731,69"/>
 </map>
 </div>
 
@@ -1496,11 +1657,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00576">576</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00632">632</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00388">ElementBase::deleteOnTransverseExit_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00471">ElementBase::deleteOnTransverseExit_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00093">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00303">Multipole::apply()</a>, <a class="el" href="Corrector_8cpp_source.html#l00069">Corrector::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00110">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00345">Multipole::apply()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00170">RFCavity::apply()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00106">Solenoid::apply()</a>, and <a class="el" href="TravelingWave_8cpp_source.html#l00144">TravelingWave::apply()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00147">BendBase::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00073">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00290">Multipole::apply()</a>, <a class="el" href="Corrector_8cpp_source.html#l00063">Corrector::apply()</a>, <a class="el" href="BendBase_8cpp_source.html#l00164">BendBase::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00088">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00325">Multipole::apply()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00159">RFCavity::apply()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00108">Solenoid::apply()</a>, and <a class="el" href="TravelingWave_8cpp_source.html#l00125">TravelingWave::apply()</a>.</p>
 
 </div>
 </div>
@@ -1622,9 +1783,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00515">515</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00591">591</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00353">ElementBase::misalignment_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00436">ElementBase::misalignment_m</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00557">ElementBase::getPlacementMisalignment()</a>.</p>
 
 </div>
 </div>
@@ -1697,9 +1860,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00133">133</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00366">ElementBase::elementID</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00449">ElementBase::elementID</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Ring_8cpp_source.html#l00256">Ring::appendElement()</a>, <a class="el" href="Probe_8cpp_source.html#l00050">Probe::doGoOffline()</a>, <a class="el" href="PlaceRep_8cpp_source.html#l00070">PlaceRep::enter()</a>, <a class="el" href="ElementBase_8h_source.html#l00555">ElementBase::getElementPosition()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00399">RFCavity::getMomentaKick()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00145">ElementBase::getOutputFN()</a>, <a class="el" href="CavityAutophaser_8cpp_source.html#l00051">CavityAutophaser::getPhaseAtMaxEnergy()</a>, <a class="el" href="Selector_8cpp_source.html#l00059">Selector::handleElement()</a>, <a class="el" href="Ring_8cpp_source.html#l00184">Ring::initialise()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00202">RFCavity::initialise()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00167">Solenoid::initialise()</a>, <a class="el" href="PlaceRep_8cpp_source.html#l00084">PlaceRep::leave()</a>, <a class="el" href="VariableRFCavity_8cpp_source.html#l00038">VariableRFCavity::operator=()</a>, <a class="el" href="Sequence_8cpp_source.html#l00206">Sequence::print()</a>, <a class="el" href="TestVariableRFCavity_8cpp_source.html#l00145">TEST_F()</a>, <a class="el" href="Component_8cpp_source.html#l00045">Component::trackBunch()</a>, <a class="el" href="Component_8cpp_source.html#l00054">Component::trackMap()</a>, <a class="el" href="Sequence_8cpp_source.html#l00362">Sequence::updateList()</a>, <a class="el" href="ParallelTracker_8cpp_source.html#l01433">ParallelTracker::updateRFElement()</a>, and <a class="el" href="Replacer_8cpp_source.html#l00045">Replacer::visitFlaggedElmPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Ring_8cpp_source.html#l00253">Ring::appendElement()</a>, <a class="el" href="Probe_8cpp_source.html#l00050">Probe::doGoOffline()</a>, <a class="el" href="PlaceRep_8cpp_source.html#l00070">PlaceRep::enter()</a>, <a class="el" href="ElementBase_8h_source.html#l00616">ElementBase::getElementPosition()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00351">RFCavity::getMomentaKick()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00145">ElementBase::getOutputFN()</a>, <a class="el" href="CavityAutophaser_8cpp_source.html#l00050">CavityAutophaser::getPhaseAtMaxEnergy()</a>, <a class="el" href="Selector_8cpp_source.html#l00059">Selector::handleElement()</a>, <a class="el" href="Ring_8cpp_source.html#l00181">Ring::initialise()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00189">RFCavity::initialise()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00169">Solenoid::initialise()</a>, <a class="el" href="PlaceRep_8cpp_source.html#l00084">PlaceRep::leave()</a>, <a class="el" href="VariableRFCavity_8cpp_source.html#l00038">VariableRFCavity::operator=()</a>, <a class="el" href="Sequence_8cpp_source.html#l00206">Sequence::print()</a>, <a class="el" href="TestVariableRFCavity_8cpp_source.html#l00148">TEST_F()</a>, <a class="el" href="Component_8cpp_source.html#l00045">Component::trackBunch()</a>, <a class="el" href="Component_8cpp_source.html#l00054">Component::trackMap()</a>, <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>, <a class="el" href="Sequence_8cpp_source.html#l00362">Sequence::updateList()</a>, <a class="el" href="ParallelTracker_8cpp_source.html#l01438">ParallelTracker::updateRFElement()</a>, and <a class="el" href="Replacer_8cpp_source.html#l00045">Replacer::visitFlaggedElmPtr()</a>.</p>
 
 </div>
 </div>
@@ -1730,7 +1893,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a6425dbecac310646f70978c808508320">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00406">406</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00483">483</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>, and <a class="el" href="Geometry_8cpp_source.html#l00036">BGeometryBase::getOrigin()</a>.</p>
 
@@ -1808,9 +1971,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00145">145</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8cpp_source.html#l00133">ElementBase::getName()</a>, and <a class="el" href="ElementBase_8h_source.html#l00386">ElementBase::outputfn_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8cpp_source.html#l00133">ElementBase::getName()</a>, and <a class="el" href="ElementBase_8h_source.html#l00469">ElementBase::outputfn_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Probe_8cpp_source.html#l00044">Probe::doInitialise()</a>, <a class="el" href="PluginElement_8cpp_source.html#l00049">PluginElement::initialise()</a>, and <a class="el" href="Monitor_8cpp_source.html#l00157">Monitor::initialise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Probe_8cpp_source.html#l00044">Probe::doInitialise()</a>, <a class="el" href="PluginElement_8cpp_source.html#l00045">PluginElement::initialise()</a>, and <a class="el" href="Monitor_8cpp_source.html#l00150">Monitor::initialise()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1847,9 +2010,254 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00466">466</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00515">515</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00377">ElementBase::parmatint_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00460">ElementBase::parmatint_m</a>.</p>
+
+</div>
+</div>
+<a id="ae69c1fcd88cacef5fc48b911a8f928c5" name="ae69c1fcd88cacef5fc48b911a8f928c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69c1fcd88cacef5fc48b911a8f928c5">&#9670;&#160;</a></span>getPlacedElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlacedElement.html">PlacedElement</a> ElementBase::getPlacedElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a placed-element view assembled from the current bridge objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00569">569</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00561">ElementBase::getPlacementGeometry()</a>, <a class="el" href="ElementBase_8h_source.html#l00557">ElementBase::getPlacementMisalignment()</a>, <a class="el" href="ElementBase_8h_source.html#l00549">ElementBase::getPlacementPose()</a>, and <a class="el" href="ElementBase_8h_source.html#l00565">ElementBase::getPlacementSupport()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="MeshGenerator_8cpp_source.html#l00087">MeshGenerator::add()</a>, and <a class="el" href="TestPlacedElement_8cpp_source.html#l00091">TEST_F()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_ae69c1fcd88cacef5fc48b911a8f928c5_cgraph.png" border="0" usemap="#aclassElementBase_ae69c1fcd88cacef5fc48b911a8f928c5_cgraph" alt=""/></div>
+<map name="aclassElementBase_ae69c1fcd88cacef5fc48b911a8f928c5_cgraph" id="aclassElementBase_ae69c1fcd88cacef5fc48b911a8f928c5_cgraph">
+<area shape="rect" title="Return a placed&#45;element view assembled from the current bridge objects." alt="" coords="5,183,240,208"/>
+<area shape="rect" href="classElementBase.html#a7cd534e87823a1941ece7137d1f864e8" title="Return the bridge geometry ports assembled from legacy edge state." alt="" coords="303,65,510,105"/>
+<area shape="poly" title=" " alt="" coords="155,180,341,107,343,112,157,185"/>
+<area shape="rect" href="classElementBase.html#a944a5705dd7278c07f6729924af3d81f" title="Return the local nominal&#45;to&#45;actual correction stored for the element." alt="" coords="303,146,510,186"/>
+<area shape="poly" title=" " alt="" coords="240,181,289,175,290,181,240,186"/>
+<area shape="rect" href="classElementBase.html#aab40737bbca9bd1b8cf620430f78ff94" title="Return the nominal rigid placement transform of the element." alt="" coords="288,211,525,236"/>
+<area shape="poly" title=" " alt="" coords="240,204,275,208,274,213,240,210"/>
+<area shape="rect" href="classElementBase.html#ae0d0d105094e75c94dac7fd08f1edd47" title="Return the support&#45;frame bridge object. The default is the body frame." alt="" coords="303,261,510,301"/>
+<area shape="poly" title=" " alt="" coords="162,206,289,246,317,254,316,259,287,251,161,211"/>
+<area shape="rect" href="classElementBase.html#a91b5775556b4b923aa5bfaaa3d252ac2" title="Return the body port of the canonical local chart." alt="" coords="593,5,789,31"/>
+<area shape="poly" title=" " alt="" coords="482,62,573,39,611,31,612,36,574,45,483,67"/>
+<area shape="rect" href="classElementBase.html#a6a50530883b99a534bbdd6458a7f67f0" title="Return the entrance port of the canonical local chart." alt="" coords="593,55,790,80"/>
+<area shape="poly" title=" " alt="" coords="510,76,578,72,579,77,510,81"/>
+<area shape="rect" href="classElementBase.html#ab4b6cd062d18282811039d9c7f286e0f" title="Return the exit port of the canonical local chart." alt="" coords="597,104,785,129"/>
+<area shape="poly" title=" " alt="" coords="511,94,584,102,583,107,510,99"/>
+<area shape="rect" href="classElementBase.html#a9866c163d61dbd33e24080668a16c9e2" title=" " alt="" coords="857,55,1077,80"/>
+<area shape="poly" title=" " alt="" coords="790,65,843,65,843,70,790,70"/>
+<area shape="rect" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56" title=" " alt="" coords="864,104,1071,129"/>
+<area shape="poly" title=" " alt="" coords="786,114,851,114,851,119,786,119"/>
+<area shape="rect" href="classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="1125,104,1360,129"/>
+<area shape="poly" title=" " alt="" coords="1071,114,1112,114,1112,119,1071,119"/>
+<area shape="rect" href="classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="1408,67,1619,107"/>
+<area shape="poly" title=" " alt="" coords="1360,101,1394,98,1395,103,1360,107"/>
+<area shape="rect" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="1412,132,1615,157"/>
+<area shape="poly" title=" " alt="" coords="1361,126,1398,130,1398,135,1360,131"/>
+<area shape="rect" href="classElementBase.html#a389b2ad8876132eefc8d4166377dc5ba" title=" " alt="" coords="578,153,805,179"/>
+<area shape="poly" title=" " alt="" coords="510,163,564,163,564,169,510,169"/>
+<area shape="rect" href="classElementBase.html#a5ae837f2bff1946df7986d93ddd4b914" title=" " alt="" coords="573,203,809,243"/>
+<area shape="poly" title=" " alt="" coords="526,221,559,221,559,226,526,226"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7cd534e87823a1941ece7137d1f864e8" name="a7cd534e87823a1941ece7137d1f864e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd534e87823a1941ece7137d1f864e8">&#9670;&#160;</a></span>getPlacementGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classElementGeometry.html">ElementGeometry</a> ElementBase::getPlacementGeometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the bridge geometry ports assembled from legacy edge state. </p>
+<p>The first redesign stage defines a minimal explicit port contract with three named body-relative ports: \(p_{i,\mathrm{entry}}\), \(p_{i,\mathrm{body}}\), \(p_{i,\mathrm{exit}}\). The default bridge preserves current OPALX behavior by deriving those ports from <code><a class="el" href="classElementBase.html#a6a50530883b99a534bbdd6458a7f67f0" title="Return the entrance port of the canonical local chart.">getEntryPort()</a></code>, <code><a class="el" href="classElementBase.html#a91b5775556b4b923aa5bfaaa3d252ac2" title="Return the body port of the canonical local chart.">getBodyPort()</a></code>, and <code><a class="el" href="classElementBase.html#ab4b6cd062d18282811039d9c7f286e0f" title="Return the exit port of the canonical local chart.">getExitPort()</a></code>, whose straight-element implementations are backed by the legacy <code><a class="el" href="classElementBase.html#a9866c163d61dbd33e24080668a16c9e2">getEdgeToBegin()</a></code> and <code><a class="el" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56">getEdgeToEnd()</a></code> methods. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00561">561</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00545">ElementBase::getBodyPort()</a>, <a class="el" href="ElementBase_8h_source.html#l00543">ElementBase::getEntryPort()</a>, and <a class="el" href="ElementBase_8h_source.html#l00547">ElementBase::getExitPort()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00569">ElementBase::getPlacedElement()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_a7cd534e87823a1941ece7137d1f864e8_cgraph.png" border="0" usemap="#aclassElementBase_a7cd534e87823a1941ece7137d1f864e8_cgraph" alt=""/></div>
+<map name="aclassElementBase_a7cd534e87823a1941ece7137d1f864e8_cgraph" id="aclassElementBase_a7cd534e87823a1941ece7137d1f864e8_cgraph">
+<area shape="rect" title="Return the bridge geometry ports assembled from legacy edge state." alt="" coords="5,47,212,87"/>
+<area shape="rect" href="classElementBase.html#a91b5775556b4b923aa5bfaaa3d252ac2" title="Return the body port of the canonical local chart." alt="" coords="261,5,457,31"/>
+<area shape="poly" title=" " alt="" coords="210,45,280,31,281,36,211,50"/>
+<area shape="rect" href="classElementBase.html#a6a50530883b99a534bbdd6458a7f67f0" title="Return the entrance port of the canonical local chart." alt="" coords="260,55,457,80"/>
+<area shape="poly" title=" " alt="" coords="212,65,247,65,247,70,212,70"/>
+<area shape="rect" href="classElementBase.html#ab4b6cd062d18282811039d9c7f286e0f" title="Return the exit port of the canonical local chart." alt="" coords="265,104,453,129"/>
+<area shape="poly" title=" " alt="" coords="211,85,281,99,280,104,210,90"/>
+<area shape="rect" href="classElementBase.html#a9866c163d61dbd33e24080668a16c9e2" title=" " alt="" coords="505,55,725,80"/>
+<area shape="poly" title=" " alt="" coords="457,65,492,65,492,70,457,70"/>
+<area shape="rect" href="classElementBase.html#ae4d2f9d1f052ac44376cdf3714b0ef56" title=" " alt="" coords="512,104,719,129"/>
+<area shape="poly" title=" " alt="" coords="453,114,498,114,498,119,453,119"/>
+<area shape="rect" href="classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="773,104,1008,129"/>
+<area shape="poly" title=" " alt="" coords="719,114,760,114,760,119,719,119"/>
+<area shape="rect" href="classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="1056,67,1267,107"/>
+<area shape="poly" title=" " alt="" coords="1008,101,1042,98,1043,103,1008,107"/>
+<area shape="rect" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="1060,132,1263,157"/>
+<area shape="poly" title=" " alt="" coords="1009,126,1046,130,1046,135,1008,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a944a5705dd7278c07f6729924af3d81f" name="a944a5705dd7278c07f6729924af3d81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944a5705dd7278c07f6729924af3d81f">&#9670;&#160;</a></span>getPlacementMisalignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMisalignment.html">Misalignment</a> ElementBase::getPlacementMisalignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the local nominal-to-actual correction stored for the element. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00557">557</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00591">ElementBase::getMisalignment()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00569">ElementBase::getPlacedElement()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_a944a5705dd7278c07f6729924af3d81f_cgraph.png" border="0" usemap="#aclassElementBase_a944a5705dd7278c07f6729924af3d81f_cgraph" alt=""/></div>
+<map name="aclassElementBase_a944a5705dd7278c07f6729924af3d81f_cgraph" id="aclassElementBase_a944a5705dd7278c07f6729924af3d81f_cgraph">
+<area shape="rect" title="Return the local nominal&#45;to&#45;actual correction stored for the element." alt="" coords="5,5,212,45"/>
+<area shape="rect" href="classElementBase.html#a389b2ad8876132eefc8d4166377dc5ba" title=" " alt="" coords="260,13,487,38"/>
+<area shape="poly" title=" " alt="" coords="212,23,246,23,246,28,212,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aab40737bbca9bd1b8cf620430f78ff94" name="aab40737bbca9bd1b8cf620430f78ff94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab40737bbca9bd1b8cf620430f78ff94">&#9670;&#160;</a></span>getPlacementPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlacementPose.html">PlacementPose</a> ElementBase::getPlacementPose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the nominal rigid placement transform of the element. </p>
+<p>This is the bridge from the legacy stored <code><a class="el" href="classCoordinateSystemTrafo.html" title="Rigid spatial transform between a parent frame and a local frame.">CoordinateSystemTrafo</a></code> to the new placement vocabulary. It preserves current nominal placement semantics and does not apply misalignment. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00549">549</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00527">ElementBase::getCSTrafoGlobal2Local()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00569">ElementBase::getPlacedElement()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_aab40737bbca9bd1b8cf620430f78ff94_cgraph.png" border="0" usemap="#aclassElementBase_aab40737bbca9bd1b8cf620430f78ff94_cgraph" alt=""/></div>
+<map name="aclassElementBase_aab40737bbca9bd1b8cf620430f78ff94_cgraph" id="aclassElementBase_aab40737bbca9bd1b8cf620430f78ff94_cgraph">
+<area shape="rect" title="Return the nominal rigid placement transform of the element." alt="" coords="5,13,243,38"/>
+<area shape="rect" href="classElementBase.html#a5ae837f2bff1946df7986d93ddd4b914" title=" " alt="" coords="291,5,527,45"/>
+<area shape="poly" title=" " alt="" coords="243,23,277,23,277,28,243,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0d0d105094e75c94dac7fd08f1edd47" name="ae0d0d105094e75c94dac7fd08f1edd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d0d105094e75c94dac7fd08f1edd47">&#9670;&#160;</a></span>getPlacementSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSupportPlacement.html">SupportPlacement</a> ElementBase::getPlacementSupport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the support-frame bridge object. The default is the body frame. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00565">565</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00569">ElementBase::getPlacedElement()</a>.</p>
 
 </div>
 </div>
@@ -1905,9 +2313,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classDrift.html#ab904b7176f90a5ba30f29b00551c36c1">Drift</a>, <a class="el" href="classLaser.html#a309d1cb51d494cbca8c727a7f4ca5fca">Laser</a>, <a class="el" href="classMarker.html#a2b8e2976adad5b018e4b5a058d74a75d">Marker</a>, and <a class="el" href="classMonitor.html#aa860b5ece0d01d44a0b53af2e56b0329">Monitor</a>.</p>
+<p>Reimplemented in <a class="el" href="classBendBase.html#acc3e5a3d0b28b424add5abeb89a1e9fc">BendBase</a>, <a class="el" href="classDrift.html#ab904b7176f90a5ba30f29b00551c36c1">Drift</a>, <a class="el" href="classLaser.html#a309d1cb51d494cbca8c727a7f4ca5fca">Laser</a>, <a class="el" href="classMarker.html#a2b8e2976adad5b018e4b5a058d74a75d">Marker</a>, and <a class="el" href="classMonitor.html#aa860b5ece0d01d44a0b53af2e56b0329">Monitor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00568">568</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00626">626</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 </div>
 </div>
@@ -1934,9 +2342,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00542">542</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00607">607</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00359">ElementBase::rotationZAxis_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00442">ElementBase::rotationZAxis_m</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="OpalBeamline_8cpp_source.html#l00199">OpalBeamline::compileCompatibilityPlacement()</a>.</p>
 
 </div>
 </div>
@@ -1967,7 +2377,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00422">422</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00493">493</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>, and <a class="el" href="Geometry_8cpp_source.html#l00051">BGeometryBase::getTotalTransform()</a>.</p>
 
@@ -2037,11 +2447,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00418">418</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00489">489</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>, and <a class="el" href="classBGeometryBase.html#a0b27cf0c53d13be32e8cec8343c31900">BGeometryBase::getTransform()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BeamlineGeometry_8cpp_source.html#l00062">BeamlineGeometry::getTransform()</a>, <a class="el" href="TBeamline_8h_source.html#l00310">TBeamline&lt; T &gt;::getTransform()</a>, and <a class="el" href="BeamlineGeometry_8cpp_source.html#l00072">BeamlineGeometry::getTransform()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00220">BendBase::getDesignPath()</a>, <a class="el" href="BeamlineGeometry_8cpp_source.html#l00062">BeamlineGeometry::getTransform()</a>, <a class="el" href="TBeamline_8h_source.html#l00310">TBeamline&lt; T &gt;::getTransform()</a>, and <a class="el" href="BeamlineGeometry_8cpp_source.html#l00072">BeamlineGeometry::getTransform()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2085,7 +2495,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classTBeamline.html#a5738ee3eadbce76b5a0541a3348fb887">TBeamline&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00426">426</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00495">495</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>, and <a class="el" href="classBGeometryBase.html#a0b27cf0c53d13be32e8cec8343c31900">BGeometryBase::getTransform()</a>.</p>
 <div class="dynheader">
@@ -2159,11 +2569,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00546">546</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00609">609</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="classElementBase.html#a6a1834ad3ce0e86abbbe1dfcf676afb2">ElementBase::getType()</a>, and <a class="el" href="ElementBase_8h_source.html#l00546">ElementBase::getTypeString()</a>.</p>
+<p class="reference">References <a class="el" href="classElementBase.html#a6a1834ad3ce0e86abbbe1dfcf676afb2">ElementBase::getType()</a>, and <a class="el" href="ElementBase_8h_source.html#l00609">ElementBase::getTypeString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00546">ElementBase::getTypeString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00609">ElementBase::getTypeString()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2233,9 +2643,9 @@ Here is the call graph for this function:</div>
 
 <p>return the attached wake object if there is any </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00450">450</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00507">507</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00373">ElementBase::wake_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00456">ElementBase::wake_m</a>.</p>
 
 </div>
 </div>
@@ -2308,9 +2718,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00462">462</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00513">513</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00375">ElementBase::bgeometry_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00458">ElementBase::bgeometry_m</a>.</p>
 
 </div>
 </div>
@@ -2337,9 +2747,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00470">470</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00519">519</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00377">ElementBase::parmatint_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00460">ElementBase::parmatint_m</a>.</p>
 
 </div>
 </div>
@@ -2366,9 +2776,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00454">454</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00509">509</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00373">ElementBase::wake_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00456">ElementBase::wake_m</a>.</p>
 
 </div>
 </div>
@@ -2395,9 +2805,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00564">564</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00624">624</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00382">ElementBase::elemedgeSet_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00465">ElementBase::elemedgeSet_m</a>.</p>
 
 </div>
 </div>
@@ -2425,11 +2835,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classMonitor.html#a2ca087070fc5affdc79dc43685d16d93">Monitor</a>, <a class="el" href="classMultipole.html#a8c09a4391a8ae5c8a0a28799ebec389b">Multipole</a>, <a class="el" href="classRFCavity.html#ab18e3ae419039ee2e7e8a643cbd17a0e">RFCavity</a>, <a class="el" href="classSolenoid.html#a82d4c7df68e91fa8612c09004814bc14">Solenoid</a>, and <a class="el" href="classTravelingWave.html#ac19fc8227e475ad7fddb91ededed9d2e">TravelingWave</a>.</p>
+<p>Reimplemented in <a class="el" href="classBendBase.html#afb7ee1b8cdf89f1421f74e9896f5a649">BendBase</a>, <a class="el" href="classMonitor.html#a2ca087070fc5affdc79dc43685d16d93">Monitor</a>, <a class="el" href="classMultipole.html#a8c09a4391a8ae5c8a0a28799ebec389b">Multipole</a>, <a class="el" href="classRFCavity.html#ab18e3ae419039ee2e7e8a643cbd17a0e">RFCavity</a>, <a class="el" href="classSolenoid.html#a82d4c7df68e91fa8612c09004814bc14">Solenoid</a>, and <a class="el" href="classTravelingWave.html#ac19fc8227e475ad7fddb91ededed9d2e">TravelingWave</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00506">506</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00584">584</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00398">ElementBase::getElementLength()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00479">ElementBase::getElementLength()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2447,7 +2857,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="409,89,536,66,537,71,410,94"/>
 <area shape="rect" href="classElementBase.html#a9866c163d61dbd33e24080668a16c9e2" title=" " alt="" coords="511,90,731,115"/>
 <area shape="poly" title=" " alt="" coords="456,101,498,101,498,106,456,106"/>
-<area shape="rect" href="classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title=" " alt="" coords="534,140,709,180"/>
+<area shape="rect" href="classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title="Map a point from the parent frame to the local frame." alt="" coords="534,140,709,180"/>
 <area shape="poly" title=" " alt="" coords="404,114,521,137,520,143,402,119"/>
 <area shape="rect" href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1" title=" " alt="" coords="843,147,941,173"/>
 <area shape="poly" title=" " alt="" coords="709,157,829,157,829,163,709,163"/>
@@ -2482,9 +2892,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00246">246</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00355">ElementBase::aperture_m</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a7773dbe4ed4336f1df4518dc8c795405">CONIC_ELLIPTICAL</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a83d1e262813171bc07703c5e1cad4bb6">CONIC_RECTANGULAR</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a2bdf37667892fbfcf33f0319cbce456a">ELLIPTICAL</a>, <a class="el" href="ElementBase_8h_source.html#l00485">ElementBase::getEdgeToBegin()</a>, <a class="el" href="ElementBase_8h_source.html#l00398">ElementBase::getElementLength()</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a47428d834e54119100c608d0d1448e51">RECTANGULAR</a>, and <a class="el" href="CoordinateSystemTrafo_8h_source.html#l00094">CoordinateSystemTrafo::transformTo()</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00438">ElementBase::aperture_m</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a7773dbe4ed4336f1df4518dc8c795405">CONIC_ELLIPTICAL</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a83d1e262813171bc07703c5e1cad4bb6">CONIC_RECTANGULAR</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a2bdf37667892fbfcf33f0319cbce456a">ELLIPTICAL</a>, <a class="el" href="ElementBase_8h_source.html#l00531">ElementBase::getEdgeToBegin()</a>, <a class="el" href="ElementBase_8h_source.html#l00479">ElementBase::getElementLength()</a>, <a class="el" href="ElementBase_8h.html#abc6e2e286b9ed73550e81b71fb072799a47428d834e54119100c608d0d1448e51">RECTANGULAR</a>, and <a class="el" href="CoordinateSystemTrafo_8h_source.html#l00148">CoordinateSystemTrafo::transformTo()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00093">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00303">Multipole::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00127">Component::apply()</a>, <a class="el" href="Corrector_8cpp_source.html#l00069">Corrector::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00110">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00345">Multipole::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00151">Component::applyToReferenceParticle()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00124">ConstantEFieldCavity::applyToReferenceParticle()</a>, <a class="el" href="Multipole_8cpp_source.html#l00376">Multipole::applyToReferenceParticle()</a>, <a class="el" href="ElementBase_8h_source.html#l00506">ElementBase::isInside()</a>, <a class="el" href="Monitor_8h_source.html#l00123">Monitor::isInside()</a>, <a class="el" href="Multipole_8cpp_source.html#l00708">Multipole::isInside()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00758">RFCavity::isInside()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00229">Solenoid::isInside()</a>, and <a class="el" href="TravelingWave_8cpp_source.html#l00505">TravelingWave::isInside()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BendBase_8cpp_source.html#l00147">BendBase::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00073">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00290">Multipole::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00127">Component::apply()</a>, <a class="el" href="Corrector_8cpp_source.html#l00063">Corrector::apply()</a>, <a class="el" href="BendBase_8cpp_source.html#l00164">BendBase::apply()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00088">ConstantEFieldCavity::apply()</a>, <a class="el" href="Multipole_8cpp_source.html#l00325">Multipole::apply()</a>, <a class="el" href="Component_8cpp_source.html#l00151">Component::applyToReferenceParticle()</a>, <a class="el" href="BendBase_8cpp_source.html#l00179">BendBase::applyToReferenceParticle()</a>, <a class="el" href="ConstantEFieldCavity_8cpp_source.html#l00100">ConstantEFieldCavity::applyToReferenceParticle()</a>, <a class="el" href="Multipole_8cpp_source.html#l00349">Multipole::applyToReferenceParticle()</a>, <a class="el" href="ElementBase_8h_source.html#l00584">ElementBase::isInside()</a>, <a class="el" href="BendBase_8cpp_source.html#l00199">BendBase::isInside()</a>, <a class="el" href="Monitor_8h_source.html#l00120">Monitor::isInside()</a>, <a class="el" href="Multipole_8cpp_source.html#l00651">Multipole::isInside()</a>, <a class="el" href="RFCavity_8cpp_source.html#l00702">RFCavity::isInside()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00236">Solenoid::isInside()</a>, and <a class="el" href="TravelingWave_8cpp_source.html#l00469">TravelingWave::isInside()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2495,7 +2905,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="196,63,319,42,320,47,197,69"/>
 <area shape="rect" href="classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="289,66,524,91"/>
 <area shape="poly" title=" " alt="" coords="242,76,275,76,275,81,242,81"/>
-<area shape="rect" href="classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title=" " alt="" coords="319,116,494,156"/>
+<area shape="rect" href="classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title="Map a point from the parent frame to the local frame." alt="" coords="319,116,494,156"/>
 <area shape="poly" title=" " alt="" coords="187,89,307,113,305,118,186,94"/>
 <area shape="rect" href="classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="572,5,783,45"/>
 <area shape="poly" title=" " alt="" coords="471,63,562,45,563,51,472,69"/>
@@ -2531,9 +2941,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00527">527</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00597">597</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00379">ElementBase::positionIsFixed</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00462">ElementBase::positionIsFixed</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, and <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>.</p>
 
 </div>
 </div>
@@ -2562,9 +2974,9 @@ Here is the call graph for this function:</div>
 
 <p>Test if the element can be shared. </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00446">446</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00505">505</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00350">ElementBase::shareFlag</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00433">ElementBase::shareFlag</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00205">ElementBase::copyStructure()</a>, and <a class="el" href="Sequence_8cpp_source.html#l00362">Sequence::updateList()</a>.</p>
 
@@ -2641,7 +3053,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00213">213</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00350">ElementBase::shareFlag</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00433">ElementBase::shareFlag</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="OpalMarker_8cpp_source.html#l00030">OpalMarker::OpalMarker()</a>.</p>
 
@@ -2670,9 +3082,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00519">519</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00593">593</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00379">ElementBase::positionIsFixed</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00462">ElementBase::positionIsFixed</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, and <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>.</p>
 
 </div>
 </div>
@@ -2704,7 +3118,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00177">177</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AttributeSet_8cpp_source.html#l00066">AttributeSet::removeAttribute()</a>, and <a class="el" href="ElementBase_8h_source.html#l00371">ElementBase::userAttribs</a>.</p>
+<p class="reference">References <a class="el" href="AttributeSet_8cpp_source.html#l00066">AttributeSet::removeAttribute()</a>, and <a class="el" href="ElementBase_8h_source.html#l00454">ElementBase::userAttribs</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2742,9 +3156,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00531">531</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00599">599</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00384">ElementBase::actionRange_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00357">ElementBase::elementEdge_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00467">ElementBase::actionRange_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00440">ElementBase::elementEdge_m</a>.</p>
 
 </div>
 </div>
@@ -2782,11 +3196,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00497">497</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00575">575</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00355">ElementBase::aperture_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00438">ElementBase::aperture_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Component_8cpp_source.html#l00031">Component::Component()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00318">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00341">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00359">TEST_F()</a>, and <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Component_8cpp_source.html#l00031">Component::Component()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00347">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00370">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00388">TEST_F()</a>, <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>, <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, and <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>.</p>
 
 </div>
 </div>
@@ -2875,7 +3289,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00229">229</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00375">ElementBase::bgeometry_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00458">ElementBase::bgeometry_m</a>.</p>
 
 </div>
 </div>
@@ -2903,11 +3317,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00474">474</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00521">521</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00352">ElementBase::csTrafoGlobal2Local_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00379">ElementBase::positionIsFixed</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00435">ElementBase::csTrafoGlobal2Local_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00462">ElementBase::positionIsFixed</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00553">ElementBase::setPlacementPose()</a>, <a class="el" href="TestPlacedElement_8cpp_source.html#l00091">TEST_F()</a>, <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>, <a class="el" href="OpalRBend_8cpp_source.html#l00042">OpalRBend::update()</a>, and <a class="el" href="OpalSBend_8cpp_source.html#l00042">OpalSBend::update()</a>.</p>
 
 </div>
 </div>
@@ -2937,7 +3351,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00237">237</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00384">ElementBase::actionRange_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00357">ElementBase::elementEdge_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00467">ElementBase::actionRange_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00440">ElementBase::elementEdge_m</a>.</p>
 
 </div>
 </div>
@@ -2969,11 +3383,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classMultipoleT.html#a3d2e089e17fc060e8acfe50352c42c60">MultipoleT</a>, and <a class="el" href="classConstantEFieldCavityRep.html#aa7d9822eb0a63c24e121fdc0b2d3fd3a">ConstantEFieldCavityRep</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00402">402</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00481">481</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874">ElementBase::getGeometry()</a>, and <a class="el" href="Geometry_8cpp_source.html#l00032">BGeometryBase::setElementLength()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RFCavity_8cpp_source.html#l00202">RFCavity::initialise()</a>, <a class="el" href="Solenoid_8cpp_source.html#l00167">Solenoid::initialise()</a>, <a class="el" href="TravelingWave_8cpp_source.html#l00271">TravelingWave::initialise()</a>, <a class="el" href="MultipoleT_8cpp_source.html#l00102">MultipoleT::setElementLength()</a>, <a class="el" href="SequenceMember_8cpp_source.html#l00045">SequenceMember::setLength()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00290">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00318">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00341">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00359">TEST_F()</a>, <a class="el" href="OpalCavity_8cpp_source.html#l00095">OpalCavity::update()</a>, <a class="el" href="OpalMonitor_8cpp_source.html#l00050">OpalMonitor::update()</a>, <a class="el" href="OpalMultipole_8cpp_source.html#l00074">OpalMultipole::update()</a>, <a class="el" href="OpalProbe_8cpp_source.html#l00049">OpalProbe::update()</a>, <a class="el" href="OpalQuadrupole_8cpp_source.html#l00072">OpalQuadrupole::update()</a>, <a class="el" href="OpalSolenoid_8cpp_source.html#l00058">OpalSolenoid::update()</a>, and <a class="el" href="OpalTravelingWave_8cpp_source.html#l00073">OpalTravelingWave::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MultipoleT_8cpp_source.html#l00102">MultipoleT::setElementLength()</a>, <a class="el" href="SequenceMember_8cpp_source.html#l00045">SequenceMember::setLength()</a>, <a class="el" href="BendBase_8h_source.html#l00186">BendBase::setLength()</a>, <a class="el" href="TestOpalBeamlinePlacement_8cpp_source.html#l00194">TEST_F()</a>, <a class="el" href="TestOpalBeamlinePlacement_8cpp_source.html#l00172">TEST_F()</a>, <a class="el" href="TestPlacedElement_8cpp_source.html#l00091">TEST_F()</a>, <a class="el" href="TestPlacedElement_8cpp_source.html#l00107">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00318">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00174">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00221">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00347">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00370">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00388">TEST_F()</a>, <a class="el" href="OpalCavity_8cpp_source.html#l00095">OpalCavity::update()</a>, <a class="el" href="OpalMonitor_8cpp_source.html#l00050">OpalMonitor::update()</a>, <a class="el" href="OpalMultipole_8cpp_source.html#l00074">OpalMultipole::update()</a>, <a class="el" href="OpalProbe_8cpp_source.html#l00049">OpalProbe::update()</a>, <a class="el" href="OpalQuadrupole_8cpp_source.html#l00072">OpalQuadrupole::update()</a>, <a class="el" href="OpalSolenoid_8cpp_source.html#l00058">OpalSolenoid::update()</a>, and <a class="el" href="OpalTravelingWave_8cpp_source.html#l00073">OpalTravelingWave::update()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -3015,11 +3429,11 @@ Here is the call graph for this function:</div>
 
 <p>Access to ELEMEDGE attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00550">550</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00611">611</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00382">ElementBase::elemedgeSet_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00381">ElementBase::elementPosition_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00465">ElementBase::elemedgeSet_m</a>, and <a class="el" href="ElementBase_8h_source.html#l00464">ElementBase::elementPosition_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestSolenoid_8cpp_source.html#l00290">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00174">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00206">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00318">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00341">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00359">TEST_F()</a>, and <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestOpalBeamlinePlacement_8cpp_source.html#l00194">TEST_F()</a>, <a class="el" href="TestOpalBeamlinePlacement_8cpp_source.html#l00172">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00318">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00174">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00221">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00347">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00370">TEST_F()</a>, <a class="el" href="TestSolenoid_8cpp_source.html#l00388">TEST_F()</a>, and <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
 
 </div>
 </div>
@@ -3047,9 +3461,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00572">572</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00628">628</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00388">ElementBase::deleteOnTransverseExit_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00471">ElementBase::deleteOnTransverseExit_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
 
@@ -3079,11 +3493,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00511">511</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00589">589</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00353">ElementBase::misalignment_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00436">ElementBase::misalignment_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestPlacedElement_8cpp_source.html#l00091">TEST_F()</a>, and <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
 
 </div>
 </div>
@@ -3115,7 +3529,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00137">137</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00366">ElementBase::elementID</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00449">ElementBase::elementID</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Sequence_8cpp_source.html#l00347">Sequence::insertDrifts()</a>, and <a class="el" href="VariableRFCavity_8cpp_source.html#l00038">VariableRFCavity::operator=()</a>.</p>
 
@@ -3149,7 +3563,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00141">141</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00386">ElementBase::outputfn_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00469">ElementBase::outputfn_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="OpalMonitor_8cpp_source.html#l00050">OpalMonitor::update()</a>, and <a class="el" href="OpalProbe_8cpp_source.html#l00049">OpalProbe::update()</a>.</p>
 
@@ -3181,7 +3595,52 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00233">233</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00377">ElementBase::parmatint_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00460">ElementBase::parmatint_m</a>.</p>
+
+</div>
+</div>
+<a id="a211a6b1f52852166ede31c35f73c2662" name="a211a6b1f52852166ede31c35f73c2662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211a6b1f52852166ede31c35f73c2662">&#9670;&#160;</a></span>setPlacementPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ElementBase::setPlacementPose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPlacementPose.html">PlacementPose</a> &amp;&#160;</td>
+          <td class="paramname"><em>pose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the nominal rigid placement transform of the element. </p>
+<p>This bridge setter preserves the existing storage model by delegating to <code><a class="el" href="classElementBase.html#a9174a8ab7e9f408d3e901561018f3c5c">setCSTrafoGlobal2Local()</a></code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00553">553</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="PlacementPose_8h_source.html#l00020">PlacementPose::getParentToNominal()</a>, and <a class="el" href="ElementBase_8h_source.html#l00521">ElementBase::setCSTrafoGlobal2Local()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classElementBase_a211a6b1f52852166ede31c35f73c2662_cgraph.png" border="0" usemap="#aclassElementBase_a211a6b1f52852166ede31c35f73c2662_cgraph" alt=""/></div>
+<map name="aclassElementBase_a211a6b1f52852166ede31c35f73c2662_cgraph" id="aclassElementBase_a211a6b1f52852166ede31c35f73c2662_cgraph">
+<area shape="rect" title="Set the nominal rigid placement transform of the element." alt="" coords="5,45,241,70"/>
+<area shape="rect" href="classPlacementPose.html#a54b77620b11c82a1be089863f34ae1c7" title=" " alt="" coords="311,5,503,45"/>
+<area shape="poly" title=" " alt="" coords="236,42,296,35,297,40,236,47"/>
+<area shape="rect" href="classElementBase.html#a9174a8ab7e9f408d3e901561018f3c5c" title=" " alt="" coords="289,69,524,109"/>
+<area shape="poly" title=" " alt="" coords="236,67,276,72,275,77,236,73"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -3211,9 +3670,9 @@ Here is the call graph for this function:</div>
 
 <p>Set rotation about z axis in bend frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00538">538</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00605">605</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00359">ElementBase::rotationZAxis_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00442">ElementBase::rotationZAxis_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="OpalElement_8cpp_source.html#l00471">OpalElement::update()</a>.</p>
 
@@ -3247,7 +3706,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ElementBase_8cpp_source.html#l00225">225</a> of file <a class="el" href="ElementBase_8cpp_source.html">ElementBase.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00373">ElementBase::wake_m</a>.</p>
+<p class="reference">References <a class="el" href="ElementBase_8h_source.html#l00456">ElementBase::wake_m</a>.</p>
 
 </div>
 </div>
@@ -3324,9 +3783,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00384">384</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00467">467</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00531">ElementBase::setActionRange()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00237">ElementBase::setCurrentSCoordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00599">ElementBase::setActionRange()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00237">ElementBase::setCurrentSCoordinate()</a>.</p>
 
 </div>
 </div>
@@ -3350,9 +3809,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00355">355</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00438">438</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00502">ElementBase::getAperture()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>, and <a class="el" href="ElementBase_8h_source.html#l00497">ElementBase::setAperture()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00580">ElementBase::getAperture()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, <a class="el" href="ElementBase_8cpp_source.html#l00246">ElementBase::isInsideTransverse()</a>, and <a class="el" href="ElementBase_8h_source.html#l00575">ElementBase::setAperture()</a>.</p>
 
 </div>
 </div>
@@ -3376,9 +3835,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00375">375</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00458">458</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00458">ElementBase::getBoundaryGeometry()</a>, <a class="el" href="ElementBase_8h_source.html#l00462">ElementBase::hasBoundaryGeometry()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00229">ElementBase::setBoundaryGeometry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00511">ElementBase::getBoundaryGeometry()</a>, <a class="el" href="ElementBase_8h_source.html#l00513">ElementBase::hasBoundaryGeometry()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00229">ElementBase::setBoundaryGeometry()</a>.</p>
 
 </div>
 </div>
@@ -3402,9 +3861,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00352">352</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00435">435</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, <a class="el" href="ElementBase_8h_source.html#l00481">ElementBase::getCSTrafoGlobal2Local()</a>, and <a class="el" href="ElementBase_8h_source.html#l00474">ElementBase::setCSTrafoGlobal2Local()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00273">ElementBase::getBoundingBoxInLabCoords()</a>, <a class="el" href="ElementBase_8h_source.html#l00527">ElementBase::getCSTrafoGlobal2Local()</a>, and <a class="el" href="ElementBase_8h_source.html#l00521">ElementBase::setCSTrafoGlobal2Local()</a>.</p>
 
 </div>
 </div>
@@ -3428,9 +3887,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00388">388</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00471">471</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00576">ElementBase::getFlagDeleteOnTransverseExit()</a>, and <a class="el" href="ElementBase_8h_source.html#l00572">ElementBase::setFlagDeleteOnTransverseExit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00632">ElementBase::getFlagDeleteOnTransverseExit()</a>, and <a class="el" href="ElementBase_8h_source.html#l00628">ElementBase::setFlagDeleteOnTransverseExit()</a>.</p>
 
 </div>
 </div>
@@ -3454,9 +3913,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00382">382</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00465">465</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00555">ElementBase::getElementPosition()</a>, <a class="el" href="ElementBase_8h_source.html#l00564">ElementBase::isElementPositionSet()</a>, and <a class="el" href="ElementBase_8h_source.html#l00550">ElementBase::setElementPosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00616">ElementBase::getElementPosition()</a>, <a class="el" href="ElementBase_8h_source.html#l00624">ElementBase::isElementPositionSet()</a>, and <a class="el" href="ElementBase_8h_source.html#l00611">ElementBase::setElementPosition()</a>.</p>
 
 </div>
 </div>
@@ -3480,9 +3939,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00357">357</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00440">440</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00531">ElementBase::setActionRange()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00237">ElementBase::setCurrentSCoordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00599">ElementBase::setActionRange()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00237">ElementBase::setCurrentSCoordinate()</a>.</p>
 
 </div>
 </div>
@@ -3506,7 +3965,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00366">366</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00449">449</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00133">ElementBase::getName()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00137">ElementBase::setName()</a>.</p>
 
@@ -3534,9 +3993,9 @@ Here is the call graph for this function:</div>
 
 <p>ELEMEDGE attribute. </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00381">381</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00464">464</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00555">ElementBase::getElementPosition()</a>, and <a class="el" href="ElementBase_8h_source.html#l00550">ElementBase::setElementPosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00616">ElementBase::getElementPosition()</a>, and <a class="el" href="ElementBase_8h_source.html#l00611">ElementBase::setElementPosition()</a>.</p>
 
 </div>
 </div>
@@ -3647,9 +4106,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00353">353</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00436">436</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00515">ElementBase::getMisalignment()</a>, and <a class="el" href="ElementBase_8h_source.html#l00511">ElementBase::setMisalignment()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00591">ElementBase::getMisalignment()</a>, and <a class="el" href="ElementBase_8h_source.html#l00589">ElementBase::setMisalignment()</a>.</p>
 
 </div>
 </div>
@@ -3674,7 +4133,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>The name of the outputfile </p>
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00386">386</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00469">469</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00145">ElementBase::getOutputFN()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00141">ElementBase::setOutputFN()</a>.</p>
 
@@ -3700,9 +4159,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00377">377</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00460">460</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00466">ElementBase::getParticleMatterInteraction()</a>, <a class="el" href="ElementBase_8h_source.html#l00470">ElementBase::hasParticleMatterInteraction()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00233">ElementBase::setParticleMatterInteraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00515">ElementBase::getParticleMatterInteraction()</a>, <a class="el" href="ElementBase_8h_source.html#l00519">ElementBase::hasParticleMatterInteraction()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00233">ElementBase::setParticleMatterInteraction()</a>.</p>
 
 </div>
 </div>
@@ -3726,9 +4185,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00379">379</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00462">462</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00523">ElementBase::fixPosition()</a>, <a class="el" href="ElementBase_8h_source.html#l00527">ElementBase::isPositioned()</a>, <a class="el" href="ElementBase_8h_source.html#l00519">ElementBase::releasePosition()</a>, and <a class="el" href="ElementBase_8h_source.html#l00474">ElementBase::setCSTrafoGlobal2Local()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00595">ElementBase::fixPosition()</a>, <a class="el" href="ElementBase_8h_source.html#l00597">ElementBase::isPositioned()</a>, <a class="el" href="ElementBase_8h_source.html#l00593">ElementBase::releasePosition()</a>, and <a class="el" href="ElementBase_8h_source.html#l00521">ElementBase::setCSTrafoGlobal2Local()</a>.</p>
 
 </div>
 </div>
@@ -3752,9 +4211,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00359">359</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00442">442</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00542">ElementBase::getRotationAboutZ()</a>, and <a class="el" href="ElementBase_8h_source.html#l00538">ElementBase::setRotationAboutZ()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00607">ElementBase::getRotationAboutZ()</a>, and <a class="el" href="ElementBase_8h_source.html#l00605">ElementBase::setRotationAboutZ()</a>.</p>
 
 </div>
 </div>
@@ -3778,9 +4237,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00350">350</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00433">433</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Beamline_8cpp_source.html#l00028">Beamline::Beamline()</a>, <a class="el" href="Beamline_8cpp_source.html#l00034">Beamline::Beamline()</a>, <a class="el" href="Beamline_8cpp_source.html#l00040">Beamline::Beamline()</a>, <a class="el" href="ElementBase_8h_source.html#l00446">ElementBase::isSharable()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00213">ElementBase::makeSharable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Beamline_8cpp_source.html#l00028">Beamline::Beamline()</a>, <a class="el" href="Beamline_8cpp_source.html#l00034">Beamline::Beamline()</a>, <a class="el" href="Beamline_8cpp_source.html#l00040">Beamline::Beamline()</a>, <a class="el" href="ElementBase_8h_source.html#l00505">ElementBase::isSharable()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00213">ElementBase::makeSharable()</a>.</p>
 
 </div>
 </div>
@@ -3804,7 +4263,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00371">371</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00454">454</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ElementBase_8cpp_source.html#l00191">ElementBase::getChannel()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00177">ElementBase::removeAttribute()</a>.</p>
 
@@ -3830,9 +4289,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00373">373</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ElementBase_8h_source.html#l00456">456</a> of file <a class="el" href="ElementBase_8h_source.html">ElementBase.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00450">ElementBase::getWake()</a>, <a class="el" href="ElementBase_8h_source.html#l00454">ElementBase::hasWake()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00225">ElementBase::setWake()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElementBase_8h_source.html#l00507">ElementBase::getWake()</a>, <a class="el" href="ElementBase_8h_source.html#l00509">ElementBase::hasWake()</a>, and <a class="el" href="ElementBase_8cpp_source.html#l00225">ElementBase::setWake()</a>.</p>
 
 </div>
 </div>
@@ -3845,7 +4304,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDummyBeamline.html">DummyBeamline</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:25 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:15 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

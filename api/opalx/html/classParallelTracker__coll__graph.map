@@ -1,48 +1,48 @@
 <map id="ParallelTracker" name="ParallelTracker">
-<area shape="rect" id="Node000001" title="Implements the main time&#45;based simulation loop for parallel tracking." alt="" coords="664,7452,883,8597"/>
-<area shape="rect" id="Node000002" href="$classTracker.html" title=" " alt="" coords="484,6984,625,7249"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="592,7262,667,7570,661,7571,587,7264"/>
-<area shape="rect" id="Node000003" href="$classAbstractTracker.html" title="Track particles or bunches." alt="" coords="303,6206,452,6351"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,6364,435,6572,487,6819,525,6983,519,6984,481,6821,430,6573,390,6365"/>
-<area shape="rect" id="Node000004" href="$classDefaultVisitor.html" title=" " alt="" coords="260,5088,465,5713"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="371,5727,379,6206,373,6206,365,5727"/>
-<area shape="rect" id="Node000005" href="$classBeamlineVisitor.html" title=" " alt="" coords="195,4540,400,5025"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="327,5039,332,5088,327,5088,322,5039"/>
-<area shape="rect" id="Node000006" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="425,4670,581,4895"/>
-<area shape="poly" id="edge16_Node000002_Node000006" title=" " alt="" coords="508,4896,554,6967,549,6968,502,4896"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="470,4896,428,5050,423,5073,418,5071,423,5049,465,4895"/>
-<area shape="rect" id="Node000007" href="$classElementBase.html" title=" " alt="" coords="401,3061,604,4007"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="505,4020,505,4670,500,4670,500,4020"/>
-<area shape="rect" id="Node000008" href="$classCoordinateSystemTrafo.html" title=" " alt="" coords="69,1675,259,2121"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="231,2121,269,2282,300,2452,309,2541,312,2616,307,2746,305,2808,305,2874,311,2949,325,3037,357,3162,398,3283,393,3285,352,3163,320,3038,306,2950,300,2875,299,2808,302,2745,307,2616,304,2541,295,2452,264,2283,225,2122"/>
-<area shape="rect" id="Node000020" href="$classOpalBeamline.html" title=" " alt="" coords="44,4031,231,4516"/>
-<area shape="poly" id="edge24_Node000020_Node000008" title=" " alt="" coords="142,2121,128,2284,117,2452,106,2881,108,3310,116,3700,128,4014,122,4014,111,3700,102,3310,101,2881,112,2452,123,2283,137,2121"/>
-<area shape="rect" id="Node000009" href="$classQuaternion.html" title=" " alt="" coords="152,800,309,1305"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="213,1306,185,1659,180,1659,208,1305"/>
-<area shape="rect" id="Node000010" href="$structmatrix__t.html" title=" " alt="" coords="5,950,128,1155"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="72,1155,84,1344,103,1503,126,1658,121,1659,98,1504,79,1344,67,1156"/>
-<area shape="rect" id="Node000011" href="$classAttributeSet.html" title="Map of std::string versus double value." alt="" coords="577,1755,727,2041"/>
-<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="649,2041,624,2631,604,3038,603,3045,598,3045,599,3037,619,2631,644,2041"/>
-<area shape="rect" id="Node000012" href="$classBoundaryGeometry.html" title=" " alt="" coords="311,1368,553,2428"/>
-<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="475,2428,476,2452,489,2751,497,3045,492,3045,483,2752,471,2452,469,2428"/>
-<area shape="rect" id="Node000013" href="$classDefinition.html" title="The base class for all OPAL definitions." alt="" coords="681,940,810,1165"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="676,1164,619,1262,568,1369,556,1400,551,1398,563,1367,614,1259,671,1161"/>
+<area shape="rect" id="Node000001" title="Implements the main time&#45;based simulation loop for parallel tracking." alt="" coords="665,7672,883,8877"/>
+<area shape="rect" id="Node000002" href="$classTracker.html" title=" " alt="" coords="485,7204,626,7469"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="592,7482,667,7805,662,7806,587,7483"/>
+<area shape="rect" id="Node000003" href="$classAbstractTracker.html" title="Track particles or bunches." alt="" coords="310,6426,459,6571"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,6584,439,6792,487,7039,525,7203,520,7204,482,7041,433,6793,396,6585"/>
+<area shape="rect" id="Node000004" href="$classDefaultVisitor.html" title=" " alt="" coords="261,5248,466,5933"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="374,5947,386,6426,380,6426,369,5947"/>
+<area shape="rect" id="Node000005" href="$classBeamlineVisitor.html" title=" " alt="" coords="195,4640,401,5185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,5199,333,5247,328,5248,323,5199"/>
+<area shape="rect" id="Node000006" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="425,4800,581,5025"/>
+<area shape="poly" id="edge16_Node000002_Node000006" title=" " alt="" coords="508,5025,555,7188,550,7188,503,5026"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="474,5026,429,5210,424,5233,419,5231,423,5209,469,5025"/>
+<area shape="rect" id="Node000007" href="$classElementBase.html" title=" " alt="" coords="402,3061,605,4007"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="506,4021,506,4800,501,4800,501,4021"/>
+<area shape="rect" id="Node000008" href="$classCoordinateSystemTrafo.html" title="Rigid spatial transform between a parent frame and a local frame." alt="" coords="69,1675,260,2121"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="231,2121,270,2282,301,2452,310,2541,313,2616,308,2746,305,2808,306,2874,312,2949,326,3037,358,3162,399,3283,394,3285,353,3163,321,3038,307,2950,300,2875,300,2808,303,2745,307,2616,305,2541,295,2452,265,2283,226,2122"/>
+<area shape="rect" id="Node000020" href="$classOpalBeamline.html" title=" " alt="" coords="5,4031,271,4616"/>
+<area shape="poly" id="edge24_Node000020_Node000008" title=" " alt="" coords="143,2121,129,2284,118,2452,107,2876,107,3300,115,3691,126,4014,121,4014,110,3691,102,3300,102,2876,113,2452,123,2283,138,2121"/>
+<area shape="rect" id="Node000009" href="$classQuaternion.html" title="Quaternion storage and rotation algebra used by OPALX geometry code." alt="" coords="153,800,310,1305"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="214,1306,186,1659,181,1659,209,1305"/>
+<area shape="rect" id="Node000010" href="$structmatrix__t.html" title=" " alt="" coords="6,950,129,1155"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="73,1155,85,1344,104,1503,126,1658,121,1659,98,1504,79,1344,67,1156"/>
+<area shape="rect" id="Node000011" href="$classAttributeSet.html" title="Map of std::string versus double value." alt="" coords="578,1755,727,2041"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="650,2041,625,2631,605,3038,604,3045,598,3045,599,3037,620,2631,644,2041"/>
+<area shape="rect" id="Node000012" href="$classBoundaryGeometry.html" title=" " alt="" coords="311,1368,554,2428"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="475,2428,477,2452,489,2751,498,3045,492,3045,484,2752,471,2452,470,2428"/>
+<area shape="rect" id="Node000013" href="$classDefinition.html" title="The base class for all OPAL definitions." alt="" coords="681,940,811,1165"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="676,1164,620,1262,568,1369,557,1400,552,1398,564,1367,615,1259,672,1161"/>
 <area shape="rect" id="Node000018" href="$classFieldSolverCmd.html" title=" " alt="" coords="723,2452,915,3037"/>
-<area shape="poly" id="edge20_Node000018_Node000013" title=" " alt="" coords="753,1179,809,2451,803,2452,748,1179"/>
-<area shape="rect" id="Node000014" href="$classObject.html" title="The base class for all OPAL objects." alt="" coords="678,5,813,751"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="748,764,748,940,743,940,743,764"/>
-<area shape="poly" id="edge14_Node000014_Node000014" title=" " alt="" coords="815,304,825,314,833,329,838,351,839,378,836,414,827,439,822,437,831,413,834,378,832,351,828,331,820,317,811,308"/>
-<area shape="rect" id="Node000015" href="$classgsl__rng.html" title=" " alt="" coords="373,960,491,1145"/>
-<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="435,1145,435,1351,429,1351,429,1145"/>
-<area shape="rect" id="Node000016" href="$classPartBunch.html" title=" " alt="" coords="577,5776,837,6781"/>
-<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="618,6782,584,6968,579,6967,613,6781"/>
-<area shape="rect" id="Node000017" href="$classPartData.html" title="Particle reference data." alt="" coords="591,5208,703,5593"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="646,5594,651,5752,651,5760,646,5760,645,5752,641,5594"/>
-<area shape="poly" id="edge19_Node000016_Node000018" title=" " alt="" coords="803,3037,776,3609,765,3941,761,4272,761,5402,758,5580,750,5760,745,5760,753,5580,756,5402,756,4272,760,3941,770,3608,798,3037"/>
-<area shape="rect" id="Node000019" href="$classDataSink.html" title=" " alt="" coords="797,5108,1019,5693"/>
-<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="899,5693,851,6781,813,7436,808,7436,845,6781,894,5693"/>
-<area shape="poly" id="edge21_Node000016_Node000019" title=" " alt="" coords="818,5694,807,5738,801,5761,796,5759,801,5737,813,5693"/>
-<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="145,4516,151,5055,151,7118,154,7183,165,7247,181,7309,203,7371,230,7430,261,7488,333,7598,414,7698,497,7788,579,7865,653,7929,649,7933,575,7869,494,7792,410,7702,329,7601,257,7491,226,7433,198,7373,176,7311,160,7248,149,7183,145,7118,145,5055,140,4516"/>
-<area shape="rect" id="Node000021" href="$classStepSizeConfig.html" title=" " alt="" coords="947,6844,1181,7389"/>
-<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="979,7390,890,7668,885,7666,974,7389"/>
+<area shape="poly" id="edge20_Node000018_Node000013" title=" " alt="" coords="754,1179,809,2451,804,2452,749,1179"/>
+<area shape="rect" id="Node000014" href="$classObject.html" title="The base class for all OPAL objects." alt="" coords="679,5,813,751"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="749,764,749,940,743,940,743,764"/>
+<area shape="poly" id="edge14_Node000014_Node000014" title=" " alt="" coords="816,304,825,314,833,329,838,351,840,378,837,414,828,439,823,437,831,413,835,378,833,351,828,331,821,317,812,308"/>
+<area shape="rect" id="Node000015" href="$classgsl__rng.html" title=" " alt="" coords="374,960,491,1145"/>
+<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="435,1145,435,1351,430,1351,430,1145"/>
+<area shape="rect" id="Node000016" href="$classPartBunch.html" title=" " alt="" coords="577,5996,837,7001"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="619,7002,585,7188,580,7187,613,7001"/>
+<area shape="rect" id="Node000017" href="$classPartData.html" title="Particle reference data." alt="" coords="591,5398,703,5783"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="647,5783,651,5972,652,5980,646,5980,646,5972,641,5784"/>
+<area shape="poly" id="edge19_Node000016_Node000018" title=" " alt="" coords="804,3038,776,3630,766,3977,762,4322,762,5592,759,5786,750,5980,745,5980,753,5785,757,5592,757,4322,761,3976,771,3630,799,3037"/>
+<area shape="rect" id="Node000019" href="$classDataSink.html" title=" " alt="" coords="797,5298,1020,5883"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="900,5884,851,7001,815,7656,810,7655,846,7001,895,5883"/>
+<area shape="poly" id="edge21_Node000016_Node000019" title=" " alt="" coords="826,5884,807,5958,802,5981,797,5979,802,5957,820,5883"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="146,4616,151,5215,151,7338,155,7405,165,7470,182,7534,204,7598,231,7659,262,7719,334,7832,415,7936,499,8029,580,8109,654,8175,650,8179,576,8113,495,8033,411,7940,330,7835,258,7721,226,7661,199,7599,177,7536,160,7471,150,7405,146,7338,146,5215,141,4617"/>
+<area shape="rect" id="Node000021" href="$classStepSizeConfig.html" title=" " alt="" coords="947,7064,1182,7609"/>
+<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="983,7611,891,7907,886,7905,978,7609"/>
 </map>

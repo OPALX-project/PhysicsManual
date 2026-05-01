@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -124,6 +124,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 <li>const_iterator_t&#160;:&#160;<a class="el" href="classSpecificElementVisitor.html#a6cdd46b1f74e03b460883ce5024f9844">SpecificElementVisitor&lt; ELEM &gt;</a></li>
 <li>const_reference_t&#160;:&#160;<a class="el" href="classSpecificElementVisitor.html#aa0482fb1f133c503b4dd0313dbc46547">SpecificElementVisitor&lt; ELEM &gt;</a></li>
 <li>container_t&#160;:&#160;<a class="el" href="classPeakFinder.html#a1ebe39a564c074c957bf335e9ec31f82">PeakFinder</a>, <a class="el" href="classStepSizeConfig.html#a90c21f6bcec83978cc0209c04bc1c3a5">StepSizeConfig</a></li>
+<li>container_type&#160;:&#160;<a class="el" href="classReferencePathModel.html#ac82dfb920d34022aa1e8a123d02bc1e5">ReferencePathModel</a></li>
 <li>CoordinateSelector_t&#160;:&#160;<a class="el" href="classPartBunch.html#a0493b8975ebe9233c035e72d9012c24d">PartBunch&lt; T, Dim &gt;</a></li>
 </ul>
 
@@ -141,6 +142,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>element_set_t&#160;:&#160;<a class="el" href="classReferencePathSegment.html#af58eb459aaf8e2c986fe203c8f49cebc">ReferencePathSegment</a></li>
 <li>ElementList_t&#160;:&#160;<a class="el" href="structCastsTrait.html#a0e5c52d71c34b1661fc5cfec1c517a10">CastsTrait&lt; ELEM1, ELEM2 &gt;</a>, <a class="el" href="structCastsTrait_3_01ELEM_00_01ELEM_01_4.html#a5b6f7077658d931dbb900e5fa3a1ac40">CastsTrait&lt; ELEM, ELEM &gt;</a>, <a class="el" href="classSpecificElementVisitor.html#ae426c98ff5bb07839aa308874bf030c8">SpecificElementVisitor&lt; ELEM &gt;</a></li>
 <li>emittingSamplers_t&#160;:&#160;<a class="el" href="classTrackRun.html#a95d134aae0af0253964fe85dfd452c90">TrackRun</a></li>
 <li>entry_t&#160;:&#160;<a class="el" href="classStepSizeConfig.html#ad9c8055dbbf66fe401f7fb4741aac2c5">StepSizeConfig</a></li>
@@ -218,6 +220,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 <li>particle_position_type&#160;:&#160;<a class="el" href="classBinnedFieldSolver.html#ac70446d323f9e6c32dde3f1d78f75de2">BinnedFieldSolver&lt; T, Dim &gt;</a>, <a class="el" href="classParticleBinning_1_1AdaptBins.html#a8f32ce2f1ef71c68633e1f2ac0065e05">ParticleBinning::AdaptBins&lt; BunchType, BinningSelector &gt;</a></li>
 <li>ParticleContainer_t&#160;:&#160;<a class="el" href="classPartBunch.html#a36a3c45e0ec1263ac4ac43870b6b00cb">PartBunch&lt; T, Dim &gt;</a></li>
 <li>ParticleCtr_t&#160;:&#160;<a class="el" href="classBinnedFieldSolver.html#a3308a8edc0d371fddb19a967e29a1508">BinnedFieldSolver&lt; T, Dim &gt;</a>, <a class="el" href="classImageChargeScatterController.html#aa9aad0194767604dcf3c019f7692f609">ImageChargeScatterController&lt; T, Dim &gt;</a></li>
+<li>PlacementAssembly&#160;:&#160;<a class="el" href="classOpalBeamline.html#a6720bcb87f3e76a2369626defb37a2b6">OpalBeamline</a></li>
 <li>position_view_type&#160;:&#160;<a class="el" href="classParticleBinning_1_1AdaptBins.html#a1b52642b5f0c5227d5feb49762f529b1">ParticleBinning::AdaptBins&lt; BunchType, BinningSelector &gt;</a>, <a class="el" href="structParticleBinning_1_1CoordinateSelector.html#a794c6afbf061a17f201f084939cb95c7">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;</a>, <a class="el" href="structParticleBinning_1_1GammaSelector.html#ac52145a513b88bd4074b635f88dfbd00">ParticleBinning::GammaSelector&lt; bunch_type &gt;</a></li>
 <li>PositionAttr_t&#160;:&#160;<a class="el" href="classImageChargeScatterController.html#a9c6bb456363078ef18ec2970c21d7494">ImageChargeScatterController&lt; T, Dim &gt;</a></li>
 </ul>
@@ -277,7 +280,7 @@ $(document).ready(function(){initNavTree('functions_type.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:27 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:18 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

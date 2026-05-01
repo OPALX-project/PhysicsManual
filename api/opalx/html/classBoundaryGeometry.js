@@ -117,5 +117,5 @@ var classBoundaryGeometry =
     [ "Triangles_m", "classBoundaryGeometry.html#a57aa2df381a57eacafe9744de7c1d50c", null ],
     [ "TriAreas_m", "classBoundaryGeometry.html#a2fd4e453d85e7fa56771d89a95cfe105", null ],
     [ "TriNormals_m", "classBoundaryGeometry.html#ae7f822f3c1b1fbde346ddc057a940b60", null ],
-    [ "voxelMesh_m", "classBoundaryGeometry.html#a0c4668a0bdd235219b4de1869f583849", null ]
+    [ "voxelMesh_m", "classBoundaryGeometry.html#a061c3e46c0dd3887779cd293d6009b95", null ]
 ];

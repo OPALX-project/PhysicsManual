@@ -1,17 +1,7 @@
 <map id="RFCavity::apply" name="RFCavity::apply">
-<area shape="rect" id="Node000001" title="Applies the Standing Wave RF Cavity field to all particles inside the RF cavity." alt="" coords="5,67,129,93"/>
-<area shape="rect" id="Node000002" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="215,18,347,43"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,65,211,44,212,49,124,70"/>
-<area shape="rect" id="Node000003" href="$classRFCavity.html#adf914d956cbf7ecaf6f979f764c1ddce" title="Get design length." alt="" coords="177,67,384,93"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,77,164,77,164,83,130,83"/>
-<area shape="rect" id="Node000008" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="219,117,343,142"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="124,90,212,111,211,116,122,95"/>
-<area shape="rect" id="Node000004" href="$classElementBase.html#a1b412456edcf01147abada7721605101" title="Get design length." alt="" coords="432,42,667,67"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,68,418,64,419,70,384,73"/>
-<area shape="rect" id="Node000007" href="$classFieldmap.html#a0a0aff97e6e62b388b5001a9d20c3154" title="Get the longitudinal dimensions of the field." alt="" coords="440,91,659,117"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="384,87,426,90,426,96,384,92"/>
-<area shape="rect" id="Node000005" href="$classBGeometryBase.html#a73f1d2087c1b6c7fb3e5e00f6835f88e" title="Get geometry length." alt="" coords="715,5,925,45"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="666,39,701,36,701,41,667,45"/>
-<area shape="rect" id="Node000006" href="$classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="719,70,921,95"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="667,64,705,68,705,73,667,69"/>
+<area shape="rect" id="Node000001" title="Applies the Standing Wave RF Cavity field to all particles inside the RF cavity." alt="" coords="5,31,129,56"/>
+<area shape="rect" id="Node000002" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="177,5,309,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,32,164,27,164,32,130,37"/>
+<area shape="rect" id="Node000003" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="181,55,305,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,49,168,54,167,60,129,54"/>
 </map>

@@ -12,5 +12,6 @@ var classDummyGeometry =
     [ "getTotalTransform", "classDummyGeometry.html#a6d62c3c3d775b7ee530295c68ba024c0", null ],
     [ "getTransform", "classDummyGeometry.html#af09d59b11214059cbbf5fb86e5dda074", null ],
     [ "getTransform", "classDummyGeometry.html#a3b23738ae0641f8aeae4ba498d3433c2", null ],
-    [ "setElementLength", "classDummyGeometry.html#a4d338ebcb0efefa851ff4bdc08f7efb2", null ]
+    [ "setElementLength", "classDummyGeometry.html#ad1871b48563ac5c0f622821afcf6af1e", null ],
+    [ "length_m", "classDummyGeometry.html#a380a8e360064971dc6f8853ea5af25ee", null ]
 ];

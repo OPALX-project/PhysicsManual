@@ -1,12 +1,14 @@
 <map id="DummyBeamline" name="DummyBeamline">
-<area shape="rect" id="Node000001" title=" " alt="" coords="363,3803,517,3988"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="274,3803,427,3988"/>
 <area shape="rect" id="Node000002" href="$classBeamline.html" title="An abstract sequence of beam line components." alt="" coords="273,3515,429,3740"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="395,3752,412,3802,407,3803,390,3754"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="335,3754,336,3803,331,3803,330,3754"/>
+<area shape="poly" id="edge12_Node000001_Node000002" title=" " alt="" coords="353,3754,353,3803,348,3803,348,3754"/>
+<area shape="poly" id="edge13_Node000001_Node000002" title=" " alt="" coords="371,3754,371,3803,365,3803,366,3754"/>
 <area shape="rect" id="Node000003" href="$classElementBase.html" title=" " alt="" coords="235,2520,437,3465"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,3479,351,3515,345,3515,345,3479"/>
-<area shape="rect" id="Node000004" href="$classCoordinateSystemTrafo.html" title=" " alt="" coords="46,1675,237,2121"/>
+<area shape="rect" id="Node000004" href="$classCoordinateSystemTrafo.html" title="Rigid spatial transform between a parent frame and a local frame." alt="" coords="46,1675,237,2121"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,2121,162,2304,173,2401,188,2496,208,2587,233,2680,227,2681,203,2589,183,2496,168,2402,156,2305,143,2121"/>
-<area shape="rect" id="Node000005" href="$classQuaternion.html" title=" " alt="" coords="5,800,163,1305"/>
+<area shape="rect" id="Node000005" href="$classQuaternion.html" title="Quaternion storage and rotation algebra used by OPALX geometry code." alt="" coords="5,800,163,1305"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="104,1306,128,1659,123,1659,98,1306"/>
 <area shape="rect" id="Node000006" href="$structmatrix__t.html" title=" " alt="" coords="187,950,309,1155"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="238,1156,174,1659,169,1659,232,1155"/>
@@ -22,7 +24,7 @@
 <area shape="rect" id="Node000011" href="$classgsl__rng.html" title=" " alt="" coords="545,960,663,1145"/>
 <area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="601,1146,590,1351,584,1351,596,1145"/>
 <area shape="rect" id="Node000012" href="$classNullGeometry.html" title="Geometry representing an identity transform." alt="" coords="459,3515,616,3740"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="499,3741,482,3788,477,3786,494,3739"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="461,3742,427,3791,422,3788,457,3739"/>
 <area shape="rect" id="Node000013" href="$classBGeometryBase.html" title="Abstract base class for accelerator geometry classes." alt="" coords="461,2800,619,3185"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="542,3199,540,3514,535,3514,536,3199"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="542,3199,540,3514,535,3514,536,3199"/>
 </map>

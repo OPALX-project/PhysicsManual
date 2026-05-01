@@ -4,6 +4,6 @@ var classMultiVariateGaussianTest =
     [ "TearDown", "classMultiVariateGaussianTest.html#a36255a40d4339f7228c9a7fa7789eb5c", null ],
     [ "bunchStateHandler", "classMultiVariateGaussianTest.html#a24cbcafe2fc533ee31f79f54b08ea507", null ],
     [ "isAllPeriodic_m", "classMultiVariateGaussianTest.html#afaea74efd75e16239cbac6df0f3249a8", null ],
-    [ "nr", "classMultiVariateGaussianTest.html#a5c3de5ad62b14a1ef46ad98920c29a00", null ],
+    [ "nr", "classMultiVariateGaussianTest.html#a32fa4abdebbe9f324f32de64bf8bf424", null ],
     [ "pc", "classMultiVariateGaussianTest.html#a4e7f57c1aa035d623a9d967817475c1e", null ]
 ];

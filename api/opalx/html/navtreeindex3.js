@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"FieldMirror_8hpp_source.html":[4,0,0,17,7],
+"FieldSolverCmd_8cpp.html":[4,0,0,21,18],
+"FieldSolverCmd_8cpp_source.html":[4,0,0,21,18],
+"FieldSolverCmd_8h.html":[4,0,0,21,19],
+"FieldSolverCmd_8h.html#a31a4e032d9f714c24e433e79f4899989":[4,0,0,21,19,2],
+"FieldSolverCmd_8h.html#a83376dde2aa7fee5cf454ff4ba8e8f88":[4,0,0,21,19,1],
 "FieldSolverCmd_8h.html#a83376dde2aa7fee5cf454ff4ba8e8f88a5202c6586cac8bee468e86d1ff854231":[4,0,0,21,19,1,3],
 "FieldSolverCmd_8h.html#a83376dde2aa7fee5cf454ff4ba8e8f88a86de502ad3fe05ceedaba87164d54d28":[4,0,0,21,19,1,1],
 "FieldSolverCmd_8h.html#a83376dde2aa7fee5cf454ff4ba8e8f88aa38bd5138bf35514df41a1795ebbf5c3":[4,0,0,21,19,1,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "GSLLinalg_8h.html":[4,0,0,24,34],
 "GSLLinalg_8h.html#a101b7359ec6853b464c39635acf60d83":[4,0,0,24,34,5],
 "GSLLinalg_8h.html#a15036360d576ce7c93bf2a1564d8b8c2":[4,0,0,24,34,9],
-"GSLLinalg_8h.html#a543b0c48ea8e55610b6f2e908f1fb9aa":[4,0,0,24,34,2],
-"GSLLinalg_8h.html#a85ae511007ccd0c49553ad1d542e4d57":[4,0,0,24,34,11],
-"GSLLinalg_8h.html#a94a87095ca1b298288849ce8c3d04875":[4,0,0,24,34,8],
-"GSLLinalg_8h.html#ab5e85cc97e0d97614d01d39349a4946d":[4,0,0,24,34,10],
-"GSLLinalg_8h.html#ac376b773861b55268fd0a653bb3f1a9f":[4,0,0,24,34,7],
-"GSLLinalg_8h.html#adfe751f519e3d2a62fcdcbc90d8d1149":[4,0,0,24,34,1],
-"GSLLinalg_8h.html#ae04b23465d0f2255d37d93b1d78c46f8":[4,0,0,24,34,3]
+"GSLLinalg_8h.html#a543b0c48ea8e55610b6f2e908f1fb9aa":[4,0,0,24,34,2]
 };

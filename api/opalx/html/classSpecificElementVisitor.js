@@ -24,6 +24,7 @@ var classSpecificElementVisitor =
     [ "visitDrift", "classSpecificElementVisitor.html#ada3da2f2c5f9db1a69ffa0181d8bbed8", null ],
     [ "visitFlaggedElmPtr", "classSpecificElementVisitor.html#a11d9211d0e4589c3944ea38a1a4e42eb", null ],
     [ "visitFlexibleCollimator", "classSpecificElementVisitor.html#acd22bf2db94a3b15ca02e9bcda8f4f1f", null ],
+    [ "visitLaser", "classSpecificElementVisitor.html#a16b585d23c89b14afe99777a64923c54", null ],
     [ "visitMarker", "classSpecificElementVisitor.html#a17b74d2510c369ec48fa5659af07b2d3", null ],
     [ "visitMonitor", "classSpecificElementVisitor.html#ad38fe63235c1c16d3adba0409de9dc97", null ],
     [ "visitMultipole", "classSpecificElementVisitor.html#a50052ab8eab266b302b51240121db62d", null ],

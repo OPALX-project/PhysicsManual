@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('TestDecay_8cpp_source.html',''); initR
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            pc-&gt;create(nPart);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            pc-&gt;createParticles(nPart);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keyword">auto</span> R_host = pc-&gt;R.getHostMirror();</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keyword">auto</span> P_host = pc-&gt;P.getHostMirror();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('TestDecay_8cpp_source.html',''); initR
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            pc-&gt;create(nPart);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            pc-&gt;createParticles(nPart);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keyword">auto</span> R_host = pc-&gt;R.getHostMirror();</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keyword">auto</span> P_host = pc-&gt;P.getHostMirror();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
@@ -673,10 +673,10 @@ $(document).ready(function(){initNavTree('TestDecay_8cpp_source.html',''); initR
 <div class="ttc" id="aPhysics_8h_html"><div class="ttname"><a href="Physics_8h.html">Physics.h</a></div></div>
 <div class="ttc" id="aPionDecay_8h_html"><div class="ttname"><a href="PionDecay_8h.html">PionDecay.h</a></div></div>
 <div class="ttc" id="aProcesses_2GlobalProcesses_2MuonDecay_8h_html"><div class="ttname"><a href="Processes_2GlobalProcesses_2MuonDecay_8h.html">MuonDecay.h</a></div></div>
-<div class="ttc" id="aTestMultipoleT_8cpp_html_a5273d7fdb7a11025b1f0cfd466e4a719"><div class="ttname"><a href="TestMultipoleT_8cpp.html#a5273d7fdb7a11025b1f0cfd466e4a719">TEST_F</a></div><div class="ttdeci">TEST_F(TestMultipoleT, Cloning)</div><div class="ttdef"><b>Definition</b> <a href="TestMultipoleT_8cpp_source.html#l00111">TestMultipoleT.cpp:111</a></div></div>
+<div class="ttc" id="aTestMultipoleT_8cpp_html_a5273d7fdb7a11025b1f0cfd466e4a719"><div class="ttname"><a href="TestMultipoleT_8cpp.html#a5273d7fdb7a11025b1f0cfd466e4a719">TEST_F</a></div><div class="ttdeci">TEST_F(TestMultipoleT, Cloning)</div><div class="ttdef"><b>Definition</b> <a href="TestMultipoleT_8cpp_source.html#l00114">TestMultipoleT.cpp:114</a></div></div>
 <div class="ttc" id="aclassMuonDecay_html"><div class="ttname"><a href="classMuonDecay.html">MuonDecay</a></div><div class="ttdoc">Muon decay: mu -&gt; e + nu_e + nu_mu (three-body).</div><div class="ttdef"><b>Definition</b> <a href="Processes_2GlobalProcesses_2MuonDecay_8h_source.html#l00015">Processes/GlobalProcesses/MuonDecay.h:15</a></div></div>
 <div class="ttc" id="aclassOpalException_html"><div class="ttname"><a href="classOpalException.html">OpalException</a></div><div class="ttdef"><b>Definition</b> <a href="OpalException_8h_source.html#l00031">OpalException.h:31</a></div></div>
-<div class="ttc" id="aclassParticleContainer_html"><div class="ttname"><a href="classParticleContainer.html">ParticleContainer</a></div><div class="ttdoc">Container for all per-particle (and per-simulation) fields tracked during OPALX tracking.</div><div class="ttdef"><b>Definition</b> <a href="ParticleContainer_8hpp_source.html#l00059">ParticleContainer.hpp:59</a></div></div>
+<div class="ttc" id="aclassParticleContainer_html"><div class="ttname"><a href="classParticleContainer.html">ParticleContainer</a></div><div class="ttdoc">Container for all per-particle (and per-simulation) fields tracked during OPALX tracking.</div><div class="ttdef"><b>Definition</b> <a href="ParticleContainer_8hpp_source.html#l00060">ParticleContainer.hpp:60</a></div></div>
 <div class="ttc" id="aclassPionDecay_html"><div class="ttname"><a href="classPionDecay.html">PionDecay</a></div><div class="ttdoc">Charged pion decay: pi -&gt; mu + nu_mu (two-body).</div><div class="ttdef"><b>Definition</b> <a href="PionDecay_8h_source.html#l00014">PionDecay.h:14</a></div></div>
 <div class="ttc" id="anamespaceOptions_html_a8bfb608c9dcc372d6edef0fea5a02375"><div class="ttname"><a href="namespaceOptions.html#a8bfb608c9dcc372d6edef0fea5a02375">Options::useQMAttributes</a></div><div class="ttdeci">bool useQMAttributes</div><div class="ttdef"><b>Definition</b> <a href="Options_8cpp_source.html#l00107">Options.cpp:107</a></div></div>
 <div class="ttc" id="anamespaceOptions_html_add25cbd96b6ba4bbbc8da3a9805c3dcd"><div class="ttname"><a href="namespaceOptions.html#add25cbd96b6ba4bbbc8da3a9805c3dcd">Options::seed</a></div><div class="ttdeci">int seed</div><div class="ttdoc">The current random seed.</div><div class="ttdef"><b>Definition</b> <a href="Options_8cpp_source.html#l00037">Options.cpp:37</a></div></div>
@@ -691,7 +691,7 @@ $(document).ready(function(){initNavTree('TestDecay_8cpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7c608ee7a349a990cecd74a7d13d4b1.html">unit_tests</a></li><li class="navelem"><a class="el" href="dir_ca2e27d3ad1c82c3d608f16b7c2a803e.html">Processes</a></li><li class="navelem"><a class="el" href="dir_91a0b138eae9a62f14bdea9f89e67cd5.html">GlobalProcesses</a></li><li class="navelem"><a class="el" href="TestDecay_8cpp.html">TestDecay.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:24 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

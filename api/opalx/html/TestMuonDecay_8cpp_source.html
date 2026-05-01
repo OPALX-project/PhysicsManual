@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -113,17 +113,17 @@ $(document).ready(function(){initNavTree('TestMuonDecay_8cpp_source.html',''); i
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MaxElectronEnergyIsHalfMuonMass) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MaxElectronEnergyIsHalfMuonMass) {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        EXPECT_DOUBLE_EQ(<a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#adab74cd1c5240db8b645759f99b0569f">Physics::MuonDecay::maxElectronEnergy</a>(), <a class="code hl_variable" href="namespacePhysics.html#acdc70b451c1ff248a0fd3218b77a01e2">Physics::m_mu</a> / 2.0);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    }</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MinElectronXIsPositiveAndSmall) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MinElectronXIsPositiveAndSmall) {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> xMin = <a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#a846c53bdc6f9ea78811038e3f04d7bf1">Physics::MuonDecay::minElectronX</a>();</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        EXPECT_GT(xMin, 0.0);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        EXPECT_LT(xMin, 0.02);  <span class="comment">// m_e / (m_mu/2) ~ 0.0097</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MichelSpectrumIsNonNegativeInRange) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MichelSpectrumIsNonNegativeInRange) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> xMin      = <a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#a846c53bdc6f9ea78811038e3f04d7bf1">Physics::MuonDecay::minElectronX</a>();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">constexpr</span> <span class="keywordtype">int</span> nSamples = 1000;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= nSamples; ++i) {</div>
@@ -132,12 +132,12 @@ $(document).ready(function(){initNavTree('TestMuonDecay_8cpp_source.html',''); i
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MichelSpectrumPeaksAtXEqualsOne) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MichelSpectrumPeaksAtXEqualsOne) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> fPeak = <a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#abc643dbcd854157ddcbfbb08fa773ebd">Physics::MuonDecay::michelSpectrum</a>(1.0);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        EXPECT_NEAR(fPeak, <a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#a600c1b1508f397c775e25ffc3308ef6b">Physics::MuonDecay::michelUpperBound</a>(), 1.0e-14);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MichelSpectrumBelowUpperBound) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MichelSpectrumBelowUpperBound) {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> xMin      = <a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#a846c53bdc6f9ea78811038e3f04d7bf1">Physics::MuonDecay::minElectronX</a>();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> upper     = <a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#a600c1b1508f397c775e25ffc3308ef6b">Physics::MuonDecay::michelUpperBound</a>();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">constexpr</span> <span class="keywordtype">int</span> nSamples = 10000;</div>
@@ -147,21 +147,21 @@ $(document).ready(function(){initNavTree('TestMuonDecay_8cpp_source.html',''); i
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MichelSpectrumEndpoints) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MichelSpectrumEndpoints) {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">// f(0) = 0</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        EXPECT_DOUBLE_EQ(<a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#abc643dbcd854157ddcbfbb08fa773ebd">Physics::MuonDecay::michelSpectrum</a>(0.0), 0.0);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">// f(1) = 2*1*1*(3-2) = 2</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        EXPECT_DOUBLE_EQ(<a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#abc643dbcd854157ddcbfbb08fa773ebd">Physics::MuonDecay::michelSpectrum</a>(1.0), 2.0);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a>(MuonDecayTest, MichelUpperBoundIs2) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a>(MuonDecayTest, MichelUpperBoundIs2) {</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        EXPECT_DOUBLE_EQ(<a class="code hl_function" href="namespacePhysics_1_1MuonDecay.html#a600c1b1508f397c775e25ffc3308ef6b">Physics::MuonDecay::michelUpperBound</a>(), 2.0);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace</span></div>
 <div class="ttc" id="aPhysics_2MuonDecay_8h_html"><div class="ttname"><a href="Physics_2MuonDecay_8h.html">MuonDecay.h</a></div></div>
 <div class="ttc" id="aPhysics_8h_html"><div class="ttname"><a href="Physics_8h.html">Physics.h</a></div></div>
-<div class="ttc" id="aTestPolynomialTimeDependence_8cpp_html_ab711d3b7a188d0dd00acca1381aabc41"><div class="ttname"><a href="TestPolynomialTimeDependence_8cpp.html#ab711d3b7a188d0dd00acca1381aabc41">TEST</a></div><div class="ttdeci">TEST(TestPolynomialTimeDependence, PolynomialTimeDependenceTest)</div><div class="ttdef"><b>Definition</b> <a href="TestPolynomialTimeDependence_8cpp_source.html#l00022">TestPolynomialTimeDependence.cpp:22</a></div></div>
+<div class="ttc" id="aTestIndexMap_8cpp_html_a2237e7f395a01de4760d6a169d5d9aca"><div class="ttname"><a href="TestIndexMap_8cpp.html#a2237e7f395a01de4760d6a169d5d9aca">TEST</a></div><div class="ttdeci">TEST(IndexMapTest, RebuildsReferencePathModelFromOrderedRanges)</div><div class="ttdef"><b>Definition</b> <a href="TestIndexMap_8cpp_source.html#l00008">TestIndexMap.cpp:8</a></div></div>
 <div class="ttc" id="anamespacePhysics_1_1MuonDecay_html_a600c1b1508f397c775e25ffc3308ef6b"><div class="ttname"><a href="namespacePhysics_1_1MuonDecay.html#a600c1b1508f397c775e25ffc3308ef6b">Physics::MuonDecay::michelUpperBound</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION constexpr double michelUpperBound()</div><div class="ttdoc">Upper bound of the Michel spectrum, attained at : .</div><div class="ttdef"><b>Definition</b> <a href="Physics_2MuonDecay_8h_source.html#l00026">Physics/MuonDecay.h:26</a></div></div>
 <div class="ttc" id="anamespacePhysics_1_1MuonDecay_html_a846c53bdc6f9ea78811038e3f04d7bf1"><div class="ttname"><a href="namespacePhysics_1_1MuonDecay.html#a846c53bdc6f9ea78811038e3f04d7bf1">Physics::MuonDecay::minElectronX</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION constexpr double minElectronX()</div><div class="ttdoc">Minimum reduced energy .</div><div class="ttdef"><b>Definition</b> <a href="Physics_2MuonDecay_8h_source.html#l00015">Physics/MuonDecay.h:15</a></div></div>
 <div class="ttc" id="anamespacePhysics_1_1MuonDecay_html_abc643dbcd854157ddcbfbb08fa773ebd"><div class="ttname"><a href="namespacePhysics_1_1MuonDecay.html#abc643dbcd854157ddcbfbb08fa773ebd">Physics::MuonDecay::michelSpectrum</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION double michelSpectrum(double x)</div><div class="ttdef"><b>Definition</b> <a href="Physics_2MuonDecay_8h_source.html#l00021">Physics/MuonDecay.h:21</a></div></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('TestMuonDecay_8cpp_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7c608ee7a349a990cecd74a7d13d4b1.html">unit_tests</a></li><li class="navelem"><a class="el" href="dir_184b062d2da25d1c7a67ba5f809777e9.html">Physics</a></li><li class="navelem"><a class="el" href="TestMuonDecay_8cpp.html">TestMuonDecay.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:24 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

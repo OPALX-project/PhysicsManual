@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('Gaussian_8cpp_source.html',''); initRe
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    nlocal = sampling.getLocalSamplesNum();</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalCurrent = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;create(nlocal);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;createParticles(nlocal);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <a class="code hl_typedef" href="Distribution_8cpp.html#abac6b71b6ea68a6c8bb864e8ebd5fe62">view_type</a> RviewFull = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;R.getView();</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">auto</span> Rview = Kokkos::subview(RviewFull, std::make_pair(nlocalCurrent, nlocalCurrent + nlocal));</div>
@@ -394,7 +394,7 @@ $(document).ready(function(){initNavTree('Gaussian_8cpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4043ae54a69fe9133a0541b78a48bd8d.html">Distribution</a></li><li class="navelem"><a class="el" href="Gaussian_8cpp.html">Gaussian.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:23 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

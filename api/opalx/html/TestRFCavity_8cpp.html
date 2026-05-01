@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -107,9 +107,9 @@ $(document).ready(function(){initNavTree('TestRFCavity_8cpp.html',''); initResiz
 <p>Unit tests for <a class="el" href="classRFCavity.html" title="Interface for standing wave cavities.">RFCavity</a> component (base layer).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="Fieldmap_8h_source.html">Fields/Fieldmap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ElementBase_8h_source.html">AbsBeamline/ElementBase.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="RFCavityRep_8h_source.html">BeamlineCore/RFCavityRep.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Fieldmap_8h_source.html">Fields/Fieldmap.h</a>&quot;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -117,137 +117,145 @@ Include dependency graph for TestRFCavity.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="TestRFCavity_8cpp__incl.png" border="0" usemap="#aTestRFCavity_8cpp" alt=""/></div>
 <map name="aTestRFCavity_8cpp" id="aTestRFCavity_8cpp">
-<area shape="rect" title="Unit tests for RFCavity component (base layer)." alt="" coords="1396,5,1528,31"/>
-<area shape="rect" title=" " alt="" coords="275,79,379,104"/>
-<area shape="poly" title=" " alt="" coords="1396,23,975,39,689,56,398,81,393,82,392,77,397,76,689,50,975,33,1395,18"/>
-<area shape="rect" href="Fieldmap_8h.html" title=" " alt="" coords="271,313,407,339"/>
-<area shape="poly" title=" " alt="" coords="1396,26,1225,44,1111,59,985,81,851,109,715,145,579,189,450,242,401,273,362,306,359,301,398,268,447,238,577,184,713,140,850,104,984,76,1110,54,1224,38,1395,21"/>
-<area shape="rect" href="ElementBase_8h.html" title=" " alt="" coords="1194,313,1404,339"/>
-<area shape="poly" title=" " alt="" coords="1458,32,1314,302,1309,300,1453,30"/>
-<area shape="rect" title=" " alt="" coords="1827,394,1904,419"/>
-<area shape="poly" title=" " alt="" coords="1467,30,1481,73,1506,136,1543,204,1567,235,1594,263,1624,283,1652,292,1683,298,1719,311,1785,348,1840,384,1837,388,1782,353,1717,316,1681,303,1651,297,1622,288,1591,267,1563,239,1539,207,1501,138,1476,75,1462,32"/>
-<area shape="rect" href="RFCavityRep_8h.html" title=" " alt="" coords="1722,79,1937,104"/>
-<area shape="poly" title=" " alt="" coords="1521,28,1757,73,1756,79,1520,33"/>
-<area shape="rect" title=" " alt="" coords="2088,313,2150,339"/>
-<area shape="poly" title=" " alt="" coords="1528,16,1614,19,1721,28,1837,46,1895,59,1951,76,2020,102,2047,120,2075,150,2096,188,2110,229,2121,300,2115,300,2104,230,2091,190,2070,154,2044,124,2018,106,1949,81,1893,64,1836,51,1720,33,1614,24,1528,21"/>
-<area shape="rect" title=" " alt="" coords="1079,475,1130,500"/>
-<area shape="poly" title=" " alt="" coords="407,324,554,324,736,332,826,339,909,350,978,365,1030,384,1051,400,1070,420,1096,460,1091,463,1066,423,1048,404,1027,389,977,370,908,355,825,344,735,337,554,330,407,329"/>
-<area shape="rect" title=" " alt="" coords="559,548,618,573"/>
-<area shape="poly" title=" " alt="" coords="346,338,382,412,412,457,450,498,473,514,498,527,547,546,545,551,495,532,470,519,447,502,408,461,377,414,341,340"/>
-<area shape="rect" title=" " alt="" coords="132,621,194,647"/>
-<area shape="poly" title=" " alt="" coords="271,335,202,348,128,374,92,392,61,415,34,443,14,476,8,498,12,518,22,538,38,557,80,589,124,613,122,618,77,594,34,561,18,541,7,520,3,497,9,474,29,439,57,411,90,387,126,369,201,343,270,330"/>
-<area shape="rect" href="OPALTypes_8h.html" title=" " alt="" coords="314,621,417,647"/>
-<area shape="poly" title=" " alt="" coords="341,339,339,436,342,504,350,573,359,608,354,609,344,574,336,504,334,436,336,339"/>
-<area shape="rect" href="GSLSpline_8h.html" title=" " alt="" coords="123,394,278,419"/>
-<area shape="poly" title=" " alt="" coords="320,341,234,390,231,385,317,337"/>
-<area shape="rect" href="PartBunchFwd_8h.html" title=" " alt="" coords="268,695,463,720"/>
-<area shape="poly" title=" " alt="" coords="368,647,368,681,363,681,363,647"/>
-<area shape="rect" href="VectorMath_8h.html" title=" " alt="" coords="962,695,1070,720"/>
-<area shape="poly" title=" " alt="" coords="418,638,949,696,948,701,417,644"/>
-<area shape="rect" title=" " alt="" coords="1651,768,1710,793"/>
-<area shape="poly" title=" " alt="" coords="1071,712,1638,772,1637,777,1070,717"/>
-<area shape="rect" title=" " alt="" coords="941,768,1001,793"/>
-<area shape="poly" title=" " alt="" coords="1011,722,988,758,984,755,1007,719"/>
-<area shape="rect" href="CubicSpline_8h.html" title=" " alt="" coords="162,475,273,500"/>
-<area shape="poly" title=" " alt="" coords="206,419,215,461,210,462,200,420"/>
-<area shape="rect" href="LinearSpline_8h.html" title=" " alt="" coords="23,475,138,500"/>
-<area shape="poly" title=" " alt="" coords="184,422,111,469,108,465,181,417"/>
-<area shape="poly" title=" " alt="" coords="193,502,163,521,150,534,140,549,136,564,138,579,150,609,145,611,132,580,131,563,135,547,146,531,160,517,190,498"/>
-<area shape="rect" href="AbstractSpline_8h.html" title=" " alt="" coords="150,548,278,573"/>
-<area shape="poly" title=" " alt="" coords="220,500,218,535,212,534,214,500"/>
-<area shape="poly" title=" " alt="" coords="208,575,181,612,177,609,203,572"/>
-<area shape="poly" title=" " alt="" coords="239,571,330,613,328,618,237,576"/>
-<area shape="poly" title=" " alt="" coords="89,499,131,572,152,608,147,611,126,575,85,502"/>
-<area shape="poly" title=" " alt="" coords="103,498,181,539,179,544,101,502"/>
-<area shape="poly" title=" " alt="" coords="1294,341,1263,382,1218,429,1181,454,1144,473,1142,468,1178,449,1215,425,1259,379,1289,337"/>
-<area shape="poly" title=" " alt="" coords="1194,340,1175,341,851,348,746,353,652,361,582,373,558,380,545,389,534,405,530,423,531,443,535,463,553,503,574,536,569,539,548,506,530,465,525,444,525,423,530,403,541,385,556,375,580,367,652,356,745,348,851,343,1175,336,1193,334"/>
-<area shape="rect" href="AttributeSet_8h.html" title=" " alt="" coords="814,394,1016,419"/>
-<area shape="poly" title=" " alt="" coords="1244,341,985,394,984,389,1243,336"/>
-<area shape="rect" href="CoordinateSystemTrafo_8h.html" title=" " alt="" coords="1484,387,1701,427"/>
-<area shape="poly" title=" " alt="" coords="1342,336,1509,381,1508,386,1341,341"/>
-<area shape="rect" href="Quaternion_8hpp.html" title=" " alt="" coords="1632,475,1830,500"/>
-<area shape="poly" title=" " alt="" coords="1399,336,1597,361,1677,374,1715,384,1728,402,1734,422,1737,461,1732,461,1729,423,1723,404,1712,389,1676,379,1596,366,1399,341"/>
-<area shape="rect" href="Euclid3D_8h.html" title=" " alt="" coords="1892,475,2114,500"/>
-<area shape="poly" title=" " alt="" coords="1398,336,1602,361,1741,384,1764,393,1780,403,1816,424,1883,449,1946,468,1945,473,1881,454,1814,429,1777,408,1761,398,1740,389,1602,367,1397,341"/>
-<area shape="rect" href="Geometry_8h.html" title=" " alt="" coords="1929,394,2157,419"/>
-<area shape="poly" title=" " alt="" coords="1405,335,1417,336,1667,358,1917,384,1957,389,1957,395,1916,389,1666,363,1416,341,1404,340"/>
-<area shape="rect" href="BoundingBox_8h.html" title=" " alt="" coords="833,548,1016,573"/>
-<area shape="poly" title=" " alt="" coords="1299,340,1285,381,1273,406,1257,428,1233,453,1206,474,1145,508,1082,532,1022,548,1021,543,1080,527,1143,503,1203,470,1229,449,1253,425,1268,403,1280,379,1294,338"/>
-<area shape="rect" title=" " alt="" coords="1199,621,1274,647"/>
-<area shape="poly" title=" " alt="" coords="1301,339,1290,427,1267,528,1246,609,1241,607,1262,527,1284,426,1295,339"/>
-<area shape="rect" href="GeneralOpalException_8h.html" title=" " alt="" coords="555,394,790,419"/>
-<area shape="poly" title=" " alt="" coords="1198,341,802,389,763,395,762,389,801,384,1197,336"/>
-<area shape="poly" title=" " alt="" coords="1405,336,1644,362,1809,384,1822,387,1821,393,1808,389,1643,368,1405,341"/>
-<area shape="rect" title=" " alt="" coords="1142,394,1205,419"/>
-<area shape="poly" title=" " alt="" coords="1282,341,1205,389,1202,384,1279,337"/>
-<area shape="poly" title=" " alt="" coords="944,417,1067,468,1065,473,942,422"/>
-<area shape="poly" title=" " alt="" coords="900,422,841,460,763,502,694,530,632,550,630,545,693,525,761,498,838,455,897,417"/>
-<area shape="rect" title=" " alt="" coords="872,475,958,500"/>
-<area shape="poly" title=" " alt="" coords="918,420,918,461,912,461,912,420"/>
-<area shape="rect" href="Matrix_8h.html" title=" " alt="" coords="1534,548,1685,573"/>
-<area shape="poly" title=" " alt="" coords="1597,427,1610,534,1604,535,1592,427"/>
-<area shape="rect" title=" " alt="" coords="1416,621,1550,647"/>
-<area shape="poly" title=" " alt="" coords="1585,428,1525,549,1497,610,1492,607,1521,547,1580,426"/>
-<area shape="poly" title=" " alt="" coords="1627,424,1700,465,1697,470,1624,429"/>
-<area shape="poly" title=" " alt="" coords="1534,567,1018,587,664,604,302,624,208,631,208,626,302,619,663,598,1018,582,1534,562"/>
-<area shape="poly" title=" " alt="" coords="1623,572,1641,593,1657,620,1669,655,1677,692,1683,754,1677,754,1672,693,1664,657,1653,622,1637,596,1619,575"/>
-<area shape="poly" title=" " alt="" coords="1591,576,1517,617,1515,612,1588,571"/>
-<area shape="rect" title=" " alt="" coords="1574,621,1643,647"/>
-<area shape="poly" title=" " alt="" coords="1612,574,1612,608,1606,608,1607,574"/>
-<area shape="poly" title=" " alt="" coords="1732,501,1696,720,1689,755,1684,754,1691,720,1727,500"/>
-<area shape="poly" title=" " alt="" coords="1713,502,1642,543,1640,539,1710,498"/>
-<area shape="rect" href="Rotation3D_8h.html" title=" " alt="" coords="1921,548,2160,573"/>
-<area shape="poly" title=" " alt="" coords="2012,499,2030,535,2026,537,2007,502"/>
-<area shape="rect" href="Vector3D_8h.html" title=" " alt="" coords="1771,621,1995,647"/>
-<area shape="poly" title=" " alt="" coords="1977,502,1943,522,1912,550,1897,579,1889,608,1884,607,1892,577,1908,546,1939,517,1974,498"/>
-<area shape="rect" href="Matrix3D_8h.html" title=" " alt="" coords="2018,621,2244,647"/>
-<area shape="poly" title=" " alt="" coords="2057,571,2107,610,2104,615,2053,575"/>
-<area shape="poly" title=" " alt="" coords="2016,576,1922,618,1920,613,2014,571"/>
-<area shape="poly" title=" " alt="" coords="2040,421,2017,464,2013,461,2035,418"/>
-<area shape="poly" title=" " alt="" coords="833,573,208,631,208,626,833,568"/>
-<area shape="poly" title=" " alt="" coords="835,576,431,627,430,622,834,571"/>
-<area shape="poly" title=" " alt="" coords="928,573,936,636,952,719,964,754,959,756,947,721,931,637,923,574"/>
-<area shape="poly" title=" " alt="" coords="975,571,1186,619,1185,624,974,576"/>
-<area shape="rect" href="OpalException_8h.html" title=" " alt="" coords="568,475,750,500"/>
-<area shape="poly" title=" " alt="" coords="673,420,666,462,661,461,668,419"/>
-<area shape="poly" title=" " alt="" coords="649,502,611,540,608,536,645,498"/>
-<area shape="rect" href="RFCavity_8h.html" title=" " alt="" coords="1612,159,1794,185"/>
-<area shape="poly" title=" " alt="" coords="1812,106,1735,154,1732,150,1810,102"/>
-<area shape="rect" href="StraightGeometry_8h.html" title=" " alt="" coords="1856,152,2060,192"/>
-<area shape="poly" title=" " alt="" coords="1850,102,1916,142,1913,147,1847,106"/>
-<area shape="rect" href="AcceleratingField_8h.html" title=" " alt="" coords="2138,159,2326,185"/>
-<area shape="poly" title=" " alt="" coords="1889,101,2161,154,2160,159,1888,107"/>
-<area shape="poly" title=" " alt="" coords="1612,178,1313,187,1125,197,933,211,754,231,606,256,549,271,506,288,479,306,472,315,470,325,470,408,472,429,479,448,501,485,530,515,560,538,556,542,527,519,497,488,474,451,467,430,464,408,464,324,467,313,475,302,503,283,547,266,605,251,754,226,932,206,1124,192,1313,182,1612,172"/>
-<area shape="rect" href="Component_8h.html" title="Defines the abstract interface for a single beamline component in the accelerator model." alt="" coords="1604,240,1802,265"/>
-<area shape="poly" title=" " alt="" coords="1706,185,1706,226,1700,226,1700,185"/>
-<area shape="rect" href="AbstractTimeDependence_8h.html" title=" " alt="" coords="1428,313,1706,339"/>
-<area shape="poly" title=" " alt="" coords="1673,187,1632,209,1612,224,1595,242,1580,270,1572,300,1567,299,1575,269,1590,238,1608,220,1629,204,1671,182"/>
-<area shape="rect" href="Physics_8h.html" title=" " alt="" coords="1826,240,1962,265"/>
-<area shape="poly" title=" " alt="" coords="1732,182,1854,232,1852,237,1730,187"/>
-<area shape="rect" href="BiMap_8h.html" title=" " alt="" coords="1010,240,1140,265"/>
-<area shape="poly" title=" " alt="" coords="1612,187,1154,244,1154,239,1612,182"/>
-<area shape="poly" title=" " alt="" coords="1773,182,1870,204,1975,238,2040,270,2093,303,2090,308,2037,274,1973,242,1868,209,1771,187"/>
-<area shape="poly" title=" " alt="" coords="1604,258,1513,263,1407,273,1293,290,1183,316,1157,329,1131,341,1071,351,996,354,821,353,732,353,649,357,578,369,549,378,524,389,494,411,468,437,425,499,394,560,376,609,371,607,389,558,420,496,464,434,491,407,522,384,547,373,576,363,648,352,731,348,821,347,996,349,1071,345,1129,336,1155,324,1181,311,1292,285,1406,268,1513,257,1603,253"/>
-<area shape="poly" title=" " alt="" coords="1639,268,1378,314,1377,308,1638,263"/>
-<area shape="poly" title=" " alt="" coords="1717,263,1845,382,1841,386,1713,267"/>
-<area shape="rect" href="EMField_8h.html" title=" " alt="" coords="2181,394,2308,419"/>
-<area shape="poly" title=" " alt="" coords="1744,263,2191,388,2190,393,1743,268"/>
-<area shape="poly" title=" " alt="" coords="1529,341,1377,389,1143,474,1141,469,1376,384,1528,336"/>
-<area shape="poly" title=" " alt="" coords="1543,341,1340,429,1243,471,1200,487,1142,503,997,530,852,547,725,557,632,561,631,556,725,552,852,542,996,525,1141,497,1198,482,1241,466,1338,424,1541,336"/>
-<area shape="poly" title=" " alt="" coords="1619,336,1809,384,1820,387,1818,392,1808,389,1618,341"/>
-<area shape="poly" title=" " alt="" coords="1060,268,1044,281,1029,299,1020,318,1022,338,1031,353,1043,361,1057,370,1071,385,1089,423,1101,460,1096,462,1085,425,1066,388,1054,374,1040,366,1028,356,1017,340,1015,317,1024,296,1040,278,1056,264"/>
-<area shape="rect" title=" " alt="" coords="1032,313,1118,339"/>
-<area shape="poly" title=" " alt="" coords="1078,266,1078,300,1072,300,1072,266"/>
-<area shape="poly" title=" " alt="" coords="1967,191,2036,380,2031,382,1962,193"/>
-<area shape="rect" href="ConstEzField_8h.html" title=" " alt="" coords="2338,240,2497,265"/>
-<area shape="poly" title=" " alt="" coords="2260,182,2379,232,2377,237,2258,187"/>
-<area shape="rect" href="OscillatingField_8h.html" title=" " alt="" coords="2138,240,2314,265"/>
-<area shape="poly" title=" " alt="" coords="2234,185,2231,226,2225,226,2229,185"/>
-<area shape="rect" href="StaticElectricField_8h.html" title=" " alt="" coords="2296,313,2488,339"/>
-<area shape="poly" title=" " alt="" coords="2416,267,2404,301,2399,300,2411,265"/>
-<area shape="poly" title=" " alt="" coords="2372,341,2280,390,2277,385,2369,336"/>
-<area shape="poly" title=" " alt="" coords="2230,265,2244,380,2239,381,2224,266"/>
-<area shape="poly" title=" " alt="" coords="2210,268,2149,308,2146,303,2207,263"/>
+<area shape="rect" title="Unit tests for RFCavity component (base layer)." alt="" coords="1972,5,2104,31"/>
+<area shape="rect" title=" " alt="" coords="1033,79,1137,104"/>
+<area shape="poly" title=" " alt="" coords="1972,24,1623,42,1391,59,1156,81,1150,82,1150,77,1155,76,1390,53,1622,37,1972,19"/>
+<area shape="rect" href="ElementBase_8h.html" title=" " alt="" coords="1166,313,1377,339"/>
+<area shape="poly" title=" " alt="" coords="2010,33,1314,311,1312,306,2008,28"/>
+<area shape="rect" title=" " alt="" coords="2127,387,2205,412"/>
+<area shape="poly" title=" " alt="" coords="2025,33,1996,60,1965,98,1952,120,1943,143,1939,167,1942,191,1955,225,1974,256,1997,284,2023,309,2079,350,2129,378,2127,383,2076,354,2020,313,1993,287,1969,259,1950,227,1937,193,1934,167,1938,142,1947,118,1961,95,1992,56,2022,29"/>
+<area shape="rect" href="RFCavityRep_8h.html" title=" " alt="" coords="2057,79,2272,104"/>
+<area shape="poly" title=" " alt="" coords="2060,28,2133,69,2131,74,2057,33"/>
+<area shape="rect" title=" " alt="" coords="2661,313,2724,339"/>
+<area shape="poly" title=" " alt="" coords="2105,26,2201,42,2323,68,2456,103,2587,149,2671,180,2704,201,2732,239,2737,256,2734,273,2716,304,2711,301,2729,271,2732,256,2728,241,2700,205,2669,185,2585,155,2455,108,2322,73,2200,48,2104,31"/>
+<area shape="rect" href="Fieldmap_8h.html" title=" " alt="" coords="2431,387,2567,412"/>
+<area shape="poly" title=" " alt="" coords="2104,16,2293,19,2408,26,2525,38,2634,57,2724,84,2759,101,2785,121,2803,144,2809,170,2809,254,2803,289,2786,318,2760,342,2729,360,2693,374,2655,385,2581,397,2581,391,2654,379,2691,369,2726,355,2757,337,2782,315,2798,287,2803,254,2803,171,2798,147,2782,125,2756,106,2722,89,2632,62,2525,43,2408,31,2292,24,2104,21"/>
+<area shape="rect" href="AttributeSet_8h.html" title=" " alt="" coords="1850,387,2053,412"/>
+<area shape="poly" title=" " alt="" coords="1377,336,1836,383,1836,389,1377,341"/>
+<area shape="rect" title=" " alt="" coords="2330,467,2381,493"/>
+<area shape="poly" title=" " alt="" coords="1377,327,1545,334,1743,345,1930,361,2007,372,2066,384,2091,396,2116,410,2225,445,2317,468,2316,473,2223,450,2114,414,2089,401,2064,389,2006,377,1930,367,1743,350,1544,339,1377,333"/>
+<area shape="rect" title=" " alt="" coords="2067,629,2126,654"/>
+<area shape="poly" title=" " alt="" coords="1375,336,1430,354,1456,367,1480,385,1493,399,1500,414,1505,444,1511,472,1518,485,1530,498,1565,520,1597,531,1627,536,1658,535,1724,532,1761,535,1803,545,1829,558,1854,571,1961,605,2054,628,2053,634,1960,610,1852,576,1826,563,1801,551,1760,541,1724,538,1658,541,1627,541,1595,537,1562,525,1527,502,1514,488,1506,474,1500,445,1495,416,1488,402,1476,389,1453,372,1428,359,1373,341"/>
+<area shape="rect" href="CoordinateSystemTrafo_8h.html" title=" " alt="" coords="1063,621,1280,661"/>
+<area shape="poly" title=" " alt="" coords="1257,341,1234,361,1214,388,1191,445,1178,505,1173,562,1172,607,1167,607,1167,561,1173,504,1186,443,1209,385,1230,357,1254,337"/>
+<area shape="rect" href="Quaternion_8hpp.html" title=" " alt="" coords="1075,709,1273,735"/>
+<area shape="poly" title=" " alt="" coords="1166,334,903,348,579,373,425,390,294,411,197,435,165,448,146,462,118,491,103,509,93,529,89,553,95,582,113,617,148,659,159,665,184,670,266,681,518,697,813,709,1062,716,1062,721,813,714,518,702,265,686,183,676,158,670,144,663,109,620,90,584,84,553,88,527,99,506,114,488,143,458,162,443,195,430,293,406,425,385,578,368,902,343,1166,329"/>
+<area shape="rect" href="ElementGeometry_8h.html" title=" " alt="" coords="1208,460,1415,500"/>
+<area shape="poly" title=" " alt="" coords="1257,341,1241,355,1227,373,1219,392,1222,411,1238,433,1260,450,1256,455,1234,436,1217,413,1214,391,1222,370,1238,351,1254,337"/>
+<area shape="rect" href="Euclid3D_8h.html" title=" " alt="" coords="157,467,380,493"/>
+<area shape="poly" title=" " alt="" coords="1166,340,1148,341,990,352,868,357,746,366,590,389,514,406,438,426,314,465,312,460,436,421,512,401,590,384,745,361,867,351,990,346,1147,336,1166,334"/>
+<area shape="rect" href="Geometry_8h.html" title=" " alt="" coords="5,387,233,412"/>
+<area shape="poly" title=" " alt="" coords="1166,340,1148,341,896,357,700,366,504,374,253,389,248,390,247,384,252,384,504,369,700,360,896,352,1147,336,1166,335"/>
+<area shape="rect" href="Misalignment_8h.html" title=" " alt="" coords="404,467,659,493"/>
+<area shape="poly" title=" " alt="" coords="1166,341,928,367,765,389,710,406,656,425,568,464,566,459,654,420,709,401,764,384,928,362,1165,336"/>
+<area shape="rect" href="PlacedElement_8h.html" title=" " alt="" coords="792,387,1055,412"/>
+<area shape="poly" title=" " alt="" coords="1216,341,994,386,993,381,1215,336"/>
+<area shape="rect" href="PlacementPose_8h.html" title=" " alt="" coords="911,460,1133,500"/>
+<area shape="poly" title=" " alt="" coords="1234,341,1181,361,1126,389,1085,420,1050,452,1047,448,1081,416,1123,384,1179,356,1232,336"/>
+<area shape="rect" href="SupportPlacement_8h.html" title=" " alt="" coords="683,460,886,500"/>
+<area shape="poly" title=" " alt="" coords="1166,341,922,368,823,381,781,389,774,401,771,415,775,446,770,447,766,415,769,399,778,384,822,376,921,363,1165,336"/>
+<area shape="rect" href="BoundingBox_8h.html" title=" " alt="" coords="1592,387,1775,412"/>
+<area shape="poly" title=" " alt="" coords="1338,336,1604,382,1603,387,1337,341"/>
+<area shape="rect" title=" " alt="" coords="1541,467,1615,493"/>
+<area shape="poly" title=" " alt="" coords="1378,331,1453,349,1490,364,1524,385,1540,400,1553,417,1572,453,1567,455,1549,420,1536,403,1520,389,1487,369,1451,354,1377,336"/>
+<area shape="rect" href="GeneralOpalException_8h.html" title=" " alt="" coords="1231,387,1466,412"/>
+<area shape="poly" title=" " alt="" coords="1286,337,1328,375,1324,379,1282,341"/>
+<area shape="poly" title=" " alt="" coords="1377,328,1704,345,1907,361,2109,384,2114,385,2113,390,2108,389,1906,367,1704,350,1377,333"/>
+<area shape="rect" title=" " alt="" coords="603,387,665,412"/>
+<area shape="poly" title=" " alt="" coords="1166,340,884,367,685,389,679,390,678,385,684,384,884,362,1165,335"/>
+<area shape="poly" title=" " alt="" coords="2011,409,2317,469,2316,474,2010,415"/>
+<area shape="rect" title=" " alt="" coords="1908,467,1995,493"/>
+<area shape="poly" title=" " alt="" coords="1954,412,1954,453,1949,453,1949,412"/>
+<area shape="poly" title=" " alt="" coords="1966,410,2019,465,2049,504,2074,547,2087,582,2095,614,2090,615,2082,583,2069,549,2044,507,2015,469,1962,414"/>
+<area shape="rect" title=" " alt="" coords="1387,856,1521,881"/>
+<area shape="poly" title=" " alt="" coords="1239,659,1287,678,1339,704,1389,738,1431,781,1446,811,1454,842,1449,843,1441,813,1426,784,1385,742,1336,708,1285,682,1237,664"/>
+<area shape="rect" href="Matrix_8h.html" title=" " alt="" coords="1265,783,1416,808"/>
+<area shape="poly" title=" " alt="" coords="1215,659,1251,680,1287,707,1312,738,1331,769,1327,772,1308,741,1283,711,1248,685,1212,664"/>
+<area shape="poly" title=" " alt="" coords="1175,661,1176,695,1170,695,1169,662"/>
+<area shape="poly" title=" " alt="" coords="1360,806,1426,846,1423,851,1357,810"/>
+<area shape="rect" title=" " alt="" coords="1294,856,1363,881"/>
+<area shape="poly" title=" " alt="" coords="1341,809,1336,843,1330,842,1336,808"/>
+<area shape="rect" title=" " alt="" coords="2437,856,2500,881"/>
+<area shape="poly" title=" " alt="" coords="1417,799,2424,862,2423,867,1416,804"/>
+<area shape="rect" title=" " alt="" coords="1198,856,1257,881"/>
+<area shape="poly" title=" " alt="" coords="1324,810,1259,851,1256,846,1321,806"/>
+<area shape="poly" title=" " alt="" coords="1202,732,1302,775,1300,780,1200,737"/>
+<area shape="poly" title=" " alt="" coords="1181,734,1221,842,1216,844,1176,736"/>
+<area shape="rect" href="Port_8h.html" title=" " alt="" coords="1208,548,1399,573"/>
+<area shape="poly" title=" " alt="" coords="1312,500,1309,534,1303,534,1307,500"/>
+<area shape="poly" title=" " alt="" coords="1399,569,2054,633,2053,638,1399,574"/>
+<area shape="poly" title=" " alt="" coords="1285,576,1216,617,1214,612,1282,571"/>
+<area shape="rect" href="Rotation3D_8h.html" title=" " alt="" coords="307,548,545,573"/>
+<area shape="poly" title=" " alt="" coords="293,490,392,540,390,544,290,495"/>
+<area shape="rect" href="Vector3D_8h.html" title=" " alt="" coords="158,629,382,654"/>
+<area shape="poly" title=" " alt="" coords="271,493,272,615,267,615,266,493"/>
+<area shape="rect" href="Matrix3D_8h.html" title=" " alt="" coords="405,629,631,654"/>
+<area shape="poly" title=" " alt="" coords="441,571,496,618,492,622,438,576"/>
+<area shape="poly" title=" " alt="" coords="405,576,306,625,304,620,402,571"/>
+<area shape="poly" title=" " alt="" coords="143,410,236,459,233,463,140,415"/>
+<area shape="poly" title=" " alt="" coords="578,490,1084,616,1082,621,577,495"/>
+<area shape="poly" title=" " alt="" coords="980,409,1206,455,1205,460,979,415"/>
+<area shape="poly" title=" " alt="" coords="867,415,602,467,601,462,866,409"/>
+<area shape="poly" title=" " alt="" coords="940,410,989,449,986,453,936,414"/>
+<area shape="poly" title=" " alt="" coords="904,415,831,456,828,451,902,410"/>
+<area shape="poly" title=" " alt="" coords="1042,498,1146,610,1143,613,1038,502"/>
+<area shape="poly" title=" " alt="" coords="831,498,1114,614,1112,619,829,502"/>
+<area shape="poly" title=" " alt="" coords="1775,402,1830,408,1889,419,1950,435,2008,458,2089,491,2157,521,2184,541,2204,566,2217,598,2222,640,2222,723,2228,755,2243,781,2267,803,2296,821,2362,846,2424,859,2423,864,2361,851,2293,826,2263,807,2239,784,2223,757,2217,724,2217,640,2212,600,2200,569,2180,545,2154,526,2087,496,2006,462,1949,440,1888,424,1829,414,1775,407"/>
+<area shape="rect" href="OPALTypes_8h.html" title=" " alt="" coords="1761,467,1864,493"/>
+<area shape="poly" title=" " alt="" coords="1704,410,1783,458,1781,462,1701,414"/>
+<area shape="rect" title=" " alt="" coords="1407,629,1467,654"/>
+<area shape="poly" title=" " alt="" coords="1682,413,1665,456,1649,481,1629,502,1607,516,1585,522,1543,524,1504,527,1485,535,1465,550,1454,564,1447,581,1440,616,1435,615,1442,580,1450,562,1461,546,1482,530,1503,522,1543,519,1584,517,1604,511,1626,498,1645,478,1660,454,1677,411"/>
+<area shape="poly" title=" " alt="" coords="1669,414,1606,461,1603,457,1666,410"/>
+<area shape="rect" href="PartBunchFwd_8h.html" title=" " alt="" coords="1865,548,2059,573"/>
+<area shape="poly" title=" " alt="" coords="1836,490,1929,539,1927,544,1833,495"/>
+<area shape="rect" href="VectorMath_8h.html" title=" " alt="" coords="1475,548,1583,573"/>
+<area shape="poly" title=" " alt="" coords="1772,495,1584,547,1582,542,1771,490"/>
+<area shape="poly" title=" " alt="" coords="1528,575,1512,617,1499,641,1481,663,1451,689,1422,705,1364,722,1336,730,1309,740,1282,757,1255,784,1240,813,1232,843,1227,841,1235,811,1251,781,1278,753,1306,736,1334,724,1363,717,1419,700,1448,684,1477,659,1494,638,1507,614,1523,573"/>
+<area shape="poly" title=" " alt="" coords="1517,576,1462,622,1459,618,1513,571"/>
+<area shape="rect" href="OpalException_8h.html" title=" " alt="" coords="1607,548,1789,573"/>
+<area shape="poly" title=" " alt="" coords="1366,410,1486,498,1554,524,1622,542,1621,548,1553,529,1483,502,1362,414"/>
+<area shape="poly" title=" " alt="" coords="1756,571,2054,629,2053,634,1755,576"/>
+<area shape="rect" href="RFCavity_8h.html" title=" " alt="" coords="2179,159,2361,185"/>
+<area shape="poly" title=" " alt="" coords="2182,102,2245,149,2242,153,2179,106"/>
+<area shape="rect" href="StraightGeometry_8h.html" title=" " alt="" coords="1951,152,2155,192"/>
+<area shape="poly" title=" " alt="" coords="2150,106,2092,146,2089,142,2147,102"/>
+<area shape="rect" href="AcceleratingField_8h.html" title=" " alt="" coords="2385,159,2573,185"/>
+<area shape="poly" title=" " alt="" coords="2211,101,2421,153,2420,159,2210,107"/>
+<area shape="poly" title=" " alt="" coords="2263,186,2228,239,2209,276,2195,314,2193,326,2195,338,2200,351,2207,361,2214,371,2219,386,2221,399,2219,413,2198,474,2170,532,2116,619,2111,616,2166,529,2194,472,2214,411,2216,399,2214,387,2209,374,2202,364,2196,354,2190,339,2188,326,2190,313,2204,273,2223,237,2259,183"/>
+<area shape="rect" href="Component_8h.html" title="Defines the abstract interface for a single beamline component in the accelerator model." alt="" coords="1679,240,1877,265"/>
+<area shape="poly" title=" " alt="" coords="2210,187,2168,195,1871,241,1870,235,2167,189,2209,182"/>
+<area shape="rect" href="AbstractTimeDependence_8h.html" title=" " alt="" coords="2205,313,2482,339"/>
+<area shape="poly" title=" " alt="" coords="2265,186,2251,223,2248,244,2254,264,2274,288,2300,305,2297,309,2270,292,2249,267,2243,244,2245,221,2261,184"/>
+<area shape="rect" href="Physics_8h.html" title=" " alt="" coords="1994,240,2130,265"/>
+<area shape="poly" title=" " alt="" coords="2241,187,2106,238,2104,233,2239,182"/>
+<area shape="rect" href="BiMap_8h.html" title=" " alt="" coords="2506,313,2637,339"/>
+<area shape="poly" title=" " alt="" coords="2273,184,2281,224,2290,245,2304,263,2328,273,2375,286,2493,309,2492,314,2374,291,2326,279,2300,267,2285,248,2275,225,2268,185"/>
+<area shape="poly" title=" " alt="" coords="2278,184,2305,224,2325,246,2349,263,2389,282,2424,294,2457,300,2490,302,2560,302,2601,304,2648,311,2647,316,2600,310,2560,307,2490,307,2457,305,2423,299,2387,287,2346,268,2322,249,2301,227,2274,187"/>
+<area shape="poly" title=" " alt="" coords="1697,268,1367,314,1366,309,1696,263"/>
+<area shape="poly" title=" " alt="" coords="1782,265,1811,453,1806,454,1777,266"/>
+<area shape="poly" title=" " alt="" coords="1792,264,1836,300,1865,320,1896,336,2114,384,2113,390,1894,341,1863,324,1833,304,1789,268"/>
+<area shape="poly" title=" " alt="" coords="2347,338,2356,454,2351,454,2342,339"/>
+<area shape="poly" title=" " alt="" coords="2342,340,2313,411,2290,457,2263,502,2229,541,2189,575,2127,623,2123,619,2186,571,2225,538,2259,498,2286,454,2308,408,2337,338"/>
+<area shape="poly" title=" " alt="" coords="2316,341,2208,384,2206,379,2314,336"/>
+<area shape="poly" title=" " alt="" coords="2523,341,2471,360,2445,373,2421,389,2391,422,2369,456,2365,453,2386,418,2418,385,2442,368,2469,355,2521,336"/>
+<area shape="poly" title=" " alt="" coords="1951,188,231,388,230,382,1950,183"/>
+<area shape="rect" href="ConstEzField_8h.html" title=" " alt="" coords="2359,240,2517,265"/>
+<area shape="poly" title=" " alt="" coords="2476,186,2453,229,2448,227,2471,184"/>
+<area shape="rect" href="OscillatingField_8h.html" title=" " alt="" coords="2542,240,2718,265"/>
+<area shape="poly" title=" " alt="" coords="2503,182,2597,231,2594,236,2500,187"/>
+<area shape="poly" title=" " alt="" coords="2642,264,2675,301,2671,305,2638,267"/>
+<area shape="poly" title=" " alt="" coords="2479,415,2390,463,2387,458,2477,410"/>
+<area shape="poly" title=" " alt="" coords="2492,414,2423,489,2371,535,2313,576,2269,597,2222,614,2140,635,2139,630,2221,609,2267,592,2310,571,2368,531,2419,485,2488,410"/>
+<area shape="poly" title=" " alt="" coords="2498,413,2482,475,2474,517,2471,559,2471,723,2471,842,2466,842,2466,723,2466,559,2469,516,2476,474,2493,411"/>
+<area shape="poly" title=" " alt="" coords="2431,407,2194,426,2046,442,1897,463,1873,467,1872,462,1896,457,2045,437,2194,421,2431,402"/>
+<area shape="rect" href="GSLSpline_8h.html" title=" " alt="" coords="2506,709,2661,735"/>
+<area shape="poly" title=" " alt="" coords="2505,411,2579,695,2574,697,2500,413"/>
+<area shape="rect" href="CubicSpline_8h.html" title=" " alt="" coords="2507,783,2617,808"/>
+<area shape="poly" title=" " alt="" coords="2582,736,2572,770,2567,769,2577,734"/>
+<area shape="rect" href="LinearSpline_8h.html" title=" " alt="" coords="2642,783,2757,808"/>
+<area shape="poly" title=" " alt="" coords="2603,732,2670,773,2667,778,2601,737"/>
+<area shape="poly" title=" " alt="" coords="2549,810,2496,850,2493,845,2545,806"/>
+<area shape="poly" title=" " alt="" coords="2663,811,2514,856,2513,851,2661,805"/>
 </map>
 </div>
 </div>
@@ -276,6 +284,10 @@ Functions</h2></td></tr>
 <tr class="separator:a336ed9a457f11611229f120456d0c37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89ff594e6e7eb5bd9ae47b736e808c3" id="r_ad89ff594e6e7eb5bd9ae47b736e808c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestRFCavity_8cpp.html#ad89ff594e6e7eb5bd9ae47b736e808c3">TEST_F</a> (<a class="el" href="classRFCavityTest.html">RFCavityTest</a>, GetDimensions)</td></tr>
 <tr class="separator:ad89ff594e6e7eb5bd9ae47b736e808c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81becdacc199c1242c01321a45090fb9" id="r_a81becdacc199c1242c01321a45090fb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestRFCavity_8cpp.html#a81becdacc199c1242c01321a45090fb9">TEST_F</a> (<a class="el" href="classRFCavityTest.html">RFCavityTest</a>, BodyExtentCanDifferFromFieldSupport)</td></tr>
+<tr class="separator:a81becdacc199c1242c01321a45090fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3eb81296354ff557a73c217201a9dc7" id="r_ab3eb81296354ff557a73c217201a9dc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestRFCavity_8cpp.html#ab3eb81296354ff557a73c217201a9dc7">TEST_F</a> (<a class="el" href="classRFCavityTest.html">RFCavityTest</a>, ZeroBodyLengthDoesNotFallBackToFieldmapLength)</td></tr>
+<tr class="separator:ab3eb81296354ff557a73c217201a9dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fd6ddb95bace071d15fece4d2d83381" id="r_a2fd6ddb95bace071d15fece4d2d83381"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestRFCavity_8cpp.html#a2fd6ddb95bace071d15fece4d2d83381">TEST_F</a> (<a class="el" href="classRFCavityTest.html">RFCavityTest</a>, ApplyInside)</td></tr>
 <tr class="separator:a2fd6ddb95bace071d15fece4d2d83381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbdba6fd9aed99a40bea9c37b4a5256f" id="r_abbdba6fd9aed99a40bea9c37b4a5256f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TestRFCavity_8cpp.html#abbdba6fd9aed99a40bea9c37b4a5256f">TEST_F</a> (<a class="el" href="classRFCavityTest.html">RFCavityTest</a>, ApplyBefore)</td></tr>
@@ -316,7 +328,7 @@ Coverage</h2>
 </ul>
 </li>
 <li>Geometry<ul>
-<li>getDimensions()</li>
+<li>getFieldExtend()</li>
 </ul>
 </li>
 <li>Spatial behavior<ul>
@@ -362,7 +374,7 @@ Notes</h2>
 <p class="definition">Definition in file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a4e07040963c8e73d76d73bac8d9dcbd9" name="a4e07040963c8e73d76d73bac8d9dcbd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e07040963c8e73d76d73bac8d9dcbd9">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e07040963c8e73d76d73bac8d9dcbd9">&#9670;&#160;</a></span>TEST_F() <span class="overload">[1/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,12 +399,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00277">277</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00313">313</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="abbdba6fd9aed99a40bea9c37b4a5256f" name="abbdba6fd9aed99a40bea9c37b4a5256f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbdba6fd9aed99a40bea9c37b4a5256f">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abbdba6fd9aed99a40bea9c37b4a5256f">&#9670;&#160;</a></span>TEST_F() <span class="overload">[2/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,12 +429,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00259">259</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00295">295</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a2fd6ddb95bace071d15fece4d2d83381" name="a2fd6ddb95bace071d15fece4d2d83381"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fd6ddb95bace071d15fece4d2d83381">&#9670;&#160;</a></span>TEST_F() <span class="overload">[3/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd6ddb95bace071d15fece4d2d83381">&#9670;&#160;</a></span>TEST_F() <span class="overload">[3/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,12 +459,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00240">240</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00276">276</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="aebbf061a235453ddf1c2ab7aa8fab148" name="aebbf061a235453ddf1c2ab7aa8fab148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebbf061a235453ddf1c2ab7aa8fab148">&#9670;&#160;</a></span>TEST_F() <span class="overload">[4/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebbf061a235453ddf1c2ab7aa8fab148">&#9670;&#160;</a></span>TEST_F() <span class="overload">[4/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,12 +489,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00340">340</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00376">376</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a816c2eb242f9e8acc54576f9dd2ff4a5" name="a816c2eb242f9e8acc54576f9dd2ff4a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a816c2eb242f9e8acc54576f9dd2ff4a5">&#9670;&#160;</a></span>TEST_F() <span class="overload">[5/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a816c2eb242f9e8acc54576f9dd2ff4a5">&#9670;&#160;</a></span>TEST_F() <span class="overload">[5/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,12 +519,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00322">322</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00358">358</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ab98ccb395acffa3fbf2c357db462785a" name="ab98ccb395acffa3fbf2c357db462785a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab98ccb395acffa3fbf2c357db462785a">&#9670;&#160;</a></span>TEST_F() <span class="overload">[6/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98ccb395acffa3fbf2c357db462785a">&#9670;&#160;</a></span>TEST_F() <span class="overload">[6/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,12 +549,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00300">300</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00336">336</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a94379844441ea5ce84156f7580f6b576" name="a94379844441ea5ce84156f7580f6b576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94379844441ea5ce84156f7580f6b576">&#9670;&#160;</a></span>TEST_F() <span class="overload">[7/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a94379844441ea5ce84156f7580f6b576">&#9670;&#160;</a></span>TEST_F() <span class="overload">[7/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,12 +579,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00391">391</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00427">427</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a6a61ac8f932315a770e88368becd29c4" name="a6a61ac8f932315a770e88368becd29c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a61ac8f932315a770e88368becd29c4">&#9670;&#160;</a></span>TEST_F() <span class="overload">[8/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a61ac8f932315a770e88368becd29c4">&#9670;&#160;</a></span>TEST_F() <span class="overload">[8/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -597,12 +609,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00437">437</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00473">473</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a266e86eded30eb469e7b4c23fae532f7" name="a266e86eded30eb469e7b4c23fae532f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a266e86eded30eb469e7b4c23fae532f7">&#9670;&#160;</a></span>TEST_F() <span class="overload">[9/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a266e86eded30eb469e7b4c23fae532f7">&#9670;&#160;</a></span>TEST_F() <span class="overload">[9/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,12 +639,42 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00211">211</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00209">209</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a81becdacc199c1242c01321a45090fb9" name="a81becdacc199c1242c01321a45090fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81becdacc199c1242c01321a45090fb9">&#9670;&#160;</a></span>TEST_F() <span class="overload">[10/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRFCavityTest.html">RFCavityTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BodyExtentCanDifferFromFieldSupport&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00233">233</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a408ef867c1349229f0d08fc3fb83b4f7" name="a408ef867c1349229f0d08fc3fb83b4f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a408ef867c1349229f0d08fc3fb83b4f7">&#9670;&#160;</a></span>TEST_F() <span class="overload">[10/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a408ef867c1349229f0d08fc3fb83b4f7">&#9670;&#160;</a></span>TEST_F() <span class="overload">[11/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,12 +699,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00449">449</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00485">485</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ad89ff594e6e7eb5bd9ae47b736e808c3" name="ad89ff594e6e7eb5bd9ae47b736e808c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad89ff594e6e7eb5bd9ae47b736e808c3">&#9670;&#160;</a></span>TEST_F() <span class="overload">[11/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89ff594e6e7eb5bd9ae47b736e808c3">&#9670;&#160;</a></span>TEST_F() <span class="overload">[12/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,12 +729,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00228">228</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00224">224</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a336ed9a457f11611229f120456d0c37f" name="a336ed9a457f11611229f120456d0c37f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a336ed9a457f11611229f120456d0c37f">&#9670;&#160;</a></span>TEST_F() <span class="overload">[12/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a336ed9a457f11611229f120456d0c37f">&#9670;&#160;</a></span>TEST_F() <span class="overload">[13/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,12 +759,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00215">215</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00211">211</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a177389023d6371d2ebdeda33ec32f5f5" name="a177389023d6371d2ebdeda33ec32f5f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a177389023d6371d2ebdeda33ec32f5f5">&#9670;&#160;</a></span>TEST_F() <span class="overload">[13/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a177389023d6371d2ebdeda33ec32f5f5">&#9670;&#160;</a></span>TEST_F() <span class="overload">[14/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -754,7 +796,7 @@ Notes</h2>
 </div>
 </div>
 <a id="a5867d38dc300dd748d7701dd9393691e" name="a5867d38dc300dd748d7701dd9393691e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5867d38dc300dd748d7701dd9393691e">&#9670;&#160;</a></span>TEST_F() <span class="overload">[14/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5867d38dc300dd748d7701dd9393691e">&#9670;&#160;</a></span>TEST_F() <span class="overload">[15/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -779,12 +821,12 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00363">363</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00399">399</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a95d051746b68bfa1008b1c71be4fd237" name="a95d051746b68bfa1008b1c71be4fd237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95d051746b68bfa1008b1c71be4fd237">&#9670;&#160;</a></span>TEST_F() <span class="overload">[15/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d051746b68bfa1008b1c71be4fd237">&#9670;&#160;</a></span>TEST_F() <span class="overload">[16/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -809,7 +851,37 @@ Notes</h2>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00413">413</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00449">449</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab3eb81296354ff557a73c217201a9dc7" name="ab3eb81296354ff557a73c217201a9dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3eb81296354ff557a73c217201a9dc7">&#9670;&#160;</a></span>TEST_F() <span class="overload">[17/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRFCavityTest.html">RFCavityTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ZeroBodyLengthDoesNotFallBackToFieldmapLength&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TestRFCavity_8cpp_source.html#l00257">257</a> of file <a class="el" href="TestRFCavity_8cpp_source.html">TestRFCavity.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +891,7 @@ Notes</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7c608ee7a349a990cecd74a7d13d4b1.html">unit_tests</a></li><li class="navelem"><a class="el" href="dir_eb1670fe347e3240450591a7455d34d7.html">AbsBeamline</a></li><li class="navelem"><a class="el" href="TestRFCavity_8cpp.html">TestRFCavity.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:24 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

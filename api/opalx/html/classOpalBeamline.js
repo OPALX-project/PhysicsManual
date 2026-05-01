@@ -1,10 +1,12 @@
 var classOpalBeamline =
 [
+    [ "PlacementAssembly", "classOpalBeamline.html#a6720bcb87f3e76a2369626defb37a2b6", null ],
     [ "OpalBeamline", "classOpalBeamline.html#a0f468c6a89b07c3d8daa5692682b37f7", null ],
     [ "OpalBeamline", "classOpalBeamline.html#afc05504651f53f78046128bbf65f4dea", null ],
     [ "~OpalBeamline", "classOpalBeamline.html#a9cb93f29ea46ae506380b5ed98b390a1", null ],
     [ "activateElements", "classOpalBeamline.html#ae7037b05c44a8187396e6931311477af", null ],
     [ "apply", "classOpalBeamline.html#abc9b2702183f9b4d942ad0e27046fc61", null ],
+    [ "compileCompatibilityPlacement", "classOpalBeamline.html#aaa234ca01785adaa15c57f509b36f599", null ],
     [ "compute3DLattice", "classOpalBeamline.html#a9ebfbf31cfc27d5cb8f59a6f5cfd0d46", null ],
     [ "getBoundaryGeometry", "classOpalBeamline.html#adbfd019651dcda1f05d966f1acad3c0a", null ],
     [ "getCSTrafoLab2Local", "classOpalBeamline.html#ad5ebc8048ed102a8b648f972cbc32d8b", null ],
@@ -16,7 +18,10 @@ var classOpalBeamline =
     [ "getFieldAt", "classOpalBeamline.html#a6453107239dd4e77d978014f6a6d6a3a", null ],
     [ "getFieldAt", "classOpalBeamline.html#a10ca61a76e2ebf9735056442a9734097", null ],
     [ "getMisalignment", "classOpalBeamline.html#a333087680f227b7459333949eb89c7b5", null ],
+    [ "getNominalEntryTransform", "classOpalBeamline.html#a8664f0e631eed4054fa4ccb1ba975485", null ],
+    [ "getNominalExitTransform", "classOpalBeamline.html#a7874aca1da3cabbb2b5e096bc4a87cd2", null ],
     [ "getParticleMatterInteractionHandler", "classOpalBeamline.html#a63e9c78ab1d3dd7503723bca22fbcd90", null ],
+    [ "getPlacedElement", "classOpalBeamline.html#a8698f924d17bcda4c2c87c7ea46c9d0d", null ],
     [ "getStart", "classOpalBeamline.html#acc2232d4de5fc398298b8a53b992f758", null ],
     [ "merge", "classOpalBeamline.html#a4245330e018042266ae876b2b254b181", null ],
     [ "positionElementRelative", "classOpalBeamline.html#a255ca6d4b47240c33538cf87a9343a5b", null ],
@@ -28,6 +33,8 @@ var classOpalBeamline =
     [ "rotateToLocalCS", "classOpalBeamline.html#a108d0e416acdf14c3234d6148af88fd4", null ],
     [ "save3DInput", "classOpalBeamline.html#ab64b48e0477e4e0c955c269c8b9964a3", null ],
     [ "save3DLattice", "classOpalBeamline.html#ac595b9f0a6db121b82620185cbc6152b", null ],
+    [ "setNominalPlacement", "classOpalBeamline.html#aa8600b9c63bc1e6c5d3a73521671fc9b", null ],
+    [ "storePlacedElement", "classOpalBeamline.html#ab207d438622a6b5fed4ba184022961d6", null ],
     [ "swap", "classOpalBeamline.html#aff8eecbffaff5a4c4645c96a7434011d", null ],
     [ "switchElements", "classOpalBeamline.html#aa8d61bb17057b76bfcbef886663bdca7", null ],
     [ "switchElementsOff", "classOpalBeamline.html#aab09442fbc5eaef9904948ac28105fa2", null ],
@@ -37,7 +44,9 @@ var classOpalBeamline =
     [ "transformToLocalCS", "classOpalBeamline.html#aa20df7a26ab6ff1c3e866ff9a77de23f", null ],
     [ "visit", "classOpalBeamline.html#a065c88e97a171427a9e2965833238718", null ],
     [ "visit", "classOpalBeamline.html#ad629df0e0136262172b883d1bd66d192", null ],
+    [ "compatibilityPlacementCompiled_m", "classOpalBeamline.html#a59fe468aff191146aae8fc60f3021540", null ],
     [ "coordTransformationTo_m", "classOpalBeamline.html#a807bcdd4633c78770e3c28c6930d6c00", null ],
     [ "elements_m", "classOpalBeamline.html#ac407cc750ad22eb069ebc1b171ff8cc6", null ],
+    [ "placementAssembly_m", "classOpalBeamline.html#ae8b6b3f075e85fff98db3fcd9a7dd379", null ],
     [ "prepared_m", "classOpalBeamline.html#ae45d8aff3fd2416ee7ae5262c5fc88e1", null ]
 ];

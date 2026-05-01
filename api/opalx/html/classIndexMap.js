@@ -15,14 +15,18 @@ var classIndexMap =
     [ "IndexMap", "classIndexMap.html#a92fdae638c61ea7894c406386c2e32ef", null ],
     [ "add", "classIndexMap.html#a3ca89eeab766245d12fa3cd51414a8c7", null ],
     [ "getRange", "classIndexMap.html#a8a3d22c5767ee2288aafc1f063cb40be", null ],
+    [ "getReferencePathModel", "classIndexMap.html#aab6cd2820854ac2457801ff3e158e061", null ],
     [ "getTouchingElements", "classIndexMap.html#a5bc1a40f097999a9f78b42105e7e296e", null ],
     [ "numElements", "classIndexMap.html#a3d8085d3155ed5425aadac285310f056", null ],
     [ "print", "classIndexMap.html#ae2f44c429fde4a987c2e28beafa55ca6", null ],
     [ "query", "classIndexMap.html#affb26f1006e6dd9852c87ca3b134a170", null ],
+    [ "rebuildReferencePathModel", "classIndexMap.html#a5dfa42281a323a7aa1c357d9c9b18cdb", null ],
     [ "saveSDDS", "classIndexMap.html#acbda3af54b28804d3b605734bb06670f", null ],
     [ "size", "classIndexMap.html#a350d14014d460db284d5414a73ff36c7", null ],
     [ "tidyUp", "classIndexMap.html#a3fbc13ebf0584f938d0d402faf7b7205", null ],
     [ "mapElement2Range_m", "classIndexMap.html#a63a5ee957743ade615e027768a0e81d0", null ],
     [ "mapRange2Element_m", "classIndexMap.html#a8a9b970127b7320d20b6ea8481b09fa5", null ],
+    [ "referencePathModel_m", "classIndexMap.html#a4fb917204024a0cace93b9ea9c128e40", null ],
+    [ "referencePathModelDirty_m", "classIndexMap.html#a376fb273b9b5fc89d6487acd337008b4", null ],
     [ "totalPathLength_m", "classIndexMap.html#a2e9490cc68a7ef907dea800c762b8660", null ]
 ];

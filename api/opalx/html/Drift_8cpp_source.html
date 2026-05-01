@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (99cf8df077ee)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -129,116 +129,71 @@ $(document).ready(function(){initNavTree('Drift_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="BeamlineVisitor_8h.html">AbsBeamline/BeamlineVisitor.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="PartBunch_8h.html">PartBunch/PartBunch.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">extern</span> Inform *<a class="code hl_variable" href="Drift_8cpp.html#af2090682b58787f3464d7bf5b07b3ea8">gmsg</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">extern</span> Inform* <a class="code hl_variable" href="Drift_8cpp.html#af2090682b58787f3464d7bf5b07b3ea8">gmsg</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Class Drift</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">   30</a></span><a class="code hl_function" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a>():</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="classDrift.html">Drift</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{ }</div>
-</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">   30</a></span><a class="code hl_function" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a>() : <a class="code hl_class" href="classDrift.html">Drift</a>(<span class="stringliteral">&quot;&quot;</span>) {}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classDrift.html#a8084c6f7a4b7ab0a3ba4407bb4916cc3">   32</a></span><a class="code hl_function" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDrift.html">Drift</a>&amp; right) : <a class="code hl_class" href="classComponent.html">Component</a>(right), nSlices_m(right.nSlices_m) {}</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classDrift.html#a8084c6f7a4b7ab0a3ba4407bb4916cc3">   35</a></span><a class="code hl_function" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDrift.html">Drift</a> &amp;right):</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classComponent.html">Component</a>(right),</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    nSlices_m(right.nSlices_m)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{ }</div>
-</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classDrift.html#a9ce227c344ef452f877c00d1567d94f1">   34</a></span><a class="code hl_function" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a>(<span class="keyword">const</span> std::string&amp; name) : <a class="code hl_class" href="classComponent.html">Component</a>(name), nSlices_m(1) {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classDrift.html#a39e7aad304d2b70e94dfb250c8496dc2">   36</a></span><a class="code hl_function" href="classDrift.html#a39e7aad304d2b70e94dfb250c8496dc2">Drift::~Drift</a>() {}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classDrift.html#ad68363039b28dfb4dd36f7e1f6f76cbf">   38</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#ad68363039b28dfb4dd36f7e1f6f76cbf">Drift::accept</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a>&amp; visitor)<span class="keyword"> const </span>{ visitor.<a class="code hl_function" href="classBeamlineVisitor.html#abcc4a27e481ee9112fdc598ed2019f25">visitDrift</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classDrift.html#a9ce227c344ef452f877c00d1567d94f1">   41</a></span><a class="code hl_function" href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a>(<span class="keyword">const</span> std::string &amp;name):</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classComponent.html">Component</a>(name),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    nSlices_m(1)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{ }</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classDrift.html#a9dde2c0ccbadd6f5e70010acfcabd45e">   40</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#a9dde2c0ccbadd6f5e70010acfcabd45e">Drift::initialise</a>(<a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>* bunch, <span class="keywordtype">double</span>&amp; startField, <span class="keywordtype">double</span>&amp; endField) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    endField       = startField + <a class="code hl_function" href="classElementBase.html#a1b412456edcf01147abada7721605101">getElementLength</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_variable" href="classComponent.html#ab6f80182b67361610cff3809cb03ca0d">RefPartBunch_m</a> = bunch;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_variable" href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">startField_m</a>   = startField;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classDrift.html#a39e7aad304d2b70e94dfb250c8496dc2">   47</a></span><a class="code hl_function" href="classDrift.html#a39e7aad304d2b70e94dfb250c8496dc2">Drift::~Drift</a>()</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{ }</div>
-</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classDrift.html#ad68363039b28dfb4dd36f7e1f6f76cbf">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#ad68363039b28dfb4dd36f7e1f6f76cbf">Drift::accept</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a> &amp;visitor)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    visitor.<a class="code hl_function" href="classBeamlineVisitor.html#abcc4a27e481ee9112fdc598ed2019f25">visitDrift</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
-</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classDrift.html#a9dde2c0ccbadd6f5e70010acfcabd45e">   55</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#a9dde2c0ccbadd6f5e70010acfcabd45e">Drift::initialise</a>(<a class="code hl_class" href="classPartBunch.html">PartBunch_t</a> *bunch, <span class="keywordtype">double</span> &amp;startField, <span class="keywordtype">double</span> &amp;endField) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    endField = startField + <a class="code hl_function" href="classElementBase.html#a1b412456edcf01147abada7721605101">getElementLength</a>();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_variable" href="classComponent.html#ab6f80182b67361610cff3809cb03ca0d">RefPartBunch_m</a> = bunch;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_variable" href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">startField_m</a> = startField;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// set the number of slices for map tracking</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classDrift.html#ac5e5e3aa061b4193f91114c7e0ec55f5">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#ac5e5e3aa061b4193f91114c7e0ec55f5">Drift::setNSlices</a>(<span class="keyword">const</span> std::size_t&amp; nSlices) { <a class="code hl_variable" href="classDrift.html#abbd7acae32a72b096f1109fe0cfd589c">nSlices_m</a> = nSlices; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// get the number of slices for map tracking</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classDrift.html#ae7e3921a32de1ca999fb5219064fc73a">   50</a></span>std::size_t <a class="code hl_function" href="classDrift.html#ae7e3921a32de1ca999fb5219064fc73a">Drift::getNSlices</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classDrift.html#abbd7acae32a72b096f1109fe0cfd589c">nSlices_m</a>; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classDrift.html#a5184103c4daaa2eb90b4d2cdf1e7b096">   52</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#a5184103c4daaa2eb90b4d2cdf1e7b096">Drift::finalise</a>() {}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classDrift.html#a35c593ae08d5f8a551a2aa5de9e2811a">   54</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classDrift.html#a35c593ae08d5f8a551a2aa5de9e2811a">Drift::bends</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classDrift.html#a98f60aa9d92f920b95dae9711cb4e8bf">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#a98f60aa9d92f920b95dae9711cb4e8bf">Drift::getFieldExtend</a>(<span class="keywordtype">double</span>&amp; zBegin, <span class="keywordtype">double</span>&amp; zEnd)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    zBegin = <a class="code hl_variable" href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">startField_m</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    zEnd   = <a class="code hl_variable" href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">startField_m</a> + <a class="code hl_function" href="classElementBase.html#a1b412456edcf01147abada7721605101">getElementLength</a>();</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//set the number of slices for map tracking</span></div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classDrift.html#ac5e5e3aa061b4193f91114c7e0ec55f5">   63</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#ac5e5e3aa061b4193f91114c7e0ec55f5">Drift::setNSlices</a>(<span class="keyword">const</span> std::size_t&amp; nSlices) { </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_variable" href="classDrift.html#abbd7acae32a72b096f1109fe0cfd589c">nSlices_m</a> = nSlices;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
-</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//get the number of slices for map tracking</span></div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classDrift.html#ae7e3921a32de1ca999fb5219064fc73a">   68</a></span>std::size_t <a class="code hl_function" href="classDrift.html#ae7e3921a32de1ca999fb5219064fc73a">Drift::getNSlices</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classDrift.html#abbd7acae32a72b096f1109fe0cfd589c">nSlices_m</a>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
-</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classDrift.html#a5184103c4daaa2eb90b4d2cdf1e7b096">   72</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#a5184103c4daaa2eb90b4d2cdf1e7b096">Drift::finalise</a>() {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
-</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classDrift.html#a35c593ae08d5f8a551a2aa5de9e2811a">   75</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classDrift.html#a35c593ae08d5f8a551a2aa5de9e2811a">Drift::bends</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
-</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classDrift.html#ab3e413af2c3cdedf715e0dbac60cf822">   79</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDrift.html#ab3e413af2c3cdedf715e0dbac60cf822">Drift::getDimensions</a>(<span class="keywordtype">double</span> &amp;zBegin, <span class="keywordtype">double</span> &amp;zEnd)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    zBegin = <a class="code hl_variable" href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">startField_m</a>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    zEnd = <a class="code hl_variable" href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">startField_m</a> + <a class="code hl_function" href="classElementBase.html#a1b412456edcf01147abada7721605101">getElementLength</a>();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
-</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classDrift.html#ace25c47e47dd4afc3b783992e0d6ac92">   84</a></span><a class="code hl_enumeration" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a> <a class="code hl_function" href="classDrift.html#ace25c47e47dd4afc3b783992e0d6ac92">Drift::getType</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a4f050d29b83236482979e9d1a38c6bbb">ElementType::DRIFT</a>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
-</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classDrift.html#ace25c47e47dd4afc3b783992e0d6ac92">   61</a></span><a class="code hl_enumeration" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a> <a class="code hl_function" href="classDrift.html#ace25c47e47dd4afc3b783992e0d6ac92">Drift::getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a4f050d29b83236482979e9d1a38c6bbb">ElementType::DRIFT</a>; }</div>
 <div class="ttc" id="aBeamlineVisitor_8h_html"><div class="ttname"><a href="BeamlineVisitor_8h.html">BeamlineVisitor.h</a></div></div>
 <div class="ttc" id="aDrift_8cpp_html_af2090682b58787f3464d7bf5b07b3ea8"><div class="ttname"><a href="Drift_8cpp.html#af2090682b58787f3464d7bf5b07b3ea8">gmsg</a></div><div class="ttdeci">Inform * gmsg</div><div class="ttdef"><b>Definition</b> <a href="changes_8cpp_source.html#l00007">changes.cpp:7</a></div></div>
 <div class="ttc" id="aDrift_8h_html"><div class="ttname"><a href="Drift_8h.html">Drift.h</a></div></div>
-<div class="ttc" id="aElementBase_8h_html_a1d3efb4a54c06179c8699d81435593c8"><div class="ttname"><a href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a></div><div class="ttdeci">ElementType</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00088">ElementBase.h:88</a></div></div>
+<div class="ttc" id="aElementBase_8h_html_a1d3efb4a54c06179c8699d81435593c8"><div class="ttname"><a href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a></div><div class="ttdeci">ElementType</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00093">ElementBase.h:93</a></div></div>
 <div class="ttc" id="aElementBase_8h_html_a1d3efb4a54c06179c8699d81435593c8a4f050d29b83236482979e9d1a38c6bbb"><div class="ttname"><a href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a4f050d29b83236482979e9d1a38c6bbb">ElementType::DRIFT</a></div><div class="ttdeci">@ DRIFT</div></div>
 <div class="ttc" id="aPartBunch_8h_html"><div class="ttname"><a href="PartBunch_8h.html">PartBunch.h</a></div><div class="ttdoc">Template PIC bunch: IPPL PicManager, shared field mesh/solver, and multiple particle containers.</div></div>
-<div class="ttc" id="aclassBeamlineVisitor_html"><div class="ttname"><a href="classBeamlineVisitor.html">BeamlineVisitor</a></div><div class="ttdef"><b>Definition</b> <a href="BeamlineVisitor_8h_source.html#l00060">BeamlineVisitor.h:60</a></div></div>
+<div class="ttc" id="aclassBeamlineVisitor_html"><div class="ttname"><a href="classBeamlineVisitor.html">BeamlineVisitor</a></div><div class="ttdef"><b>Definition</b> <a href="BeamlineVisitor_8h_source.html#l00063">BeamlineVisitor.h:63</a></div></div>
 <div class="ttc" id="aclassBeamlineVisitor_html_abcc4a27e481ee9112fdc598ed2019f25"><div class="ttname"><a href="classBeamlineVisitor.html#abcc4a27e481ee9112fdc598ed2019f25">BeamlineVisitor::visitDrift</a></div><div class="ttdeci">virtual void visitDrift(const Drift &amp;)=0</div><div class="ttdoc">Apply the algorithm to a drift space.</div></div>
 <div class="ttc" id="aclassComponent_html"><div class="ttname"><a href="classComponent.html">Component</a></div><div class="ttdef"><b>Definition</b> <a href="Component_8h_source.html#l00033">Component.h:33</a></div></div>
-<div class="ttc" id="aclassComponent_html_ab6f80182b67361610cff3809cb03ca0d"><div class="ttname"><a href="classComponent.html#ab6f80182b67361610cff3809cb03ca0d">Component::RefPartBunch_m</a></div><div class="ttdeci">PartBunch_t * RefPartBunch_m</div><div class="ttdef"><b>Definition</b> <a href="Component_8h_source.html#l00237">Component.h:237</a></div></div>
+<div class="ttc" id="aclassComponent_html_ab6f80182b67361610cff3809cb03ca0d"><div class="ttname"><a href="classComponent.html#ab6f80182b67361610cff3809cb03ca0d">Component::RefPartBunch_m</a></div><div class="ttdeci">PartBunch_t * RefPartBunch_m</div><div class="ttdef"><b>Definition</b> <a href="Component_8h_source.html#l00225">Component.h:225</a></div></div>
 <div class="ttc" id="aclassDrift_html"><div class="ttname"><a href="classDrift.html">Drift</a></div><div class="ttdoc">Interface for drift space.</div><div class="ttdef"><b>Definition</b> <a href="Drift_8h_source.html#l00031">Drift.h:31</a></div></div>
-<div class="ttc" id="aclassDrift_html_a35c593ae08d5f8a551a2aa5de9e2811a"><div class="ttname"><a href="classDrift.html#a35c593ae08d5f8a551a2aa5de9e2811a">Drift::bends</a></div><div class="ttdeci">virtual bool bends() const override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00075">Drift.cpp:75</a></div></div>
-<div class="ttc" id="aclassDrift_html_a39e7aad304d2b70e94dfb250c8496dc2"><div class="ttname"><a href="classDrift.html#a39e7aad304d2b70e94dfb250c8496dc2">Drift::~Drift</a></div><div class="ttdeci">virtual ~Drift()</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00047">Drift.cpp:47</a></div></div>
-<div class="ttc" id="aclassDrift_html_a5184103c4daaa2eb90b4d2cdf1e7b096"><div class="ttname"><a href="classDrift.html#a5184103c4daaa2eb90b4d2cdf1e7b096">Drift::finalise</a></div><div class="ttdeci">virtual void finalise() override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00072">Drift.cpp:72</a></div></div>
+<div class="ttc" id="aclassDrift_html_a35c593ae08d5f8a551a2aa5de9e2811a"><div class="ttname"><a href="classDrift.html#a35c593ae08d5f8a551a2aa5de9e2811a">Drift::bends</a></div><div class="ttdeci">virtual bool bends() const override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00054">Drift.cpp:54</a></div></div>
+<div class="ttc" id="aclassDrift_html_a39e7aad304d2b70e94dfb250c8496dc2"><div class="ttname"><a href="classDrift.html#a39e7aad304d2b70e94dfb250c8496dc2">Drift::~Drift</a></div><div class="ttdeci">virtual ~Drift()</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00036">Drift.cpp:36</a></div></div>
+<div class="ttc" id="aclassDrift_html_a5184103c4daaa2eb90b4d2cdf1e7b096"><div class="ttname"><a href="classDrift.html#a5184103c4daaa2eb90b4d2cdf1e7b096">Drift::finalise</a></div><div class="ttdeci">virtual void finalise() override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00052">Drift.cpp:52</a></div></div>
 <div class="ttc" id="aclassDrift_html_a864e3923bd44e9da2368ca53335055da"><div class="ttname"><a href="classDrift.html#a864e3923bd44e9da2368ca53335055da">Drift::Drift</a></div><div class="ttdeci">Drift()</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00030">Drift.cpp:30</a></div></div>
-<div class="ttc" id="aclassDrift_html_a9dde2c0ccbadd6f5e70010acfcabd45e"><div class="ttname"><a href="classDrift.html#a9dde2c0ccbadd6f5e70010acfcabd45e">Drift::initialise</a></div><div class="ttdeci">virtual void initialise(PartBunch_t *bunch, double &amp;startField, double &amp;endField) override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00055">Drift.cpp:55</a></div></div>
-<div class="ttc" id="aclassDrift_html_ab3e413af2c3cdedf715e0dbac60cf822"><div class="ttname"><a href="classDrift.html#ab3e413af2c3cdedf715e0dbac60cf822">Drift::getDimensions</a></div><div class="ttdeci">virtual void getDimensions(double &amp;zBegin, double &amp;zEnd) const override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00079">Drift.cpp:79</a></div></div>
+<div class="ttc" id="aclassDrift_html_a98f60aa9d92f920b95dae9711cb4e8bf"><div class="ttname"><a href="classDrift.html#a98f60aa9d92f920b95dae9711cb4e8bf">Drift::getFieldExtend</a></div><div class="ttdeci">virtual void getFieldExtend(double &amp;zBegin, double &amp;zEnd) const override</div><div class="ttdoc">Return the field-support extent of the component.</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00056">Drift.cpp:56</a></div></div>
+<div class="ttc" id="aclassDrift_html_a9dde2c0ccbadd6f5e70010acfcabd45e"><div class="ttname"><a href="classDrift.html#a9dde2c0ccbadd6f5e70010acfcabd45e">Drift::initialise</a></div><div class="ttdeci">virtual void initialise(PartBunch_t *bunch, double &amp;startField, double &amp;endField) override</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00040">Drift.cpp:40</a></div></div>
 <div class="ttc" id="aclassDrift_html_abbd7acae32a72b096f1109fe0cfd589c"><div class="ttname"><a href="classDrift.html#abbd7acae32a72b096f1109fe0cfd589c">Drift::nSlices_m</a></div><div class="ttdeci">std::size_t nSlices_m</div><div class="ttdef"><b>Definition</b> <a href="Drift_8h_source.html#l00063">Drift.h:63</a></div></div>
-<div class="ttc" id="aclassDrift_html_ac5e5e3aa061b4193f91114c7e0ec55f5"><div class="ttname"><a href="classDrift.html#ac5e5e3aa061b4193f91114c7e0ec55f5">Drift::setNSlices</a></div><div class="ttdeci">void setNSlices(const std::size_t &amp;nSlices)</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00063">Drift.cpp:63</a></div></div>
-<div class="ttc" id="aclassDrift_html_ace25c47e47dd4afc3b783992e0d6ac92"><div class="ttname"><a href="classDrift.html#ace25c47e47dd4afc3b783992e0d6ac92">Drift::getType</a></div><div class="ttdeci">virtual ElementType getType() const override</div><div class="ttdoc">Get element type std::string.</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00084">Drift.cpp:84</a></div></div>
-<div class="ttc" id="aclassDrift_html_ad68363039b28dfb4dd36f7e1f6f76cbf"><div class="ttname"><a href="classDrift.html#ad68363039b28dfb4dd36f7e1f6f76cbf">Drift::accept</a></div><div class="ttdeci">virtual void accept(BeamlineVisitor &amp;) const override</div><div class="ttdoc">Apply visitor to Drift.</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00051">Drift.cpp:51</a></div></div>
+<div class="ttc" id="aclassDrift_html_ac5e5e3aa061b4193f91114c7e0ec55f5"><div class="ttname"><a href="classDrift.html#ac5e5e3aa061b4193f91114c7e0ec55f5">Drift::setNSlices</a></div><div class="ttdeci">void setNSlices(const std::size_t &amp;nSlices)</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00047">Drift.cpp:47</a></div></div>
+<div class="ttc" id="aclassDrift_html_ace25c47e47dd4afc3b783992e0d6ac92"><div class="ttname"><a href="classDrift.html#ace25c47e47dd4afc3b783992e0d6ac92">Drift::getType</a></div><div class="ttdeci">virtual ElementType getType() const override</div><div class="ttdoc">Get element type std::string.</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00061">Drift.cpp:61</a></div></div>
+<div class="ttc" id="aclassDrift_html_ad68363039b28dfb4dd36f7e1f6f76cbf"><div class="ttname"><a href="classDrift.html#ad68363039b28dfb4dd36f7e1f6f76cbf">Drift::accept</a></div><div class="ttdeci">virtual void accept(BeamlineVisitor &amp;) const override</div><div class="ttdoc">Apply visitor to Drift.</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00038">Drift.cpp:38</a></div></div>
 <div class="ttc" id="aclassDrift_html_ae1dae94aa16e7c2cc8304109b64fe684"><div class="ttname"><a href="classDrift.html#ae1dae94aa16e7c2cc8304109b64fe684">Drift::startField_m</a></div><div class="ttdeci">double startField_m</div><div class="ttdef"><b>Definition</b> <a href="Drift_8h_source.html#l00062">Drift.h:62</a></div></div>
-<div class="ttc" id="aclassDrift_html_ae7e3921a32de1ca999fb5219064fc73a"><div class="ttname"><a href="classDrift.html#ae7e3921a32de1ca999fb5219064fc73a">Drift::getNSlices</a></div><div class="ttdeci">std::size_t getNSlices() const</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00068">Drift.cpp:68</a></div></div>
-<div class="ttc" id="aclassElementBase_html_a1b412456edcf01147abada7721605101"><div class="ttname"><a href="classElementBase.html#a1b412456edcf01147abada7721605101">ElementBase::getElementLength</a></div><div class="ttdeci">virtual double getElementLength() const</div><div class="ttdoc">Get design length.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00398">ElementBase.h:398</a></div></div>
+<div class="ttc" id="aclassDrift_html_ae7e3921a32de1ca999fb5219064fc73a"><div class="ttname"><a href="classDrift.html#ae7e3921a32de1ca999fb5219064fc73a">Drift::getNSlices</a></div><div class="ttdeci">std::size_t getNSlices() const</div><div class="ttdef"><b>Definition</b> <a href="Drift_8cpp_source.html#l00050">Drift.cpp:50</a></div></div>
+<div class="ttc" id="aclassElementBase_html_a1b412456edcf01147abada7721605101"><div class="ttname"><a href="classElementBase.html#a1b412456edcf01147abada7721605101">ElementBase::getElementLength</a></div><div class="ttdeci">virtual double getElementLength() const</div><div class="ttdoc">Get design length.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00479">ElementBase.h:479</a></div></div>
 <div class="ttc" id="aclassPartBunch_html"><div class="ttname"><a href="classPartBunch.html">PartBunch</a></div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00052">PartBunch.h:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -246,7 +201,7 @@ $(document).ready(function(){initNavTree('Drift_8cpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_575fab2fe96de055b04fd52b61b75f74.html">AbsBeamline</a></li><li class="navelem"><a class="el" href="Drift_8cpp.html">Drift.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 29 2026 18:31:23 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
