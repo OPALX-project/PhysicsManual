@@ -1,0 +1,13 @@
+::: {.content-visible when-format="html"}
+![Transform chain between the floor frame $K$, the element-local frame $K'_i$, the comoving Frenet-Serret frame $K_s$, and the boosted frame $K_s^\star$. The solid arrows represent the forward chain through placement pose (`CoordinateSystemTrafo`), reference-path transform, and Lorentz boost. The dashed arrows indicate inverse or field-query transforms used later in the runtime path.](sections/sandbox/figures/coordinate-transform-chain.png){fig-alt="Draft TikZ preview of the transform chain between floor, element-local, comoving, and boosted coordinate systems." width="90%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\input{sections/sandbox/figures/tikz/coordinate-transform-chain.tikz.tex}
+\caption{Transform chain between the floor frame $K$, the element-local frame $K'_i$, the comoving Frenet-Serret frame $K_s$, and the boosted frame $K_s^\star$. The solid arrows represent the forward chain through placement pose (\texttt{CoordinateSystemTrafo}), reference-path transform, and Lorentz boost. The dashed arrows indicate inverse or field-query transforms used later in the runtime path.}
+\end{figure}
+```
+:::

@@ -1,0 +1,38 @@
+---
+title: "Sandbox"
+format:
+  html:
+    html-math-method:
+      method: mathjax
+      equation-numbering: all
+    include-in-header:
+      - includes/mathjax-equation-numbering.html
+---
+
+This chapter is reserved for exploratory notes, draft diagrams, implementation
+sketches, and benchmark-driven documentation that is not yet ready to be folded
+into the formal theory chapters.
+
+The intended use is:
+
+- keep work-in-progress material visible in the rendered manual,
+- document code-facing conventions before promoting them into the final text,
+- collect diagrams and benchmark notes that support later physics sections.
+
+{{< include redesign-notes.qmd >}}
+
+{{< include class-diagram.qmd >}}
+
+{{< include opal-element-bridge.qmd >}}
+
+{{< include element-placing.qmd >}}
+
+{{< include orbit-threader.qmd >}}
+
+{{< include auto-phasing.qmd >}}
+
+{{< include boosted-frame.qmd >}}
+
+{{< include low-energy-pairs-high-energy-coulomb.qmd >}}
+
+{{< include coordinate-system-figures.qmd >}}

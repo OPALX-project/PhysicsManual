@@ -1,0 +1,48 @@
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=7mm,
+  box/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=ebeam!6
+  },
+  sidebox/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=photon!10
+  },
+  line/.style={-Latex, thick}
+]
+
+\node[box] (input) {Input deck\\$B_1$: SBEND \dots};
+\node[box, below=of input] (update) {OpalElement::update()};
+\node[box, below=of update] (pose) {PlacementPose$(T_{B1})$\\Misalignment$(\Delta_{B1})$};
+\node[box, below=of pose] (placed) {PlacedElement for $B_1$};
+\node[box, below=of placed] (beamline) {OpalBeamline};
+\node[box, below=of beamline] (thread) {OrbitThreader::execute()};
+\node[box, below=of thread] (interval) {Active path interval\\$[s_{\mathrm{begin}}, s_{\mathrm{end}}]$};
+\node[sidebox, below left=of interval] (register) {Action-range\\registration};
+\node[sidebox, below right=of interval] (query) {ParallelTracker\\query};
+\node[box, below=12mm of query] (slice) {Bend slices};
+\node[box, below=of slice] (field) {Slice-local\\field application};
+
+\draw[line] (input) -- (update);
+\draw[line] (update) -- (pose);
+\draw[line] (pose) -- (placed);
+\draw[line] (placed) -- (beamline);
+\draw[line] (beamline) -- (thread);
+\draw[line] (thread) -- (interval);
+\draw[line] (interval) -- (register);
+\draw[line] (interval) -- (query);
+\draw[line] (query) -- (slice);
+\draw[line] (slice) -- (field);
+
+\end{tikzpicture}

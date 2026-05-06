@@ -1,0 +1,13 @@
+:::: {.content-visible when-format="html"}
+![Control-flow view of `OpalElement` as the bridge from parsed OPAL element definitions to runtime `ElementBase` objects.](figures/opal-element-control-flow.png){fig-alt="TikZ preview of the OpalElement control-flow bridge." width="85%"}
+::::
+
+:::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\resizebox{0.86\linewidth}{!}{\input{sections/sandbox/figures/tikz/opal-element-control-flow.tikz.tex}}
+\caption{Control-flow view of \texttt{OpalElement} as the bridge from parsed OPAL element definitions to runtime \texttt{ElementBase} objects.}
+\end{figure}
+```
+::::

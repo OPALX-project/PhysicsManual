@@ -1,0 +1,53 @@
+## `OpalElement` as Parser-to-Runtime Bridge
+
+`OpalElement` is primarily a parser-side front-end class. It is **not** the
+object that is later threaded through `OpalBeamline` or stepped by
+`ParallelTracker`. Instead, it is the bridge between the OPAL input language
+and the runtime `ElementBase` hierarchy.
+
+The essential structural point is:
+
+- `OpalElement` inherits from `Element`,
+- `Element` owns an embedded runtime `ElementBase`,
+- derived parser-side classes such as `OpalSBend`, `OpalRBend`,
+  `OpalQuadrupole`, and `OpalMultipole` configure that embedded runtime object.
+
+This means that `OpalElement` has two responsibilities:
+
+1. store and parse common OPAL element attributes,
+2. transfer common placement, orientation, aperture, and misalignment data into
+   the embedded runtime element before the derived class adds physics-specific
+   configuration.
+
+The common parser-side attributes handled in `OpalElement` include:
+
+- `L`,
+- aperture,
+- `ORIGIN` and `ORIENTATION`,
+- `X`, `Y`, `Z`, `THETA`, `PHI`, `PSI`,
+- `DX`, `DY`, `DZ`, `DTHETA`, `DPHI`, `DPSI`,
+- `ELEMEDGE`,
+- the transverse-exit deletion flag.
+
+The following diagram shows the role of `OpalElement` in the current control
+flow.
+
+{{< include includes/opal-element-control-flow-figure.qmd >}}
+
+The corresponding class-level ownership relation is:
+
+{{< include includes/opal-element-class-bridge-figure.qmd >}}
+
+So the answer to the practical question “where is `OpalElement` used?” is:
+
+- yes, first of all on the parser/input side,
+- but more precisely as the **shared front-end bridge** from parsed element
+  attributes into the runtime `ElementBase` object,
+- after that handoff, placement, reference-path construction, and tracking are
+  performed on the runtime object, not on `OpalElement` itself.
+
+This distinction is especially important for the bend work, since parser-side
+inheritance and runtime-side inheritance are intentionally different:
+
+- parser side: `OpalElement -> OpalBend -> OpalSBend / OpalRBend`,
+- runtime side: `ElementBase -> Component -> BendBase -> SBend / RBend -> Rep`.

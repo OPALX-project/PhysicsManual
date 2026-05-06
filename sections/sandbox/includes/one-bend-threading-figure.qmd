@@ -1,0 +1,13 @@
+:::: {.content-visible when-format="html"}
+![Worked-example flow for one placed analytic bend.](figures/one-bend-threading.png){fig-alt="TikZ preview of the one-bend OrbitThreader workflow." width="82%"}
+::::
+
+:::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\resizebox{0.78\linewidth}{!}{\input{sections/sandbox/figures/tikz/one-bend-threading.tikz.tex}}
+\caption{Worked-example flow for one placed analytic bend.}
+\end{figure}
+```
+::::

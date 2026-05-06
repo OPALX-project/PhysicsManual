@@ -1,0 +1,13 @@
+::: {.content-visible when-format="html"}
+![Comoving Frenet-Serret frame $K_s=(x,y,s)$ attached to the reference orbit. The tripod at $\mathbf{R}(s)$ defines the local axes $\hat{\mathbf{x}}$, $\hat{\mathbf{y}}$, and $\hat{\mathbf{s}}$, and the brace indicates the local longitudinal coordinate $s$ along the reference curve.](figures/comoving-frenet-serret.png){fig-alt="Draft TikZ preview of the comoving Frenet-Serret frame." width="85%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\input{sections/sandbox/figures/tikz/comoving-frenet-serret.tikz.tex}
+\caption{Comoving Frenet-Serret frame $K_s=(x,y,s)$ attached to the reference orbit. The tripod at $\mathbf{R}(s)$ defines the local axes $\hat{\mathbf{x}}$, $\hat{\mathbf{y}}$, and $\hat{\mathbf{s}}$, and the brace indicates the local longitudinal coordinate $s$ along the reference curve.}
+\end{figure}
+```
+:::
