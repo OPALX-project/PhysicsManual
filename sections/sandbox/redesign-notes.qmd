@@ -2,6 +2,8 @@
 
 ### Comments to the proposels of Jon/Chris
 
+[Download Jon's OPAL element layout proposal](../../etc/Proposal-Jon-OpalElementLayout.pdf).
+
 
 #### **OpalElemen vs. Element / ElemenBase**
 Could OpalElement absorb Element? Technically possible only with a broader refactor, but not directly, because Line and Sequence also depend on Element. We would need to move Element’s responsibilities somewhere else.
@@ -204,6 +206,49 @@ It ignores `local_flip`. So a reflected named nested line may not be traversed i
 Please see [General Structure](#opalx-has-4-layers-of-structure-need-better-title),
 [OpalElement as Parser-to-Runtime Bridge](#opalelement-as-parser-to-runtime-bridge) and
 [Element Placing (Posing)](#element-placing-posing). All with thespect to position and orientation is in line maybe a bit more general. 
+
+
+#### **Other Aims**
+
+Jon's proposal also lists several implementation aims beyond the three layout modes. Several of them are already discussed above and are not repeated here: `Element`/`ElementBase`, `TBeamline<T> : public std::list<T>`, the `Beamline` hierarchy, bend enum checks, nested `LINE` traversal, and the repeated bend/non-bend placement scans.
+
+The remaining cross-cutting aims are:
+
+- Support the three layout schemes in one unified mechanism, instead of splitting responsibility between user-interface objects, `OpalBeamline`, and `Ring`.
+- Remove the visitor pattern from layout. This should also simplify the tracker inheritance tree.
+
+These aims are still good design targets. The current branch `391-placement-of-sbend-and-rbend-analytic-fields-including-fringe-fields` moves in the direction of explicit placement records, ports, and a clearer separation between nominal body placement and field-local coordinates. It does not yet implement the full proposal.
+
+
+#### **Notes to implementation sketches**
+
+The implementation sketch in Jon's proposal suggests a single `layout()` flow:
+
+```text
+ParallelTTracker
+  -> FlaggedBeamline::layout()
+  -> OpalBeamline::startLayout()
+  -> element.layout(...)
+  -> element.addField(this) when applicable
+  -> geometry determines the next pose
+  -> OpalBeamline::endLayout()
+```
+
+Compared with branch `391-placement-of-sbend-and-rbend-analytic-fields-including-fringe-fields`:
+
+- The branch does not introduce `layout()`, `startLayout()`, or `endLayout()`. Layout still enters through `ParallelTracker::prepareSections()`, `ParallelTracker::visitBeamline()`, visitor dispatch, and `OpalBeamline::visit<T>()`.
+- Elements do not add themselves to the field list. `OpalBeamline::visit<T>()` still clones the visited element, initializes it, and pushes a `BeamlineFieldElement` into `elements_m`.
+- The visitor pattern remains part of layout collection. The branch has not moved layout responsibility fully into `OpalBeamline` plus element geometry.
+- The branch still sorts and prepares a `FieldList`; it also keeps `declaredOrder_m` and `placementAssembly_m` to preserve both tracking order and placement records.
+- `compute3DLattice()` has been renamed in spirit to `compileCompatibilityPlacement()`, with `compute3DLattice()` now just forwarding to it. This is useful: it makes the old routine look like a compatibility conversion from legacy `ELEMEDGE` placement into explicit nominal poses.
+- The proposal wanted one layout loop. The branch still uses two placement loops inside `compileCompatibilityPlacement()`: a bend pre-pass and then an all-elements pass. This is less than the old scattered model, but it is not the proposed single polymorphic layout pass.
+- The proposal wanted nested `LINE` handling through a stack of position/orientation state. The branch still has the old `OpalBeamline` stash/merge code in `ParallelTracker::visitBeamline()`, but it is commented out; the active code simply calls `fbl->iterate(*this, false)`. So this part is unresolved rather than implemented.
+- The proposal wanted explicit enum tests removed. The branch still checks `ElementType::SBEND`, `RBEND`, `RBEND3D`, `SOURCE`, and `MARKER` in several places. Some of those checks are followed by `dynamic_cast<BendBase*>`, which is closer to a capability interface, but the dispatch is still enum-driven.
+- The proposal wanted the geometry object to determine the next pose. The branch has moved toward this with `PlacedElement`, entry/body/exit ports, `getPlacementGeometry()`, and `getNominalEntryTransform()` / `getNominalExitTransform()`. However, bend advance logic is still hard-coded in `OpalBeamline::compileCompatibilityPlacement()` instead of being hidden behind a uniform element/geometry interface.
+- The proposal wanted beamline-relative placement logic moved out of user-interface objects. The branch partially keeps the bridge: `OpalElement::update()` still interprets `ORIGIN`, `ORIENTATION`, `X`, `Y`, `Z`, `THETA`, `PHI`, `PSI`, stores placement state on the runtime element, and may fix the position.
+- The proposal's suggestion that `OpalBeamline` may deserve a different name is still relevant. In this branch it is increasingly a runtime field/layout assembly object, not an `OpalElement`-style parser class. A name like `BeamlineLayout` or `BeamlineAssembly` would better describe the role.
+
+Net assessment: the branch is best understood as a bridge stage, not as the implementation of the proposal. It introduces useful placement vocabulary and explicit pose records, but the architecture is still centered on visitor-based collection, `FieldList`, compatibility placement, and special-case bend logic. The next design step would be to turn the port/placement vocabulary into the actual layout API so that straight elements, analytic bends, curved multipoles, and nested lines can all participate through the same interface.
 
 
 #### **Proposal Input file syntax modifications**
