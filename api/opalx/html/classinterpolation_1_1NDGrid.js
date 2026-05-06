@@ -49,6 +49,6 @@ var classinterpolation_1_1NDGrid =
     [ "operator>", "classinterpolation_1_1NDGrid.html#a0a6afac354069e5acb696609dde84753", null ],
     [ "operator>=", "classinterpolation_1_1NDGrid.html#af1551b68e6678c9a1e7f029e23a3c103", null ],
     [ "constantSpacing_m", "classinterpolation_1_1NDGrid.html#a01622036a9a68ce78cda07c28ede336d", null ],
-    [ "coord_m", "classinterpolation_1_1NDGrid.html#a2e8f74060fcda0496d96286f2b5f0780", null ],
+    [ "coord_m", "classinterpolation_1_1NDGrid.html#a5b7f464c8ded201e0bcb2c3f9f0d3093", null ],
     [ "maps_m", "classinterpolation_1_1NDGrid.html#abc58a8b01b3f69f7ac0876188b879d93", null ]
 ];

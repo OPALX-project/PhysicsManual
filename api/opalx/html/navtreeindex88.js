@@ -1,5 +1,17 @@
 var NAVTREEINDEX88 =
 {
+"classTravelingWave.html#af497e7e36f2af3782333a865e038b262":[3,0,373,36],
+"classTravelingWave.html#af5d5907c6b0feb0ff47c3c2fb0b40aae":[3,0,373,160],
+"classTravelingWave.html#af7cf82bb77568a055a535f877b666d32":[3,0,373,125],
+"classTravelingWave.html#af8a0383ebe63f78e61bbf532e3c81874":[3,0,373,72],
+"classTravelingWave.html#af90ea0cd7726b5fdb17082c0f702588a":[3,0,373,95],
+"classTravelingWave.html#af9659ee3572940a65f2c4caac55831c7":[3,0,373,198],
+"classTravelingWave.html#afa83b0fa5d13beeac3729e8a8c07f74b":[3,0,373,6],
+"classTravelingWave.html#afab07c577c55922516bbb53461b3b4a8":[3,0,373,183],
+"classTravelingWave.html#afb9b45a253ccb60a3e2191773d656fe3":[3,0,373,34],
+"classTravelingWave.html#afdd4dc4e42dcf92a37ea140f2d456925":[3,0,373,138],
+"classTravelingWave.html#affa956f1017b20d81ac5087efe0f78e4":[3,0,373,178],
+"classTravelingWaveRep.html":[3,0,374],
 "classTravelingWaveRep.html#a00698c7f2acc8ae799d858ae64e71564":[3,0,374,132],
 "classTravelingWaveRep.html#a015eabbc7163b06af9ab098fda26eee8":[3,0,374,138],
 "classTravelingWaveRep.html#a02db7a51bd2dee275faf331a9c2db557":[3,0,374,150],
@@ -237,17 +249,5 @@ var NAVTREEINDEX88 =
 "classTravelingWaveRep.html#afdd4dc4e42dcf92a37ea140f2d456925":[3,0,374,139],
 "classTravelingWaveRep.html#affa956f1017b20d81ac5087efe0f78e4":[3,0,374,180],
 "classTravelingWaveTest.html":[3,0,375],
-"classTravelingWaveTest.html#a26045e5f7afe12cfa352a480d39b4c47":[3,0,375,1],
-"classTravelingWaveTest.html#a5ead05da951dfcc699ee69addf8adbfe":[3,0,375,0],
-"classTravelingWaveTest.html#a6bad772202288a769e3646c44ea3088c":[3,0,375,2],
-"classTriangle.html":[3,0,376],
-"classTriangle.html#a0415773ae514397c2c63c3c714e0d23b":[3,0,376,3],
-"classTriangle.html#a1efb30f2f12e73a3633a4f9b95284f5e":[3,0,376,4],
-"classTriangle.html#a1fcf39017b491421ed82d985689f87d4":[3,0,376,9],
-"classTriangle.html#a3b836b295e29784425bca39f7886d7d5":[3,0,376,1],
-"classTriangle.html#a477de15840a7b0d6b4b9d1ce5960fb5d":[3,0,376,6],
-"classTriangle.html#a5284039a41d64e28c3e20b06f0e4e23a":[3,0,376,5],
-"classTriangle.html#aa063c94a92c0725e34e2e02e3e56ae06":[3,0,376,7],
-"classTriangle.html#aaefe4ed500c07918d30c6f0e286332c5":[3,0,376,0],
-"classTriangle.html#aca41f307cc7512d74067d3824c37b2ca":[3,0,376,2]
+"classTravelingWaveTest.html#a26045e5f7afe12cfa352a480d39b4c47":[3,0,375,1]
 };

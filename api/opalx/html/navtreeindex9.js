@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"SDDSParserException_8h.html":[4,0,0,24,1,10],
 "SDDSParserException_8h_source.html":[4,0,0,24,1,10],
 "SDDSParser_8cpp.html":[4,0,0,24,65],
 "SDDSParser_8cpp_source.html":[4,0,0,24,65],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "TestBCHandler_8cpp.html#a2eb593e61f5f6dad6aa608d3857fde8d":[4,0,1,8,1,26],
 "TestBCHandler_8cpp.html#a4f0c1de3fec00cfb2018055bf08e5806":[4,0,1,8,1,3],
 "TestBCHandler_8cpp.html#a518a00a6af9b274a877d0daff43795e7":[4,0,1,8,1,29],
-"TestBCHandler_8cpp.html#a58489b1899aaadd560bb29e43d622a2b":[4,0,1,8,1,5],
-"TestBCHandler_8cpp.html#a6b7699c731e7a26738be0cb010284f4c":[4,0,1,8,1,9]
+"TestBCHandler_8cpp.html#a58489b1899aaadd560bb29e43d622a2b":[4,0,1,8,1,5]
 };

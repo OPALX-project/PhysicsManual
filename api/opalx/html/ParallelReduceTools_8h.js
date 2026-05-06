@@ -7,7 +7,7 @@ var ParallelReduceTools_8h =
     [ "ParticleBinning::HostArrayReduction< SizeType, IndexType >", "structParticleBinning_1_1HostArrayReduction.html", "structParticleBinning_1_1HostArrayReduction" ],
     [ "Kokkos::reduction_identity< ParticleBinning::ArrayReduction< SizeType, IndexType, N > >", "structKokkos_1_1reduction__identity_3_01ParticleBinning_1_1ArrayReduction_3_01SizeType_00_01IndexType_00_01N_01_4_01_4.html", null ],
     [ "Kokkos::reduction_identity< ParticleBinning::HostArrayReduction< SizeType, IndexType > >", "structKokkos_1_1reduction__identity_3_01ParticleBinning_1_1HostArrayReduction_3_01SizeType_00_01IndexType_01_4_01_4.html", null ],
-    [ "ReductionVariant", "ParallelReduceTools_8h.html#ace15d1356bf35aab2c5896751df67869", null ],
+    [ "ReductionVariant", "ParallelReduceTools_8h.html#a204c7bb96c89276a3db6e52417e2c992", null ],
     [ "HistoReductionMode", "ParallelReduceTools_8h.html#a54425c06ae414dc0a04f80500facfe6b", [
       [ "Standard", "ParallelReduceTools_8h.html#a54425c06ae414dc0a04f80500facfe6baeb6d8ae6f20283755b339c0dc273988b", null ],
       [ "ParallelReduce", "ParallelReduceTools_8h.html#a54425c06ae414dc0a04f80500facfe6baf15d6c8237b5427c1054f790bf6ec83f", null ],

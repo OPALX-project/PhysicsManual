@@ -12,7 +12,7 @@ var namespaceParticleBinning =
     [ "HostArrayReduction", "structParticleBinning_1_1HostArrayReduction.html", "structParticleBinning_1_1HostArrayReduction" ],
     [ "ReductionVariantHelper", "namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper", null ],
     [ "ReductionVariantHelper< SizeType, IndexType, std::integer_sequence< IndexType, Sizes... > >", "namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper_3_01SizeType_00_01IndexType_00_01std_1_1integer_55c9385a69efdb00c91b14d74281a80d", "namespaceParticleBinning_structParticleBinning_1_1ReductionVariantHelper_3_01SizeType_00_01IndexType_00_01std_1_1integer_55c9385a69efdb00c91b14d74281a80d_dup" ],
-    [ "ReductionVariant", "namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869", null ],
+    [ "ReductionVariant", "namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992", null ],
     [ "HistoReductionMode", "namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6b", [
       [ "Standard", "namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6baeb6d8ae6f20283755b339c0dc273988b", null ],
       [ "ParallelReduce", "namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6baf15d6c8237b5427c1054f790bf6ec83f", null ],

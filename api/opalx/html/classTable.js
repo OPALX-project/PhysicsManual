@@ -66,7 +66,7 @@ var classTable =
     [ "itsParent", "classTable.html#a3cd65924363c636d542e91f7f07371e0", null ],
     [ "modified", "classTable.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classTable.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classTable.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classTable.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "refill", "classTable.html#aaa021f3fed9c96b94251c6284ef394d8", null ],
     [ "sharedFlag", "classTable.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classTable.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]

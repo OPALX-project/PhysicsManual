@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"MacroStream_8h_source.html":[4,0,0,16,13],
 "Macro_8cpp.html":[4,0,0,16,8],
 "Macro_8cpp_source.html":[4,0,0,16,8],
 "Macro_8h.html":[4,0,0,16,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "OpalPolynomialTimeDependence_8h.html":[4,0,0,10,23],
 "OpalPolynomialTimeDependence_8h_source.html":[4,0,0,10,23],
 "OpalProbe_8cpp.html":[4,0,0,10,24],
-"OpalProbe_8cpp_source.html":[4,0,0,10,24],
-"OpalProbe_8h.html":[4,0,0,10,25]
+"OpalProbe_8cpp_source.html":[4,0,0,10,24]
 };

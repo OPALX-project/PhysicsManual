@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"FieldMirror_8hpp_source.html":[4,0,0,17,7],
 "FieldSolverCmd_8cpp.html":[4,0,0,21,18],
 "FieldSolverCmd_8cpp_source.html":[4,0,0,21,18],
 "FieldSolverCmd_8h.html":[4,0,0,21,19],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "GSLLinalg_8h.html":[4,0,0,24,34],
 "GSLLinalg_8h.html#a101b7359ec6853b464c39635acf60d83":[4,0,0,24,34,5],
 "GSLLinalg_8h.html#a15036360d576ce7c93bf2a1564d8b8c2":[4,0,0,24,34,9],
-"GSLLinalg_8h.html#a543b0c48ea8e55610b6f2e908f1fb9aa":[4,0,0,24,34,2]
+"GSLLinalg_8h.html#a543b0c48ea8e55610b6f2e908f1fb9aa":[4,0,0,24,34,2],
+"GSLLinalg_8h.html#a85ae511007ccd0c49553ad1d542e4d57":[4,0,0,24,34,11]
 };

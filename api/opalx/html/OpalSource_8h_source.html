@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -127,44 +127,40 @@ $(document).ready(function(){initNavTree('OpalSource_8h_source.html',''); initRe
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="OpalElement_8h.html">Elements/OpalElement.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classOpalSource.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classOpalSource.html">OpalSource</a>: <span class="keyword">public</span> <a class="code hl_class" href="classOpalElement.html">OpalElement</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">enum</span> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236a32a462e89727dceee03c68cff55240fc">   30</a></span>        <a class="code hl_namespace" href="namespaceDISTRIBUTION.html">DISTRIBUTION</a> = <a class="code hl_enumvalue" href="classOpalElement.html#ac5cbdef4159482662715ea82d8118fbaad9c34bddfcc8729d68950a3a25d5efa4">COMMON</a>,  <span class="comment">// The longitudinal magnetic field.</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f">   31</a></span>        <a class="code hl_enumvalue" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f">TRANSPARENT</a>,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_enumvalue" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223">SIZE</a></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223">   33</a></span>    };</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classOpalSource.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classOpalSource.html">OpalSource</a> : <span class="keyword">public</span> <a class="code hl_class" href="classOpalElement.html">OpalElement</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236a32a462e89727dceee03c68cff55240fc">   27</a></span>        <a class="code hl_namespace" href="namespaceDISTRIBUTION.html">DISTRIBUTION</a> = <a class="code hl_enumvalue" href="classOpalElement.html#ac5cbdef4159482662715ea82d8118fbaad9c34bddfcc8729d68950a3a25d5efa4">COMMON</a>,  <span class="comment">// The longitudinal magnetic field.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f">   28</a></span>        <a class="code hl_enumvalue" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f">TRANSPARENT</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223">SIZE</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223">   30</a></span>    };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classOpalSource.html#ad1ac2b6f0f56730adae3b2fa0403360a">   33</a></span>    <a class="code hl_function" href="classOpalSource.html#ad1ac2b6f0f56730adae3b2fa0403360a">OpalSource</a>();</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classOpalSource.html#ad1ac2b6f0f56730adae3b2fa0403360a">   36</a></span>    <a class="code hl_function" href="classOpalSource.html#ad1ac2b6f0f56730adae3b2fa0403360a">OpalSource</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classOpalSource.html#ae4a8c123b2cca23f4fb2b9039bd145bc">   38</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classOpalSource.html#ae4a8c123b2cca23f4fb2b9039bd145bc">~OpalSource</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classOpalSource.html#ae4a8c123b2cca23f4fb2b9039bd145bc">   35</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classOpalSource.html#ae4a8c123b2cca23f4fb2b9039bd145bc">~OpalSource</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classOpalSource.html#a468938ea468b584c925a6ffe89be0446">   38</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classOpalSource.html">OpalSource</a>* <a class="code hl_function" href="classOpalSource.html#a468938ea468b584c925a6ffe89be0446">clone</a>(<span class="keyword">const</span> std::string&amp; name);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classOpalSource.html#a468938ea468b584c925a6ffe89be0446">   41</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classOpalSource.html">OpalSource</a>* <a class="code hl_function" href="classOpalSource.html#a468938ea468b584c925a6ffe89be0446">clone</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classOpalSource.html#a7f2ea4e8af081c087d2c26aa3c97abdd">   41</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classOpalSource.html#a7f2ea4e8af081c087d2c26aa3c97abdd">update</a>();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classOpalSource.html#a7f2ea4e8af081c087d2c26aa3c97abdd">   44</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classOpalSource.html#a7f2ea4e8af081c087d2c26aa3c97abdd">update</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Not implemented.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classOpalSource.html#a4509bc1b1f316f41b582b5e235979b27">   45</a></span>    <a class="code hl_function" href="classOpalSource.html#a4509bc1b1f316f41b582b5e235979b27">OpalSource</a>(<span class="keyword">const</span> <a class="code hl_class" href="classOpalSource.html">OpalSource</a>&amp;);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classOpalSource.html#a4a2e73c39b20c786ee50b0331793df3f">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classOpalSource.html#a4a2e73c39b20c786ee50b0331793df3f">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classOpalSource.html">OpalSource</a>&amp;);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Not implemented.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classOpalSource.html#a4509bc1b1f316f41b582b5e235979b27">   49</a></span>    <a class="code hl_function" href="classOpalSource.html#a4509bc1b1f316f41b582b5e235979b27">OpalSource</a>(<span class="keyword">const</span> <a class="code hl_class" href="classOpalSource.html">OpalSource</a>&amp;);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classOpalSource.html#a4a2e73c39b20c786ee50b0331793df3f">   50</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classOpalSource.html#a4a2e73c39b20c786ee50b0331793df3f">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classOpalSource.html">OpalSource</a>&amp;);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Clone constructor.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classOpalSource.html#a8d03db431bc31545eeef5e89342e453f">   53</a></span>    <a class="code hl_function" href="classOpalSource.html#a8d03db431bc31545eeef5e89342e453f">OpalSource</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classOpalSource.html">OpalSource</a>* parent);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Clone constructor.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classOpalSource.html#a8d03db431bc31545eeef5e89342e453f">   49</a></span>    <a class="code hl_function" href="classOpalSource.html#a8d03db431bc31545eeef5e89342e453f">OpalSource</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classOpalSource.html">OpalSource</a>* parent);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_OPALSOURCE_HH</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_OPALSOURCE_HH</span></div>
 <div class="ttc" id="aOpalElement_8h_html"><div class="ttname"><a href="OpalElement_8h.html">OpalElement.h</a></div></div>
-<div class="ttc" id="aclassOpalElement_html"><div class="ttname"><a href="classOpalElement.html">OpalElement</a></div><div class="ttdef"><b>Definition</b> <a href="OpalElement_8h_source.html#l00027">OpalElement.h:27</a></div></div>
-<div class="ttc" id="aclassOpalElement_html_ac5cbdef4159482662715ea82d8118fbaad9c34bddfcc8729d68950a3a25d5efa4"><div class="ttname"><a href="classOpalElement.html#ac5cbdef4159482662715ea82d8118fbaad9c34bddfcc8729d68950a3a25d5efa4">OpalElement::COMMON</a></div><div class="ttdeci">@ COMMON</div><div class="ttdef"><b>Definition</b> <a href="OpalElement_8h_source.html#l00056">OpalElement.h:55</a></div></div>
-<div class="ttc" id="aclassOpalSource_html"><div class="ttname"><a href="classOpalSource.html">OpalSource</a></div><div class="ttdef"><b>Definition</b> <a href="OpalSource_8h_source.html#l00024">OpalSource.h:24</a></div></div>
-<div class="ttc" id="aclassOpalSource_html_a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f"><div class="ttname"><a href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f">OpalSource::TRANSPARENT</a></div><div class="ttdeci">@ TRANSPARENT</div><div class="ttdef"><b>Definition</b> <a href="OpalSource_8h_source.html#l00031">OpalSource.h:31</a></div></div>
-<div class="ttc" id="aclassOpalSource_html_a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223"><div class="ttname"><a href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223">OpalSource::SIZE</a></div><div class="ttdeci">@ SIZE</div><div class="ttdef"><b>Definition</b> <a href="OpalSource_8h_source.html#l00033">OpalSource.h:32</a></div></div>
+<div class="ttc" id="aclassOpalElement_html"><div class="ttname"><a href="classOpalElement.html">OpalElement</a></div><div class="ttdef"><b>Definition</b> <a href="OpalElement_8h_source.html#l00031">OpalElement.h:31</a></div></div>
+<div class="ttc" id="aclassOpalElement_html_ac5cbdef4159482662715ea82d8118fbaad9c34bddfcc8729d68950a3a25d5efa4"><div class="ttname"><a href="classOpalElement.html#ac5cbdef4159482662715ea82d8118fbaad9c34bddfcc8729d68950a3a25d5efa4">OpalElement::COMMON</a></div><div class="ttdeci">@ COMMON</div><div class="ttdef"><b>Definition</b> <a href="OpalElement_8h_source.html#l00058">OpalElement.h:57</a></div></div>
+<div class="ttc" id="aclassOpalSource_html"><div class="ttname"><a href="classOpalSource.html">OpalSource</a></div><div class="ttdef"><b>Definition</b> <a href="OpalSource_8h_source.html#l00023">OpalSource.h:23</a></div></div>
+<div class="ttc" id="aclassOpalSource_html_a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f"><div class="ttname"><a href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ab71333855798e1d7c6ea5445446e2e3f">OpalSource::TRANSPARENT</a></div><div class="ttdeci">@ TRANSPARENT</div><div class="ttdef"><b>Definition</b> <a href="OpalSource_8h_source.html#l00028">OpalSource.h:28</a></div></div>
+<div class="ttc" id="aclassOpalSource_html_a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223"><div class="ttname"><a href="classOpalSource.html#a3d4a5d22f222f7f71b08bc4be9953236ad56691527c4824f3a77dd1ae0cdc8223">OpalSource::SIZE</a></div><div class="ttdeci">@ SIZE</div><div class="ttdef"><b>Definition</b> <a href="OpalSource_8h_source.html#l00030">OpalSource.h:29</a></div></div>
 <div class="ttc" id="aclassOpalSource_html_a4509bc1b1f316f41b582b5e235979b27"><div class="ttname"><a href="classOpalSource.html#a4509bc1b1f316f41b582b5e235979b27">OpalSource::OpalSource</a></div><div class="ttdeci">OpalSource(const OpalSource &amp;)</div></div>
 <div class="ttc" id="aclassOpalSource_html_a468938ea468b584c925a6ffe89be0446"><div class="ttname"><a href="classOpalSource.html#a468938ea468b584c925a6ffe89be0446">OpalSource::clone</a></div><div class="ttdeci">virtual OpalSource * clone(const std::string &amp;name)</div><div class="ttdoc">Make clone.</div></div>
 <div class="ttc" id="aclassOpalSource_html_a4a2e73c39b20c786ee50b0331793df3f"><div class="ttname"><a href="classOpalSource.html#a4a2e73c39b20c786ee50b0331793df3f">OpalSource::operator=</a></div><div class="ttdeci">void operator=(const OpalSource &amp;)</div></div>
@@ -172,14 +168,14 @@ $(document).ready(function(){initNavTree('OpalSource_8h_source.html',''); initRe
 <div class="ttc" id="aclassOpalSource_html_a8d03db431bc31545eeef5e89342e453f"><div class="ttname"><a href="classOpalSource.html#a8d03db431bc31545eeef5e89342e453f">OpalSource::OpalSource</a></div><div class="ttdeci">OpalSource(const std::string &amp;name, OpalSource *parent)</div></div>
 <div class="ttc" id="aclassOpalSource_html_ad1ac2b6f0f56730adae3b2fa0403360a"><div class="ttname"><a href="classOpalSource.html#ad1ac2b6f0f56730adae3b2fa0403360a">OpalSource::OpalSource</a></div><div class="ttdeci">OpalSource()</div><div class="ttdoc">Exemplar constructor.</div></div>
 <div class="ttc" id="aclassOpalSource_html_ae4a8c123b2cca23f4fb2b9039bd145bc"><div class="ttname"><a href="classOpalSource.html#ae4a8c123b2cca23f4fb2b9039bd145bc">OpalSource::~OpalSource</a></div><div class="ttdeci">virtual ~OpalSource()</div></div>
-<div class="ttc" id="anamespaceDISTRIBUTION_html"><div class="ttname"><a href="namespaceDISTRIBUTION.html">DISTRIBUTION</a></div><div class="ttdef"><b>Definition</b> <a href="Distribution_8cpp_source.html#l00057">Distribution.cpp:57</a></div></div>
+<div class="ttc" id="anamespaceDISTRIBUTION_html"><div class="ttname"><a href="namespaceDISTRIBUTION.html">DISTRIBUTION</a></div><div class="ttdef"><b>Definition</b> <a href="Distribution_8cpp_source.html#l00055">Distribution.cpp:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_90619d4fa850912973c72b599be770d2.html">Elements</a></li><li class="navelem"><a class="el" href="OpalSource_8h.html">OpalSource.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

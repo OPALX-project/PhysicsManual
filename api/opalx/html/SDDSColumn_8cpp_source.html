@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -130,107 +130,100 @@ $(document).ready(function(){initNavTree('SDDSColumn_8cpp_source.html',''); init
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#afaaf23ad65ba0d2e294becf68b9a8347">   25</a></span><a class="code hl_function" href="classSDDSColumn.html#afaaf23ad65ba0d2e294becf68b9a8347">SDDSColumn::SDDSColumn</a>(<span class="keyword">const</span> std::string&amp; name,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                       <span class="keyword">const</span> std::string&amp; type,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                       <span class="keyword">const</span> std::string&amp; unit,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                       <span class="keyword">const</span> std::string&amp; desc,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                       std::ios_base::fmtflags flags,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                       <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> prec):</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    name_m(name),</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    description_m(<a class="code hl_namespace" href="namespacestd.html">std</a>::make_tuple(type, unit, desc)),</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    writeFlags_m(flags),</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    writePrecision_m(prec),</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    set_m(false)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    std::list&lt;std::ios_base::fmtflags&gt; numericalBase({std::ios_base::dec,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                                                      std::ios_base::hex,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                                      std::ios_base::oct});</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::list&lt;std::ios_base::fmtflags&gt; floatFormat({std::ios_base::fixed,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                    std::ios_base::scientific});</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::list&lt;std::ios_base::fmtflags&gt; adjustmentFlags({std::ios_base::internal,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                        std::ios_base::left,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                                        std::ios_base::right});</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// This code ensures that for each group of flags only one flag is given</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (std::ios_base::fmtflags flag: numericalBase) {</div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="SDDSColumn_8h.html#ad5a434bef2d8c9399391ae49ca73242b">   48</a></span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; flag) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> = (flag | (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; <a class="code hl_namespace" href="namespacestd.html">~std</a>::ios_base::basefield));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#afaaf23ad65ba0d2e294becf68b9a8347">   25</a></span><a class="code hl_function" href="classSDDSColumn.html#afaaf23ad65ba0d2e294becf68b9a8347">SDDSColumn::SDDSColumn</a>(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; type, <span class="keyword">const</span> std::string&amp; unit,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">const</span> std::string&amp; desc, std::ios_base::fmtflags flags, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> prec)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    : name_m(name),</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      description_m(<a class="code hl_namespace" href="namespacestd.html">std</a>::make_tuple(type, unit, desc)),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      writeFlags_m(flags),</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      writePrecision_m(prec),</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      set_m(false) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::list&lt;std::ios_base::fmtflags&gt; numericalBase(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            {std::ios_base::dec, std::ios_base::hex, std::ios_base::oct});</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::list&lt;std::ios_base::fmtflags&gt; floatFormat(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            {std::ios_base::fixed, std::ios_base::scientific});</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    std::list&lt;std::ios_base::fmtflags&gt; adjustmentFlags(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            {std::ios_base::internal, std::ios_base::left, std::ios_base::right});</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// This code ensures that for each group of flags only one flag is given</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="SDDSColumn_8h.html#ad5a434bef2d8c9399391ae49ca73242b">   41</a></span>    <span class="keywordflow">for</span> (std::ios_base::fmtflags flag : numericalBase) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; flag) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> = (flag | (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; <a class="code hl_namespace" href="namespacestd.html">~std</a>::ios_base::basefield));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (std::ios_base::fmtflags flag : floatFormat) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; flag) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> = (flag | (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; <a class="code hl_namespace" href="namespacestd.html">~std</a>::ios_base::floatfield));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">for</span> (std::ios_base::fmtflags flag: floatFormat) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">for</span> (std::ios_base::fmtflags flag : adjustmentFlags) {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; flag) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> = (flag | (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; <a class="code hl_namespace" href="namespacestd.html">~std</a>::ios_base::floatfield));</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> = (flag | (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; <a class="code hl_namespace" href="namespacestd.html">~std</a>::ios_base::adjustfield));</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">for</span> (std::ios_base::fmtflags flag: adjustmentFlags) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; flag) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> = (flag | (<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a> &amp; <a class="code hl_namespace" href="namespacestd.html">~std</a>::ios_base::adjustfield));</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#a2382445328359bdc2ba29cb61cb40611">   69</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDDSColumn.html#a2382445328359bdc2ba29cb61cb40611">SDDSColumn::writeHeader</a>(std::ostream&amp; os,</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colNr,</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                             <span class="keyword">const</span> std::string&amp; indent)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    os &lt;&lt; <span class="stringliteral">&quot;&amp;column\n&quot;</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>       &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;name=&quot;</span> &lt;&lt; <a class="code hl_variable" href="classSDDSColumn.html#a825e39ef48e9f9caeb56714181599fa3">name_m</a> &lt;&lt; <span class="stringliteral">&quot;,\n&quot;</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>       &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;type=&quot;</span> &lt;&lt; std::get&lt;0&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) &lt;&lt; <span class="stringliteral">&quot;,\n&quot;</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (std::get&lt;1&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) != <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;units=&quot;</span> &lt;&lt; std::get&lt;1&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) &lt;&lt; <span class="stringliteral">&quot;,\n&quot;</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;description=\&quot;&quot;</span> &lt;&lt; colNr &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::get&lt;2&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>       &lt;&lt; <span class="stringliteral">&quot;&amp;end\n&quot;</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#a2382445328359bdc2ba29cb61cb40611">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDDSColumn.html#a2382445328359bdc2ba29cb61cb40611">SDDSColumn::writeHeader</a>(</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        std::ostream&amp; os, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colNr, <span class="keyword">const</span> std::string&amp; indent)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    os &lt;&lt; <span class="stringliteral">&quot;&amp;column\n&quot;</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>       &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;name=&quot;</span> &lt;&lt; <a class="code hl_variable" href="classSDDSColumn.html#a825e39ef48e9f9caeb56714181599fa3">name_m</a> &lt;&lt; <span class="stringliteral">&quot;,\n&quot;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>       &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;type=&quot;</span> &lt;&lt; std::get&lt;0&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) &lt;&lt; <span class="stringliteral">&quot;,\n&quot;</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (std::get&lt;1&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) != <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;units=&quot;</span> &lt;&lt; std::get&lt;1&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) &lt;&lt; <span class="stringliteral">&quot;,\n&quot;</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;description=\&quot;&quot;</span> &lt;&lt; colNr &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::get&lt;2&gt;(<a class="code hl_variable" href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">description_m</a>) &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>       &lt;&lt; <span class="stringliteral">&quot;&amp;end\n&quot;</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">SDDSColumn::writeValue</a>(std::ostream&amp; os)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classSDDSColumn.html#a8524e2302cd823f522a43c758b457735">set_m</a>) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(<span class="stringliteral">&quot;SDDSColumn::writeValue&quot;</span>,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                            <span class="stringliteral">&quot;value for column &#39;&quot;</span> + <a class="code hl_variable" href="classSDDSColumn.html#a825e39ef48e9f9caeb56714181599fa3">name_m</a> + <span class="stringliteral">&quot;&#39; isn&#39;t set&quot;</span>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    os.flags(<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    os.precision(<a class="code hl_variable" href="classSDDSColumn.html#a9766932154dece2d5ecf33117a3594ae">writePrecision_m</a>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    std::visit([&amp;os](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; val) { os &lt;&lt; val; }, <a class="code hl_variable" href="classSDDSColumn.html#a0423fbdafecb2780a43ef0af26b5a55d">value_m</a>);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    os &lt;&lt; std::setw(10) &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_variable" href="classSDDSColumn.html#a8524e2302cd823f522a43c758b457735">set_m</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">   74</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">SDDSColumn::writeValue</a>(std::ostream&amp; os)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classSDDSColumn.html#a8524e2302cd823f522a43c758b457735">set_m</a>) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="stringliteral">&quot;SDDSColumn::writeValue&quot;</span>, <span class="stringliteral">&quot;value for column &#39;&quot;</span> + <a class="code hl_variable" href="classSDDSColumn.html#a825e39ef48e9f9caeb56714181599fa3">name_m</a> + <span class="stringliteral">&quot;&#39; isn&#39;t set&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    os.flags(<a class="code hl_variable" href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">writeFlags_m</a>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    os.precision(<a class="code hl_variable" href="classSDDSColumn.html#a9766932154dece2d5ecf33117a3594ae">writePrecision_m</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::visit(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            [&amp;os](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; val) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                os &lt;&lt; val;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            },</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_variable" href="classSDDSColumn.html#a0423fbdafecb2780a43ef0af26b5a55d">value_m</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    os &lt;&lt; std::setw(10) &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="classSDDSColumn.html#a8524e2302cd823f522a43c758b457735">set_m</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="};">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#ad5a434bef2d8c9399391ae49ca73242b">   91</a></span>std::ostream&amp; <a class="code hl_function" href="SDDSColumn_8cpp.html#ad5a434bef2d8c9399391ae49ca73242b">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="classSDDSColumn.html">SDDSColumn</a>&amp; col) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    col.<a class="code hl_function" href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">writeValue</a>(os);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> os;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
-</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="foldopen" id="foldopen00097" data-start="{" data-end="};">
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classSDDSColumn.html#ad5a434bef2d8c9399391ae49ca73242b">   97</a></span>std::ostream&amp; <a class="code hl_function" href="SDDSColumn_8cpp.html#ad5a434bef2d8c9399391ae49ca73242b">operator&lt;&lt;</a>(std::ostream&amp; os,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classSDDSColumn.html">SDDSColumn</a>&amp; col) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    col.<a class="code hl_function" href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">writeValue</a>(os);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 </div>
 </div>
 </div>
 <div class="ttc" id="aOpalException_8h_html"><div class="ttname"><a href="OpalException_8h.html">OpalException.h</a></div></div>
-<div class="ttc" id="aSDDSColumn_8cpp_html_ad5a434bef2d8c9399391ae49ca73242b"><div class="ttname"><a href="SDDSColumn_8cpp.html#ad5a434bef2d8c9399391ae49ca73242b">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const SDDSColumn &amp;col)</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00097">SDDSColumn.cpp:97</a></div></div>
+<div class="ttc" id="aSDDSColumn_8cpp_html_ad5a434bef2d8c9399391ae49ca73242b"><div class="ttname"><a href="SDDSColumn_8cpp.html#ad5a434bef2d8c9399391ae49ca73242b">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const SDDSColumn &amp;col)</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00091">SDDSColumn.cpp:91</a></div></div>
 <div class="ttc" id="aSDDSColumn_8h_html"><div class="ttname"><a href="SDDSColumn_8h.html">SDDSColumn.h</a></div></div>
-<div class="ttc" id="aclassOpalException_html"><div class="ttname"><a href="classOpalException.html">OpalException</a></div><div class="ttdef"><b>Definition</b> <a href="OpalException_8h_source.html#l00031">OpalException.h:31</a></div></div>
+<div class="ttc" id="aclassOpalException_html"><div class="ttname"><a href="classOpalException.html">OpalException</a></div><div class="ttdef"><b>Definition</b> <a href="OpalException_8h_source.html#l00030">OpalException.h:30</a></div></div>
 <div class="ttc" id="aclassSDDSColumn_html"><div class="ttname"><a href="classSDDSColumn.html">SDDSColumn</a></div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00026">SDDSColumn.h:26</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_a0423fbdafecb2780a43ef0af26b5a55d"><div class="ttname"><a href="classSDDSColumn.html#a0423fbdafecb2780a43ef0af26b5a55d">SDDSColumn::value_m</a></div><div class="ttdeci">variant_t value_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00063">SDDSColumn.h:63</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_a2382445328359bdc2ba29cb61cb40611"><div class="ttname"><a href="classSDDSColumn.html#a2382445328359bdc2ba29cb61cb40611">SDDSColumn::writeHeader</a></div><div class="ttdeci">void writeHeader(std::ostream &amp;os, unsigned int colNr, const std::string &amp;indent) const</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00069">SDDSColumn.cpp:69</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_a33693a9a77b3b8e1370eeb9a5140b374"><div class="ttname"><a href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">SDDSColumn::description_m</a></div><div class="ttdeci">desc_t description_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00062">SDDSColumn.h:62</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_a825e39ef48e9f9caeb56714181599fa3"><div class="ttname"><a href="classSDDSColumn.html#a825e39ef48e9f9caeb56714181599fa3">SDDSColumn::name_m</a></div><div class="ttdeci">std::string name_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00061">SDDSColumn.h:61</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_a8524e2302cd823f522a43c758b457735"><div class="ttname"><a href="classSDDSColumn.html#a8524e2302cd823f522a43c758b457735">SDDSColumn::set_m</a></div><div class="ttdeci">bool set_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00068">SDDSColumn.h:68</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_a9766932154dece2d5ecf33117a3594ae"><div class="ttname"><a href="classSDDSColumn.html#a9766932154dece2d5ecf33117a3594ae">SDDSColumn::writePrecision_m</a></div><div class="ttdeci">unsigned short writePrecision_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00066">SDDSColumn.h:66</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_acc5aa9c64d469a4824bb6be46cb370f4"><div class="ttname"><a href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">SDDSColumn::writeValue</a></div><div class="ttdeci">void writeValue(std::ostream &amp;os) const</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00084">SDDSColumn.cpp:84</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_a0423fbdafecb2780a43ef0af26b5a55d"><div class="ttname"><a href="classSDDSColumn.html#a0423fbdafecb2780a43ef0af26b5a55d">SDDSColumn::value_m</a></div><div class="ttdeci">variant_t value_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00048">SDDSColumn.h:48</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_a2382445328359bdc2ba29cb61cb40611"><div class="ttname"><a href="classSDDSColumn.html#a2382445328359bdc2ba29cb61cb40611">SDDSColumn::writeHeader</a></div><div class="ttdeci">void writeHeader(std::ostream &amp;os, unsigned int colNr, const std::string &amp;indent) const</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00061">SDDSColumn.cpp:61</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_a33693a9a77b3b8e1370eeb9a5140b374"><div class="ttname"><a href="classSDDSColumn.html#a33693a9a77b3b8e1370eeb9a5140b374">SDDSColumn::description_m</a></div><div class="ttdeci">desc_t description_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00047">SDDSColumn.h:47</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_a825e39ef48e9f9caeb56714181599fa3"><div class="ttname"><a href="classSDDSColumn.html#a825e39ef48e9f9caeb56714181599fa3">SDDSColumn::name_m</a></div><div class="ttdeci">std::string name_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00046">SDDSColumn.h:46</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_a8524e2302cd823f522a43c758b457735"><div class="ttname"><a href="classSDDSColumn.html#a8524e2302cd823f522a43c758b457735">SDDSColumn::set_m</a></div><div class="ttdeci">bool set_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00053">SDDSColumn.h:53</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_a9766932154dece2d5ecf33117a3594ae"><div class="ttname"><a href="classSDDSColumn.html#a9766932154dece2d5ecf33117a3594ae">SDDSColumn::writePrecision_m</a></div><div class="ttdeci">unsigned short writePrecision_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00051">SDDSColumn.h:51</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_acc5aa9c64d469a4824bb6be46cb370f4"><div class="ttname"><a href="classSDDSColumn.html#acc5aa9c64d469a4824bb6be46cb370f4">SDDSColumn::writeValue</a></div><div class="ttdeci">void writeValue(std::ostream &amp;os) const</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00074">SDDSColumn.cpp:74</a></div></div>
 <div class="ttc" id="aclassSDDSColumn_html_afaaf23ad65ba0d2e294becf68b9a8347"><div class="ttname"><a href="classSDDSColumn.html#afaaf23ad65ba0d2e294becf68b9a8347">SDDSColumn::SDDSColumn</a></div><div class="ttdeci">SDDSColumn(const std::string &amp;name, const std::string &amp;type, const std::string &amp;unit, const std::string &amp;desc, std::ios_base::fmtflags flags, unsigned short precision)</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8cpp_source.html#l00025">SDDSColumn.cpp:25</a></div></div>
-<div class="ttc" id="aclassSDDSColumn_html_afda8d3ab501875d7e2fbf1b588ab5e9a"><div class="ttname"><a href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">SDDSColumn::writeFlags_m</a></div><div class="ttdeci">std::ios_base::fmtflags writeFlags_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00065">SDDSColumn.h:65</a></div></div>
+<div class="ttc" id="aclassSDDSColumn_html_afda8d3ab501875d7e2fbf1b588ab5e9a"><div class="ttname"><a href="classSDDSColumn.html#afda8d3ab501875d7e2fbf1b588ab5e9a">SDDSColumn::writeFlags_m</a></div><div class="ttdeci">std::ios_base::fmtflags writeFlags_m</div><div class="ttdef"><b>Definition</b> <a href="SDDSColumn_8h_source.html#l00050">SDDSColumn.h:50</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -238,7 +231,7 @@ $(document).ready(function(){initNavTree('SDDSColumn_8cpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1e943b2a5906122ddf396bc604857988.html">Structure</a></li><li class="navelem"><a class="el" href="SDDSColumn_8cpp.html">SDDSColumn.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

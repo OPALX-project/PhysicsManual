@@ -45,7 +45,7 @@ var classMacro =
     [ "shouldUpdate", "classMacro.html#a6344effaa974de2b464ef8ed52383cd4", null ],
     [ "unregisterReference", "classMacro.html#aefe23441c2db5e86ad1322d3df15ce65", null ],
     [ "update", "classMacro.html#a4abd48bacb1b004c8ac891597c831f77", null ],
-    [ "actuals", "classMacro.html#af135b748194d73f8d0a3d2f1631b1ff2", null ],
+    [ "actuals", "classMacro.html#a0e119a941d7acdce45b16ab27b2f2b01", null ],
     [ "builtin", "classMacro.html#aebbbd93847d066c83a26764469c37edf", null ],
     [ "flagged", "classMacro.html#a59156451f29758d6f189c5e0493b2da5", null ],
     [ "formals", "classMacro.html#aeb5e58fbb067254d850161c236bb7b4d", null ],
@@ -55,7 +55,7 @@ var classMacro =
     [ "itsParent", "classMacro.html#a3cd65924363c636d542e91f7f07371e0", null ],
     [ "modified", "classMacro.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classMacro.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classMacro.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classMacro.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classMacro.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classMacro.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

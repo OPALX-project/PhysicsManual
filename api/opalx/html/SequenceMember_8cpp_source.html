@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -126,60 +126,50 @@ $(document).ready(function(){initNavTree('SequenceMember_8cpp_source.html',''); 
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="SequenceMember_8h.html">Lines/SequenceMember.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="ElementBase_8h.html">AbsBeamline/ElementBase.h</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Class SequenceMember</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">   26</a></span><a class="code hl_function" href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">SequenceMember::SequenceMember</a>():</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a>(),</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    itsPosition(0.0), itsFlag(ABSOLUTE), itsType(<a class="code hl_enumvalue" href="Fieldmap_8h.html#a4c73d8aa04c5b31558f468b95d4748b3a6ce26a62afab55d7606ad4e92428b30c">UNKNOWN</a>), <a class="code hl_class" href="classOpalElement.html">OpalElement</a>()</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Class SequenceMember</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">   25</a></span><a class="code hl_function" href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">SequenceMember::SequenceMember</a>()</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    : <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a>(), itsPosition(0.0), itsFlag(ABSOLUTE), itsType(<a class="code hl_enumvalue" href="Fieldmap_8h.html#a4c73d8aa04c5b31558f468b95d4748b3a6ce26a62afab55d7606ad4e92428b30c">UNKNOWN</a>), <a class="code hl_class" href="classOpalElement.html">OpalElement</a>() {}</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a3635c90a501d8a8d76f81ef5e4f88e06">   32</a></span><a class="code hl_function" href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">SequenceMember::SequenceMember</a>(<span class="keyword">const</span> <a class="code hl_class" href="classSequenceMember.html">SequenceMember</a> &amp;rhs):</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a>(rhs),</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    itsPosition(rhs.itsPosition),</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    itsFlag(rhs.itsFlag),</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    itsType(rhs.itsType),</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="classOpalElement.html">OpalElement</a>(rhs.<a class="code hl_class" href="classOpalElement.html">OpalElement</a>)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a3635c90a501d8a8d76f81ef5e4f88e06">   28</a></span><a class="code hl_function" href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">SequenceMember::SequenceMember</a>(<span class="keyword">const</span> <a class="code hl_class" href="classSequenceMember.html">SequenceMember</a>&amp; rhs)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    : <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a>(rhs),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      itsPosition(rhs.itsPosition),</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      itsFlag(rhs.itsFlag),</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      itsType(rhs.itsType),</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <a class="code hl_class" href="classOpalElement.html">OpalElement</a>(rhs.<a class="code hl_class" href="classOpalElement.html">OpalElement</a>) {}</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a69a4e810f72b1d42606f3a2349f855d7">   41</a></span><a class="code hl_function" href="classSequenceMember.html#a69a4e810f72b1d42606f3a2349f855d7">SequenceMember::~SequenceMember</a>()</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{}</div>
-</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a919ef091921cc94d9ebd107a083622c1">   45</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSequenceMember.html#a919ef091921cc94d9ebd107a083622c1">SequenceMember::setLength</a>(<span class="keywordtype">double</span> drift) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classSequenceMember.html#a36a558b397e803ddf58ab4c1d5fb1e5d">itsType</a> == <a class="code hl_enumvalue" href="classSequenceMember.html#a5e7b0c150857c77031fec7b91196a1a3a6fc8b5a846bd5f32f85a02a3c3b0c14f">GENERATED</a>) <a class="code hl_function" href="classElmPtr.html#a5e93800b724a0a93cbb985fdc52cbf0f">getElement</a>()-&gt;<a class="code hl_function" href="classElementBase.html#a2b59853ce20c48c2436d0c136adeea69">setElementLength</a>(drift);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a69a4e810f72b1d42606f3a2349f855d7">   35</a></span><a class="code hl_function" href="classSequenceMember.html#a69a4e810f72b1d42606f3a2349f855d7">SequenceMember::~SequenceMember</a>() {}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classSequenceMember.html#a919ef091921cc94d9ebd107a083622c1">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSequenceMember.html#a919ef091921cc94d9ebd107a083622c1">SequenceMember::setLength</a>(<span class="keywordtype">double</span> drift) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSequenceMember.html#a36a558b397e803ddf58ab4c1d5fb1e5d">itsType</a> == <a class="code hl_enumvalue" href="classSequenceMember.html#a5e7b0c150857c77031fec7b91196a1a3a6fc8b5a846bd5f32f85a02a3c3b0c14f">GENERATED</a>) <a class="code hl_function" href="classElmPtr.html#a5e93800b724a0a93cbb985fdc52cbf0f">getElement</a>()-&gt;<a class="code hl_function" href="classElementBase.html#a2b59853ce20c48c2436d0c136adeea69">setElementLength</a>(drift);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
 <div class="ttc" id="aElementBase_8h_html"><div class="ttname"><a href="ElementBase_8h.html">ElementBase.h</a></div></div>
 <div class="ttc" id="aFieldmap_8h_html_a4c73d8aa04c5b31558f468b95d4748b3a6ce26a62afab55d7606ad4e92428b30c"><div class="ttname"><a href="Fieldmap_8h.html#a4c73d8aa04c5b31558f468b95d4748b3a6ce26a62afab55d7606ad4e92428b30c">UNKNOWN</a></div><div class="ttdeci">@ UNKNOWN</div><div class="ttdef"><b>Definition</b> <a href="Fieldmap_8h_source.html#l00015">Fieldmap.h:15</a></div></div>
 <div class="ttc" id="aSequenceMember_8h_html"><div class="ttname"><a href="SequenceMember_8h.html">SequenceMember.h</a></div></div>
-<div class="ttc" id="aclassElementBase_html_a2b59853ce20c48c2436d0c136adeea69"><div class="ttname"><a href="classElementBase.html#a2b59853ce20c48c2436d0c136adeea69">ElementBase::setElementLength</a></div><div class="ttdeci">virtual void setElementLength(double length)</div><div class="ttdoc">Set design length.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00481">ElementBase.h:481</a></div></div>
-<div class="ttc" id="aclassElmPtr_html_a5e93800b724a0a93cbb985fdc52cbf0f"><div class="ttname"><a href="classElmPtr.html#a5e93800b724a0a93cbb985fdc52cbf0f">ElmPtr::getElement</a></div><div class="ttdeci">ElementBase * getElement() const</div><div class="ttdoc">Get the element pointer.</div><div class="ttdef"><b>Definition</b> <a href="ElmPtr_8h_source.html#l00061">ElmPtr.h:61</a></div></div>
-<div class="ttc" id="aclassFlaggedElmPtr_html"><div class="ttname"><a href="classFlaggedElmPtr.html">FlaggedElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8h_source.html#l00036">FlaggedElmPtr.h:36</a></div></div>
-<div class="ttc" id="aclassOpalElement_html"><div class="ttname"><a href="classOpalElement.html">OpalElement</a></div><div class="ttdef"><b>Definition</b> <a href="OpalElement_8h_source.html#l00027">OpalElement.h:27</a></div></div>
+<div class="ttc" id="aclassElementBase_html_a2b59853ce20c48c2436d0c136adeea69"><div class="ttname"><a href="classElementBase.html#a2b59853ce20c48c2436d0c136adeea69">ElementBase::setElementLength</a></div><div class="ttdeci">virtual void setElementLength(double length)</div><div class="ttdoc">Set design length.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00482">ElementBase.h:482</a></div></div>
+<div class="ttc" id="aclassElmPtr_html_a5e93800b724a0a93cbb985fdc52cbf0f"><div class="ttname"><a href="classElmPtr.html#a5e93800b724a0a93cbb985fdc52cbf0f">ElmPtr::getElement</a></div><div class="ttdeci">ElementBase * getElement() const</div><div class="ttdoc">Get the element pointer.</div><div class="ttdef"><b>Definition</b> <a href="ElmPtr_8h_source.html#l00056">ElmPtr.h:56</a></div></div>
+<div class="ttc" id="aclassFlaggedElmPtr_html"><div class="ttname"><a href="classFlaggedElmPtr.html">FlaggedElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8h_source.html#l00035">FlaggedElmPtr.h:35</a></div></div>
+<div class="ttc" id="aclassOpalElement_html"><div class="ttname"><a href="classOpalElement.html">OpalElement</a></div><div class="ttdef"><b>Definition</b> <a href="OpalElement_8h_source.html#l00031">OpalElement.h:31</a></div></div>
 <div class="ttc" id="aclassSequenceMember_html"><div class="ttname"><a href="classSequenceMember.html">SequenceMember</a></div><div class="ttdoc">A member of a SEQUENCE.</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8h_source.html#l00029">SequenceMember.h:29</a></div></div>
-<div class="ttc" id="aclassSequenceMember_html_a13bd1d36c620fe6342ca888a81aae6e3"><div class="ttname"><a href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">SequenceMember::SequenceMember</a></div><div class="ttdeci">SequenceMember()</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8cpp_source.html#l00026">SequenceMember.cpp:26</a></div></div>
-<div class="ttc" id="aclassSequenceMember_html_a36a558b397e803ddf58ab4c1d5fb1e5d"><div class="ttname"><a href="classSequenceMember.html#a36a558b397e803ddf58ab4c1d5fb1e5d">SequenceMember::itsType</a></div><div class="ttdeci">MemberType itsType</div><div class="ttdoc">Type word.</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8h_source.html#l00071">SequenceMember.h:71</a></div></div>
-<div class="ttc" id="aclassSequenceMember_html_a5e7b0c150857c77031fec7b91196a1a3a6fc8b5a846bd5f32f85a02a3c3b0c14f"><div class="ttname"><a href="classSequenceMember.html#a5e7b0c150857c77031fec7b91196a1a3a6fc8b5a846bd5f32f85a02a3c3b0c14f">SequenceMember::GENERATED</a></div><div class="ttdeci">@ GENERATED</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8h_source.html#l00039">SequenceMember.h:38</a></div></div>
-<div class="ttc" id="aclassSequenceMember_html_a69a4e810f72b1d42606f3a2349f855d7"><div class="ttname"><a href="classSequenceMember.html#a69a4e810f72b1d42606f3a2349f855d7">SequenceMember::~SequenceMember</a></div><div class="ttdeci">~SequenceMember()</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8cpp_source.html#l00041">SequenceMember.cpp:41</a></div></div>
-<div class="ttc" id="aclassSequenceMember_html_a919ef091921cc94d9ebd107a083622c1"><div class="ttname"><a href="classSequenceMember.html#a919ef091921cc94d9ebd107a083622c1">SequenceMember::setLength</a></div><div class="ttdeci">void setLength(double drift)</div><div class="ttdoc">Store the drift length for a generated drift.</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8cpp_source.html#l00045">SequenceMember.cpp:45</a></div></div>
+<div class="ttc" id="aclassSequenceMember_html_a13bd1d36c620fe6342ca888a81aae6e3"><div class="ttname"><a href="classSequenceMember.html#a13bd1d36c620fe6342ca888a81aae6e3">SequenceMember::SequenceMember</a></div><div class="ttdeci">SequenceMember()</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8cpp_source.html#l00025">SequenceMember.cpp:25</a></div></div>
+<div class="ttc" id="aclassSequenceMember_html_a36a558b397e803ddf58ab4c1d5fb1e5d"><div class="ttname"><a href="classSequenceMember.html#a36a558b397e803ddf58ab4c1d5fb1e5d">SequenceMember::itsType</a></div><div class="ttdeci">MemberType itsType</div><div class="ttdoc">Type word.</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8h_source.html#l00063">SequenceMember.h:63</a></div></div>
+<div class="ttc" id="aclassSequenceMember_html_a5e7b0c150857c77031fec7b91196a1a3a6fc8b5a846bd5f32f85a02a3c3b0c14f"><div class="ttname"><a href="classSequenceMember.html#a5e7b0c150857c77031fec7b91196a1a3a6fc8b5a846bd5f32f85a02a3c3b0c14f">SequenceMember::GENERATED</a></div><div class="ttdeci">@ GENERATED</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8h_source.html#l00032">SequenceMember.h:32</a></div></div>
+<div class="ttc" id="aclassSequenceMember_html_a69a4e810f72b1d42606f3a2349f855d7"><div class="ttname"><a href="classSequenceMember.html#a69a4e810f72b1d42606f3a2349f855d7">SequenceMember::~SequenceMember</a></div><div class="ttdeci">~SequenceMember()</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8cpp_source.html#l00035">SequenceMember.cpp:35</a></div></div>
+<div class="ttc" id="aclassSequenceMember_html_a919ef091921cc94d9ebd107a083622c1"><div class="ttname"><a href="classSequenceMember.html#a919ef091921cc94d9ebd107a083622c1">SequenceMember::setLength</a></div><div class="ttdeci">void setLength(double drift)</div><div class="ttdoc">Store the drift length for a generated drift.</div><div class="ttdef"><b>Definition</b> <a href="SequenceMember_8cpp_source.html#l00037">SequenceMember.cpp:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d8e0176cd512af77c9ad2365f8231dbb.html">Lines</a></li><li class="navelem"><a class="el" href="SequenceMember_8cpp.html">SequenceMember.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

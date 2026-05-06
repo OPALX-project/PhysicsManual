@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -127,44 +127,40 @@ $(document).ready(function(){initNavTree('Echo_8h_source.html',''); initResizabl
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="Action_8h.html">AbstractObjects/Action.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classEcho.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classEcho.html">Echo</a>: <span class="keyword">public</span> <a class="code hl_class" href="classAction.html">Action</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classEcho.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classEcho.html">Echo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classAction.html">Action</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="classEcho.html#ababd42898feed0775f5234d53fe9bff1">Echo</a>();</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="classEcho.html#ababd42898feed0775f5234d53fe9bff1">Echo</a>();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classEcho.html#a03c51e9ff426744f7ae68a9aac8614c8">~Echo</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classEcho.html#a03c51e9ff426744f7ae68a9aac8614c8">~Echo</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classEcho.html">Echo</a>* <a class="code hl_function" href="classEcho.html#a8203ff97a7fa8c5d6cbf5eac31d4b8e1">clone</a>(<span class="keyword">const</span> std::string&amp; name);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classEcho.html">Echo</a>* <a class="code hl_function" href="classEcho.html#a8203ff97a7fa8c5d6cbf5eac31d4b8e1">clone</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classEcho.html#a0c42829482db8d34dbf1e53a6bb7ead1">execute</a>();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classEcho.html#a0c42829482db8d34dbf1e53a6bb7ead1">execute</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classEcho.html#aec69374a8b60caff4eca35c4db63d14c">parse</a>(<a class="code hl_class" href="classStatement.html">Statement</a>&amp;);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classEcho.html#aec69374a8b60caff4eca35c4db63d14c">parse</a>(<a class="code hl_class" href="classStatement.html">Statement</a>&amp;);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Not implemented.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classEcho.html#a25f2f7a277ee987db0894be126fab9ad">   41</a></span>    <a class="code hl_function" href="classEcho.html#a25f2f7a277ee987db0894be126fab9ad">Echo</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEcho.html">Echo</a>&amp;);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classEcho.html#a09d2b989d2ed5bc535a1207f20e48979">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEcho.html#a09d2b989d2ed5bc535a1207f20e48979">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEcho.html">Echo</a>&amp;);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Not implemented.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classEcho.html#a25f2f7a277ee987db0894be126fab9ad">   45</a></span>    <a class="code hl_function" href="classEcho.html#a25f2f7a277ee987db0894be126fab9ad">Echo</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEcho.html">Echo</a>&amp;);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classEcho.html#a09d2b989d2ed5bc535a1207f20e48979">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEcho.html#a09d2b989d2ed5bc535a1207f20e48979">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEcho.html">Echo</a>&amp;);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Clone constructor.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="classEcho.html#ababd42898feed0775f5234d53fe9bff1">Echo</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classEcho.html">Echo</a>* parent);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Clone constructor.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="classEcho.html#ababd42898feed0775f5234d53fe9bff1">Echo</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classEcho.html">Echo</a>* parent);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_Echo_HH</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_Echo_HH</span></div>
 <div class="ttc" id="aAction_8h_html"><div class="ttname"><a href="Action_8h.html">Action.h</a></div></div>
-<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">The base class for all OPAL actions.</div><div class="ttdef"><b>Definition</b> <a href="Action_8h_source.html#l00030">Action.h:30</a></div></div>
-<div class="ttc" id="aclassEcho_html"><div class="ttname"><a href="classEcho.html">Echo</a></div><div class="ttdef"><b>Definition</b> <a href="Echo_8h_source.html#l00024">Echo.h:24</a></div></div>
-<div class="ttc" id="aclassEcho_html_a03c51e9ff426744f7ae68a9aac8614c8"><div class="ttname"><a href="classEcho.html#a03c51e9ff426744f7ae68a9aac8614c8">Echo::~Echo</a></div><div class="ttdeci">virtual ~Echo()</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00035">Echo.cpp:35</a></div></div>
+<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">The base class for all OPAL actions.</div><div class="ttdef"><b>Definition</b> <a href="Action_8h_source.html#l00029">Action.h:29</a></div></div>
+<div class="ttc" id="aclassEcho_html"><div class="ttname"><a href="classEcho.html">Echo</a></div><div class="ttdef"><b>Definition</b> <a href="Echo_8h_source.html#l00023">Echo.h:23</a></div></div>
+<div class="ttc" id="aclassEcho_html_a03c51e9ff426744f7ae68a9aac8614c8"><div class="ttname"><a href="classEcho.html#a03c51e9ff426744f7ae68a9aac8614c8">Echo::~Echo</a></div><div class="ttdeci">virtual ~Echo()</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00034">Echo.cpp:34</a></div></div>
 <div class="ttc" id="aclassEcho_html_a09d2b989d2ed5bc535a1207f20e48979"><div class="ttname"><a href="classEcho.html#a09d2b989d2ed5bc535a1207f20e48979">Echo::operator=</a></div><div class="ttdeci">void operator=(const Echo &amp;)</div></div>
-<div class="ttc" id="aclassEcho_html_a0c42829482db8d34dbf1e53a6bb7ead1"><div class="ttname"><a href="classEcho.html#a0c42829482db8d34dbf1e53a6bb7ead1">Echo::execute</a></div><div class="ttdeci">virtual void execute()</div><div class="ttdoc">Execute the command.</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00042">Echo.cpp:42</a></div></div>
+<div class="ttc" id="aclassEcho_html_a0c42829482db8d34dbf1e53a6bb7ead1"><div class="ttname"><a href="classEcho.html#a0c42829482db8d34dbf1e53a6bb7ead1">Echo::execute</a></div><div class="ttdeci">virtual void execute()</div><div class="ttdoc">Execute the command.</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00038">Echo.cpp:38</a></div></div>
 <div class="ttc" id="aclassEcho_html_a25f2f7a277ee987db0894be126fab9ad"><div class="ttname"><a href="classEcho.html#a25f2f7a277ee987db0894be126fab9ad">Echo::Echo</a></div><div class="ttdeci">Echo(const Echo &amp;)</div></div>
-<div class="ttc" id="aclassEcho_html_a8203ff97a7fa8c5d6cbf5eac31d4b8e1"><div class="ttname"><a href="classEcho.html#a8203ff97a7fa8c5d6cbf5eac31d4b8e1">Echo::clone</a></div><div class="ttdeci">virtual Echo * clone(const std::string &amp;name)</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00038">Echo.cpp:38</a></div></div>
+<div class="ttc" id="aclassEcho_html_a8203ff97a7fa8c5d6cbf5eac31d4b8e1"><div class="ttname"><a href="classEcho.html#a8203ff97a7fa8c5d6cbf5eac31d4b8e1">Echo::clone</a></div><div class="ttdeci">virtual Echo * clone(const std::string &amp;name)</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00036">Echo.cpp:36</a></div></div>
 <div class="ttc" id="aclassEcho_html_ababd42898feed0775f5234d53fe9bff1"><div class="ttname"><a href="classEcho.html#ababd42898feed0775f5234d53fe9bff1">Echo::Echo</a></div><div class="ttdeci">Echo()</div><div class="ttdoc">Exemplar constructor.</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00026">Echo.cpp:26</a></div></div>
-<div class="ttc" id="aclassEcho_html_aec69374a8b60caff4eca35c4db63d14c"><div class="ttname"><a href="classEcho.html#aec69374a8b60caff4eca35c4db63d14c">Echo::parse</a></div><div class="ttdeci">virtual void parse(Statement &amp;)</div><div class="ttdoc">Parse command (special for one-attribute command).</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00047">Echo.cpp:47</a></div></div>
+<div class="ttc" id="aclassEcho_html_aec69374a8b60caff4eca35c4db63d14c"><div class="ttname"><a href="classEcho.html#aec69374a8b60caff4eca35c4db63d14c">Echo::parse</a></div><div class="ttdeci">virtual void parse(Statement &amp;)</div><div class="ttdoc">Parse command (special for one-attribute command).</div><div class="ttdef"><b>Definition</b> <a href="Echo_8cpp_source.html#l00042">Echo.cpp:42</a></div></div>
 <div class="ttc" id="aclassStatement_html"><div class="ttname"><a href="classStatement.html">Statement</a></div><div class="ttdoc">Interface for statements.</div><div class="ttdef"><b>Definition</b> <a href="Statement_8h_source.html#l00037">Statement.h:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -172,7 +168,7 @@ $(document).ready(function(){initNavTree('Echo_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_55226659fda28c7b4ccb55d2ec273003.html">BasicActions</a></li><li class="navelem"><a class="el" href="Echo_8h.html">Echo.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

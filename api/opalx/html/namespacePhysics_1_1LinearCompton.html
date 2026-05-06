@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -197,7 +197,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Sampled single-photon Compton event. </p>
 <p>The event is parameterized by the electron-rest-frame scattering variables \((\cos\Theta^*, \phi^*)\) and the corresponding scattered photon energy and direction after boosting back to the laboratory frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8h_source.html#l00041">41</a> of file <a class="el" href="LinearCompton_8h_source.html">LinearCompton.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8h_source.html#l00049">49</a> of file <a class="el" href="LinearCompton_8h_source.html">LinearCompton.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for Physics::LinearCompton::SampledEvent:</div>
 <div class="dyncontent">
@@ -213,29 +213,30 @@ Collaboration diagram for Physics::LinearCompton::SampledEvent:</div>
 <td class="fieldname">
 azimuthERF = 0.0</td>
 <td class="fielddoc">
-Rest-frame azimuth \(\phi^*\) around the incoming-photon axis [rad]. </td></tr>
+<p>Rest-frame azimuth \(\phi^*\) around the incoming-photon axis [rad]. </p>
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a15b3d7a2ea6f933fcc1b8c127db4d99c" name="a15b3d7a2ea6f933fcc1b8c127db4d99c"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-scatteredPhotonDirectionLab = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+scatteredPhotonDirectionLab</td>
 <td class="fielddoc">
 Normalized outgoing photon direction in the laboratory frame. </td></tr>
 <tr><td class="fieldtype">
 <a id="a9429e5fb891478e2dee842ba34cb6412" name="a9429e5fb891478e2dee842ba34cb6412"></a>double</td>
 <td class="fieldname">
-scatteredPhotonEnergyERFGeV = 0.0</td>
+scatteredPhotonEnergyERFGeV</td>
 <td class="fielddoc">
 Outgoing photon energy in the electron rest frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a42521bb50f8662a05ab6ed36d39547de" name="a42521bb50f8662a05ab6ed36d39547de"></a>double</td>
 <td class="fieldname">
-scatteredPhotonEnergyLabGeV = 0.0</td>
+scatteredPhotonEnergyLabGeV</td>
 <td class="fielddoc">
 Outgoing photon energy in the laboratory frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a52e97e4c422da9ed4676c28dd1d365c6" name="a52e97e4c422da9ed4676c28dd1d365c6"></a>double</td>
 <td class="fieldname">
-scatteringCosineERF = 0.0</td>
+scatteringCosineERF</td>
 <td class="fielddoc">
 Rest-frame polar scattering cosine \(\cos\Theta^*\). </td></tr>
 </table>
@@ -271,39 +272,41 @@ Collaboration diagram for Physics::LinearCompton::SamplingKernel:</div>
 <tr><td class="fieldtype">
 <a id="a7cd755f58ad6dced3e010065e55c7c26" name="a7cd755f58ad6dced3e010065e55c7c26"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-beamDirection = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+beamDirection</td>
 <td class="fielddoc">
 Normalized incoming electron direction in the lab frame. </td></tr>
 <tr><td class="fieldtype">
 <a id="a67da486dde068f73fad8894c0870e1a7" name="a67da486dde068f73fad8894c0870e1a7"></a>double</td>
 <td class="fieldname">
-electronTotalEnergyGeV = 0.0</td>
+electronTotalEnergyGeV</td>
 <td class="fielddoc">
 Incoming electron total energy in the lab frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a881bd29ce2ab6e214822e132107a4afa" name="a881bd29ce2ab6e214822e132107a4afa"></a>double</td>
 <td class="fieldname">
-incomingPhotonEnergyERFGeV = 0.0</td>
+incomingPhotonEnergyERFGeV</td>
 <td class="fielddoc">
-Laser-photon energy after Lorentz transforming into the electron rest frame [GeV]. </td></tr>
+<p>Laser-photon energy after Lorentz transforming into the electron rest frame [GeV]. </p>
+</td></tr>
 <tr><td class="fieldtype">
 <a id="abcec104c3bdc77cd8ecd93880e2699f5" name="abcec104c3bdc77cd8ecd93880e2699f5"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-laserDirection = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+laserDirection</td>
 <td class="fielddoc">
 Normalized incoming laser direction in the lab frame. </td></tr>
 <tr><td class="fieldtype">
 <a id="aaeec69e340384ad74ae583028ca60ec6" name="aaeec69e340384ad74ae583028ca60ec6"></a>double</td>
 <td class="fieldname">
-laserPhotonEnergyGeV = 0.0</td>
+laserPhotonEnergyGeV</td>
 <td class="fielddoc">
 Incoming laser-photon energy in the lab frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a18cf1ace2a9ec546d0a1044cb5016178" name="a18cf1ace2a9ec546d0a1044cb5016178"></a>double</td>
 <td class="fieldname">
-rejectionUpperBoundSolidAngleERF = 0.0</td>
+rejectionUpperBoundSolidAngleERF</td>
 <td class="fielddoc">
-Conservative upper envelope for \(d\sigma/d\Omega^*\) used by the rejection sampler. </td></tr>
+<p>Conservative upper envelope for \(d\sigma/d\Omega^*\) used by the rejection sampler. </p>
+</td></tr>
 </table>
 
 </div>
@@ -370,9 +373,9 @@ Conservative upper envelope for \(d\sigma/d\Omega^*\) used by the rejection samp
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00325">325</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00316">316</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00312">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00303">scatteredPhotonEnergyERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00298">scatteredPhotonEnergyMaxERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00293">scatteredPhotonEnergyMinERFGeV()</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00301">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00292">scatteredPhotonEnergyERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00287">scatteredPhotonEnergyMaxERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00282">scatteredPhotonEnergyMinERFGeV()</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -447,11 +450,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Differential cross section in units of m^2 / sr. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00312">312</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00301">301</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00273">invariantKappa()</a>, <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00303">scatteredPhotonEnergyERFGeV()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00264">invariantKappa()</a>, <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00292">scatteredPhotonEnergyERFGeV()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00325">differentialCrossSectionOmegaERF()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00291">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00534">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00228">sampleEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00316">differentialCrossSectionOmegaERF()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00282">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00519">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00224">sampleEvent()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -499,11 +502,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00136">136</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00131">131</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00127">electronGamma()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00120">electronGamma()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00159">restFrameIncomingPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00141">restFrameIncomingPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00366">restFrameScatteringCosineForLabForwardPhoton()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00156">restFrameIncomingPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00136">restFrameIncomingPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00363">restFrameScatteringCosineForLabForwardPhoton()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -548,11 +551,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00127">127</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00120">120</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00136">electronBeta()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00159">restFrameIncomingPhotonDirection()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00141">restFrameIncomingPhotonEnergyGeV()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00131">electronBeta()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00156">restFrameIncomingPhotonDirection()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00136">restFrameIncomingPhotonEnergyGeV()</a>.</p>
 
 </div>
 </div>
@@ -587,11 +590,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00273">273</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00264">264</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00312">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00279">invariantX()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00303">scatteredPhotonEnergyERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00298">scatteredPhotonEnergyMaxERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00293">scatteredPhotonEnergyMinERFGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00344">totalCrossSection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00301">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00270">invariantX()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00292">scatteredPhotonEnergyERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00287">scatteredPhotonEnergyMaxERFGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00282">scatteredPhotonEnergyMinERFGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00340">totalCrossSection()</a>.</p>
 
 </div>
 </div>
@@ -645,9 +648,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Dimensionless invariant \(x = 2 \\omega_1 / m_e\). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00283">283</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00274">274</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00279">invariantX()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00141">restFrameIncomingPhotonEnergyGeV()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00270">invariantX()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00136">restFrameIncomingPhotonEnergyGeV()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -703,11 +706,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00279">279</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00270">270</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00273">invariantKappa()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00264">invariantKappa()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Laser_8cpp_source.html#l00081">Laser::getLinearComptonInvariantX()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00283">invariantX()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00102">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Laser_8cpp_source.html#l00081">Laser::getLinearComptonInvariantX()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00274">invariantX()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00098">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -772,11 +775,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Forward scattered photon energy in GeV. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00409">409</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00403">403</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00366">restFrameScatteringCosineForLabForwardPhoton()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00363">restFrameScatteringCosineForLabForwardPhoton()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Laser_8cpp_source.html#l00087">Laser::getLinearComptonForwardPhotonEnergyGeV()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00137">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00102">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Laser_8cpp_source.html#l00087">Laser::getLinearComptonForwardPhotonEnergyGeV()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00129">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00098">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -875,9 +878,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00178">178</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00136">electronBeta()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00127">electronGamma()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00159">restFrameIncomingPhotonDirection()</a>.</p>
+<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00131">electronBeta()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00120">electronGamma()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00156">restFrameIncomingPhotonDirection()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00291">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00534">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00228">sampleEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00282">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00519">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00224">sampleEvent()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -966,11 +969,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Scattered photon energy in the laboratory frame in GeV. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00379">379</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00378">378</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00136">electronBeta()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00127">electronGamma()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00159">restFrameIncomingPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00141">restFrameIncomingPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00303">scatteredPhotonEnergyERFGeV()</a>.</p>
+<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00131">electronBeta()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00120">electronGamma()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00156">restFrameIncomingPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00136">restFrameIncomingPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00292">scatteredPhotonEnergyERFGeV()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00534">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00409">labForwardPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00228">sampleEvent()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00137">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00519">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00403">labForwardPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00224">sampleEvent()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00129">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1029,9 +1032,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Host-side Mersenne-Twister engine. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00203">203</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00200">200</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00357">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00618">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00114">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00205">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00166">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00344">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00598">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00109">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00191">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00153">TEST()</a>.</p>
 
 </div>
 </div>
@@ -1093,11 +1096,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Cached host-side sampling kernel. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00207">207</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00204">204</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8h_source.html#l00028">Physics::LinearCompton::SamplingKernel::beamDirection</a>, <a class="el" href="LinearCompton_8h_source.html#l00026">Physics::LinearCompton::SamplingKernel::electronTotalEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00030">Physics::LinearCompton::SamplingKernel::incomingPhotonEnergyERFGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00029">Physics::LinearCompton::SamplingKernel::laserDirection</a>, <a class="el" href="LinearCompton_8h_source.html#l00027">Physics::LinearCompton::SamplingKernel::laserPhotonEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00031">Physics::LinearCompton::SamplingKernel::rejectionUpperBoundSolidAngleERF</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00141">restFrameIncomingPhotonEnergyGeV()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8h_source.html#l00030">Physics::LinearCompton::SamplingKernel::beamDirection</a>, <a class="el" href="LinearCompton_8h_source.html#l00026">Physics::LinearCompton::SamplingKernel::electronTotalEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00034">Physics::LinearCompton::SamplingKernel::incomingPhotonEnergyERFGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00032">Physics::LinearCompton::SamplingKernel::laserDirection</a>, <a class="el" href="LinearCompton_8h_source.html#l00028">Physics::LinearCompton::SamplingKernel::laserPhotonEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00037">Physics::LinearCompton::SamplingKernel::rejectionUpperBoundSolidAngleERF</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00136">restFrameIncomingPhotonEnergyGeV()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00357">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00618">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00114">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00205">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00166">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00344">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00598">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00109">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00191">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00153">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1154,11 +1157,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00121">121</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00114">114</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="Physics_8h_source.html#l00069">Physics::h_bar</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Laser_8cpp_source.html#l00077">Laser::getPhotonEnergyGeV()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00291">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00534">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00357">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00618">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00114">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00137">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00205">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00102">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00166">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Laser_8cpp_source.html#l00077">Laser::getPhotonEnergyGeV()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00282">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00519">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00344">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00598">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00109">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00129">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00191">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00098">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00153">TEST()</a>.</p>
 
 </div>
 </div>
@@ -1206,11 +1209,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Unit vector for the incoming photon in the electron rest frame. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00159">159</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00156">156</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00136">electronBeta()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00127">electronGamma()</a>.</p>
+<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00131">electronBeta()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00120">electronGamma()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1291,11 +1294,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00141">141</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00136">136</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00136">electronBeta()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00127">electronGamma()</a>.</p>
+<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00131">electronBeta()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00120">electronGamma()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00291">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00534">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00283">invariantX()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00207">makeSamplingKernel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00282">LinearComptonBenchmark::integrateLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00519">LinearComptonBenchmark::integrateLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00048">LinearComptonBenchmark::integrateLabSpectrum()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00274">invariantX()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00204">makeSamplingKernel()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1354,11 +1357,11 @@ Here is the call graph for this function:</div>
 \]
 </p>
  
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00366">366</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00363">363</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00136">electronBeta()</a>.</p>
+<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00131">electronBeta()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00409">labForwardPhotonEnergyGeV()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00137">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00403">labForwardPhotonEnergyGeV()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00129">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1414,11 +1417,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sampled linear-Compton event. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00228">228</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00224">224</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8h_source.html#l00043">Physics::LinearCompton::SampledEvent::azimuthERF</a>, <a class="el" href="LinearCompton_8h_source.html#l00028">Physics::LinearCompton::SamplingKernel::beamDirection</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00312">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="LinearCompton_8h_source.html#l00026">Physics::LinearCompton::SamplingKernel::electronTotalEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00030">Physics::LinearCompton::SamplingKernel::incomingPhotonEnergyERFGeV</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8h_source.html#l00029">Physics::LinearCompton::SamplingKernel::laserDirection</a>, <a class="el" href="LinearCompton_8h_source.html#l00027">Physics::LinearCompton::SamplingKernel::laserPhotonEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00031">Physics::LinearCompton::SamplingKernel::rejectionUpperBoundSolidAngleERF</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00303">scatteredPhotonEnergyERFGeV()</a>, <a class="el" href="LinearCompton_8h_source.html#l00042">Physics::LinearCompton::SampledEvent::scatteringCosineERF</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8h_source.html#l00052">Physics::LinearCompton::SampledEvent::azimuthERF</a>, <a class="el" href="LinearCompton_8h_source.html#l00030">Physics::LinearCompton::SamplingKernel::beamDirection</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00301">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="LinearCompton_8h_source.html#l00026">Physics::LinearCompton::SamplingKernel::electronTotalEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00034">Physics::LinearCompton::SamplingKernel::incomingPhotonEnergyERFGeV</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00178">labPhotonDirection()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8h_source.html#l00032">Physics::LinearCompton::SamplingKernel::laserDirection</a>, <a class="el" href="LinearCompton_8h_source.html#l00028">Physics::LinearCompton::SamplingKernel::laserPhotonEnergyGeV</a>, <a class="el" href="LinearCompton_8h_source.html#l00037">Physics::LinearCompton::SamplingKernel::rejectionUpperBoundSolidAngleERF</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00292">scatteredPhotonEnergyERFGeV()</a>, <a class="el" href="LinearCompton_8h_source.html#l00050">Physics::LinearCompton::SampledEvent::scatteringCosineERF</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00357">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00618">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00114">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00205">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00166">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00344">LinearComptonBenchmark::sampleLabAngularSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00598">LinearComptonBenchmark::sampleLabJointSpectrum()</a>, <a class="el" href="LinearComptonSpectrumCommon_8h_source.html#l00109">LinearComptonBenchmark::sampleLabSpectrum()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00191">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00153">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1512,11 +1515,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00303">303</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00292">292</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00273">invariantKappa()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00264">invariantKappa()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00325">differentialCrossSectionOmegaERF()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00312">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00379">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00228">sampleEvent()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00070">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00316">differentialCrossSectionOmegaERF()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00301">differentialCrossSectionSolidAngleERF()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00378">labPhotonEnergyGeV()</a>, <a class="el" href="LinearCompton_8cpp_source.html#l00224">sampleEvent()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00068">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1553,11 +1556,11 @@ Here is the call graph for this function:</div>
 \]
 </p>
  
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00298">298</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00287">287</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00273">invariantKappa()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00264">invariantKappa()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00325">differentialCrossSectionOmegaERF()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00087">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00070">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00166">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00316">differentialCrossSectionOmegaERF()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00085">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00068">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00153">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1594,11 +1597,11 @@ Here is the call graph for this function:</div>
 \]
 </p>
  
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00293">293</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00282">282</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00273">invariantKappa()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00264">invariantKappa()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00325">differentialCrossSectionOmegaERF()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00087">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00070">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00166">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearCompton_8cpp_source.html#l00316">differentialCrossSectionOmegaERF()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00085">TEST()</a>, <a class="el" href="TestLinearCompton_8cpp_source.html#l00068">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00153">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1630,11 +1633,11 @@ Here is the call graph for this function:</div>
 <p>Thomson limit cross section. </p>
 <dl class="section return"><dt>Returns</dt><dd>The classical Thomson cross section \(8\\pi r_e^2 / 3\) in m^2. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00362">362</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00359">359</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, and <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestLinearCompton_8cpp_source.html#l00062">TEST()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00344">totalCrossSection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestLinearCompton_8cpp_source.html#l00060">TEST()</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00340">totalCrossSection()</a>.</p>
 
 </div>
 </div>
@@ -1682,11 +1685,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00344">344</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearCompton_8cpp_source.html#l00340">340</a> of file <a class="el" href="LinearCompton_8cpp_source.html">LinearCompton.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00273">invariantKappa()</a>, <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00362">thomsonCrossSection()</a>.</p>
+<p class="reference">References <a class="el" href="LinearCompton_8cpp_source.html#l00264">invariantKappa()</a>, <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>, and <a class="el" href="LinearCompton_8cpp_source.html#l00359">thomsonCrossSection()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestLinearCompton_8cpp_source.html#l00087">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00062">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestLinearCompton_8cpp_source.html#l00085">TEST()</a>, and <a class="el" href="TestLinearCompton_8cpp_source.html#l00060">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1708,7 +1711,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacePhysics.html">Physics</a></li><li class="navelem"><a class="el" href="namespacePhysics_1_1LinearCompton.html">LinearCompton</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

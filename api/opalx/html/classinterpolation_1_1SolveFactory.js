@@ -8,7 +8,7 @@ var classinterpolation_1_1SolveFactory =
     [ "PolynomialSolve", "classinterpolation_1_1SolveFactory.html#a8e1a54a1b7573d7ef78f79266b71c4ad", null ],
     [ "h_inv_", "classinterpolation_1_1SolveFactory.html#ac361cb8d5d3152ba6ef7311d47de9cbd", null ],
     [ "n_poly_coeffs_", "classinterpolation_1_1SolveFactory.html#a3ce6da3788fa030ed62f224de683cc33", null ],
-    [ "square_deriv_nearby_points_", "classinterpolation_1_1SolveFactory.html#acc890ada84b30ed0c3ab011ae265f40f", null ],
-    [ "square_points_", "classinterpolation_1_1SolveFactory.html#aea1535a8248da096b08848a301da8576", null ],
+    [ "square_deriv_nearby_points_", "classinterpolation_1_1SolveFactory.html#a939ca5e8894cada6f09cf6320c411904", null ],
+    [ "square_points_", "classinterpolation_1_1SolveFactory.html#a7747e8158891d1c1553d57112136cb97", null ],
     [ "square_temp_", "classinterpolation_1_1SolveFactory.html#aa3a3d2370f0e92758a339bec6ff56688", null ]
 ];

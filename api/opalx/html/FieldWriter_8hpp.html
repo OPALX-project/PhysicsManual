@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -100,78 +100,78 @@ $(document).ready(function(){initNavTree('FieldWriter_8hpp.html',''); initResiza
   <div class="headertitle"><div class="title">FieldWriter.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iomanip&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
+<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;filesystem&gt;</code><br />
-<code>#include &quot;<a class="el" href="Util_8h_source.html">Utilities/Util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OpalData_8h_source.html">AbstractObjects/OpalData.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Util_8h_source.html">Utilities/Util.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for FieldWriter.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="FieldWriter_8hpp__incl.png" border="0" usemap="#aFieldWriter_8hpp" alt=""/></div>
 <map name="aFieldWriter_8hpp" id="aFieldWriter_8hpp">
-<area shape="rect" title=" " alt="" coords="242,5,362,31"/>
-<area shape="rect" title=" " alt="" coords="59,79,134,104"/>
-<area shape="poly" title=" " alt="" coords="270,33,144,77,142,72,268,28"/>
-<area shape="rect" title=" " alt="" coords="159,79,232,104"/>
-<area shape="poly" title=" " alt="" coords="286,33,226,73,223,69,283,28"/>
-<area shape="rect" title=" " alt="" coords="257,79,347,104"/>
-<area shape="poly" title=" " alt="" coords="305,31,305,65,299,65,299,31"/>
-<area shape="rect" href="Util_8h.html" title=" " alt="" coords="1030,79,1142,104"/>
-<area shape="poly" title=" " alt="" coords="362,22,1016,81,1016,86,362,27"/>
-<area shape="rect" href="OpalData_8h.html" title=" " alt="" coords="371,79,574,104"/>
-<area shape="poly" title=" " alt="" coords="330,28,433,71,431,76,328,33"/>
-<area shape="rect" href="Quaternion_8hpp.html" title=" " alt="" coords="1410,152,1607,177"/>
-<area shape="poly" title=" " alt="" coords="1143,99,1428,147,1427,152,1142,105"/>
-<area shape="rect" title=" " alt="" coords="1631,152,1717,177"/>
-<area shape="poly" title=" " alt="" coords="1143,95,1348,114,1618,149,1617,155,1347,120,1142,100"/>
-<area shape="rect" title=" " alt="" coords="1741,152,1804,177"/>
-<area shape="poly" title=" " alt="" coords="1142,92,1393,108,1558,125,1728,150,1727,155,1557,131,1392,114,1142,97"/>
-<area shape="rect" title=" " alt="" coords="774,152,841,177"/>
-<area shape="poly" title=" " alt="" coords="1042,107,855,154,854,149,1041,101"/>
-<area shape="rect" title=" " alt="" coords="865,152,952,177"/>
-<area shape="poly" title=" " alt="" coords="1058,106,951,149,949,144,1057,102"/>
-<area shape="rect" title=" " alt="" coords="976,152,1087,177"/>
-<area shape="poly" title=" " alt="" coords="1079,106,1051,143,1046,140,1075,103"/>
-<area shape="rect" title=" " alt="" coords="1111,152,1170,177"/>
-<area shape="poly" title=" " alt="" coords="1097,103,1126,140,1121,143,1093,106"/>
-<area shape="rect" title=" " alt="" coords="1194,152,1269,177"/>
-<area shape="poly" title=" " alt="" coords="1111,102,1197,144,1194,148,1108,106"/>
-<area shape="rect" title=" " alt="" coords="691,152,750,177"/>
-<area shape="poly" title=" " alt="" coords="1030,104,912,125,764,154,763,149,911,119,1029,99"/>
-<area shape="rect" title=" " alt="" coords="1293,152,1385,177"/>
-<area shape="poly" title=" " alt="" coords="1127,101,1286,146,1284,151,1126,107"/>
-<area shape="rect" href="OPALTypes_8h.html" title=" " alt="" coords="564,152,667,177"/>
-<area shape="poly" title=" " alt="" coords="1030,103,681,155,680,149,1029,98"/>
-<area shape="rect" href="Matrix_8h.html" title=" " alt="" coords="1199,225,1349,251"/>
-<area shape="poly" title=" " alt="" coords="1472,180,1326,224,1324,219,1470,175"/>
-<area shape="rect" title=" " alt="" coords="1131,299,1190,324"/>
-<area shape="poly" title=" " alt="" coords="1422,180,1278,203,1220,216,1189,227,1179,240,1172,254,1165,285,1159,284,1167,252,1174,237,1186,223,1218,210,1277,198,1422,175"/>
-<area shape="rect" title=" " alt="" coords="1319,299,1453,324"/>
-<area shape="poly" title=" " alt="" coords="1293,248,1357,289,1354,293,1291,253"/>
-<area shape="rect" title=" " alt="" coords="1226,299,1295,324"/>
-<area shape="poly" title=" " alt="" coords="1274,251,1268,286,1263,285,1269,251"/>
-<area shape="rect" title=" " alt="" coords="975,299,1037,324"/>
-<area shape="poly" title=" " alt="" coords="1232,253,1052,301,1050,296,1230,248"/>
-<area shape="poly" title=" " alt="" coords="1257,253,1192,294,1189,289,1254,248"/>
-<area shape="rect" href="PartBunchFwd_8h.html" title=" " alt="" coords="694,225,889,251"/>
-<area shape="poly" title=" " alt="" coords="645,175,751,218,749,222,643,180"/>
-<area shape="rect" href="VectorMath_8h.html" title=" " alt="" coords="561,225,669,251"/>
-<area shape="poly" title=" " alt="" coords="618,178,618,212,613,212,613,178"/>
-<area shape="poly" title=" " alt="" coords="670,246,682,248,929,281,1118,303,1117,308,928,286,682,253,669,251"/>
-<area shape="rect" title=" " alt="" coords="585,299,645,324"/>
-<area shape="poly" title=" " alt="" coords="618,251,618,285,613,285,613,251"/>
-<area shape="poly" title=" " alt="" coords="447,106,422,120,400,137,388,156,387,166,391,176,406,193,427,208,487,235,563,257,649,274,825,296,961,305,961,311,825,301,648,279,562,262,485,240,424,213,402,197,386,179,382,167,382,154,396,133,419,115,445,102"/>
-<area shape="poly" title=" " alt="" coords="513,101,679,149,677,154,512,107"/>
-<area shape="poly" title=" " alt="" coords="497,102,581,143,579,148,494,106"/>
-<area shape="rect" title=" " alt="" coords="401,152,465,177"/>
-<area shape="poly" title=" " alt="" coords="468,106,448,141,444,139,464,103"/>
-<area shape="rect" title=" " alt="" coords="489,152,539,177"/>
-<area shape="poly" title=" " alt="" coords="482,103,503,139,498,141,477,106"/>
-<area shape="rect" title=" " alt="" coords="5,152,63,177"/>
-<area shape="poly" title=" " alt="" coords="372,107,236,126,76,155,75,149,235,120,372,101"/>
-<area shape="rect" href="ObjectFunction_8h.html" title=" " alt="" coords="87,152,325,177"/>
-<area shape="poly" title=" " alt="" coords="431,107,263,151,262,146,429,101"/>
+<area shape="rect" title=" " alt="" coords="187,5,307,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,79,104"/>
+<area shape="poly" title=" " alt="" coords="215,33,89,77,87,72,213,28"/>
+<area shape="rect" title=" " alt="" coords="103,79,178,104"/>
+<area shape="poly" title=" " alt="" coords="232,33,171,73,168,69,229,28"/>
+<area shape="rect" title=" " alt="" coords="202,79,293,104"/>
+<area shape="poly" title=" " alt="" coords="250,31,250,65,245,65,245,31"/>
+<area shape="rect" href="OpalData_8h.html" title=" " alt="" coords="317,79,519,104"/>
+<area shape="poly" title=" " alt="" coords="276,28,379,71,377,76,274,33"/>
+<area shape="rect" href="Util_8h.html" title=" " alt="" coords="1107,79,1219,104"/>
+<area shape="poly" title=" " alt="" coords="308,21,1094,82,1093,87,307,27"/>
+<area shape="rect" title=" " alt="" coords="81,152,145,177"/>
+<area shape="poly" title=" " alt="" coords="366,107,159,154,158,149,365,101"/>
+<area shape="rect" title=" " alt="" coords="169,152,219,177"/>
+<area shape="poly" title=" " alt="" coords="383,107,233,154,232,149,381,101"/>
+<area shape="rect" title=" " alt="" coords="244,152,301,177"/>
+<area shape="poly" title=" " alt="" coords="396,106,310,148,307,144,393,102"/>
+<area shape="rect" title=" " alt="" coords="641,152,699,177"/>
+<area shape="poly" title=" " alt="" coords="459,101,628,149,627,154,458,107"/>
+<area shape="rect" title=" " alt="" coords="996,299,1059,324"/>
+<area shape="poly" title=" " alt="" coords="403,106,385,121,370,139,362,158,362,167,367,176,385,193,409,208,476,235,559,257,652,274,840,296,982,305,982,311,839,301,651,279,558,262,474,240,407,213,381,197,363,179,357,169,356,158,365,137,382,117,400,102"/>
+<area shape="rect" href="ObjectFunction_8h.html" title=" " alt="" coords="377,152,616,177"/>
+<area shape="poly" title=" " alt="" coords="432,102,476,141,472,145,429,106"/>
+<area shape="rect" href="OPALTypes_8h.html" title=" " alt="" coords="724,152,827,177"/>
+<area shape="poly" title=" " alt="" coords="476,101,711,148,710,153,475,107"/>
+<area shape="rect" href="PartBunchFwd_8h.html" title=" " alt="" coords="854,225,1049,251"/>
+<area shape="poly" title=" " alt="" coords="805,175,911,218,909,222,803,180"/>
+<area shape="rect" href="VectorMath_8h.html" title=" " alt="" coords="721,225,829,251"/>
+<area shape="poly" title=" " alt="" coords="778,178,778,212,773,212,773,178"/>
+<area shape="rect" title=" " alt="" coords="1250,299,1309,324"/>
+<area shape="poly" title=" " alt="" coords="830,246,842,248,1236,302,1236,307,842,253,829,251"/>
+<area shape="rect" title=" " alt="" coords="745,299,805,324"/>
+<area shape="poly" title=" " alt="" coords="778,251,778,285,773,285,773,251"/>
+<area shape="poly" title=" " alt="" coords="1107,100,935,120,713,155,712,150,935,114,1107,95"/>
+<area shape="poly" title=" " alt="" coords="1108,105,841,154,840,149,1107,100"/>
+<area shape="rect" href="Quaternion_8hpp.html" title=" " alt="" coords="1487,152,1685,177"/>
+<area shape="poly" title=" " alt="" coords="1220,99,1505,147,1504,152,1219,105"/>
+<area shape="rect" title=" " alt="" coords="1709,152,1794,177"/>
+<area shape="poly" title=" " alt="" coords="1220,95,1425,114,1695,149,1695,155,1425,120,1219,100"/>
+<area shape="rect" title=" " alt="" coords="1819,152,1881,177"/>
+<area shape="poly" title=" " alt="" coords="1220,92,1470,108,1635,125,1805,150,1805,155,1634,131,1469,114,1219,97"/>
+<area shape="rect" title=" " alt="" coords="851,152,918,177"/>
+<area shape="poly" title=" " alt="" coords="1119,107,932,154,931,149,1118,101"/>
+<area shape="rect" title=" " alt="" coords="943,152,1029,177"/>
+<area shape="poly" title=" " alt="" coords="1136,106,1028,149,1026,144,1134,102"/>
+<area shape="rect" title=" " alt="" coords="1053,152,1164,177"/>
+<area shape="poly" title=" " alt="" coords="1156,106,1128,143,1124,140,1152,103"/>
+<area shape="rect" title=" " alt="" coords="1189,152,1247,177"/>
+<area shape="poly" title=" " alt="" coords="1174,103,1203,140,1199,143,1170,106"/>
+<area shape="rect" title=" " alt="" coords="1271,152,1346,177"/>
+<area shape="poly" title=" " alt="" coords="1188,102,1274,144,1272,148,1186,106"/>
+<area shape="rect" title=" " alt="" coords="1371,152,1463,177"/>
+<area shape="poly" title=" " alt="" coords="1205,101,1363,146,1362,151,1203,107"/>
+<area shape="poly" title=" " alt="" coords="1488,179,1381,198,1337,211,1308,227,1298,240,1291,254,1283,285,1278,284,1286,253,1293,237,1304,223,1335,206,1380,193,1487,174"/>
+<area shape="rect" href="Matrix_8h.html" title=" " alt="" coords="1317,225,1468,251"/>
+<area shape="poly" title=" " alt="" coords="1556,180,1438,223,1436,218,1554,175"/>
+<area shape="poly" title=" " alt="" coords="1334,253,1072,304,1071,299,1333,248"/>
+<area shape="poly" title=" " alt="" coords="1376,253,1311,294,1308,289,1373,248"/>
+<area shape="rect" title=" " alt="" coords="1438,299,1571,324"/>
+<area shape="poly" title=" " alt="" coords="1412,248,1476,289,1473,293,1409,253"/>
+<area shape="rect" title=" " alt="" coords="1345,299,1414,324"/>
+<area shape="poly" title=" " alt="" coords="1393,251,1387,286,1381,285,1388,251"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -192,7 +192,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1e943b2a5906122ddf396bc604857988.html">Structure</a></li><li class="navelem"><a class="el" href="FieldWriter_8hpp.html">FieldWriter.hpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

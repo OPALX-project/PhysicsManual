@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,55 +125,51 @@ $(document).ready(function(){initNavTree('Replacer_8h_source.html',''); initResi
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="DefaultVisitor_8h.html">Algorithms/DefaultVisitor.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="DefaultVisitor_8h.html">Algorithms/DefaultVisitor.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span><a class="code hl_class" href="classBeamline.html">Beamline</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span><a class="code hl_class" href="classElementBase.html">ElementBase</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Class Replacer</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classReplacer.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="classReplacer.html">Replacer</a>: <span class="keyword">public</span> <a class="code hl_class" href="classDefaultVisitor.html">DefaultVisitor</a> {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//  Attach visitor to a beamline, remember the range.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">Replacer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classBeamline.html">Beamline</a> &amp;, <span class="keyword">const</span> std::string &amp;name, <a class="code hl_class" href="classElementBase.html">ElementBase</a> *elm);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classReplacer.html#a897f224c9cdf7bfd474b87b56081f365">~Replacer</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Class Replacer</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classReplacer.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="classReplacer.html">Replacer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classDefaultVisitor.html">DefaultVisitor</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//  Attach visitor to a beamline, remember the range.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">Replacer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classBeamline.html">Beamline</a>&amp;, <span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classElementBase.html">ElementBase</a>* elm);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classReplacer.html#a897f224c9cdf7bfd474b87b56081f365">~Replacer</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classReplacer.html#ab6de9049a3a111cdeb018f140948af25">visitFlaggedElmPtr</a>(<span class="keyword">const</span> <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a>&amp;);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classReplacer.html#ab6de9049a3a111cdeb018f140948af25">visitFlaggedElmPtr</a>(<span class="keyword">const</span> <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a> &amp;);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Not implemented.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">   48</a></span>    <a class="code hl_function" href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">Replacer</a>();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classReplacer.html#ad32d5fe3244ec29072bd9d37764e66a8">   49</a></span>    <a class="code hl_function" href="classReplacer.html#ad32d5fe3244ec29072bd9d37764e66a8">Replacer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classReplacer.html">Replacer</a> &amp;);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classReplacer.html#ac26990c2cb82a37887fe2296aec4da48">   50</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classReplacer.html#ac26990c2cb82a37887fe2296aec4da48">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classReplacer.html">Replacer</a> &amp;);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// The name to be replaced.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classReplacer.html#a2d20d187b58c418b2af080ea827e1d7c">   53</a></span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="classReplacer.html#a2d20d187b58c418b2af080ea827e1d7c">itsName</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// The new element replacing the old one.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classReplacer.html#aa11f93ef0009aa3be6824758bfde2762">   56</a></span>    <a class="code hl_class" href="classElementBase.html">ElementBase</a> *<a class="code hl_variable" href="classReplacer.html#aa11f93ef0009aa3be6824758bfde2762">newBase</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// Not implemented.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">   44</a></span>    <a class="code hl_function" href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">Replacer</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classReplacer.html#ad32d5fe3244ec29072bd9d37764e66a8">   45</a></span>    <a class="code hl_function" href="classReplacer.html#ad32d5fe3244ec29072bd9d37764e66a8">Replacer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classReplacer.html">Replacer</a>&amp;);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classReplacer.html#ac26990c2cb82a37887fe2296aec4da48">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classReplacer.html#ac26990c2cb82a37887fe2296aec4da48">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classReplacer.html">Replacer</a>&amp;);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// The name to be replaced.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classReplacer.html#a2d20d187b58c418b2af080ea827e1d7c">   49</a></span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="classReplacer.html#a2d20d187b58c418b2af080ea827e1d7c">itsName</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// The new element replacing the old one.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classReplacer.html#aa11f93ef0009aa3be6824758bfde2762">   52</a></span>    <a class="code hl_class" href="classElementBase.html">ElementBase</a>* <a class="code hl_variable" href="classReplacer.html#aa11f93ef0009aa3be6824758bfde2762">newBase</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_Replacer_HH</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_Replacer_HH</span></div>
 <div class="ttc" id="aDefaultVisitor_8h_html"><div class="ttname"><a href="DefaultVisitor_8h.html">DefaultVisitor.h</a></div></div>
 <div class="ttc" id="aclassBeamline_html"><div class="ttname"><a href="classBeamline.html">Beamline</a></div><div class="ttdoc">An abstract sequence of beam line components.</div><div class="ttdef"><b>Definition</b> <a href="Beamline_8h_source.html#l00034">Beamline.h:34</a></div></div>
 <div class="ttc" id="aclassDefaultVisitor_html"><div class="ttname"><a href="classDefaultVisitor.html">DefaultVisitor</a></div><div class="ttdef"><b>Definition</b> <a href="DefaultVisitor_8h_source.html#l00030">DefaultVisitor.h:30</a></div></div>
-<div class="ttc" id="aclassElementBase_html"><div class="ttname"><a href="classElementBase.html">ElementBase</a></div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00121">ElementBase.h:121</a></div></div>
-<div class="ttc" id="aclassFlaggedElmPtr_html"><div class="ttname"><a href="classFlaggedElmPtr.html">FlaggedElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8h_source.html#l00036">FlaggedElmPtr.h:36</a></div></div>
-<div class="ttc" id="aclassReplacer_html"><div class="ttname"><a href="classReplacer.html">Replacer</a></div><div class="ttdoc">Replace all references to named element by a new version.</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8h_source.html#l00032">Replacer.h:32</a></div></div>
-<div class="ttc" id="aclassReplacer_html_a2d20d187b58c418b2af080ea827e1d7c"><div class="ttname"><a href="classReplacer.html#a2d20d187b58c418b2af080ea827e1d7c">Replacer::itsName</a></div><div class="ttdeci">const std::string itsName</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8h_source.html#l00053">Replacer.h:53</a></div></div>
-<div class="ttc" id="aclassReplacer_html_a897f224c9cdf7bfd474b87b56081f365"><div class="ttname"><a href="classReplacer.html#a897f224c9cdf7bfd474b87b56081f365">Replacer::~Replacer</a></div><div class="ttdeci">virtual ~Replacer()</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8cpp_source.html#l00041">Replacer.cpp:41</a></div></div>
-<div class="ttc" id="aclassReplacer_html_aa11f93ef0009aa3be6824758bfde2762"><div class="ttname"><a href="classReplacer.html#aa11f93ef0009aa3be6824758bfde2762">Replacer::newBase</a></div><div class="ttdeci">ElementBase * newBase</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8h_source.html#l00056">Replacer.h:56</a></div></div>
+<div class="ttc" id="aclassElementBase_html"><div class="ttname"><a href="classElementBase.html">ElementBase</a></div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00122">ElementBase.h:122</a></div></div>
+<div class="ttc" id="aclassFlaggedElmPtr_html"><div class="ttname"><a href="classFlaggedElmPtr.html">FlaggedElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8h_source.html#l00035">FlaggedElmPtr.h:35</a></div></div>
+<div class="ttc" id="aclassReplacer_html"><div class="ttname"><a href="classReplacer.html">Replacer</a></div><div class="ttdoc">Replace all references to named element by a new version.</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8h_source.html#l00031">Replacer.h:31</a></div></div>
+<div class="ttc" id="aclassReplacer_html_a2d20d187b58c418b2af080ea827e1d7c"><div class="ttname"><a href="classReplacer.html#a2d20d187b58c418b2af080ea827e1d7c">Replacer::itsName</a></div><div class="ttdeci">const std::string itsName</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8h_source.html#l00049">Replacer.h:49</a></div></div>
+<div class="ttc" id="aclassReplacer_html_a897f224c9cdf7bfd474b87b56081f365"><div class="ttname"><a href="classReplacer.html#a897f224c9cdf7bfd474b87b56081f365">Replacer::~Replacer</a></div><div class="ttdeci">virtual ~Replacer()</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8cpp_source.html#l00034">Replacer.cpp:34</a></div></div>
+<div class="ttc" id="aclassReplacer_html_aa11f93ef0009aa3be6824758bfde2762"><div class="ttname"><a href="classReplacer.html#aa11f93ef0009aa3be6824758bfde2762">Replacer::newBase</a></div><div class="ttdeci">ElementBase * newBase</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8h_source.html#l00052">Replacer.h:52</a></div></div>
 <div class="ttc" id="aclassReplacer_html_aac795ca6728b826f7473f2e178390b11"><div class="ttname"><a href="classReplacer.html#aac795ca6728b826f7473f2e178390b11">Replacer::Replacer</a></div><div class="ttdeci">Replacer()</div></div>
-<div class="ttc" id="aclassReplacer_html_ab6de9049a3a111cdeb018f140948af25"><div class="ttname"><a href="classReplacer.html#ab6de9049a3a111cdeb018f140948af25">Replacer::visitFlaggedElmPtr</a></div><div class="ttdeci">virtual void visitFlaggedElmPtr(const FlaggedElmPtr &amp;)</div><div class="ttdoc">Apply the visitor to an FlaggedElmPtr.</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8cpp_source.html#l00045">Replacer.cpp:45</a></div></div>
+<div class="ttc" id="aclassReplacer_html_ab6de9049a3a111cdeb018f140948af25"><div class="ttname"><a href="classReplacer.html#ab6de9049a3a111cdeb018f140948af25">Replacer::visitFlaggedElmPtr</a></div><div class="ttdeci">virtual void visitFlaggedElmPtr(const FlaggedElmPtr &amp;)</div><div class="ttdoc">Apply the visitor to an FlaggedElmPtr.</div><div class="ttdef"><b>Definition</b> <a href="Replacer_8cpp_source.html#l00036">Replacer.cpp:36</a></div></div>
 <div class="ttc" id="aclassReplacer_html_ac26990c2cb82a37887fe2296aec4da48"><div class="ttname"><a href="classReplacer.html#ac26990c2cb82a37887fe2296aec4da48">Replacer::operator=</a></div><div class="ttdeci">void operator=(const Replacer &amp;)</div></div>
 <div class="ttc" id="aclassReplacer_html_ad32d5fe3244ec29072bd9d37764e66a8"><div class="ttname"><a href="classReplacer.html#ad32d5fe3244ec29072bd9d37764e66a8">Replacer::Replacer</a></div><div class="ttdeci">Replacer(const Replacer &amp;)</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -182,7 +178,7 @@ $(document).ready(function(){initNavTree('Replacer_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d8e0176cd512af77c9ad2365f8231dbb.html">Lines</a></li><li class="navelem"><a class="el" href="Replacer_8h.html">Replacer.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

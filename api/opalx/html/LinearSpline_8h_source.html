@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,8 +125,8 @@ $(document).ready(function(){initNavTree('LinearSpline_8h_source.html',''); init
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef OPALX_LINEAR_SPLINE_H</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define OPALX_LINEAR_SPLINE_H</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="AbstractSpline_8h.html">AbstractSpline.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="AbstractSpline_8h.html">AbstractSpline.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// \brief Linear spline interpolation class that implements an equivelent of</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// the gsl_interp_linear mode of the GSL spline class</span></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('LinearSpline_8h_source.html',''); init
 <div class="ttc" id="aclassLinearSpline_html_a219b8052fa91f9a07319b0f75704f1ab"><div class="ttname"><a href="classLinearSpline.html#a219b8052fa91f9a07319b0f75704f1ab">LinearSpline::LinearSpline</a></div><div class="ttdeci">LinearSpline()=default</div><div class="ttdoc">Default constructor.</div></div>
 <div class="ttc" id="aclassLinearSpline_html_a37defc04b5641cc4f2dd96cd2c930fd8"><div class="ttname"><a href="classLinearSpline.html#a37defc04b5641cc4f2dd96cd2c930fd8">LinearSpline::m_</a></div><div class="ttdeci">std::vector&lt; double &gt; m_</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8h_source.html#l00078">LinearSpline.h:78</a></div></div>
 <div class="ttc" id="aclassLinearSpline_html_a3fac9739f4f28ff0da860160d22d6e04"><div class="ttname"><a href="classLinearSpline.html#a3fac9739f4f28ff0da860160d22d6e04">LinearSpline::evalIntegral</a></div><div class="ttdeci">double evalIntegral(double xa, double xb, Accelerator &amp;accel) const override</div><div class="ttdoc">Evaluate the integral of the spline at x.</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8cpp_source.html#l00050">LinearSpline.cpp:50</a></div></div>
-<div class="ttc" id="aclassLinearSpline_html_a5401d5170608457748373891dbaecb8a"><div class="ttname"><a href="classLinearSpline.html#a5401d5170608457748373891dbaecb8a">LinearSpline::extrapolateRight</a></div><div class="ttdeci">double extrapolateRight(double x) const</div><div class="ttdoc">Linear extrapolation to the right of the data range.</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8cpp_source.html#l00114">LinearSpline.cpp:114</a></div></div>
+<div class="ttc" id="aclassLinearSpline_html_a5401d5170608457748373891dbaecb8a"><div class="ttname"><a href="classLinearSpline.html#a5401d5170608457748373891dbaecb8a">LinearSpline::extrapolateRight</a></div><div class="ttdeci">double extrapolateRight(double x) const</div><div class="ttdoc">Linear extrapolation to the right of the data range.</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8cpp_source.html#l00112">LinearSpline.cpp:112</a></div></div>
 <div class="ttc" id="aclassLinearSpline_html_a5b6ab2bbb8343abc7eab47d9978e41c2"><div class="ttname"><a href="classLinearSpline.html#a5b6ab2bbb8343abc7eab47d9978e41c2">LinearSpline::extrapolateLeft</a></div><div class="ttdeci">double extrapolateLeft(double x) const</div><div class="ttdoc">Linear extrapolation to the left of the data range.</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8cpp_source.html#l00110">LinearSpline.cpp:110</a></div></div>
 <div class="ttc" id="aclassLinearSpline_html_a7220e8fe15979572d68c6142fd6ffbb5"><div class="ttname"><a href="classLinearSpline.html#a7220e8fe15979572d68c6142fd6ffbb5">LinearSpline::computeCoefficients</a></div><div class="ttdeci">void computeCoefficients()</div><div class="ttdoc">Compute linear spline coefficients.</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8cpp_source.html#l00089">LinearSpline.cpp:89</a></div></div>
 <div class="ttc" id="aclassLinearSpline_html_a7a9f2bf01673ca3566c16a160805d0d8"><div class="ttname"><a href="classLinearSpline.html#a7a9f2bf01673ca3566c16a160805d0d8">LinearSpline::c_</a></div><div class="ttdeci">std::vector&lt; double &gt; c_</div><div class="ttdef"><b>Definition</b> <a href="LinearSpline_8h_source.html#l00079">LinearSpline.h:79</a></div></div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('LinearSpline_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="LinearSpline_8h.html">LinearSpline.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

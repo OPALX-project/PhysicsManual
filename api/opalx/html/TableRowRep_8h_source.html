@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,79 +125,74 @@ $(document).ready(function(){initNavTree('TableRowRep_8h_source.html',''); initR
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="PlaceRep_8h.html">AbstractObjects/PlaceRep.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="PlaceRep_8h.html">AbstractObjects/PlaceRep.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span><a class="code hl_class" href="classTable.html">Table</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Class TableRowRep</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//  Such a reference consists of two parts:</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">//  [ol]</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">//  [li]A table name,</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//  [li]A place reference which selects the table row.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//  [/ol]</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classTableRowRep.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="classTableRowRep.html">TableRowRep</a> {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">//  Constructs undefined reference.</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">//  Construct reference to the row identified by [b]row[/b] of the</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">//  table with name [b]name[/b].</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep</a>(<span class="keyword">const</span> std::string &amp;tab, <span class="keyword">const</span> <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> &amp;row);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a> &amp;);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="classTableRowRep.html#a6b14e3f0683406ef15ea6438731db3b2">~TableRowRep</a>();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a> &amp;<a class="code hl_function" href="classTableRowRep.html#a4080556dc68c79046feb1f51a6854a45">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a> &amp;);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Class TableRowRep</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//  Such a reference consists of two parts:</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//  [ol]</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">//  [li]A table name,</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">//  [li]A place reference which selects the table row.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//  [/ol]</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classTableRowRep.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="classTableRowRep.html">TableRowRep</a> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">//  Constructs undefined reference.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//  Construct reference to the row identified by [b]row[/b] of the</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//  table with name [b]name[/b].</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep</a>(<span class="keyword">const</span> std::string&amp; tab, <span class="keyword">const</span> <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a>&amp; row);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a>&amp;);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="classTableRowRep.html#a6b14e3f0683406ef15ea6438731db3b2">~TableRowRep</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a>&amp; <a class="code hl_function" href="classTableRowRep.html#a4080556dc68c79046feb1f51a6854a45">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a>&amp;);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classTableRowRep.html#ae8a876ed208dfda168ea0d999e1a9fbd">getTabName</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="classTableRowRep.html#ae8a876ed208dfda168ea0d999e1a9fbd">getTabName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> <a class="code hl_function" href="classTableRowRep.html#acc6a44ea29fb57df6c83e83cdeb6004f">getPosition</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> <a class="code hl_function" href="classTableRowRep.html#acc6a44ea29fb57df6c83e83cdeb6004f">getPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classTableRowRep.html#a31ee627b891f751e6c7802820e20e094">print</a>(std::ostream&amp; os) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classTableRowRep.html#a31ee627b891f751e6c7802820e20e094">print</a>(std::ostream &amp;os) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// Table row structure.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classTableRowRep.html#a81975e425dca9e8245780b686781f311">   65</a></span>    std::string <a class="code hl_variable" href="classTableRowRep.html#a81975e425dca9e8245780b686781f311">tabName</a>;      <span class="comment">// Table name.</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classTableRowRep.html#abe2e90f42e2a0eb7dca758357de000a4">   66</a></span>    <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> <a class="code hl_variable" href="classTableRowRep.html#abe2e90f42e2a0eb7dca758357de000a4">position</a>;   <span class="comment">// Position reference.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Table row structure.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classTableRowRep.html#a81975e425dca9e8245780b686781f311">   61</a></span>    std::string <a class="code hl_variable" href="classTableRowRep.html#a81975e425dca9e8245780b686781f311">tabName</a>;  <span class="comment">// Table name.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classTableRowRep.html#abe2e90f42e2a0eb7dca758357de000a4">   62</a></span>    <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> <a class="code hl_variable" href="classTableRowRep.html#abe2e90f42e2a0eb7dca758357de000a4">position</a>;    <span class="comment">// Position reference.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="TableRowRep_8h.html#a935ef003dd1f2c982d3ff59fe411fede">   65</a></span><span class="keyword">inline</span> std::ostream&amp; <a class="code hl_function" href="TableRowRep_8h.html#a935ef003dd1f2c982d3ff59fe411fede">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a>&amp; row) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    row.<a class="code hl_function" href="classTableRowRep.html#a31ee627b891f751e6c7802820e20e094">print</a>(os);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="TableRowRep_8h.html#a935ef003dd1f2c982d3ff59fe411fede">   70</a></span><span class="keyword">inline</span> std::ostream &amp;<a class="code hl_function" href="TableRowRep_8h.html#a935ef003dd1f2c982d3ff59fe411fede">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code hl_class" href="classTableRowRep.html">TableRowRep</a> &amp;row) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    row.<a class="code hl_function" href="classTableRowRep.html#a31ee627b891f751e6c7802820e20e094">print</a>(os);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
-</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_TableRowRep_HH</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_TableRowRep_HH</span></div>
 <div class="ttc" id="aPlaceRep_8h_html"><div class="ttname"><a href="PlaceRep_8h.html">PlaceRep.h</a></div></div>
-<div class="ttc" id="aTableRowRep_8h_html_a935ef003dd1f2c982d3ff59fe411fede"><div class="ttname"><a href="TableRowRep_8h.html#a935ef003dd1f2c982d3ff59fe411fede">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const TableRowRep &amp;row)</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00070">TableRowRep.h:70</a></div></div>
-<div class="ttc" id="aclassPlaceRep_html"><div class="ttname"><a href="classPlaceRep.html">PlaceRep</a></div><div class="ttdoc">Representation of a place within a beam line or sequence.</div><div class="ttdef"><b>Definition</b> <a href="PlaceRep_8h_source.html#l00041">PlaceRep.h:41</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html"><div class="ttname"><a href="classTableRowRep.html">TableRowRep</a></div><div class="ttdoc">Representation of a table row reference.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00036">TableRowRep.h:36</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_a2601366e39001c6a620b914be16abdad"><div class="ttname"><a href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep::TableRowRep</a></div><div class="ttdeci">TableRowRep()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00026">TableRowRep.cpp:26</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_a31ee627b891f751e6c7802820e20e094"><div class="ttname"><a href="classTableRowRep.html#a31ee627b891f751e6c7802820e20e094">TableRowRep::print</a></div><div class="ttdeci">void print(std::ostream &amp;os) const</div><div class="ttdoc">Print in input format.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00062">TableRowRep.cpp:62</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_a4080556dc68c79046feb1f51a6854a45"><div class="ttname"><a href="classTableRowRep.html#a4080556dc68c79046feb1f51a6854a45">TableRowRep::operator=</a></div><div class="ttdeci">const TableRowRep &amp; operator=(const TableRowRep &amp;)</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00045">TableRowRep.cpp:45</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_a6b14e3f0683406ef15ea6438731db3b2"><div class="ttname"><a href="classTableRowRep.html#a6b14e3f0683406ef15ea6438731db3b2">TableRowRep::~TableRowRep</a></div><div class="ttdeci">~TableRowRep()</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00041">TableRowRep.cpp:41</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_a81975e425dca9e8245780b686781f311"><div class="ttname"><a href="classTableRowRep.html#a81975e425dca9e8245780b686781f311">TableRowRep::tabName</a></div><div class="ttdeci">std::string tabName</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00065">TableRowRep.h:65</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_abe2e90f42e2a0eb7dca758357de000a4"><div class="ttname"><a href="classTableRowRep.html#abe2e90f42e2a0eb7dca758357de000a4">TableRowRep::position</a></div><div class="ttdeci">PlaceRep position</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00066">TableRowRep.h:66</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_acc6a44ea29fb57df6c83e83cdeb6004f"><div class="ttname"><a href="classTableRowRep.html#acc6a44ea29fb57df6c83e83cdeb6004f">TableRowRep::getPosition</a></div><div class="ttdeci">PlaceRep getPosition() const</div><div class="ttdoc">Return the row position representation.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00057">TableRowRep.cpp:57</a></div></div>
-<div class="ttc" id="aclassTableRowRep_html_ae8a876ed208dfda168ea0d999e1a9fbd"><div class="ttname"><a href="classTableRowRep.html#ae8a876ed208dfda168ea0d999e1a9fbd">TableRowRep::getTabName</a></div><div class="ttdeci">const std::string &amp; getTabName() const</div><div class="ttdoc">Return the table name.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00052">TableRowRep.cpp:52</a></div></div>
-<div class="ttc" id="aclassTable_html"><div class="ttname"><a href="classTable.html">Table</a></div><div class="ttdoc">The base class for all OPAL tables.</div><div class="ttdef"><b>Definition</b> <a href="Table_8h_source.html#l00042">Table.h:42</a></div></div>
+<div class="ttc" id="aTableRowRep_8h_html_a935ef003dd1f2c982d3ff59fe411fede"><div class="ttname"><a href="TableRowRep_8h.html#a935ef003dd1f2c982d3ff59fe411fede">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const TableRowRep &amp;row)</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00065">TableRowRep.h:65</a></div></div>
+<div class="ttc" id="aclassPlaceRep_html"><div class="ttname"><a href="classPlaceRep.html">PlaceRep</a></div><div class="ttdoc">Representation of a place within a beam line or sequence.</div><div class="ttdef"><b>Definition</b> <a href="PlaceRep_8h_source.html#l00040">PlaceRep.h:40</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html"><div class="ttname"><a href="classTableRowRep.html">TableRowRep</a></div><div class="ttdoc">Representation of a table row reference.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00035">TableRowRep.h:35</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_a2601366e39001c6a620b914be16abdad"><div class="ttname"><a href="classTableRowRep.html#a2601366e39001c6a620b914be16abdad">TableRowRep::TableRowRep</a></div><div class="ttdeci">TableRowRep()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00025">TableRowRep.cpp:25</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_a31ee627b891f751e6c7802820e20e094"><div class="ttname"><a href="classTableRowRep.html#a31ee627b891f751e6c7802820e20e094">TableRowRep::print</a></div><div class="ttdeci">void print(std::ostream &amp;os) const</div><div class="ttdoc">Print in input format.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00044">TableRowRep.cpp:44</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_a4080556dc68c79046feb1f51a6854a45"><div class="ttname"><a href="classTableRowRep.html#a4080556dc68c79046feb1f51a6854a45">TableRowRep::operator=</a></div><div class="ttdeci">const TableRowRep &amp; operator=(const TableRowRep &amp;)</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00034">TableRowRep.cpp:34</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_a6b14e3f0683406ef15ea6438731db3b2"><div class="ttname"><a href="classTableRowRep.html#a6b14e3f0683406ef15ea6438731db3b2">TableRowRep::~TableRowRep</a></div><div class="ttdeci">~TableRowRep()</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00032">TableRowRep.cpp:32</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_a81975e425dca9e8245780b686781f311"><div class="ttname"><a href="classTableRowRep.html#a81975e425dca9e8245780b686781f311">TableRowRep::tabName</a></div><div class="ttdeci">std::string tabName</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00061">TableRowRep.h:61</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_abe2e90f42e2a0eb7dca758357de000a4"><div class="ttname"><a href="classTableRowRep.html#abe2e90f42e2a0eb7dca758357de000a4">TableRowRep::position</a></div><div class="ttdeci">PlaceRep position</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8h_source.html#l00062">TableRowRep.h:62</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_acc6a44ea29fb57df6c83e83cdeb6004f"><div class="ttname"><a href="classTableRowRep.html#acc6a44ea29fb57df6c83e83cdeb6004f">TableRowRep::getPosition</a></div><div class="ttdeci">PlaceRep getPosition() const</div><div class="ttdoc">Return the row position representation.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00042">TableRowRep.cpp:42</a></div></div>
+<div class="ttc" id="aclassTableRowRep_html_ae8a876ed208dfda168ea0d999e1a9fbd"><div class="ttname"><a href="classTableRowRep.html#ae8a876ed208dfda168ea0d999e1a9fbd">TableRowRep::getTabName</a></div><div class="ttdeci">const std::string &amp; getTabName() const</div><div class="ttdoc">Return the table name.</div><div class="ttdef"><b>Definition</b> <a href="TableRowRep_8cpp_source.html#l00040">TableRowRep.cpp:40</a></div></div>
+<div class="ttc" id="aclassTable_html"><div class="ttname"><a href="classTable.html">Table</a></div><div class="ttdoc">The base class for all OPAL tables.</div><div class="ttdef"><b>Definition</b> <a href="Table_8h_source.html#l00041">Table.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e1f9f17bb541b0b753638bef02ac2907.html">AbstractObjects</a></li><li class="navelem"><a class="el" href="TableRowRep_8h.html">TableRowRep.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

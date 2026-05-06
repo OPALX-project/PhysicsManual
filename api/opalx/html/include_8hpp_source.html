@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,79 +125,67 @@ $(document).ready(function(){initNavTree('include_8hpp_source.html',''); initRes
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define INCLUDE_HPP_</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="ast_8hpp.html">ast.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="skipper_8hpp.html">skipper.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="error__handler_8hpp.html">error_handler.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="error__handler_8hpp.html">error_handler.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="skipper_8hpp.html">skipper.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceSDDS.html">SDDS</a> {</div>
 <div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structSDDS_1_1include.html">   27</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSDDS_1_1include.html">include</a></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7">   29</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7">attributes</a> { <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">FILENAME</a></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">   30</a></span>                        , <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">INCLUDE</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">   31</a></span>        };</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structSDDS_1_1include.html">   27</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSDDS_1_1include.html">include</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7">   28</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7">attributes</a> { <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">FILENAME</a>, <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">INCLUDE</a> };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">template</span> &lt;attributes A&gt;</div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structSDDS_1_1include_1_1complainUnsupported.html">   31</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="structSDDS_1_1include_1_1complainUnsupported.html">complainUnsupported</a> {</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structSDDS_1_1include_1_1complainUnsupported.html#a3abdaf16c74ba0dc7e7aff88dbe1f4fd">   32</a></span>            <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structSDDS_1_1include_1_1complainUnsupported.html#a3abdaf16c74ba0dc7e7aff88dbe1f4fd">apply</a>() {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                std::string attributeString;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">switch</span> (A) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">FILENAME</a>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        attributeString = <span class="stringliteral">&quot;filename&quot;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">INCLUDE</a>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        attributeString = <span class="stringliteral">&quot;include&quot;</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                std::cerr &lt;&lt; attributeString &lt;&lt; <span class="stringliteral">&quot; not supported yet&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">template</span> &lt;attributes A&gt;</div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structSDDS_1_1include_1_1complainUnsupported.html">   34</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="structSDDS_1_1include_1_1complainUnsupported.html">complainUnsupported</a></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structSDDS_1_1include_1_1complainUnsupported.html#a3abdaf16c74ba0dc7e7aff88dbe1f4fd">   36</a></span>            <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structSDDS_1_1include_1_1complainUnsupported.html#a3abdaf16c74ba0dc7e7aff88dbe1f4fd">apply</a>()</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                std::string attributeString;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">switch</span>(A)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">FILENAME</a>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    attributeString = <span class="stringliteral">&quot;filename&quot;</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">INCLUDE</a>:</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    attributeString = <span class="stringliteral">&quot;include&quot;</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                std::cerr &lt;&lt; attributeString &lt;&lt; <span class="stringliteral">&quot; not supported yet&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        };</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        };</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    };</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    };</div>
-</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structSDDS_1_1includeList.html">   56</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSDDS_1_1includeList.html">includeList</a>: std::list&lt;include&gt; {};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespaceSDDS.html#af20678b1f3af21bc79ccb1a9e73b141f">   58</a></span>    <span class="keyword">inline</span> std::ostream&amp; <a class="code hl_function" href="namespaceSDDS.html#ada9736381ec0cd52cd3144ed233483ef">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_struct" href="structSDDS_1_1include.html">include</a>&amp; ) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Include parsing is now handled by SimpleParser</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">/* INCLUDE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structSDDS_1_1includeList.html">   50</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSDDS_1_1includeList.html">includeList</a> : std::list&lt;include&gt; {};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespaceSDDS.html#af20678b1f3af21bc79ccb1a9e73b141f">   52</a></span>    <span class="keyword">inline</span> std::ostream&amp; <a class="code hl_function" href="namespaceSDDS.html#ada9736381ec0cd52cd3144ed233483ef">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_struct" href="structSDDS_1_1include.html">include</a>&amp;) { <span class="keywordflow">return</span> out; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}  <span class="comment">// namespace SDDS</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Include parsing is now handled by SimpleParser</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">/* INCLUDE_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aast_8hpp_html"><div class="ttname"><a href="ast_8hpp.html">ast.hpp</a></div></div>
 <div class="ttc" id="aerror__handler_8hpp_html"><div class="ttname"><a href="error__handler_8hpp.html">error_handler.hpp</a></div></div>
-<div class="ttc" id="anamespaceSDDS_html"><div class="ttname"><a href="namespaceSDDS.html">SDDS</a></div><div class="ttdef"><b>Definition</b> <a href="SDDSParser_8h_source.html#l00042">SDDSParser.h:42</a></div></div>
-<div class="ttc" id="anamespaceSDDS_html_ada9736381ec0cd52cd3144ed233483ef"><div class="ttname"><a href="namespaceSDDS.html#ada9736381ec0cd52cd3144ed233483ef">SDDS::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const array &amp;)</div><div class="ttdef"><b>Definition</b> <a href="array_8hpp_source.html#l00090">array.hpp:90</a></div></div>
+<div class="ttc" id="anamespaceSDDS_html"><div class="ttname"><a href="namespaceSDDS.html">SDDS</a></div><div class="ttdef"><b>Definition</b> <a href="SDDSParser_8h_source.html#l00040">SDDSParser.h:40</a></div></div>
+<div class="ttc" id="anamespaceSDDS_html_ada9736381ec0cd52cd3144ed233483ef"><div class="ttname"><a href="namespaceSDDS.html#ada9736381ec0cd52cd3144ed233483ef">SDDS::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const array &amp;)</div><div class="ttdef"><b>Definition</b> <a href="array_8hpp_source.html#l00087">array.hpp:87</a></div></div>
 <div class="ttc" id="askipper_8hpp_html"><div class="ttname"><a href="skipper_8hpp.html">skipper.hpp</a></div></div>
-<div class="ttc" id="astructSDDS_1_1includeList_html"><div class="ttname"><a href="structSDDS_1_1includeList.html">SDDS::includeList</a></div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00056">include.hpp:56</a></div></div>
-<div class="ttc" id="astructSDDS_1_1include_1_1complainUnsupported_html"><div class="ttname"><a href="structSDDS_1_1include_1_1complainUnsupported.html">SDDS::include::complainUnsupported</a></div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00034">include.hpp:35</a></div></div>
-<div class="ttc" id="astructSDDS_1_1include_1_1complainUnsupported_html_a3abdaf16c74ba0dc7e7aff88dbe1f4fd"><div class="ttname"><a href="structSDDS_1_1include_1_1complainUnsupported.html#a3abdaf16c74ba0dc7e7aff88dbe1f4fd">SDDS::include::complainUnsupported::apply</a></div><div class="ttdeci">static bool apply()</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00036">include.hpp:36</a></div></div>
-<div class="ttc" id="astructSDDS_1_1include_html"><div class="ttname"><a href="structSDDS_1_1include.html">SDDS::include</a></div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00027">include.hpp:28</a></div></div>
-<div class="ttc" id="astructSDDS_1_1include_html_acd4b027e74027e0bc6de7ea2b37da0b7"><div class="ttname"><a href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7">SDDS::include::attributes</a></div><div class="ttdeci">attributes</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00029">include.hpp:29</a></div></div>
-<div class="ttc" id="astructSDDS_1_1include_html_acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002"><div class="ttname"><a href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">SDDS::include::FILENAME</a></div><div class="ttdeci">@ FILENAME</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00030">include.hpp:29</a></div></div>
-<div class="ttc" id="astructSDDS_1_1include_html_acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65"><div class="ttname"><a href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">SDDS::include::INCLUDE</a></div><div class="ttdeci">@ INCLUDE</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00031">include.hpp:30</a></div></div>
+<div class="ttc" id="astructSDDS_1_1includeList_html"><div class="ttname"><a href="structSDDS_1_1includeList.html">SDDS::includeList</a></div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00050">include.hpp:50</a></div></div>
+<div class="ttc" id="astructSDDS_1_1include_1_1complainUnsupported_html"><div class="ttname"><a href="structSDDS_1_1include_1_1complainUnsupported.html">SDDS::include::complainUnsupported</a></div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00031">include.hpp:31</a></div></div>
+<div class="ttc" id="astructSDDS_1_1include_1_1complainUnsupported_html_a3abdaf16c74ba0dc7e7aff88dbe1f4fd"><div class="ttname"><a href="structSDDS_1_1include_1_1complainUnsupported.html#a3abdaf16c74ba0dc7e7aff88dbe1f4fd">SDDS::include::complainUnsupported::apply</a></div><div class="ttdeci">static bool apply()</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00032">include.hpp:32</a></div></div>
+<div class="ttc" id="astructSDDS_1_1include_html"><div class="ttname"><a href="structSDDS_1_1include.html">SDDS::include</a></div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00027">include.hpp:27</a></div></div>
+<div class="ttc" id="astructSDDS_1_1include_html_acd4b027e74027e0bc6de7ea2b37da0b7"><div class="ttname"><a href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7">SDDS::include::attributes</a></div><div class="ttdeci">attributes</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00028">include.hpp:28</a></div></div>
+<div class="ttc" id="astructSDDS_1_1include_html_acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002"><div class="ttname"><a href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a02356569c69d11cf50d5f152274ac002">SDDS::include::FILENAME</a></div><div class="ttdeci">@ FILENAME</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00028">include.hpp:28</a></div></div>
+<div class="ttc" id="astructSDDS_1_1include_html_acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65"><div class="ttname"><a href="structSDDS_1_1include.html#acd4b027e74027e0bc6de7ea2b37da0b7a48f553d0a79cda3c56a82f9e539bcc65">SDDS::include::INCLUDE</a></div><div class="ttdeci">@ INCLUDE</div><div class="ttdef"><b>Definition</b> <a href="include_8hpp_source.html#l00028">include.hpp:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_7a8b21c8333eac7be8a302c09fa39aa5.html">SDDSParser</a></li><li class="navelem"><a class="el" href="include_8hpp.html">include.hpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

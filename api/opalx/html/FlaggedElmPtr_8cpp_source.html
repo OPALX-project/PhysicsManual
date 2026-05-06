@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,73 +125,48 @@ $(document).ready(function(){initNavTree('FlaggedElmPtr_8cpp_source.html',''); i
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="FlaggedElmPtr_8h.html">Beamlines/FlaggedElmPtr.h</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="BeamlineVisitor_8h.html">AbsBeamline/BeamlineVisitor.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="LogicalError_8h.html">Utilities/LogicalError.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="BeamlineVisitor_8h.html">AbsBeamline/BeamlineVisitor.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="LogicalError_8h.html">Utilities/LogicalError.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Class FlaggedElmPtr</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#a732e307d144288a2268b2077c9449e00">   29</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>(<span class="keyword">const</span> <a class="code hl_class" href="classElmPtr.html">ElmPtr</a> &amp;elem, <span class="keywordtype">bool</span> reflected, <span class="keywordtype">bool</span> selected):</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>(elem),</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    itsCounter(0),</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    isReflected(reflected),</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    isSelected(selected)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Class FlaggedElmPtr</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#a732e307d144288a2268b2077c9449e00">   28</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>&amp; elem, <span class="keywordtype">bool</span> reflected, <span class="keywordtype">bool</span> selected)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    : <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>(elem), itsCounter(0), isReflected(reflected), isSelected(selected) {}</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">   38</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a>():</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>(),</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    itsCounter(0),</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    isReflected(false),</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    isSelected(false)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">   31</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a>() : <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>(), itsCounter(0), isReflected(false), isSelected(false) {}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#aef8a436036a4691c2cecf347fa377787">   33</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a>(<span class="keyword">const</span> <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a>&amp; rhs)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    : <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>(rhs),</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      itsCounter(rhs.itsCounter),</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      isReflected(rhs.isReflected),</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      isSelected(rhs.isSelected) {}</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#aef8a436036a4691c2cecf347fa377787">   46</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a>(<span class="keyword">const</span> <a class="code hl_class" href="classFlaggedElmPtr.html">FlaggedElmPtr</a> &amp;rhs):</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="classElmPtr.html">ElmPtr</a>(rhs),</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    itsCounter(rhs.itsCounter),</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    isReflected(rhs.isReflected),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    isSelected(rhs.isSelected)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{}</div>
-</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#af5357a99b474ff23db7fbb254820b375">   54</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#af5357a99b474ff23db7fbb254820b375">FlaggedElmPtr::~FlaggedElmPtr</a>()</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{}</div>
-</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#afccc8652713807e86fdbbfb1ed94a351">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classFlaggedElmPtr.html#afccc8652713807e86fdbbfb1ed94a351">FlaggedElmPtr::accept</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a> &amp;v)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    v.<a class="code hl_function" href="classBeamlineVisitor.html#aedf2c6cf79be630488948975165944e9">visitFlaggedElmPtr</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
-</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#af5357a99b474ff23db7fbb254820b375">   39</a></span><a class="code hl_function" href="classFlaggedElmPtr.html#af5357a99b474ff23db7fbb254820b375">FlaggedElmPtr::~FlaggedElmPtr</a>() {}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classFlaggedElmPtr.html#afccc8652713807e86fdbbfb1ed94a351">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classFlaggedElmPtr.html#afccc8652713807e86fdbbfb1ed94a351">FlaggedElmPtr::accept</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a>&amp; v)<span class="keyword"> const </span>{ v.<a class="code hl_function" href="classBeamlineVisitor.html#aedf2c6cf79be630488948975165944e9">visitFlaggedElmPtr</a>(*<span class="keyword">this</span>); }</div>
 <div class="ttc" id="aBeamlineVisitor_8h_html"><div class="ttname"><a href="BeamlineVisitor_8h.html">BeamlineVisitor.h</a></div></div>
 <div class="ttc" id="aFlaggedElmPtr_8h_html"><div class="ttname"><a href="FlaggedElmPtr_8h.html">FlaggedElmPtr.h</a></div></div>
 <div class="ttc" id="aLogicalError_8h_html"><div class="ttname"><a href="LogicalError_8h.html">LogicalError.h</a></div></div>
 <div class="ttc" id="aclassBeamlineVisitor_html"><div class="ttname"><a href="classBeamlineVisitor.html">BeamlineVisitor</a></div><div class="ttdef"><b>Definition</b> <a href="BeamlineVisitor_8h_source.html#l00063">BeamlineVisitor.h:63</a></div></div>
 <div class="ttc" id="aclassBeamlineVisitor_html_aedf2c6cf79be630488948975165944e9"><div class="ttname"><a href="classBeamlineVisitor.html#aedf2c6cf79be630488948975165944e9">BeamlineVisitor::visitFlaggedElmPtr</a></div><div class="ttdeci">virtual void visitFlaggedElmPtr(const FlaggedElmPtr &amp;)=0</div><div class="ttdoc">Apply the algorithm to a FlaggedElmPtr.</div></div>
-<div class="ttc" id="aclassElmPtr_html"><div class="ttname"><a href="classElmPtr.html">ElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="ElmPtr_8h_source.html#l00033">ElmPtr.h:33</a></div></div>
-<div class="ttc" id="aclassFlaggedElmPtr_html"><div class="ttname"><a href="classFlaggedElmPtr.html">FlaggedElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8h_source.html#l00036">FlaggedElmPtr.h:36</a></div></div>
-<div class="ttc" id="aclassFlaggedElmPtr_html_a90d7b5cf9de1eda07687af638891c85e"><div class="ttname"><a href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a></div><div class="ttdeci">FlaggedElmPtr()</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8cpp_source.html#l00038">FlaggedElmPtr.cpp:38</a></div></div>
-<div class="ttc" id="aclassFlaggedElmPtr_html_af5357a99b474ff23db7fbb254820b375"><div class="ttname"><a href="classFlaggedElmPtr.html#af5357a99b474ff23db7fbb254820b375">FlaggedElmPtr::~FlaggedElmPtr</a></div><div class="ttdeci">virtual ~FlaggedElmPtr()</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8cpp_source.html#l00054">FlaggedElmPtr.cpp:54</a></div></div>
-<div class="ttc" id="aclassFlaggedElmPtr_html_afccc8652713807e86fdbbfb1ed94a351"><div class="ttname"><a href="classFlaggedElmPtr.html#afccc8652713807e86fdbbfb1ed94a351">FlaggedElmPtr::accept</a></div><div class="ttdeci">virtual void accept(BeamlineVisitor &amp;) const</div><div class="ttdoc">Apply visitor.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8cpp_source.html#l00058">FlaggedElmPtr.cpp:58</a></div></div>
+<div class="ttc" id="aclassElmPtr_html"><div class="ttname"><a href="classElmPtr.html">ElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="ElmPtr_8h_source.html#l00032">ElmPtr.h:32</a></div></div>
+<div class="ttc" id="aclassFlaggedElmPtr_html"><div class="ttname"><a href="classFlaggedElmPtr.html">FlaggedElmPtr</a></div><div class="ttdoc">A section of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8h_source.html#l00035">FlaggedElmPtr.h:35</a></div></div>
+<div class="ttc" id="aclassFlaggedElmPtr_html_a90d7b5cf9de1eda07687af638891c85e"><div class="ttname"><a href="classFlaggedElmPtr.html#a90d7b5cf9de1eda07687af638891c85e">FlaggedElmPtr::FlaggedElmPtr</a></div><div class="ttdeci">FlaggedElmPtr()</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8cpp_source.html#l00031">FlaggedElmPtr.cpp:31</a></div></div>
+<div class="ttc" id="aclassFlaggedElmPtr_html_af5357a99b474ff23db7fbb254820b375"><div class="ttname"><a href="classFlaggedElmPtr.html#af5357a99b474ff23db7fbb254820b375">FlaggedElmPtr::~FlaggedElmPtr</a></div><div class="ttdeci">virtual ~FlaggedElmPtr()</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8cpp_source.html#l00039">FlaggedElmPtr.cpp:39</a></div></div>
+<div class="ttc" id="aclassFlaggedElmPtr_html_afccc8652713807e86fdbbfb1ed94a351"><div class="ttname"><a href="classFlaggedElmPtr.html#afccc8652713807e86fdbbfb1ed94a351">FlaggedElmPtr::accept</a></div><div class="ttdeci">virtual void accept(BeamlineVisitor &amp;) const</div><div class="ttdoc">Apply visitor.</div><div class="ttdef"><b>Definition</b> <a href="FlaggedElmPtr_8cpp_source.html#l00041">FlaggedElmPtr.cpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1258116797b4c8cbbe069615463f944a.html">Beamlines</a></li><li class="navelem"><a class="el" href="FlaggedElmPtr_8cpp.html">FlaggedElmPtr.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

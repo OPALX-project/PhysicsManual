@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -126,93 +126,70 @@ $(document).ready(function(){initNavTree('H5Writer_8cpp_source.html',''); initRe
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classH5Writer.html#a58935a1c675f074196a59a18af1d4c64">   20</a></span><a class="code hl_function" href="classH5Writer.html#a58935a1c675f074196a59a18af1d4c64">H5Writer::H5Writer</a>(<a class="code hl_class" href="classH5PartWrapper.html">H5PartWrapper</a>* h5wrapper, <span class="keywordtype">bool</span> restart)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    : H5PartTimer_m(IpplTimings::getTimer(<span class="stringliteral">&quot;Write H5-File&quot;</span>))</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    , h5wrapper_m(h5wrapper)</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    , H5call_m(0)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> ( !restart ) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        h5wrapper-&gt;<a class="code hl_function" href="classH5PartWrapper.html#ac4e1fa29049bbb44ff7eba687f29834c">writeHeader</a>();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    h5wrapper-&gt;<a class="code hl_function" href="classH5PartWrapper.html#a0fb287886ebed6d43ca33cc37b506e42">close</a>();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    : H5PartTimer_m(IpplTimings::getTimer(<span class="stringliteral">&quot;Write H5-File&quot;</span>)), h5wrapper_m(h5wrapper), H5call_m(0) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (!restart) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        h5wrapper-&gt;<a class="code hl_function" href="classH5PartWrapper.html#ac4e1fa29049bbb44ff7eba687f29834c">writeHeader</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    h5wrapper-&gt;<a class="code hl_function" href="classH5PartWrapper.html#a0fb287886ebed6d43ca33cc37b506e42">close</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">   32</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">H5Writer::writePhaseSpace</a>(</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>&amp; beam, <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> FDext[], <span class="keywordtype">size_t</span> particleContainerIndex) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    IpplTimings::startTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::map&lt;std::string, double&gt; additionalAttributes = {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        std::make_pair(<span class="stringliteral">&quot;B-ref_x&quot;</span>, FDext[0](0)),</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        std::make_pair(<span class="stringliteral">&quot;B-ref_z&quot;</span>, FDext[0](1)),</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        std::make_pair(<span class="stringliteral">&quot;B-ref_y&quot;</span>, FDext[0](2)),</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::make_pair(<span class="stringliteral">&quot;E-ref_x&quot;</span>, FDext[1](0)),</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        std::make_pair(<span class="stringliteral">&quot;E-ref_z&quot;</span>, FDext[1](1)),</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        std::make_pair(<span class="stringliteral">&quot;E-ref_y&quot;</span>, FDext[1](2))};</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_variable" href="classH5Writer.html#ab0ec62d35bec3ee6a04826d7949ff3b9">h5wrapper_m</a>-&gt;<a class="code hl_function" href="classH5PartWrapper.html#a7239a58e359c25378bc008139ce56e36">writeStep</a>(&amp;beam, additionalAttributes, particleContainerIndex);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">H5Writer::writePhaseSpace</a>(</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>&amp; beam, <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> FDext[], <span class="keywordtype">size_t</span> particleContainerIndex) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    IpplTimings::startTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    std::map&lt;std::string, double&gt; additionalAttributes = {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            std::make_pair(<span class="stringliteral">&quot;B-ref_x&quot;</span>, FDext[0](0)), std::make_pair(<span class="stringliteral">&quot;B-ref_z&quot;</span>, FDext[0](1)),</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            std::make_pair(<span class="stringliteral">&quot;B-ref_y&quot;</span>, FDext[0](2)), std::make_pair(<span class="stringliteral">&quot;E-ref_x&quot;</span>, FDext[1](0)),</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            std::make_pair(<span class="stringliteral">&quot;E-ref_z&quot;</span>, FDext[1](1)), std::make_pair(<span class="stringliteral">&quot;E-ref_y&quot;</span>, FDext[1](2))};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_variable" href="classH5Writer.html#ab0ec62d35bec3ee6a04826d7949ff3b9">h5wrapper_m</a>-&gt;<a class="code hl_function" href="classH5PartWrapper.html#a7239a58e359c25378bc008139ce56e36">writeStep</a>(&amp;beam, additionalAttributes, particleContainerIndex);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classH5Writer.html#a9de4948d69e8a45aa0162cb5c7be1c36">   40</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">H5Writer::writePhaseSpace</a>(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>&amp; beam, <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> FDext[], <span class="keywordtype">double</span> <span class="comment">/*meanEnergy*/</span>, <span class="keywordtype">double</span> refPr,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">double</span> refPt, <span class="keywordtype">double</span> refPz, <span class="keywordtype">double</span> refR, <span class="keywordtype">double</span> refTheta, <span class="keywordtype">double</span> refZ, <span class="keywordtype">double</span> azimuth,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">double</span> elevation, <span class="keywordtype">bool</span> <span class="comment">/*local*/</span>, <span class="keywordtype">size_t</span> particleContainerIndex) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">auto</span> pc = beam.getParticleContainer(particleContainerIndex);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (!pc || pc-&gt;getTotalNum() &lt; 3) <span class="keywordflow">return</span> -1;  <span class="comment">// single-particle / tune modes</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classH5Writer.html#a9de4948d69e8a45aa0162cb5c7be1c36">   48</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">H5Writer::writePhaseSpace</a>(</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>&amp; beam, <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> FDext[], <span class="keywordtype">double</span> <span class="comment">/*meanEnergy*/</span>, <span class="keywordtype">double</span> refPr, <span class="keywordtype">double</span> refPt,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">double</span> refPz, <span class="keywordtype">double</span> refR, <span class="keywordtype">double</span> refTheta, <span class="keywordtype">double</span> refZ, <span class="keywordtype">double</span> azimuth, <span class="keywordtype">double</span> elevation,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <span class="comment">/*local*/</span>, <span class="keywordtype">size_t</span> particleContainerIndex) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span> pc = beam.getParticleContainer(particleContainerIndex);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!pc || pc-&gt;getTotalNum() &lt; 3)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> -1;  <span class="comment">// single-particle / tune modes</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    IpplTimings::startTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::map&lt;std::string, double&gt; additionalAttributes = {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        std::make_pair(<span class="stringliteral">&quot;REFPR&quot;</span>, refPr),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        std::make_pair(<span class="stringliteral">&quot;REFPT&quot;</span>, refPt),</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        std::make_pair(<span class="stringliteral">&quot;REFPZ&quot;</span>, refPz),</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        std::make_pair(<span class="stringliteral">&quot;REFR&quot;</span>, refR),</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::make_pair(<span class="stringliteral">&quot;REFTHETA&quot;</span>, refTheta),</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        std::make_pair(<span class="stringliteral">&quot;REFZ&quot;</span>, refZ),</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::make_pair(<span class="stringliteral">&quot;AZIMUTH&quot;</span>, azimuth),</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::make_pair(<span class="stringliteral">&quot;ELEVATION&quot;</span>, elevation),</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        std::make_pair(<span class="stringliteral">&quot;B-head_x&quot;</span>, FDext[0](0)),</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        std::make_pair(<span class="stringliteral">&quot;B-head_z&quot;</span>, FDext[0](1)),</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        std::make_pair(<span class="stringliteral">&quot;B-head_y&quot;</span>, FDext[0](2)),</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        std::make_pair(<span class="stringliteral">&quot;E-head_x&quot;</span>, FDext[1](0)),</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        std::make_pair(<span class="stringliteral">&quot;E-head_z&quot;</span>, FDext[1](1)),</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        std::make_pair(<span class="stringliteral">&quot;E-head_y&quot;</span>, FDext[1](2)),</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        std::make_pair(<span class="stringliteral">&quot;B-ref_x&quot;</span>,  FDext[2](0)),</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        std::make_pair(<span class="stringliteral">&quot;B-ref_z&quot;</span>,  FDext[2](1)),</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        std::make_pair(<span class="stringliteral">&quot;B-ref_y&quot;</span>,  FDext[2](2)),</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        std::make_pair(<span class="stringliteral">&quot;E-ref_x&quot;</span>,  FDext[3](0)),</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        std::make_pair(<span class="stringliteral">&quot;E-ref_z&quot;</span>,  FDext[3](1)),</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        std::make_pair(<span class="stringliteral">&quot;E-ref_y&quot;</span>,  FDext[3](2)),</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        std::make_pair(<span class="stringliteral">&quot;B-tail_x&quot;</span>, FDext[4](0)),</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        std::make_pair(<span class="stringliteral">&quot;B-tail_z&quot;</span>, FDext[4](1)),</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        std::make_pair(<span class="stringliteral">&quot;B-tail_y&quot;</span>, FDext[4](2)),</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        std::make_pair(<span class="stringliteral">&quot;E-tail_x&quot;</span>, FDext[5](0)),</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        std::make_pair(<span class="stringliteral">&quot;E-tail_z&quot;</span>, FDext[5](1)),</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        std::make_pair(<span class="stringliteral">&quot;E-tail_y&quot;</span>, FDext[5](2))};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_variable" href="classH5Writer.html#ab0ec62d35bec3ee6a04826d7949ff3b9">h5wrapper_m</a>-&gt;<a class="code hl_function" href="classH5PartWrapper.html#a7239a58e359c25378bc008139ce56e36">writeStep</a>(&amp;beam, additionalAttributes, particleContainerIndex);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    ++<a class="code hl_variable" href="classH5Writer.html#ae319809a381f7750075c15c81a285316">H5call_m</a>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classH5Writer.html#ae319809a381f7750075c15c81a285316">H5call_m</a> - 1;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    IpplTimings::startTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::map&lt;std::string, double&gt; additionalAttributes = {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            std::make_pair(<span class="stringliteral">&quot;REFPR&quot;</span>, refPr),          std::make_pair(<span class="stringliteral">&quot;REFPT&quot;</span>, refPt),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            std::make_pair(<span class="stringliteral">&quot;REFPZ&quot;</span>, refPz),          std::make_pair(<span class="stringliteral">&quot;REFR&quot;</span>, refR),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            std::make_pair(<span class="stringliteral">&quot;REFTHETA&quot;</span>, refTheta),    std::make_pair(<span class="stringliteral">&quot;REFZ&quot;</span>, refZ),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            std::make_pair(<span class="stringliteral">&quot;AZIMUTH&quot;</span>, azimuth),      std::make_pair(<span class="stringliteral">&quot;ELEVATION&quot;</span>, elevation),</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            std::make_pair(<span class="stringliteral">&quot;B-head_x&quot;</span>, FDext[0](0)), std::make_pair(<span class="stringliteral">&quot;B-head_z&quot;</span>, FDext[0](1)),</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            std::make_pair(<span class="stringliteral">&quot;B-head_y&quot;</span>, FDext[0](2)), std::make_pair(<span class="stringliteral">&quot;E-head_x&quot;</span>, FDext[1](0)),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            std::make_pair(<span class="stringliteral">&quot;E-head_z&quot;</span>, FDext[1](1)), std::make_pair(<span class="stringliteral">&quot;E-head_y&quot;</span>, FDext[1](2)),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            std::make_pair(<span class="stringliteral">&quot;B-ref_x&quot;</span>, FDext[2](0)),  std::make_pair(<span class="stringliteral">&quot;B-ref_z&quot;</span>, FDext[2](1)),</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            std::make_pair(<span class="stringliteral">&quot;B-ref_y&quot;</span>, FDext[2](2)),  std::make_pair(<span class="stringliteral">&quot;E-ref_x&quot;</span>, FDext[3](0)),</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            std::make_pair(<span class="stringliteral">&quot;E-ref_z&quot;</span>, FDext[3](1)),  std::make_pair(<span class="stringliteral">&quot;E-ref_y&quot;</span>, FDext[3](2)),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            std::make_pair(<span class="stringliteral">&quot;B-tail_x&quot;</span>, FDext[4](0)), std::make_pair(<span class="stringliteral">&quot;B-tail_z&quot;</span>, FDext[4](1)),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            std::make_pair(<span class="stringliteral">&quot;B-tail_y&quot;</span>, FDext[4](2)), std::make_pair(<span class="stringliteral">&quot;E-tail_x&quot;</span>, FDext[5](0)),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            std::make_pair(<span class="stringliteral">&quot;E-tail_z&quot;</span>, FDext[5](1)), std::make_pair(<span class="stringliteral">&quot;E-tail_y&quot;</span>, FDext[5](2))};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_variable" href="classH5Writer.html#ab0ec62d35bec3ee6a04826d7949ff3b9">h5wrapper_m</a>-&gt;<a class="code hl_function" href="classH5PartWrapper.html#a7239a58e359c25378bc008139ce56e36">writeStep</a>(&amp;beam, additionalAttributes, particleContainerIndex);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5PartTimer_m</a>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    ++<a class="code hl_variable" href="classH5Writer.html#ae319809a381f7750075c15c81a285316">H5call_m</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classH5Writer.html#ae319809a381f7750075c15c81a285316">H5call_m</a> - 1;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 </div>
 <div class="ttc" id="aDistributionMoments_8h_html_a716e97cb94129a4800d15dc3d2fa4063"><div class="ttname"><a href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a></div><div class="ttdeci">ippl::Vector&lt; T, Dim &gt; Vector_t</div><div class="ttdef"><b>Definition</b> <a href="DistributionMoments_8h_source.html#l00031">DistributionMoments.h:31</a></div></div>
 <div class="ttc" id="aH5Writer_8h_html"><div class="ttname"><a href="H5Writer_8h.html">H5Writer.h</a></div></div>
 <div class="ttc" id="aclassH5PartWrapper_html"><div class="ttname"><a href="classH5PartWrapper.html">H5PartWrapper</a></div><div class="ttdef"><b>Definition</b> <a href="H5PartWrapper_8h_source.html#l00038">H5PartWrapper.h:38</a></div></div>
-<div class="ttc" id="aclassH5PartWrapper_html_a0fb287886ebed6d43ca33cc37b506e42"><div class="ttname"><a href="classH5PartWrapper.html#a0fb287886ebed6d43ca33cc37b506e42">H5PartWrapper::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition</b> <a href="H5PartWrapper_8cpp_source.html#l00058">H5PartWrapper.cpp:58</a></div></div>
+<div class="ttc" id="aclassH5PartWrapper_html_a0fb287886ebed6d43ca33cc37b506e42"><div class="ttname"><a href="classH5PartWrapper.html#a0fb287886ebed6d43ca33cc37b506e42">H5PartWrapper::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition</b> <a href="H5PartWrapper_8cpp_source.html#l00056">H5PartWrapper.cpp:56</a></div></div>
 <div class="ttc" id="aclassH5PartWrapper_html_a7239a58e359c25378bc008139ce56e36"><div class="ttname"><a href="classH5PartWrapper.html#a7239a58e359c25378bc008139ce56e36">H5PartWrapper::writeStep</a></div><div class="ttdeci">virtual void writeStep(PartBunch_t *, const std::map&lt; std::string, double &gt; &amp;, size_t particleContainerIndex=0)=0</div></div>
 <div class="ttc" id="aclassH5PartWrapper_html_ac4e1fa29049bbb44ff7eba687f29834c"><div class="ttname"><a href="classH5PartWrapper.html#ac4e1fa29049bbb44ff7eba687f29834c">H5PartWrapper::writeHeader</a></div><div class="ttdeci">virtual void writeHeader()=0</div></div>
-<div class="ttc" id="aclassH5Writer_html_a1a6db67ad7098808b6d6261e0d2fdb6d"><div class="ttname"><a href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">H5Writer::writePhaseSpace</a></div><div class="ttdeci">void writePhaseSpace(PartBunch_t &amp;beam, Vector_t&lt; double, 3 &gt; FDext[], size_t particleContainerIndex=0)</div><div class="ttdoc">Dumps Phase Space to H5 file.</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8cpp_source.html#l00032">H5Writer.cpp:32</a></div></div>
-<div class="ttc" id="aclassH5Writer_html_a2e0072ce09f05cbc05d14d0b449c1db7"><div class="ttname"><a href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5Writer::H5PartTimer_m</a></div><div class="ttdeci">IpplTimings::TimerRef H5PartTimer_m</div><div class="ttdoc">Timer to track particle data/H5 file write time.</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8h_source.html#l00072">H5Writer.h:72</a></div></div>
+<div class="ttc" id="aclassH5Writer_html_a1a6db67ad7098808b6d6261e0d2fdb6d"><div class="ttname"><a href="classH5Writer.html#a1a6db67ad7098808b6d6261e0d2fdb6d">H5Writer::writePhaseSpace</a></div><div class="ttdeci">void writePhaseSpace(PartBunch_t &amp;beam, Vector_t&lt; double, 3 &gt; FDext[], size_t particleContainerIndex=0)</div><div class="ttdoc">Dumps Phase Space to H5 file.</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8cpp_source.html#l00028">H5Writer.cpp:28</a></div></div>
+<div class="ttc" id="aclassH5Writer_html_a2e0072ce09f05cbc05d14d0b449c1db7"><div class="ttname"><a href="classH5Writer.html#a2e0072ce09f05cbc05d14d0b449c1db7">H5Writer::H5PartTimer_m</a></div><div class="ttdeci">IpplTimings::TimerRef H5PartTimer_m</div><div class="ttdoc">Timer to track particle data/H5 file write time.</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8h_source.html#l00073">H5Writer.h:73</a></div></div>
 <div class="ttc" id="aclassH5Writer_html_a58935a1c675f074196a59a18af1d4c64"><div class="ttname"><a href="classH5Writer.html#a58935a1c675f074196a59a18af1d4c64">H5Writer::H5Writer</a></div><div class="ttdeci">H5Writer(H5PartWrapper *h5wrapper, bool restart)</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8cpp_source.html#l00020">H5Writer.cpp:20</a></div></div>
-<div class="ttc" id="aclassH5Writer_html_ab0ec62d35bec3ee6a04826d7949ff3b9"><div class="ttname"><a href="classH5Writer.html#ab0ec62d35bec3ee6a04826d7949ff3b9">H5Writer::h5wrapper_m</a></div><div class="ttdeci">H5PartWrapper * h5wrapper_m</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8h_source.html#l00074">H5Writer.h:74</a></div></div>
-<div class="ttc" id="aclassH5Writer_html_ae319809a381f7750075c15c81a285316"><div class="ttname"><a href="classH5Writer.html#ae319809a381f7750075c15c81a285316">H5Writer::H5call_m</a></div><div class="ttdeci">int H5call_m</div><div class="ttdoc">Current record, or time step, of H5 file.</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8h_source.html#l00077">H5Writer.h:77</a></div></div>
+<div class="ttc" id="aclassH5Writer_html_ab0ec62d35bec3ee6a04826d7949ff3b9"><div class="ttname"><a href="classH5Writer.html#ab0ec62d35bec3ee6a04826d7949ff3b9">H5Writer::h5wrapper_m</a></div><div class="ttdeci">H5PartWrapper * h5wrapper_m</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8h_source.html#l00075">H5Writer.h:75</a></div></div>
+<div class="ttc" id="aclassH5Writer_html_ae319809a381f7750075c15c81a285316"><div class="ttname"><a href="classH5Writer.html#ae319809a381f7750075c15c81a285316">H5Writer::H5call_m</a></div><div class="ttdeci">int H5call_m</div><div class="ttdoc">Current record, or time step, of H5 file.</div><div class="ttdef"><b>Definition</b> <a href="H5Writer_8h_source.html#l00078">H5Writer.h:78</a></div></div>
 <div class="ttc" id="aclassPartBunch_html"><div class="ttname"><a href="classPartBunch.html">PartBunch</a></div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00052">PartBunch.h:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -220,7 +197,7 @@ $(document).ready(function(){initNavTree('H5Writer_8cpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1e943b2a5906122ddf396bc604857988.html">Structure</a></li><li class="navelem"><a class="el" href="H5Writer_8cpp.html">H5Writer.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

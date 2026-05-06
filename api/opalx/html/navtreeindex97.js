@@ -1,5 +1,17 @@
 var NAVTREEINDEX97 =
 {
+"globals_m.html":[4,1,0,11],
+"globals_n.html":[4,1,0,12],
+"globals_o.html":[4,1,0,13],
+"globals_p.html":[4,1,0,14],
+"globals_q.html":[4,1,0,15],
+"globals_r.html":[4,1,0,16],
+"globals_s.html":[4,1,0,17],
+"globals_t.html":[4,1,0,18],
+"globals_type.html":[4,1,3],
+"globals_u.html":[4,1,0,19],
+"globals_v.html":[4,1,0,20],
+"globals_vars.html":[4,1,2],
 "globals_w.html":[4,1,0,21],
 "globals_x.html":[4,1,0,22],
 "globals_y.html":[4,1,0,23],
@@ -237,17 +249,5 @@ var NAVTREEINDEX97 =
 "namespaceLinearBreitWheelerBenchmark.html#aea636db9df9160b14041cb0595d91a35":[4,0,1,9,1,4,12],
 "namespaceLinearBreitWheelerBenchmark.html#aeaada0ce99757091d51718cadf157700":[4,0,1,9,1,1,0],
 "namespaceLinearBreitWheelerBenchmark.html#aead413ed739d88b3d52237bb2876b7f1":[4,0,1,9,1,3,7],
-"namespaceLinearBreitWheelerBenchmark.html#aeb899e70ab23faa2b5bfe8f5c2cbef08":[4,0,1,9,1,1,2],
-"namespaceLinearBreitWheelerBenchmark.html#af124b4f73af3f7d524114470ef46ac36":[4,0,1,9,1,0,1],
-"namespaceLinearBreitWheelerBenchmark.html#af6a1ce1d4a67f447ae3274f56106c517":[2,0,14,32],
-"namespaceLinearBreitWheelerBenchmark.html#af77bc0ddd228a3e786560afea2b5fe68":[4,0,1,9,1,5,1],
-"namespaceLinearBreitWheelerBenchmark.html#af8bd676d3df0632e9485eedcd298696c":[2,0,14,18],
-"namespaceLinearBreitWheelerBenchmark.html#afa356bd5c3316670d5b6c4ad377d014c":[4,0,1,9,1,3,8],
-"namespaceLinearBreitWheelerBenchmark.html#afd1792c0c17e20a97690997806f2d9ba":[4,0,1,9,1,4,18],
-"namespaceLinearBreitWheelerBenchmark.html#afd3e40793df98a850e204b0270102892":[4,0,1,9,1,4,15],
-"namespaceLinearBreitWheelerBenchmark.html#affc2b6e83228e70a074436334f1ce30c":[4,0,1,9,1,5,6],
-"namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1FinitePhotonBeamConfig":[4,0,1,9,1,0],
-"namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1FinitePhotonBeamJointConfig":[4,0,1,9,1,4],
-"namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1Histogram":[4,0,1,9,1,2],
-"namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1HistogramConfig":[4,0,1,9,1,1]
+"namespaceLinearBreitWheelerBenchmark.html#aeb899e70ab23faa2b5bfe8f5c2cbef08":[4,0,1,9,1,1,2]
 };

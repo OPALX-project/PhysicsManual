@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('Air_8h_source.html',''); initResizable
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Class Air</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//   Defines Air as a material for particle-matter interactions</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//   Data taken from Standard Atomic Weight 2019 (https://www.qmul.ac.uk/sbcs/iupac/AtWt/), </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//   Data taken from Standard Atomic Weight 2019 (https://www.qmul.ac.uk/sbcs/iupac/AtWt/),</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//   atomic properties from PDG database (https://pdg.lbl.gov/2020/AtomicNuclearProperties)</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//   and fit coefficients from ICRU Report 49.</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
@@ -134,24 +134,20 @@ $(document).ready(function(){initNavTree('Air_8h_source.html',''); initResizable
 <div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacePhysics.html">   27</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacePhysics.html">Physics</a> {</div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classPhysics_1_1Air.html">   28</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classPhysics_1_1Air.html">Air</a>: <span class="keyword">public</span> <a class="code hl_class" href="classPhysics_1_1Material.html">Material</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classPhysics_1_1Air.html">   28</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classPhysics_1_1Air.html">Air</a> : <span class="keyword">public</span> <a class="code hl_class" href="classPhysics_1_1Material.html">Material</a> {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">public</span>:</div>
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classPhysics_1_1Air.html#a2fb2c49f46e71be9df4f6b3d2cc8e495">   30</a></span>        <a class="code hl_function" href="classPhysics_1_1Air.html#a2fb2c49f46e71be9df4f6b3d2cc8e495">Air</a>():</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_class" href="classPhysics_1_1Material.html">Material</a>(7,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                     14,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                     1.205e-3,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                     36.62,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                     85.7,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                     {{2.954, 3.350, 1.683e3, 1.900e3, 2.513e-2,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                       1.9259, 0.5550, 27.15125, 26.0665, 6.2768}})</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        { }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classPhysics_1_1Air.html#a2fb2c49f46e71be9df4f6b3d2cc8e495">   30</a></span>        <a class="code hl_function" href="classPhysics_1_1Air.html#a2fb2c49f46e71be9df4f6b3d2cc8e495">Air</a>()</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            : <a class="code hl_class" href="classPhysics_1_1Material.html">Material</a>(</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                      7, 14, 1.205e-3, 36.62, 85.7,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                      {{2.954, 3.350, 1.683e3, 1.900e3, 2.513e-2, 1.9259, 0.5550, 27.15125, 26.0665,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                        6.2768}}) {}</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    };</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}  <span class="comment">// namespace Physics</span></div>
 </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aMaterial_8h_html"><div class="ttname"><a href="Material_8h.html">Material.h</a></div></div>
 <div class="ttc" id="aclassPhysics_1_1Air_html"><div class="ttname"><a href="classPhysics_1_1Air.html">Physics::Air</a></div><div class="ttdef"><b>Definition</b> <a href="Air_8h_source.html#l00028">Air.h:28</a></div></div>
 <div class="ttc" id="aclassPhysics_1_1Air_html_a2fb2c49f46e71be9df4f6b3d2cc8e495"><div class="ttname"><a href="classPhysics_1_1Air.html#a2fb2c49f46e71be9df4f6b3d2cc8e495">Physics::Air::Air</a></div><div class="ttdeci">Air()</div><div class="ttdef"><b>Definition</b> <a href="Air_8h_source.html#l00030">Air.h:30</a></div></div>
@@ -163,7 +159,7 @@ $(document).ready(function(){initNavTree('Air_8h_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0df09a091a4eb5e56719829019e3d2f9.html">Physics</a></li><li class="navelem"><a class="el" href="Air_8h.html">Air.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

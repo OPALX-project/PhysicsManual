@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,64 +125,30 @@ $(document).ready(function(){initNavTree('Action_8cpp_source.html',''); initResi
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="Action_8h.html">AbstractObjects/Action.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Class Action</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classAction.html#acdb06775d157339256a8ecd55749226c">   25</a></span><a class="code hl_function" href="classAction.html#acdb06775d157339256a8ecd55749226c">Action::~Action</a>()</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{}</div>
-</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Class Action</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classAction.html#acdb06775d157339256a8ecd55749226c">   24</a></span><a class="code hl_function" href="classAction.html#acdb06775d157339256a8ecd55749226c">Action::~Action</a>() {}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classAction.html#ab8b102e7be45e0819977f150f75736bb">   26</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAction.html#ab8b102e7be45e0819977f150f75736bb">Action::canReplaceBy</a>(<a class="code hl_class" href="classObject.html">Object</a>*) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classAction.html#ab8b102e7be45e0819977f150f75736bb">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAction.html#ab8b102e7be45e0819977f150f75736bb">Action::canReplaceBy</a>(<a class="code hl_class" href="classObject.html">Object</a> *) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
-</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classAction.html#aa273b3911b0c02d80520e681a67be5ef">   28</a></span><span class="keyword">const</span> std::string <a class="code hl_function" href="classAction.html#aa273b3911b0c02d80520e681a67be5ef">Action::getCategory</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;ACTION&quot;</span>; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classAction.html#aff251e4e982c659c9be110cf1373c4d8">   30</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAction.html#aff251e4e982c659c9be110cf1373c4d8">Action::shouldTrace</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classAction.html#a221d05593873df95e31e0118ac15fb9c">   32</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAction.html#a221d05593873df95e31e0118ac15fb9c">Action::shouldUpdate</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classAction.html#aa273b3911b0c02d80520e681a67be5ef">   34</a></span><span class="keyword">const</span> std::string <a class="code hl_function" href="classAction.html#aa273b3911b0c02d80520e681a67be5ef">Action::getCategory</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;ACTION&quot;</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
-</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classAction.html#aff251e4e982c659c9be110cf1373c4d8">   39</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAction.html#aff251e4e982c659c9be110cf1373c4d8">Action::shouldTrace</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
-</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classAction.html#a221d05593873df95e31e0118ac15fb9c">   44</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAction.html#a221d05593873df95e31e0118ac15fb9c">Action::shouldUpdate</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classAction.html#a485e7a5a1a9f25f7881cdea87a4e4f7d">   49</a></span><a class="code hl_function" href="classAction.html#a4f457ccfc8336b565cadca56b36e0271">Action::Action</a>(<span class="keyword">const</span> std::string &amp;name, <a class="code hl_class" href="classAction.html">Action</a> *parent):</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classObject.html">Object</a>(name, parent)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{}</div>
-</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classAction.html#ad84f6cc19c678c251686224d1cb0a9a7">   54</a></span><a class="code hl_function" href="classAction.html#a4f457ccfc8336b565cadca56b36e0271">Action::Action</a>(<span class="keywordtype">int</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *help):</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classObject.html">Object</a>(size, name, help)</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{}</div>
-</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classAction.html#a485e7a5a1a9f25f7881cdea87a4e4f7d">   34</a></span><a class="code hl_function" href="classAction.html#a4f457ccfc8336b565cadca56b36e0271">Action::Action</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classAction.html">Action</a>* parent) : <a class="code hl_class" href="classObject.html">Object</a>(name, parent) {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classAction.html#ad84f6cc19c678c251686224d1cb0a9a7">   36</a></span><a class="code hl_function" href="classAction.html#a4f457ccfc8336b565cadca56b36e0271">Action::Action</a>(<span class="keywordtype">int</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">char</span>* help) : <a class="code hl_class" href="classObject.html">Object</a>(size, name, help) {}</div>
 <div class="ttc" id="aAction_8h_html"><div class="ttname"><a href="Action_8h.html">Action.h</a></div></div>
-<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">The base class for all OPAL actions.</div><div class="ttdef"><b>Definition</b> <a href="Action_8h_source.html#l00030">Action.h:30</a></div></div>
-<div class="ttc" id="aclassAction_html_a221d05593873df95e31e0118ac15fb9c"><div class="ttname"><a href="classAction.html#a221d05593873df95e31e0118ac15fb9c">Action::shouldUpdate</a></div><div class="ttdeci">virtual bool shouldUpdate() const</div><div class="ttdoc">Update flag.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00044">Action.cpp:44</a></div></div>
+<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">The base class for all OPAL actions.</div><div class="ttdef"><b>Definition</b> <a href="Action_8h_source.html#l00029">Action.h:29</a></div></div>
+<div class="ttc" id="aclassAction_html_a221d05593873df95e31e0118ac15fb9c"><div class="ttname"><a href="classAction.html#a221d05593873df95e31e0118ac15fb9c">Action::shouldUpdate</a></div><div class="ttdeci">virtual bool shouldUpdate() const</div><div class="ttdoc">Update flag.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00032">Action.cpp:32</a></div></div>
 <div class="ttc" id="aclassAction_html_a4f457ccfc8336b565cadca56b36e0271"><div class="ttname"><a href="classAction.html#a4f457ccfc8336b565cadca56b36e0271">Action::Action</a></div><div class="ttdeci">Action()</div></div>
-<div class="ttc" id="aclassAction_html_aa273b3911b0c02d80520e681a67be5ef"><div class="ttname"><a href="classAction.html#aa273b3911b0c02d80520e681a67be5ef">Action::getCategory</a></div><div class="ttdeci">virtual const std::string getCategory() const</div><div class="ttdoc">Return the object category as a string.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00034">Action.cpp:34</a></div></div>
-<div class="ttc" id="aclassAction_html_ab8b102e7be45e0819977f150f75736bb"><div class="ttname"><a href="classAction.html#ab8b102e7be45e0819977f150f75736bb">Action::canReplaceBy</a></div><div class="ttdeci">virtual bool canReplaceBy(Object *object)</div><div class="ttdoc">Test if replacement is allowed.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00029">Action.cpp:29</a></div></div>
-<div class="ttc" id="aclassAction_html_acdb06775d157339256a8ecd55749226c"><div class="ttname"><a href="classAction.html#acdb06775d157339256a8ecd55749226c">Action::~Action</a></div><div class="ttdeci">virtual ~Action()</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00025">Action.cpp:25</a></div></div>
-<div class="ttc" id="aclassAction_html_aff251e4e982c659c9be110cf1373c4d8"><div class="ttname"><a href="classAction.html#aff251e4e982c659c9be110cf1373c4d8">Action::shouldTrace</a></div><div class="ttdeci">virtual bool shouldTrace() const</div><div class="ttdoc">Trace flag.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00039">Action.cpp:39</a></div></div>
+<div class="ttc" id="aclassAction_html_aa273b3911b0c02d80520e681a67be5ef"><div class="ttname"><a href="classAction.html#aa273b3911b0c02d80520e681a67be5ef">Action::getCategory</a></div><div class="ttdeci">virtual const std::string getCategory() const</div><div class="ttdoc">Return the object category as a string.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00028">Action.cpp:28</a></div></div>
+<div class="ttc" id="aclassAction_html_ab8b102e7be45e0819977f150f75736bb"><div class="ttname"><a href="classAction.html#ab8b102e7be45e0819977f150f75736bb">Action::canReplaceBy</a></div><div class="ttdeci">virtual bool canReplaceBy(Object *object)</div><div class="ttdoc">Test if replacement is allowed.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00026">Action.cpp:26</a></div></div>
+<div class="ttc" id="aclassAction_html_acdb06775d157339256a8ecd55749226c"><div class="ttname"><a href="classAction.html#acdb06775d157339256a8ecd55749226c">Action::~Action</a></div><div class="ttdeci">virtual ~Action()</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00024">Action.cpp:24</a></div></div>
+<div class="ttc" id="aclassAction_html_aff251e4e982c659c9be110cf1373c4d8"><div class="ttname"><a href="classAction.html#aff251e4e982c659c9be110cf1373c4d8">Action::shouldTrace</a></div><div class="ttdeci">virtual bool shouldTrace() const</div><div class="ttdoc">Trace flag.</div><div class="ttdef"><b>Definition</b> <a href="Action_8cpp_source.html#l00030">Action.cpp:30</a></div></div>
 <div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">The base class for all OPAL objects.</div><div class="ttdef"><b>Definition</b> <a href="Object_8h_source.html#l00045">Object.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -190,7 +156,7 @@ $(document).ready(function(){initNavTree('Action_8cpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e1f9f17bb541b0b753638bef02ac2907.html">AbstractObjects</a></li><li class="navelem"><a class="el" href="Action_8cpp.html">Action.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

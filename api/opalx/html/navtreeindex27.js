@@ -1,5 +1,16 @@
 var NAVTREEINDEX27 =
 {
+"classDistributionMoments.html#af02f57dcca7d703d6be38ffc5550189d":[3,0,83,69],
+"classDistributionMoments.html#af09f10cb6d848aa259874b45e3cc0ac2":[3,0,83,58],
+"classDistributionMoments.html#af0df3a6863cc1d703635d6a203b12b04":[3,0,83,27],
+"classDistributionMoments.html#af870ad5a7d1691066134b8cdee765f52":[3,0,83,86],
+"classDistributionMoments.html#afa03dfb81d4c8f8a458780dd4feff1a6":[3,0,83,29],
+"classDistributionMoments.html#afffa7f2d7e913f1471c7e8e46730d78e":[3,0,83,77],
+"classDistributionMomentsTest.html":[3,0,84],
+"classDistributionMomentsTest.html#a0a905879cb36a0aad35d5805db8dc5f4":[3,0,84,1],
+"classDistributionMomentsTest.html#a0c36391553ecbd22d5cecccd1111f2a8":[3,0,84,0],
+"classDistributionMomentsTest.html#a228fee11b219ac8250d9ea43502ef0bf":[3,0,84,2],
+"classDistribution_1_1BinomialBehaviorSplitter.html":[3,0,82,0],
 "classDistribution_1_1BinomialBehaviorSplitter.html#a421dfa98423695cc5f8ecc60ed72306f":[3,0,82,0,0],
 "classDistribution_1_1BinomialBehaviorSplitter.html#acb2e28e90a0d86afe8155bddd65cbe81":[3,0,82,0,1],
 "classDistribution_1_1GaussianLikeBehavior.html":[3,0,82,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX27 =
 "classDriftRep.html#a9866c163d61dbd33e24080668a16c9e2":[3,0,88,31],
 "classDriftRep.html#a98ba64b0bb174add064da5223a737a66":[3,0,88,69],
 "classDriftRep.html#a98f60aa9d92f920b95dae9711cb4e8bf":[3,0,88,46],
-"classDriftRep.html#a9b7622fee40c3569ceed1427870c9c68":[3,0,88,44],
-"classDriftRep.html#a9dde2c0ccbadd6f5e70010acfcabd45e":[3,0,88,77],
-"classDriftRep.html#a9e98f2456e4382f8b9479cc9cba13f6a":[3,0,88,35],
-"classDriftRep.html#aa3264c1b6b93f0f635a61d75d496af6d":[3,0,88,132],
-"classDriftRep.html#aa3eba02f763e02b9bab14391d29f6b39":[3,0,88,120],
-"classDriftRep.html#aa60aedf5e43e6a4561b4a93e6962f377":[3,0,88,13],
-"classDriftRep.html#aab40737bbca9bd1b8cf620430f78ff94":[3,0,88,60],
-"classDriftRep.html#aab7ccd4b61b3d8289f042e0569f5b92f":[3,0,88,64],
-"classDriftRep.html#aaccdfd3806e271b1bcba7111d448b9ae":[3,0,88,112],
-"classDriftRep.html#ab4b6cd062d18282811039d9c7f286e0f":[3,0,88,43],
-"classDriftRep.html#ab5a95019acd71945c7a43108283cc55b":[3,0,88,11],
-"classDriftRep.html#ab6f80182b67361610cff3809cb03ca0d":[3,0,88,128]
+"classDriftRep.html#a9b7622fee40c3569ceed1427870c9c68":[3,0,88,44]
 };

@@ -67,7 +67,7 @@ var classTestableBinningCmd =
     [ "occurrence", "classTestableBinningCmd.html#a2d4689680e7982efa61a4c9dece2c691", null ],
     [ "parameterName_m", "classTestableBinningCmd.html#ab74760a47ede77865639b04d13ef3556", null ],
     [ "parameterType_m", "classTestableBinningCmd.html#a98eb06d187ff4893a11ca66c6524b542", null ],
-    [ "references", "classTestableBinningCmd.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classTestableBinningCmd.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classTestableBinningCmd.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classTestableBinningCmd.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

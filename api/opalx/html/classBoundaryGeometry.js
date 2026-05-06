@@ -106,7 +106,7 @@ var classBoundaryGeometry =
     [ "occurrence", "classBoundaryGeometry.html#a2d4689680e7982efa61a4c9dece2c691", null ],
     [ "Points_m", "classBoundaryGeometry.html#aeb12b5b34a6b20f916ffa82eae540534", null ],
     [ "randGen_m", "classBoundaryGeometry.html#a912278cbe2fee49021d667b175a0f4e5", null ],
-    [ "references", "classBoundaryGeometry.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classBoundaryGeometry.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classBoundaryGeometry.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "TfastIsInside_m", "classBoundaryGeometry.html#a8e0c9c3a8a326388cd8e428e3657fc74", null ],
     [ "timeStamp", "classBoundaryGeometry.html#afe5c431c6bdf03bc49beb95433bf9b38", null ],

@@ -46,7 +46,7 @@ var classLineTemplate =
     [ "unregisterReference", "classLineTemplate.html#aefe23441c2db5e86ad1322d3df15ce65", null ],
     [ "update", "classLineTemplate.html#a4abd48bacb1b004c8ac891597c831f77", null ],
     [ "Line", "classLineTemplate.html#a864cca3466d5710a4742ec5caf34b497", null ],
-    [ "actuals", "classLineTemplate.html#af135b748194d73f8d0a3d2f1631b1ff2", null ],
+    [ "actuals", "classLineTemplate.html#a0e119a941d7acdce45b16ab27b2f2b01", null ],
     [ "body", "classLineTemplate.html#a0f1a4f75cbd4c9f594e29ecf2ce81d24", null ],
     [ "builtin", "classLineTemplate.html#aebbbd93847d066c83a26764469c37edf", null ],
     [ "flagged", "classLineTemplate.html#a59156451f29758d6f189c5e0493b2da5", null ],
@@ -57,7 +57,7 @@ var classLineTemplate =
     [ "itsParent", "classLineTemplate.html#a3cd65924363c636d542e91f7f07371e0", null ],
     [ "modified", "classLineTemplate.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classLineTemplate.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classLineTemplate.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classLineTemplate.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classLineTemplate.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classLineTemplate.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

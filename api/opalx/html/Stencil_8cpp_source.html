@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -107,60 +107,70 @@ $(document).ready(function(){initNavTree('Stencil_8cpp_source.html',''); initRes
 <div class="contents">
 <a href="Stencil_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="Stencil_8h.html">Filters/Stencil.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">    4</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">StencilFilter::apply</a>(std::vector&lt;double&gt; &amp;LineDensity) {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keywordtype">int</span> size = LineDensity.size();</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    std::vector&lt;double&gt; temp1(size + 8, 0.0);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    std::vector&lt;double&gt; temp2(5, 0.0);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        temp1[i+4] = LineDensity[i];</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; ++ i) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        temp1[3-i] = temp1[5+i];</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        temp1[size+5+i] = temp1[size+3-i];</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        temp2[i%5] = (7. * (temp1[i] + temp1[i+8]) + 24. * (temp1[i+2] + temp1[i+6]) + 34.*temp1[i+4]) / 96.;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        temp1[i] = temp2[(i+1)%5];</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    temp1[2] = temp1[6];</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    temp1[3] = temp1[5];</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    temp1[size+5] = temp1[size+1];</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    temp1[size+4] = temp1[size+2];</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        LineDensity[i] = (7. * (temp1[i+2] + temp1[i+6]) + 24. * (temp1[i+3] + temp1[i+5]) + 34.*temp1[i+4]) / 96.;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">    3</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">StencilFilter::apply</a>(std::vector&lt;double&gt;&amp; LineDensity) {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keywordtype">int</span> size = LineDensity.size();</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    std::vector&lt;double&gt; temp1(size + 8, 0.0);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    std::vector&lt;double&gt; temp2(5, 0.0);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        temp1[i + 4] = LineDensity[i];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        temp1[3 - i]        = temp1[5 + i];</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        temp1[size + 5 + i] = temp1[size + 3 - i];</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        temp2[i % 5] = (7. * (temp1[i] + temp1[i + 8]) + 24. * (temp1[i + 2] + temp1[i + 6])</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                        + 34. * temp1[i + 4])</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                       / 96.;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        temp1[i] = temp2[(i + 1) % 5];</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    temp1[2]        = temp1[6];</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    temp1[3]        = temp1[5];</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    temp1[size + 5] = temp1[size + 1];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    temp1[size + 4] = temp1[size + 2];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        LineDensity[i] = (7. * (temp1[i + 2] + temp1[i + 6]) + 24. * (temp1[i + 3] + temp1[i + 5])</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                          + 34. * temp1[i + 4])</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                         / 96.;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classStencilFilter.html#a80e0aa33a4ccad4a1e02f4c7e4df3ff4">   31</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classStencilFilter.html#a80e0aa33a4ccad4a1e02f4c7e4df3ff4">StencilFilter::calc_derivative</a>(std::vector&lt;double&gt; &amp;LineDensity, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;h) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::vector&lt;double&gt; temp(LineDensity.begin(), LineDensity.end());</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> N = LineDensity.size();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    LineDensity[0] = (-25.*temp[0] + 48.*temp[1] - 36.*temp[2] + 16.*temp[3] + temp[4]) / (12.*h);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    LineDensity[1] = (-3.*temp[0] - 10.*temp[1] + 18.*temp[2] - 6.*temp[3] + temp[4]) / (12.*h);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 2; i &lt; N - 2; ++ i) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        LineDensity[i] = (temp[i-2] - 8.*temp[i-1] + 8.*temp[i+1] - temp[i+2]) / (12.*h);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    LineDensity[N-2] = (-temp[N-5] + 6.*temp[N-4] - 18.*temp[N-3] + 10.*temp[N-2] + 3.*temp[N-1]) / (12.*h);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    LineDensity[N-1] = (3.*temp[N-5] - 16.*temp[N-4] + 36.*temp[N-3] - 48.*temp[N-2] + 25.*temp[N-1]) / (12.*h);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">apply</a>(LineDensity);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classStencilFilter.html#a80e0aa33a4ccad4a1e02f4c7e4df3ff4">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classStencilFilter.html#a80e0aa33a4ccad4a1e02f4c7e4df3ff4">StencilFilter::calc_derivative</a>(std::vector&lt;double&gt;&amp; LineDensity, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; h) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::vector&lt;double&gt; temp(LineDensity.begin(), LineDensity.end());</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> N = LineDensity.size();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    LineDensity[0] =</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            (-25. * temp[0] + 48. * temp[1] - 36. * temp[2] + 16. * temp[3] + temp[4]) / (12. * h);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    LineDensity[1] =</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            (-3. * temp[0] - 10. * temp[1] + 18. * temp[2] - 6. * temp[3] + temp[4]) / (12. * h);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt; N - 2; ++i) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        LineDensity[i] =</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                (temp[i - 2] - 8. * temp[i - 1] + 8. * temp[i + 1] - temp[i + 2]) / (12. * h);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    LineDensity[N - 2] = (-temp[N - 5] + 6. * temp[N - 4] - 18. * temp[N - 3] + 10. * temp[N - 2]</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                          + 3. * temp[N - 1])</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                         / (12. * h);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    LineDensity[N - 1] = (3. * temp[N - 5] - 16. * temp[N - 4] + 36. * temp[N - 3]</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                          - 48. * temp[N - 2] + 25. * temp[N - 1])</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                         / (12. * h);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">apply</a>(LineDensity);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
 <div class="ttc" id="aStencil_8h_html"><div class="ttname"><a href="Stencil_8h.html">Stencil.h</a></div></div>
-<div class="ttc" id="aclassStencilFilter_html_a65c451531f5678c1ee9842769316b819"><div class="ttname"><a href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">StencilFilter::apply</a></div><div class="ttdeci">void apply(std::vector&lt; double &gt; &amp;histogram)</div><div class="ttdef"><b>Definition</b> <a href="Stencil_8cpp_source.html#l00004">Stencil.cpp:4</a></div></div>
-<div class="ttc" id="aclassStencilFilter_html_a80e0aa33a4ccad4a1e02f4c7e4df3ff4"><div class="ttname"><a href="classStencilFilter.html#a80e0aa33a4ccad4a1e02f4c7e4df3ff4">StencilFilter::calc_derivative</a></div><div class="ttdeci">void calc_derivative(std::vector&lt; double &gt; &amp;histogram, const double &amp;h)</div><div class="ttdef"><b>Definition</b> <a href="Stencil_8cpp_source.html#l00031">Stencil.cpp:31</a></div></div>
+<div class="ttc" id="aclassStencilFilter_html_a65c451531f5678c1ee9842769316b819"><div class="ttname"><a href="classStencilFilter.html#a65c451531f5678c1ee9842769316b819">StencilFilter::apply</a></div><div class="ttdeci">void apply(std::vector&lt; double &gt; &amp;histogram)</div><div class="ttdef"><b>Definition</b> <a href="Stencil_8cpp_source.html#l00003">Stencil.cpp:3</a></div></div>
+<div class="ttc" id="aclassStencilFilter_html_a80e0aa33a4ccad4a1e02f4c7e4df3ff4"><div class="ttname"><a href="classStencilFilter.html#a80e0aa33a4ccad4a1e02f4c7e4df3ff4">StencilFilter::calc_derivative</a></div><div class="ttdeci">void calc_derivative(std::vector&lt; double &gt; &amp;histogram, const double &amp;h)</div><div class="ttdef"><b>Definition</b> <a href="Stencil_8cpp_source.html#l00034">Stencil.cpp:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_34df5910c3dede183eac518413f13c07.html">Filters</a></li><li class="navelem"><a class="el" href="Stencil_8cpp.html">Stencil.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

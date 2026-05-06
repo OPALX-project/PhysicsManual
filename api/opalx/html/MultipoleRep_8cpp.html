@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -101,133 +101,135 @@ $(document).ready(function(){initNavTree('MultipoleRep_8cpp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="MultipoleRep_8h_source.html">BeamlineCore/MultipoleRep.h</a>&quot;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
 <code>#include &quot;<a class="el" href="IndexedChannel_8h_source.html">Channels/IndexedChannel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IndirectChannel_8h_source.html">Channels/IndirectChannel.h</a>&quot;</code><br />
-<code>#include &lt;cctype&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MultipoleRep.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="MultipoleRep_8cpp__incl.png" border="0" usemap="#aMultipoleRep_8cpp" alt=""/></div>
 <map name="aMultipoleRep_8cpp" id="aMultipoleRep_8cpp">
-<area shape="rect" title=" " alt="" coords="1983,5,2118,31"/>
-<area shape="rect" href="MultipoleRep_8h.html" title=" " alt="" coords="1597,79,1813,104"/>
-<area shape="poly" title=" " alt="" coords="1996,33,1775,78,1774,73,1995,28"/>
-<area shape="rect" href="IndexedChannel_8h.html" title=" " alt="" coords="1837,79,2040,104"/>
-<area shape="poly" title=" " alt="" coords="2034,33,1970,73,1967,69,2031,28"/>
-<area shape="rect" href="IndirectChannel_8h.html" title=" " alt="" coords="2064,79,2264,104"/>
-<area shape="poly" title=" " alt="" coords="2070,28,2136,69,2133,74,2067,33"/>
-<area shape="rect" title=" " alt="" coords="2287,79,2353,104"/>
-<area shape="poly" title=" " alt="" coords="2095,28,2274,75,2273,80,2093,33"/>
-<area shape="rect" href="Multipole_8h.html" title=" " alt="" coords="1615,152,1801,177"/>
-<area shape="poly" title=" " alt="" coords="1708,104,1710,138,1704,139,1703,104"/>
-<area shape="rect" href="StraightGeometry_8h.html" title=" " alt="" coords="1401,225,1605,265"/>
-<area shape="poly" title=" " alt="" coords="1684,106,1646,127,1604,154,1566,186,1532,217,1529,213,1562,182,1601,150,1643,123,1681,102"/>
-<area shape="rect" href="Component_8h.html" title="Defines the abstract interface for a single beamline component in the accelerator model." alt="" coords="1629,233,1827,258"/>
-<area shape="poly" title=" " alt="" coords="1714,177,1724,219,1719,220,1708,178"/>
-<area shape="poly" title=" " alt="" coords="1679,180,1566,223,1564,218,1677,175"/>
-<area shape="rect" href="BMultipoleField_8h.html" title=" " alt="" coords="1857,233,2034,258"/>
-<area shape="poly" title=" " alt="" coords="1743,175,1899,226,1897,231,1742,180"/>
-<area shape="rect" href="ElementBase_8h.html" title=" " alt="" coords="1563,313,1773,339"/>
-<area shape="poly" title=" " alt="" coords="1721,260,1687,304,1683,300,1717,257"/>
-<area shape="rect" href="OPALTypes_8h.html" title=" " alt="" coords="759,467,862,493"/>
-<area shape="poly" title=" " alt="" coords="1661,261,1616,268,1538,276,1440,282,1210,295,1095,307,989,325,943,337,901,352,866,369,838,389,827,403,819,419,813,454,808,453,814,418,822,400,834,385,863,364,899,347,941,332,988,320,1094,302,1210,290,1439,277,1538,271,1616,263,1660,255"/>
-<area shape="rect" title=" " alt="" coords="2560,387,2637,412"/>
-<area shape="poly" title=" " alt="" coords="1798,255,2120,309,2542,384,2547,385,2546,390,2541,389,2119,315,1797,261"/>
-<area shape="rect" href="EMField_8h.html" title=" " alt="" coords="2662,387,2789,412"/>
-<area shape="poly" title=" " alt="" coords="1796,255,1844,263,2035,286,2226,311,2458,348,2651,382,2650,387,2457,353,2225,316,2034,292,1844,268,1796,261"/>
-<area shape="rect" href="AttributeSet_8h.html" title=" " alt="" coords="2024,387,2227,412"/>
-<area shape="poly" title=" " alt="" coords="1742,336,2039,382,2038,387,1741,341"/>
-<area shape="rect" title=" " alt="" coords="2143,467,2193,493"/>
-<area shape="poly" title=" " alt="" coords="1742,336,1843,356,1953,384,1983,396,2013,410,2130,458,2134,459,2132,464,2128,462,2011,414,1981,401,1951,389,1842,361,1741,341"/>
-<area shape="rect" title=" " alt="" coords="2299,629,2357,654"/>
-<area shape="poly" title=" " alt="" coords="1774,328,2208,350,2405,365,2469,375,2499,384,2518,408,2530,431,2537,454,2539,477,2535,501,2527,525,2499,575,2473,602,2440,621,2404,632,2371,639,2370,634,2403,627,2438,616,2470,598,2495,572,2523,523,2530,500,2533,477,2532,455,2525,433,2513,411,2496,389,2468,380,2404,371,2208,355,1773,334"/>
-<area shape="rect" href="CoordinateSystemTrafo_8h.html" title=" " alt="" coords="1047,621,1265,661"/>
-<area shape="poly" title=" " alt="" coords="1563,341,1447,358,1322,384,1264,400,1213,418,1173,439,1147,462,1138,478,1132,496,1129,535,1135,574,1145,608,1140,609,1130,575,1124,536,1127,495,1133,476,1143,458,1170,434,1211,413,1262,395,1320,379,1446,353,1562,336"/>
-<area shape="rect" href="Quaternion_8hpp.html" title=" " alt="" coords="716,709,913,735"/>
-<area shape="poly" title=" " alt="" coords="1563,331,1386,336,1177,346,979,363,898,375,837,389,749,415,679,440,649,457,622,480,596,510,570,549,562,578,567,603,584,626,611,647,643,665,680,680,752,703,750,708,678,685,641,670,608,651,580,630,562,605,556,577,566,547,592,506,618,476,646,453,677,435,747,410,835,384,897,370,978,358,1176,341,1386,331,1562,326"/>
-<area shape="rect" href="ElementGeometry_8h.html" title=" " alt="" coords="1911,460,2118,500"/>
-<area shape="poly" title=" " alt="" coords="1695,336,1960,452,1958,457,1693,341"/>
-<area shape="rect" href="Euclid3D_8h.html" title=" " alt="" coords="229,467,451,493"/>
-<area shape="poly" title=" " alt="" coords="1562,330,1324,332,1024,341,734,359,615,372,525,389,462,418,375,463,372,459,460,413,523,384,614,367,733,353,1024,335,1324,327,1562,325"/>
-<area shape="rect" href="Geometry_8h.html" title=" " alt="" coords="226,387,454,412"/>
-<area shape="poly" title=" " alt="" coords="1563,334,1091,355,473,389,468,390,468,384,473,384,1090,349,1562,329"/>
-<area shape="rect" href="Misalignment_8h.html" title=" " alt="" coords="1158,467,1413,493"/>
-<area shape="poly" title=" " alt="" coords="1620,341,1547,362,1466,389,1385,426,1318,463,1315,458,1383,422,1464,384,1545,356,1619,336"/>
-<area shape="rect" href="PlacedElement_8h.html" title=" " alt="" coords="1489,387,1751,412"/>
-<area shape="poly" title=" " alt="" coords="1662,341,1638,377,1633,374,1658,338"/>
-<area shape="rect" href="PlacementPose_8h.html" title=" " alt="" coords="1437,460,1659,500"/>
-<area shape="poly" title=" " alt="" coords="1564,338,1516,356,1495,370,1478,388,1473,404,1478,420,1490,435,1507,450,1503,454,1486,439,1473,422,1468,404,1474,385,1492,366,1513,352,1562,333"/>
-<area shape="rect" href="SupportPlacement_8h.html" title=" " alt="" coords="1684,460,1887,500"/>
-<area shape="poly" title=" " alt="" coords="1699,336,1734,356,1765,385,1779,415,1786,446,1781,447,1774,417,1761,388,1730,360,1696,341"/>
-<area shape="rect" href="BoundingBox_8h.html" title=" " alt="" coords="849,387,1031,412"/>
-<area shape="poly" title=" " alt="" coords="1563,340,1051,389,1046,390,1045,385,1050,384,1562,335"/>
-<area shape="rect" title=" " alt="" coords="1008,467,1083,493"/>
-<area shape="poly" title=" " alt="" coords="1562,330,1441,334,1307,343,1185,360,1138,373,1103,389,1086,403,1073,420,1055,456,1051,453,1069,417,1083,399,1100,384,1136,368,1184,355,1306,337,1441,328,1562,325"/>
-<area shape="rect" href="GeneralOpalException_8h.html" title=" " alt="" coords="2251,387,2485,412"/>
-<area shape="poly" title=" " alt="" coords="1774,335,2242,383,2241,388,1773,341"/>
-<area shape="poly" title=" " alt="" coords="1774,328,2116,344,2329,361,2542,384,2547,385,2546,390,2541,389,2328,366,2116,349,1773,333"/>
-<area shape="rect" title=" " alt="" coords="1878,387,1941,412"/>
-<area shape="poly" title=" " alt="" coords="1708,336,1865,382,1864,387,1706,341"/>
-<area shape="poly" title=" " alt="" coords="2134,411,2158,454,2153,457,2129,413"/>
-<area shape="rect" title=" " alt="" coords="2218,467,2305,493"/>
-<area shape="poly" title=" " alt="" coords="2147,410,2231,458,2228,463,2144,414"/>
-<area shape="poly" title=" " alt="" coords="2190,409,2267,429,2299,443,2319,458,2325,469,2326,479,2320,501,2314,515,2306,526,2299,535,2293,549,2291,561,2293,573,2302,596,2314,616,2309,619,2297,598,2288,574,2286,561,2288,547,2294,533,2302,522,2309,513,2315,499,2320,479,2320,471,2315,462,2296,447,2265,435,2189,415"/>
-<area shape="rect" title=" " alt="" coords="1057,856,1191,881"/>
-<area shape="poly" title=" " alt="" coords="1156,662,1130,843,1125,842,1151,661"/>
-<area shape="rect" href="Matrix_8h.html" title=" " alt="" coords="807,783,958,808"/>
-<area shape="poly" title=" " alt="" coords="1123,664,917,778,914,773,1121,659"/>
-<area shape="poly" title=" " alt="" coords="1075,664,878,709,877,704,1074,659"/>
-<area shape="poly" title=" " alt="" coords="922,805,1072,849,1071,855,921,811"/>
-<area shape="rect" title=" " alt="" coords="848,856,917,881"/>
-<area shape="poly" title=" " alt="" coords="885,808,885,842,880,842,880,808"/>
-<area shape="rect" title=" " alt="" coords="953,856,1015,881"/>
-<area shape="poly" title=" " alt="" coords="900,806,958,846,955,850,897,810"/>
-<area shape="rect" title=" " alt="" coords="740,856,799,881"/>
-<area shape="poly" title=" " alt="" coords="866,810,801,851,798,846,863,806"/>
-<area shape="poly" title=" " alt="" coords="828,733,864,771,860,774,824,737"/>
-<area shape="poly" title=" " alt="" coords="813,736,797,783,779,843,774,842,792,782,808,734"/>
-<area shape="rect" href="Port_8h.html" title=" " alt="" coords="1919,548,2110,573"/>
-<area shape="poly" title=" " alt="" coords="2017,500,2017,534,2012,534,2012,500"/>
-<area shape="poly" title=" " alt="" coords="2061,571,2286,627,2285,632,2060,576"/>
-<area shape="poly" title=" " alt="" coords="1919,573,1279,632,1278,626,1919,568"/>
-<area shape="rect" href="Rotation3D_8h.html" title=" " alt="" coords="221,548,459,573"/>
-<area shape="poly" title=" " alt="" coords="343,493,343,534,337,534,337,493"/>
-<area shape="rect" href="Vector3D_8h.html" title=" " alt="" coords="5,629,229,654"/>
-<area shape="poly" title=" " alt="" coords="312,495,262,518,210,550,169,585,137,620,133,616,166,581,206,546,260,514,310,490"/>
-<area shape="rect" href="Matrix3D_8h.html" title=" " alt="" coords="253,629,478,654"/>
-<area shape="poly" title=" " alt="" coords="346,573,360,615,355,617,341,574"/>
-<area shape="poly" title=" " alt="" coords="309,576,163,627,162,622,307,571"/>
-<area shape="poly" title=" " alt="" coords="343,412,343,453,337,453,337,412"/>
-<area shape="poly" title=" " alt="" coords="1278,494,1182,612,1178,609,1274,491"/>
-<area shape="poly" title=" " alt="" coords="1678,409,1908,455,1907,460,1677,415"/>
-<area shape="poly" title=" " alt="" coords="1572,415,1348,467,1347,462,1571,409"/>
-<area shape="poly" title=" " alt="" coords="1611,414,1577,452,1573,448,1607,410"/>
-<area shape="poly" title=" " alt="" coords="1645,410,1734,452,1732,456,1643,414"/>
-<area shape="poly" title=" " alt="" coords="1503,502,1216,619,1214,614,1501,498"/>
-<area shape="poly" title=" " alt="" coords="1712,503,1244,621,1243,615,1711,497"/>
-<area shape="poly" title=" " alt="" coords="947,412,978,505,993,571,999,640,999,723,996,788,990,843,985,842,990,788,993,723,993,640,987,572,973,506,942,413"/>
-<area shape="poly" title=" " alt="" coords="922,414,843,462,840,458,920,410"/>
-<area shape="rect" title=" " alt="" coords="762,629,822,654"/>
-<area shape="poly" title=" " alt="" coords="945,412,948,443,949,485,942,532,934,554,922,575,904,595,882,611,837,631,834,626,880,606,901,591,918,572,929,552,936,530,943,485,943,443,939,413"/>
-<area shape="poly" title=" " alt="" coords="957,410,1020,457,1017,461,954,414"/>
-<area shape="rect" href="PartBunchFwd_8h.html" title=" " alt="" coords="713,548,908,573"/>
-<area shape="poly" title=" " alt="" coords="813,493,813,534,808,534,808,493"/>
-<area shape="rect" href="VectorMath_8h.html" title=" " alt="" coords="581,548,689,573"/>
-<area shape="poly" title=" " alt="" coords="786,495,674,545,671,540,784,490"/>
-<area shape="poly" title=" " alt="" coords="641,572,706,734,759,843,755,845,702,736,636,574"/>
-<area shape="poly" title=" " alt="" coords="659,571,758,620,756,625,656,576"/>
-<area shape="rect" href="OpalException_8h.html" title=" " alt="" coords="2302,548,2485,573"/>
-<area shape="poly" title=" " alt="" coords="2372,412,2392,534,2387,534,2367,412"/>
-<area shape="poly" title=" " alt="" coords="2386,575,2349,620,2344,616,2382,572"/>
-<area shape="poly" title=" " alt="" coords="1401,256,1126,278,959,295,792,316,580,352,406,386,405,381,579,346,792,311,958,290,1125,273,1400,251"/>
-<area shape="rect" href="StaticMagneticField_8h.html" title=" " alt="" coords="2574,313,2778,339"/>
-<area shape="poly" title=" " alt="" coords="2003,255,2048,263,2324,294,2561,314,2560,319,2323,299,2048,268,2002,261"/>
-<area shape="poly" title=" " alt="" coords="2686,337,2712,374,2707,377,2682,341"/>
-<area shape="rect" href="Channel_8h.html" title=" " alt="" coords="2079,152,2230,177"/>
-<area shape="poly" title=" " alt="" coords="1974,101,2108,145,2106,150,1973,107"/>
-<area shape="rect" href="ConstChannel_8h.html" title=" " alt="" coords="2061,233,2249,258"/>
-<area shape="poly" title=" " alt="" coords="2157,178,2157,219,2152,219,2152,178"/>
-<area shape="poly" title=" " alt="" coords="2165,105,2161,139,2155,138,2160,104"/>
+<area shape="rect" title=" " alt="" coords="2382,5,2517,31"/>
+<area shape="rect" href="MultipoleRep_8h.html" title=" " alt="" coords="2098,79,2314,104"/>
+<area shape="poly" title=" " alt="" coords="2411,33,2259,77,2257,72,2410,28"/>
+<area shape="rect" title=" " alt="" coords="2338,79,2404,104"/>
+<area shape="poly" title=" " alt="" coords="2439,33,2396,71,2392,68,2435,29"/>
+<area shape="rect" href="IndexedChannel_8h.html" title=" " alt="" coords="2428,79,2631,104"/>
+<area shape="poly" title=" " alt="" coords="2464,29,2508,68,2505,72,2461,33"/>
+<area shape="rect" href="IndirectChannel_8h.html" title=" " alt="" coords="2655,79,2855,104"/>
+<area shape="poly" title=" " alt="" coords="2499,28,2693,73,2692,78,2498,33"/>
+<area shape="rect" href="Multipole_8h.html" title=" " alt="" coords="2065,152,2250,177"/>
+<area shape="poly" title=" " alt="" coords="2200,106,2175,142,2171,139,2196,103"/>
+<area shape="rect" href="StraightGeometry_8h.html" title=" " alt="" coords="2100,225,2304,265"/>
+<area shape="poly" title=" " alt="" coords="2224,102,2240,116,2256,134,2266,155,2264,178,2253,199,2238,217,2234,214,2248,196,2259,177,2260,156,2252,137,2237,120,2221,106"/>
+<area shape="rect" href="Component_8h.html" title="Defines the abstract interface for a single beamline component in the accelerator model." alt="" coords="1877,233,2076,258"/>
+<area shape="poly" title=" " alt="" coords="2132,180,2016,230,2014,225,2130,175"/>
+<area shape="poly" title=" " alt="" coords="2167,176,2187,212,2182,215,2162,179"/>
+<area shape="rect" href="BMultipoleField_8h.html" title=" " alt="" coords="2328,233,2505,258"/>
+<area shape="poly" title=" " alt="" coords="2196,175,2367,226,2365,231,2195,180"/>
+<area shape="rect" href="ElementBase_8h.html" title=" " alt="" coords="1270,313,1480,339"/>
+<area shape="poly" title=" " alt="" coords="1889,261,1476,314,1476,309,1889,255"/>
+<area shape="rect" href="OPALTypes_8h.html" title=" " alt="" coords="1904,467,2006,493"/>
+<area shape="poly" title=" " alt="" coords="1988,257,2006,285,2024,324,2035,368,2034,391,2028,413,2010,440,1987,461,1984,457,2006,437,2023,411,2029,390,2030,369,2019,325,2001,287,1983,260"/>
+<area shape="rect" title=" " alt="" coords="1936,387,2014,412"/>
+<area shape="poly" title=" " alt="" coords="1979,258,1978,373,1973,373,1974,258"/>
+<area shape="rect" href="EMField_8h.html" title=" " alt="" coords="2344,387,2470,412"/>
+<area shape="poly" title=" " alt="" coords="2010,256,2363,380,2361,385,2008,261"/>
+<area shape="rect" href="AttributeSet_8h.html" title=" " alt="" coords="1110,387,1312,412"/>
+<area shape="poly" title=" " alt="" coords="1350,341,1251,384,1249,379,1348,336"/>
+<area shape="rect" title=" " alt="" coords="1296,467,1347,493"/>
+<area shape="poly" title=" " alt="" coords="1374,340,1333,455,1328,453,1369,338"/>
+<area shape="rect" title=" " alt="" coords="983,629,1042,654"/>
+<area shape="poly" title=" " alt="" coords="1270,341,1168,360,1127,373,1099,389,1082,410,1072,431,1067,451,1066,473,1066,519,1062,546,1054,574,1030,618,1026,615,1049,572,1057,544,1061,519,1061,473,1062,451,1067,429,1077,407,1096,385,1124,368,1167,354,1269,336"/>
+<area shape="rect" href="CoordinateSystemTrafo_8h.html" title=" " alt="" coords="562,621,780,661"/>
+<area shape="poly" title=" " alt="" coords="1270,332,955,341,556,362,364,379,200,401,132,414,78,429,38,445,16,462,9,477,11,491,22,505,40,518,99,544,178,566,270,586,368,602,549,625,548,631,367,607,269,591,177,571,97,549,38,523,18,508,6,493,4,476,12,458,36,440,76,424,131,409,199,396,364,374,555,357,955,335,1270,326"/>
+<area shape="rect" title=" " alt="" coords="1609,856,1672,881"/>
+<area shape="poly" title=" " alt="" coords="1456,336,1518,353,1579,380,1604,399,1625,421,1638,448,1643,478,1643,723,1643,842,1638,842,1638,723,1638,479,1633,449,1620,424,1601,403,1576,385,1517,358,1455,341"/>
+<area shape="rect" href="Quaternion_8hpp.html" title=" " alt="" coords="1223,709,1420,735"/>
+<area shape="poly" title=" " alt="" coords="1381,338,1395,398,1401,438,1403,479,1403,562,1397,603,1382,641,1362,674,1343,700,1339,697,1358,671,1377,638,1392,601,1398,562,1398,479,1395,438,1389,399,1376,340"/>
+<area shape="rect" href="ElementGeometry_8h.html" title=" " alt="" coords="780,460,986,500"/>
+<area shape="poly" title=" " alt="" coords="1270,333,1131,339,981,350,855,367,813,377,790,389,785,397,784,404,791,421,807,437,830,451,827,456,804,441,786,424,779,405,780,395,787,385,811,372,854,361,980,345,1131,334,1269,328"/>
+<area shape="rect" href="Euclid3D_8h.html" title=" " alt="" coords="2098,467,2321,493"/>
+<area shape="poly" title=" " alt="" coords="1481,327,1566,333,1666,343,1771,359,1873,384,1900,396,1925,410,2031,441,2130,462,2129,467,2030,446,1923,414,1897,401,1872,389,1769,365,1665,348,1566,338,1480,332"/>
+<area shape="rect" href="Geometry_8h.html" title=" " alt="" coords="2089,387,2317,412"/>
+<area shape="poly" title=" " alt="" coords="1481,334,2076,384,2075,390,1481,339"/>
+<area shape="rect" href="Misalignment_8h.html" title=" " alt="" coords="501,467,756,493"/>
+<area shape="poly" title=" " alt="" coords="1269,335,1001,354,870,369,818,379,777,389,742,404,709,423,654,461,651,456,706,418,740,399,776,384,816,373,870,364,1001,348,1269,329"/>
+<area shape="rect" href="PlacedElement_8h.html" title=" " alt="" coords="412,387,674,412"/>
+<area shape="poly" title=" " alt="" coords="1270,339,689,388,688,383,1269,334"/>
+<area shape="rect" href="PlacementPose_8h.html" title=" " alt="" coords="26,460,249,500"/>
+<area shape="poly" title=" " alt="" coords="1270,332,1061,338,804,349,557,366,456,377,378,389,327,403,276,420,189,457,187,452,274,415,325,398,377,384,455,371,557,361,804,344,1061,333,1270,327"/>
+<area shape="rect" href="SupportPlacement_8h.html" title=" " alt="" coords="274,460,476,500"/>
+<area shape="poly" title=" " alt="" coords="1269,330,1042,331,769,339,641,347,530,357,446,371,418,380,401,389,390,401,383,415,377,447,372,445,378,413,386,398,397,385,416,375,445,366,529,352,640,341,769,334,1042,326,1269,324"/>
+<area shape="rect" href="BoundingBox_8h.html" title=" " alt="" coords="1678,387,1861,412"/>
+<area shape="poly" title=" " alt="" coords="1439,336,1693,382,1692,387,1438,341"/>
+<area shape="rect" href="VectorMath_8h.html" title=" " alt="" coords="1444,548,1552,573"/>
+<area shape="poly" title=" " alt="" coords="1440,336,1481,354,1500,368,1515,385,1524,404,1529,424,1530,465,1522,504,1511,536,1506,534,1517,503,1524,464,1524,424,1519,406,1510,388,1496,372,1478,359,1438,341"/>
+<area shape="rect" title=" " alt="" coords="1542,629,1602,654"/>
+<area shape="poly" title=" " alt="" coords="1456,336,1501,354,1522,368,1540,385,1558,412,1571,443,1579,475,1583,507,1584,568,1579,615,1574,615,1579,568,1578,507,1574,476,1566,444,1553,415,1536,388,1519,372,1499,359,1454,341"/>
+<area shape="rect" href="GeneralOpalException_8h.html" title=" " alt="" coords="800,387,1035,412"/>
+<area shape="poly" title=" " alt="" coords="1302,341,1005,387,1004,382,1301,336"/>
+<area shape="poly" title=" " alt="" coords="1481,333,1684,354,1918,384,1923,385,1922,390,1917,389,1683,359,1480,339"/>
+<area shape="rect" title=" " alt="" coords="1438,387,1501,412"/>
+<area shape="poly" title=" " alt="" coords="1392,337,1445,376,1442,380,1389,341"/>
+<area shape="rect" title=" " alt="" coords="1168,467,1254,493"/>
+<area shape="poly" title=" " alt="" coords="1214,412,1214,453,1208,453,1208,412"/>
+<area shape="poly" title=" " alt="" coords="1229,410,1295,457,1292,461,1226,414"/>
+<area shape="poly" title=" " alt="" coords="1200,414,1157,462,1140,492,1129,519,1119,545,1098,575,1072,602,1044,623,1041,619,1068,598,1094,572,1114,542,1124,517,1135,490,1153,458,1196,410"/>
+<area shape="rect" title=" " alt="" coords="1095,856,1228,881"/>
+<area shape="poly" title=" " alt="" coords="713,659,1126,848,1123,853,711,664"/>
+<area shape="rect" href="Matrix_8h.html" title=" " alt="" coords="1228,783,1378,808"/>
+<area shape="poly" title=" " alt="" coords="750,659,1243,777,1242,782,749,664"/>
+<area shape="poly" title=" " alt="" coords="780,653,1214,705,1213,710,780,658"/>
+<area shape="poly" title=" " alt="" coords="1282,810,1198,852,1196,847,1279,806"/>
+<area shape="rect" title=" " alt="" coords="1268,856,1338,881"/>
+<area shape="poly" title=" " alt="" coords="1306,808,1306,842,1300,842,1300,808"/>
+<area shape="poly" title=" " alt="" coords="1358,805,1596,855,1595,861,1357,811"/>
+<area shape="rect" title=" " alt="" coords="1387,856,1446,881"/>
+<area shape="poly" title=" " alt="" coords="1323,806,1388,846,1385,851,1320,810"/>
+<area shape="poly" title=" " alt="" coords="1321,736,1312,770,1307,769,1316,734"/>
+<area shape="poly" title=" " alt="" coords="1341,733,1367,753,1392,781,1407,812,1415,842,1410,843,1402,814,1388,784,1364,757,1338,737"/>
+<area shape="rect" href="Port_8h.html" title=" " alt="" coords="642,548,833,573"/>
+<area shape="poly" title=" " alt="" coords="850,502,772,544,770,539,847,498"/>
+<area shape="poly" title=" " alt="" coords="778,571,971,625,969,630,777,576"/>
+<area shape="poly" title=" " alt="" coords="730,575,698,613,694,609,726,572"/>
+<area shape="rect" href="Rotation3D_8h.html" title=" " alt="" coords="2093,548,2332,573"/>
+<area shape="poly" title=" " alt="" coords="2213,493,2214,534,2209,534,2207,493"/>
+<area shape="rect" href="Vector3D_8h.html" title=" " alt="" coords="2258,629,2482,654"/>
+<area shape="poly" title=" " alt="" coords="2254,490,2302,511,2325,527,2345,546,2363,580,2371,614,2365,615,2358,582,2341,550,2322,531,2299,516,2252,495"/>
+<area shape="rect" href="Matrix3D_8h.html" title=" " alt="" coords="2009,629,2234,654"/>
+<area shape="poly" title=" " alt="" coords="2201,576,2147,622,2144,618,2197,571"/>
+<area shape="poly" title=" " alt="" coords="2236,571,2336,620,2334,625,2234,576"/>
+<area shape="poly" title=" " alt="" coords="2207,412,2210,453,2205,454,2201,412"/>
+<area shape="poly" title=" " alt="" coords="629,493,627,529,632,573,650,609,645,611,627,574,622,529,624,493"/>
+<area shape="poly" title=" " alt="" coords="593,409,789,454,787,459,592,415"/>
+<area shape="poly" title=" " alt="" coords="557,410,607,456,604,460,554,414"/>
+<area shape="poly" title=" " alt="" coords="485,415,249,460,248,455,484,409"/>
+<area shape="poly" title=" " alt="" coords="520,414,429,457,427,452,518,410"/>
+<area shape="poly" title=" " alt="" coords="201,497,596,615,594,620,200,503"/>
+<area shape="poly" title=" " alt="" coords="411,498,625,612,623,617,409,503"/>
+<area shape="poly" title=" " alt="" coords="1784,410,1802,432,1818,459,1834,508,1840,548,1839,640,1839,724,1835,751,1823,775,1806,795,1784,813,1734,841,1686,858,1684,853,1732,836,1781,809,1802,792,1819,772,1830,749,1834,723,1834,640,1834,548,1829,509,1813,461,1797,435,1780,414"/>
+<area shape="poly" title=" " alt="" coords="1798,410,1917,460,1915,465,1796,414"/>
+<area shape="poly" title=" " alt="" coords="1761,414,1718,462,1592,619,1587,616,1714,458,1757,411"/>
+<area shape="rect" title=" " alt="" coords="1728,467,1803,493"/>
+<area shape="poly" title=" " alt="" coords="1772,412,1770,454,1764,453,1766,412"/>
+<area shape="rect" href="PartBunchFwd_8h.html" title=" " alt="" coords="1874,548,2068,573"/>
+<area shape="poly" title=" " alt="" coords="1960,492,1969,534,1963,535,1955,493"/>
+<area shape="poly" title=" " alt="" coords="1904,493,1566,550,1565,545,1903,488"/>
+<area shape="poly" title=" " alt="" coords="1497,574,1426,843,1420,842,1492,573"/>
+<area shape="poly" title=" " alt="" coords="1511,572,1554,617,1550,621,1507,575"/>
+<area shape="rect" href="OpalException_8h.html" title=" " alt="" coords="857,548,1040,573"/>
+<area shape="poly" title=" " alt="" coords="945,410,975,429,989,443,1000,459,1006,480,1000,501,989,522,974,540,970,537,984,519,995,499,1000,480,995,461,985,446,972,433,942,414"/>
+<area shape="poly" title=" " alt="" coords="960,572,996,616,992,620,956,575"/>
+<area shape="poly" title=" " alt="" coords="2205,266,2206,373,2200,373,2199,266"/>
+<area shape="rect" href="StaticMagneticField_8h.html" title=" " alt="" coords="2309,313,2513,339"/>
+<area shape="poly" title=" " alt="" coords="2418,258,2415,300,2410,299,2413,258"/>
+<area shape="poly" title=" " alt="" coords="2413,339,2411,373,2406,373,2408,339"/>
+<area shape="rect" href="Channel_8h.html" title=" " alt="" coords="2636,152,2786,177"/>
+<area shape="poly" title=" " alt="" coords="2560,102,2670,144,2668,149,2558,107"/>
+<area shape="rect" href="ConstChannel_8h.html" title=" " alt="" coords="2617,233,2805,258"/>
+<area shape="poly" title=" " alt="" coords="2714,178,2714,219,2708,219,2708,178"/>
+<area shape="poly" title=" " alt="" coords="2750,106,2728,142,2723,139,2746,103"/>
 </map>
 </div>
 </div>
@@ -238,7 +240,7 @@ Include dependency graph for MultipoleRep.cpp:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_65fa8460cf7848eaffa23b837a4e956f.html">BeamlineCore</a></li><li class="navelem"><a class="el" href="MultipoleRep_8cpp.html">MultipoleRep.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

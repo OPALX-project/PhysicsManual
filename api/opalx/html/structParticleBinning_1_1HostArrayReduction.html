@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -163,16 +163,17 @@ struct ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;</div><p>
 <dl class="section note"><dt>Note</dt><dd>This structure is conditionally compiled and only available when OPALX_DEVICE_COMPILATION is not defined. </dd>
 <dd>
 All instances of this class share the same array size through the static binCountStatic member.</dd></dl>
-<p>Usage Example (<code>ReducerType</code> is a specialization of <code><a class="el" href="structParticleBinning_1_1HostArrayReduction.html" title="Host-only array reduction structure for dynamic array sizes in Kokkos::parallel_reduce.">HostArrayReduction</a></code>): </p><div class="fragment"><div class="line">Kokkos::parallel_reduce(<span class="stringliteral">&quot;initLocalHist&quot;</span>, bunch_m-&gt;getLocalNum(), </div>
+<p>Usage Example (<code>ReducerType</code> is a specialization of <code><a class="el" href="structParticleBinning_1_1HostArrayReduction.html" title="Host-only array reduction structure for dynamic array sizes in Kokkos::parallel_reduce.">HostArrayReduction</a></code>): </p><div class="fragment"><div class="line">Kokkos::parallel_reduce(<span class="stringliteral">&quot;initLocalHist&quot;</span>, bunch_m-&gt;getLocalNum(),</div>
 <div class="line">    KOKKOS_LAMBDA(<span class="keyword">const</span> <a class="code hl_typedef" href="ParticleContainer_8hpp.html#a117948da4a7f2c353ea5ef900c1762c4">size_type</a>&amp; i, ReducerType&amp; update) {</div>
 <div class="line">          <a class="code hl_typedef" href="TestBinning_8cpp.html#aaf925660f20059da82624dc6e96d52f9">bin_index_type</a> ndx = binIndex(i);  <span class="comment">// Determine the bin index for this particle</span></div>
-<div class="line">          update.the_array[ndx]++;           <span class="comment">// Increment the corresponding bin count in the reduction array</span></div>
+<div class="line">          update.the_array[ndx]++;           <span class="comment">// Increment the corresponding bin count in the</span></div>
+<div class="line">reduction array</div>
 <div class="line">    }, Kokkos::Sum&lt;ReducerType&gt;(to_reduce)</div>
 <div class="line">);</div>
 <div class="ttc" id="aParticleContainer_8hpp_html_a117948da4a7f2c353ea5ef900c1762c4"><div class="ttname"><a href="ParticleContainer_8hpp.html#a117948da4a7f2c353ea5ef900c1762c4">size_type</a></div><div class="ttdeci">ippl::detail::size_type size_type</div><div class="ttdef"><b>Definition</b> <a href="ParticleContainer_8hpp_source.html#l00031">ParticleContainer.hpp:31</a></div></div>
-<div class="ttc" id="aTestBinning_8cpp_html_aaf925660f20059da82624dc6e96d52f9"><div class="ttname"><a href="TestBinning_8cpp.html#aaf925660f20059da82624dc6e96d52f9">bin_index_type</a></div><div class="ttdeci">Container_t::bin_index_type bin_index_type</div><div class="ttdef"><b>Definition</b> <a href="TestBinning_8cpp_source.html#l00095">TestBinning.cpp:95</a></div></div>
+<div class="ttc" id="aTestBinning_8cpp_html_aaf925660f20059da82624dc6e96d52f9"><div class="ttname"><a href="TestBinning_8cpp.html#aaf925660f20059da82624dc6e96d52f9">bin_index_type</a></div><div class="ttdeci">Container_t::bin_index_type bin_index_type</div><div class="ttdef"><b>Definition</b> <a href="TestBinning_8cpp_source.html#l00094">TestBinning.cpp:94</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00216">216</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00237">237</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae73b08bc4e98ce21b684148a1f65ba5b" name="ae73b08bc4e98ce21b684148a1f65ba5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae73b08bc4e98ce21b684148a1f65ba5b">&#9670;&#160;</a></span>HostArrayReduction() <span class="overload">[1/2]</span></h2>
@@ -201,9 +202,9 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 
 <p>Default constructor that allocates and zero-initializes the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00235">235</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00257">257</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00229">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00221">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
+<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00251">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00241">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
 
 </div>
 </div>
@@ -241,9 +242,9 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00245">245</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00269">269</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00229">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00221">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
+<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00251">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00241">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
 
 </div>
 </div>
@@ -274,9 +275,9 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 
 <p>Destructor that deallocates the dynamically allocated array. </p>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00253">253</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00279">279</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00221">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
+<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00241">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
 
 </div>
 </div>
@@ -316,9 +317,9 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to this instance after addition. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00275">275</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00304">304</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00229">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00221">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
+<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00251">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00241">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
 
 </div>
 </div>
@@ -357,9 +358,9 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to this instance after assignment. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00261">261</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00287">287</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00229">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00221">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
+<p class="reference">References <a class="el" href="ParallelReduceTools_8h_source.html#l00251">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::binCountStatic</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00241">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::the_array</a>.</p>
 
 </div>
 </div>
@@ -404,9 +405,9 @@ The value should be set appropriately before creating any <code><a class="el" hr
 <dd>
 This is only used in the host version of the code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00229">229</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00251">251</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ParallelReduceTools_8h_source.html#l00235">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00245">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00275">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator+=()</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00261">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ParallelReduceTools_8h_source.html#l00257">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00269">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00304">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator+=()</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00287">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator=()</a>.</p>
 
 </div>
 </div>
@@ -426,9 +427,9 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 
 <p>Pointer to the dynamically allocated array for reduction operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00221">221</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00241">241</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ParallelReduceTools_8h_source.html#l00235">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00245">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00275">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator+=()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00261">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator=()</a>, <a class="el" href="TestBinning_8cpp_source.html#l00277">TEST_F()</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00253">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::~HostArrayReduction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ParallelReduceTools_8h_source.html#l00257">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00269">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::HostArrayReduction()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00304">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator+=()</a>, <a class="el" href="ParallelReduceTools_8h_source.html#l00287">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::operator=()</a>, <a class="el" href="TestBinning_8cpp_source.html#l00277">TEST_F()</a>, and <a class="el" href="ParallelReduceTools_8h_source.html#l00279">ParticleBinning::HostArrayReduction&lt; SizeType, IndexType &gt;::~HostArrayReduction()</a>.</p>
 
 </div>
 </div>
@@ -441,7 +442,7 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceParticleBinning.html">ParticleBinning</a></li><li class="navelem"><a class="el" href="structParticleBinning_1_1HostArrayReduction.html">HostArrayReduction</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

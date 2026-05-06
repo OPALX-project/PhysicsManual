@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,73 +125,68 @@ $(document).ready(function(){initNavTree('ARow_8h_source.html',''); initResizabl
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="AbstractObjects_2Expressions_8h.html">AbstractObjects/Expressions.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="PlaceRep_8h.html">AbstractObjects/PlaceRep.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="AbstractObjects_2Expressions_8h.html">AbstractObjects/Expressions.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="PlaceRep_8h.html">AbstractObjects/PlaceRep.h</a>&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceExpressions.html">Expressions</a> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// Class ARow.</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//  The result is an array formed by the values found in selected</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//  columns of a given row.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html">   35</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a>: <span class="keyword">public</span> <a class="code hl_class" href="classExpressions_1_1OArray.html">OArray</a>&lt;double&gt; {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="comment">//  Identify the table by [b]tabName[/b] and the row by the place</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="comment">//  reference [b]row[/b].  The array [b]col[/b] contains the column</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="comment">//  names to select the columns by name.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">ARow</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">tabName</a>, <span class="keyword">const</span> <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> &amp;row,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>             <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;col);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">ARow</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a> &amp;);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#acf0bbb8a8a79f07b75031fb02f37203a">~ARow</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classExpressions_1_1OArray.html">OArray&lt;double&gt;</a> *<a class="code hl_function" href="classExpressions_1_1ARow.html#a4c299a60f5bcc77e6a68b500e93c60f0">clone</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">virtual</span> std::vector&lt;double&gt; <a class="code hl_function" href="classExpressions_1_1ARow.html#ac8577867d5a91dc68984d8473d818f50">evaluate</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1ARow.html#ab47fd8376d16e18c1a3bec3d4c409f69">print</a>(std::ostream &amp;os, <span class="keywordtype">int</span> precedence = 99) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="comment">// Not implemented.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">   61</a></span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">ARow</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#a0b2170e2b5cbad03394c3b7b7ebe0849">   62</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a> &amp;<a class="code hl_function" href="classExpressions_1_1ARow.html#a0b2170e2b5cbad03394c3b7b7ebe0849">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a> &amp;);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// The table name.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">   65</a></span>        <span class="keyword">const</span> std::string <a class="code hl_variable" href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">tabName</a>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// The row specification.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#aabee9d285bd59e419e64ff288ebab8bd">   68</a></span>        <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> <a class="code hl_variable" href="classExpressions_1_1ARow.html#aabee9d285bd59e419e64ff288ebab8bd">position</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">// The std::vector of column names.</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#ae13b5d160bba9e4d6c800691b958cbab">   71</a></span>        <span class="keyword">const</span> std::vector&lt;std::string&gt; <a class="code hl_variable" href="classExpressions_1_1ARow.html#ae13b5d160bba9e4d6c800691b958cbab">columns</a>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    };</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceExpressions.html">Expressions</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Class ARow.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//  The result is an array formed by the values found in selected</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//  columns of a given row.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html">   34</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a> : <span class="keyword">public</span> <a class="code hl_class" href="classExpressions_1_1OArray.html">OArray</a>&lt;double&gt; {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="comment">//  Identify the table by [b]tabName[/b] and the row by the place</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">//  reference [b]row[/b].  The array [b]col[/b] contains the column</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">//  names to select the columns by name.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">ARow</a>(<span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">tabName</a>, <span class="keyword">const</span> <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a>&amp; row, <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; col);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">ARow</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a>&amp;);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#acf0bbb8a8a79f07b75031fb02f37203a">~ARow</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classExpressions_1_1OArray.html">OArray&lt;double&gt;</a>* <a class="code hl_function" href="classExpressions_1_1ARow.html#a4c299a60f5bcc77e6a68b500e93c60f0">clone</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">virtual</span> std::vector&lt;double&gt; <a class="code hl_function" href="classExpressions_1_1ARow.html#ac8577867d5a91dc68984d8473d818f50">evaluate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1ARow.html#ab47fd8376d16e18c1a3bec3d4c409f69">print</a>(std::ostream&amp; os, <span class="keywordtype">int</span> precedence = 99) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="comment">// Not implemented.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">   56</a></span>        <a class="code hl_function" href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">ARow</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#a0b2170e2b5cbad03394c3b7b7ebe0849">   57</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a>&amp; <a class="code hl_function" href="classExpressions_1_1ARow.html#a0b2170e2b5cbad03394c3b7b7ebe0849">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1ARow.html">ARow</a>&amp;);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">// The table name.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">   60</a></span>        <span class="keyword">const</span> std::string <a class="code hl_variable" href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">tabName</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="comment">// The row specification.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#aabee9d285bd59e419e64ff288ebab8bd">   63</a></span>        <a class="code hl_class" href="classPlaceRep.html">PlaceRep</a> <a class="code hl_variable" href="classExpressions_1_1ARow.html#aabee9d285bd59e419e64ff288ebab8bd">position</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">// The std::vector of column names.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classExpressions_1_1ARow.html#ae13b5d160bba9e4d6c800691b958cbab">   66</a></span>        <span class="keyword">const</span> std::vector&lt;std::string&gt; <a class="code hl_variable" href="classExpressions_1_1ARow.html#ae13b5d160bba9e4d6c800691b958cbab">columns</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_ARow_HH</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}  <span class="comment">// namespace Expressions</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_ARow_HH</span></div>
 <div class="ttc" id="aAbstractObjects_2Expressions_8h_html"><div class="ttname"><a href="AbstractObjects_2Expressions_8h.html">Expressions.h</a></div></div>
 <div class="ttc" id="aPlaceRep_8h_html"><div class="ttname"><a href="PlaceRep_8h.html">PlaceRep.h</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html"><div class="ttname"><a href="classExpressions_1_1ARow.html">Expressions::ARow</a></div><div class="ttdoc">An array expression defined as a table row.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00035">ARow.h:35</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html"><div class="ttname"><a href="classExpressions_1_1ARow.html">Expressions::ARow</a></div><div class="ttdoc">An array expression defined as a table row.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00034">ARow.h:34</a></div></div>
 <div class="ttc" id="aclassExpressions_1_1ARow_html_a0b2170e2b5cbad03394c3b7b7ebe0849"><div class="ttname"><a href="classExpressions_1_1ARow.html#a0b2170e2b5cbad03394c3b7b7ebe0849">Expressions::ARow::operator=</a></div><div class="ttdeci">const ARow &amp; operator=(const ARow &amp;)</div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_a4c299a60f5bcc77e6a68b500e93c60f0"><div class="ttname"><a href="classExpressions_1_1ARow.html#a4c299a60f5bcc77e6a68b500e93c60f0">Expressions::ARow::clone</a></div><div class="ttdeci">virtual OArray&lt; double &gt; * clone() const</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00046">ARow.cpp:46</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_a59e17cc113f532d79784c2b1471cba69"><div class="ttname"><a href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">Expressions::ARow::tabName</a></div><div class="ttdeci">const std::string tabName</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00065">ARow.h:65</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_aabee9d285bd59e419e64ff288ebab8bd"><div class="ttname"><a href="classExpressions_1_1ARow.html#aabee9d285bd59e419e64ff288ebab8bd">Expressions::ARow::position</a></div><div class="ttdeci">PlaceRep position</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00068">ARow.h:68</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_a4c299a60f5bcc77e6a68b500e93c60f0"><div class="ttname"><a href="classExpressions_1_1ARow.html#a4c299a60f5bcc77e6a68b500e93c60f0">Expressions::ARow::clone</a></div><div class="ttdeci">virtual OArray&lt; double &gt; * clone() const</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00037">ARow.cpp:37</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_a59e17cc113f532d79784c2b1471cba69"><div class="ttname"><a href="classExpressions_1_1ARow.html#a59e17cc113f532d79784c2b1471cba69">Expressions::ARow::tabName</a></div><div class="ttdeci">const std::string tabName</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00060">ARow.h:60</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_aabee9d285bd59e419e64ff288ebab8bd"><div class="ttname"><a href="classExpressions_1_1ARow.html#aabee9d285bd59e419e64ff288ebab8bd">Expressions::ARow::position</a></div><div class="ttdeci">PlaceRep position</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00063">ARow.h:63</a></div></div>
 <div class="ttc" id="aclassExpressions_1_1ARow_html_ab1edcc9485fc968247858a59aed8a257"><div class="ttname"><a href="classExpressions_1_1ARow.html#ab1edcc9485fc968247858a59aed8a257">Expressions::ARow::ARow</a></div><div class="ttdeci">ARow()</div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_ab47fd8376d16e18c1a3bec3d4c409f69"><div class="ttname"><a href="classExpressions_1_1ARow.html#ab47fd8376d16e18c1a3bec3d4c409f69">Expressions::ARow::print</a></div><div class="ttdeci">virtual void print(std::ostream &amp;os, int precedence=99) const</div><div class="ttdoc">Print expression.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00058">ARow.cpp:58</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_ac8577867d5a91dc68984d8473d818f50"><div class="ttname"><a href="classExpressions_1_1ARow.html#ac8577867d5a91dc68984d8473d818f50">Expressions::ARow::evaluate</a></div><div class="ttdeci">virtual std::vector&lt; double &gt; evaluate() const</div><div class="ttdoc">Evaluate.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00051">ARow.cpp:51</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_acf0bbb8a8a79f07b75031fb02f37203a"><div class="ttname"><a href="classExpressions_1_1ARow.html#acf0bbb8a8a79f07b75031fb02f37203a">Expressions::ARow::~ARow</a></div><div class="ttdeci">~ARow()</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00042">ARow.cpp:42</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1ARow_html_ae13b5d160bba9e4d6c800691b958cbab"><div class="ttname"><a href="classExpressions_1_1ARow.html#ae13b5d160bba9e4d6c800691b958cbab">Expressions::ARow::columns</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; columns</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00071">ARow.h:71</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1OArray_html"><div class="ttname"><a href="classExpressions_1_1OArray.html">Expressions::OArray</a></div><div class="ttdoc">An array expression.</div><div class="ttdef"><b>Definition</b> <a href="AbstractObjects_2Expressions_8h_source.html#l00155">AbstractObjects/Expressions.h:155</a></div></div>
-<div class="ttc" id="aclassPlaceRep_html"><div class="ttname"><a href="classPlaceRep.html">PlaceRep</a></div><div class="ttdoc">Representation of a place within a beam line or sequence.</div><div class="ttdef"><b>Definition</b> <a href="PlaceRep_8h_source.html#l00041">PlaceRep.h:41</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_ab47fd8376d16e18c1a3bec3d4c409f69"><div class="ttname"><a href="classExpressions_1_1ARow.html#ab47fd8376d16e18c1a3bec3d4c409f69">Expressions::ARow::print</a></div><div class="ttdeci">virtual void print(std::ostream &amp;os, int precedence=99) const</div><div class="ttdoc">Print expression.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00045">ARow.cpp:45</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_ac8577867d5a91dc68984d8473d818f50"><div class="ttname"><a href="classExpressions_1_1ARow.html#ac8577867d5a91dc68984d8473d818f50">Expressions::ARow::evaluate</a></div><div class="ttdeci">virtual std::vector&lt; double &gt; evaluate() const</div><div class="ttdoc">Evaluate.</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00039">ARow.cpp:39</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_acf0bbb8a8a79f07b75031fb02f37203a"><div class="ttname"><a href="classExpressions_1_1ARow.html#acf0bbb8a8a79f07b75031fb02f37203a">Expressions::ARow::~ARow</a></div><div class="ttdeci">~ARow()</div><div class="ttdef"><b>Definition</b> <a href="ARow_8cpp_source.html#l00035">ARow.cpp:35</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1ARow_html_ae13b5d160bba9e4d6c800691b958cbab"><div class="ttname"><a href="classExpressions_1_1ARow.html#ae13b5d160bba9e4d6c800691b958cbab">Expressions::ARow::columns</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; columns</div><div class="ttdef"><b>Definition</b> <a href="ARow_8h_source.html#l00066">ARow.h:66</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1OArray_html"><div class="ttname"><a href="classExpressions_1_1OArray.html">Expressions::OArray</a></div><div class="ttdoc">An array expression.</div><div class="ttdef"><b>Definition</b> <a href="AbstractObjects_2Expressions_8h_source.html#l00148">AbstractObjects/Expressions.h:148</a></div></div>
+<div class="ttc" id="aclassPlaceRep_html"><div class="ttname"><a href="classPlaceRep.html">PlaceRep</a></div><div class="ttdoc">Representation of a place within a beam line or sequence.</div><div class="ttdef"><b>Definition</b> <a href="PlaceRep_8h_source.html#l00040">PlaceRep.h:40</a></div></div>
 <div class="ttc" id="anamespaceExpressions_html"><div class="ttname"><a href="namespaceExpressions.html">Expressions</a></div><div class="ttdoc">Representation objects and parsers for attribute expressions.</div><div class="ttdef"><b>Definition</b> <a href="AbstractObjects_2Expressions_8h_source.html#l00064">AbstractObjects/Expressions.h:64</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -199,7 +194,7 @@ $(document).ready(function(){initNavTree('ARow_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0a4f3aaca890ccb65838b7508ad5661d.html">Expressions</a></li><li class="navelem"><a class="el" href="ARow_8h.html">ARow.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

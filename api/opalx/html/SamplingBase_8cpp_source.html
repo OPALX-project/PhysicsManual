@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -124,15 +124,15 @@ $(document).ready(function(){initNavTree('SamplingBase_8cpp_source.html',''); in
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> capacity = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;R.getView().extent(0);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> localNum = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> spaceLeft =</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        (localNum &lt;= capacity) ? (capacity - localNum) : size_t(0);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::vector&lt;unsigned long&gt; spaceLeftAll(<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(nranks), 0);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> mySpace = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(spaceLeft);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    MPI_Allgather(&amp;mySpace, 1, MPI_UNSIGNED_LONG, spaceLeftAll.data(), 1,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                  MPI_UNSIGNED_LONG, ippl::Comm-&gt;getCommunicator());</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> capacity  = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;R.getView().extent(0);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> localNum  = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> spaceLeft = (localNum &lt;= capacity) ? (capacity - localNum) : size_t(0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::vector&lt;unsigned long&gt; spaceLeftAll(<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(nranks), 0);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> mySpace = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(spaceLeft);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    MPI_Allgather(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            &amp;mySpace, 1, MPI_UNSIGNED_LONG, spaceLeftAll.data(), 1, MPI_UNSIGNED_LONG,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            ippl::Comm-&gt;getCommunicator());</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nranks_u = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(nranks);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> base     = totalToSample / nranks_u;</div>
@@ -141,8 +141,8 @@ $(document).ready(function(){initNavTree('SamplingBase_8cpp_source.html',''); in
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::vector&lt;size_t&gt; nlocal(<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(nranks), 0);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">size_t</span> sum = 0;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r = 0; r &lt; nranks; ++r) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">size_t</span> ideal = base + (<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(r) &lt; rem ? 1 : 0);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">size_t</span> cap   = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(spaceLeftAll[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(r)]);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">size_t</span> ideal                   = base + (<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(r) &lt; rem ? 1 : 0);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">size_t</span> cap                     = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(spaceLeftAll[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(r)]);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        nlocal[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(r)] = std::min(ideal, cap);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        sum += nlocal[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(r)];</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('SamplingBase_8cpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4043ae54a69fe9133a0541b78a48bd8d.html">Distribution</a></li><li class="navelem"><a class="el" href="SamplingBase_8cpp.html">SamplingBase.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

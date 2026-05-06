@@ -74,7 +74,7 @@ var classOpalSinusoidalTimeDependence =
     [ "itsSize", "classOpalSinusoidalTimeDependence.html#ae69db360c5f531134f9d0c2ce283fbe6", null ],
     [ "modified", "classOpalSinusoidalTimeDependence.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classOpalSinusoidalTimeDependence.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classOpalSinusoidalTimeDependence.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classOpalSinusoidalTimeDependence.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classOpalSinusoidalTimeDependence.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classOpalSinusoidalTimeDependence.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

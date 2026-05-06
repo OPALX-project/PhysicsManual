@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -107,17 +107,17 @@ $(document).ready(function(){initNavTree('ParallelReduceTools_8h.html',''); init
   <div class="headertitle"><div class="title">ParallelReduceTools.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;variant&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
+<div class="textblock"><code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ParallelReduceTools.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ParallelReduceTools_8h__incl.png" border="0" usemap="#aParallelReduceTools_8h" alt=""/></div>
 <map name="aParallelReduceTools_8h" id="aParallelReduceTools_8h">
 <area shape="rect" title=" " alt="" coords="5,5,168,31"/>
-<area shape="rect" title=" " alt="" coords="9,79,77,104"/>
+<area shape="rect" title=" " alt="" coords="13,79,73,104"/>
 <area shape="poly" title=" " alt="" coords="82,32,59,68,55,66,77,30"/>
-<area shape="rect" title=" " alt="" coords="101,79,161,104"/>
+<area shape="rect" title=" " alt="" coords="97,79,165,104"/>
 <area shape="poly" title=" " alt="" coords="96,30,119,66,114,68,92,32"/>
 </map>
 </div>
@@ -268,10 +268,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ace15d1356bf35aab2c5896751df67869" id="r_ace15d1356bf35aab2c5896751df67869"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType &gt; </td></tr>
-<tr class="memitem:ace15d1356bf35aab2c5896751df67869"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ParticleBinning::ReductionVariant</a> = typename <a class="el" href="namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper">ReductionVariantHelper</a>&lt; SizeType, IndexType, std::make_integer_sequence&lt; IndexType, <a class="el" href="namespaceParticleBinning.html#a62512b47ae7bad83f2ad2c43282ac2fa">maxArrSize</a>&lt; IndexType &gt; &gt; &gt;::type</td></tr>
-<tr class="memdesc:ace15d1356bf35aab2c5896751df67869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for a <code>std::variant</code> containing all possible <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> types up to <code>maxArrSize</code>.  <br /></td></tr>
-<tr class="separator:ace15d1356bf35aab2c5896751df67869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204c7bb96c89276a3db6e52417e2c992" id="r_a204c7bb96c89276a3db6e52417e2c992"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a204c7bb96c89276a3db6e52417e2c992"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ParticleBinning::ReductionVariant</a> = typename <a class="el" href="namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper">ReductionVariantHelper</a>&lt; SizeType, IndexType, std::make_integer_sequence&lt; IndexType, <a class="el" href="namespaceParticleBinning.html#a62512b47ae7bad83f2ad2c43282ac2fa">maxArrSize</a>&lt; IndexType &gt; &gt; &gt;::type</td></tr>
+<tr class="memdesc:a204c7bb96c89276a3db6e52417e2c992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for a <code>std::variant</code> containing all possible <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> types up to <code>maxArrSize</code>.  <br /></td></tr>
+<tr class="separator:a204c7bb96c89276a3db6e52417e2c992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -285,11 +285,11 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a61774b1863015244b3bf9974924ede07" id="r_a61774b1863015244b3bf9974924ede07"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType , IndexType N&gt; </td></tr>
-<tr class="memitem:a61774b1863015244b3bf9974924ede07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a61774b1863015244b3bf9974924ede07">ParticleBinning::createReductionObjectHelper</a> (IndexType binCount)</td></tr>
+<tr class="memitem:a61774b1863015244b3bf9974924ede07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a61774b1863015244b3bf9974924ede07">ParticleBinning::createReductionObjectHelper</a> (IndexType binCount)</td></tr>
 <tr class="memdesc:a61774b1863015244b3bf9974924ede07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive helper function to create <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> objects with compile-time size matching.  <br /></td></tr>
 <tr class="separator:a61774b1863015244b3bf9974924ede07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d59e67ac4758acf8bdb9da6f686de07" id="r_a3d59e67ac4758acf8bdb9da6f686de07"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a3d59e67ac4758acf8bdb9da6f686de07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a3d59e67ac4758acf8bdb9da6f686de07">ParticleBinning::createReductionObject</a> (IndexType binCount)</td></tr>
+<tr class="memitem:a3d59e67ac4758acf8bdb9da6f686de07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a3d59e67ac4758acf8bdb9da6f686de07">ParticleBinning::createReductionObject</a> (IndexType binCount)</td></tr>
 <tr class="memdesc:a3d59e67ac4758acf8bdb9da6f686de07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function to create <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> objects with runtime-specified size.  <br /></td></tr>
 <tr class="separator:a3d59e67ac4758acf8bdb9da6f686de07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae379067c6dab405bfe6c9f1d41bf11a2" id="r_ae379067c6dab405bfe6c9f1d41bf11a2"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> , unsigned Dim&gt; </td></tr>
@@ -328,7 +328,7 @@ struct ParticleBinning::ReductionVariantHelper&lt; SizeType, IndexType, std::int
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00110">110</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00121">121</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for ParticleBinning::ReductionVariantHelper&lt; SizeType, IndexType, std::integer_sequence&lt; IndexType, Sizes... &gt; &gt;:</div>
 <div class="dyncontent">
@@ -355,7 +355,7 @@ type</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_eda4982cfc199066208e3c7d2343eb53.html">PartBunch</a></li><li class="navelem"><a class="el" href="dir_eec03394a702941dd7f1c21e77fc47a1.html">Binning</a></li><li class="navelem"><a class="el" href="ParallelReduceTools_8h.html">ParallelReduceTools.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

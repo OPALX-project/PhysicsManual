@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename real_t&gt;<br />
 struct matheval::detail::ConstantFolder&lt; real_t &gt;</div>
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00355">355</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00349">349</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a429f5f411cf38f72beab83e576a0fe34" name="a429f5f411cf38f72beab83e576a0fe34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a429f5f411cf38f72beab83e576a0fe34">&#9670;&#160;</a></span>result_type</h2>
@@ -172,7 +172,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Necessary typedef for visitor. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00357">357</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00351">351</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,9 +205,9 @@ template&lt;typename real_t &gt; </div>
 
 <p>Evaluate a binary operator and optionally recurse its operands. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00374">374</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00368">368</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="matheval_8hpp_source.html#l00230">matheval::detail::binary_op&lt; real_t &gt;::lhs</a>, <a class="el" href="matheval_8hpp_source.html#l00228">matheval::detail::binary_op&lt; real_t &gt;::op</a>, and <a class="el" href="matheval_8hpp_source.html#l00232">matheval::detail::binary_op&lt; real_t &gt;::rhs</a>.</p>
+<p class="reference">References <a class="el" href="matheval_8hpp_source.html#l00237">matheval::detail::binary_op&lt; real_t &gt;::lhs</a>, <a class="el" href="matheval_8hpp_source.html#l00235">matheval::detail::binary_op&lt; real_t &gt;::op</a>, and <a class="el" href="matheval_8hpp_source.html#l00239">matheval::detail::binary_op&lt; real_t &gt;::rhs</a>.</p>
 
 </div>
 </div>
@@ -239,9 +239,9 @@ template&lt;typename real_t &gt; </div>
 
 <p>Recursively evaluate the AST. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00369">369</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00363">363</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="matheval_8hpp_source.html#l00136">matheval::detail::expr_ast&lt; real_t &gt;::tree</a>.</p>
+<p class="reference">References <a class="el" href="matheval_8hpp_source.html#l00147">matheval::detail::expr_ast&lt; real_t &gt;::tree</a>.</p>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Empty nodes in the tree evaluate to 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00360">360</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00354">354</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +305,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Numbers evaluate to themselves. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00363">363</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00357">357</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Handle <a class="el" href="structmatheval_1_1detail_1_1recursive__wrapper.html">recursive_wrapper</a> for <a class="el" href="structmatheval_1_1detail_1_1binary__op.html" title="Store a binary operator and its argument trees.">binary_op</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00402">402</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00396">396</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Handle <a class="el" href="structmatheval_1_1detail_1_1recursive__wrapper.html">recursive_wrapper</a> for <a class="el" href="structmatheval_1_1detail_1_1expr__ast.html" title="Abstract Syntax Tree.">expr_ast</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00397">397</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00391">391</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Handle <a class="el" href="structmatheval_1_1detail_1_1recursive__wrapper.html">recursive_wrapper</a> for <a class="el" href="structmatheval_1_1detail_1_1unary__op.html" title="Store a unary operator and its argument tree.">unary_op</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00407">407</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00401">401</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ template&lt;typename real_t &gt; </div>
 
 <p>Variables do not evaluate. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00366">366</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00360">360</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -465,9 +465,9 @@ template&lt;typename real_t &gt; </div>
 
 <p>Evaluate a unary operator and optionally recurse its operand. </p>
 
-<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00387">387</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matheval_8hpp_source.html#l00381">381</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="matheval_8hpp_source.html#l00191">matheval::detail::unary_op&lt; real_t &gt;::op</a>, and <a class="el" href="matheval_8hpp_source.html#l00193">matheval::detail::unary_op&lt; real_t &gt;::rhs</a>.</p>
+<p class="reference">References <a class="el" href="matheval_8hpp_source.html#l00199">matheval::detail::unary_op&lt; real_t &gt;::op</a>, and <a class="el" href="matheval_8hpp_source.html#l00201">matheval::detail::unary_op&lt; real_t &gt;::rhs</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ template&lt;typename real_t &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacematheval.html">matheval</a></li><li class="navelem"><a class="el" href="namespacematheval_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structmatheval_1_1detail_1_1ConstantFolder.html">ConstantFolder</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

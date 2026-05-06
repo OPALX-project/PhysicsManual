@@ -67,7 +67,7 @@ var classBeam =
     [ "modified", "classBeam.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classBeam.html#a2d4689680e7982efa61a4c9dece2c691", null ],
     [ "reference", "classBeam.html#a71a693d5cb509faa1bf57c598a5b7f2f", null ],
-    [ "references", "classBeam.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classBeam.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classBeam.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classBeam.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

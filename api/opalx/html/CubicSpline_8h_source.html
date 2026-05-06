@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('CubicSpline_8h_source.html',''); initR
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classCubicSpline.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classCubicSpline.html">CubicSpline</a> final : <span class="keyword">public</span> <a class="code hl_class" href="classAbstractSpline.html">AbstractSpline</a> {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classCubicSpline.html#a83020645410ab1e830048f572082be6a">   31</a></span>    <a class="code hl_function" href="classCubicSpline.html#a83020645410ab1e830048f572082be6a">CubicSpline</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="classCubicSpline.html#a83020645410ab1e830048f572082be6a">CubicSpline</a>(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; x, <span class="keyword">const</span> std::vector&lt;double&gt;&amp; y);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCubicSpline.html#a1e4f227cc35597a53d2227e9fd422f92">init</a>(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; x, <span class="keyword">const</span> std::vector&lt;double&gt;&amp; y) <span class="keyword">override</span>;</div>
@@ -160,8 +160,7 @@ $(document).ready(function(){initNavTree('CubicSpline_8h_source.html',''); initR
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
 </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_CUBIC_SPLINE_HH</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_CUBIC_SPLINE_HH</span></div>
 <div class="ttc" id="aAbstractSpline_8h_html"><div class="ttname"><a href="AbstractSpline_8h.html">AbstractSpline.h</a></div></div>
 <div class="ttc" id="aclassAbstractSpline_1_1Accelerator_html"><div class="ttname"><a href="classAbstractSpline_1_1Accelerator.html">AbstractSpline::Accelerator</a></div><div class="ttdoc">Accelerator caching last interval indices.</div><div class="ttdef"><b>Definition</b> <a href="AbstractSpline_8h_source.html#l00035">AbstractSpline.h:35</a></div></div>
 <div class="ttc" id="aclassAbstractSpline_html"><div class="ttname"><a href="classAbstractSpline.html">AbstractSpline</a></div><div class="ttdoc">Base class for the linear and cubic interpolation spline classes.</div><div class="ttdef"><b>Definition</b> <a href="AbstractSpline_8h_source.html#l00025">AbstractSpline.h:25</a></div></div>
@@ -170,8 +169,8 @@ $(document).ready(function(){initNavTree('CubicSpline_8h_source.html',''); initR
 <div class="ttc" id="aclassCubicSpline_html_a1da64be02d2e169781c578f5daa88ea0"><div class="ttname"><a href="classCubicSpline.html#a1da64be02d2e169781c578f5daa88ea0">CubicSpline::evalIntegral</a></div><div class="ttdeci">double evalIntegral(double xa, double xb, Accelerator &amp;accel) const override</div><div class="ttdoc">Evaluate the integral of the spline at x.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00050">CubicSpline.cpp:50</a></div></div>
 <div class="ttc" id="aclassCubicSpline_html_a1e4f227cc35597a53d2227e9fd422f92"><div class="ttname"><a href="classCubicSpline.html#a1e4f227cc35597a53d2227e9fd422f92">CubicSpline::init</a></div><div class="ttdeci">void init(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y) override</div><div class="ttdoc">Initialize from tabulated data (natural spline).</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00024">CubicSpline.cpp:24</a></div></div>
 <div class="ttc" id="aclassCubicSpline_html_a2a73cb7f0844e73af324319e7f739400"><div class="ttname"><a href="classCubicSpline.html#a2a73cb7f0844e73af324319e7f739400">CubicSpline::computeCoefficients</a></div><div class="ttdeci">void computeCoefficients()</div><div class="ttdoc">Compute natural spline coefficients.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00088">CubicSpline.cpp:88</a></div></div>
-<div class="ttc" id="aclassCubicSpline_html_a56e62b7ae60d17553862959fb05a257e"><div class="ttname"><a href="classCubicSpline.html#a56e62b7ae60d17553862959fb05a257e">CubicSpline::extrapolateLeft</a></div><div class="ttdeci">double extrapolateLeft(double x) const</div><div class="ttdoc">Linear extrapolation to the left of the data range.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00138">CubicSpline.cpp:138</a></div></div>
-<div class="ttc" id="aclassCubicSpline_html_a654686933cc89bd23c0fe1acd39a7ca5"><div class="ttname"><a href="classCubicSpline.html#a654686933cc89bd23c0fe1acd39a7ca5">CubicSpline::extrapolateRight</a></div><div class="ttdeci">double extrapolateRight(double x) const</div><div class="ttdoc">Linear extrapolation to the right of the data range.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00143">CubicSpline.cpp:143</a></div></div>
+<div class="ttc" id="aclassCubicSpline_html_a56e62b7ae60d17553862959fb05a257e"><div class="ttname"><a href="classCubicSpline.html#a56e62b7ae60d17553862959fb05a257e">CubicSpline::extrapolateLeft</a></div><div class="ttdeci">double extrapolateLeft(double x) const</div><div class="ttdoc">Linear extrapolation to the left of the data range.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00136">CubicSpline.cpp:136</a></div></div>
+<div class="ttc" id="aclassCubicSpline_html_a654686933cc89bd23c0fe1acd39a7ca5"><div class="ttname"><a href="classCubicSpline.html#a654686933cc89bd23c0fe1acd39a7ca5">CubicSpline::extrapolateRight</a></div><div class="ttdeci">double extrapolateRight(double x) const</div><div class="ttdoc">Linear extrapolation to the right of the data range.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00141">CubicSpline.cpp:141</a></div></div>
 <div class="ttc" id="aclassCubicSpline_html_a83020645410ab1e830048f572082be6a"><div class="ttname"><a href="classCubicSpline.html#a83020645410ab1e830048f572082be6a">CubicSpline::CubicSpline</a></div><div class="ttdeci">CubicSpline()=default</div><div class="ttdoc">Default constructor.</div></div>
 <div class="ttc" id="aclassCubicSpline_html_a8de784761253d434ab2aa51a9c2d093d"><div class="ttname"><a href="classCubicSpline.html#a8de784761253d434ab2aa51a9c2d093d">CubicSpline::b_</a></div><div class="ttdeci">std::vector&lt; double &gt; b_</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8h_source.html#l00079">CubicSpline.h:79</a></div></div>
 <div class="ttc" id="aclassCubicSpline_html_aa7a69e53a9b5fb1808c2a45afbeee0d7"><div class="ttname"><a href="classCubicSpline.html#aa7a69e53a9b5fb1808c2a45afbeee0d7">CubicSpline::eval</a></div><div class="ttdeci">double eval(double x, Accelerator &amp;accel) const override</div><div class="ttdoc">Evaluate the spline at x using an accelerator.</div><div class="ttdef"><b>Definition</b> <a href="CubicSpline_8cpp_source.html#l00033">CubicSpline.cpp:33</a></div></div>
@@ -185,7 +184,7 @@ $(document).ready(function(){initNavTree('CubicSpline_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="CubicSpline_8h.html">CubicSpline.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

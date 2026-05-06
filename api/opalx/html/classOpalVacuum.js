@@ -75,7 +75,7 @@ var classOpalVacuum =
     [ "modified", "classOpalVacuum.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classOpalVacuum.html#a2d4689680e7982efa61a4c9dece2c691", null ],
     [ "parmatint_m", "classOpalVacuum.html#a1cf12bf445d264439bb96bad7ec4563a", null ],
-    [ "references", "classOpalVacuum.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classOpalVacuum.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classOpalVacuum.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classOpalVacuum.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

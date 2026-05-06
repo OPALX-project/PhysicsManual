@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -206,7 +206,7 @@ Friends</h2></td></tr>
 <p>Define standard operators (increment, decrement, booleans, etc) and conversion to integer.</p>
 <p><a class="el" href="classinterpolation_1_1Mesh_1_1Iterator.html">Iterator</a> generalises internal state to a stl vector of integers and a pointer to the mesh over which we iterate. Meaning of integers is mesh- dependent, but prefer convention that left-most index state[0] is most significant index and right-most index state[n] is least significant index i.e. it+1 increments state[n] by 1 first. Convention is chosen to reflect arabic numerals where right-most index is least significant. </p>
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00169">169</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00148">148</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a56e1e19ea341c78a9be0272351459a24" name="a56e1e19ea341c78a9be0272351459a24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56e1e19ea341c78a9be0272351459a24">&#9670;&#160;</a></span>Iterator() <span class="overload">[1/3]</span></h2>
@@ -383,7 +383,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the mesh over which the iterator acts </p>
 
-<p class="reference">Referenced by <a class="el" href="PPSolveFactory_8cpp_source.html#l00242">interpolation::PPSolveFactory::getDerivs()</a>, and <a class="el" href="PPSolveFactory_8cpp_source.html#l00116">interpolation::PPSolveFactory::outOfBoundsPosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PPSolveFactory_8cpp_source.html#l00225">interpolation::PPSolveFactory::getDerivs()</a>, and <a class="el" href="PPSolveFactory_8cpp_source.html#l00105">interpolation::PPSolveFactory::outOfBoundsPosition()</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Friends</h2></td></tr>
 <p>Return the position referenced by the iterator;</p>
 <p><a class="el" href="Component_8h.html#structPoint">Point</a> should be initialised to the PositionDimension() of the mesh </p>
 
-<p class="reference">Referenced by <a class="el" href="PolynomialPatch_8cpp_source.html#l00117">interpolation::PolynomialPatch::function()</a>, <a class="el" href="VectorMap_8h_source.html#l00103">interpolation::VectorMap::function()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00242">interpolation::PPSolveFactory::getDerivs()</a>, <a class="el" href="Mesh_8cpp_source.html#l00033">interpolation::operator&lt;&lt;()</a>, and <a class="el" href="PPSolveFactory_8cpp_source.html#l00116">interpolation::PPSolveFactory::outOfBoundsPosition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PolynomialPatch_8cpp_source.html#l00117">interpolation::PolynomialPatch::function()</a>, <a class="el" href="VectorMap_8h_source.html#l00102">interpolation::VectorMap::function()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00225">interpolation::PPSolveFactory::getDerivs()</a>, <a class="el" href="Mesh_8cpp_source.html#l00033">interpolation::operator&lt;&lt;()</a>, and <a class="el" href="PPSolveFactory_8cpp_source.html#l00105">interpolation::PPSolveFactory::outOfBoundsPosition()</a>.</p>
 
 </div>
 </div>
@@ -468,7 +468,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the internal state of the iterator </p>
 
-<p class="reference">Referenced by <a class="el" href="PPSolveFactory_8cpp_source.html#l00242">interpolation::PPSolveFactory::getDerivs()</a>, <a class="el" href="NDGrid_8h_source.html#l00371">interpolation::NDGrid::getPosition()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00156">interpolation::PPSolveFactory::getValues()</a>, <a class="el" href="Mesh_8cpp_source.html#l00033">interpolation::operator&lt;&lt;()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00116">interpolation::PPSolveFactory::outOfBoundsPosition()</a>, and <a class="el" href="ThreeDGrid_8h_source.html#l00462">interpolation::ThreeDGrid::toInteger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PPSolveFactory_8cpp_source.html#l00225">interpolation::PPSolveFactory::getDerivs()</a>, <a class="el" href="NDGrid_8h_source.html#l00364">interpolation::NDGrid::getPosition()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00144">interpolation::PPSolveFactory::getValues()</a>, <a class="el" href="Mesh_8cpp_source.html#l00033">interpolation::operator&lt;&lt;()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00105">interpolation::PPSolveFactory::outOfBoundsPosition()</a>, and <a class="el" href="ThreeDGrid_8h_source.html#l00421">interpolation::ThreeDGrid::toInteger()</a>.</p>
 
 </div>
 </div>
@@ -604,7 +604,7 @@ Friends</h2></td></tr>
 <p>Return an integer representation of the iterator</p>
 <p>mesh-&gt;Begin() should return an iterator whose integer representation is 0. Iterator++ should return an iterator whose integer representation is one higher - i.e. integer representation and iterator should behave in the same way </p>
 
-<p class="reference">Referenced by <a class="el" href="NDGrid_8cpp_source.html#l00143">interpolation::NDGrid::addEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00193">interpolation::ThreeDGrid::addEquals()</a>, <a class="el" href="PolynomialPatch_8cpp_source.html#l00117">interpolation::PolynomialPatch::function()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00242">interpolation::PPSolveFactory::getDerivs()</a>, <a class="el" href="PolynomialPatch_8cpp_source.html#l00127">interpolation::PolynomialPatch::getPolynomialVector()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00156">interpolation::PPSolveFactory::getValues()</a>, <a class="el" href="Mesh_8cpp_source.html#l00033">interpolation::operator&lt;&lt;()</a>, <a class="el" href="PolynomialPatch_8cpp_source.html#l00034">interpolation::PolynomialPatch::PolynomialPatch()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00063">interpolation::PPSolveFactory::PPSolveFactory()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00296">interpolation::PPSolveFactory::solve()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00147">interpolation::NDGrid::subEquals()</a>, and <a class="el" href="ThreeDGrid_8cpp_source.html#l00198">interpolation::ThreeDGrid::subEquals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="NDGrid_8cpp_source.html#l00142">interpolation::NDGrid::addEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00195">interpolation::ThreeDGrid::addEquals()</a>, <a class="el" href="PolynomialPatch_8cpp_source.html#l00117">interpolation::PolynomialPatch::function()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00225">interpolation::PPSolveFactory::getDerivs()</a>, <a class="el" href="PolynomialPatch_8cpp_source.html#l00127">interpolation::PolynomialPatch::getPolynomialVector()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00144">interpolation::PPSolveFactory::getValues()</a>, <a class="el" href="Mesh_8cpp_source.html#l00033">interpolation::operator&lt;&lt;()</a>, <a class="el" href="PolynomialPatch_8cpp_source.html#l00034">interpolation::PolynomialPatch::PolynomialPatch()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00062">interpolation::PPSolveFactory::PPSolveFactory()</a>, <a class="el" href="PPSolveFactory_8cpp_source.html#l00287">interpolation::PPSolveFactory::solve()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00146">interpolation::NDGrid::subEquals()</a>, and <a class="el" href="ThreeDGrid_8cpp_source.html#l00199">interpolation::ThreeDGrid::subEquals()</a>.</p>
 
 </div>
 </div>
@@ -629,7 +629,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00230">230</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00209">209</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +653,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00232">232</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00211">211</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1324,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00231">231</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00210">210</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1349,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00269">269</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00234">234</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1373,9 +1373,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00270">270</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00235">235</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="NDGrid_8cpp_source.html#l00092">interpolation::NDGrid::addEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00125">interpolation::ThreeDGrid::addEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00202">interpolation::ThreeDGrid::addOne()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00101">interpolation::ThreeDGrid::getPosition()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00188">interpolation::NDGrid::isGreater()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00231">interpolation::ThreeDGrid::isGreater()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00118">interpolation::NDGrid::subEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00147">interpolation::ThreeDGrid::subEquals()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00160">interpolation::NDGrid::subOne()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00215">interpolation::ThreeDGrid::subOne()</a>, and <a class="el" href="NDGrid_8cpp_source.html#l00197">interpolation::NDGrid::toInteger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="NDGrid_8cpp_source.html#l00089">interpolation::NDGrid::addEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00133">interpolation::ThreeDGrid::addEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00203">interpolation::ThreeDGrid::addOne()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00111">interpolation::ThreeDGrid::getPosition()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00188">interpolation::NDGrid::isGreater()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00231">interpolation::ThreeDGrid::isGreater()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00116">interpolation::NDGrid::subEquals()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00153">interpolation::ThreeDGrid::subEquals()</a>, <a class="el" href="NDGrid_8cpp_source.html#l00160">interpolation::NDGrid::subOne()</a>, <a class="el" href="ThreeDGrid_8cpp_source.html#l00216">interpolation::ThreeDGrid::subOne()</a>, and <a class="el" href="NDGrid_8cpp_source.html#l00197">interpolation::NDGrid::toInteger()</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1388,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceinterpolation.html">interpolation</a></li><li class="navelem"><a class="el" href="classinterpolation_1_1Mesh.html">Mesh</a></li><li class="navelem"><a class="el" href="classinterpolation_1_1Mesh_1_1Iterator.html">Iterator</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

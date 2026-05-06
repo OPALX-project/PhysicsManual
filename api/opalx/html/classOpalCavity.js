@@ -75,7 +75,7 @@ var classOpalCavity =
     [ "modified", "classOpalCavity.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "obgeo_m", "classOpalCavity.html#aaccffb6a55c0dc1188e7da38ac7529e6", null ],
     [ "occurrence", "classOpalCavity.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classOpalCavity.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classOpalCavity.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classOpalCavity.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classOpalCavity.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

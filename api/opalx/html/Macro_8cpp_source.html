@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -128,147 +128,120 @@ $(document).ready(function(){initNavTree('Macro_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="Statement_8h.html">OpalParser/Statement.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="ParseError_8h.html">Utilities/ParseError.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Class Macro</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classMacro.html#a44dfcbe5a774c2454f58c42391420f57">   28</a></span><a class="code hl_function" href="classMacro.html#a7017a14a17e84455e6577e91811ad340">Macro::Macro</a>(<span class="keywordtype">int</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *help):</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="classObject.html">Object</a>(size, name, help), formals(), actuals()</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Class Macro</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classMacro.html#a44dfcbe5a774c2454f58c42391420f57">   27</a></span><a class="code hl_function" href="classMacro.html#a7017a14a17e84455e6577e91811ad340">Macro::Macro</a>(<span class="keywordtype">int</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">char</span>* help)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    : <a class="code hl_class" href="classObject.html">Object</a>(size, name, help), formals(), actuals() {}</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classMacro.html#a5b660cb676a2265ad8864434744a9443">   30</a></span><a class="code hl_function" href="classMacro.html#a7017a14a17e84455e6577e91811ad340">Macro::Macro</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classObject.html">Object</a>* parent)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    : <a class="code hl_class" href="classObject.html">Object</a>(name, parent), formals(), actuals() {}</div>
+</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classMacro.html#a5b660cb676a2265ad8864434744a9443">   33</a></span><a class="code hl_function" href="classMacro.html#a7017a14a17e84455e6577e91811ad340">Macro::Macro</a>(<span class="keyword">const</span> std::string &amp;name, <a class="code hl_class" href="classObject.html">Object</a> *parent):</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classObject.html">Object</a>(name, parent), formals(), actuals()</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{}</div>
-</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classMacro.html#a6eddef59854716ba31bc261f40fdf492">   38</a></span><a class="code hl_function" href="classMacro.html#a6eddef59854716ba31bc261f40fdf492">Macro::~Macro</a>()</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classMacro.html#a6eddef59854716ba31bc261f40fdf492">   33</a></span><a class="code hl_function" href="classMacro.html#a6eddef59854716ba31bc261f40fdf492">Macro::~Macro</a>() {}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classMacro.html#a5c399d68f257d50959ffe5ea10de42d0">   35</a></span><a class="code hl_class" href="classMacro.html">Macro</a>* <a class="code hl_function" href="classMacro.html#a5c399d68f257d50959ffe5ea10de42d0">Macro::clone</a>(<span class="keyword">const</span> std::string&amp;) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="classParseError.html">ParseError</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="stringliteral">&quot;Macro::clone()&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="stringliteral">&quot;You cannot execute the command \&quot;&quot;</span> + <a class="code hl_function" href="classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39">getOpalName</a>() + <span class="stringliteral">&quot;\&quot; without parameters.&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classMacro.html#a5c399d68f257d50959ffe5ea10de42d0">   42</a></span><a class="code hl_class" href="classMacro.html">Macro</a> *<a class="code hl_function" href="classMacro.html#a5c399d68f257d50959ffe5ea10de42d0">Macro::clone</a>(<span class="keyword">const</span> std::string &amp;) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="classParseError.html">ParseError</a>(<span class="stringliteral">&quot;Macro::clone()&quot;</span>,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                     <span class="stringliteral">&quot;You cannot execute the command \&quot;&quot;</span> + <a class="code hl_function" href="classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39">getOpalName</a>() +</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                     <span class="stringliteral">&quot;\&quot; without parameters.&quot;</span>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classMacro.html#a11b63dce4fd86eeeb48e18d5585b4235">   49</a></span><span class="keyword">const</span> std::string <a class="code hl_function" href="classMacro.html#a11b63dce4fd86eeeb48e18d5585b4235">Macro::getCategory</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;MACRO&quot;</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
-</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classMacro.html#afec614b0509e13af9548425051b052ba">   54</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classMacro.html#afec614b0509e13af9548425051b052ba">Macro::shouldTrace</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
-</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classMacro.html#a11b63dce4fd86eeeb48e18d5585b4235">   41</a></span><span class="keyword">const</span> std::string <a class="code hl_function" href="classMacro.html#a11b63dce4fd86eeeb48e18d5585b4235">Macro::getCategory</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;MACRO&quot;</span>; }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classMacro.html#afec614b0509e13af9548425051b052ba">   43</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classMacro.html#afec614b0509e13af9548425051b052ba">Macro::shouldTrace</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classMacro.html#a6344effaa974de2b464ef8ed52383cd4">   45</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classMacro.html#a6344effaa974de2b464ef8ed52383cd4">Macro::shouldUpdate</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classMacro.html#af344e7f39d98155f8c9b8f3e54fefa75">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classMacro.html#af344e7f39d98155f8c9b8f3e54fefa75">Macro::parseActuals</a>(<a class="code hl_class" href="classStatement.html">Statement</a>&amp; stat) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// We start after the opening &#39;(&#39;.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_variable" href="classMacro.html#a0e119a941d7acdce45b16ab27b2f2b01">actuals</a>.clear();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (!stat.<a class="code hl_function" href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">delimiter</a>(<span class="charliteral">&#39;)&#39;</span>)) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">int</span> level = 1;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        std::vector&lt;Token&gt; act;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_class" href="classToken.html">Token</a> token = stat.<a class="code hl_function" href="classStatement.html#a1a0eb4cada570aae1069034300a11092">getCurrent</a>();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classMacro.html#a6344effaa974de2b464ef8ed52383cd4">   59</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classMacro.html#a6344effaa974de2b464ef8ed52383cd4">Macro::shouldUpdate</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span> (token.<a class="code hl_function" href="classToken.html#a2954e99066d74d540ededed11eaf469c">isDel</a>(<span class="charliteral">&#39;,&#39;</span>)) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="comment">// Comma at level=1 terminates an actual argument.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">if</span> (level == 1) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    <a class="code hl_variable" href="classMacro.html#a0e119a941d7acdce45b16ab27b2f2b01">actuals</a>.push_back(act);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    act.clear();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.<a class="code hl_function" href="classToken.html#a2954e99066d74d540ededed11eaf469c">isDel</a>(<span class="charliteral">&#39;(&#39;</span>)) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                level++;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.<a class="code hl_function" href="classToken.html#a2954e99066d74d540ededed11eaf469c">isDel</a>(<span class="charliteral">&#39;)&#39;</span>)) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="comment">// Closing parenthesis at level=1 terminates the actuals list.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">if</span> (--level == 0) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    <a class="code hl_variable" href="classMacro.html#a0e119a941d7acdce45b16ab27b2f2b01">actuals</a>.push_back(act);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    act.clear();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="comment">// In all other casses append token to current actual.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            act.push_back(token);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classMacro.html#af344e7f39d98155f8c9b8f3e54fefa75">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classMacro.html#af344e7f39d98155f8c9b8f3e54fefa75">Macro::parseActuals</a>(<a class="code hl_class" href="classStatement.html">Statement</a> &amp;stat) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// We start after the opening &#39;(&#39;.</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_variable" href="classMacro.html#af135b748194d73f8d0a3d2f1631b1ff2">actuals</a>.clear();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span>(! stat.<a class="code hl_function" href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">delimiter</a>(<span class="charliteral">&#39;)&#39;</span>)) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">int</span> level = 1;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        std::vector&lt;Token&gt; act;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">while</span>(<span class="keyword">true</span>) {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_class" href="classToken.html">Token</a> token = stat.<a class="code hl_function" href="classStatement.html#a1a0eb4cada570aae1069034300a11092">getCurrent</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span>(token.<a class="code hl_function" href="classToken.html#a2954e99066d74d540ededed11eaf469c">isDel</a>(<span class="charliteral">&#39;,&#39;</span>)) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="comment">// Comma at level=1 terminates an actual argument.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">if</span>(level == 1) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <a class="code hl_variable" href="classMacro.html#af135b748194d73f8d0a3d2f1631b1ff2">actuals</a>.push_back(act);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    act.clear();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(token.<a class="code hl_function" href="classToken.html#a2954e99066d74d540ededed11eaf469c">isDel</a>(<span class="charliteral">&#39;(&#39;</span>)) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                level++;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(token.<a class="code hl_function" href="classToken.html#a2954e99066d74d540ededed11eaf469c">isDel</a>(<span class="charliteral">&#39;)&#39;</span>)) {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="comment">// Closing parenthesis at level=1 terminates the actuals list.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">if</span>(--level == 0) {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    <a class="code hl_variable" href="classMacro.html#af135b748194d73f8d0a3d2f1631b1ff2">actuals</a>.push_back(act);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    act.clear();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="comment">// In all other casses append token to current actual.</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            act.push_back(token);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
-</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classMacro.html#abd4240bbf5574f3a95cc57cc6c2a7f03">  100</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classMacro.html#abd4240bbf5574f3a95cc57cc6c2a7f03">Macro::parseFormals</a>(<a class="code hl_class" href="classStatement.html">Statement</a> &amp;stat) {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// We start after the opening &#39;(&#39;.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_variable" href="classMacro.html#aeb5e58fbb067254d850161c236bb7b4d">formals</a>.clear();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span>(! stat.<a class="code hl_function" href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">delimiter</a>(<span class="charliteral">&#39;)&#39;</span>)) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            std::string form =</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_function" href="namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582">Expressions::parseString</a>(stat, <span class="stringliteral">&quot;Expected formal argument name.&quot;</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <a class="code hl_variable" href="classMacro.html#aeb5e58fbb067254d850161c236bb7b4d">formals</a>.push_back(form);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        } <span class="keywordflow">while</span>(stat.<a class="code hl_function" href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">delimiter</a>(<span class="charliteral">&#39;,&#39;</span>));</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_function" href="namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599">Expressions::parseDelimiter</a>(stat, <span class="charliteral">&#39;)&#39;</span>);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_function" href="namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599">Expressions::parseDelimiter</a>(stat, <span class="charliteral">&#39;:&#39;</span>);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classMacro.html#abd4240bbf5574f3a95cc57cc6c2a7f03">   82</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classMacro.html#abd4240bbf5574f3a95cc57cc6c2a7f03">Macro::parseFormals</a>(<a class="code hl_class" href="classStatement.html">Statement</a>&amp; stat) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// We start after the opening &#39;(&#39;.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_variable" href="classMacro.html#aeb5e58fbb067254d850161c236bb7b4d">formals</a>.clear();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!stat.<a class="code hl_function" href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">delimiter</a>(<span class="charliteral">&#39;)&#39;</span>)) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            std::string form = <a class="code hl_function" href="namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582">Expressions::parseString</a>(stat, <span class="stringliteral">&quot;Expected formal argument name.&quot;</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_variable" href="classMacro.html#aeb5e58fbb067254d850161c236bb7b4d">formals</a>.push_back(form);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        } <span class="keywordflow">while</span> (stat.<a class="code hl_function" href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">delimiter</a>(<span class="charliteral">&#39;,&#39;</span>));</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_function" href="namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599">Expressions::parseDelimiter</a>(stat, <span class="charliteral">&#39;)&#39;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599">Expressions::parseDelimiter</a>(stat, <span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 </div>
 <div class="ttc" id="aAbstractObjects_2Expressions_8h_html"><div class="ttname"><a href="AbstractObjects_2Expressions_8h.html">Expressions.h</a></div></div>
 <div class="ttc" id="aMacro_8h_html"><div class="ttname"><a href="Macro_8h.html">Macro.h</a></div></div>
 <div class="ttc" id="aParseError_8h_html"><div class="ttname"><a href="ParseError_8h.html">ParseError.h</a></div></div>
 <div class="ttc" id="aStatement_8h_html"><div class="ttname"><a href="Statement_8h.html">Statement.h</a></div></div>
-<div class="ttc" id="aclassMacro_html"><div class="ttname"><a href="classMacro.html">Macro</a></div><div class="ttdoc">Abstract base class for macros.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8h_source.html#l00034">Macro.h:34</a></div></div>
-<div class="ttc" id="aclassMacro_html_a11b63dce4fd86eeeb48e18d5585b4235"><div class="ttname"><a href="classMacro.html#a11b63dce4fd86eeeb48e18d5585b4235">Macro::getCategory</a></div><div class="ttdeci">virtual const std::string getCategory() const</div><div class="ttdoc">Return the object category as a string.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00049">Macro.cpp:49</a></div></div>
-<div class="ttc" id="aclassMacro_html_a5c399d68f257d50959ffe5ea10de42d0"><div class="ttname"><a href="classMacro.html#a5c399d68f257d50959ffe5ea10de42d0">Macro::clone</a></div><div class="ttdeci">virtual Macro * clone(const std::string &amp;name)</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00042">Macro.cpp:42</a></div></div>
-<div class="ttc" id="aclassMacro_html_a6344effaa974de2b464ef8ed52383cd4"><div class="ttname"><a href="classMacro.html#a6344effaa974de2b464ef8ed52383cd4">Macro::shouldUpdate</a></div><div class="ttdeci">virtual bool shouldUpdate() const</div><div class="ttdoc">Update flag.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00059">Macro.cpp:59</a></div></div>
-<div class="ttc" id="aclassMacro_html_a6eddef59854716ba31bc261f40fdf492"><div class="ttname"><a href="classMacro.html#a6eddef59854716ba31bc261f40fdf492">Macro::~Macro</a></div><div class="ttdeci">virtual ~Macro()</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00038">Macro.cpp:38</a></div></div>
+<div class="ttc" id="aclassMacro_html"><div class="ttname"><a href="classMacro.html">Macro</a></div><div class="ttdoc">Abstract base class for macros.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8h_source.html#l00033">Macro.h:33</a></div></div>
+<div class="ttc" id="aclassMacro_html_a0e119a941d7acdce45b16ab27b2f2b01"><div class="ttname"><a href="classMacro.html#a0e119a941d7acdce45b16ab27b2f2b01">Macro::actuals</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; Token &gt; &gt; actuals</div><div class="ttdoc">The actual argument list.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8h_source.html#l00077">Macro.h:77</a></div></div>
+<div class="ttc" id="aclassMacro_html_a11b63dce4fd86eeeb48e18d5585b4235"><div class="ttname"><a href="classMacro.html#a11b63dce4fd86eeeb48e18d5585b4235">Macro::getCategory</a></div><div class="ttdeci">virtual const std::string getCategory() const</div><div class="ttdoc">Return the object category as a string.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00041">Macro.cpp:41</a></div></div>
+<div class="ttc" id="aclassMacro_html_a5c399d68f257d50959ffe5ea10de42d0"><div class="ttname"><a href="classMacro.html#a5c399d68f257d50959ffe5ea10de42d0">Macro::clone</a></div><div class="ttdeci">virtual Macro * clone(const std::string &amp;name)</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00035">Macro.cpp:35</a></div></div>
+<div class="ttc" id="aclassMacro_html_a6344effaa974de2b464ef8ed52383cd4"><div class="ttname"><a href="classMacro.html#a6344effaa974de2b464ef8ed52383cd4">Macro::shouldUpdate</a></div><div class="ttdeci">virtual bool shouldUpdate() const</div><div class="ttdoc">Update flag.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00045">Macro.cpp:45</a></div></div>
+<div class="ttc" id="aclassMacro_html_a6eddef59854716ba31bc261f40fdf492"><div class="ttname"><a href="classMacro.html#a6eddef59854716ba31bc261f40fdf492">Macro::~Macro</a></div><div class="ttdeci">virtual ~Macro()</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00033">Macro.cpp:33</a></div></div>
 <div class="ttc" id="aclassMacro_html_a7017a14a17e84455e6577e91811ad340"><div class="ttname"><a href="classMacro.html#a7017a14a17e84455e6577e91811ad340">Macro::Macro</a></div><div class="ttdeci">Macro()</div></div>
-<div class="ttc" id="aclassMacro_html_abd4240bbf5574f3a95cc57cc6c2a7f03"><div class="ttname"><a href="classMacro.html#abd4240bbf5574f3a95cc57cc6c2a7f03">Macro::parseFormals</a></div><div class="ttdeci">virtual void parseFormals(Statement &amp;)</div><div class="ttdoc">Parse formal arguments.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00100">Macro.cpp:100</a></div></div>
-<div class="ttc" id="aclassMacro_html_aeb5e58fbb067254d850161c236bb7b4d"><div class="ttname"><a href="classMacro.html#aeb5e58fbb067254d850161c236bb7b4d">Macro::formals</a></div><div class="ttdeci">std::vector&lt; std::string &gt; formals</div><div class="ttdoc">The formal argument list.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8h_source.html#l00078">Macro.h:78</a></div></div>
-<div class="ttc" id="aclassMacro_html_af135b748194d73f8d0a3d2f1631b1ff2"><div class="ttname"><a href="classMacro.html#af135b748194d73f8d0a3d2f1631b1ff2">Macro::actuals</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; Token &gt; &gt; actuals</div><div class="ttdoc">The actual argument list.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8h_source.html#l00082">Macro.h:82</a></div></div>
-<div class="ttc" id="aclassMacro_html_af344e7f39d98155f8c9b8f3e54fefa75"><div class="ttname"><a href="classMacro.html#af344e7f39d98155f8c9b8f3e54fefa75">Macro::parseActuals</a></div><div class="ttdeci">virtual void parseActuals(Statement &amp;)</div><div class="ttdoc">Parse actual arguments.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00064">Macro.cpp:64</a></div></div>
-<div class="ttc" id="aclassMacro_html_afec614b0509e13af9548425051b052ba"><div class="ttname"><a href="classMacro.html#afec614b0509e13af9548425051b052ba">Macro::shouldTrace</a></div><div class="ttdeci">virtual bool shouldTrace() const</div><div class="ttdoc">Trace flag.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00054">Macro.cpp:54</a></div></div>
+<div class="ttc" id="aclassMacro_html_abd4240bbf5574f3a95cc57cc6c2a7f03"><div class="ttname"><a href="classMacro.html#abd4240bbf5574f3a95cc57cc6c2a7f03">Macro::parseFormals</a></div><div class="ttdeci">virtual void parseFormals(Statement &amp;)</div><div class="ttdoc">Parse formal arguments.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00082">Macro.cpp:82</a></div></div>
+<div class="ttc" id="aclassMacro_html_aeb5e58fbb067254d850161c236bb7b4d"><div class="ttname"><a href="classMacro.html#aeb5e58fbb067254d850161c236bb7b4d">Macro::formals</a></div><div class="ttdeci">std::vector&lt; std::string &gt; formals</div><div class="ttdoc">The formal argument list.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8h_source.html#l00073">Macro.h:73</a></div></div>
+<div class="ttc" id="aclassMacro_html_af344e7f39d98155f8c9b8f3e54fefa75"><div class="ttname"><a href="classMacro.html#af344e7f39d98155f8c9b8f3e54fefa75">Macro::parseActuals</a></div><div class="ttdeci">virtual void parseActuals(Statement &amp;)</div><div class="ttdoc">Parse actual arguments.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00047">Macro.cpp:47</a></div></div>
+<div class="ttc" id="aclassMacro_html_afec614b0509e13af9548425051b052ba"><div class="ttname"><a href="classMacro.html#afec614b0509e13af9548425051b052ba">Macro::shouldTrace</a></div><div class="ttdeci">virtual bool shouldTrace() const</div><div class="ttdoc">Trace flag.</div><div class="ttdef"><b>Definition</b> <a href="Macro_8cpp_source.html#l00043">Macro.cpp:43</a></div></div>
 <div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">The base class for all OPAL objects.</div><div class="ttdef"><b>Definition</b> <a href="Object_8h_source.html#l00045">Object.h:45</a></div></div>
-<div class="ttc" id="aclassObject_html_a5ec68ba1c3f450f8ea2b139f193c5a39"><div class="ttname"><a href="classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39">Object::getOpalName</a></div><div class="ttdeci">const std::string &amp; getOpalName() const</div><div class="ttdoc">Return object name.</div><div class="ttdef"><b>Definition</b> <a href="Object_8cpp_source.html#l00308">Object.cpp:308</a></div></div>
-<div class="ttc" id="aclassParseError_html"><div class="ttname"><a href="classParseError.html">ParseError</a></div><div class="ttdoc">Parse exception.</div><div class="ttdef"><b>Definition</b> <a href="ParseError_8h_source.html#l00032">ParseError.h:32</a></div></div>
+<div class="ttc" id="aclassObject_html_a5ec68ba1c3f450f8ea2b139f193c5a39"><div class="ttname"><a href="classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39">Object::getOpalName</a></div><div class="ttdeci">const std::string &amp; getOpalName() const</div><div class="ttdoc">Return object name.</div><div class="ttdef"><b>Definition</b> <a href="Object_8cpp_source.html#l00267">Object.cpp:267</a></div></div>
+<div class="ttc" id="aclassParseError_html"><div class="ttname"><a href="classParseError.html">ParseError</a></div><div class="ttdoc">Parse exception.</div><div class="ttdef"><b>Definition</b> <a href="ParseError_8h_source.html#l00031">ParseError.h:31</a></div></div>
 <div class="ttc" id="aclassStatement_html"><div class="ttname"><a href="classStatement.html">Statement</a></div><div class="ttdoc">Interface for statements.</div><div class="ttdef"><b>Definition</b> <a href="Statement_8h_source.html#l00037">Statement.h:37</a></div></div>
-<div class="ttc" id="aclassStatement_html_a1a0eb4cada570aae1069034300a11092"><div class="ttname"><a href="classStatement.html#a1a0eb4cada570aae1069034300a11092">Statement::getCurrent</a></div><div class="ttdeci">Token &amp; getCurrent()</div><div class="ttdoc">Return current token and skip it.</div><div class="ttdef"><b>Definition</b> <a href="Statement_8cpp_source.html#l00074">Statement.cpp:74</a></div></div>
-<div class="ttc" id="aclassStatement_html_aeb97c1ae2faf5064efe45c9cc49a3b11"><div class="ttname"><a href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">Statement::delimiter</a></div><div class="ttdeci">bool delimiter(char c)</div><div class="ttdoc">Test for delimiter.</div><div class="ttdef"><b>Definition</b> <a href="Statement_8cpp_source.html#l00101">Statement.cpp:101</a></div></div>
-<div class="ttc" id="aclassToken_html"><div class="ttname"><a href="classToken.html">Token</a></div><div class="ttdoc">Representation of a single input token.</div><div class="ttdef"><b>Definition</b> <a href="Token_8h_source.html#l00033">Token.h:33</a></div></div>
-<div class="ttc" id="aclassToken_html_a2954e99066d74d540ededed11eaf469c"><div class="ttname"><a href="classToken.html#a2954e99066d74d540ededed11eaf469c">Token::isDel</a></div><div class="ttdeci">bool isDel(char del) const</div><div class="ttdoc">Test for delimiter.</div><div class="ttdef"><b>Definition</b> <a href="Token_8cpp_source.html#l00092">Token.cpp:92</a></div></div>
-<div class="ttc" id="anamespaceExpressions_html_a9e29aecbec1ad7229b05c0a932040582"><div class="ttname"><a href="namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582">Expressions::parseString</a></div><div class="ttdeci">std::string parseString(Statement &amp;, const char msg[])</div><div class="ttdoc">Parse string value.</div><div class="ttdef"><b>Definition</b> <a href="Expressions_8cpp_source.html#l00390">Expressions.cpp:390</a></div></div>
-<div class="ttc" id="anamespaceExpressions_html_aaede2a5e3540f59d253c0a565f161599"><div class="ttname"><a href="namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599">Expressions::parseDelimiter</a></div><div class="ttdeci">void parseDelimiter(Statement &amp;stat, char delim)</div><div class="ttdoc">Test for one-character delimiter.</div><div class="ttdef"><b>Definition</b> <a href="Expressions_8cpp_source.html#l00549">Expressions.cpp:549</a></div></div>
+<div class="ttc" id="aclassStatement_html_a1a0eb4cada570aae1069034300a11092"><div class="ttname"><a href="classStatement.html#a1a0eb4cada570aae1069034300a11092">Statement::getCurrent</a></div><div class="ttdeci">Token &amp; getCurrent()</div><div class="ttdoc">Return current token and skip it.</div><div class="ttdef"><b>Definition</b> <a href="Statement_8cpp_source.html#l00061">Statement.cpp:61</a></div></div>
+<div class="ttc" id="aclassStatement_html_aeb97c1ae2faf5064efe45c9cc49a3b11"><div class="ttname"><a href="classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11">Statement::delimiter</a></div><div class="ttdeci">bool delimiter(char c)</div><div class="ttdoc">Test for delimiter.</div><div class="ttdef"><b>Definition</b> <a href="Statement_8cpp_source.html#l00083">Statement.cpp:83</a></div></div>
+<div class="ttc" id="aclassToken_html"><div class="ttname"><a href="classToken.html">Token</a></div><div class="ttdoc">Representation of a single input token.</div><div class="ttdef"><b>Definition</b> <a href="Token_8h_source.html#l00032">Token.h:32</a></div></div>
+<div class="ttc" id="aclassToken_html_a2954e99066d74d540ededed11eaf469c"><div class="ttname"><a href="classToken.html#a2954e99066d74d540ededed11eaf469c">Token::isDel</a></div><div class="ttdeci">bool isDel(char del) const</div><div class="ttdoc">Test for delimiter.</div><div class="ttdef"><b>Definition</b> <a href="Token_8cpp_source.html#l00081">Token.cpp:81</a></div></div>
+<div class="ttc" id="anamespaceExpressions_html_a9e29aecbec1ad7229b05c0a932040582"><div class="ttname"><a href="namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582">Expressions::parseString</a></div><div class="ttdeci">std::string parseString(Statement &amp;, const char msg[])</div><div class="ttdoc">Parse string value.</div><div class="ttdef"><b>Definition</b> <a href="Expressions_8cpp_source.html#l00356">Expressions.cpp:356</a></div></div>
+<div class="ttc" id="anamespaceExpressions_html_aaede2a5e3540f59d253c0a565f161599"><div class="ttname"><a href="namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599">Expressions::parseDelimiter</a></div><div class="ttdeci">void parseDelimiter(Statement &amp;stat, char delim)</div><div class="ttdoc">Test for one-character delimiter.</div><div class="ttdef"><b>Definition</b> <a href="Expressions_8cpp_source.html#l00514">Expressions.cpp:514</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5cc3f39f68b1f3343019420f02a7f64f.html">OpalParser</a></li><li class="navelem"><a class="el" href="Macro_8cpp.html">Macro.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

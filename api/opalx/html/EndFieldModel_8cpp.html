@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -103,38 +103,38 @@ $(document).ready(function(){initNavTree('EndFieldModel_8cpp.html',''); initResi
   <div class="headertitle"><div class="title">EndFieldModel.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="EndFieldModel_8h_source.html">AbsBeamline/EndFieldModel/EndFieldModel.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="GeneralOpalException_8h_source.html">Utilities/GeneralOpalException.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="EndFieldModel_8h_source.html">AbsBeamline/EndFieldModel/EndFieldModel.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for EndFieldModel.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="EndFieldModel_8cpp__incl.png" border="0" usemap="#aEndFieldModel_8cpp" alt=""/></div>
 <map name="aEndFieldModel_8cpp" id="aEndFieldModel_8cpp">
-<area shape="rect" title=" " alt="" coords="259,5,403,31"/>
-<area shape="rect" title=" " alt="" coords="5,86,91,111"/>
-<area shape="poly" title=" " alt="" coords="283,33,103,81,94,84,92,79,102,76,282,28"/>
-<area shape="rect" title=" " alt="" coords="115,86,189,111"/>
-<area shape="poly" title=" " alt="" coords="306,33,191,83,189,78,304,28"/>
-<area shape="rect" title=" " alt="" coords="460,167,511,192"/>
-<area shape="poly" title=" " alt="" coords="381,28,424,47,444,60,462,77,473,95,481,115,487,152,482,153,476,116,469,97,458,80,441,64,421,51,379,33"/>
-<area shape="rect" href="GeneralOpalException_8h.html" title=" " alt="" coords="213,86,448,111"/>
-<area shape="poly" title=" " alt="" coords="333,31,333,72,328,72,328,31"/>
-<area shape="rect" href="EndFieldModel_8h.html" title=" " alt="" coords="523,79,730,119"/>
-<area shape="poly" title=" " alt="" coords="374,28,543,73,542,78,373,33"/>
-<area shape="rect" href="OpalException_8h.html" title=" " alt="" coords="239,167,422,192"/>
-<area shape="poly" title=" " alt="" coords="333,112,333,153,328,153,328,112"/>
-<area shape="rect" title=" " alt="" coords="301,240,360,265"/>
-<area shape="poly" title=" " alt="" coords="333,192,333,226,328,226,328,192"/>
-<area shape="poly" title=" " alt="" coords="594,121,520,162,517,157,592,116"/>
-<area shape="rect" title=" " alt="" coords="636,167,716,192"/>
-<area shape="poly" title=" " alt="" coords="641,117,664,154,659,156,636,120"/>
-<area shape="rect" title=" " alt="" coords="741,167,803,192"/>
-<area shape="poly" title=" " alt="" coords="663,116,740,158,737,162,660,121"/>
-<area shape="rect" title=" " alt="" coords="535,167,612,192"/>
-<area shape="poly" title=" " alt="" coords="616,120,591,156,587,153,612,117"/>
+<area shape="rect" title=" " alt="" coords="271,5,415,31"/>
+<area shape="rect" href="EndFieldModel_8h.html" title=" " alt="" coords="69,79,275,119"/>
+<area shape="poly" title=" " alt="" coords="319,33,227,75,225,70,317,28"/>
+<area shape="rect" title=" " alt="" coords="5,167,56,192"/>
+<area shape="poly" title=" " alt="" coords="271,28,147,47,93,62,72,71,58,81,46,96,39,115,33,153,27,152,33,113,41,94,54,77,70,66,91,57,146,42,270,23"/>
+<area shape="rect" title=" " alt="" coords="300,86,385,111"/>
+<area shape="poly" title=" " alt="" coords="345,31,345,72,340,72,340,31"/>
+<area shape="rect" title=" " alt="" coords="409,86,484,111"/>
+<area shape="poly" title=" " alt="" coords="360,29,422,76,419,80,356,33"/>
+<area shape="rect" href="GeneralOpalException_8h.html" title=" " alt="" coords="508,86,743,111"/>
+<area shape="poly" title=" " alt="" coords="384,28,572,80,571,85,383,33"/>
+<area shape="rect" title=" " alt="" coords="80,167,160,192"/>
+<area shape="poly" title=" " alt="" coords="162,120,138,156,133,153,157,117"/>
+<area shape="poly" title=" " alt="" coords="139,121,65,162,63,157,137,116"/>
+<area shape="rect" title=" " alt="" coords="184,167,261,192"/>
+<area shape="poly" title=" " alt="" coords="187,117,210,154,205,156,182,120"/>
+<area shape="rect" title=" " alt="" coords="286,167,349,192"/>
+<area shape="poly" title=" " alt="" coords="208,116,285,158,283,162,206,121"/>
+<area shape="rect" href="OpalException_8h.html" title=" " alt="" coords="534,167,717,192"/>
+<area shape="poly" title=" " alt="" coords="628,112,628,153,623,153,623,112"/>
+<area shape="rect" title=" " alt="" coords="596,240,655,265"/>
+<area shape="poly" title=" " alt="" coords="628,192,628,226,623,226,623,192"/>
 </map>
 </div>
 </div>
@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_575fab2fe96de055b04fd52b61b75f74.html">AbsBeamline</a></li><li class="navelem"><a class="el" href="dir_7b97bde9223a2da39b969c59be458683.html">EndFieldModel</a></li><li class="navelem"><a class="el" href="EndFieldModel_8cpp.html">EndFieldModel.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

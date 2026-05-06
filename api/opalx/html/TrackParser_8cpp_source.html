@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -130,36 +130,26 @@ $(document).ready(function(){initNavTree('TrackParser_8cpp_source.html',''); ini
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="TrackRun_8h.html">Track/TrackRun.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classTrackParser.html#a0e0271d4368b6e459455c777289c764f">   25</a></span><a class="code hl_function" href="classTrackParser.html#a0e0271d4368b6e459455c777289c764f">TrackParser::TrackParser</a>():</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    trackDirectory() {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">trackDirectory</a>.<a class="code hl_function" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">insert</a>(<span class="stringliteral">&quot;ENDTRACK&quot;</span>, <span class="keyword">new</span> <a class="code hl_class" href="classTrackEnd.html">TrackEnd</a>());</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_variable" href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">trackDirectory</a>.<a class="code hl_function" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">insert</a>(<span class="stringliteral">&quot;RUN&quot;</span>,      <span class="keyword">new</span> <a class="code hl_class" href="classTrackRun.html">TrackRun</a>());</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classTrackParser.html#a0e0271d4368b6e459455c777289c764f">   25</a></span><a class="code hl_function" href="classTrackParser.html#a0e0271d4368b6e459455c777289c764f">TrackParser::TrackParser</a>() : trackDirectory() {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">trackDirectory</a>.<a class="code hl_function" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">insert</a>(<span class="stringliteral">&quot;ENDTRACK&quot;</span>, <span class="keyword">new</span> <a class="code hl_class" href="classTrackEnd.html">TrackEnd</a>());</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">trackDirectory</a>.<a class="code hl_function" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">insert</a>(<span class="stringliteral">&quot;RUN&quot;</span>, <span class="keyword">new</span> <a class="code hl_class" href="classTrackRun.html">TrackRun</a>());</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classTrackParser.html#a1e5c0cb737c1cbc999aea66eeac5e25f">   30</a></span><a class="code hl_function" href="classTrackParser.html#a1e5c0cb737c1cbc999aea66eeac5e25f">TrackParser::~TrackParser</a>() {}</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classTrackParser.html#a1e5c0cb737c1cbc999aea66eeac5e25f">   32</a></span><a class="code hl_function" href="classTrackParser.html#a1e5c0cb737c1cbc999aea66eeac5e25f">TrackParser::~TrackParser</a>()</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{}</div>
-</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classTrackParser.html#a6f7c60a9737219e7eadaac094f1a67b2">   36</a></span><a class="code hl_class" href="classObject.html">Object</a> *<a class="code hl_function" href="classTrackParser.html#a6f7c60a9737219e7eadaac094f1a67b2">TrackParser::find</a>(<span class="keyword">const</span> std::string &amp;name)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">trackDirectory</a>.<a class="code hl_function" href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">find</a>(name);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
-</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classTrackParser.html#a6f7c60a9737219e7eadaac094f1a67b2">   32</a></span><a class="code hl_class" href="classObject.html">Object</a>* <a class="code hl_function" href="classTrackParser.html#a6f7c60a9737219e7eadaac094f1a67b2">TrackParser::find</a>(<span class="keyword">const</span> std::string&amp; name)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">trackDirectory</a>.<a class="code hl_function" href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">find</a>(name); }</div>
 <div class="ttc" id="aTrackEnd_8h_html"><div class="ttname"><a href="TrackEnd_8h.html">TrackEnd.h</a></div></div>
 <div class="ttc" id="aTrackParser_8h_html"><div class="ttname"><a href="TrackParser_8h.html">TrackParser.h</a></div></div>
 <div class="ttc" id="aTrackRun_8h_html"><div class="ttname"><a href="TrackRun_8h.html">TrackRun.h</a></div></div>
-<div class="ttc" id="aclassDirectory_html_a9004a43fe680a069941293f8ab075c24"><div class="ttname"><a href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">Directory::find</a></div><div class="ttdeci">Object * find(const std::string &amp;name) const</div><div class="ttdoc">Find entry.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00066">Directory.cpp:66</a></div></div>
-<div class="ttc" id="aclassDirectory_html_afd593b9994a1000a969046c02dd66846"><div class="ttname"><a href="classDirectory.html#afd593b9994a1000a969046c02dd66846">Directory::insert</a></div><div class="ttdeci">void insert(const std::string &amp;name, Object *newObject)</div><div class="ttdoc">Define new object.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00076">Directory.cpp:76</a></div></div>
+<div class="ttc" id="aclassDirectory_html_a9004a43fe680a069941293f8ab075c24"><div class="ttname"><a href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">Directory::find</a></div><div class="ttdeci">Object * find(const std::string &amp;name) const</div><div class="ttdoc">Find entry.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00041">Directory.cpp:41</a></div></div>
+<div class="ttc" id="aclassDirectory_html_afd593b9994a1000a969046c02dd66846"><div class="ttname"><a href="classDirectory.html#afd593b9994a1000a969046c02dd66846">Directory::insert</a></div><div class="ttdeci">void insert(const std::string &amp;name, Object *newObject)</div><div class="ttdoc">Define new object.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00051">Directory.cpp:51</a></div></div>
 <div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">The base class for all OPAL objects.</div><div class="ttdef"><b>Definition</b> <a href="Object_8h_source.html#l00045">Object.h:45</a></div></div>
-<div class="ttc" id="aclassTrackEnd_html"><div class="ttname"><a href="classTrackEnd.html">TrackEnd</a></div><div class="ttdoc">The ENDTRACK command.</div><div class="ttdef"><b>Definition</b> <a href="TrackEnd_8h_source.html#l00030">TrackEnd.h:30</a></div></div>
+<div class="ttc" id="aclassTrackEnd_html"><div class="ttname"><a href="classTrackEnd.html">TrackEnd</a></div><div class="ttdoc">The ENDTRACK command.</div><div class="ttdef"><b>Definition</b> <a href="TrackEnd_8h_source.html#l00029">TrackEnd.h:29</a></div></div>
 <div class="ttc" id="aclassTrackParser_html_a0e0271d4368b6e459455c777289c764f"><div class="ttname"><a href="classTrackParser.html#a0e0271d4368b6e459455c777289c764f">TrackParser::TrackParser</a></div><div class="ttdeci">TrackParser()</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8cpp_source.html#l00025">TrackParser.cpp:25</a></div></div>
-<div class="ttc" id="aclassTrackParser_html_a1e5c0cb737c1cbc999aea66eeac5e25f"><div class="ttname"><a href="classTrackParser.html#a1e5c0cb737c1cbc999aea66eeac5e25f">TrackParser::~TrackParser</a></div><div class="ttdeci">virtual ~TrackParser()</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8cpp_source.html#l00032">TrackParser.cpp:32</a></div></div>
-<div class="ttc" id="aclassTrackParser_html_a4acbfbd5beee4e3d6702b4d547b0d2c1"><div class="ttname"><a href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">TrackParser::trackDirectory</a></div><div class="ttdeci">Directory trackDirectory</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8h_source.html#l00047">TrackParser.h:47</a></div></div>
-<div class="ttc" id="aclassTrackParser_html_a6f7c60a9737219e7eadaac094f1a67b2"><div class="ttname"><a href="classTrackParser.html#a6f7c60a9737219e7eadaac094f1a67b2">TrackParser::find</a></div><div class="ttdeci">virtual Object * find(const std::string &amp;) const</div><div class="ttdoc">Find object by name in the track command directory.</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8cpp_source.html#l00036">TrackParser.cpp:36</a></div></div>
+<div class="ttc" id="aclassTrackParser_html_a1e5c0cb737c1cbc999aea66eeac5e25f"><div class="ttname"><a href="classTrackParser.html#a1e5c0cb737c1cbc999aea66eeac5e25f">TrackParser::~TrackParser</a></div><div class="ttdeci">virtual ~TrackParser()</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8cpp_source.html#l00030">TrackParser.cpp:30</a></div></div>
+<div class="ttc" id="aclassTrackParser_html_a4acbfbd5beee4e3d6702b4d547b0d2c1"><div class="ttname"><a href="classTrackParser.html#a4acbfbd5beee4e3d6702b4d547b0d2c1">TrackParser::trackDirectory</a></div><div class="ttdeci">Directory trackDirectory</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8h_source.html#l00042">TrackParser.h:42</a></div></div>
+<div class="ttc" id="aclassTrackParser_html_a6f7c60a9737219e7eadaac094f1a67b2"><div class="ttname"><a href="classTrackParser.html#a6f7c60a9737219e7eadaac094f1a67b2">TrackParser::find</a></div><div class="ttdeci">virtual Object * find(const std::string &amp;) const</div><div class="ttdoc">Find object by name in the track command directory.</div><div class="ttdef"><b>Definition</b> <a href="TrackParser_8cpp_source.html#l00032">TrackParser.cpp:32</a></div></div>
 <div class="ttc" id="aclassTrackRun_html"><div class="ttname"><a href="classTrackRun.html">TrackRun</a></div><div class="ttdef"><b>Definition</b> <a href="TrackRun_8h_source.html#l00045">TrackRun.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -167,7 +157,7 @@ $(document).ready(function(){initNavTree('TrackParser_8cpp_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8a685cdd82913bebb655b6448e9171b9.html">Track</a></li><li class="navelem"><a class="el" href="TrackParser_8cpp.html">TrackParser.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

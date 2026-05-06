@@ -26,7 +26,7 @@ var searchData=
   ['referencemomentum_23',['referenceMomentum',['../structOpalDataImpl.html#a9a17cb568caf539697a9840d6f740b58',1,'OpalDataImpl']]],
   ['referencepathmodel_5fm_24',['referencePathModel_m',['../classIndexMap.html#a4fb917204024a0cace93b9ea9c128e40',1,'IndexMap']]],
   ['referencepathmodeldirty_5fm_25',['referencePathModelDirty_m',['../classIndexMap.html#a376fb273b9b5fc89d6487acd337008b4',1,'IndexMap']]],
-  ['references_26',['references',['../classSequenceParser.html#ae29bbddd71fb538df3df9c6b4ff96b12',1,'SequenceParser::references'],['../classObject.html#aa8300151d7828c3574310c91c234628b',1,'Object::references']]],
+  ['references_26',['references',['../classSequenceParser.html#ae29bbddd71fb538df3df9c6b4ff96b12',1,'SequenceParser::references'],['../classObject.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27',1,'Object::references']]],
   ['refill_27',['refill',['../classTable.html#aaa021f3fed9c96b94251c6284ef394d8',1,'Table']]],
   ['refpartbunch_5fm_28',['refpartbunch_m',['../classComponent.html#ab6f80182b67361610cff3809cb03ca0d',1,'Component::RefPartBunch_m'],['../classRing.html#ab09efc0acc30c06c37d32dca47cb3a16',1,'Ring::refPartBunch_m']]],
   ['refpartp_5fm_29',['refpartp_m',['../classParticleContainer.html#a057e8229a57127c5427d63830b84f476',1,'ParticleContainer::refPartP_m'],['../classLossDataSink.html#acee978897bd739481c7e733d9ec79e5f',1,'LossDataSink::RefPartP_m'],['../structSetStatistics.html#a4032ed68be1529a58f03a7614605be82',1,'SetStatistics::RefPartP_m']]],

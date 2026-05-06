@@ -20,7 +20,7 @@ var searchData=
   ['newxarray_17',['newXArray',['../classinterpolation_1_1ThreeDGrid.html#ad520abb999418b27f71f6d84089c4050',1,'interpolation::ThreeDGrid']]],
   ['newyarray_18',['newYArray',['../classinterpolation_1_1ThreeDGrid.html#ab48a85cd0dfebe27c103746a6e3402e4',1,'interpolation::ThreeDGrid']]],
   ['newzarray_19',['newZArray',['../classinterpolation_1_1ThreeDGrid.html#adb4a5e5e7bdd7df729a5d268a3b0669e',1,'interpolation::ThreeDGrid']]],
-  ['next_20',['next',['../classSequenceMember.html#a36853af7b41cb6430a70f684f466438aa25509fc07c261e0d117bb5ca11ee8bbf',1,'SequenceMember::NEXT'],['../classRandom.html#adc87dbdaeadf9ec58992dd6558679465',1,'Random::next']]],
+  ['next_20',['next',['../classRandom.html#adc87dbdaeadf9ec58992dd6558679465',1,'Random::next'],['../classSequenceMember.html#a36853af7b41cb6430a70f684f466438aa25509fc07c261e0d117bb5ca11ee8bbf',1,'SequenceMember::NEXT']]],
   ['nil_21',['nil',['../namespaceSDDS_1_1ast.html#structSDDS_1_1ast_1_1nil',1,'SDDS::ast::nil'],['../namespacematheval_1_1detail.html#structmatheval_1_1detail_1_1nil',1,'matheval::detail::nil']]],
   ['ninetyfivepercentile_5fm_22',['ninetyFivePercentile_m',['../classDistributionMoments.html#a0fa6d39136cb1ca72f46bdbe08b9b311',1,'DistributionMoments']]],
   ['ninetynine_5fninetyninepercentile_5fm_23',['ninetyNine_NinetyNinePercentile_m',['../classDistributionMoments.html#a886b5e65d4489289f4250c5b7ae23fdf',1,'DistributionMoments']]],

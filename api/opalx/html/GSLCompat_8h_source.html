@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('GSLCompat_8h_source.html',''); initRes
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a07bd5a22ea433d78a70f8dd5fb83b9f7">   32</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="GSLCompat_8h.html#ac35399d412eba48d27059f4c137e9037">gsl_error_handler_t</a> <a class="code hl_function" href="GSLCompat_8h.html#a07bd5a22ea433d78a70f8dd5fb83b9f7">gsl_set_error_handler</a>(<a class="code hl_typedef" href="GSLCompat_8h.html#ac35399d412eba48d27059f4c137e9037">gsl_error_handler_t</a> handler) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// Store and return previous handler (simplified - no actual storage)</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="GSLCompat_8h.html#ac35399d412eba48d27059f4c137e9037">gsl_error_handler_t</a> prev_handler = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_typedef" href="GSLCompat_8h.html#ac35399d412eba48d27059f4c137e9037">gsl_error_handler_t</a> old = prev_handler;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    prev_handler = handler;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_typedef" href="GSLCompat_8h.html#ac35399d412eba48d27059f4c137e9037">gsl_error_handler_t</a> old                 = prev_handler;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    prev_handler                            = handler;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> old;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 </div>
@@ -147,96 +147,79 @@ $(document).ready(function(){initNavTree('GSLCompat_8h_source.html',''); initRes
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a6d54708acd5a7ec452b795ac3d148776">   50</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a6d54708acd5a7ec452b795ac3d148776">gsl_sf_erf</a>(<span class="keywordtype">double</span> x) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> std::erf(x);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a6d54708acd5a7ec452b795ac3d148776">   50</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a6d54708acd5a7ec452b795ac3d148776">gsl_sf_erf</a>(<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> std::erf(x); }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3">   57</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3">gsl_sf_pow_int</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">int</span> n) { <span class="keywordflow">return</span> std::pow(x, n); }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55">   63</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55">gsl_sf_gamma</a>(<span class="keywordtype">double</span> x) { <span class="keywordflow">return</span> std::tgamma(x); }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd">   69</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd">gsl_sf_fact</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span> (n &gt; 170) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="comment">// Factorial of numbers &gt; 170 overflows double</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">// Use gamma function for large numbers</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> std::tgamma(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(n + 1));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">double</span> result = 1.0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 2; i &lt;= n; ++i) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        result *= <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(i);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3">   59</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3">gsl_sf_pow_int</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">int</span> n) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> std::pow(x, n);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#acce842ab3416f5886ce0e8ac880df7e0">   87</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#acce842ab3416f5886ce0e8ac880df7e0">gsl_sf_choose</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span> (m &gt; n) <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (m == 0 || m == n) <span class="keywordflow">return</span> 1.0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Use symmetry: choose(n, m) = choose(n, n-m)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span> (m &gt; n / 2) m = n - m;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// Compute using iterative method to avoid overflow</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">double</span> result = 1.0;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; m; ++i) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        result = result * (n - i) / (i + 1);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55">   67</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55">gsl_sf_gamma</a>(<span class="keywordtype">double</span> x) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> std::tgamma(x);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespacegsl.html">  103</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegsl.html">gsl</a> {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4">  104</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4">GSL_POSINF</a> = std::numeric_limits&lt;double&gt;::infinity();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacegsl.html#a344d2d7fb8dd9314a092d75724668642">  105</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="namespacegsl.html#a344d2d7fb8dd9314a092d75724668642">GSL_NEGINF</a> = -std::numeric_limits&lt;double&gt;::infinity();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c">  106</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c">GSL_NAN</a>    = std::numeric_limits&lt;double&gt;::quiet_NaN();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}  <span class="comment">// namespace gsl</span></div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd">   75</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd">gsl_sf_fact</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (n &gt; 170) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">// Factorial of numbers &gt; 170 overflows double</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">// Use gamma function for large numbers</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> std::tgamma(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(n + 1));</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">double</span> result = 1.0;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 2; i &lt;= n; ++i) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        result *= <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(i);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
-</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#acce842ab3416f5886ce0e8ac880df7e0">   93</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#acce842ab3416f5886ce0e8ac880df7e0">gsl_sf_choose</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (m &gt; n) <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">if</span> (m == 0 || m == n) <span class="keywordflow">return</span> 1.0;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">// Use symmetry: choose(n, m) = choose(n, n-m)</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> (m &gt; n / 2) m = n - m;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// Compute using iterative method to avoid overflow</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">double</span> result = 1.0;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; m; ++i) {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        result = result * (n - i) / (i + 1);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
-</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="namespacegsl.html">  109</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegsl.html">gsl</a> {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4">  110</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4">GSL_POSINF</a> = std::numeric_limits&lt;double&gt;::infinity();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespacegsl.html#a344d2d7fb8dd9314a092d75724668642">  111</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="namespacegsl.html#a344d2d7fb8dd9314a092d75724668642">GSL_NEGINF</a> = -std::numeric_limits&lt;double&gt;::infinity();</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c">  112</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c">GSL_NAN</a> = std::numeric_limits&lt;double&gt;::quiet_NaN();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
-</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#aecfb9cadb71020f1ee6ecab606ec50ee">  120</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#aecfb9cadb71020f1ee6ecab606ec50ee">gsl_hypot</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">return</span> std::hypot(x, y);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
-</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// GSL_REAL and GSL_IMAG macros for complex numbers</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a0dab37b97a0c91e83b45f10c45036336">  125</a></span><span class="preprocessor">#define GSL_REAL(z) ((z).dat[0])</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a97417f9efba3d525d5821c1de96d7d61">  126</a></span><span class="preprocessor">#define GSL_IMAG(z) ((z).dat[1])</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_GSL_COMPAT_HH</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#aecfb9cadb71020f1ee6ecab606ec50ee">  114</a></span><span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code hl_function" href="GSLCompat_8h.html#aecfb9cadb71020f1ee6ecab606ec50ee">gsl_hypot</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { <span class="keywordflow">return</span> std::hypot(x, y); }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// GSL_REAL and GSL_IMAG macros for complex numbers</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a0dab37b97a0c91e83b45f10c45036336">  117</a></span><span class="preprocessor">#define GSL_REAL(z) ((z).dat[0])</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="GSLCompat_8h.html#a97417f9efba3d525d5821c1de96d7d61">  118</a></span><span class="preprocessor">#define GSL_IMAG(z) ((z).dat[1])</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_GSL_COMPAT_HH</span></div>
 <div class="ttc" id="aGSLCompat_8h_html_a07bd5a22ea433d78a70f8dd5fb83b9f7"><div class="ttname"><a href="GSLCompat_8h.html#a07bd5a22ea433d78a70f8dd5fb83b9f7">gsl_set_error_handler</a></div><div class="ttdeci">gsl_error_handler_t gsl_set_error_handler(gsl_error_handler_t handler)</div><div class="ttdoc">Set a global error handler and return the previous handler.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00032">GSLCompat.h:32</a></div></div>
-<div class="ttc" id="aGSLCompat_8h_html_a0e751f12ca270caa7a0bbef373c90c55"><div class="ttname"><a href="GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55">gsl_sf_gamma</a></div><div class="ttdeci">double gsl_sf_gamma(double x)</div><div class="ttdoc">Gamma function .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00067">GSLCompat.h:67</a></div></div>
-<div class="ttc" id="aGSLCompat_8h_html_a6b364d1e339333f46061f2b7a722fcdd"><div class="ttname"><a href="GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd">gsl_sf_fact</a></div><div class="ttdeci">double gsl_sf_fact(unsigned int n)</div><div class="ttdoc">Factorial  (computed via  for large ).</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00075">GSLCompat.h:75</a></div></div>
+<div class="ttc" id="aGSLCompat_8h_html_a0e751f12ca270caa7a0bbef373c90c55"><div class="ttname"><a href="GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55">gsl_sf_gamma</a></div><div class="ttdeci">double gsl_sf_gamma(double x)</div><div class="ttdoc">Gamma function .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00063">GSLCompat.h:63</a></div></div>
+<div class="ttc" id="aGSLCompat_8h_html_a6b364d1e339333f46061f2b7a722fcdd"><div class="ttname"><a href="GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd">gsl_sf_fact</a></div><div class="ttdeci">double gsl_sf_fact(unsigned int n)</div><div class="ttdoc">Factorial  (computed via  for large ).</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00069">GSLCompat.h:69</a></div></div>
 <div class="ttc" id="aGSLCompat_8h_html_a6d54708acd5a7ec452b795ac3d148776"><div class="ttname"><a href="GSLCompat_8h.html#a6d54708acd5a7ec452b795ac3d148776">gsl_sf_erf</a></div><div class="ttdeci">double gsl_sf_erf(double x)</div><div class="ttdoc">Error function .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00050">GSLCompat.h:50</a></div></div>
-<div class="ttc" id="aGSLCompat_8h_html_a6d8b5eaaa9f7343d1c30802744a26db3"><div class="ttname"><a href="GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3">gsl_sf_pow_int</a></div><div class="ttdeci">double gsl_sf_pow_int(double x, int n)</div><div class="ttdoc">Integer power .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00059">GSLCompat.h:59</a></div></div>
+<div class="ttc" id="aGSLCompat_8h_html_a6d8b5eaaa9f7343d1c30802744a26db3"><div class="ttname"><a href="GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3">gsl_sf_pow_int</a></div><div class="ttdeci">double gsl_sf_pow_int(double x, int n)</div><div class="ttdoc">Integer power .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00057">GSLCompat.h:57</a></div></div>
 <div class="ttc" id="aGSLCompat_8h_html_ac35399d412eba48d27059f4c137e9037"><div class="ttname"><a href="GSLCompat_8h.html#ac35399d412eba48d27059f4c137e9037">gsl_error_handler_t</a></div><div class="ttdeci">void(* gsl_error_handler_t)(const char *reason, const char *file, int line, int gsl_errno)</div><div class="ttdoc">Signature of a GSL-style error handler callback.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00027">GSLCompat.h:27</a></div></div>
-<div class="ttc" id="aGSLCompat_8h_html_acce842ab3416f5886ce0e8ac880df7e0"><div class="ttname"><a href="GSLCompat_8h.html#acce842ab3416f5886ce0e8ac880df7e0">gsl_sf_choose</a></div><div class="ttdeci">double gsl_sf_choose(unsigned int n, unsigned int m)</div><div class="ttdoc">Binomial coefficient .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00093">GSLCompat.h:93</a></div></div>
-<div class="ttc" id="aGSLCompat_8h_html_aecfb9cadb71020f1ee6ecab606ec50ee"><div class="ttname"><a href="GSLCompat_8h.html#aecfb9cadb71020f1ee6ecab606ec50ee">gsl_hypot</a></div><div class="ttdeci">double gsl_hypot(double x, double y)</div><div class="ttdoc">Hypotenuse  with overflow-safe std::hypot.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00120">GSLCompat.h:120</a></div></div>
+<div class="ttc" id="aGSLCompat_8h_html_acce842ab3416f5886ce0e8ac880df7e0"><div class="ttname"><a href="GSLCompat_8h.html#acce842ab3416f5886ce0e8ac880df7e0">gsl_sf_choose</a></div><div class="ttdeci">double gsl_sf_choose(unsigned int n, unsigned int m)</div><div class="ttdoc">Binomial coefficient .</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00087">GSLCompat.h:87</a></div></div>
+<div class="ttc" id="aGSLCompat_8h_html_aecfb9cadb71020f1ee6ecab606ec50ee"><div class="ttname"><a href="GSLCompat_8h.html#aecfb9cadb71020f1ee6ecab606ec50ee">gsl_hypot</a></div><div class="ttdeci">double gsl_hypot(double x, double y)</div><div class="ttdoc">Hypotenuse  with overflow-safe std::hypot.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00114">GSLCompat.h:114</a></div></div>
 <div class="ttc" id="aGSLCompat_8h_html_afbb9406fe3a32eaabba5fca91fdba639"><div class="ttname"><a href="GSLCompat_8h.html#afbb9406fe3a32eaabba5fca91fdba639">gsl_set_error_handler_off</a></div><div class="ttdeci">gsl_error_handler_t gsl_set_error_handler_off()</div><div class="ttdoc">Disable error handling and return a null handler.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00042">GSLCompat.h:42</a></div></div>
-<div class="ttc" id="anamespacegsl_html"><div class="ttname"><a href="namespacegsl.html">gsl</a></div><div class="ttdoc">GSL-compatible math constants.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00109">GSLCompat.h:109</a></div></div>
-<div class="ttc" id="anamespacegsl_html_a344d2d7fb8dd9314a092d75724668642"><div class="ttname"><a href="namespacegsl.html#a344d2d7fb8dd9314a092d75724668642">gsl::GSL_NEGINF</a></div><div class="ttdeci">constexpr double GSL_NEGINF</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00111">GSLCompat.h:111</a></div></div>
-<div class="ttc" id="anamespacegsl_html_a8df0599bb9ab9c19d2ae47a2cbe2cc1c"><div class="ttname"><a href="namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c">gsl::GSL_NAN</a></div><div class="ttdeci">constexpr double GSL_NAN</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00112">GSLCompat.h:112</a></div></div>
-<div class="ttc" id="anamespacegsl_html_a98cec2c928a885ffc7105d8759dc99b4"><div class="ttname"><a href="namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4">gsl::GSL_POSINF</a></div><div class="ttdeci">constexpr double GSL_POSINF</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00110">GSLCompat.h:110</a></div></div>
+<div class="ttc" id="anamespacegsl_html"><div class="ttname"><a href="namespacegsl.html">gsl</a></div><div class="ttdoc">GSL-compatible math constants.</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00103">GSLCompat.h:103</a></div></div>
+<div class="ttc" id="anamespacegsl_html_a344d2d7fb8dd9314a092d75724668642"><div class="ttname"><a href="namespacegsl.html#a344d2d7fb8dd9314a092d75724668642">gsl::GSL_NEGINF</a></div><div class="ttdeci">constexpr double GSL_NEGINF</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00105">GSLCompat.h:105</a></div></div>
+<div class="ttc" id="anamespacegsl_html_a8df0599bb9ab9c19d2ae47a2cbe2cc1c"><div class="ttname"><a href="namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c">gsl::GSL_NAN</a></div><div class="ttdeci">constexpr double GSL_NAN</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00106">GSLCompat.h:106</a></div></div>
+<div class="ttc" id="anamespacegsl_html_a98cec2c928a885ffc7105d8759dc99b4"><div class="ttname"><a href="namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4">gsl::GSL_POSINF</a></div><div class="ttdeci">constexpr double GSL_POSINF</div><div class="ttdef"><b>Definition</b> <a href="GSLCompat_8h_source.html#l00104">GSLCompat.h:104</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="GSLCompat_8h.html">GSLCompat.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

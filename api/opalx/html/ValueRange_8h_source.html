@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -132,70 +132,56 @@ $(document).ready(function(){initNavTree('ValueRange_8h_source.html',''); initRe
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classValueRange.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classValueRange.html">ValueRange</a> {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classValueRange.html#a7b3d5687d255466a460610fcca8b28ef">   31</a></span>    <a class="code hl_function" href="classValueRange.html#a7b3d5687d255466a460610fcca8b28ef">ValueRange</a>():</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::numeric_limits&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;::max()),</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::numeric_limits&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;::lowest())</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classValueRange.html#a7b3d5687d255466a460610fcca8b28ef">   31</a></span>    <a class="code hl_function" href="classValueRange.html#a7b3d5687d255466a460610fcca8b28ef">ValueRange</a>()</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        : <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::numeric_limits&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;::max()), <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::numeric_limits&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;::lowest()) {}</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classValueRange.html#a4ee7cde647491d4f834f6befe9e47c56">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classValueRange.html#a4ee7cde647491d4f834f6befe9e47c56">enlargeIfOutside</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a> = std::min(<a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a>, value);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a> = std::max(<a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>, value);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classValueRange.html#a4ee7cde647491d4f834f6befe9e47c56">   34</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classValueRange.html#a4ee7cde647491d4f834f6befe9e47c56">enlargeIfOutside</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a> = std::min(<a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a>, value);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a> = std::max(<a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>, value);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
 </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">   41</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">isInside</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a> &lt; value &amp;&amp; value &lt; <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">isInside</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a> &lt; value &amp;&amp; value &lt; <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classValueRange.html#a4c65dc7657d63c4e75c4f113afba7294">   40</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classValueRange.html#a4c65dc7657d63c4e75c4f113afba7294">isOutside</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<a class="code hl_function" href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">isInside</a>(value); }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">print</a>(Inform&amp; out)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        out &lt;&lt; <span class="stringliteral">&quot;Value range between &quot;</span> &lt;&lt; <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a> &lt;&lt; <span class="stringliteral">&quot; and &quot;</span> &lt;&lt; <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classValueRange.html#a4c65dc7657d63c4e75c4f113afba7294">   46</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classValueRange.html#a4c65dc7657d63c4e75c4f113afba7294">isOutside</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> !<a class="code hl_function" href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">isInside</a>(value);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">   47</a></span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">   48</a></span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">   51</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">print</a>(Inform&amp; out)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        out &lt;&lt; <span class="stringliteral">&quot;Value range between &quot;</span> &lt;&lt; <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a> &lt;&lt; <span class="stringliteral">&quot; and &quot;</span> &lt;&lt; <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="ValueRange_8h.html#aa975ef7daa60bd58f20575e4b416bf0d">   52</a></span>Inform&amp; <a class="code hl_function" href="ValueRange_8h.html#aa975ef7daa60bd58f20575e4b416bf0d">operator&lt;&lt;</a>(Inform&amp; out, <a class="code hl_class" href="classValueRange.html">ValueRange&lt;T&gt;</a> <span class="keyword">const</span>&amp; range) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    range.<a class="code hl_function" href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">print</a>(out);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">   56</a></span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">minValue_m</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">   57</a></span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">maxValue_m</a>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
-</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="ValueRange_8h.html#aa975ef7daa60bd58f20575e4b416bf0d">   61</a></span>Inform&amp; <a class="code hl_function" href="ValueRange_8h.html#aa975ef7daa60bd58f20575e4b416bf0d">operator&lt;&lt;</a>(Inform&amp; out, <a class="code hl_class" href="classValueRange.html">ValueRange&lt;T&gt;</a> <span class="keyword">const</span>&amp; range)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    range.<a class="code hl_function" href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">print</a>(out);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
-</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aOPALTypes_8h_html_a6b2d038ea9c8d2651eecffe0e28b7ebb"><div class="ttname"><a href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a></div><div class="ttdeci">double T</div><div class="ttdef"><b>Definition</b> <a href="OPALTypes_8h_source.html#l00008">OPALTypes.h:8</a></div></div>
-<div class="ttc" id="aValueRange_8h_html_aa975ef7daa60bd58f20575e4b416bf0d"><div class="ttname"><a href="ValueRange_8h.html#aa975ef7daa60bd58f20575e4b416bf0d">operator&lt;&lt;</a></div><div class="ttdeci">Inform &amp; operator&lt;&lt;(Inform &amp;out, ValueRange&lt; T &gt; const &amp;range)</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00061">ValueRange.h:61</a></div></div>
+<div class="ttc" id="aValueRange_8h_html_aa975ef7daa60bd58f20575e4b416bf0d"><div class="ttname"><a href="ValueRange_8h.html#aa975ef7daa60bd58f20575e4b416bf0d">operator&lt;&lt;</a></div><div class="ttdeci">Inform &amp; operator&lt;&lt;(Inform &amp;out, ValueRange&lt; T &gt; const &amp;range)</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00052">ValueRange.h:52</a></div></div>
 <div class="ttc" id="aclassValueRange_html"><div class="ttname"><a href="classValueRange.html">ValueRange</a></div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00029">ValueRange.h:29</a></div></div>
-<div class="ttc" id="aclassValueRange_html_a009fc41bb72ddc35cfdfad3f7045b411"><div class="ttname"><a href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">ValueRange::print</a></div><div class="ttdeci">void print(Inform &amp;out) const</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00051">ValueRange.h:51</a></div></div>
-<div class="ttc" id="aclassValueRange_html_a1006d2ee6be18972dd0a95fdee9ec133"><div class="ttname"><a href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">ValueRange::maxValue_m</a></div><div class="ttdeci">T maxValue_m</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00057">ValueRange.h:57</a></div></div>
-<div class="ttc" id="aclassValueRange_html_a4c65dc7657d63c4e75c4f113afba7294"><div class="ttname"><a href="classValueRange.html#a4c65dc7657d63c4e75c4f113afba7294">ValueRange::isOutside</a></div><div class="ttdeci">bool isOutside(T value) const</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00046">ValueRange.h:46</a></div></div>
-<div class="ttc" id="aclassValueRange_html_a4ee7cde647491d4f834f6befe9e47c56"><div class="ttname"><a href="classValueRange.html#a4ee7cde647491d4f834f6befe9e47c56">ValueRange::enlargeIfOutside</a></div><div class="ttdeci">void enlargeIfOutside(T value)</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00036">ValueRange.h:36</a></div></div>
-<div class="ttc" id="aclassValueRange_html_a6abba7b5043c27ab99901cf0cbe8a62b"><div class="ttname"><a href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">ValueRange::isInside</a></div><div class="ttdeci">bool isInside(T value) const</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00041">ValueRange.h:41</a></div></div>
+<div class="ttc" id="aclassValueRange_html_a009fc41bb72ddc35cfdfad3f7045b411"><div class="ttname"><a href="classValueRange.html#a009fc41bb72ddc35cfdfad3f7045b411">ValueRange::print</a></div><div class="ttdeci">void print(Inform &amp;out) const</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00042">ValueRange.h:42</a></div></div>
+<div class="ttc" id="aclassValueRange_html_a1006d2ee6be18972dd0a95fdee9ec133"><div class="ttname"><a href="classValueRange.html#a1006d2ee6be18972dd0a95fdee9ec133">ValueRange::maxValue_m</a></div><div class="ttdeci">T maxValue_m</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00048">ValueRange.h:48</a></div></div>
+<div class="ttc" id="aclassValueRange_html_a4c65dc7657d63c4e75c4f113afba7294"><div class="ttname"><a href="classValueRange.html#a4c65dc7657d63c4e75c4f113afba7294">ValueRange::isOutside</a></div><div class="ttdeci">bool isOutside(T value) const</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00040">ValueRange.h:40</a></div></div>
+<div class="ttc" id="aclassValueRange_html_a4ee7cde647491d4f834f6befe9e47c56"><div class="ttname"><a href="classValueRange.html#a4ee7cde647491d4f834f6befe9e47c56">ValueRange::enlargeIfOutside</a></div><div class="ttdeci">void enlargeIfOutside(T value)</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00034">ValueRange.h:34</a></div></div>
+<div class="ttc" id="aclassValueRange_html_a6abba7b5043c27ab99901cf0cbe8a62b"><div class="ttname"><a href="classValueRange.html#a6abba7b5043c27ab99901cf0cbe8a62b">ValueRange::isInside</a></div><div class="ttdeci">bool isInside(T value) const</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00038">ValueRange.h:38</a></div></div>
 <div class="ttc" id="aclassValueRange_html_a7b3d5687d255466a460610fcca8b28ef"><div class="ttname"><a href="classValueRange.html#a7b3d5687d255466a460610fcca8b28ef">ValueRange::ValueRange</a></div><div class="ttdeci">ValueRange()</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00031">ValueRange.h:31</a></div></div>
-<div class="ttc" id="aclassValueRange_html_ac9717ee97f2f4a3cbf241c07842f1cde"><div class="ttname"><a href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">ValueRange::minValue_m</a></div><div class="ttdeci">T minValue_m</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00056">ValueRange.h:56</a></div></div>
+<div class="ttc" id="aclassValueRange_html_ac9717ee97f2f4a3cbf241c07842f1cde"><div class="ttname"><a href="classValueRange.html#ac9717ee97f2f4a3cbf241c07842f1cde">ValueRange::minValue_m</a></div><div class="ttdeci">T minValue_m</div><div class="ttdef"><b>Definition</b> <a href="ValueRange_8h_source.html#l00047">ValueRange.h:47</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -203,7 +189,7 @@ $(document).ready(function(){initNavTree('ValueRange_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1e943b2a5906122ddf396bc604857988.html">Structure</a></li><li class="navelem"><a class="el" href="ValueRange_8h.html">ValueRange.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -77,7 +77,7 @@ var classSequence =
     [ "itsRefPoint", "classSequence.html#a17610426c6cfd58cbd288d56982b670d", null ],
     [ "modified", "classSequence.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classSequence.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classSequence.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classSequence.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classSequence.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classSequence.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -247,391 +247,385 @@ $(document).ready(function(){initNavTree('TBeamline_8h_source.html',''); initRes
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      itsGeometry(*this),</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      itsOrigin_m(0),</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>      itsCoordTrafoTo_m(1.0, 0.0, 0.0, 0.0),</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      relativePositions_m(false) {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      relativePositions_m(false) {}</div>
 </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classTBeamline.html#aedc6a34de00cf2392a403cddf46bd729">  168</a></span><a class="code hl_function" href="classTBeamline.html#a65a074dae3d789ed52253caf65f7294b">TBeamline&lt;T&gt;::TBeamline</a>(<span class="keyword">const</span> std::string&amp; name)</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    : <a class="code hl_class" href="classBeamline.html">Beamline</a>(name),</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      <a class="code hl_namespace" href="namespacestd.html">std</a>::list&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;(),</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      itsGeometry(*this),</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      itsOrigin_m(0),</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      itsCoordTrafoTo_m(1.0, 0.0, 0.0, 0.0),</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      relativePositions_m(false) {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classTBeamline.html#aedc6a34de00cf2392a403cddf46bd729">  167</a></span><a class="code hl_function" href="classTBeamline.html#a65a074dae3d789ed52253caf65f7294b">TBeamline&lt;T&gt;::TBeamline</a>(<span class="keyword">const</span> std::string&amp; name)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    : <a class="code hl_class" href="classBeamline.html">Beamline</a>(name),</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      <a class="code hl_namespace" href="namespacestd.html">std</a>::list&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;(),</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      itsGeometry(*this),</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      itsOrigin_m(0),</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      itsCoordTrafoTo_m(1.0, 0.0, 0.0, 0.0),</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      relativePositions_m(false) {}</div>
 </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classTBeamline.html#a06a4174def17c1d51eeabeaa122d0aca">  178</a></span><a class="code hl_function" href="classTBeamline.html#a65a074dae3d789ed52253caf65f7294b">TBeamline&lt;T&gt;::TBeamline</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>&amp; rhs)</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    : <a class="code hl_class" href="classBeamline.html">Beamline</a>(rhs),</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      <a class="code hl_namespace" href="namespacestd.html">std</a>::list&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;(rhs),</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      itsGeometry(*this),</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      itsOrigin_m(rhs.itsOrigin_m),</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      itsCoordTrafoTo_m(rhs.itsCoordTrafoTo_m),</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      relativePositions_m(rhs.relativePositions_m) {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classTBeamline.html#a06a4174def17c1d51eeabeaa122d0aca">  176</a></span><a class="code hl_function" href="classTBeamline.html#a65a074dae3d789ed52253caf65f7294b">TBeamline&lt;T&gt;::TBeamline</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    : <a class="code hl_class" href="classBeamline.html">Beamline</a>(rhs),</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <a class="code hl_namespace" href="namespacestd.html">std</a>::list&lt;<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;(rhs),</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      itsGeometry(*this),</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      itsOrigin_m(rhs.itsOrigin_m),</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      itsCoordTrafoTo_m(rhs.itsCoordTrafoTo_m),</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      relativePositions_m(rhs.relativePositions_m) {}</div>
 </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classTBeamline.html#a8870496610d3345bc59c1e0af780c037">  185</a></span><a class="code hl_function" href="classTBeamline.html#a8870496610d3345bc59c1e0af780c037">TBeamline&lt;T&gt;::~TBeamline</a>() {}</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classTBeamline.html#a8870496610d3345bc59c1e0af780c037">  188</a></span><a class="code hl_function" href="classTBeamline.html#a8870496610d3345bc59c1e0af780c037">TBeamline&lt;T&gt;::~TBeamline</a>() {</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classTBeamline.html#aebb51e48f75a0a3bbbadac0efc5d646d">  188</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#aebb51e48f75a0a3bbbadac0efc5d646d">TBeamline&lt;T&gt;::accept</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a>&amp; visitor)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    visitor.<a class="code hl_function" href="classBeamlineVisitor.html#ad6effe5c974cbae2be6979f2c307c94b">visitBeamline</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
 </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00192" data-start="{" data-end="}">
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classTBeamline.html#aebb51e48f75a0a3bbbadac0efc5d646d">  192</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#aebb51e48f75a0a3bbbadac0efc5d646d">TBeamline&lt;T&gt;::accept</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a>&amp; visitor)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    visitor.<a class="code hl_function" href="classBeamlineVisitor.html#ad6effe5c974cbae2be6979f2c307c94b">visitBeamline</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
-</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classTBeamline.html#af62c28499e8dcba75002d2904a3680c2">  197</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#af62c28499e8dcba75002d2904a3680c2">TBeamline&lt;T&gt;::iterate</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a>&amp; visitor, <span class="keywordtype">bool</span> r2l)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">if</span> (r2l) {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_reverse_iterator op = this-&gt;rbegin(); op != this-&gt;rend();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>             ++op) {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classTBeamline.html#af62c28499e8dcba75002d2904a3680c2">  193</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#af62c28499e8dcba75002d2904a3680c2">TBeamline&lt;T&gt;::iterate</a>(<a class="code hl_class" href="classBeamlineVisitor.html">BeamlineVisitor</a>&amp; visitor, <span class="keywordtype">bool</span> r2l)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">if</span> (r2l) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_reverse_iterator op = this-&gt;rbegin(); op != this-&gt;rend();</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>             ++op) {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            op-&gt;accept(visitor);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator op = this-&gt;begin(); op != this-&gt;end(); ++op) {</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            op-&gt;accept(visitor);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator op = this-&gt;begin(); op != this-&gt;end(); ++op) {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            op-&gt;accept(visitor);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
 </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00207" data-start="{" data-end="}">
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classTBeamline.html#a30638849a8e4e9ad7ce99d27320c62bb">  207</a></span><a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* <a class="code hl_function" href="classTBeamline.html#a30638849a8e4e9ad7ce99d27320c62bb">TBeamline&lt;T&gt;::clone</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* line = <span class="keyword">new</span> <a class="code hl_class" href="classTBeamline.html">TBeamline</a>(getName());</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classTBeamline.html#a30638849a8e4e9ad7ce99d27320c62bb">  211</a></span><a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* <a class="code hl_function" href="classTBeamline.html#a30638849a8e4e9ad7ce99d27320c62bb">TBeamline&lt;T&gt;::clone</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* line = <span class="keyword">new</span> <a class="code hl_class" href="classTBeamline.html">TBeamline</a>(getName());</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator op = this-&gt;begin(); op != this-&gt;end(); ++op) {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="comment">// Make copy of the T object containing a deep copy of its child.</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> newObj(*op);</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        newObj.setElement(op-&gt;getElement()-&gt;clone());</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        line-&gt;<a class="code hl_function" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">append</a>(newObj);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator op = this-&gt;begin(); op != this-&gt;end(); ++op) {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="comment">// Make copy of the T object containing a deep copy of its child.</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> newObj(*op);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        newObj.setElement(op-&gt;getElement()-&gt;clone());</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        line-&gt;<a class="code hl_function" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">append</a>(newObj);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    line-&gt;<a class="code hl_variable" href="classTBeamline.html#a7b0fdd2e1213c9ae50739597cdb6c80a">itsOrigin_m</a>         = itsOrigin_m;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    line-&gt;<a class="code hl_variable" href="classTBeamline.html#aa638d884f7f05abf6d2178ea0bc970a8">itsCoordTrafoTo_m</a>   = itsCoordTrafoTo_m;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    line-&gt;<a class="code hl_variable" href="classTBeamline.html#a6e1897994a4a4be9b3c47a409334df7d">relativePositions_m</a> = relativePositions_m;</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    line-&gt;<a class="code hl_variable" href="classTBeamline.html#a7b0fdd2e1213c9ae50739597cdb6c80a">itsOrigin_m</a>         = itsOrigin_m;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    line-&gt;<a class="code hl_variable" href="classTBeamline.html#aa638d884f7f05abf6d2178ea0bc970a8">itsCoordTrafoTo_m</a>   = itsCoordTrafoTo_m;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    line-&gt;<a class="code hl_variable" href="classTBeamline.html#a6e1897994a4a4be9b3c47a409334df7d">relativePositions_m</a> = relativePositions_m;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordflow">return</span> line;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">return</span> line;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
 </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">// 21-6-2000 ada change iterator to const_iterator</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classTBeamline.html#a4e186ae36f6622976afb3ae70c677fc3">  230</a></span><a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* <a class="code hl_function" href="classTBeamline.html#a4e186ae36f6622976afb3ae70c677fc3">TBeamline&lt;T&gt;::copyStructure</a>() {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">if</span> (isSharable()) {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* line = <span class="keyword">new</span> <a class="code hl_class" href="classTBeamline.html">TBeamline</a>(getName());</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end();</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>             ++iter) {</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="comment">// The copy constructor ensures proper transmission of data.</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> newObj(*iter);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            newObj.setElement(iter-&gt;getElement()-&gt;copyStructure());</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            line-&gt;<a class="code hl_function" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">append</a>(newObj);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">// 21-6-2000 ada change iterator to const_iterator</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classTBeamline.html#a4e186ae36f6622976afb3ae70c677fc3">  226</a></span><a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* <a class="code hl_function" href="classTBeamline.html#a4e186ae36f6622976afb3ae70c677fc3">TBeamline&lt;T&gt;::copyStructure</a>() {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">if</span> (isSharable()) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <a class="code hl_class" href="classTBeamline.html">TBeamline&lt;T&gt;</a>* line = <span class="keyword">new</span> <a class="code hl_class" href="classTBeamline.html">TBeamline</a>(getName());</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>             ++iter) {</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <span class="comment">// The copy constructor ensures proper transmission of data.</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> newObj(*iter);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            newObj.setElement(iter-&gt;getElement()-&gt;copyStructure());</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            line-&gt;<a class="code hl_function" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">append</a>(newObj);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        line-&gt;<a class="code hl_variable" href="classTBeamline.html#a7b0fdd2e1213c9ae50739597cdb6c80a">itsOrigin_m</a>         = itsOrigin_m;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        line-&gt;<a class="code hl_variable" href="classTBeamline.html#aa638d884f7f05abf6d2178ea0bc970a8">itsCoordTrafoTo_m</a>   = itsCoordTrafoTo_m;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        line-&gt;<a class="code hl_variable" href="classTBeamline.html#a6e1897994a4a4be9b3c47a409334df7d">relativePositions_m</a> = relativePositions_m;</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        line-&gt;<a class="code hl_variable" href="classTBeamline.html#a7b0fdd2e1213c9ae50739597cdb6c80a">itsOrigin_m</a>         = itsOrigin_m;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        line-&gt;<a class="code hl_variable" href="classTBeamline.html#aa638d884f7f05abf6d2178ea0bc970a8">itsCoordTrafoTo_m</a>   = itsCoordTrafoTo_m;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        line-&gt;<a class="code hl_variable" href="classTBeamline.html#a6e1897994a4a4be9b3c47a409334df7d">relativePositions_m</a> = relativePositions_m;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">return</span> line;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
+</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keywordflow">return</span> line;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>}</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">// 21-6-2000 ada change iterator to const_iterator</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00250" data-start="{" data-end="}">
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">  250</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">TBeamline&lt;T&gt;::makeSharable</a>() {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    shareFlag = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        iter-&gt;getElement()-&gt;<a class="code hl_function" href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">makeSharable</a>();</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
 </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">// 21-6-2000 ada change iterator to const_iterator</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">  254</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">TBeamline&lt;T&gt;::makeSharable</a>() {</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    shareFlag = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        iter-&gt;getElement()-&gt;<a class="code hl_function" href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">makeSharable</a>();</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00259" data-start="{" data-end="}">
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">  259</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classBeamlineGeometry.html">BeamlineGeometry</a>&amp; <a class="code hl_function" href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">TBeamline&lt;T&gt;::getGeometry</a>() {</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">return</span> itsGeometry;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>}</div>
 </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">  263</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classBeamlineGeometry.html">BeamlineGeometry</a>&amp; <a class="code hl_function" href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">TBeamline&lt;T&gt;::getGeometry</a>() {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keywordflow">return</span> itsGeometry;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>}</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classTBeamline.html#a3f5f22bcefbe0cd9d5bcf5b798309535">  264</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classBeamlineGeometry.html">BeamlineGeometry</a>&amp; <a class="code hl_function" href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">TBeamline&lt;T&gt;::getGeometry</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordflow">return</span> itsGeometry;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
 </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00268" data-start="{" data-end="}">
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classTBeamline.html#a3f5f22bcefbe0cd9d5bcf5b798309535">  268</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="classBeamlineGeometry.html">BeamlineGeometry</a>&amp; <a class="code hl_function" href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">TBeamline&lt;T&gt;::getGeometry</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordflow">return</span> itsGeometry;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>}</div>
-</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00269" data-start="{" data-end="}">
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">  269</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">TBeamline&lt;T&gt;::getArcLength</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordtype">double</span> length = 0.0;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">  273</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">TBeamline&lt;T&gt;::getArcLength</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordtype">double</span> length = 0.0;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        length += iter-&gt;getElement()-&gt;<a class="code hl_function" href="classBeamlineGeometry.html#a8a87b072d08c524983c0ce7bf5536978">getArcLength</a>();</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        length += iter-&gt;getElement()-&gt;<a class="code hl_function" href="classBeamlineGeometry.html#a8a87b072d08c524983c0ce7bf5536978">getArcLength</a>();</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    }</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">return</span> length;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">return</span> length;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
 </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00280" data-start="{" data-end="}">
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">  280</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">TBeamline&lt;T&gt;::getElementLength</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordtype">double</span> length = 0.0;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">  284</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">TBeamline&lt;T&gt;::getElementLength</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="keywordtype">double</span> length = 0.0;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        length += iter-&gt;getElement()-&gt;getElementLength();</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        length += iter-&gt;getElement()-&gt;getElementLength();</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    }</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> length;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">return</span> length;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
 </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="classTBeamline.html#a6425dbecac310646f70978c808508320">  295</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#a6425dbecac310646f70978c808508320">TBeamline&lt;T&gt;::getOrigin</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordflow">return</span> (getArcLength() / 2.0);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00291" data-start="{" data-end="}">
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classTBeamline.html#a6425dbecac310646f70978c808508320">  291</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#a6425dbecac310646f70978c808508320">TBeamline&lt;T&gt;::getOrigin</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">return</span> (getArcLength() / 2.0);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>}</div>
 </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00300" data-start="{" data-end="}">
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">  300</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">TBeamline&lt;T&gt;::getEntrance</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordflow">return</span> (-getOrigin());</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>}</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00296" data-start="{" data-end="}">
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">  296</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">TBeamline&lt;T&gt;::getEntrance</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">return</span> (-getOrigin());</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
 </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">  305</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">TBeamline&lt;T&gt;::getExit</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">return</span> (getArcLength() / 2.0);</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>}</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00301" data-start="{" data-end="}">
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">  301</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">TBeamline&lt;T&gt;::getExit</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordflow">return</span> (getArcLength() / 2.0);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>}</div>
 </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">  306</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline&lt;T&gt;::getTransform</a>(<span class="keywordtype">double</span> fromS, <span class="keywordtype">double</span> toS)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> transform;</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00310" data-start="{" data-end="}">
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">  310</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline&lt;T&gt;::getTransform</a>(<span class="keywordtype">double</span> fromS, <span class="keywordtype">double</span> toS)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> transform;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">if</span> (fromS &lt; toS) {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordtype">double</span> s1                                  = getEntrance();</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin();</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <span class="keywordflow">if</span> (fromS &lt; toS) {</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordtype">double</span> s1                                  = getEntrance();</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin();</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <span class="keywordflow">while</span> (iter != this-&gt;end() &amp;&amp; s1 &lt;= toS) {</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            <span class="keyword">const</span> <a class="code hl_class" href="classElementBase.html">ElementBase</a>&amp; element = *iter-&gt;getElement();</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            <span class="keywordtype">double</span> l                   = element.<a class="code hl_function" href="classElementBase.html#a0e3fb7ab77543db2cc888cef67aec78a">getArcLength</a>();</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            <span class="keywordtype">double</span> s2                  = s1 + l;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            <span class="keywordflow">if</span> (s2 &gt; fromS) {</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                <span class="keywordtype">double</span> s0   = (s1 + s2) / 2.0;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordtype">double</span> arc1 = std::max(s1, fromS) - s0;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                <span class="keywordtype">double</span> arc2 = std::min(s2, toS) - s0;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                transform *= element.<a class="code hl_function" href="classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7">getTransform</a>(arc1, arc2);</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            }</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            s1 = s2;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            ++iter;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        }</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <span class="keywordtype">double</span> s1                                          = getExit();</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keyword">typename</span> std::list&lt;T&gt;::const_reverse_iterator iter = this-&gt;rbegin();</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keywordflow">while</span> (iter != this-&gt;rend() &amp;&amp; s1 &gt;= toS) {</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            <span class="keyword">const</span> <a class="code hl_class" href="classElementBase.html">ElementBase</a>&amp; element = *iter-&gt;getElement();</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            <span class="keywordtype">double</span> l                   = element.<a class="code hl_function" href="classElementBase.html#a0e3fb7ab77543db2cc888cef67aec78a">getArcLength</a>();</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <span class="keywordtype">double</span> s2                  = s1 - l;</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="keywordflow">if</span> (s2 &lt; fromS) {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                <span class="keywordtype">double</span> s0   = (s1 + s2) / 2.0;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                <span class="keywordtype">double</span> arc1 = std::min(s1, fromS) - s0;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                <span class="keywordtype">double</span> arc2 = std::max(s2, toS) - s0;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                transform *= element.<a class="code hl_function" href="classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7">getTransform</a>(arc1, arc2);</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            }</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            s1 = s2;</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            ++iter;</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        }</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    }</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">return</span> transform;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>}</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keywordflow">while</span> (iter != this-&gt;end() &amp;&amp; s1 &lt;= toS) {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keyword">const</span> <a class="code hl_class" href="classElementBase.html">ElementBase</a>&amp; element = *iter-&gt;getElement();</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="keywordtype">double</span> l                   = element.<a class="code hl_function" href="classElementBase.html#a0e3fb7ab77543db2cc888cef67aec78a">getArcLength</a>();</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <span class="keywordtype">double</span> s2                  = s1 + l;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            <span class="keywordflow">if</span> (s2 &gt; fromS) {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                <span class="keywordtype">double</span> s0   = (s1 + s2) / 2.0;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                <span class="keywordtype">double</span> arc1 = std::max(s1, fromS) - s0;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                <span class="keywordtype">double</span> arc2 = std::min(s2, toS) - s0;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                transform *= element.<a class="code hl_function" href="classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7">getTransform</a>(arc1, arc2);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            s1 = s2;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            ++iter;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <span class="keywordtype">double</span> s1                                          = getExit();</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keyword">typename</span> std::list&lt;T&gt;::const_reverse_iterator iter = this-&gt;rbegin();</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keywordflow">while</span> (iter != this-&gt;rend() &amp;&amp; s1 &gt;= toS) {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <span class="keyword">const</span> <a class="code hl_class" href="classElementBase.html">ElementBase</a>&amp; element = *iter-&gt;getElement();</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            <span class="keywordtype">double</span> l                   = element.<a class="code hl_function" href="classElementBase.html#a0e3fb7ab77543db2cc888cef67aec78a">getArcLength</a>();</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            <span class="keywordtype">double</span> s2                  = s1 - l;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            <span class="keywordflow">if</span> (s2 &lt; fromS) {</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                <span class="keywordtype">double</span> s0   = (s1 + s2) / 2.0;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                <span class="keywordtype">double</span> arc1 = std::min(s1, fromS) - s0;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="keywordtype">double</span> arc2 = std::max(s2, toS) - s0;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                transform *= element.<a class="code hl_function" href="classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7">getTransform</a>(arc1, arc2);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            s1 = s2;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            ++iter;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    }</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keywordflow">return</span> transform;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>}</div>
 </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00353" data-start="{" data-end="}">
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">  353</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">TBeamline&lt;T&gt;::getTotalTransform</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> transform;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00357" data-start="{" data-end="}">
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">  357</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">TBeamline&lt;T&gt;::getTotalTransform</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> transform;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        transform.<a class="code hl_function" href="classEuclid3D.html#a7e5312fc6249b3c41cd45f7f88dc560b">dotBy</a>(iter-&gt;getElement()-&gt;getTotalTransform());</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        transform.<a class="code hl_function" href="classEuclid3D.html#a7e5312fc6249b3c41cd45f7f88dc560b">dotBy</a>(iter-&gt;getElement()-&gt;getTotalTransform());</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    }</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">return</span> transform;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>}</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">return</span> transform;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>}</div>
 </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00368" data-start="{" data-end="}">
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="classTBeamline.html#a5738ee3eadbce76b5a0541a3348fb887">  368</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline&lt;T&gt;::getTransform</a>(<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordflow">return</span> getTransform(0.0, s);</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>}</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00364" data-start="{" data-end="}">
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="classTBeamline.html#a5738ee3eadbce76b5a0541a3348fb887">  364</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline&lt;T&gt;::getTransform</a>(<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="keywordflow">return</span> getTransform(0.0, s);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}</div>
 </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00373" data-start="{" data-end="}">
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">  373</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">TBeamline&lt;T&gt;::getEntranceFrame</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keywordflow">return</span> getTransform(0.0, getEntrance());</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>}</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00369" data-start="{" data-end="}">
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">  369</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">TBeamline&lt;T&gt;::getEntranceFrame</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">return</span> getTransform(0.0, getEntrance());</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>}</div>
 </div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00378" data-start="{" data-end="}">
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">  378</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">TBeamline&lt;T&gt;::getExitFrame</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">return</span> getTransform(0.0, getExit());</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>}</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00374" data-start="{" data-end="}">
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">  374</a></span><a class="code hl_class" href="classEuclid3D.html">Euclid3D</a> <a class="code hl_function" href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">TBeamline&lt;T&gt;::getExitFrame</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordflow">return</span> getTransform(0.0, getExit());</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>}</div>
 </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00383" data-start="{" data-end="}">
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="classTBeamline.html#a93fa3a769469e69e0025d3a8a81525d3">  383</a></span><span class="keyword">inline</span> <a class="code hl_enumeration" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a> <a class="code hl_function" href="classTBeamline.html#a93fa3a769469e69e0025d3a8a81525d3">TBeamline&lt;T&gt;::getType</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a66571de0d27707471980ce2da3009b7d">ElementType::BEAMLINE</a>;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>}</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00379" data-start="{" data-end="}">
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="classTBeamline.html#a93fa3a769469e69e0025d3a8a81525d3">  379</a></span><span class="keyword">inline</span> <a class="code hl_enumeration" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a> <a class="code hl_function" href="classTBeamline.html#a93fa3a769469e69e0025d3a8a81525d3">TBeamline&lt;T&gt;::getType</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a66571de0d27707471980ce2da3009b7d">ElementType::BEAMLINE</a>;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>}</div>
 </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00388" data-start="{" data-end="}">
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">  388</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">TBeamline&lt;T&gt;::append</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; obj) {</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    this-&gt;push_back(obj);</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>}</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00384" data-start="{" data-end="}">
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">  384</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">TBeamline&lt;T&gt;::append</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; obj) {</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    this-&gt;push_back(obj);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>}</div>
 </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00393" data-start="{" data-end="}">
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="classTBeamline.html#a5664b1d9a0af245851dc515b67032d8d">  393</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a5664b1d9a0af245851dc515b67032d8d">TBeamline&lt;T&gt;::prepend</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; obj) {</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    this-&gt;push_front(obj);</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>}</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00389" data-start="{" data-end="}">
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno"><a class="line" href="classTBeamline.html#a5664b1d9a0af245851dc515b67032d8d">  389</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a5664b1d9a0af245851dc515b67032d8d">TBeamline&lt;T&gt;::prepend</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; obj) {</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    this-&gt;push_front(obj);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>}</div>
 </div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00398" data-start="{" data-end="}">
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="classTBeamline.html#a420209e2255923b62461f2d20447389b">  398</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a420209e2255923b62461f2d20447389b">TBeamline&lt;T&gt;::setOrigin3D</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a>&amp; ori) {</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    itsOrigin_m = ori;</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>}</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00394" data-start="{" data-end="}">
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="classTBeamline.html#a420209e2255923b62461f2d20447389b">  394</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a420209e2255923b62461f2d20447389b">TBeamline&lt;T&gt;::setOrigin3D</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a>&amp; ori) {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    itsOrigin_m = ori;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>}</div>
 </div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00403" data-start="{" data-end="}">
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="classTBeamline.html#ae05bde2c39fb1098e4d7cb71a09eb063">  403</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> <a class="code hl_function" href="classTBeamline.html#ae05bde2c39fb1098e4d7cb71a09eb063">TBeamline&lt;T&gt;::getOrigin3D</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="keywordflow">return</span> itsOrigin_m;</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>}</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00399" data-start="{" data-end="}">
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno"><a class="line" href="classTBeamline.html#ae05bde2c39fb1098e4d7cb71a09eb063">  399</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> <a class="code hl_function" href="classTBeamline.html#ae05bde2c39fb1098e4d7cb71a09eb063">TBeamline&lt;T&gt;::getOrigin3D</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <span class="keywordflow">return</span> itsOrigin_m;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>}</div>
 </div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00408" data-start="{" data-end="}">
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3">  408</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3">TBeamline&lt;T&gt;::setInitialDirection</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQuaternion.html">Quaternion</a>&amp; trafoTo) {</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    itsCoordTrafoTo_m = trafoTo;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>}</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00404" data-start="{" data-end="}">
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3">  404</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3">TBeamline&lt;T&gt;::setInitialDirection</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQuaternion.html">Quaternion</a>&amp; trafoTo) {</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    itsCoordTrafoTo_m = trafoTo;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>}</div>
 </div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00413" data-start="{" data-end="}">
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="classTBeamline.html#a13dc7171713a98095f8d8bae54f03989">  413</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classQuaternion.html">Quaternion</a> <a class="code hl_function" href="classTBeamline.html#a13dc7171713a98095f8d8bae54f03989">TBeamline&lt;T&gt;::getInitialDirection</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordflow">return</span> itsCoordTrafoTo_m;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>}</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00409" data-start="{" data-end="}">
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="classTBeamline.html#a13dc7171713a98095f8d8bae54f03989">  409</a></span><span class="keyword">inline</span> <a class="code hl_class" href="classQuaternion.html">Quaternion</a> <a class="code hl_function" href="classTBeamline.html#a13dc7171713a98095f8d8bae54f03989">TBeamline&lt;T&gt;::getInitialDirection</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">return</span> itsCoordTrafoTo_m;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>}</div>
 </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00418" data-start="{" data-end="}">
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="classTBeamline.html#a24e669334acb5468c24c1607e03b54e3">  418</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a24e669334acb5468c24c1607e03b54e3">TBeamline&lt;T&gt;::setRelativeFlag</a>(<span class="keywordtype">bool</span> flag) {</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    relativePositions_m = flag;</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>}</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00414" data-start="{" data-end="}">
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="classTBeamline.html#a24e669334acb5468c24c1607e03b54e3">  414</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTBeamline.html#a24e669334acb5468c24c1607e03b54e3">TBeamline&lt;T&gt;::setRelativeFlag</a>(<span class="keywordtype">bool</span> flag) {</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    relativePositions_m = flag;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>}</div>
 </div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00423" data-start="{" data-end="}">
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classTBeamline.html#a06986f7e3cb1ec9f3b899dbe7ee1a86c">  423</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classTBeamline.html#a06986f7e3cb1ec9f3b899dbe7ee1a86c">TBeamline&lt;T&gt;::getRelativeFlag</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <span class="keywordflow">return</span> relativePositions_m;</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>}</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00419" data-start="{" data-end="}">
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno"><a class="line" href="classTBeamline.html#a06986f7e3cb1ec9f3b899dbe7ee1a86c">  419</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classTBeamline.html#a06986f7e3cb1ec9f3b899dbe7ee1a86c">TBeamline&lt;T&gt;::getRelativeFlag</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    <span class="keywordflow">return</span> relativePositions_m;</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>}</div>
 </div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00428" data-start="{" data-end="}">
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="classTBeamline.html#a355ef7e80e1f09f7e8741067e170410d">  428</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="classTBeamline.html#a355ef7e80e1f09f7e8741067e170410d">TBeamline&lt;T&gt;::size</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    <span class="keywordtype">size_t</span> blSize = 0;</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>        blSize++;</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    }</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="keywordflow">return</span> blSize;</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>}</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00424" data-start="{" data-end="}">
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="classTBeamline.html#a355ef7e80e1f09f7e8741067e170410d">  424</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="classTBeamline.html#a355ef7e80e1f09f7e8741067e170410d">TBeamline&lt;T&gt;::size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordtype">size_t</span> blSize = 0;</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::list&lt;T&gt;::const_iterator iter = this-&gt;begin(); iter != this-&gt;end(); ++iter) {</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        blSize++;</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    }</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keywordflow">return</span> blSize;</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>}</div>
 </div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="preprocessor">#endif  </span><span class="comment">// OPALX_TBeamline_HH</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="preprocessor">#endif  </span><span class="comment">// OPALX_TBeamline_HH</span></div>
 <div class="ttc" id="aBeamlineGeometry_8h_html"><div class="ttname"><a href="BeamlineGeometry_8h.html">BeamlineGeometry.h</a></div></div>
 <div class="ttc" id="aBeamlineVisitor_8h_html"><div class="ttname"><a href="BeamlineVisitor_8h.html">BeamlineVisitor.h</a></div></div>
 <div class="ttc" id="aBeamline_8h_html"><div class="ttname"><a href="Beamline_8h.html">Beamline.h</a></div></div>
 <div class="ttc" id="aDistributionMoments_8h_html_a716e97cb94129a4800d15dc3d2fa4063"><div class="ttname"><a href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a></div><div class="ttdeci">ippl::Vector&lt; T, Dim &gt; Vector_t</div><div class="ttdef"><b>Definition</b> <a href="DistributionMoments_8h_source.html#l00031">DistributionMoments.h:31</a></div></div>
-<div class="ttc" id="aElementBase_8h_html_a1d3efb4a54c06179c8699d81435593c8"><div class="ttname"><a href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a></div><div class="ttdeci">ElementType</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00093">ElementBase.h:93</a></div></div>
+<div class="ttc" id="aElementBase_8h_html_a1d3efb4a54c06179c8699d81435593c8"><div class="ttname"><a href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8">ElementType</a></div><div class="ttdeci">ElementType</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00094">ElementBase.h:94</a></div></div>
 <div class="ttc" id="aElementBase_8h_html_a1d3efb4a54c06179c8699d81435593c8a66571de0d27707471980ce2da3009b7d"><div class="ttname"><a href="ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a66571de0d27707471980ce2da3009b7d">ElementType::BEAMLINE</a></div><div class="ttdeci">@ BEAMLINE</div></div>
 <div class="ttc" id="aOPALTypes_8h_html_a6b2d038ea9c8d2651eecffe0e28b7ebb"><div class="ttname"><a href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a></div><div class="ttdeci">double T</div><div class="ttdef"><b>Definition</b> <a href="OPALTypes_8h_source.html#l00008">OPALTypes.h:8</a></div></div>
 <div class="ttc" id="aQuaternion_8hpp_html"><div class="ttname"><a href="Quaternion_8hpp.html">Quaternion.hpp</a></div></div>
-<div class="ttc" id="aclassBeamlineGeometry_html"><div class="ttname"><a href="classBeamlineGeometry.html">BeamlineGeometry</a></div><div class="ttdoc">Implements the composite geometry of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="BeamlineGeometry_8h_source.html#l00032">BeamlineGeometry.h:32</a></div></div>
-<div class="ttc" id="aclassBeamlineGeometry_html_a8a87b072d08c524983c0ce7bf5536978"><div class="ttname"><a href="classBeamlineGeometry.html#a8a87b072d08c524983c0ce7bf5536978">BeamlineGeometry::getArcLength</a></div><div class="ttdeci">virtual double getArcLength() const</div><div class="ttdoc">Get arc length.</div><div class="ttdef"><b>Definition</b> <a href="BeamlineGeometry_8cpp_source.html#l00037">BeamlineGeometry.cpp:37</a></div></div>
+<div class="ttc" id="aclassBeamlineGeometry_html"><div class="ttname"><a href="classBeamlineGeometry.html">BeamlineGeometry</a></div><div class="ttdoc">Implements the composite geometry of a beam line.</div><div class="ttdef"><b>Definition</b> <a href="BeamlineGeometry_8h_source.html#l00031">BeamlineGeometry.h:31</a></div></div>
+<div class="ttc" id="aclassBeamlineGeometry_html_a8a87b072d08c524983c0ce7bf5536978"><div class="ttname"><a href="classBeamlineGeometry.html#a8a87b072d08c524983c0ce7bf5536978">BeamlineGeometry::getArcLength</a></div><div class="ttdeci">virtual double getArcLength() const</div><div class="ttdoc">Get arc length.</div><div class="ttdef"><b>Definition</b> <a href="BeamlineGeometry_8cpp_source.html#l00031">BeamlineGeometry.cpp:31</a></div></div>
 <div class="ttc" id="aclassBeamlineVisitor_html"><div class="ttname"><a href="classBeamlineVisitor.html">BeamlineVisitor</a></div><div class="ttdef"><b>Definition</b> <a href="BeamlineVisitor_8h_source.html#l00063">BeamlineVisitor.h:63</a></div></div>
 <div class="ttc" id="aclassBeamlineVisitor_html_ad6effe5c974cbae2be6979f2c307c94b"><div class="ttname"><a href="classBeamlineVisitor.html#ad6effe5c974cbae2be6979f2c307c94b">BeamlineVisitor::visitBeamline</a></div><div class="ttdeci">virtual void visitBeamline(const Beamline &amp;)=0</div><div class="ttdoc">Apply the algorithm to a beam line.</div></div>
 <div class="ttc" id="aclassBeamline_html"><div class="ttname"><a href="classBeamline.html">Beamline</a></div><div class="ttdoc">An abstract sequence of beam line components.</div><div class="ttdef"><b>Definition</b> <a href="Beamline_8h_source.html#l00034">Beamline.h:34</a></div></div>
-<div class="ttc" id="aclassElementBase_html"><div class="ttname"><a href="classElementBase.html">ElementBase</a></div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00121">ElementBase.h:121</a></div></div>
-<div class="ttc" id="aclassElementBase_html_a0e3fb7ab77543db2cc888cef67aec78a"><div class="ttname"><a href="classElementBase.html#a0e3fb7ab77543db2cc888cef67aec78a">ElementBase::getArcLength</a></div><div class="ttdeci">virtual double getArcLength() const</div><div class="ttdoc">Get arc length.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00477">ElementBase.h:477</a></div></div>
-<div class="ttc" id="aclassElementBase_html_a7e39dd0332154bf171aee424b6a1d3f7"><div class="ttname"><a href="classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7">ElementBase::getTransform</a></div><div class="ttdeci">virtual Euclid3D getTransform(double fromS, double toS) const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00489">ElementBase.h:489</a></div></div>
-<div class="ttc" id="aclassEuclid3D_html"><div class="ttname"><a href="classEuclid3D.html">Euclid3D</a></div><div class="ttdoc">Displacement and rotation in space.</div><div class="ttdef"><b>Definition</b> <a href="Euclid3D_8h_source.html#l00068">Euclid3D.h:68</a></div></div>
-<div class="ttc" id="aclassEuclid3D_html_a7e5312fc6249b3c41cd45f7f88dc560b"><div class="ttname"><a href="classEuclid3D.html#a7e5312fc6249b3c41cd45f7f88dc560b">Euclid3D::dotBy</a></div><div class="ttdeci">const Euclid3D &amp; dotBy(const Euclid3D &amp;rhs)</div><div class="ttdoc">Dot product with assign.</div><div class="ttdef"><b>Definition</b> <a href="Euclid3D_8cpp_source.html#l00102">Euclid3D.cpp:102</a></div></div>
+<div class="ttc" id="aclassElementBase_html"><div class="ttname"><a href="classElementBase.html">ElementBase</a></div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00122">ElementBase.h:122</a></div></div>
+<div class="ttc" id="aclassElementBase_html_a0e3fb7ab77543db2cc888cef67aec78a"><div class="ttname"><a href="classElementBase.html#a0e3fb7ab77543db2cc888cef67aec78a">ElementBase::getArcLength</a></div><div class="ttdeci">virtual double getArcLength() const</div><div class="ttdoc">Get arc length.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00478">ElementBase.h:478</a></div></div>
+<div class="ttc" id="aclassElementBase_html_a7e39dd0332154bf171aee424b6a1d3f7"><div class="ttname"><a href="classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7">ElementBase::getTransform</a></div><div class="ttdeci">virtual Euclid3D getTransform(double fromS, double toS) const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="ElementBase_8h_source.html#l00490">ElementBase.h:490</a></div></div>
+<div class="ttc" id="aclassEuclid3D_html"><div class="ttname"><a href="classEuclid3D.html">Euclid3D</a></div><div class="ttdoc">Displacement and rotation in space.</div><div class="ttdef"><b>Definition</b> <a href="Euclid3D_8h_source.html#l00067">Euclid3D.h:67</a></div></div>
+<div class="ttc" id="aclassEuclid3D_html_a7e5312fc6249b3c41cd45f7f88dc560b"><div class="ttname"><a href="classEuclid3D.html#a7e5312fc6249b3c41cd45f7f88dc560b">Euclid3D::dotBy</a></div><div class="ttdeci">const Euclid3D &amp; dotBy(const Euclid3D &amp;rhs)</div><div class="ttdoc">Dot product with assign.</div><div class="ttdef"><b>Definition</b> <a href="Euclid3D_8cpp_source.html#l00070">Euclid3D.cpp:70</a></div></div>
 <div class="ttc" id="aclassQuaternion_html"><div class="ttname"><a href="classQuaternion.html">Quaternion</a></div><div class="ttdoc">Quaternion storage and rotation algebra used by OPALX geometry code.</div><div class="ttdef"><b>Definition</b> <a href="Quaternion_8hpp_source.html#l00029">Quaternion.hpp:29</a></div></div>
 <div class="ttc" id="aclassTBeamline_html"><div class="ttname"><a href="classTBeamline.html">TBeamline</a></div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00033">TBeamline.h:33</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a06986f7e3cb1ec9f3b899dbe7ee1a86c"><div class="ttname"><a href="classTBeamline.html#a06986f7e3cb1ec9f3b899dbe7ee1a86c">TBeamline::getRelativeFlag</a></div><div class="ttdeci">bool getRelativeFlag() const</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00423">TBeamline.h:423</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a13dc7171713a98095f8d8bae54f03989"><div class="ttname"><a href="classTBeamline.html#a13dc7171713a98095f8d8bae54f03989">TBeamline::getInitialDirection</a></div><div class="ttdeci">Quaternion getInitialDirection() const</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00413">TBeamline.h:413</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a14b178c54a9b2aa8af19615a7b62475b"><div class="ttname"><a href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">TBeamline::getEntranceFrame</a></div><div class="ttdeci">virtual Euclid3D getEntranceFrame() const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00373">TBeamline.h:373</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a24e669334acb5468c24c1607e03b54e3"><div class="ttname"><a href="classTBeamline.html#a24e669334acb5468c24c1607e03b54e3">TBeamline::setRelativeFlag</a></div><div class="ttdeci">void setRelativeFlag(bool flag)</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00418">TBeamline.h:418</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a2fd06c0af235950e29a3fed2564f2f80"><div class="ttname"><a href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">TBeamline::getArcLength</a></div><div class="ttdeci">virtual double getArcLength() const</div><div class="ttdoc">Get arc length.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00273">TBeamline.h:273</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a30638849a8e4e9ad7ce99d27320c62bb"><div class="ttname"><a href="classTBeamline.html#a30638849a8e4e9ad7ce99d27320c62bb">TBeamline::clone</a></div><div class="ttdeci">virtual TBeamline&lt; T &gt; * clone() const</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00211">TBeamline.h:211</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a31cc9512ddf16f25213478d5b98eebb7"><div class="ttname"><a href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">TBeamline::getEntrance</a></div><div class="ttdeci">virtual double getEntrance() const</div><div class="ttdoc">Get entrance position.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00300">TBeamline.h:300</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a355ef7e80e1f09f7e8741067e170410d"><div class="ttname"><a href="classTBeamline.html#a355ef7e80e1f09f7e8741067e170410d">TBeamline::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Get the number of elements in the TBeamline.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00428">TBeamline.h:428</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a420209e2255923b62461f2d20447389b"><div class="ttname"><a href="classTBeamline.html#a420209e2255923b62461f2d20447389b">TBeamline::setOrigin3D</a></div><div class="ttdeci">void setOrigin3D(const Vector_t&lt; double, 3 &gt; &amp;ori)</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00398">TBeamline.h:398</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a4e186ae36f6622976afb3ae70c677fc3"><div class="ttname"><a href="classTBeamline.html#a4e186ae36f6622976afb3ae70c677fc3">TBeamline::copyStructure</a></div><div class="ttdeci">virtual TBeamline&lt; T &gt; * copyStructure()</div><div class="ttdoc">Make structure copy.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00230">TBeamline.h:230</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a4e665b5c967729a78c222549123b5e33"><div class="ttname"><a href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">TBeamline::getTotalTransform</a></div><div class="ttdeci">virtual Euclid3D getTotalTransform() const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00357">TBeamline.h:357</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a52eb0dd1f5ce3fc60b1927b8220940e5"><div class="ttname"><a href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">TBeamline::getExitFrame</a></div><div class="ttdeci">virtual Euclid3D getExitFrame() const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00378">TBeamline.h:378</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a5664b1d9a0af245851dc515b67032d8d"><div class="ttname"><a href="classTBeamline.html#a5664b1d9a0af245851dc515b67032d8d">TBeamline::prepend</a></div><div class="ttdeci">virtual void prepend(const T &amp;)</div><div class="ttdoc">Prepend a T object.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00393">TBeamline.h:393</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a638f821c3e0c20e3c671699c522a6dfc"><div class="ttname"><a href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">TBeamline::makeSharable</a></div><div class="ttdeci">virtual void makeSharable()</div><div class="ttdoc">Set sharable flag.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00254">TBeamline.h:254</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a6425dbecac310646f70978c808508320"><div class="ttname"><a href="classTBeamline.html#a6425dbecac310646f70978c808508320">TBeamline::getOrigin</a></div><div class="ttdeci">virtual double getOrigin() const</div><div class="ttdoc">Get origin position.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00295">TBeamline.h:295</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a06986f7e3cb1ec9f3b899dbe7ee1a86c"><div class="ttname"><a href="classTBeamline.html#a06986f7e3cb1ec9f3b899dbe7ee1a86c">TBeamline::getRelativeFlag</a></div><div class="ttdeci">bool getRelativeFlag() const</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00419">TBeamline.h:419</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a13dc7171713a98095f8d8bae54f03989"><div class="ttname"><a href="classTBeamline.html#a13dc7171713a98095f8d8bae54f03989">TBeamline::getInitialDirection</a></div><div class="ttdeci">Quaternion getInitialDirection() const</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00409">TBeamline.h:409</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a14b178c54a9b2aa8af19615a7b62475b"><div class="ttname"><a href="classTBeamline.html#a14b178c54a9b2aa8af19615a7b62475b">TBeamline::getEntranceFrame</a></div><div class="ttdeci">virtual Euclid3D getEntranceFrame() const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00369">TBeamline.h:369</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a24e669334acb5468c24c1607e03b54e3"><div class="ttname"><a href="classTBeamline.html#a24e669334acb5468c24c1607e03b54e3">TBeamline::setRelativeFlag</a></div><div class="ttdeci">void setRelativeFlag(bool flag)</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00414">TBeamline.h:414</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a2fd06c0af235950e29a3fed2564f2f80"><div class="ttname"><a href="classTBeamline.html#a2fd06c0af235950e29a3fed2564f2f80">TBeamline::getArcLength</a></div><div class="ttdeci">virtual double getArcLength() const</div><div class="ttdoc">Get arc length.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00269">TBeamline.h:269</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a30638849a8e4e9ad7ce99d27320c62bb"><div class="ttname"><a href="classTBeamline.html#a30638849a8e4e9ad7ce99d27320c62bb">TBeamline::clone</a></div><div class="ttdeci">virtual TBeamline&lt; T &gt; * clone() const</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00207">TBeamline.h:207</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a31cc9512ddf16f25213478d5b98eebb7"><div class="ttname"><a href="classTBeamline.html#a31cc9512ddf16f25213478d5b98eebb7">TBeamline::getEntrance</a></div><div class="ttdeci">virtual double getEntrance() const</div><div class="ttdoc">Get entrance position.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00296">TBeamline.h:296</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a355ef7e80e1f09f7e8741067e170410d"><div class="ttname"><a href="classTBeamline.html#a355ef7e80e1f09f7e8741067e170410d">TBeamline::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Get the number of elements in the TBeamline.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00424">TBeamline.h:424</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a420209e2255923b62461f2d20447389b"><div class="ttname"><a href="classTBeamline.html#a420209e2255923b62461f2d20447389b">TBeamline::setOrigin3D</a></div><div class="ttdeci">void setOrigin3D(const Vector_t&lt; double, 3 &gt; &amp;ori)</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00394">TBeamline.h:394</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a4e186ae36f6622976afb3ae70c677fc3"><div class="ttname"><a href="classTBeamline.html#a4e186ae36f6622976afb3ae70c677fc3">TBeamline::copyStructure</a></div><div class="ttdeci">virtual TBeamline&lt; T &gt; * copyStructure()</div><div class="ttdoc">Make structure copy.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00226">TBeamline.h:226</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a4e665b5c967729a78c222549123b5e33"><div class="ttname"><a href="classTBeamline.html#a4e665b5c967729a78c222549123b5e33">TBeamline::getTotalTransform</a></div><div class="ttdeci">virtual Euclid3D getTotalTransform() const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00353">TBeamline.h:353</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a52eb0dd1f5ce3fc60b1927b8220940e5"><div class="ttname"><a href="classTBeamline.html#a52eb0dd1f5ce3fc60b1927b8220940e5">TBeamline::getExitFrame</a></div><div class="ttdeci">virtual Euclid3D getExitFrame() const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00374">TBeamline.h:374</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a5664b1d9a0af245851dc515b67032d8d"><div class="ttname"><a href="classTBeamline.html#a5664b1d9a0af245851dc515b67032d8d">TBeamline::prepend</a></div><div class="ttdeci">virtual void prepend(const T &amp;)</div><div class="ttdoc">Prepend a T object.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00389">TBeamline.h:389</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a638f821c3e0c20e3c671699c522a6dfc"><div class="ttname"><a href="classTBeamline.html#a638f821c3e0c20e3c671699c522a6dfc">TBeamline::makeSharable</a></div><div class="ttdeci">virtual void makeSharable()</div><div class="ttdoc">Set sharable flag.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00250">TBeamline.h:250</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a6425dbecac310646f70978c808508320"><div class="ttname"><a href="classTBeamline.html#a6425dbecac310646f70978c808508320">TBeamline::getOrigin</a></div><div class="ttdeci">virtual double getOrigin() const</div><div class="ttdoc">Get origin position.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00291">TBeamline.h:291</a></div></div>
 <div class="ttc" id="aclassTBeamline_html_a65a074dae3d789ed52253caf65f7294b"><div class="ttname"><a href="classTBeamline.html#a65a074dae3d789ed52253caf65f7294b">TBeamline::TBeamline</a></div><div class="ttdeci">TBeamline()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00158">TBeamline.h:158</a></div></div>
 <div class="ttc" id="aclassTBeamline_html_a6e1897994a4a4be9b3c47a409334df7d"><div class="ttname"><a href="classTBeamline.html#a6e1897994a4a4be9b3c47a409334df7d">TBeamline::relativePositions_m</a></div><div class="ttdeci">bool relativePositions_m</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00151">TBeamline.h:151</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a7abc8da6fef692a32bca737fa886e1e1"><div class="ttname"><a href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline::getTransform</a></div><div class="ttdeci">virtual Euclid3D getTransform(double fromS, double toS) const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00310">TBeamline.h:310</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a7abc8da6fef692a32bca737fa886e1e1"><div class="ttname"><a href="classTBeamline.html#a7abc8da6fef692a32bca737fa886e1e1">TBeamline::getTransform</a></div><div class="ttdeci">virtual Euclid3D getTransform(double fromS, double toS) const</div><div class="ttdoc">Get transform.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00306">TBeamline.h:306</a></div></div>
 <div class="ttc" id="aclassTBeamline_html_a7b0fdd2e1213c9ae50739597cdb6c80a"><div class="ttname"><a href="classTBeamline.html#a7b0fdd2e1213c9ae50739597cdb6c80a">TBeamline::itsOrigin_m</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; itsOrigin_m</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00149">TBeamline.h:149</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a80d81bfbcd0ff398a8ca40ed17f0a4c3"><div class="ttname"><a href="classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3">TBeamline::setInitialDirection</a></div><div class="ttdeci">void setInitialDirection(const Quaternion &amp;rot)</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00408">TBeamline.h:408</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a814bbb08614d637e33bab465143f330b"><div class="ttname"><a href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">TBeamline::append</a></div><div class="ttdeci">virtual void append(const T &amp;)</div><div class="ttdoc">Append a T object.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00388">TBeamline.h:388</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a8870496610d3345bc59c1e0af780c037"><div class="ttname"><a href="classTBeamline.html#a8870496610d3345bc59c1e0af780c037">TBeamline::~TBeamline</a></div><div class="ttdeci">virtual ~TBeamline()</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00188">TBeamline.h:188</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_a93fa3a769469e69e0025d3a8a81525d3"><div class="ttname"><a href="classTBeamline.html#a93fa3a769469e69e0025d3a8a81525d3">TBeamline::getType</a></div><div class="ttdeci">virtual ElementType getType() const</div><div class="ttdoc">Get beamline type.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00383">TBeamline.h:383</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a80d81bfbcd0ff398a8ca40ed17f0a4c3"><div class="ttname"><a href="classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3">TBeamline::setInitialDirection</a></div><div class="ttdeci">void setInitialDirection(const Quaternion &amp;rot)</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00404">TBeamline.h:404</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a814bbb08614d637e33bab465143f330b"><div class="ttname"><a href="classTBeamline.html#a814bbb08614d637e33bab465143f330b">TBeamline::append</a></div><div class="ttdeci">virtual void append(const T &amp;)</div><div class="ttdoc">Append a T object.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00384">TBeamline.h:384</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a8870496610d3345bc59c1e0af780c037"><div class="ttname"><a href="classTBeamline.html#a8870496610d3345bc59c1e0af780c037">TBeamline::~TBeamline</a></div><div class="ttdeci">virtual ~TBeamline()</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00185">TBeamline.h:185</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_a93fa3a769469e69e0025d3a8a81525d3"><div class="ttname"><a href="classTBeamline.html#a93fa3a769469e69e0025d3a8a81525d3">TBeamline::getType</a></div><div class="ttdeci">virtual ElementType getType() const</div><div class="ttdoc">Get beamline type.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00379">TBeamline.h:379</a></div></div>
 <div class="ttc" id="aclassTBeamline_html_aa638d884f7f05abf6d2178ea0bc970a8"><div class="ttname"><a href="classTBeamline.html#aa638d884f7f05abf6d2178ea0bc970a8">TBeamline::itsCoordTrafoTo_m</a></div><div class="ttdeci">Quaternion itsCoordTrafoTo_m</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00150">TBeamline.h:150</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_aae349b585684894dbf9452e6f26aaddd"><div class="ttname"><a href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">TBeamline::getElementLength</a></div><div class="ttdeci">virtual double getElementLength() const</div><div class="ttdoc">Get design length.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00284">TBeamline.h:284</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_ae05bde2c39fb1098e4d7cb71a09eb063"><div class="ttname"><a href="classTBeamline.html#ae05bde2c39fb1098e4d7cb71a09eb063">TBeamline::getOrigin3D</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; getOrigin3D() const</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00403">TBeamline.h:403</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_ae3232f6f1ceb9405570722caabd77804"><div class="ttname"><a href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">TBeamline::getGeometry</a></div><div class="ttdeci">virtual BeamlineGeometry &amp; getGeometry()</div><div class="ttdoc">Get geometry.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00263">TBeamline.h:263</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_aebb51e48f75a0a3bbbadac0efc5d646d"><div class="ttname"><a href="classTBeamline.html#aebb51e48f75a0a3bbbadac0efc5d646d">TBeamline::accept</a></div><div class="ttdeci">virtual void accept(BeamlineVisitor &amp;) const</div><div class="ttdoc">Apply BeamlineVisitor to this line.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00192">TBeamline.h:192</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_af0fd8938a1253cc11ef08da7d1b18942"><div class="ttname"><a href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">TBeamline::getExit</a></div><div class="ttdeci">virtual double getExit() const</div><div class="ttdoc">Get exit position.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00305">TBeamline.h:305</a></div></div>
-<div class="ttc" id="aclassTBeamline_html_af62c28499e8dcba75002d2904a3680c2"><div class="ttname"><a href="classTBeamline.html#af62c28499e8dcba75002d2904a3680c2">TBeamline::iterate</a></div><div class="ttdeci">virtual void iterate(BeamlineVisitor &amp;, bool r2l) const</div><div class="ttdoc">Apply visitor to all elements of the line.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00197">TBeamline.h:197</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_aae349b585684894dbf9452e6f26aaddd"><div class="ttname"><a href="classTBeamline.html#aae349b585684894dbf9452e6f26aaddd">TBeamline::getElementLength</a></div><div class="ttdeci">virtual double getElementLength() const</div><div class="ttdoc">Get design length.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00280">TBeamline.h:280</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_ae05bde2c39fb1098e4d7cb71a09eb063"><div class="ttname"><a href="classTBeamline.html#ae05bde2c39fb1098e4d7cb71a09eb063">TBeamline::getOrigin3D</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; getOrigin3D() const</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00399">TBeamline.h:399</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_ae3232f6f1ceb9405570722caabd77804"><div class="ttname"><a href="classTBeamline.html#ae3232f6f1ceb9405570722caabd77804">TBeamline::getGeometry</a></div><div class="ttdeci">virtual BeamlineGeometry &amp; getGeometry()</div><div class="ttdoc">Get geometry.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00259">TBeamline.h:259</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_aebb51e48f75a0a3bbbadac0efc5d646d"><div class="ttname"><a href="classTBeamline.html#aebb51e48f75a0a3bbbadac0efc5d646d">TBeamline::accept</a></div><div class="ttdeci">virtual void accept(BeamlineVisitor &amp;) const</div><div class="ttdoc">Apply BeamlineVisitor to this line.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00188">TBeamline.h:188</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_af0fd8938a1253cc11ef08da7d1b18942"><div class="ttname"><a href="classTBeamline.html#af0fd8938a1253cc11ef08da7d1b18942">TBeamline::getExit</a></div><div class="ttdeci">virtual double getExit() const</div><div class="ttdoc">Get exit position.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00301">TBeamline.h:301</a></div></div>
+<div class="ttc" id="aclassTBeamline_html_af62c28499e8dcba75002d2904a3680c2"><div class="ttname"><a href="classTBeamline.html#af62c28499e8dcba75002d2904a3680c2">TBeamline::iterate</a></div><div class="ttdeci">virtual void iterate(BeamlineVisitor &amp;, bool r2l) const</div><div class="ttdoc">Apply visitor to all elements of the line.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00193">TBeamline.h:193</a></div></div>
 <div class="ttc" id="aclassTBeamline_html_af661cc63df42a37e3ebe3412fd6b676d"><div class="ttname"><a href="classTBeamline.html#af661cc63df42a37e3ebe3412fd6b676d">TBeamline::itsGeometry</a></div><div class="ttdeci">BeamlineGeometry itsGeometry</div><div class="ttdoc">The beamline geometry.</div><div class="ttdef"><b>Definition</b> <a href="TBeamline_8h_source.html#l00147">TBeamline.h:147</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -640,7 +634,7 @@ $(document).ready(function(){initNavTree('TBeamline_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1258116797b4c8cbbe069615463f944a.html">Beamlines</a></li><li class="navelem"><a class="el" href="TBeamline_8h.html">TBeamline.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

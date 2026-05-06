@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"OpalProbe_8h.html":[4,0,0,10,25],
 "OpalProbe_8h_source.html":[4,0,0,10,25],
 "OpalQuadrupole_8cpp.html":[4,0,0,10,26],
 "OpalQuadrupole_8cpp_source.html":[4,0,0,10,26],
@@ -124,9 +125,9 @@ var NAVTREEINDEX7 =
 "OverflowError_8h_source.html":[4,0,0,24,52],
 "PBunchDefs_8h.html":[4,0,0,2,25],
 "PBunchDefs_8h.html#a14acc99d7cb6578571ce72803801cc0b":[4,0,0,2,25,0],
+"PBunchDefs_8h.html#a4ecbe0386c0ef9209762b0698ad2c101":[4,0,0,2,25,3],
 "PBunchDefs_8h.html#a62775f861ae59098011e0a07b912f0e5":[4,0,0,2,25,2],
 "PBunchDefs_8h.html#a72935b419c0712291e4aa6ca11463bc6":[4,0,0,2,25,1],
-"PBunchDefs_8h.html#acc98d87b4869a265a09ff0150ef43160":[4,0,0,2,25,3],
 "PBunchDefs_8h.html#aecca3af89b1913ea8dcdf152b8ad9b8c":[4,0,0,2,25,5],
 "PBunchDefs_8h.html#af2cfa0863b9782601fb04996ceed7e17":[4,0,0,2,25,4],
 "PBunchDefs_8h_source.html":[4,0,0,2,25],
@@ -141,6 +142,7 @@ var NAVTREEINDEX7 =
 "PSystem_8h.html":[4,0,0,4,11],
 "PSystem_8h_source.html":[4,0,0,4,11],
 "ParallelReduceTools_8h.html":[4,0,0,17,0,3],
+"ParallelReduceTools_8h.html#a204c7bb96c89276a3db6e52417e2c992":[4,0,0,17,0,3,5],
 "ParallelReduceTools_8h.html#a3d59e67ac4758acf8bdb9da6f686de07":[4,0,0,17,0,3,7],
 "ParallelReduceTools_8h.html#a54425c06ae414dc0a04f80500facfe6b":[4,0,0,17,0,3,6],
 "ParallelReduceTools_8h.html#a54425c06ae414dc0a04f80500facfe6ba43baf4100864831d71c301d581fcb069":[4,0,0,17,0,3,6,2],
@@ -149,7 +151,6 @@ var NAVTREEINDEX7 =
 "ParallelReduceTools_8h.html#a54425c06ae414dc0a04f80500facfe6baf15d6c8237b5427c1054f790bf6ec83f":[4,0,0,17,0,3,6,1],
 "ParallelReduceTools_8h.html#a61774b1863015244b3bf9974924ede07":[4,0,0,17,0,3,8],
 "ParallelReduceTools_8h.html#a62512b47ae7bad83f2ad2c43282ac2fa":[4,0,0,17,0,3,10],
-"ParallelReduceTools_8h.html#ace15d1356bf35aab2c5896751df67869":[4,0,0,17,0,3,5],
 "ParallelReduceTools_8h.html#ae379067c6dab405bfe6c9f1d41bf11a2":[4,0,0,17,0,3,9],
 "ParallelReduceTools_8h_source.html":[4,0,0,17,0,3],
 "ParallelTracker_8cpp.html":[4,0,0,2,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "Physics_8h.html#ab639aef14caa1a17aedf618fae09d9dd":[4,0,0,18,21,3],
 "Physics_8h.html#ab9b5c9c33385e7d484177d8ee38e22f2":[4,0,0,18,21,36],
 "Physics_8h.html#abc1b1bec52382665121187b7e5696138":[4,0,0,18,21,1],
-"Physics_8h.html#abca8a8ee5662bf31d91f165c570c2a12":[4,0,0,18,21,22],
-"Physics_8h.html#ac4b06c9982418bbd465d6401bc4a4841":[4,0,0,18,21,26]
+"Physics_8h.html#abca8a8ee5662bf31d91f165c570c2a12":[4,0,0,18,21,22]
 };

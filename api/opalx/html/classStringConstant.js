@@ -60,7 +60,7 @@ var classStringConstant =
     [ "itsPrefix", "classStringConstant.html#ac9c0df6e3731ce25694639d06c847b3f", null ],
     [ "modified", "classStringConstant.html#abcf908134541bea512ca0148e05f1f44", null ],
     [ "occurrence", "classStringConstant.html#a2d4689680e7982efa61a4c9dece2c691", null ],
-    [ "references", "classStringConstant.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classStringConstant.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classStringConstant.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classStringConstant.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

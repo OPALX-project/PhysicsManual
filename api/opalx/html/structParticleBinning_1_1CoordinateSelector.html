@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -162,7 +162,7 @@ struct ParticleBinning::CoordinateSelector&lt; bunch_type &gt;</div><p>Example s
 <li>If <code>operator()</code> does not return <code>value_type</code>, <code><a class="el" href="classParticleBinning_1_1AdaptBins.html" title="A class that bins particles in energy bins and allows for adaptive runtime rebinning.">AdaptBins</a></code> will not compile, and may cause segmentation faults.</li>
 </ul>
 <p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structParticleBinning_1_1CoordinateSelector.html">CoordinateSelector&lt;bunch_type&gt;</a> selector(bunch-&gt;R.getView(), 2); <span class="comment">// Access z-axis of position</span></div>
-<div class="ttc" id="astructParticleBinning_1_1CoordinateSelector_html"><div class="ttname"><a href="structParticleBinning_1_1CoordinateSelector.html">ParticleBinning::CoordinateSelector</a></div><div class="ttdoc">Example struct used to access the binning variable for each particle.</div><div class="ttdef"><b>Definition</b> <a href="BinningTools_8h_source.html#l00085">BinningTools.h:85</a></div></div>
+<div class="ttc" id="astructParticleBinning_1_1CoordinateSelector_html"><div class="ttname"><a href="structParticleBinning_1_1CoordinateSelector.html">ParticleBinning::CoordinateSelector</a></div><div class="ttdoc">Example struct used to access the binning variable for each particle.</div><div class="ttdef"><b>Definition</b> <a href="BinningTools_8h_source.html#l00089">BinningTools.h:89</a></div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Using a shared pointer does not work, since these are managed on host only! Using a simple passed Kokkos::View also does not work, since create() might be called which calls Kokkos::realloc(), which is a problem, since the copied view does not know the reallocated data. Therefore, the view is updated with <code>updateDataArr</code>!</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -171,7 +171,7 @@ struct ParticleBinning::CoordinateSelector&lt; bunch_type &gt;</div><p>Example s
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00085">85</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00089">89</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a794c6afbf061a17f201f084939cb95c7" name="a794c6afbf061a17f201f084939cb95c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a794c6afbf061a17f201f084939cb95c7">&#9670;&#160;</a></span>position_view_type</h2>
@@ -189,7 +189,7 @@ template&lt;typename bunch_type &gt; </div>
 
 <p>Type representing the view of particle positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00093">93</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00097">97</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ template&lt;typename bunch_type &gt; </div>
 
 <p>Type representing the size of the particle bunch. </p>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00090">90</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00094">94</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ template&lt;typename bunch_type &gt; </div>
 
 <p>Type representing the value of the binning variable (e.g., position or velocity). </p>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00087">87</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00091">91</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ template&lt;typename bunch_type &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00104">104</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00108">108</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
 </div>
 </div>
@@ -310,9 +310,9 @@ template&lt;typename bunch_type &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value_type <a class="el" href="classValue.html">Value</a> of the specified coordinate axis for the particle at index <code>i</code>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00129">129</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00132">132</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="BinningTools_8h_source.html#l00096">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::axis</a>, and <a class="el" href="BinningTools_8h_source.html#l00095">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::data_arr</a>.</p>
+<p class="reference">References <a class="el" href="BinningTools_8h_source.html#l00100">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::axis</a>, and <a class="el" href="BinningTools_8h_source.html#l00099">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::data_arr</a>.</p>
 
 </div>
 </div>
@@ -346,11 +346,11 @@ template&lt;typename bunch_type &gt; </div>
 <p>This function updates <code>data_arr</code> to reflect the latest particle data in the container by retrieving the view from <code>bunch-&gt;R</code>. This ensures <code>data_arr</code> is synchronized with any recent changes to the particle data (if bunch-&gt;create() is called between binnings!). <a class="el" href="classParticleBinning_1_1AdaptBins.html" title="A class that bins particles in energy bins and allows for adaptive runtime rebinning.">AdaptBins</a> calls this function automatically everytime the binning parameter is used.</p>
 <dl class="section note"><dt>Note</dt><dd>If you have your own class, you need to implement this signature and potentially update all data arrays that operator() uses (e.g. also velocity or E). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00118">118</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00121">121</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
-<p class="reference">References <a class="el" href="BinningTools_8h_source.html#l00095">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::data_arr</a>.</p>
+<p class="reference">References <a class="el" href="BinningTools_8h_source.html#l00099">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::data_arr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestBinning_8cpp_source.html#l00646">TEST_F()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestBinning_8cpp_source.html#l00669">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -371,9 +371,9 @@ template&lt;typename bunch_type &gt; </div>
 
 <p>Index of the coordinate axis to use for binning. </p>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00096">96</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00100">100</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BinningTools_8h_source.html#l00129">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BinningTools_8h_source.html#l00132">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -393,9 +393,9 @@ template&lt;typename bunch_type &gt; </div>
 
 <p><a class="el" href="namespaceKokkos.html">Kokkos</a> view of the particle data array. </p>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00095">95</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00099">99</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BinningTools_8h_source.html#l00129">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::operator()()</a>, and <a class="el" href="BinningTools_8h_source.html#l00118">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::updateDataArr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BinningTools_8h_source.html#l00132">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::operator()()</a>, and <a class="el" href="BinningTools_8h_source.html#l00121">ParticleBinning::CoordinateSelector&lt; bunch_type &gt;::updateDataArr()</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ template&lt;typename bunch_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceParticleBinning.html">ParticleBinning</a></li><li class="navelem"><a class="el" href="structParticleBinning_1_1CoordinateSelector.html">CoordinateSelector</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

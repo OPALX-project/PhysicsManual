@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['m_0',['m',['../classMatrix3D.html#add81d05a76152fe7e2277b894fe48481',1,'Matrix3D::m'],['../structmatrix__t.html#a3356371a4746dc2bc43563989ea42275',1,'matrix_t::m'],['../classEuclid3D.html#a5924e6b68bf729eba370ffc1b5361275',1,'Euclid3D::M()']]],
+  ['m_0',['m',['../classEuclid3D.html#a5924e6b68bf729eba370ffc1b5361275',1,'Euclid3D::M()'],['../classMatrix3D.html#add81d05a76152fe7e2277b894fe48481',1,'Matrix3D::m'],['../structmatrix__t.html#a3356371a4746dc2bc43563989ea42275',1,'matrix_t::m']]],
   ['m2cm_1',['m2cm',['../namespaceUnits.html#a4a324284c5575b4a1ae74670792bf314',1,'Units']]],
   ['m2mm_2',['m2mm',['../namespaceUnits.html#a610458ef9e4cd6ea2d9b23bfddef69f8',1,'Units']]],
   ['m_5f_3',['m_',['../classLinearSpline.html#a37defc04b5641cc4f2dd96cd2c930fd8',1,'LinearSpline']]],
@@ -109,7 +109,7 @@ var searchData=
   ['matrix3d_2eh_106',['Matrix3D.h',['../Matrix3D_8h.html',1,'']]],
   ['matrix3x3_5ft_107',['matrix3x3_t',['../Matrix_8h.html#ad2a3e989e287806b9cf3dc2888e7bee3',1,'Matrix.h']]],
   ['matrix6x6_5ft_108',['matrix6x6_t',['../Matrix_8h.html#ae1945a17a8cdbdbc32ebf2befdfc030a',1,'Matrix.h']]],
-  ['matrix_5ft_109',['matrix_t',['../classDistribution.html#aea0bb36d2036ce93d4570c33b05b42e1',1,'Distribution::Matrix_t'],['../structmatrix__t.html#a5d15eeae2dc11067ac54c767d4517074',1,'matrix_t::matrix_t(const matrix_t &amp;right)'],['../structmatrix__t.html#afae66a9c226b8297b840bb6c8c5bd499',1,'matrix_t::matrix_t(double init_value)'],['../structmatrix__t.html#afeb9ca318c76ad3c329d34deb10fe3a4',1,'matrix_t::matrix_t()'],['../structmatrix__t.html',1,'matrix_t&lt; Rows, Cols &gt;'],['../MultiVariateGaussian_8h.html#a52cba3719715bdfa2eadf269a147c742',1,'Matrix_t:&#160;MultiVariateGaussian.h']]],
+  ['matrix_5ft_109',['matrix_t',['../structmatrix__t.html#a5d15eeae2dc11067ac54c767d4517074',1,'matrix_t::matrix_t(const matrix_t &amp;right)'],['../structmatrix__t.html#afae66a9c226b8297b840bb6c8c5bd499',1,'matrix_t::matrix_t(double init_value)'],['../structmatrix__t.html#afeb9ca318c76ad3c329d34deb10fe3a4',1,'matrix_t::matrix_t()'],['../classDistribution.html#a9b693f3e9e3b62cd81a9e352bd82fd4b',1,'Distribution::Matrix_t'],['../structmatrix__t.html',1,'matrix_t&lt; Rows, Cols &gt;'],['../MultiVariateGaussian_8h.html#a52cba3719715bdfa2eadf269a147c742',1,'Matrix_t:&#160;MultiVariateGaussian.h']]],
   ['matrix_5ft_3c_203_2c_203_20_3e_110',['matrix_t&lt; 3, 3 &gt;',['../structmatrix__t.html',1,'']]],
   ['matrix_5ft_3c_206_2c_206_20_3e_111',['matrix_t&lt; 6, 6 &gt;',['../structmatrix__t.html',1,'']]],
   ['mattr_112',['MAttr',['../classParticleContainer.html#a1eef15ca591be82dca8e3a1b67a13290',1,'ParticleContainer']]],
@@ -166,7 +166,7 @@ var searchData=
   ['memoryprofiler_2eh_163',['MemoryProfiler.h',['../MemoryProfiler_8h.html',1,'']]],
   ['merge_164',['merge',['../classOpalBeamline.html#a4245330e018042266ae876b2b254b181',1,'OpalBeamline']]],
   ['mergebins_165',['mergeBins',['../classParticleBinning_1_1Histogram.html#a783fa5f2afe98490f42c432859febaba',1,'ParticleBinning::Histogram']]],
-  ['mesh_166',['mesh',['../classinterpolation_1_1Mesh.html',1,'interpolation::Mesh'],['../classBinningTest.html#a2ad8ae70bd989a8ec3edd5b0739c79b7',1,'BinningTest::mesh'],['../classinterpolation_1_1Mesh_1_1Iterator.html#aa41a130f156b145bffb3f4b5172c4c93',1,'interpolation::Mesh::Iterator::Mesh'],['../classinterpolation_1_1Mesh.html#ae3a1ee4c5f01f7a9d254a57edead83b8',1,'interpolation::Mesh::Mesh()']]],
+  ['mesh_166',['mesh',['../classinterpolation_1_1Mesh.html',1,'interpolation::Mesh'],['../classinterpolation_1_1Mesh_1_1Iterator.html#aa41a130f156b145bffb3f4b5172c4c93',1,'interpolation::Mesh::Iterator::Mesh'],['../classinterpolation_1_1Mesh.html#ae3a1ee4c5f01f7a9d254a57edead83b8',1,'interpolation::Mesh::Mesh()'],['../classBinningTest.html#a2ad8ae70bd989a8ec3edd5b0739c79b7',1,'BinningTest::mesh']]],
   ['mesh_2ecpp_167',['Mesh.cpp',['../Mesh_8cpp.html',1,'']]],
   ['mesh_2eh_168',['Mesh.h',['../Mesh_8h.html',1,'']]],
   ['mesh_5fm_169',['mesh_m',['../classFieldContainer.html#aab759420941cd3a5189a912cc7594a04',1,'FieldContainer::mesh_m'],['../classinterpolation_1_1Mesh_1_1Iterator.html#a3ba06ab09122ac5b2cddb86610b7511d',1,'interpolation::Mesh::Iterator::mesh_m'],['../structOpalDataImpl.html#ad423311d938b8955673a29600281e5f6',1,'OpalDataImpl::mesh_m']]],

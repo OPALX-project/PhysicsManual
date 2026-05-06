@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -311,7 +311,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements the sampling method for the flat-top distribution. x and y coordinates are uniformly distributed inside a circle and number of particles entering domain in [t, t+dt] follows flattop profile. </p>
-<p>The <a class="el" href="classFlatTop.html" title="Implements the sampling method for the flat-top distribution. x and y coordinates are uniformly distr...">FlatTop</a> distribution is f(t)/Z = exp[ -((t-riseTime_m)/sigma)^2/2 ] t &lt; riseTime 1.0 riseTime &lt; t &lt; t&lt;riseTime + flattopTime exp[ -((t-(fallTime_m + flattopTime_m))/sigmaTFall_m)^2/2 ] t&gt;riseTime + flattopTime where Z is the normalizing factor. </p>
+<p>The <a class="el" href="classFlatTop.html" title="Implements the sampling method for the flat-top distribution. x and y coordinates are uniformly distr...">FlatTop</a> distribution is f(t)/Z = exp[ -((t-riseTime_m)/sigma)^2/2 ] t &lt; riseTime 1.0 riseTime &lt; t &lt; t&lt;riseTime + flattopTime exp[ -((t-(fallTime_m + flattopTime_m))/sigmaTFall_m)^2/2 ] t&gt;riseTime</p><ul>
+<li>flattopTime where Z is the normalizing factor. </li>
+</ul>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00033">33</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -335,7 +337,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00133">133</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00114">114</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +620,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00350">350</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00144">totalN_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00125">totalN_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00183">generateParticles()</a>, and <a class="el" href="TestFlatTop_8cpp_source.html#l00252">TEST_F()</a>.</p>
 
@@ -734,7 +736,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00263">263</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="SamplingBase_8cpp_source.html#l00006">SamplingBase::computeLocalEmitCount()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00222">computeNlocalUniformly()</a>, <a class="el" href="FlatTop_8h_source.html#l00137">distArea_m</a>, <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00238">integrateTrapezoidal()</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00144">totalN_m</a>.</p>
+<p class="reference">References <a class="el" href="SamplingBase_8cpp_source.html#l00006">SamplingBase::computeLocalEmitCount()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00222">computeNlocalUniformly()</a>, <a class="el" href="FlatTop_8h_source.html#l00118">distArea_m</a>, <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00238">integrateTrapezoidal()</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00125">totalN_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00360">emitParticles()</a>, <a class="el" href="TestFlatTop_8cpp_source.html#l00252">TEST_F()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00392">testNumEmitParticles()</a>.</p>
 <div class="dynheader">
@@ -890,7 +892,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00204">204</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00141">fallTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00135">flattopTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00142">riseTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00138">sigmaTFall_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00139">sigmaTRise_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00122">fallTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00116">flattopTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00123">riseTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00119">sigmaTFall_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00120">sigmaTRise_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00263">countEnteringParticlesPerRank()</a>, and <a class="el" href="TestFlatTop_8cpp_source.html#l00252">TEST_F()</a>.</p>
 
@@ -1004,7 +1006,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00088">88</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00025">SamplingBase::emissionModel_m</a>, <a class="el" href="VectorMath_8h_source.html#l00015">euclidean_norm()</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00023">SamplingBase::P0_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>, <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00022">SamplingBase::R0_m</a>, <a class="el" href="FlatTop_8h_source.html#l00134">rand_pool_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00149">sigmaR_m</a>.</p>
+<p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00025">SamplingBase::emissionModel_m</a>, <a class="el" href="VectorMath_8h_source.html#l00015">euclidean_norm()</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00023">SamplingBase::P0_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>, <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00022">SamplingBase::R0_m</a>, <a class="el" href="FlatTop_8h_source.html#l00115">rand_pool_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00130">sigmaR_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00360">emitParticles()</a>, <a class="el" href="TestFlatTop_8cpp_source.html#l00104">TEST_F()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00392">testNumEmitParticles()</a>.</p>
 <div class="dynheader">
@@ -1045,9 +1047,9 @@ Here is the call graph for this function:</div>
 
 <p>Returns the total area of the distribution. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00117">117</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00103">103</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00137">distArea_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00118">distArea_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="TestFlatTop_8cpp_source.html#l00252">TEST_F()</a>.</p>
 
@@ -1107,9 +1109,9 @@ Here is the call graph for this function:</div>
 
 <p>Returns the total emission time. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00124">124</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00108">108</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00146">emissionTime_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00127">emissionTime_m</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1151,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00242">242</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="FlatTop_8h_source.html#l00146">emissionTime_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00018">SamplingBase::fc_m</a>, <a class="el" href="FlatTop_8h_source.html#l00148">hr_m</a>, <a class="el" href="FlatTop_8h_source.html#l00147">nr_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00149">sigmaR_m</a>.</p>
+<p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="FlatTop_8h_source.html#l00127">emissionTime_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00018">SamplingBase::fc_m</a>, <a class="el" href="FlatTop_8h_source.html#l00129">hr_m</a>, <a class="el" href="FlatTop_8h_source.html#l00128">nr_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>, and <a class="el" href="FlatTop_8h_source.html#l00130">sigmaR_m</a>.</p>
 
 </div>
 </div>
@@ -1243,9 +1245,9 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classSamplingBase.html#abe1cc287cf0b23bb072f49fc80845bfd">SamplingBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00129">129</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00111">111</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00146">emissionTime_m</a>, and <a class="el" href="SamplingBase_8hpp_source.html#l00024">SamplingBase::t0_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00127">emissionTime_m</a>, and <a class="el" href="SamplingBase_8hpp_source.html#l00024">SamplingBase::t0_m</a>.</p>
 
 </div>
 </div>
@@ -1275,9 +1277,9 @@ Here is the call graph for this function:</div>
 
 <p>Sets the total area of the distribution. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00109">109</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00097">97</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00137">distArea_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00118">distArea_m</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1387,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00058">58</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00140">cutoffR_m</a>, <a class="el" href="FlatTop_8h_source.html#l00137">distArea_m</a>, <a class="el" href="FlatTop_8h_source.html#l00146">emissionTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00143">emitting_m</a>, <a class="el" href="FlatTop_8h_source.html#l00141">fallTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00135">flattopTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00136">normalizedFlankArea_m</a>, <a class="el" href="FlatTop_8h_source.html#l00142">riseTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00149">sigmaR_m</a>, <a class="el" href="FlatTop_8h_source.html#l00138">sigmaTFall_m</a>, <a class="el" href="FlatTop_8h_source.html#l00139">sigmaTRise_m</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00121">cutoffR_m</a>, <a class="el" href="FlatTop_8h_source.html#l00118">distArea_m</a>, <a class="el" href="FlatTop_8h_source.html#l00127">emissionTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00124">emitting_m</a>, <a class="el" href="FlatTop_8h_source.html#l00122">fallTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00116">flattopTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00117">normalizedFlankArea_m</a>, <a class="el" href="FlatTop_8h_source.html#l00123">riseTime_m</a>, <a class="el" href="FlatTop_8h_source.html#l00130">sigmaR_m</a>, <a class="el" href="FlatTop_8h_source.html#l00119">sigmaTFall_m</a>, <a class="el" href="FlatTop_8h_source.html#l00120">sigmaTRise_m</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00025">FlatTop()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00017">FlatTop()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00047">setParameters()</a>.</p>
 
@@ -1417,7 +1419,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00181">181</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ExpressionRandom_8h_source.html#l00024">nr</a>, and <a class="el" href="FlatTop_8h_source.html#l00147">nr_m</a>.</p>
+<p class="reference">References <a class="el" href="ExpressionRandom_8h_source.html#l00024">nr</a>, and <a class="el" href="FlatTop_8h_source.html#l00128">nr_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00183">generateParticles()</a>.</p>
 
@@ -1457,7 +1459,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00047">47</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00146">emissionTime_m</a>, <a class="el" href="Distribution_8h_source.html#l00118">Distribution::emitting_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00018">SamplingBase::fc_m</a>, <a class="el" href="Distribution_8h_source.html#l00254">Distribution::getCutoffR()</a>, <a class="el" href="Distribution_8h_source.html#l00238">Distribution::getSigmaR()</a>, <a class="el" href="Distribution_8h_source.html#l00266">Distribution::getSigmaTFall()</a>, <a class="el" href="Distribution_8h_source.html#l00262">Distribution::getSigmaTRise()</a>, <a class="el" href="Distribution_8h_source.html#l00270">Distribution::getTPulseLengthFWHM()</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00019">SamplingBase::opalDist_m</a>, <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>, and <a class="el" href="Distribution_8cpp_source.html#l00261">Distribution::setTEmission()</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00127">emissionTime_m</a>, <a class="el" href="Distribution_8h_source.html#l00118">Distribution::emitting_m</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00018">SamplingBase::fc_m</a>, <a class="el" href="Distribution_8h_source.html#l00240">Distribution::getCutoffR()</a>, <a class="el" href="Distribution_8h_source.html#l00232">Distribution::getSigmaR()</a>, <a class="el" href="Distribution_8h_source.html#l00246">Distribution::getSigmaTFall()</a>, <a class="el" href="Distribution_8h_source.html#l00244">Distribution::getSigmaTRise()</a>, <a class="el" href="Distribution_8h_source.html#l00248">Distribution::getTPulseLengthFWHM()</a>, <a class="el" href="SamplingBase_8hpp_source.html#l00019">SamplingBase::opalDist_m</a>, <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>, and <a class="el" href="Distribution_8cpp_source.html#l00267">Distribution::setTEmission()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00010">FlatTop()</a>.</p>
 <div class="dynheader">
@@ -1521,7 +1523,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00033">33</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00145">withDomainDecomp_m</a>.</p>
+<p class="reference">References <a class="el" href="FlatTop_8h_source.html#l00126">withDomainDecomp_m</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="TestFlatTop_8cpp_source.html#l00252">TEST_F()</a>.</p>
 
@@ -1721,7 +1723,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="FlatTop_8cpp_source.html#l00392">392</a> of file <a class="el" href="FlatTop_8cpp_source.html">FlatTop.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="FlatTop_8cpp_source.html#l00263">countEnteringParticlesPerRank()</a>, <a class="el" href="FlatTop_8h_source.html#l00146">emissionTime_m</a>, <a class="el" href="FlatTop_8cpp_source.html#l00088">generateUniformDisk()</a>, and <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>.</p>
+<p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="FlatTop_8cpp_source.html#l00263">countEnteringParticlesPerRank()</a>, <a class="el" href="FlatTop_8h_source.html#l00127">emissionTime_m</a>, <a class="el" href="FlatTop_8cpp_source.html#l00088">generateUniformDisk()</a>, and <a class="el" href="SamplingBase_8hpp_source.html#l00017">SamplingBase::pc_m</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1770,7 +1772,7 @@ Here is the call graph for this function:</div>
 
 <p>Cutoff radius. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00140">140</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00121">121</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -1798,9 +1800,9 @@ Here is the call graph for this function:</div>
 
 <p>Total area of the flattop distribution. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00137">137</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00118">118</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00263">countEnteringParticlesPerRank()</a>, <a class="el" href="FlatTop_8h_source.html#l00117">getDistArea()</a>, <a class="el" href="FlatTop_8h_source.html#l00109">setDistArea()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00263">countEnteringParticlesPerRank()</a>, <a class="el" href="FlatTop_8h_source.html#l00103">getDistArea()</a>, <a class="el" href="FlatTop_8h_source.html#l00097">setDistArea()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
 </div>
 </div>
@@ -1852,9 +1854,9 @@ Here is the call graph for this function:</div>
 
 <p>Total emission time. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00146">146</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00127">127</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="FlatTop_8h_source.html#l00124">getEmissionTime()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00242">initDomainDecomp()</a>, <a class="el" href="FlatTop_8h_source.html#l00129">isEmissionDone()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00047">setParameters()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00392">testNumEmitParticles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="FlatTop_8h_source.html#l00108">getEmissionTime()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00242">initDomainDecomp()</a>, <a class="el" href="FlatTop_8h_source.html#l00111">isEmissionDone()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00047">setParameters()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00392">testNumEmitParticles()</a>.</p>
 
 </div>
 </div>
@@ -1880,7 +1882,7 @@ Here is the call graph for this function:</div>
 
 <p>Flag for particle emission status. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00143">143</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00124">124</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -1908,7 +1910,7 @@ Here is the call graph for this function:</div>
 
 <p>Time duration for the fall phase. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00141">141</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00122">122</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -1962,7 +1964,7 @@ Here is the call graph for this function:</div>
 
 <p>Time duration of when the time profile is flat. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00135">135</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00116">116</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -2018,7 +2020,7 @@ Here is the call graph for this function:</div>
 
 <p>Grid spacing. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00148">148</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00129">129</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00242">initDomainDecomp()</a>.</p>
 
@@ -2046,7 +2048,7 @@ Here is the call graph for this function:</div>
 
 <p>Normalized area of the distribution flanks. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00136">136</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00117">117</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -2074,7 +2076,7 @@ Here is the call graph for this function:</div>
 
 <p>Number of grid points per direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00147">147</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00128">128</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00242">initDomainDecomp()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00181">setNr()</a>.</p>
 
@@ -2208,7 +2210,7 @@ Here is the call graph for this function:</div>
 
 <p><a class="el" href="classRandom.html" title="The OPALX expression random generator.">Random</a> number generator pool. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00134">134</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00115">115</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00088">generateUniformDisk()</a>.</p>
 
@@ -2236,7 +2238,7 @@ Here is the call graph for this function:</div>
 
 <p>Time duration for the rise phase. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00142">142</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00123">123</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -2286,7 +2288,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00149">149</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00130">130</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00088">generateUniformDisk()</a>, <a class="el" href="FlatTop_8cpp_source.html#l00242">initDomainDecomp()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -2314,7 +2316,7 @@ Here is the call graph for this function:</div>
 
 <p>Standard deviation for fall time profile. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00138">138</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00119">119</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -2342,7 +2344,7 @@ Here is the call graph for this function:</div>
 
 <p>Standard deviation for rise time profile. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00139">139</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00120">120</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00204">FlatTopProfile()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00058">setInternalVariables()</a>.</p>
 
@@ -2370,7 +2372,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="SamplingBase_8hpp_source.html#l00024">24</a> of file <a class="el" href="SamplingBase_8hpp_source.html">SamplingBase.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00360">emitParticles()</a>, <a class="el" href="FromFile_8cpp_source.html#l00348">FromFile::emitParticles()</a>, <a class="el" href="Gaussian_8cpp_source.html#l00185">Gaussian::emitParticles()</a>, <a class="el" href="MultiVariateGaussian_8cpp_source.html#l00374">MultiVariateGaussian::emitParticles()</a>, <a class="el" href="FromFile_8cpp_source.html#l00234">FromFile::generateParticles()</a>, <a class="el" href="Gaussian_8cpp_source.html#l00064">Gaussian::generateParticles()</a>, <a class="el" href="MultiVariateGaussian_8cpp_source.html#l00190">MultiVariateGaussian::generateParticles()</a>, <a class="el" href="FlatTop_8h_source.html#l00129">isEmissionDone()</a>, and <a class="el" href="SamplingBase_8hpp_source.html#l00043">SamplingBase::setEmissionOffsets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00360">emitParticles()</a>, <a class="el" href="FromFile_8cpp_source.html#l00348">FromFile::emitParticles()</a>, <a class="el" href="Gaussian_8cpp_source.html#l00185">Gaussian::emitParticles()</a>, <a class="el" href="MultiVariateGaussian_8cpp_source.html#l00374">MultiVariateGaussian::emitParticles()</a>, <a class="el" href="FromFile_8cpp_source.html#l00234">FromFile::generateParticles()</a>, <a class="el" href="Gaussian_8cpp_source.html#l00064">Gaussian::generateParticles()</a>, <a class="el" href="MultiVariateGaussian_8cpp_source.html#l00190">MultiVariateGaussian::generateParticles()</a>, <a class="el" href="FlatTop_8h_source.html#l00111">isEmissionDone()</a>, and <a class="el" href="SamplingBase_8hpp_source.html#l00043">SamplingBase::setEmissionOffsets()</a>.</p>
 
 </div>
 </div>
@@ -2396,7 +2398,7 @@ Here is the call graph for this function:</div>
 
 <p>Total number of particles. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00144">144</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00125">125</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00350">allocateParticles()</a>, and <a class="el" href="FlatTop_8cpp_source.html#l00263">countEnteringParticlesPerRank()</a>.</p>
 
@@ -2424,7 +2426,7 @@ Here is the call graph for this function:</div>
 
 <p>Flag for domain decomposition. </p>
 
-<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00145">145</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="FlatTop_8h_source.html#l00126">126</a> of file <a class="el" href="FlatTop_8h_source.html">FlatTop.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FlatTop_8cpp_source.html#l00033">setWithDomainDecomp()</a>.</p>
 
@@ -2440,7 +2442,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classFlatTop.html">FlatTop</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:15 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:07 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

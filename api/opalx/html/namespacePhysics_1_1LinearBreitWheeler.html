@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>One sampled linear Breit-Wheeler event. </p>
 <p>The first benchmark path keeps only the unpolarized kinematics. The event is represented by the center-of-momentum scattering variables and by the final laboratory-frame electron and positron four-momenta. </p>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8h_source.html#l00051">51</a> of file <a class="el" href="LinearBreitWheeler_8h_source.html">LinearBreitWheeler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8h_source.html#l00059">59</a> of file <a class="el" href="LinearBreitWheeler_8h_source.html">LinearBreitWheeler.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for Physics::LinearBreitWheeler::SampledEvent:</div>
 <div class="dyncontent">
@@ -184,31 +184,31 @@ Center-of-momentum azimuth \(\phi\) in rad. </td></tr>
 <tr><td class="fieldtype">
 <a id="acaaea4a3a8f5080f9c32b7565b1a4edb" name="acaaea4a3a8f5080f9c32b7565b1a4edb"></a>double</td>
 <td class="fieldname">
-electronEnergyLabGeV = 0.0</td>
+electronEnergyLabGeV</td>
 <td class="fielddoc">
 Outgoing electron energy in the lab frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a39d5d29ead01f1db07e7f48fec0ea0fb" name="a39d5d29ead01f1db07e7f48fec0ea0fb"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-electronMomentumLabGeV = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+electronMomentumLabGeV</td>
 <td class="fielddoc">
 Outgoing electron three-momentum in the lab frame [GeV/c]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a237d2c740a9181ddaf99342babd05aae" name="a237d2c740a9181ddaf99342babd05aae"></a>double</td>
 <td class="fieldname">
-positronEnergyLabGeV = 0.0</td>
+positronEnergyLabGeV</td>
 <td class="fielddoc">
 Outgoing positron energy in the lab frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a6f8d47f85f5782667dd1dc5d8a46425a" name="a6f8d47f85f5782667dd1dc5d8a46425a"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-positronMomentumLabGeV = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+positronMomentumLabGeV</td>
 <td class="fielddoc">
 Outgoing positron three-momentum in the lab frame [GeV/c]. </td></tr>
 <tr><td class="fieldtype">
 <a id="a963a1cd7976489ef54d7845a818719a5" name="a963a1cd7976489ef54d7845a818719a5"></a>double</td>
 <td class="fieldname">
-scatteringCosineCM = 0.0</td>
+scatteringCosineCM</td>
 <td class="fielddoc">
 Center-of-momentum scattering cosine \(\cos\theta\). </td></tr>
 </table>
@@ -254,25 +254,25 @@ Collaboration diagram for Physics::LinearBreitWheeler::SamplingKernel:</div>
 <tr><td class="fieldtype">
 <a id="a511601fed642bc809f68b609f56116e6" name="a511601fed642bc809f68b609f56116e6"></a>double</td>
 <td class="fieldname">
-cmLorentzGamma = 0.0</td>
+cmLorentzGamma</td>
 <td class="fielddoc">
 Lorentz factor of the CM frame relative to the laboratory frame. </td></tr>
 <tr><td class="fieldtype">
 <a id="a9e2ab7fe7311ff72f4bd36f194e81e0b" name="a9e2ab7fe7311ff72f4bd36f194e81e0b"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-cmVelocity = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+cmVelocity</td>
 <td class="fielddoc">
 Dimensionless CM boost velocity. </td></tr>
 <tr><td class="fieldtype">
 <a id="a417d87475e8a0abd94be2357a699ff31" name="a417d87475e8a0abd94be2357a699ff31"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-highEnergyDirection = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+highEnergyDirection</td>
 <td class="fielddoc">
 Normalized incoming high-energy photon direction. </td></tr>
 <tr><td class="fieldtype">
 <a id="a86aedb765592e495109613145dbdc716" name="a86aedb765592e495109613145dbdc716"></a>double</td>
 <td class="fieldname">
-highEnergyPhotonEnergyGeV = 0.0</td>
+highEnergyPhotonEnergyGeV</td>
 <td class="fielddoc">
 Incoming high-energy photon energy in the lab frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
@@ -284,13 +284,13 @@ Two-photon invariant \(s\) in GeV^2. </td></tr>
 <tr><td class="fieldtype">
 <a id="a6c4266555cea0c9acdfc1438989aa004" name="a6c4266555cea0c9acdfc1438989aa004"></a><a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt; double, 3 &gt;</td>
 <td class="fieldname">
-laserDirection = <a class="el" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a>&lt;double, 3&gt;(0.0)</td>
+laserDirection</td>
 <td class="fielddoc">
 Normalized incoming laser-photon direction. </td></tr>
 <tr><td class="fieldtype">
 <a id="ac0c27e0dd17d52b1f1ea4c41d872a39c" name="ac0c27e0dd17d52b1f1ea4c41d872a39c"></a>double</td>
 <td class="fieldname">
-laserPhotonEnergyGeV = 0.0</td>
+laserPhotonEnergyGeV</td>
 <td class="fielddoc">
 Incoming laser-photon energy in the lab frame [GeV]. </td></tr>
 <tr><td class="fieldtype">
@@ -298,13 +298,15 @@ Incoming laser-photon energy in the lab frame [GeV]. </td></tr>
 <td class="fieldname">
 pairBetaCM = 0.0</td>
 <td class="fielddoc">
-Outgoing lepton speed \(\beta = \sqrt{1 - 4m_e^2/s}\) in the pair CM frame. </td></tr>
+<p>Outgoing lepton speed \(\beta = \sqrt{1 - 4m_e^2/s}\) in the pair CM frame. </p>
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a8fae1e014e8f3d18deb1a14891cf10e4" name="a8fae1e014e8f3d18deb1a14891cf10e4"></a>double</td>
 <td class="fieldname">
 rejectionUpperBound = 0.0</td>
 <td class="fielddoc">
-Conservative rejection-sampling envelope for the unpolarized CAIN-aligned angular kernel. </td></tr>
+<p>Conservative rejection-sampling envelope for the unpolarized CAIN-aligned angular kernel. </p>
+</td></tr>
 </table>
 
 </div>
@@ -365,11 +367,11 @@ Conservative rejection-sampling envelope for the unpolarized CAIN-aligned angula
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Invariant \(s\) in GeV^2. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00158">158</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00152">152</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>.</p>
+<p class="reference">References <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00222">makeSamplingKernel()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00069">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00213">makeSamplingKernel()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00068">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -408,11 +410,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if \(s \ge 4 m_e^2\). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">174</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">166</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00170">thresholdInvariantSGeV2()</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00164">thresholdInvariantSGeV2()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00222">makeSamplingKernel()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00178">pairBetaCM()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00201">proposalZToScatteringCosineCM()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00261">sampleEvent()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00069">TEST()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00187">totalCrossSection()</a>, and <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00212">unpolarizedAngularWeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00213">makeSamplingKernel()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00168">pairBetaCM()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00191">proposalZToScatteringCosineCM()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00252">sampleEvent()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00068">TEST()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00177">totalCrossSection()</a>, and <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00203">unpolarizedAngularWeight()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -451,9 +453,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Seeded host-side random engine. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00257">257</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00248">248</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00126">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00342">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00478">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00418">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00567">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00154">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00117">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00129">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00327">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00465">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00403">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00554">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00153">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00116">TEST()</a>.</p>
 
 </div>
 </div>
@@ -498,11 +500,11 @@ Here is the call graph for this function:</div>
 <p>Build a cached sampling kernel for repeated sampled events. </p>
 <p>The initial OPALX sampled-event path mirrors the linear CAIN event generator: it keeps the fixed two-photon geometry, computes the corresponding CM boost, and precomputes a rejection-sampling envelope for the unpolarized CAIN-style angular weight. </p>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00222">222</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00213">213</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8h_source.html#l00039">Physics::LinearBreitWheeler::SamplingKernel::cmLorentzGamma</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00040">Physics::LinearBreitWheeler::SamplingKernel::cmVelocity</a>, <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00035">Physics::LinearBreitWheeler::SamplingKernel::highEnergyDirection</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00033">Physics::LinearBreitWheeler::SamplingKernel::highEnergyPhotonEnergyGeV</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00158">invariantSGeV2()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00037">Physics::LinearBreitWheeler::SamplingKernel::invariantSGeV2</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00036">Physics::LinearBreitWheeler::SamplingKernel::laserDirection</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00034">Physics::LinearBreitWheeler::SamplingKernel::laserPhotonEnergyGeV</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00178">pairBetaCM()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00038">Physics::LinearBreitWheeler::SamplingKernel::pairBetaCM</a>, and <a class="el" href="LinearBreitWheeler_8h_source.html#l00041">Physics::LinearBreitWheeler::SamplingKernel::rejectionUpperBound</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8h_source.html#l00044">Physics::LinearBreitWheeler::SamplingKernel::cmLorentzGamma</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00046">Physics::LinearBreitWheeler::SamplingKernel::cmVelocity</a>, <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00037">Physics::LinearBreitWheeler::SamplingKernel::highEnergyDirection</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00033">Physics::LinearBreitWheeler::SamplingKernel::highEnergyPhotonEnergyGeV</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00152">invariantSGeV2()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00041">Physics::LinearBreitWheeler::SamplingKernel::invariantSGeV2</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00039">Physics::LinearBreitWheeler::SamplingKernel::laserDirection</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00035">Physics::LinearBreitWheeler::SamplingKernel::laserPhotonEnergyGeV</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00168">pairBetaCM()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00042">Physics::LinearBreitWheeler::SamplingKernel::pairBetaCM</a>, and <a class="el" href="LinearBreitWheeler_8h_source.html#l00048">Physics::LinearBreitWheeler::SamplingKernel::rejectionUpperBound</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00126">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00342">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00478">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00418">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00567">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00154">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00117">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00129">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00327">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00465">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00403">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00554">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00153">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00116">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -557,11 +559,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Dimensionless center-of-momentum lepton speed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00178">178</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00168">168</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>, and <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00170">thresholdInvariantSGeV2()</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>, and <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00164">thresholdInvariantSGeV2()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00222">makeSamplingKernel()</a>, and <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00187">totalCrossSection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00213">makeSamplingKernel()</a>, and <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00177">totalCrossSection()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -608,11 +610,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classLaser.html" title="Passive OPALX laser element.">Laser</a> photon energy in GeV. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00152">152</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00145">145</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Physics_8h_source.html#l00060">Physics::c</a>, <a class="el" href="Physics_8h_source.html#l00069">Physics::h_bar</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00126">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00342">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00478">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00418">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00567">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00154">TEST()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00069">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00117">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00129">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00327">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00465">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00403">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00554">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00153">TEST()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00068">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00116">TEST()</a>.</p>
 
 </div>
 </div>
@@ -658,11 +660,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Center-of-momentum scattering cosine corresponding to <code>proposalZ</code>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00201">201</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00191">191</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00097">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00096">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -715,11 +717,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sampled event. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00261">261</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00252">252</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8h_source.html#l00039">Physics::LinearBreitWheeler::SamplingKernel::cmLorentzGamma</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00040">Physics::LinearBreitWheeler::SamplingKernel::cmVelocity</a>, <a class="el" href="Vector3D_8cpp_source.html#l00118">dot()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00035">Physics::LinearBreitWheeler::SamplingKernel::highEnergyDirection</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00037">Physics::LinearBreitWheeler::SamplingKernel::invariantSGeV2</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>, <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00041">Physics::LinearBreitWheeler::SamplingKernel::rejectionUpperBound</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00052">Physics::LinearBreitWheeler::SampledEvent::scatteringCosineCM</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8h_source.html#l00044">Physics::LinearBreitWheeler::SamplingKernel::cmLorentzGamma</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00046">Physics::LinearBreitWheeler::SamplingKernel::cmVelocity</a>, <a class="el" href="Vector3D_8cpp_source.html#l00095">dot()</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00037">Physics::LinearBreitWheeler::SamplingKernel::highEnergyDirection</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00041">Physics::LinearBreitWheeler::SamplingKernel::invariantSGeV2</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>, <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00048">Physics::LinearBreitWheeler::SamplingKernel::rejectionUpperBound</a>, <a class="el" href="LinearBreitWheeler_8h_source.html#l00060">Physics::LinearBreitWheeler::SampledEvent::scatteringCosineCM</a>, and <a class="el" href="Physics_8h_source.html#l00040">Physics::two_pi</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00126">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00342">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00478">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00418">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00567">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00154">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00117">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheelerBenchmark_8cpp_source.html#l00129">main()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00327">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00465">LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00403">LinearBreitWheelerBenchmark::sampleHistogram()</a>, <a class="el" href="LinearBreitWheelerBenchmarkCommon_8h_source.html#l00554">LinearBreitWheelerBenchmark::sampleJointHistogram()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00153">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00116">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -759,11 +761,11 @@ Here is the call graph for this function:</div>
 \]
 </p>
  
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00170">170</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00164">164</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Physics_8h_source.html#l00093">Physics::m_e</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00178">pairBetaCM()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00069">TEST()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00097">TEST()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00086">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00107">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00168">pairBetaCM()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00068">TEST()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00096">TEST()</a>, <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00085">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00106">TEST()</a>.</p>
 
 </div>
 </div>
@@ -801,11 +803,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Total cross section in m^2. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00187">187</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00177">177</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00178">pairBetaCM()</a>, <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, and <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>, <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00168">pairBetaCM()</a>, <a class="el" href="Physics_8h_source.html#l00036">Physics::pi</a>, and <a class="el" href="Physics_8h_source.html#l00096">Physics::r_e</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00091">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00086">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00090">TEST()</a>, and <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00085">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -862,11 +864,11 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Non-negative unpolarized angular weight. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00212">212</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00203">203</a> of file <a class="el" href="LinearBreitWheeler_8cpp_source.html">LinearBreitWheeler.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00174">isAboveThreshold()</a>.</p>
+<p class="reference">References <a class="el" href="LinearBreitWheeler_8cpp_source.html#l00166">isAboveThreshold()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00107">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TestLinearBreitWheeler_8cpp_source.html#l00106">TEST()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -888,7 +890,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacePhysics.html">Physics</a></li><li class="navelem"><a class="el" href="namespacePhysics_1_1LinearBreitWheeler.html">LinearBreitWheeler</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

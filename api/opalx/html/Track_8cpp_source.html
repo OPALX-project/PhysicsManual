@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -135,52 +135,48 @@ $(document).ready(function(){initNavTree('Track_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classTrack.html#a113c52314b45f8d1b0c0b1a2f24bd302">   36</a></span><a class="code hl_function" href="classTrack.html#a11457bcda8be04595018c11173d8241c">Track::Track</a>(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="classBeamSequence.html">BeamSequence</a>* u, <span class="keyword">const</span> <a class="code hl_class" href="classPartData.html">PartData</a>&amp; ref, <span class="keyword">const</span> std::vector&lt;double&gt;&amp; dt,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> std::vector&lt;unsigned long long&gt;&amp; maxtsteps, <span class="keywordtype">int</span> stepsperturn, <span class="keywordtype">double</span> zStart,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; zStop, <a class="code hl_enumeration" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">Steppers::TimeIntegrator</a> timeintegrator, <span class="keywordtype">double</span> t0,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">double</span> dtScInit, <span class="keywordtype">double</span> deltaTau,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classEmissionSourceList.html">EmissionSourceList</a>* emissionSourcesList,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; beamNames)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    : bunch(nullptr),</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      reference(ref),</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      use(u),</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      emissionSources(emissionSourcesList),</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      parser(),</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      dT(dt),</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      dtScInit(dtScInit),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      deltaTau(deltaTau),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      t0_m(t0),</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      localTimeSteps(maxtsteps),</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      stepsPerTurn(stepsperturn),</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      zstart(zStart),</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      zstop(zStop),</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      timeIntegrator(timeintegrator),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      truncOrder(1),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      beamNames_m(beamNames) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a>()-&gt;hasBunchAllocated()) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// \todo crashes here</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// bunch = OpalData::getInstance()-&gt;getPartBunch();</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="classBeamSequence.html">BeamSequence</a>* u, <span class="keyword">const</span> <a class="code hl_class" href="classPartData.html">PartData</a>&amp; ref, <span class="keyword">const</span> std::vector&lt;double&gt;&amp; dt,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">const</span> std::vector&lt;unsigned long long&gt;&amp; maxtsteps, <span class="keywordtype">int</span> stepsperturn, <span class="keywordtype">double</span> zStart,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">const</span> std::vector&lt;double&gt;&amp; zStop, <a class="code hl_enumeration" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">Steppers::TimeIntegrator</a> timeintegrator, <span class="keywordtype">double</span> t0,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">double</span> dtScInit, <span class="keywordtype">double</span> deltaTau, <a class="code hl_class" href="classEmissionSourceList.html">EmissionSourceList</a>* emissionSourcesList,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; beamNames)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    : bunch(nullptr),</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      reference(ref),</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      use(u),</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      emissionSources(emissionSourcesList),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      parser(),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      dT(dt),</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      dtScInit(dtScInit),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      deltaTau(deltaTau),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      t0_m(t0),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      localTimeSteps(maxtsteps),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      stepsPerTurn(stepsperturn),</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      zstart(zStart),</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      zstop(zStop),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      timeIntegrator(timeintegrator),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      truncOrder(1),</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      beamNames_m(beamNames) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a>()-&gt;hasBunchAllocated()) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// \todo crashes here</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// bunch = OpalData::getInstance()-&gt;getPartBunch();</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classTrack.html#a416e75e66accc8eb9e3fafc3e8555216">   67</a></span><a class="code hl_function" href="classTrack.html#a416e75e66accc8eb9e3fafc3e8555216">Track::~Track</a>() {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
-</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classTrack.html#a416e75e66accc8eb9e3fafc3e8555216">   66</a></span><a class="code hl_function" href="classTrack.html#a416e75e66accc8eb9e3fafc3e8555216">Track::~Track</a>() {}</div>
 <div class="ttc" id="aEmissionSourceList_8h_html"><div class="ttname"><a href="EmissionSourceList_8h.html">EmissionSourceList.h</a></div></div>
 <div class="ttc" id="aOpalData_8h_html"><div class="ttname"><a href="OpalData_8h.html">OpalData.h</a></div></div>
 <div class="ttc" id="aOptions_8h_html"><div class="ttname"><a href="Options_8h.html">Options.h</a></div></div>
 <div class="ttc" id="aPartBunch_8h_html"><div class="ttname"><a href="PartBunch_8h.html">PartBunch.h</a></div><div class="ttdoc">Template PIC bunch: IPPL PicManager, shared field mesh/solver, and multiple particle containers.</div></div>
 <div class="ttc" id="aTrack_8h_html"><div class="ttname"><a href="Track_8h.html">Track.h</a></div></div>
-<div class="ttc" id="aclassBeamSequence_html"><div class="ttname"><a href="classBeamSequence.html">BeamSequence</a></div><div class="ttdoc">The base class for all OPAL beam lines and sequences.</div><div class="ttdef"><b>Definition</b> <a href="BeamSequence_8h_source.html#l00032">BeamSequence.h:32</a></div></div>
+<div class="ttc" id="aclassBeamSequence_html"><div class="ttname"><a href="classBeamSequence.html">BeamSequence</a></div><div class="ttdoc">The base class for all OPAL beam lines and sequences.</div><div class="ttdef"><b>Definition</b> <a href="BeamSequence_8h_source.html#l00031">BeamSequence.h:31</a></div></div>
 <div class="ttc" id="aclassEmissionSourceList_html"><div class="ttname"><a href="classEmissionSourceList.html">EmissionSourceList</a></div><div class="ttdef"><b>Definition</b> <a href="EmissionSourceList_8h_source.html#l00029">EmissionSourceList.h:29</a></div></div>
-<div class="ttc" id="aclassOpalData_html_ac79e35ccb2194504a19ce52ddc5fd6e0"><div class="ttname"><a href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a></div><div class="ttdeci">static OpalData * getInstance()</div><div class="ttdef"><b>Definition</b> <a href="OpalData_8cpp_source.html#l00195">OpalData.cpp:195</a></div></div>
+<div class="ttc" id="aclassOpalData_html_ac79e35ccb2194504a19ce52ddc5fd6e0"><div class="ttname"><a href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a></div><div class="ttdeci">static OpalData * getInstance()</div><div class="ttdef"><b>Definition</b> <a href="OpalData_8cpp_source.html#l00193">OpalData.cpp:193</a></div></div>
 <div class="ttc" id="aclassPartData_html"><div class="ttname"><a href="classPartData.html">PartData</a></div><div class="ttdoc">Particle reference data.</div><div class="ttdef"><b>Definition</b> <a href="PartData_8h_source.html#l00037">PartData.h:37</a></div></div>
 <div class="ttc" id="aclassTrack_html"><div class="ttname"><a href="classTrack.html">Track</a></div><div class="ttdef"><b>Definition</b> <a href="Track_8h_source.html#l00035">Track.h:35</a></div></div>
 <div class="ttc" id="aclassTrack_html_a11457bcda8be04595018c11173d8241c"><div class="ttname"><a href="classTrack.html#a11457bcda8be04595018c11173d8241c">Track::Track</a></div><div class="ttdeci">Track()</div></div>
-<div class="ttc" id="aclassTrack_html_a416e75e66accc8eb9e3fafc3e8555216"><div class="ttname"><a href="classTrack.html#a416e75e66accc8eb9e3fafc3e8555216">Track::~Track</a></div><div class="ttdeci">~Track()</div><div class="ttdef"><b>Definition</b> <a href="Track_8cpp_source.html#l00067">Track.cpp:67</a></div></div>
-<div class="ttc" id="aclassTrack_html_a935f94ad82bc01cce07a008e43d45e72"><div class="ttname"><a href="classTrack.html#a935f94ad82bc01cce07a008e43d45e72">Track::block</a></div><div class="ttdeci">static Track * block</div><div class="ttdoc">The block of track data.</div><div class="ttdef"><b>Definition</b> <a href="Track_8h_source.html#l00062">Track.h:62</a></div></div>
+<div class="ttc" id="aclassTrack_html_a416e75e66accc8eb9e3fafc3e8555216"><div class="ttname"><a href="classTrack.html#a416e75e66accc8eb9e3fafc3e8555216">Track::~Track</a></div><div class="ttdeci">~Track()</div><div class="ttdef"><b>Definition</b> <a href="Track_8cpp_source.html#l00066">Track.cpp:66</a></div></div>
+<div class="ttc" id="aclassTrack_html_a935f94ad82bc01cce07a008e43d45e72"><div class="ttname"><a href="classTrack.html#a935f94ad82bc01cce07a008e43d45e72">Track::block</a></div><div class="ttdeci">static Track * block</div><div class="ttdoc">The block of track data.</div><div class="ttdef"><b>Definition</b> <a href="Track_8h_source.html#l00060">Track.h:60</a></div></div>
 <div class="ttc" id="anamespaceSteppers_html_a7eab9239ce282f0848816013973b560c"><div class="ttname"><a href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">Steppers::TimeIntegrator</a></div><div class="ttdeci">TimeIntegrator</div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00025">Steppers.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -188,7 +184,7 @@ $(document).ready(function(){initNavTree('Track_8cpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8a685cdd82913bebb655b6448e9171b9.html">Track</a></li><li class="navelem"><a class="el" href="Track_8cpp.html">Track.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

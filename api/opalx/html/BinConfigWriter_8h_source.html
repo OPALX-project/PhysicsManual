@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -138,33 +138,29 @@ $(document).ready(function(){initNavTree('BinConfigWriter_8h_source.html',''); i
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classBinConfigWriter.html#ab0b0ec1ec3cd63caceb5718e65574ea1">~BinConfigWriter</a>();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBinConfigWriter.html#abc69773f87a7380c47e9531ee485ed67">writeEntry</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> step,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <span class="keywordtype">double</span> time,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordtype">bool</span> preMerge,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keyword">const</span> std::vector&lt;std::size_t&gt;&amp; binCounts,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; binWidths,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordtype">double</span> xMin);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classBinConfigWriter.html#af1a414de74160f18e21f56193e581ccc">   48</a></span>    std::ofstream <a class="code hl_variable" href="classBinConfigWriter.html#af1a414de74160f18e21f56193e581ccc">os_</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classBinConfigWriter.html#a30c9ddb3b5159ac4c64c9d29794644ac">   49</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classBinConfigWriter.html#a30c9ddb3b5159ac4c64c9d29794644ac">first_</a>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBinConfigWriter.html#abc69773f87a7380c47e9531ee485ed67">writeEntry</a>(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">long</span> <span class="keywordtype">long</span> step, <span class="keywordtype">double</span> time, <span class="keywordtype">bool</span> preMerge, <span class="keyword">const</span> std::vector&lt;std::size_t&gt;&amp; binCounts,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">const</span> std::vector&lt;double&gt;&amp; binWidths, <span class="keywordtype">double</span> xMin);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classBinConfigWriter.html#af1a414de74160f18e21f56193e581ccc">   45</a></span>    std::ofstream <a class="code hl_variable" href="classBinConfigWriter.html#af1a414de74160f18e21f56193e581ccc">os_</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classBinConfigWriter.html#a30c9ddb3b5159ac4c64c9d29794644ac">   46</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classBinConfigWriter.html#a30c9ddb3b5159ac4c64c9d29794644ac">first_</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_BIN_CONFIG_WRITER_H</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_BIN_CONFIG_WRITER_H</span></div>
 <div class="ttc" id="aclassBinConfigWriter_html"><div class="ttname"><a href="classBinConfigWriter.html">BinConfigWriter</a></div><div class="ttdoc">Helper to write binning configuration snapshots as a JSON array.</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8h_source.html#l00034">BinConfigWriter.h:34</a></div></div>
-<div class="ttc" id="aclassBinConfigWriter_html_a30c9ddb3b5159ac4c64c9d29794644ac"><div class="ttname"><a href="classBinConfigWriter.html#a30c9ddb3b5159ac4c64c9d29794644ac">BinConfigWriter::first_</a></div><div class="ttdeci">bool first_</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8h_source.html#l00049">BinConfigWriter.h:49</a></div></div>
+<div class="ttc" id="aclassBinConfigWriter_html_a30c9ddb3b5159ac4c64c9d29794644ac"><div class="ttname"><a href="classBinConfigWriter.html#a30c9ddb3b5159ac4c64c9d29794644ac">BinConfigWriter::first_</a></div><div class="ttdeci">bool first_</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8h_source.html#l00046">BinConfigWriter.h:46</a></div></div>
 <div class="ttc" id="aclassBinConfigWriter_html_ab0b0ec1ec3cd63caceb5718e65574ea1"><div class="ttname"><a href="classBinConfigWriter.html#ab0b0ec1ec3cd63caceb5718e65574ea1">BinConfigWriter::~BinConfigWriter</a></div><div class="ttdeci">~BinConfigWriter()</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8cpp_source.html#l00030">BinConfigWriter.cpp:30</a></div></div>
 <div class="ttc" id="aclassBinConfigWriter_html_abc69773f87a7380c47e9531ee485ed67"><div class="ttname"><a href="classBinConfigWriter.html#abc69773f87a7380c47e9531ee485ed67">BinConfigWriter::writeEntry</a></div><div class="ttdeci">void writeEntry(long long step, double time, bool preMerge, const std::vector&lt; std::size_t &gt; &amp;binCounts, const std::vector&lt; double &gt; &amp;binWidths, double xMin)</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8cpp_source.html#l00039">BinConfigWriter.cpp:39</a></div></div>
-<div class="ttc" id="aclassBinConfigWriter_html_af1a414de74160f18e21f56193e581ccc"><div class="ttname"><a href="classBinConfigWriter.html#af1a414de74160f18e21f56193e581ccc">BinConfigWriter::os_</a></div><div class="ttdeci">std::ofstream os_</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8h_source.html#l00048">BinConfigWriter.h:48</a></div></div>
+<div class="ttc" id="aclassBinConfigWriter_html_af1a414de74160f18e21f56193e581ccc"><div class="ttname"><a href="classBinConfigWriter.html#af1a414de74160f18e21f56193e581ccc">BinConfigWriter::os_</a></div><div class="ttdeci">std::ofstream os_</div><div class="ttdef"><b>Definition</b> <a href="BinConfigWriter_8h_source.html#l00045">BinConfigWriter.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1e943b2a5906122ddf396bc604857988.html">Structure</a></li><li class="navelem"><a class="el" href="BinConfigWriter_8h.html">BinConfigWriter.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

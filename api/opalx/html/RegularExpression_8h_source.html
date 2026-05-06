@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -127,63 +127,59 @@ $(document).ready(function(){initNavTree('RegularExpression_8h_source.html','');
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Class RegularExpression</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//  This class encapsulates the UNIX regular expressions as defined in</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//  regexp(5).  It provides a simple interface to the POSIX-compliant</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//  regcomp/regexec package.</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classRegularExpression.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="classRegularExpression.html">RegularExpression</a> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//  Construct regular expression from [b]pattern[/b].</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//  If [b]ignore[/b] is true, the expression ignores upper/lower case.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a>(<span class="keyword">const</span> std::string &amp;pattern, <span class="keywordtype">bool</span> ignore = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Class RegularExpression</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//  This class encapsulates the UNIX regular expressions as defined in</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//  regexp(5).  It provides a simple interface to the POSIX-compliant</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//  regcomp/regexec package.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classRegularExpression.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classRegularExpression.html">RegularExpression</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//  Construct regular expression from [b]pattern[/b].</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//  If [b]ignore[/b] is true, the expression ignores upper/lower case.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a>(<span class="keyword">const</span> std::string&amp; pattern, <span class="keywordtype">bool</span> ignore = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a>(<span class="keyword">const</span> <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a>&amp;);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classRegularExpression.html#a97a52d13f9cfc429ce0593a3e3d2e410">~RegularExpression</a>();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a>(<span class="keyword">const</span> <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a> &amp;);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="classRegularExpression.html#a97a52d13f9cfc429ce0593a3e3d2e410">~RegularExpression</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRegularExpression.html#a27baa0540a893656d8a76169925d8f56">match</a>(<span class="keyword">const</span> std::string&amp; s) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRegularExpression.html#a27baa0540a893656d8a76169925d8f56">match</a>(<span class="keyword">const</span> std::string &amp;s) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRegularExpression.html#a5713080a23d8b3f695458f717ac118f0">OK</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classRegularExpression.html#a5713080a23d8b3f695458f717ac118f0">OK</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Not implemented.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classRegularExpression.html#ad431a9a3d0857f5f65c747afa0f207c3">   52</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRegularExpression.html#ad431a9a3d0857f5f65c747afa0f207c3">operator = </a>(<span class="keyword">const</span> <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a> &amp;);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Initialise.</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRegularExpression.html#a7ce3efc364eaf223732c2bfb712e35c7">init</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// A copy of the pattern string.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a4fbd1911e5d8a846d1386438cca754a4">   58</a></span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="classRegularExpression.html#a4fbd1911e5d8a846d1386438cca754a4">patt</a>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// The flag to ignore case.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a761383b2cfddf7401d1c9f96e9b162fc">   61</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classRegularExpression.html#a761383b2cfddf7401d1c9f96e9b162fc">caseIgnore</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Not implemented.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classRegularExpression.html#ad431a9a3d0857f5f65c747afa0f207c3">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRegularExpression.html#ad431a9a3d0857f5f65c747afa0f207c3">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classRegularExpression.html">RegularExpression</a>&amp;);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// Initialise.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRegularExpression.html#a7ce3efc364eaf223732c2bfb712e35c7">init</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// A copy of the pattern string.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a4fbd1911e5d8a846d1386438cca754a4">   54</a></span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="classRegularExpression.html#a4fbd1911e5d8a846d1386438cca754a4">patt</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// The flag to ignore case.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a761383b2cfddf7401d1c9f96e9b162fc">   57</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classRegularExpression.html#a761383b2cfddf7401d1c9f96e9b162fc">caseIgnore</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// The compiled regular expression.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">class </span><a class="code hl_class" href="classRegularExpression_1_1Expression.html">Expression</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a974a8773bd7d2a08059bac6d58bc2d90">   61</a></span>    <a class="code hl_class" href="classRegularExpression_1_1Expression.html">Expression</a>* <a class="code hl_variable" href="classRegularExpression.html#a974a8773bd7d2a08059bac6d58bc2d90">expr</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// The compiled regular expression.</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">class </span><a class="code hl_class" href="classRegularExpression_1_1Expression.html">Expression</a>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a974a8773bd7d2a08059bac6d58bc2d90">   65</a></span>    <a class="code hl_class" href="classRegularExpression_1_1Expression.html">Expression</a> *<a class="code hl_variable" href="classRegularExpression.html#a974a8773bd7d2a08059bac6d58bc2d90">expr</a>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// The state flag, indicating any error condition.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a403205b75ee492bd7afcf20b7df390a6">   68</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classRegularExpression.html#a403205b75ee492bd7afcf20b7df390a6">state</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// The state flag, indicating any error condition.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classRegularExpression.html#a403205b75ee492bd7afcf20b7df390a6">   64</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classRegularExpression.html#a403205b75ee492bd7afcf20b7df390a6">state</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_RegularExpressions_HH</span></div>
-<div class="ttc" id="aclassRegularExpression_1_1Expression_html"><div class="ttname"><a href="classRegularExpression_1_1Expression.html">RegularExpression::Expression</a></div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00035">RegularExpression.cpp:35</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html"><div class="ttname"><a href="classRegularExpression.html">RegularExpression</a></div><div class="ttdoc">A regular expression.</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00031">RegularExpression.h:31</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a27baa0540a893656d8a76169925d8f56"><div class="ttname"><a href="classRegularExpression.html#a27baa0540a893656d8a76169925d8f56">RegularExpression::match</a></div><div class="ttdeci">bool match(const std::string &amp;s) const</div><div class="ttdoc">Match a string against the pattern.</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00058">RegularExpression.cpp:58</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a403205b75ee492bd7afcf20b7df390a6"><div class="ttname"><a href="classRegularExpression.html#a403205b75ee492bd7afcf20b7df390a6">RegularExpression::state</a></div><div class="ttdeci">int state</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00068">RegularExpression.h:68</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a4fbd1911e5d8a846d1386438cca754a4"><div class="ttname"><a href="classRegularExpression.html#a4fbd1911e5d8a846d1386438cca754a4">RegularExpression::patt</a></div><div class="ttdeci">const std::string patt</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00058">RegularExpression.h:58</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a5713080a23d8b3f695458f717ac118f0"><div class="ttname"><a href="classRegularExpression.html#a5713080a23d8b3f695458f717ac118f0">RegularExpression::OK</a></div><div class="ttdeci">bool OK() const</div><div class="ttdoc">Check the regular expression for sanity.</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00079">RegularExpression.cpp:79</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a761383b2cfddf7401d1c9f96e9b162fc"><div class="ttname"><a href="classRegularExpression.html#a761383b2cfddf7401d1c9f96e9b162fc">RegularExpression::caseIgnore</a></div><div class="ttdeci">bool caseIgnore</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00061">RegularExpression.h:61</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a7ce3efc364eaf223732c2bfb712e35c7"><div class="ttname"><a href="classRegularExpression.html#a7ce3efc364eaf223732c2bfb712e35c7">RegularExpression::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00084">RegularExpression.cpp:84</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a974a8773bd7d2a08059bac6d58bc2d90"><div class="ttname"><a href="classRegularExpression.html#a974a8773bd7d2a08059bac6d58bc2d90">RegularExpression::expr</a></div><div class="ttdeci">Expression * expr</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00065">RegularExpression.h:65</a></div></div>
-<div class="ttc" id="aclassRegularExpression_html_a97a52d13f9cfc429ce0593a3e3d2e410"><div class="ttname"><a href="classRegularExpression.html#a97a52d13f9cfc429ce0593a3e3d2e410">RegularExpression::~RegularExpression</a></div><div class="ttdeci">~RegularExpression()</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00053">RegularExpression.cpp:53</a></div></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_RegularExpressions_HH</span></div>
+<div class="ttc" id="aclassRegularExpression_1_1Expression_html"><div class="ttname"><a href="classRegularExpression_1_1Expression.html">RegularExpression::Expression</a></div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00034">RegularExpression.cpp:34</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html"><div class="ttname"><a href="classRegularExpression.html">RegularExpression</a></div><div class="ttdoc">A regular expression.</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00030">RegularExpression.h:30</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a27baa0540a893656d8a76169925d8f56"><div class="ttname"><a href="classRegularExpression.html#a27baa0540a893656d8a76169925d8f56">RegularExpression::match</a></div><div class="ttdeci">bool match(const std::string &amp;s) const</div><div class="ttdoc">Match a string against the pattern.</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00051">RegularExpression.cpp:51</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a403205b75ee492bd7afcf20b7df390a6"><div class="ttname"><a href="classRegularExpression.html#a403205b75ee492bd7afcf20b7df390a6">RegularExpression::state</a></div><div class="ttdeci">int state</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00064">RegularExpression.h:64</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a4fbd1911e5d8a846d1386438cca754a4"><div class="ttname"><a href="classRegularExpression.html#a4fbd1911e5d8a846d1386438cca754a4">RegularExpression::patt</a></div><div class="ttdeci">const std::string patt</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00054">RegularExpression.h:54</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a5713080a23d8b3f695458f717ac118f0"><div class="ttname"><a href="classRegularExpression.html#a5713080a23d8b3f695458f717ac118f0">RegularExpression::OK</a></div><div class="ttdeci">bool OK() const</div><div class="ttdoc">Check the regular expression for sanity.</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00071">RegularExpression.cpp:71</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a761383b2cfddf7401d1c9f96e9b162fc"><div class="ttname"><a href="classRegularExpression.html#a761383b2cfddf7401d1c9f96e9b162fc">RegularExpression::caseIgnore</a></div><div class="ttdeci">bool caseIgnore</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00057">RegularExpression.h:57</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a7ce3efc364eaf223732c2bfb712e35c7"><div class="ttname"><a href="classRegularExpression.html#a7ce3efc364eaf223732c2bfb712e35c7">RegularExpression::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00073">RegularExpression.cpp:73</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a974a8773bd7d2a08059bac6d58bc2d90"><div class="ttname"><a href="classRegularExpression.html#a974a8773bd7d2a08059bac6d58bc2d90">RegularExpression::expr</a></div><div class="ttdeci">Expression * expr</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8h_source.html#l00061">RegularExpression.h:61</a></div></div>
+<div class="ttc" id="aclassRegularExpression_html_a97a52d13f9cfc429ce0593a3e3d2e410"><div class="ttname"><a href="classRegularExpression.html#a97a52d13f9cfc429ce0593a3e3d2e410">RegularExpression::~RegularExpression</a></div><div class="ttdeci">~RegularExpression()</div><div class="ttdef"><b>Definition</b> <a href="RegularExpression_8cpp_source.html#l00049">RegularExpression.cpp:49</a></div></div>
 <div class="ttc" id="aclassRegularExpression_html_ad431a9a3d0857f5f65c747afa0f207c3"><div class="ttname"><a href="classRegularExpression.html#ad431a9a3d0857f5f65c747afa0f207c3">RegularExpression::operator=</a></div><div class="ttdeci">void operator=(const RegularExpression &amp;)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -191,7 +187,7 @@ $(document).ready(function(){initNavTree('RegularExpression_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="RegularExpression_8h.html">RegularExpression.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

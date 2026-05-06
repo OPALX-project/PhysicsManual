@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -196,143 +196,132 @@ $(document).ready(function(){initNavTree('Matrix_8h_source.html',''); initResiza
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Operators</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structmatrix__t.html#a37f180b25621e30b409fd696e611825d">   83</a></span>    <span class="keywordtype">double</span>&amp; <a class="code hl_function" href="structmatrix__t.html#a37f180b25621e30b409fd696e611825d">operator()</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> c) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmatrix__t.html#a3356371a4746dc2bc43563989ea42275">m</a>[r][c];</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structmatrix__t.html#a37f180b25621e30b409fd696e611825d">   83</a></span>    <span class="keywordtype">double</span>&amp; <a class="code hl_function" href="structmatrix__t.html#a37f180b25621e30b409fd696e611825d">operator()</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> c) { <span class="keywordflow">return</span> <a class="code hl_variable" href="structmatrix__t.html#a3356371a4746dc2bc43563989ea42275">m</a>[r][c]; }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    KOKKOS_INLINE_FUNCTION</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structmatrix__t.html#a3d61923f8766ce76e2b533ff98d19661">   86</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="structmatrix__t.html#a3d61923f8766ce76e2b533ff98d19661">operator()</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> c)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="structmatrix__t.html#a3356371a4746dc2bc43563989ea42275">m</a>[r][c]; }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    KOKKOS_INLINE_FUNCTION</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structmatrix__t.html#aa021a6e64251b147baec6ec0f7b1f18e">   89</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structmatrix__t.html#aa021a6e64251b147baec6ec0f7b1f18e">size1</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Rows; }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    KOKKOS_INLINE_FUNCTION</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structmatrix__t.html#a73e0d4af47e07801ac9b3e75174c5280">   92</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structmatrix__t.html#a73e0d4af47e07801ac9b3e75174c5280">size2</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Cols; }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
 </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structmatrix__t.html#a3d61923f8766ce76e2b533ff98d19661">   88</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="structmatrix__t.html#a3d61923f8766ce76e2b533ff98d19661">operator()</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> c)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmatrix__t.html#a3356371a4746dc2bc43563989ea42275">m</a>[r][c];</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
-</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    KOKKOS_INLINE_FUNCTION</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structmatrix__t.html#aa021a6e64251b147baec6ec0f7b1f18e">   93</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structmatrix__t.html#aa021a6e64251b147baec6ec0f7b1f18e">size1</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Rows; }</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    KOKKOS_INLINE_FUNCTION</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structmatrix__t.html#a73e0d4af47e07801ac9b3e75174c5280">   96</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structmatrix__t.html#a73e0d4af47e07801ac9b3e75174c5280">size2</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Cols; }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
-</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Type aliases for common matrix sizes</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="Matrix_8h.html#ad2a3e989e287806b9cf3dc2888e7bee3">  101</a></span><span class="keyword">using </span><a class="code hl_class" href="structmatrix__t.html">matrix3x3_t</a> = <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;3, 3&gt;</a>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="Matrix_8h.html#ae1945a17a8cdbdbc32ebf2befdfc030a">  102</a></span><span class="keyword">using </span><a class="code hl_class" href="structmatrix__t.html">matrix6x6_t</a> = <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;6, 6&gt;</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// Type aliases for common matrix sizes</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="Matrix_8h.html#ad2a3e989e287806b9cf3dc2888e7bee3">   96</a></span><span class="keyword">using </span><a class="code hl_class" href="structmatrix__t.html">matrix3x3_t</a> = <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;3, 3&gt;</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="Matrix_8h.html#ae1945a17a8cdbdbc32ebf2befdfc030a">   97</a></span><span class="keyword">using </span><a class="code hl_class" href="structmatrix__t.html">matrix6x6_t</a> = <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;6, 6&gt;</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// Kokkos-friendly vector_t using ippl::Vector</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Note: ippl::Vector uses unsigned int for dimension, so we use unsigned here too</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Size&gt;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a722c53a769f4c794f66fdbefe921859e">  102</a></span><span class="keyword">using </span><a class="code hl_typedef" href="Matrix_8h.html#a722c53a769f4c794f66fdbefe921859e">vector_t</a> = ippl::Vector&lt;double, Size&gt;;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// Kokkos-friendly vector_t using ippl::Vector</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// Note: ippl::Vector uses unsigned int for dimension, so we use unsigned here too</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Size&gt;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a722c53a769f4c794f66fdbefe921859e">  107</a></span><span class="keyword">using </span><a class="code hl_typedef" href="Matrix_8h.html#a722c53a769f4c794f66fdbefe921859e">vector_t</a> = ippl::Vector&lt;double, Size&gt;;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// Kokkos-friendly matrix-vector product for fixed-size matrices</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1">  106</a></span>KOKKOS_INLINE_FUNCTION <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1">prod_vector</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; rotation, <span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; vect) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> prodVector(0.0);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">// Kokkos-friendly matrix-vector product for fixed-size matrices</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">class</span> T&gt;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1">  112</a></span><a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1">prod_vector</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; rotation, <span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; vect) {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> prodVector(0.0);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordtype">double</span> val = 0.0;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            val += rotation(i, j) * vect[j];</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        prodVector[i] = val;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> prodVector;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordtype">double</span> val = 0.0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            val += rotation(i, j) * vect[j];</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        prodVector[i] = val;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span> prodVector;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// Kokkos-friendly matrix^T-vector product for fixed-size matrices</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>KOKKOS_INLINE_FUNCTION <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a></div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de">  123</a></span><a class="code hl_function" href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de">prod_vector_transpose</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; rotation, <span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; vect) {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> prodVector(0.0);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// Kokkos-friendly matrix^T-vector product for fixed-size matrices</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">class</span> T&gt;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de">  129</a></span><a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de">prod_vector_transpose</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; rotation, <span class="keyword">const</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp; vect) {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> prodVector(0.0);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Cols; ++i) {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordtype">double</span> val = 0.0;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Rows; ++j) {</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            val += rotation(j, i) * vect[j];</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        prodVector[i] = val;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">return</span> prodVector;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Cols; ++i) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">double</span> val = 0.0;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Rows; ++j) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            val += rotation(j, i) * vect[j];</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        prodVector[i] = val;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> prodVector;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// Kokkos-friendly matrix transpose for fixed-size matrices</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols&gt;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a34e1ffab93d1ccab9c2a5d87952b1628">  146</a></span><a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Cols, Rows&gt;</a> <a class="code hl_function" href="Matrix_8h.html#a34e1ffab93d1ccab9c2a5d87952b1628">get_transpose</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; rotation) {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Cols, Rows&gt;</a> transpose;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            transpose(j, i) = rotation(i, j);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">return</span> transpose;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">// Kokkos-friendly matrix transpose for fixed-size matrices</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols&gt;</div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a34e1ffab93d1ccab9c2a5d87952b1628">  139</a></span>KOKKOS_INLINE_FUNCTION <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Cols, Rows&gt;</a> <a class="code hl_function" href="Matrix_8h.html#a34e1ffab93d1ccab9c2a5d87952b1628">get_transpose</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; rotation) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Cols, Rows&gt;</a> transpose;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            transpose(j, i) = rotation(i, j);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">return</span> transpose;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
 </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// Kokkos-friendly matrix-matrix multiplication</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows1, <span class="keywordtype">int</span> Cols1, <span class="keywordtype">int</span> Rows2, <span class="keywordtype">int</span> Cols2&gt;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="Matrix_8h.html#aeec6aa07a98c041bdeef1ab9f305dad6">  159</a></span><a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows1, Cols2&gt;</a> <a class="code hl_function" href="Matrix_8h.html#aeec6aa07a98c041bdeef1ab9f305dad6">prod</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows1, Cols1&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows2, Cols2&gt;</a>&amp; b) {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows1, Cols2&gt;</a> result(0.0);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows1; ++i) {</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols2; ++j) {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordtype">double</span> sum = 0.0;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; Cols1; ++k) {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                sum += a(i, k) * b(k, j);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            result(i, j) = sum;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        }</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">// Kokkos-friendly matrix-matrix multiplication</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows1, <span class="keywordtype">int</span> Cols1, <span class="keywordtype">int</span> Rows2, <span class="keywordtype">int</span> Cols2&gt;</div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="Matrix_8h.html#aeec6aa07a98c041bdeef1ab9f305dad6">  151</a></span>KOKKOS_INLINE_FUNCTION <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows1, Cols2&gt;</a> <a class="code hl_function" href="Matrix_8h.html#aeec6aa07a98c041bdeef1ab9f305dad6">prod</a>(</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows1, Cols1&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows2, Cols2&gt;</a>&amp; b) {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows1, Cols2&gt;</a> result(0.0);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows1; ++i) {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols2; ++j) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordtype">double</span> sum = 0.0;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; Cols1; ++k) {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                sum += a(i, k) * b(k, j);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            result(i, j) = sum;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}</div>
 </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">// Kokkos-friendly matrix-vector multiplication (matrix * vector)</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">// Note: Casts int template parameters to unsigned for ippl::Vector compatibility</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols&gt;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>KOKKOS_INLINE_FUNCTION</div>
-<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a5a386cb08348b483d68288012bfdfff8">  177</a></span>ippl::Vector&lt;double, static_cast&lt;unsigned&gt;(Rows)&gt; <a class="code hl_function" href="Matrix_8h.html#a5a386cb08348b483d68288012bfdfff8">prod_matrix_vector</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; m, <span class="keyword">const</span> ippl::Vector&lt;<span class="keywordtype">double</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(Cols)&gt;&amp; v) {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    ippl::Vector&lt;double, static_cast&lt;unsigned&gt;(Rows)&gt; result(0.0);</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordtype">double</span> sum = 0.0;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            sum += m(i, j) * v[j];</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        result[i] = sum;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">// Kokkos-friendly matrix-vector multiplication (matrix * vector)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// Note: Casts int template parameters to unsigned for ippl::Vector compatibility</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols&gt;</div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="Matrix_8h.html#a5a386cb08348b483d68288012bfdfff8">  169</a></span>KOKKOS_INLINE_FUNCTION ippl::Vector&lt;double, static_cast&lt;unsigned&gt;(Rows)&gt; <a class="code hl_function" href="Matrix_8h.html#a5a386cb08348b483d68288012bfdfff8">prod_matrix_vector</a>(</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structmatrix__t.html">matrix_t&lt;Rows, Cols&gt;</a>&amp; m, <span class="keyword">const</span> ippl::Vector&lt;<span class="keywordtype">double</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(Cols)&gt;&amp; v) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    ippl::Vector&lt;double, static_cast&lt;unsigned&gt;(Rows)&gt; result(0.0);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordtype">double</span> sum = 0.0;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            sum += m(i, j) * v[j];</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        result[i] = sum;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
 </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aMatrix_8h_html_a34e1ffab93d1ccab9c2a5d87952b1628"><div class="ttname"><a href="Matrix_8h.html#a34e1ffab93d1ccab9c2a5d87952b1628">get_transpose</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t&lt; Cols, Rows &gt; get_transpose(const matrix_t&lt; Rows, Cols &gt; &amp;rotation)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00146">Matrix.h:146</a></div></div>
-<div class="ttc" id="aMatrix_8h_html_a5a386cb08348b483d68288012bfdfff8"><div class="ttname"><a href="Matrix_8h.html#a5a386cb08348b483d68288012bfdfff8">prod_matrix_vector</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION ippl::Vector&lt; double, static_cast&lt; unsigned &gt;(Rows)&gt; prod_matrix_vector(const matrix_t&lt; Rows, Cols &gt; &amp;m, const ippl::Vector&lt; double, static_cast&lt; unsigned &gt;(Cols)&gt; &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00177">Matrix.h:177</a></div></div>
-<div class="ttc" id="aMatrix_8h_html_a722c53a769f4c794f66fdbefe921859e"><div class="ttname"><a href="Matrix_8h.html#a722c53a769f4c794f66fdbefe921859e">vector_t</a></div><div class="ttdeci">ippl::Vector&lt; double, Size &gt; vector_t</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00107">Matrix.h:107</a></div></div>
-<div class="ttc" id="aMatrix_8h_html_a9cf217e73b1634ddf0afb9ee7236ebd1"><div class="ttname"><a href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1">prod_vector</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION T prod_vector(const matrix_t&lt; Rows, Cols &gt; &amp;rotation, const T &amp;vect)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00112">Matrix.h:112</a></div></div>
-<div class="ttc" id="aMatrix_8h_html_ad2de806839ddad2628a9a28e2bc812de"><div class="ttname"><a href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de">prod_vector_transpose</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION T prod_vector_transpose(const matrix_t&lt; Rows, Cols &gt; &amp;rotation, const T &amp;vect)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00129">Matrix.h:129</a></div></div>
-<div class="ttc" id="aMatrix_8h_html_aeec6aa07a98c041bdeef1ab9f305dad6"><div class="ttname"><a href="Matrix_8h.html#aeec6aa07a98c041bdeef1ab9f305dad6">prod</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t&lt; Rows1, Cols2 &gt; prod(const matrix_t&lt; Rows1, Cols1 &gt; &amp;a, const matrix_t&lt; Rows2, Cols2 &gt; &amp;b)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00159">Matrix.h:159</a></div></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aMatrix_8h_html_a34e1ffab93d1ccab9c2a5d87952b1628"><div class="ttname"><a href="Matrix_8h.html#a34e1ffab93d1ccab9c2a5d87952b1628">get_transpose</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t&lt; Cols, Rows &gt; get_transpose(const matrix_t&lt; Rows, Cols &gt; &amp;rotation)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00139">Matrix.h:139</a></div></div>
+<div class="ttc" id="aMatrix_8h_html_a5a386cb08348b483d68288012bfdfff8"><div class="ttname"><a href="Matrix_8h.html#a5a386cb08348b483d68288012bfdfff8">prod_matrix_vector</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION ippl::Vector&lt; double, static_cast&lt; unsigned &gt;(Rows)&gt; prod_matrix_vector(const matrix_t&lt; Rows, Cols &gt; &amp;m, const ippl::Vector&lt; double, static_cast&lt; unsigned &gt;(Cols)&gt; &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00169">Matrix.h:169</a></div></div>
+<div class="ttc" id="aMatrix_8h_html_a722c53a769f4c794f66fdbefe921859e"><div class="ttname"><a href="Matrix_8h.html#a722c53a769f4c794f66fdbefe921859e">vector_t</a></div><div class="ttdeci">ippl::Vector&lt; double, Size &gt; vector_t</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00102">Matrix.h:102</a></div></div>
+<div class="ttc" id="aMatrix_8h_html_a9cf217e73b1634ddf0afb9ee7236ebd1"><div class="ttname"><a href="Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1">prod_vector</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION T prod_vector(const matrix_t&lt; Rows, Cols &gt; &amp;rotation, const T &amp;vect)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00106">Matrix.h:106</a></div></div>
+<div class="ttc" id="aMatrix_8h_html_ad2de806839ddad2628a9a28e2bc812de"><div class="ttname"><a href="Matrix_8h.html#ad2de806839ddad2628a9a28e2bc812de">prod_vector_transpose</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION T prod_vector_transpose(const matrix_t&lt; Rows, Cols &gt; &amp;rotation, const T &amp;vect)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00123">Matrix.h:123</a></div></div>
+<div class="ttc" id="aMatrix_8h_html_aeec6aa07a98c041bdeef1ab9f305dad6"><div class="ttname"><a href="Matrix_8h.html#aeec6aa07a98c041bdeef1ab9f305dad6">prod</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t&lt; Rows1, Cols2 &gt; prod(const matrix_t&lt; Rows1, Cols1 &gt; &amp;a, const matrix_t&lt; Rows2, Cols2 &gt; &amp;b)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00151">Matrix.h:151</a></div></div>
 <div class="ttc" id="aOPALTypes_8h_html_a6b2d038ea9c8d2651eecffe0e28b7ebb"><div class="ttname"><a href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a></div><div class="ttdeci">double T</div><div class="ttdef"><b>Definition</b> <a href="OPALTypes_8h_source.html#l00008">OPALTypes.h:8</a></div></div>
 <div class="ttc" id="astructmatrix__t_html"><div class="ttname"><a href="structmatrix__t.html">matrix_t</a></div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00029">Matrix.h:29</a></div></div>
 <div class="ttc" id="astructmatrix__t_html_a3356371a4746dc2bc43563989ea42275"><div class="ttname"><a href="structmatrix__t.html#a3356371a4746dc2bc43563989ea42275">matrix_t::m</a></div><div class="ttdeci">double m[Rows][Cols]</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00030">Matrix.h:30</a></div></div>
 <div class="ttc" id="astructmatrix__t_html_a37f180b25621e30b409fd696e611825d"><div class="ttname"><a href="structmatrix__t.html#a37f180b25621e30b409fd696e611825d">matrix_t::operator()</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION double &amp; operator()(int r, int c)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00083">Matrix.h:83</a></div></div>
-<div class="ttc" id="astructmatrix__t_html_a3d61923f8766ce76e2b533ff98d19661"><div class="ttname"><a href="structmatrix__t.html#a3d61923f8766ce76e2b533ff98d19661">matrix_t::operator()</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION double operator()(int r, int c) const</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00088">Matrix.h:88</a></div></div>
+<div class="ttc" id="astructmatrix__t_html_a3d61923f8766ce76e2b533ff98d19661"><div class="ttname"><a href="structmatrix__t.html#a3d61923f8766ce76e2b533ff98d19661">matrix_t::operator()</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION double operator()(int r, int c) const</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00086">Matrix.h:86</a></div></div>
 <div class="ttc" id="astructmatrix__t_html_a565fee5f3a5872050d3e383cb8b9d224"><div class="ttname"><a href="structmatrix__t.html#a565fee5f3a5872050d3e383cb8b9d224">matrix_t::operator=</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t &amp; operator=(const matrix_t &amp;right)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00070">Matrix.h:70</a></div></div>
 <div class="ttc" id="astructmatrix__t_html_a5d15eeae2dc11067ac54c767d4517074"><div class="ttname"><a href="structmatrix__t.html#a5d15eeae2dc11067ac54c767d4517074">matrix_t::matrix_t</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t(const matrix_t &amp;right)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00060">Matrix.h:60</a></div></div>
-<div class="ttc" id="astructmatrix__t_html_a73e0d4af47e07801ac9b3e75174c5280"><div class="ttname"><a href="structmatrix__t.html#a73e0d4af47e07801ac9b3e75174c5280">matrix_t::size2</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION int size2() const</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00096">Matrix.h:96</a></div></div>
-<div class="ttc" id="astructmatrix__t_html_aa021a6e64251b147baec6ec0f7b1f18e"><div class="ttname"><a href="structmatrix__t.html#aa021a6e64251b147baec6ec0f7b1f18e">matrix_t::size1</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION int size1() const</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00093">Matrix.h:93</a></div></div>
+<div class="ttc" id="astructmatrix__t_html_a73e0d4af47e07801ac9b3e75174c5280"><div class="ttname"><a href="structmatrix__t.html#a73e0d4af47e07801ac9b3e75174c5280">matrix_t::size2</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION int size2() const</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00092">Matrix.h:92</a></div></div>
+<div class="ttc" id="astructmatrix__t_html_aa021a6e64251b147baec6ec0f7b1f18e"><div class="ttname"><a href="structmatrix__t.html#aa021a6e64251b147baec6ec0f7b1f18e">matrix_t::size1</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION int size1() const</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00089">Matrix.h:89</a></div></div>
 <div class="ttc" id="astructmatrix__t_html_afae66a9c226b8297b840bb6c8c5bd499"><div class="ttname"><a href="structmatrix__t.html#afae66a9c226b8297b840bb6c8c5bd499">matrix_t::matrix_t</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t(double init_value)</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00050">Matrix.h:50</a></div></div>
 <div class="ttc" id="astructmatrix__t_html_afeb9ca318c76ad3c329d34deb10fe3a4"><div class="ttname"><a href="structmatrix__t.html#afeb9ca318c76ad3c329d34deb10fe3a4">matrix_t::matrix_t</a></div><div class="ttdeci">KOKKOS_INLINE_FUNCTION matrix_t()</div><div class="ttdef"><b>Definition</b> <a href="Matrix_8h_source.html#l00034">Matrix.h:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -341,7 +330,7 @@ $(document).ready(function(){initNavTree('Matrix_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a2837dd329d585d987581ea971fad2e6.html">Algorithms</a></li><li class="navelem"><a class="el" href="Matrix_8h.html">Matrix.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

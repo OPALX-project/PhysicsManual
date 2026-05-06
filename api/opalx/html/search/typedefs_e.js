@@ -9,5 +9,5 @@ var searchData=
   ['placementassembly_6',['PlacementAssembly',['../classOpalBeamline.html#a6720bcb87f3e76a2369626defb37a2b6',1,'OpalBeamline']]],
   ['playout_5ft_7',['PLayout_t',['../FieldContainer_8hpp.html#a1b4eeec6173ab4151f0684bb1707e6a2',1,'FieldContainer.hpp']]],
   ['position_5fview_5ftype_8',['position_view_type',['../structParticleBinning_1_1GammaSelector.html#ac52145a513b88bd4074b635f88dfbd00',1,'ParticleBinning::GammaSelector::position_view_type'],['../structParticleBinning_1_1CoordinateSelector.html#a794c6afbf061a17f201f084939cb95c7',1,'ParticleBinning::CoordinateSelector::position_view_type'],['../classParticleBinning_1_1AdaptBins.html#a1b52642b5f0c5227d5feb49762f529b1',1,'ParticleBinning::AdaptBins::position_view_type']]],
-  ['positionattr_5ft_9',['PositionAttr_t',['../classImageChargeScatterController.html#a9c6bb456363078ef18ec2970c21d7494',1,'ImageChargeScatterController']]]
+  ['positionattr_5ft_9',['PositionAttr_t',['../classImageChargeScatterController.html#a4e9529b0218abfae88e38615aac16f39',1,'ImageChargeScatterController']]]
 ];

@@ -64,7 +64,7 @@ var classBinningCmd =
     [ "occurrence", "classBinningCmd.html#a2d4689680e7982efa61a4c9dece2c691", null ],
     [ "parameterName_m", "classBinningCmd.html#ab74760a47ede77865639b04d13ef3556", null ],
     [ "parameterType_m", "classBinningCmd.html#a98eb06d187ff4893a11ca66c6524b542", null ],
-    [ "references", "classBinningCmd.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classBinningCmd.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classBinningCmd.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "timeStamp", "classBinningCmd.html#afe5c431c6bdf03bc49beb95433bf9b38", null ]
 ];

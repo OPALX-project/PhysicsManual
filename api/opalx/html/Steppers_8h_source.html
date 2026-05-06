@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,38 +125,31 @@ $(document).ready(function(){initNavTree('Steppers_8h_source.html',''); initResi
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef STEPPERS_H</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define STEPPERS_H</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="RK4_8h.html">Steppers/RK4.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="LF2_8h.html">Steppers/LF2.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="LF2_8h.html">Steppers/LF2.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="RK4_8h.html">Steppers/RK4.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespaceSteppers.html">   24</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceSteppers.html">Steppers</a> {</div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">   25</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">TimeIntegrator</a>: <span class="keywordtype">short</span> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b">   26</a></span>        <a class="code hl_enumvalue" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b">UNDEFINED</a>   = -1,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560cabf3dcdc52206565bf9085180efe37ad9">   27</a></span>        <a class="code hl_class" href="classRK4.html">RK4</a>         = 0,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca4e221daf5caa2f0381b6c964b65ffe50">   28</a></span>        <a class="code hl_class" href="classLF2.html">LF2</a>         = 1,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7">MTS</a>         = 2</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7">   30</a></span>    };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca4e221daf5caa2f0381b6c964b65ffe50">   25</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">TimeIntegrator</a> : <span class="keywordtype">short</span> { <a class="code hl_enumvalue" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b">UNDEFINED</a> = -1, <a class="code hl_class" href="classRK4.html">RK4</a> = 0, <a class="code hl_class" href="classLF2.html">LF2</a> = 1, <a class="code hl_enumvalue" href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7">MTS</a> = 2 };</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
-</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aLF2_8h_html"><div class="ttname"><a href="LF2_8h.html">LF2.h</a></div></div>
 <div class="ttc" id="aRK4_8h_html"><div class="ttname"><a href="RK4_8h.html">RK4.h</a></div></div>
 <div class="ttc" id="aclassLF2_html"><div class="ttname"><a href="classLF2.html">LF2</a></div><div class="ttdoc">Leap-Frog 2nd order.</div><div class="ttdef"><b>Definition</b> <a href="LF2_8h_source.html#l00026">LF2.h:26</a></div></div>
 <div class="ttc" id="aclassRK4_html"><div class="ttname"><a href="classRK4.html">RK4</a></div><div class="ttdoc">4-th order Runnge-Kutta stepper</div><div class="ttdef"><b>Definition</b> <a href="RK4_8h_source.html#l00027">RK4.h:27</a></div></div>
 <div class="ttc" id="anamespaceSteppers_html"><div class="ttname"><a href="namespaceSteppers.html">Steppers</a></div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00024">Steppers.h:24</a></div></div>
 <div class="ttc" id="anamespaceSteppers_html_a7eab9239ce282f0848816013973b560c"><div class="ttname"><a href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560c">Steppers::TimeIntegrator</a></div><div class="ttdeci">TimeIntegrator</div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00025">Steppers.h:25</a></div></div>
-<div class="ttc" id="anamespaceSteppers_html_a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7"><div class="ttname"><a href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7">Steppers::MTS</a></div><div class="ttdeci">@ MTS</div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00030">Steppers.h:29</a></div></div>
-<div class="ttc" id="anamespaceSteppers_html_a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b"><div class="ttname"><a href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b">Steppers::UNDEFINED</a></div><div class="ttdeci">@ UNDEFINED</div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00026">Steppers.h:26</a></div></div>
+<div class="ttc" id="anamespaceSteppers_html_a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7"><div class="ttname"><a href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca51d4403ff33999735d10c625271637a7">Steppers::MTS</a></div><div class="ttdeci">@ MTS</div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00025">Steppers.h:25</a></div></div>
+<div class="ttc" id="anamespaceSteppers_html_a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b"><div class="ttname"><a href="namespaceSteppers.html#a7eab9239ce282f0848816013973b560ca8c50748d684b7e7ff62154e821f2f18b">Steppers::UNDEFINED</a></div><div class="ttdeci">@ UNDEFINED</div><div class="ttdef"><b>Definition</b> <a href="Steppers_8h_source.html#l00025">Steppers.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_87f73634e9d9a208f53a4e0bc104ca41.html">Steppers</a></li><li class="navelem"><a class="el" href="Steppers_8h.html">Steppers.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

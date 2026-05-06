@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -131,43 +131,33 @@ $(document).ready(function(){initNavTree('Timer_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Class Timer</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#a8dfdc27c4d44abf827d3e149658bb7b8">   26</a></span>    <a class="code hl_function" href="classOPALTimer_1_1Timer.html#a8dfdc27c4d44abf827d3e149658bb7b8">Timer::Timer</a>() {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_function" href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">::time</a>(&amp;<a class="code hl_variable" href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">timer</a>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
-</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#a8dfdc27c4d44abf827d3e149658bb7b8">   26</a></span>    <a class="code hl_function" href="classOPALTimer_1_1Timer.html#a8dfdc27c4d44abf827d3e149658bb7b8">Timer::Timer</a>() { <a class="code hl_function" href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">::time</a>(&amp;<a class="code hl_variable" href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">timer</a>); }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#a57fb4e46a0c3961b3fc021826052bd1f">   28</a></span>    <a class="code hl_function" href="classOPALTimer_1_1Timer.html#a57fb4e46a0c3961b3fc021826052bd1f">Timer::~Timer</a>() {}</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#a57fb4e46a0c3961b3fc021826052bd1f">   31</a></span>    <a class="code hl_function" href="classOPALTimer_1_1Timer.html#a57fb4e46a0c3961b3fc021826052bd1f">Timer::~Timer</a>()</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {}</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#abaa6452e8de99d07b796abd460d2f32d">   30</a></span>    std::string <a class="code hl_function" href="classOPALTimer_1_1Timer.html#abaa6452e8de99d07b796abd460d2f32d">Timer::date</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">char</span> buffer[12];</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        strftime(buffer, 12, <span class="stringliteral">&quot;%d/%m/%Y&quot;</span>, localtime(&amp;<a class="code hl_variable" href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">timer</a>));</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> std::string(buffer, 10);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
 </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#abaa6452e8de99d07b796abd460d2f32d">   35</a></span>    std::string <a class="code hl_function" href="classOPALTimer_1_1Timer.html#abaa6452e8de99d07b796abd460d2f32d">Timer::date</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">char</span> buffer[12];</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        strftime(buffer, 12, <span class="stringliteral">&quot;%d/%m/%Y&quot;</span>, localtime(&amp;<a class="code hl_variable" href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">timer</a>));</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> std::string(buffer, 10);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">   36</a></span>    std::string <a class="code hl_function" href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">Timer::time</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">char</span> buffer[12];</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        strftime(buffer, 12, <span class="stringliteral">&quot;%H:%M:%S&quot;</span>, localtime(&amp;<a class="code hl_variable" href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">timer</a>));</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> std::string(buffer, 8);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">   42</a></span>    std::string <a class="code hl_function" href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">Timer::time</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">char</span> buffer[12];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        strftime(buffer, 12, <span class="stringliteral">&quot;%H:%M:%S&quot;</span>, localtime(&amp;<a class="code hl_variable" href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">timer</a>));</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> std::string(buffer, 8);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}  <span class="comment">// namespace OPALTimer</span></div>
 </div>
 <div class="ttc" id="aTimer_8h_html"><div class="ttname"><a href="Timer_8h.html">Timer.h</a></div></div>
-<div class="ttc" id="aclassOPALTimer_1_1Timer_html_a2426e6ac16179d91296eb1591022c924"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">OPALTimer::Timer::timer</a></div><div class="ttdeci">time_t timer</div><div class="ttdef"><b>Definition</b> <a href="Timer_8h_source.html#l00055">Timer.h:55</a></div></div>
-<div class="ttc" id="aclassOPALTimer_1_1Timer_html_a57fb4e46a0c3961b3fc021826052bd1f"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#a57fb4e46a0c3961b3fc021826052bd1f">OPALTimer::Timer::~Timer</a></div><div class="ttdeci">~Timer()</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00031">Timer.cpp:31</a></div></div>
+<div class="ttc" id="aclassOPALTimer_1_1Timer_html_a2426e6ac16179d91296eb1591022c924"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#a2426e6ac16179d91296eb1591022c924">OPALTimer::Timer::timer</a></div><div class="ttdeci">time_t timer</div><div class="ttdef"><b>Definition</b> <a href="Timer_8h_source.html#l00051">Timer.h:51</a></div></div>
+<div class="ttc" id="aclassOPALTimer_1_1Timer_html_a57fb4e46a0c3961b3fc021826052bd1f"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#a57fb4e46a0c3961b3fc021826052bd1f">OPALTimer::Timer::~Timer</a></div><div class="ttdeci">~Timer()</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00028">Timer.cpp:28</a></div></div>
 <div class="ttc" id="aclassOPALTimer_1_1Timer_html_a8dfdc27c4d44abf827d3e149658bb7b8"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#a8dfdc27c4d44abf827d3e149658bb7b8">OPALTimer::Timer::Timer</a></div><div class="ttdeci">Timer()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00026">Timer.cpp:26</a></div></div>
-<div class="ttc" id="aclassOPALTimer_1_1Timer_html_aa4e41513b66621de2976aa61795cc823"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">OPALTimer::Timer::time</a></div><div class="ttdeci">std::string time() const</div><div class="ttdoc">Return time.</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00042">Timer.cpp:42</a></div></div>
-<div class="ttc" id="aclassOPALTimer_1_1Timer_html_abaa6452e8de99d07b796abd460d2f32d"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#abaa6452e8de99d07b796abd460d2f32d">OPALTimer::Timer::date</a></div><div class="ttdeci">std::string date() const</div><div class="ttdoc">Return date.</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00035">Timer.cpp:35</a></div></div>
+<div class="ttc" id="aclassOPALTimer_1_1Timer_html_aa4e41513b66621de2976aa61795cc823"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#aa4e41513b66621de2976aa61795cc823">OPALTimer::Timer::time</a></div><div class="ttdeci">std::string time() const</div><div class="ttdoc">Return time.</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00036">Timer.cpp:36</a></div></div>
+<div class="ttc" id="aclassOPALTimer_1_1Timer_html_abaa6452e8de99d07b796abd460d2f32d"><div class="ttname"><a href="classOPALTimer_1_1Timer.html#abaa6452e8de99d07b796abd460d2f32d">OPALTimer::Timer::date</a></div><div class="ttdeci">std::string date() const</div><div class="ttdoc">Return date.</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00030">Timer.cpp:30</a></div></div>
 <div class="ttc" id="anamespaceOPALTimer_html"><div class="ttname"><a href="namespaceOPALTimer.html">OPALTimer</a></div><div class="ttdoc">Timer class.</div><div class="ttdef"><b>Definition</b> <a href="Timer_8cpp_source.html#l00022">Timer.cpp:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -175,7 +165,7 @@ $(document).ready(function(){initNavTree('Timer_8cpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="Timer_8cpp.html">Timer.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

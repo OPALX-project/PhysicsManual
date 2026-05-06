@@ -3,7 +3,7 @@ var classDistribution =
     [ "BinomialBehaviorSplitter", "classDistribution_1_1BinomialBehaviorSplitter.html", "classDistribution_1_1BinomialBehaviorSplitter" ],
     [ "GaussianLikeBehavior", "classDistribution_1_1GaussianLikeBehavior.html", "classDistribution_1_1GaussianLikeBehavior" ],
     [ "MDependentBehavior", "classDistribution_1_1MDependentBehavior.html", "classDistribution_1_1MDependentBehavior" ],
-    [ "Matrix_t", "classDistribution.html#aea0bb36d2036ce93d4570c33b05b42e1", null ],
+    [ "Matrix_t", "classDistribution.html#a9b693f3e9e3b62cd81a9e352bd82fd4b", null ],
     [ "EmissionModel", "classDistribution.html#aded07da2c47998306c5dc571bd0a8cbc", [
       [ "NONE", "classDistribution.html#aded07da2c47998306c5dc571bd0a8cbcab50339a10e1de285ac99d4c3990b8693", null ],
       [ "ASTRA", "classDistribution.html#aded07da2c47998306c5dc571bd0a8cbca92f86fdfa4f03036536527e912af7ebf", null ],
@@ -113,7 +113,7 @@ var classDistribution =
     [ "occurrence", "classDistribution.html#a2d4689680e7982efa61a4c9dece2c691", null ],
     [ "particleRefData_m", "classDistribution.html#a0a4a013d30f9e2b4434f921f9644e20c", null ],
     [ "pmean_m", "classDistribution.html#ab798b5f7ac451613204f5660c0291d6f", null ],
-    [ "references", "classDistribution.html#aa8300151d7828c3574310c91c234628b", null ],
+    [ "references", "classDistribution.html#a7e6a1e5415d8ee8cd5be71dfbdaaae27", null ],
     [ "sharedFlag", "classDistribution.html#a55a166f6e325354fc118311ff2565b50", null ],
     [ "sigmaP_m", "classDistribution.html#a1572903579516970dc1ca0db294992bf", null ],
     [ "sigmaR_m", "classDistribution.html#a1036500dd1c8b7ad1dff1cf20b442136", null ],

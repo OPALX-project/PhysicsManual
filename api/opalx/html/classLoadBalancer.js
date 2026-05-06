@@ -1,6 +1,6 @@
 var classLoadBalancer =
 [
-    [ "Base", "classLoadBalancer.html#aa2967628a0a69669d633d990e89d01c5", null ],
+    [ "Base", "classLoadBalancer.html#a5b0a7fb38df22b6e9d6b96e4703ea2fc", null ],
     [ "FieldSolver_t", "classLoadBalancer.html#a966eb178583f8d9c55a85f5b354a7e49", null ],
     [ "LoadBalancer", "classLoadBalancer.html#a504012e3872d3e8e4c1c3ac60d763cf5", null ],
     [ "~LoadBalancer", "classLoadBalancer.html#a373bf388af6d803376989c89b7168945", null ],

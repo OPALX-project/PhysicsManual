@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -107,42 +107,42 @@ $(document).ready(function(){initNavTree('TestGSLLinalg_8cpp.html',''); initResi
 <p>Unit tests for GSL linear algebra routines.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="GSLComplex_8h_source.html">Utilities/GSLComplex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GSLLinalg_8h_source.html">Utilities/GSLLinalg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GSLMatrix_8h_source.html">Utilities/GSLMatrix.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GSLComplex_8h_source.html">Utilities/GSLComplex.h</a>&quot;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for TestGSLLinalg.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="TestGSLLinalg_8cpp__incl.png" border="0" usemap="#aTestGSLLinalg_8cpp" alt=""/></div>
 <map name="aTestGSLLinalg_8cpp" id="aTestGSLLinalg_8cpp">
-<area shape="rect" title="Unit tests for GSL linear algebra routines." alt="" coords="338,5,477,31"/>
-<area shape="rect" title=" " alt="" coords="151,79,255,104"/>
-<area shape="poly" title=" " alt="" coords="375,33,250,77,248,72,374,28"/>
-<area shape="rect" href="GSLLinalg_8h.html" title=" " alt="" coords="331,79,484,104"/>
-<area shape="poly" title=" " alt="" coords="410,31,410,65,405,65,405,31"/>
-<area shape="rect" href="GSLMatrix_8h.html" title=" " alt="" coords="85,152,241,177"/>
-<area shape="poly" title=" " alt="" coords="390,33,269,106,197,148,194,143,266,102,387,28"/>
-<area shape="rect" href="GSLComplex_8h.html" title=" " alt="" coords="295,225,467,251"/>
-<area shape="poly" title=" " alt="" coords="439,29,471,48,486,61,498,78,501,91,498,105,480,140,457,171,408,219,405,215,453,168,476,137,493,103,496,91,493,80,482,65,468,52,436,33"/>
+<area shape="rect" title="Unit tests for GSL linear algebra routines." alt="" coords="315,5,454,31"/>
+<area shape="rect" title=" " alt="" coords="129,79,233,104"/>
+<area shape="poly" title=" " alt="" coords="353,33,227,77,226,72,351,28"/>
 <area shape="rect" title=" " alt="" coords="473,299,536,324"/>
-<area shape="poly" title=" " alt="" coords="450,28,487,47,504,60,518,77,530,104,536,132,538,190,529,244,517,286,512,284,524,243,532,190,531,133,525,105,513,80,500,64,484,51,448,33"/>
-<area shape="poly" title=" " alt="" coords="369,107,217,151,215,146,367,101"/>
-<area shape="rect" title=" " alt="" coords="208,225,271,251"/>
-<area shape="poly" title=" " alt="" coords="406,106,392,141,380,161,365,179,326,207,285,226,283,221,324,202,362,175,376,158,387,139,401,104"/>
-<area shape="poly" title=" " alt="" coords="412,104,414,137,410,178,397,214,392,212,405,177,408,137,406,104"/>
-<area shape="poly" title=" " alt="" coords="417,103,447,155,482,224,501,284,496,286,477,226,443,157,412,106"/>
-<area shape="rect" title=" " alt="" coords="266,152,351,177"/>
-<area shape="poly" title=" " alt="" coords="393,106,337,146,334,142,390,102"/>
-<area shape="poly" title=" " alt="" coords="177,175,219,214,215,218,174,179"/>
-<area shape="rect" title=" " alt="" coords="117,225,183,251"/>
-<area shape="poly" title=" " alt="" coords="164,178,157,212,152,211,159,177"/>
-<area shape="rect" title=" " alt="" coords="5,225,92,251"/>
-<area shape="poly" title=" " alt="" coords="146,180,80,220,78,216,144,175"/>
-<area shape="poly" title=" " alt="" coords="199,175,333,218,332,224,197,180"/>
+<area shape="poly" title=" " alt="" coords="427,28,466,47,485,60,500,77,525,120,535,159,533,201,526,251,517,286,512,285,521,250,528,200,529,160,520,122,496,80,481,64,463,51,425,33"/>
+<area shape="rect" href="GSLComplex_8h.html" title=" " alt="" coords="295,225,467,251"/>
+<area shape="poly" title=" " alt="" coords="416,28,449,48,464,61,476,77,490,104,496,128,493,152,482,179,459,204,431,222,428,217,456,200,477,176,488,150,490,128,485,106,472,80,460,65,445,52,413,33"/>
+<area shape="rect" href="GSLLinalg_8h.html" title=" " alt="" coords="308,79,461,104"/>
+<area shape="poly" title=" " alt="" coords="387,31,387,65,382,65,382,31"/>
+<area shape="rect" href="GSLMatrix_8h.html" title=" " alt="" coords="100,152,256,177"/>
+<area shape="poly" title=" " alt="" coords="369,33,298,81,207,146,203,142,295,76,366,29"/>
+<area shape="poly" title=" " alt="" coords="402,248,474,289,471,294,399,253"/>
 <area shape="rect" title=" " alt="" coords="341,299,420,324"/>
 <area shape="poly" title=" " alt="" coords="383,251,383,285,378,285,378,251"/>
-<area shape="poly" title=" " alt="" coords="402,248,474,289,471,294,399,253"/>
+<area shape="poly" title=" " alt="" coords="417,102,451,121,468,134,482,151,498,184,506,221,509,285,504,285,501,222,493,186,477,153,464,138,448,125,414,106"/>
+<area shape="poly" title=" " alt="" coords="383,105,373,152,373,183,377,212,372,213,367,184,367,152,378,104"/>
+<area shape="rect" title=" " alt="" coords="382,152,467,177"/>
+<area shape="poly" title=" " alt="" coords="394,103,414,139,409,141,389,106"/>
+<area shape="rect" title=" " alt="" coords="208,225,271,251"/>
+<area shape="poly" title=" " alt="" coords="375,106,263,217,259,213,371,103"/>
+<area shape="poly" title=" " alt="" coords="352,107,225,150,224,145,351,101"/>
+<area shape="poly" title=" " alt="" coords="211,175,336,218,334,223,210,180"/>
+<area shape="poly" title=" " alt="" coords="190,176,222,213,218,217,186,179"/>
+<area shape="rect" title=" " alt="" coords="117,225,183,251"/>
+<area shape="poly" title=" " alt="" coords="176,179,162,214,157,212,171,177"/>
+<area shape="rect" title=" " alt="" coords="5,225,92,251"/>
+<area shape="poly" title=" " alt="" coords="158,180,83,221,81,216,156,175"/>
 </map>
 </div>
 </div>
@@ -173,7 +173,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unit tests for GSL linear algebra routines. </p>
 <p>This file contains unit tests for GSL-compatible linear algebra operations including LU decomposition, determinant computation, and matrix inversion for both real and complex matrices.</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000063">Test:</a></b></dt><dd>GSLLinalgTest::LUDecomp Tests LU decomposition with partial pivoting: \(\mathbf{P} \mathbf{A} = \mathbf{L} \mathbf{U}\), where \(\mathbf{P}\) is a permutation matrix, \(\mathbf{L}\) is lower triangular, and \(\mathbf{U}\) is upper triangular. Verifies that the decomposition completes successfully for a tridiagonal matrix.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000063">Test:</a></b></dt><dd>GSLLinalgTest::LUDecomp Tests LU decomposition with partial pivoting: \(\mathbf{P} \mathbf{A} = \mathbf{L}
+\mathbf{U}\), where \(\mathbf{P}\) is a permutation matrix, \(\mathbf{L}\) is lower triangular, and \(\mathbf{U}\) is upper triangular. Verifies that the decomposition completes successfully for a tridiagonal matrix.</dd></dl>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000064">Test:</a></b></dt><dd>GSLLinalgTest::LUDet Tests determinant computation using LU decomposition: \(\det(\mathbf{A}) = \det(\mathbf{P}) \det(\mathbf{L}) \det(\mathbf{U})\). Verifies correct computation of determinant for a 2×2 matrix with known determinant value.</dd></dl>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000065">Test:</a></b></dt><dd>GSLLinalgTest::LUInvert Tests matrix inversion using LU decomposition: \(\mathbf{A}^{-1}\). Verifies that the computed inverse satisfies \(\mathbf{A} \mathbf{A}^{-1} = \mathbf{I}\) by checking individual elements of the inverse matrix.</dd></dl>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000066">Test:</a></b></dt><dd>GSLLinalgTest::LUInvertIdentity Tests inversion of the identity matrix. Verifies that \(\mathbf{I}^{-1} = \mathbf{I}\), confirming that the inversion algorithm handles the special case correctly.</dd></dl>
@@ -211,7 +212,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00157">157</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLComplex_8h_source.html#l00051">gsl_complex_rect()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00308">gsl_linalg_LU_decomp_complex()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00137">gsl_matrix_complex_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00153">gsl_matrix_complex_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00529">gsl_matrix_complex_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
+<p class="reference">References <a class="el" href="GSLComplex_8h_source.html#l00049">gsl_complex_rect()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00319">gsl_linalg_LU_decomp_complex()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00120">gsl_matrix_complex_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00136">gsl_matrix_complex_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00500">gsl_matrix_complex_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -280,7 +281,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00177">177</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLComplex_8h_source.html#l00051">gsl_complex_rect()</a>, <a class="el" href="GSLCompat_8h_source.html#l00126">GSL_IMAG</a>, <a class="el" href="GSLLinalg_8h_source.html#l00308">gsl_linalg_LU_decomp_complex()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00316">gsl_linalg_LU_det_complex()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00137">gsl_matrix_complex_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00153">gsl_matrix_complex_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00529">gsl_matrix_complex_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>, and <a class="el" href="GSLCompat_8h_source.html#l00125">GSL_REAL</a>.</p>
+<p class="reference">References <a class="el" href="GSLComplex_8h_source.html#l00049">gsl_complex_rect()</a>, <a class="el" href="GSLCompat_8h_source.html#l00118">GSL_IMAG</a>, <a class="el" href="GSLLinalg_8h_source.html#l00319">gsl_linalg_LU_decomp_complex()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00327">gsl_linalg_LU_det_complex()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00120">gsl_matrix_complex_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00136">gsl_matrix_complex_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00500">gsl_matrix_complex_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>, and <a class="el" href="GSLCompat_8h_source.html#l00117">GSL_REAL</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -355,7 +356,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00201">201</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLComplex_8h_source.html#l00051">gsl_complex_rect()</a>, <a class="el" href="GSLCompat_8h_source.html#l00126">GSL_IMAG</a>, <a class="el" href="GSLLinalg_8h_source.html#l00308">gsl_linalg_LU_decomp_complex()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00325">gsl_linalg_LU_invert_complex()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00137">gsl_matrix_complex_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00153">gsl_matrix_complex_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00539">gsl_matrix_complex_get()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00529">gsl_matrix_complex_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>, and <a class="el" href="GSLCompat_8h_source.html#l00125">GSL_REAL</a>.</p>
+<p class="reference">References <a class="el" href="GSLComplex_8h_source.html#l00049">gsl_complex_rect()</a>, <a class="el" href="GSLCompat_8h_source.html#l00118">GSL_IMAG</a>, <a class="el" href="GSLLinalg_8h_source.html#l00319">gsl_linalg_LU_decomp_complex()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00336">gsl_linalg_LU_invert_complex()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00120">gsl_matrix_complex_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00136">gsl_matrix_complex_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00510">gsl_matrix_complex_get()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00500">gsl_matrix_complex_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>, and <a class="el" href="GSLCompat_8h_source.html#l00117">GSL_REAL</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -437,7 +438,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00058">58</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00111">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00125">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00480">gsl_matrix_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
+<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00094">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00108">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00453">gsl_matrix_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -494,7 +495,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00083">83</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00124">gsl_linalg_LU_det()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00111">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00125">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00480">gsl_matrix_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
+<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00124">gsl_linalg_LU_det()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00094">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00108">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00453">gsl_matrix_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -554,7 +555,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00105">105</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00139">gsl_linalg_LU_invert()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00111">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00125">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00490">gsl_matrix_get()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00480">gsl_matrix_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
+<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00139">gsl_linalg_LU_invert()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00094">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00108">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00463">gsl_matrix_get()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00453">gsl_matrix_set()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -617,7 +618,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TestGSLLinalg_8cpp_source.html#l00133">133</a> of file <a class="el" href="TestGSLLinalg_8cpp_source.html">TestGSLLinalg.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00139">gsl_linalg_LU_invert()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00111">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00125">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00490">gsl_matrix_get()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00515">gsl_matrix_set_identity()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
+<p class="reference">References <a class="el" href="GSLLinalg_8h_source.html#l00066">gsl_linalg_LU_decomp()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00139">gsl_linalg_LU_invert()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00094">gsl_matrix_alloc()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00108">gsl_matrix_free()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00463">gsl_matrix_get()</a>, <a class="el" href="GSLMatrix_8h_source.html#l00486">gsl_matrix_set_identity()</a>, <a class="el" href="GSLLinalg_8h_source.html#l00040">gsl_permutation_alloc()</a>, and <a class="el" href="GSLLinalg_8h_source.html#l00052">gsl_permutation_free()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -664,7 +665,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7c608ee7a349a990cecd74a7d13d4b1.html">unit_tests</a></li><li class="navelem"><a class="el" href="dir_2b430ab9192c3c4004bc834d12ef46ea.html">Utilities</a></li><li class="navelem"><a class="el" href="TestGSLLinalg_8cpp.html">TestGSLLinalg.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

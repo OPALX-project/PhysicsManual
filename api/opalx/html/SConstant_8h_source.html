@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -125,146 +125,127 @@ $(document).ready(function(){initNavTree('SConstant_8h_source.html',''); initRes
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="AbstractObjects_2Expressions_8h.html">AbstractObjects/Expressions.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="Token_8h.html">OpalParser/Token.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="AbstractObjects_2Expressions_8h.html">AbstractObjects/Expressions.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Token_8h.html">OpalParser/Token.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceExpressions.html">Expressions</a> {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Class SConstant</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//  This expression returns a scalar constant.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceExpressions.html">Expressions</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// Class SConstant</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//  This expression returns a scalar constant.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html">   35</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant</a>: <span class="keyword">public</span> <a class="code hl_class" href="classExpressions_1_1Scalar.html">Scalar</a>&lt;T&gt; {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="comment">//  Use the value of the constant.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">explicit</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">SConstant</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">value</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html">   35</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant</a> : <span class="keyword">public</span> <a class="code hl_class" href="classExpressions_1_1Scalar.html">Scalar</a>&lt;T&gt; {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">//  Use the value of the constant.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">explicit</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">SConstant</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">value</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">~SConstant</a>();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">~SConstant</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classExpressions_1_1Scalar.html">Scalar&lt;T&gt;</a> *<a class="code hl_function" href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">clone</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">evaluate</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">//  Always true.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">isConstant</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">   56</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">print</a>(std::ostream &amp;str, <span class="keywordtype">int</span> precedence) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="comment">// Not implemented.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">   61</a></span>        <a class="code hl_function" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">SConstant</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a5c94ec41a5bf364654575bcbc65a4b2c">   62</a></span>        <a class="code hl_function" href="classExpressions_1_1SConstant.html#a5c94ec41a5bf364654575bcbc65a4b2c">SConstant</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;T&gt;</a> &amp;);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ab072f914e8d992a90e2b81cd3666dac1">   63</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#ab072f914e8d992a90e2b81cd3666dac1">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;T&gt;</a> &amp;);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classExpressions_1_1Scalar.html">Scalar&lt;T&gt;</a>* <a class="code hl_function" href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">clone</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">evaluate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="comment">//  Always true.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">isConstant</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">   54</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">print</a>(std::ostream&amp; str, <span class="keywordtype">int</span> precedence) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="comment">// Not implemented.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">   58</a></span>        <a class="code hl_function" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">SConstant</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a5c94ec41a5bf364654575bcbc65a4b2c">   59</a></span>        <a class="code hl_function" href="classExpressions_1_1SConstant.html#a5c94ec41a5bf364654575bcbc65a4b2c">SConstant</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;T&gt;</a>&amp;);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ab072f914e8d992a90e2b81cd3666dac1">   60</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#ab072f914e8d992a90e2b81cd3666dac1">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;T&gt;</a>&amp;);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">   62</a></span>        <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">value</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    };</div>
+</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">   65</a></span>        <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_variable" href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">value</a>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    };</div>
-</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// Implementation</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// Implementation</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a034db61ff919cfa57dc827096418fe6c">   73</a></span>    <a class="code hl_function" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">SConstant&lt;T&gt;::SConstant</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> val):</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        value(val)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a034db61ff919cfa57dc827096418fe6c">   69</a></span>    <span class="keyword">inline</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">SConstant&lt;T&gt;::SConstant</a>(<a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> val) : value(val) {}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">   72</a></span>    <span class="keyword">inline</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">SConstant&lt;T&gt;::~SConstant</a>() {}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">   75</a></span>    <span class="keyword">inline</span> <a class="code hl_class" href="classExpressions_1_1Scalar.html">Scalar&lt;T&gt;</a>* <a class="code hl_function" href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">SConstant&lt;T&gt;::clone</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;T&gt;</a>(value);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">   79</a></span>    <a class="code hl_function" href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">SConstant&lt;T&gt;::~SConstant</a>()</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    {}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">   80</a></span>    <span class="keyword">inline</span> <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">SConstant&lt;T&gt;::evaluate</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">   84</a></span>    <a class="code hl_class" href="classExpressions_1_1Scalar.html">Scalar&lt;T&gt;</a> *<a class="code hl_function" href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">SConstant&lt;T&gt;::clone</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;T&gt;</a>(value);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">   85</a></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">SConstant&lt;T&gt;::isConstant</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">   90</a></span>    <a class="code hl_typedef" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">SConstant&lt;T&gt;::evaluate</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> value;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// All print() methods must be specialised.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">template</span> &lt;&gt;</div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a76c7eba9c0457206854fb1730e5ab47d">   93</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">SConstant&lt;bool&gt;::print</a>(std::ostream&amp; os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        os &lt;&lt; (value ? <span class="stringliteral">&quot;TRUE&quot;</span> : <span class="stringliteral">&quot;FALSE&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">   96</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">SConstant&lt;T&gt;::isConstant</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">template</span> &lt;&gt;</div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ad5c0b9efed82eef8c31314fe63b41fef">   98</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">SConstant&lt;double&gt;::print</a>(std::ostream&amp; os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">// std::streamsize old_prec = os.precision(12);</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        os &lt;&lt; value;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">// ada 15-6-2000 statement unreachable  os.precision(old_prec);</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// All print() methods must be specialised.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">template</span>&lt;&gt; <span class="keyword">inline</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">template</span> &lt;&gt;</div>
 <div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#a76c7eba9c0457206854fb1730e5ab47d">  105</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">SConstant&lt;bool&gt;::print</a>(std::ostream &amp;os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        os &lt;&lt; (value ? <span class="stringliteral">&quot;TRUE&quot;</span> : <span class="stringliteral">&quot;FALSE&quot;</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ae2636769f702bab9e3b8fd7f12592735">  105</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">SConstant&lt;std::string&gt;::print</a>(std::ostream&amp; os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        os &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; value &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span>;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">template</span>&lt;&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ad5c0b9efed82eef8c31314fe63b41fef">  111</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">SConstant&lt;double&gt;::print</a>(std::ostream &amp;os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">//std::streamsize old_prec = os.precision(12);</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        os &lt;&lt; value;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">// ada 15-6-2000 statement unreachable  os.precision(old_prec);</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">template</span> &lt;&gt;</div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ad0030941e3ad7669b7952ee62ee09515">  110</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;std::list&lt;Token&gt;</a> &gt;::print(std::ostream&amp; os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">for</span> (std::list&lt;Token&gt;::const_iterator token = value.begin(); token != value.end();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>             ++token) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            os &lt;&lt; *token;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
 </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">template</span>&lt;&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ae2636769f702bab9e3b8fd7f12592735">  119</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">SConstant&lt;std::string&gt;::print</a>(std::ostream &amp;os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        os &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; value &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span>;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">template</span>&lt;&gt; <span class="keyword">inline</span></div>
-<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classExpressions_1_1SConstant.html#ad0030941e3ad7669b7952ee62ee09515">  125</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classExpressions_1_1SConstant.html">SConstant&lt;std::list&lt;Token&gt;</a> &gt;::print(std::ostream &amp;os, <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">for</span>(std::list&lt;Token&gt;::const_iterator token = value.begin();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            token != value.end(); ++token) {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            os &lt;&lt; *token;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif </span><span class="comment">// OPAL_SConstant_HH</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}  <span class="comment">// namespace Expressions</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#endif  </span><span class="comment">// OPAL_SConstant_HH</span></div>
 <div class="ttc" id="aAbstractObjects_2Expressions_8h_html"><div class="ttname"><a href="AbstractObjects_2Expressions_8h.html">Expressions.h</a></div></div>
 <div class="ttc" id="aOPALTypes_8h_html_a6b2d038ea9c8d2651eecffe0e28b7ebb"><div class="ttname"><a href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a></div><div class="ttdeci">double T</div><div class="ttdef"><b>Definition</b> <a href="OPALTypes_8h_source.html#l00008">OPALTypes.h:8</a></div></div>
 <div class="ttc" id="aToken_8h_html"><div class="ttname"><a href="Token_8h.html">Token.h</a></div></div>
 <div class="ttc" id="aclassExpressions_1_1SConstant_html"><div class="ttname"><a href="classExpressions_1_1SConstant.html">Expressions::SConstant</a></div><div class="ttdoc">A scalar constant expression.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00035">SConstant.h:35</a></div></div>
 <div class="ttc" id="aclassExpressions_1_1SConstant_html_a15789ee4c335ad5ecf21f2cc431d9847"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a15789ee4c335ad5ecf21f2cc431d9847">Expressions::SConstant::print</a></div><div class="ttdeci">virtual void print(std::ostream &amp;str, int precedence) const</div><div class="ttdoc">Print expression.</div></div>
-<div class="ttc" id="aclassExpressions_1_1SConstant_html_a1b24697d873c98d7905c6cf55f77ee55"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">Expressions::SConstant::value</a></div><div class="ttdeci">T value</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00065">SConstant.h:65</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1SConstant_html_a29b9a36161c895d0c683cfa2652b52ae"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">Expressions::SConstant::isConstant</a></div><div class="ttdeci">virtual bool isConstant() const</div><div class="ttdoc">Test for constant.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00096">SConstant.h:96</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1SConstant_html_a308566813ac1ae158bf594f7a23c42a3"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">Expressions::SConstant::evaluate</a></div><div class="ttdeci">virtual T evaluate() const</div><div class="ttdoc">Evaluate.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00090">SConstant.h:90</a></div></div>
-<div class="ttc" id="aclassExpressions_1_1SConstant_html_a3663aec713c63ffaafc53534266469ed"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">Expressions::SConstant::~SConstant</a></div><div class="ttdeci">virtual ~SConstant()</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00079">SConstant.h:79</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1SConstant_html_a1b24697d873c98d7905c6cf55f77ee55"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a1b24697d873c98d7905c6cf55f77ee55">Expressions::SConstant::value</a></div><div class="ttdeci">T value</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00062">SConstant.h:62</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1SConstant_html_a29b9a36161c895d0c683cfa2652b52ae"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a29b9a36161c895d0c683cfa2652b52ae">Expressions::SConstant::isConstant</a></div><div class="ttdeci">virtual bool isConstant() const</div><div class="ttdoc">Test for constant.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00085">SConstant.h:85</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1SConstant_html_a308566813ac1ae158bf594f7a23c42a3"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a308566813ac1ae158bf594f7a23c42a3">Expressions::SConstant::evaluate</a></div><div class="ttdeci">virtual T evaluate() const</div><div class="ttdoc">Evaluate.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00080">SConstant.h:80</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1SConstant_html_a3663aec713c63ffaafc53534266469ed"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a3663aec713c63ffaafc53534266469ed">Expressions::SConstant::~SConstant</a></div><div class="ttdeci">virtual ~SConstant()</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00072">SConstant.h:72</a></div></div>
 <div class="ttc" id="aclassExpressions_1_1SConstant_html_a53e07b40dad95afd63d92dbc395f9f6c"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a53e07b40dad95afd63d92dbc395f9f6c">Expressions::SConstant::SConstant</a></div><div class="ttdeci">SConstant()</div></div>
 <div class="ttc" id="aclassExpressions_1_1SConstant_html_a5c94ec41a5bf364654575bcbc65a4b2c"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a5c94ec41a5bf364654575bcbc65a4b2c">Expressions::SConstant::SConstant</a></div><div class="ttdeci">SConstant(const SConstant&lt; T &gt; &amp;)</div></div>
-<div class="ttc" id="aclassExpressions_1_1SConstant_html_a68478d7d7fda6a762ed55fdf0cddd82f"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">Expressions::SConstant::clone</a></div><div class="ttdeci">virtual Scalar&lt; T &gt; * clone() const</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00084">SConstant.h:84</a></div></div>
+<div class="ttc" id="aclassExpressions_1_1SConstant_html_a68478d7d7fda6a762ed55fdf0cddd82f"><div class="ttname"><a href="classExpressions_1_1SConstant.html#a68478d7d7fda6a762ed55fdf0cddd82f">Expressions::SConstant::clone</a></div><div class="ttdeci">virtual Scalar&lt; T &gt; * clone() const</div><div class="ttdoc">Make clone.</div><div class="ttdef"><b>Definition</b> <a href="SConstant_8h_source.html#l00075">SConstant.h:75</a></div></div>
 <div class="ttc" id="aclassExpressions_1_1SConstant_html_ab072f914e8d992a90e2b81cd3666dac1"><div class="ttname"><a href="classExpressions_1_1SConstant.html#ab072f914e8d992a90e2b81cd3666dac1">Expressions::SConstant::operator=</a></div><div class="ttdeci">void operator=(const SConstant&lt; T &gt; &amp;)</div></div>
 <div class="ttc" id="aclassExpressions_1_1Scalar_html"><div class="ttname"><a href="classExpressions_1_1Scalar.html">Expressions::Scalar</a></div><div class="ttdoc">A scalar expression.</div><div class="ttdef"><b>Definition</b> <a href="AbstractObjects_2Expressions_8h_source.html#l00071">AbstractObjects/Expressions.h:71</a></div></div>
 <div class="ttc" id="anamespaceExpressions_html"><div class="ttname"><a href="namespaceExpressions.html">Expressions</a></div><div class="ttdoc">Representation objects and parsers for attribute expressions.</div><div class="ttdef"><b>Definition</b> <a href="AbstractObjects_2Expressions_8h_source.html#l00064">AbstractObjects/Expressions.h:64</a></div></div>
@@ -274,7 +255,7 @@ $(document).ready(function(){initNavTree('SConstant_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0a4f3aaca890ccb65838b7508ad5661d.html">Expressions</a></li><li class="navelem"><a class="el" href="SConstant_8h.html">SConstant.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

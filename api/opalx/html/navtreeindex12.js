@@ -1,6 +1,17 @@
 var NAVTREEINDEX12 =
 {
-"TestOpalVariableRFCavity_8cpp_source.html":[4,0,1,6,5],
+"TestOpalSinusoidalTimeDependence_8cpp_source.html":[4,0,1,6,4],
+"TestOpalSplineTimeDependence_8cpp.html":[4,0,1,6,5],
+"TestOpalSplineTimeDependence_8cpp.html#a3e402d65c69f4ffbb14741181858e245":[4,0,1,6,5,2],
+"TestOpalSplineTimeDependence_8cpp.html#a69336d38969ae16cbfd9bab09323d3dd":[4,0,1,6,5,0],
+"TestOpalSplineTimeDependence_8cpp.html#a8844ab10c0cad2e4db3283751523c52f":[4,0,1,6,5,3],
+"TestOpalSplineTimeDependence_8cpp.html#aa74d70d5302b8f9a2f497054a29c7bb0":[4,0,1,6,5,1],
+"TestOpalSplineTimeDependence_8cpp.html#ab87ad5cf92ca804e1b04b7fe2f166847":[4,0,1,6,5,4],
+"TestOpalSplineTimeDependence_8cpp_source.html":[4,0,1,6,5],
+"TestOpalVariableRFCavity_8cpp.html":[4,0,1,6,6],
+"TestOpalVariableRFCavity_8cpp.html#a1ff49d6d788fd96f559cc2f6f7983935":[4,0,1,6,6,2],
+"TestOpalVariableRFCavity_8cpp.html#ad7e6ea545f2223c882e3d32168804454":[4,0,1,6,6,1],
+"TestOpalVariableRFCavity_8cpp_source.html":[4,0,1,6,6],
 "TestOrbitThreader_8cpp.html":[4,0,1,1,3],
 "TestOrbitThreader_8cpp.html#a4c4156cd67ca86297dae60aad09be298":[4,0,1,1,3,3],
 "TestOrbitThreader_8cpp.html#ae1913e5f908c1b2bd7338dad55fb636f":[4,0,1,1,3,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX12 =
 "Union_8cpp_source.html":[4,0,0,24,0,34],
 "Union_8h.html":[4,0,0,24,0,35],
 "Union_8h_source.html":[4,0,0,24,0,35],
-"Units_8h.html":[4,0,0,18,23],
-"Units_8h.html#a01a383459c2b949c77a2a390249c3af8":[4,0,0,18,23,38],
-"Units_8h.html#a01cbaf5242046f06c69145223803ee5e":[4,0,0,18,23,10],
-"Units_8h.html#a0e9c04d3a20454b2dab3733e52ea0502":[4,0,0,18,23,35],
-"Units_8h.html#a1db4c837eec092267797cdcb7e3d245f":[4,0,0,18,23,28],
-"Units_8h.html#a1e3c341d573e641b7a6efd1ff2c3d642":[4,0,0,18,23,0],
-"Units_8h.html#a26b430a6effb0d020e4e6636fa6c33e6":[4,0,0,18,23,39],
-"Units_8h.html#a305a1eecd861f82eb65de1f285e31424":[4,0,0,18,23,33],
-"Units_8h.html#a33e1d00054d6d30fed6d2988c8692e8a":[4,0,0,18,23,8],
-"Units_8h.html#a3c6ca7a0396ebc957779241ac6e99e93":[4,0,0,18,23,4],
-"Units_8h.html#a42137139cea849003d05207d0ff86473":[4,0,0,18,23,11],
-"Units_8h.html#a4a324284c5575b4a1ae74670792bf314":[4,0,0,18,23,20]
+"Units_8h.html":[4,0,0,18,23]
 };

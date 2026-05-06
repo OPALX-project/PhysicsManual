@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -107,10 +107,10 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="contents">
 <a href="TestFFT_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &quot;<a class="code" href="GSLFFT_8h.html">Utilities/GSLFFT.h</a>&quot;</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &lt;complex&gt;</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;complex&gt;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &quot;<a class="code" href="GSLFFT_8h.html">Utilities/GSLFFT.h</a>&quot;</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classFFTTest.html">   52</a></span><span class="keyword">class </span><a class="code hl_class" href="classFFTTest.html">FFTTest</a> : <span class="keyword">public</span> ::testing::Test {</div>
@@ -127,14 +127,14 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">   59</a></span><a class="code hl_function" href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">TEST_F</a>(<a class="code hl_class" href="classFFTTest.html">FFTTest</a>, ComplexFFT_Identity) {</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Test FFT of a constant signal</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::vector&lt;std::complex&lt;double&gt;&gt; data(8, std::complex&lt;double&gt;(1.0, 0.0));</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// Create a copy for FFT</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::vector&lt;std::complex&lt;double&gt;&gt; fft_data = data;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Perform FFT (using the internal fft function)</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Note: This tests the internal implementation</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// For GSL-compatible interface, we&#39;d use gsl_fft_complex_forward</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Simple test: constant signal should have DC component only</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// (This is a simplified test - actual FFT would require the internal function)</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    EXPECT_EQ(data.size(), 8);</div>
@@ -146,21 +146,21 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Test real FFT transform</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = 8;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::vector&lt;double&gt; data(n);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Create a simple signal: [1, 0, 0, 0, 0, 0, 0, 0]</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    data[0] = 1.0;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; ++i) {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        data[i] = 0.0;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__real__wavetable">gsl_fft_real_wavetable</a>* wavetable = <a class="code hl_function" href="GSLFFT_8h.html#ae1fb8989a92913e8ab49ac0d9b7763ad">gsl_fft_real_wavetable_alloc</a>(n);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__real__workspace">gsl_fft_real_workspace</a>* workspace = <a class="code hl_function" href="GSLFFT_8h.html#aa3f4773cbd214cc90fa2a51ede01e60e">gsl_fft_real_workspace_alloc</a>(n);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_function" href="GSLFFT_8h.html#ade5da0086b058382a9cd11a79c7a55a7">gsl_fft_real_transform</a>(data.data(), 1, n, wavetable, workspace);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// DC component should be 1.0</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    EXPECT_NEAR(data[0], 1.0, 1e-10);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="GSLFFT_8h.html#a8f6817c3dd8710205286b50c0228839c">gsl_fft_real_wavetable_free</a>(wavetable);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_function" href="GSLFFT_8h.html#ad11ec09ad376ec8e34d41fa3507a6f5f">gsl_fft_real_workspace_free</a>(workspace);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
@@ -170,26 +170,26 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="TestFFT_8cpp.html#a6f9ad046ce37de73eb4232ddf152b233">   98</a></span><a class="code hl_function" href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">TEST_F</a>(<a class="code hl_class" href="classFFTTest.html">FFTTest</a>, ComplexFFT_Forward) {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = 4;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    std::vector&lt;double&gt; data(2 * n);  <span class="comment">// Complex data: [real0, imag0, real1, imag1, ...]</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// Set data to [1+0i, 0+0i, 0+0i, 0+0i]</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    data[0] = 1.0;  <span class="comment">// real[0]</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    data[1] = 0.0;  <span class="comment">// imag[0]</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        data[2*i] = 0.0;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        data[2*i+1] = 0.0;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        data[2 * i]     = 0.0;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        data[2 * i + 1] = 0.0;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__complex__wavetable">gsl_fft_complex_wavetable</a>* wavetable = <a class="code hl_function" href="GSLFFT_8h.html#ad9a545d0f2f52522445223043372f219">gsl_fft_complex_wavetable_alloc</a>(n);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__complex__workspace">gsl_fft_complex_workspace</a>* workspace = <a class="code hl_function" href="GSLFFT_8h.html#a7d1de1a4aa9e01c2b9b2a703a4b0a9f4">gsl_fft_complex_workspace_alloc</a>(n);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_function" href="GSLFFT_8h.html#ace51f066036d66a16fa79e59b578882f">gsl_fft_complex_forward</a>(data.data(), 1, n, wavetable, workspace);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// All components should be 1.0 (DC signal transforms to all ones)</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        EXPECT_NEAR(data[2*i], 1.0, 1e-10);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        EXPECT_NEAR(data[2*i+1], 0.0, 1e-10);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        EXPECT_NEAR(data[2 * i], 1.0, 1e-10);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        EXPECT_NEAR(data[2 * i + 1], 0.0, 1e-10);</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_function" href="GSLFFT_8h.html#a50d0766e4b89b480566a3dc3d81c6cc8">gsl_fft_complex_wavetable_free</a>(wavetable);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_function" href="GSLFFT_8h.html#acf26d8ff23bb668c263d0cf2cf5609d3">gsl_fft_complex_workspace_free</a>(workspace);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
@@ -199,22 +199,22 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="TestFFT_8cpp.html#adc00077da9fb7d0698cee1efb6e70d9a">  125</a></span><a class="code hl_function" href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">TEST_F</a>(<a class="code hl_class" href="classFFTTest.html">FFTTest</a>, ComplexFFT_Inverse) {</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = 4;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    std::vector&lt;double&gt; data(2 * n);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">// Set all components to 1.0 (constant in frequency domain)</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        data[2*i] = 1.0;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        data[2*i+1] = 0.0;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        data[2 * i]     = 1.0;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        data[2 * i + 1] = 0.0;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__complex__wavetable">gsl_fft_complex_wavetable</a>* wavetable = <a class="code hl_function" href="GSLFFT_8h.html#ad9a545d0f2f52522445223043372f219">gsl_fft_complex_wavetable_alloc</a>(n);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__complex__workspace">gsl_fft_complex_workspace</a>* workspace = <a class="code hl_function" href="GSLFFT_8h.html#a7d1de1a4aa9e01c2b9b2a703a4b0a9f4">gsl_fft_complex_workspace_alloc</a>(n);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_function" href="GSLFFT_8h.html#abf7cf6ccc15eecd4fdf50c39a2b6b32f">gsl_fft_complex_inverse</a>(data.data(), 1, n, wavetable, workspace);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="comment">// Should recover impulse at n=0</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    EXPECT_NEAR(data[0], <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(n), 1e-10);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    EXPECT_NEAR(data[1], 0.0, 1e-10);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_function" href="GSLFFT_8h.html#a50d0766e4b89b480566a3dc3d81c6cc8">gsl_fft_complex_wavetable_free</a>(wavetable);</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_function" href="GSLFFT_8h.html#acf26d8ff23bb668c263d0cf2cf5609d3">gsl_fft_complex_workspace_free</a>(workspace);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
@@ -225,30 +225,30 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = 8;</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    std::vector&lt;double&gt; original(2 * n);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    std::vector&lt;double&gt; transformed(2 * n);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="comment">// Create original signal</span></div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        original[2*i] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(i);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        original[2*i+1] = 0.0;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        original[2 * i]     = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(i);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        original[2 * i + 1] = 0.0;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    transformed = original;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__complex__wavetable">gsl_fft_complex_wavetable</a>* wavetable = <a class="code hl_function" href="GSLFFT_8h.html#ad9a545d0f2f52522445223043372f219">gsl_fft_complex_wavetable_alloc</a>(n);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <a class="code hl_struct" href="GSLFFT_8h.html#structgsl__fft__complex__workspace">gsl_fft_complex_workspace</a>* workspace = <a class="code hl_function" href="GSLFFT_8h.html#a7d1de1a4aa9e01c2b9b2a703a4b0a9f4">gsl_fft_complex_workspace_alloc</a>(n);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">// Forward transform</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_function" href="GSLFFT_8h.html#ace51f066036d66a16fa79e59b578882f">gsl_fft_complex_forward</a>(transformed.data(), 1, n, wavetable, workspace);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">// Inverse transform</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_function" href="GSLFFT_8h.html#abf7cf6ccc15eecd4fdf50c39a2b6b32f">gsl_fft_complex_inverse</a>(transformed.data(), 1, n, wavetable, workspace);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">// Should recover original (within scaling)</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        EXPECT_NEAR(transformed[2*i], original[2*i] * <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(n), 1e-6);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        EXPECT_NEAR(transformed[2*i+1], 0.0, 1e-6);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        EXPECT_NEAR(transformed[2 * i], original[2 * i] * <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(n), 1e-6);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        EXPECT_NEAR(transformed[2 * i + 1], 0.0, 1e-6);</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_function" href="GSLFFT_8h.html#a50d0766e4b89b480566a3dc3d81c6cc8">gsl_fft_complex_wavetable_free</a>(wavetable);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_function" href="GSLFFT_8h.html#acf26d8ff23bb668c263d0cf2cf5609d3">gsl_fft_complex_workspace_free</a>(workspace);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
@@ -258,21 +258,21 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="TestFFT_8cpp.html#a9173fa651d6939253411e4700d9b34c8">  180</a></span><a class="code hl_function" href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">TEST_F</a>(<a class="code hl_class" href="classFFTTest.html">FFTTest</a>, Radix2Forward) {</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = 4;  <span class="comment">// Must be power of 2</span></div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    std::vector&lt;double&gt; data(2 * n);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="comment">// Set to impulse</span></div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    data[0] = 1.0;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    data[1] = 0.0;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        data[2*i] = 0.0;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        data[2*i+1] = 0.0;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        data[2 * i]     = 0.0;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        data[2 * i + 1] = 0.0;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_function" href="GSLFFT_8h.html#af7b3fd10a117ff4b45ba4437ce27d1c6">gsl_fft_complex_radix2_forward</a>(data.data(), 1, n);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="comment">// All components should be 1.0</span></div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        EXPECT_NEAR(data[2*i], 1.0, 1e-10);</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        EXPECT_NEAR(data[2*i+1], 0.0, 1e-10);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        EXPECT_NEAR(data[2 * i], 1.0, 1e-10);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        EXPECT_NEAR(data[2 * i + 1], 0.0, 1e-10);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
 </div>
@@ -281,37 +281,36 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="TestFFT_8cpp.html#ac9fbf66ddd9f61a28b60ba7aa2c51b2b">  201</a></span><a class="code hl_function" href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">TEST_F</a>(<a class="code hl_class" href="classFFTTest.html">FFTTest</a>, Radix2Inverse) {</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = 4;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    std::vector&lt;double&gt; data(2 * n);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="comment">// Set all to 1.0</span></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        data[2*i] = 1.0;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        data[2*i+1] = 0.0;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        data[2 * i]     = 1.0;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        data[2 * i + 1] = 0.0;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <a class="code hl_function" href="GSLFFT_8h.html#ad15cbccdb5cf5af9c01e9ad021b1522e">gsl_fft_complex_radix2_inverse</a>(data.data(), 1, n);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="comment">// Should get impulse at n=0</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    EXPECT_NEAR(data[0], <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(n), 1e-10);</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    EXPECT_NEAR(data[1], 0.0, 1e-10);</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
 </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="ttc" id="aGSLFFT_8h_html"><div class="ttname"><a href="GSLFFT_8h.html">GSLFFT.h</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_a50d0766e4b89b480566a3dc3d81c6cc8"><div class="ttname"><a href="GSLFFT_8h.html#a50d0766e4b89b480566a3dc3d81c6cc8">gsl_fft_complex_wavetable_free</a></div><div class="ttdeci">void gsl_fft_complex_wavetable_free(gsl_fft_complex_wavetable *w)</div><div class="ttdoc">Free a complex FFT wavetable.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00354">GSLFFT.h:354</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_a7d1de1a4aa9e01c2b9b2a703a4b0a9f4"><div class="ttname"><a href="GSLFFT_8h.html#a7d1de1a4aa9e01c2b9b2a703a4b0a9f4">gsl_fft_complex_workspace_alloc</a></div><div class="ttdeci">gsl_fft_complex_workspace * gsl_fft_complex_workspace_alloc(size_t n)</div><div class="ttdoc">Allocate a complex FFT workspace of size .</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00300">GSLFFT.h:300</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_a50d0766e4b89b480566a3dc3d81c6cc8"><div class="ttname"><a href="GSLFFT_8h.html#a50d0766e4b89b480566a3dc3d81c6cc8">gsl_fft_complex_wavetable_free</a></div><div class="ttdeci">void gsl_fft_complex_wavetable_free(gsl_fft_complex_wavetable *w)</div><div class="ttdoc">Free a complex FFT wavetable.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00346">GSLFFT.h:346</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_a7d1de1a4aa9e01c2b9b2a703a4b0a9f4"><div class="ttname"><a href="GSLFFT_8h.html#a7d1de1a4aa9e01c2b9b2a703a4b0a9f4">gsl_fft_complex_workspace_alloc</a></div><div class="ttdeci">gsl_fft_complex_workspace * gsl_fft_complex_workspace_alloc(size_t n)</div><div class="ttdoc">Allocate a complex FFT workspace of size .</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00292">GSLFFT.h:292</a></div></div>
 <div class="ttc" id="aGSLFFT_8h_html_a8f6817c3dd8710205286b50c0228839c"><div class="ttname"><a href="GSLFFT_8h.html#a8f6817c3dd8710205286b50c0228839c">gsl_fft_real_wavetable_free</a></div><div class="ttdeci">void gsl_fft_real_wavetable_free(gsl_fft_real_wavetable *w)</div><div class="ttdoc">Free a real FFT wavetable.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00159">GSLFFT.h:159</a></div></div>
 <div class="ttc" id="aGSLFFT_8h_html_aa3f4773cbd214cc90fa2a51ede01e60e"><div class="ttname"><a href="GSLFFT_8h.html#aa3f4773cbd214cc90fa2a51ede01e60e">gsl_fft_real_workspace_alloc</a></div><div class="ttdeci">gsl_fft_real_workspace * gsl_fft_real_workspace_alloc(size_t n)</div><div class="ttdoc">Allocate a real FFT workspace of size .</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00138">GSLFFT.h:138</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_abf7cf6ccc15eecd4fdf50c39a2b6b32f"><div class="ttname"><a href="GSLFFT_8h.html#abf7cf6ccc15eecd4fdf50c39a2b6b32f">gsl_fft_complex_inverse</a></div><div class="ttdeci">void gsl_fft_complex_inverse(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)</div><div class="ttdoc">Inverse complex FFT (GSL scaling: multiplies by ).</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00335">GSLFFT.h:335</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_ace51f066036d66a16fa79e59b578882f"><div class="ttname"><a href="GSLFFT_8h.html#ace51f066036d66a16fa79e59b578882f">gsl_fft_complex_forward</a></div><div class="ttdeci">void gsl_fft_complex_forward(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)</div><div class="ttdoc">Forward complex FFT.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00314">GSLFFT.h:314</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_acf26d8ff23bb668c263d0cf2cf5609d3"><div class="ttname"><a href="GSLFFT_8h.html#acf26d8ff23bb668c263d0cf2cf5609d3">gsl_fft_complex_workspace_free</a></div><div class="ttdeci">void gsl_fft_complex_workspace_free(gsl_fft_complex_workspace *w)</div><div class="ttdoc">Free a complex FFT workspace.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00360">GSLFFT.h:360</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_ad11ec09ad376ec8e34d41fa3507a6f5f"><div class="ttname"><a href="GSLFFT_8h.html#ad11ec09ad376ec8e34d41fa3507a6f5f">gsl_fft_real_workspace_free</a></div><div class="ttdeci">void gsl_fft_real_workspace_free(gsl_fft_real_workspace *w)</div><div class="ttdoc">Free a real FFT workspace.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00165">GSLFFT.h:165</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_ad15cbccdb5cf5af9c01e9ad021b1522e"><div class="ttname"><a href="GSLFFT_8h.html#ad15cbccdb5cf5af9c01e9ad021b1522e">gsl_fft_complex_radix2_inverse</a></div><div class="ttdeci">void gsl_fft_complex_radix2_inverse(double *data, size_t stride, size_t n)</div><div class="ttdoc">Radix-2 inverse complex FFT (GSL scaling, allocates temporaries).</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00380">GSLFFT.h:380</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_ad9a545d0f2f52522445223043372f219"><div class="ttname"><a href="GSLFFT_8h.html#ad9a545d0f2f52522445223043372f219">gsl_fft_complex_wavetable_alloc</a></div><div class="ttdeci">gsl_fft_complex_wavetable * gsl_fft_complex_wavetable_alloc(size_t n)</div><div class="ttdoc">Allocate a complex FFT wavetable of size .</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00291">GSLFFT.h:291</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_abf7cf6ccc15eecd4fdf50c39a2b6b32f"><div class="ttname"><a href="GSLFFT_8h.html#abf7cf6ccc15eecd4fdf50c39a2b6b32f">gsl_fft_complex_inverse</a></div><div class="ttdeci">void gsl_fft_complex_inverse(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)</div><div class="ttdoc">Inverse complex FFT (GSL scaling: multiplies by ).</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00327">GSLFFT.h:327</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_ace51f066036d66a16fa79e59b578882f"><div class="ttname"><a href="GSLFFT_8h.html#ace51f066036d66a16fa79e59b578882f">gsl_fft_complex_forward</a></div><div class="ttdeci">void gsl_fft_complex_forward(double *data, size_t stride, size_t n, gsl_fft_complex_wavetable *, gsl_fft_complex_workspace *)</div><div class="ttdoc">Forward complex FFT.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00306">GSLFFT.h:306</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_acf26d8ff23bb668c263d0cf2cf5609d3"><div class="ttname"><a href="GSLFFT_8h.html#acf26d8ff23bb668c263d0cf2cf5609d3">gsl_fft_complex_workspace_free</a></div><div class="ttdeci">void gsl_fft_complex_workspace_free(gsl_fft_complex_workspace *w)</div><div class="ttdoc">Free a complex FFT workspace.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00350">GSLFFT.h:350</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_ad11ec09ad376ec8e34d41fa3507a6f5f"><div class="ttname"><a href="GSLFFT_8h.html#ad11ec09ad376ec8e34d41fa3507a6f5f">gsl_fft_real_workspace_free</a></div><div class="ttdeci">void gsl_fft_real_workspace_free(gsl_fft_real_workspace *w)</div><div class="ttdoc">Free a real FFT workspace.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00163">GSLFFT.h:163</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_ad15cbccdb5cf5af9c01e9ad021b1522e"><div class="ttname"><a href="GSLFFT_8h.html#ad15cbccdb5cf5af9c01e9ad021b1522e">gsl_fft_complex_radix2_inverse</a></div><div class="ttdeci">void gsl_fft_complex_radix2_inverse(double *data, size_t stride, size_t n)</div><div class="ttdoc">Radix-2 inverse complex FFT (GSL scaling, allocates temporaries).</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00368">GSLFFT.h:368</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_ad9a545d0f2f52522445223043372f219"><div class="ttname"><a href="GSLFFT_8h.html#ad9a545d0f2f52522445223043372f219">gsl_fft_complex_wavetable_alloc</a></div><div class="ttdeci">gsl_fft_complex_wavetable * gsl_fft_complex_wavetable_alloc(size_t n)</div><div class="ttdoc">Allocate a complex FFT wavetable of size .</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00283">GSLFFT.h:283</a></div></div>
 <div class="ttc" id="aGSLFFT_8h_html_ade5da0086b058382a9cd11a79c7a55a7"><div class="ttname"><a href="GSLFFT_8h.html#ade5da0086b058382a9cd11a79c7a55a7">gsl_fft_real_transform</a></div><div class="ttdeci">void gsl_fft_real_transform(double *data, size_t stride, size_t n, gsl_fft_real_wavetable *, gsl_fft_real_workspace *)</div><div class="ttdoc">Forward real FFT with GSL-compatible packed output.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00151">GSLFFT.h:151</a></div></div>
 <div class="ttc" id="aGSLFFT_8h_html_ae1fb8989a92913e8ab49ac0d9b7763ad"><div class="ttname"><a href="GSLFFT_8h.html#ae1fb8989a92913e8ab49ac0d9b7763ad">gsl_fft_real_wavetable_alloc</a></div><div class="ttdeci">gsl_fft_real_wavetable * gsl_fft_real_wavetable_alloc(size_t n)</div><div class="ttdoc">Allocate a real FFT wavetable of size .</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00129">GSLFFT.h:129</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_af7b3fd10a117ff4b45ba4437ce27d1c6"><div class="ttname"><a href="GSLFFT_8h.html#af7b3fd10a117ff4b45ba4437ce27d1c6">gsl_fft_complex_radix2_forward</a></div><div class="ttdeci">void gsl_fft_complex_radix2_forward(double *data, size_t stride, size_t n)</div><div class="ttdoc">Radix-2 forward complex FFT (allocates temporary wavetable/workspace).</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00368">GSLFFT.h:368</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_structgsl__fft__complex__wavetable"><div class="ttname"><a href="GSLFFT_8h.html#structgsl__fft__complex__wavetable">gsl_fft_complex_wavetable</a></div><div class="ttdoc">Complex FFT types.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00277">GSLFFT.h:277</a></div></div>
-<div class="ttc" id="aGSLFFT_8h_html_structgsl__fft__complex__workspace"><div class="ttname"><a href="GSLFFT_8h.html#structgsl__fft__complex__workspace">gsl_fft_complex_workspace</a></div><div class="ttdoc">Workspace for complex FFT routines.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00283">GSLFFT.h:283</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_af7b3fd10a117ff4b45ba4437ce27d1c6"><div class="ttname"><a href="GSLFFT_8h.html#af7b3fd10a117ff4b45ba4437ce27d1c6">gsl_fft_complex_radix2_forward</a></div><div class="ttdeci">void gsl_fft_complex_radix2_forward(double *data, size_t stride, size_t n)</div><div class="ttdoc">Radix-2 forward complex FFT (allocates temporary wavetable/workspace).</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00356">GSLFFT.h:356</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_structgsl__fft__complex__wavetable"><div class="ttname"><a href="GSLFFT_8h.html#structgsl__fft__complex__wavetable">gsl_fft_complex_wavetable</a></div><div class="ttdoc">Complex FFT types.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00269">GSLFFT.h:269</a></div></div>
+<div class="ttc" id="aGSLFFT_8h_html_structgsl__fft__complex__workspace"><div class="ttname"><a href="GSLFFT_8h.html#structgsl__fft__complex__workspace">gsl_fft_complex_workspace</a></div><div class="ttdoc">Workspace for complex FFT routines.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00275">GSLFFT.h:275</a></div></div>
 <div class="ttc" id="aGSLFFT_8h_html_structgsl__fft__real__wavetable"><div class="ttname"><a href="GSLFFT_8h.html#structgsl__fft__real__wavetable">gsl_fft_real_wavetable</a></div><div class="ttdoc">GSL-compatible interface for FFT routines.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00115">GSLFFT.h:115</a></div></div>
 <div class="ttc" id="aGSLFFT_8h_html_structgsl__fft__real__workspace"><div class="ttname"><a href="GSLFFT_8h.html#structgsl__fft__real__workspace">gsl_fft_real_workspace</a></div><div class="ttdoc">Workspace for real FFT routines.</div><div class="ttdef"><b>Definition</b> <a href="GSLFFT_8h_source.html#l00121">GSLFFT.h:121</a></div></div>
 <div class="ttc" id="aTestFFT_8cpp_html_a9abe3d896c59dc062aa9726ea8bd28df"><div class="ttname"><a href="TestFFT_8cpp.html#a9abe3d896c59dc062aa9726ea8bd28df">TEST_F</a></div><div class="ttdeci">TEST_F(FFTTest, ComplexFFT_Identity)</div><div class="ttdef"><b>Definition</b> <a href="TestFFT_8cpp_source.html#l00059">TestFFT.cpp:59</a></div></div>
@@ -323,7 +322,7 @@ $(document).ready(function(){initNavTree('TestFFT_8cpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7c608ee7a349a990cecd74a7d13d4b1.html">unit_tests</a></li><li class="navelem"><a class="el" href="dir_2b430ab9192c3c4004bc834d12ef46ea.html">Utilities</a></li><li class="navelem"><a class="el" href="TestFFT_8cpp.html">TestFFT.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

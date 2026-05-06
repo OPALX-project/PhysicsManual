@@ -25,7 +25,7 @@ var searchData=
   ['whilestatement_2eh_22',['WhileStatement.h',['../WhileStatement_8h.html',1,'']]],
   ['width_23',['width',['../classOpalProbe.html#ac1b0f6d64b4e8a5849bcf55f21ab7fd3a047c53f52d5af49223ce5eb30678b1f9',1,'OpalProbe::WIDTH'],['../classOpalVerticalFFAMagnet.html#a5e5159646e56ffaa22e8b96255eed5b6a44aa98c9d03a42fd3bae2c267d253e9e',1,'OpalVerticalFFAMagnet::WIDTH'],['../classOpalVariableRFCavity.html#a2fe2741c412ce30c61bc38a82782179ea00c2f91dae58365b174247dec07e4c68',1,'OpalVariableRFCavity::WIDTH']]],
   ['width_5fm_24',['width_m',['../structmslang_1_1Rectangle.html#ae882dea6bc9b67e58985d0eacff7133d',1,'mslang::Rectangle::width_m'],['../classPortableBitmapReader.html#a77aa48623aa3ef373fc403ed9478e8e2',1,'PortableBitmapReader::width_m'],['../classPortableGraymapReader.html#ac96a719856c263b4e9dc3791d4b672ac',1,'PortableGraymapReader::width_m'],['../structmslang_1_1Ellipse.html#a6f50e5e1174315deb40d7cd6c8c98adc',1,'mslang::Ellipse::width_m'],['../structmslang_1_1BoundingBox2D.html#aa2ce3c4f4723035647df605e4f32d30b',1,'mslang::BoundingBox2D::width_m']]],
-  ['width_5fview_5ftype_25',['width_view_type',['../classParticleBinning_1_1Histogram.html#a86bb5c754fcc2230d8de4c2f24e86826',1,'ParticleBinning::Histogram']]],
+  ['width_5fview_5ftype_25',['width_view_type',['../classParticleBinning_1_1Histogram.html#a7e09eb589e0fedce033eda78ce917095',1,'ParticleBinning::Histogram']]],
   ['willdoaperture_5fm_26',['willDoAperture_m',['../classRing.html#a37de7f84e2c08f61e3bba7b6c2b12738',1,'Ring']]],
   ['wiredaughtercontainers_27',['wireDaughterContainers',['../classTrackRun.html#a032f3b3d7c7dc39d8a7c67121e0a6f5b',1,'TrackRun']]],
   ['withdomaindecomp_5fm_28',['withDomainDecomp_m',['../classFlatTop.html#a66da8ecb49a4e10e8d954de426a7a557',1,'FlatTop']]],

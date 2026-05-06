@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -126,94 +126,53 @@ $(document).ready(function(){initNavTree('Directory_8cpp_source.html',''); initR
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="Directory_8h.html">AbstractObjects/Directory.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="Object_8h.html">AbstractObjects/Object.h</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Class Directory</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// ------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classDirectory.html#ae69ee52f5cacf4480b13364efa9c4682">   26</a></span><a class="code hl_function" href="classDirectory.html#ae69ee52f5cacf4480b13364efa9c4682">Directory::Directory</a>():</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    dir()</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{}</div>
-</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Class Directory</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// ------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classDirectory.html#ae69ee52f5cacf4480b13364efa9c4682">   25</a></span><a class="code hl_function" href="classDirectory.html#ae69ee52f5cacf4480b13364efa9c4682">Directory::Directory</a>() : dir() {}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classDirectory.html#affbde8714685c61601421097d621341d">   27</a></span><a class="code hl_function" href="classDirectory.html#affbde8714685c61601421097d621341d">Directory::~Directory</a>() { <a class="code hl_function" href="classDirectory.html#a237a99238f9e6450701528719fee9791">erase</a>(); }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">   29</a></span>ObjectDir::iterator <a class="code hl_function" href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">Directory::begin</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.begin(); }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classDirectory.html#affbde8714685c61601421097d621341d">   31</a></span><a class="code hl_function" href="classDirectory.html#affbde8714685c61601421097d621341d">Directory::~Directory</a>() {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classDirectory.html#a237a99238f9e6450701528719fee9791">erase</a>();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
-</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classDirectory.html#a9b41c405a3eef8c12acbbcd390cda15c">   31</a></span>ObjectDir::const_iterator <a class="code hl_function" href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">Directory::begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.begin(); }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">   33</a></span>ObjectDir::iterator <a class="code hl_function" href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">Directory::end</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end(); }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">   36</a></span>ObjectDir::iterator <a class="code hl_function" href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">Directory::begin</a>() {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.begin();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
-</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classDirectory.html#a0c06df9a60f45c9f58288a28b7467a18">   35</a></span>ObjectDir::const_iterator <a class="code hl_function" href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">Directory::end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end(); }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classDirectory.html#a237a99238f9e6450701528719fee9791">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDirectory.html#a237a99238f9e6450701528719fee9791">Directory::erase</a>() { <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.erase(<a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.begin(), <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end()); }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classDirectory.html#a5a65cf5770163c5996e01b31ab73f1ba">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDirectory.html#a237a99238f9e6450701528719fee9791">Directory::erase</a>(<span class="keyword">const</span> std::string&amp; name) { <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.erase(name); }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classDirectory.html#a9b41c405a3eef8c12acbbcd390cda15c">   41</a></span>ObjectDir::const_iterator <a class="code hl_function" href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">Directory::begin</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.begin();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">   41</a></span><a class="code hl_class" href="classObject.html">Object</a>* <a class="code hl_function" href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">Directory::find</a>(<span class="keyword">const</span> std::string&amp; name)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ObjectDir::const_iterator it = <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.find(name);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end()) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> &amp;*it-&gt;second;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">   46</a></span>ObjectDir::iterator <a class="code hl_function" href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">Directory::end</a>() {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
-</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classDirectory.html#a0c06df9a60f45c9f58288a28b7467a18">   51</a></span>ObjectDir::const_iterator <a class="code hl_function" href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">Directory::end</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
-</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classDirectory.html#a237a99238f9e6450701528719fee9791">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDirectory.html#a237a99238f9e6450701528719fee9791">Directory::erase</a>() {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.erase(<a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.begin(), <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classDirectory.html#a5a65cf5770163c5996e01b31ab73f1ba">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDirectory.html#a237a99238f9e6450701528719fee9791">Directory::erase</a>(<span class="keyword">const</span> std::string &amp;name) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.erase(name);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">   66</a></span><a class="code hl_class" href="classObject.html">Object</a> *<a class="code hl_function" href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">Directory::find</a>(<span class="keyword">const</span> std::string &amp;name)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ObjectDir::const_iterator it = <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.find(name);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span>(it == <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.end()) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> &amp;*it-&gt;second;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">   76</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">Directory::insert</a>(<span class="keyword">const</span> std::string &amp;name, <a class="code hl_class" href="classObject.html">Object</a> *newObject) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    ObjectDir::value_type p(name, std::shared_ptr&lt;Object&gt;(newObject));</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.insert(p);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDirectory.html#afd593b9994a1000a969046c02dd66846">Directory::insert</a>(<span class="keyword">const</span> std::string&amp; name, <a class="code hl_class" href="classObject.html">Object</a>* newObject) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    ObjectDir::value_type p(name, std::shared_ptr&lt;Object&gt;(newObject));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">dir</a>.insert(p);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
 <div class="ttc" id="aDirectory_8h_html"><div class="ttname"><a href="Directory_8h.html">Directory.h</a></div></div>
 <div class="ttc" id="aObject_8h_html"><div class="ttname"><a href="Object_8h.html">Object.h</a></div></div>
-<div class="ttc" id="aclassDirectory_html_a237a99238f9e6450701528719fee9791"><div class="ttname"><a href="classDirectory.html#a237a99238f9e6450701528719fee9791">Directory::erase</a></div><div class="ttdeci">void erase()</div><div class="ttdoc">Delete all entries.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00056">Directory.cpp:56</a></div></div>
-<div class="ttc" id="aclassDirectory_html_a4a8d6e8dc3b5f4f851a86b64daad1978"><div class="ttname"><a href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">Directory::end</a></div><div class="ttdeci">ObjectDir::iterator end()</div><div class="ttdoc">Last object in alphabetic order of name.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00046">Directory.cpp:46</a></div></div>
-<div class="ttc" id="aclassDirectory_html_a6af87fa7c132144a4fed854a5c0ba253"><div class="ttname"><a href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">Directory::begin</a></div><div class="ttdeci">ObjectDir::iterator begin()</div><div class="ttdoc">First object in alphabetic order of name.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00036">Directory.cpp:36</a></div></div>
-<div class="ttc" id="aclassDirectory_html_a9004a43fe680a069941293f8ab075c24"><div class="ttname"><a href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">Directory::find</a></div><div class="ttdeci">Object * find(const std::string &amp;name) const</div><div class="ttdoc">Find entry.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00066">Directory.cpp:66</a></div></div>
-<div class="ttc" id="aclassDirectory_html_ae69ee52f5cacf4480b13364efa9c4682"><div class="ttname"><a href="classDirectory.html#ae69ee52f5cacf4480b13364efa9c4682">Directory::Directory</a></div><div class="ttdeci">Directory()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00026">Directory.cpp:26</a></div></div>
-<div class="ttc" id="aclassDirectory_html_af951f0c2242b6a176d46572be96eb3f1"><div class="ttname"><a href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">Directory::dir</a></div><div class="ttdeci">ObjectDir dir</div><div class="ttdef"><b>Definition</b> <a href="Directory_8h_source.html#l00084">Directory.h:84</a></div></div>
-<div class="ttc" id="aclassDirectory_html_afd593b9994a1000a969046c02dd66846"><div class="ttname"><a href="classDirectory.html#afd593b9994a1000a969046c02dd66846">Directory::insert</a></div><div class="ttdeci">void insert(const std::string &amp;name, Object *newObject)</div><div class="ttdoc">Define new object.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00076">Directory.cpp:76</a></div></div>
-<div class="ttc" id="aclassDirectory_html_affbde8714685c61601421097d621341d"><div class="ttname"><a href="classDirectory.html#affbde8714685c61601421097d621341d">Directory::~Directory</a></div><div class="ttdeci">~Directory()</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00031">Directory.cpp:31</a></div></div>
+<div class="ttc" id="aclassDirectory_html_a237a99238f9e6450701528719fee9791"><div class="ttname"><a href="classDirectory.html#a237a99238f9e6450701528719fee9791">Directory::erase</a></div><div class="ttdeci">void erase()</div><div class="ttdoc">Delete all entries.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00037">Directory.cpp:37</a></div></div>
+<div class="ttc" id="aclassDirectory_html_a4a8d6e8dc3b5f4f851a86b64daad1978"><div class="ttname"><a href="classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978">Directory::end</a></div><div class="ttdeci">ObjectDir::iterator end()</div><div class="ttdoc">Last object in alphabetic order of name.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00033">Directory.cpp:33</a></div></div>
+<div class="ttc" id="aclassDirectory_html_a6af87fa7c132144a4fed854a5c0ba253"><div class="ttname"><a href="classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253">Directory::begin</a></div><div class="ttdeci">ObjectDir::iterator begin()</div><div class="ttdoc">First object in alphabetic order of name.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00029">Directory.cpp:29</a></div></div>
+<div class="ttc" id="aclassDirectory_html_a9004a43fe680a069941293f8ab075c24"><div class="ttname"><a href="classDirectory.html#a9004a43fe680a069941293f8ab075c24">Directory::find</a></div><div class="ttdeci">Object * find(const std::string &amp;name) const</div><div class="ttdoc">Find entry.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00041">Directory.cpp:41</a></div></div>
+<div class="ttc" id="aclassDirectory_html_ae69ee52f5cacf4480b13364efa9c4682"><div class="ttname"><a href="classDirectory.html#ae69ee52f5cacf4480b13364efa9c4682">Directory::Directory</a></div><div class="ttdeci">Directory()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00025">Directory.cpp:25</a></div></div>
+<div class="ttc" id="aclassDirectory_html_af951f0c2242b6a176d46572be96eb3f1"><div class="ttname"><a href="classDirectory.html#af951f0c2242b6a176d46572be96eb3f1">Directory::dir</a></div><div class="ttdeci">ObjectDir dir</div><div class="ttdef"><b>Definition</b> <a href="Directory_8h_source.html#l00079">Directory.h:79</a></div></div>
+<div class="ttc" id="aclassDirectory_html_afd593b9994a1000a969046c02dd66846"><div class="ttname"><a href="classDirectory.html#afd593b9994a1000a969046c02dd66846">Directory::insert</a></div><div class="ttdeci">void insert(const std::string &amp;name, Object *newObject)</div><div class="ttdoc">Define new object.</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00051">Directory.cpp:51</a></div></div>
+<div class="ttc" id="aclassDirectory_html_affbde8714685c61601421097d621341d"><div class="ttname"><a href="classDirectory.html#affbde8714685c61601421097d621341d">Directory::~Directory</a></div><div class="ttdeci">~Directory()</div><div class="ttdef"><b>Definition</b> <a href="Directory_8cpp_source.html#l00027">Directory.cpp:27</a></div></div>
 <div class="ttc" id="aclassObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdoc">The base class for all OPAL objects.</div><div class="ttdef"><b>Definition</b> <a href="Object_8h_source.html#l00045">Object.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -221,7 +180,7 @@ $(document).ready(function(){initNavTree('Directory_8cpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e1f9f17bb541b0b753638bef02ac2907.html">AbstractObjects</a></li><li class="navelem"><a class="el" href="Directory_8cpp.html">Directory.cpp</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:05 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -24,5 +24,5 @@ var classPhysics_1_1Gold =
     [ "massDensity_m", "classPhysics_1_1Gold.html#ac2b72fad1c122b57b5ed904b2cfadab7", null ],
     [ "meanExcitationEnergy_m", "classPhysics_1_1Gold.html#a6844fddcb5d0855220c9142274617712", null ],
     [ "radiationLength_m", "classPhysics_1_1Gold.html#a2544314c90686bf51de7a52a8f4eda9b", null ],
-    [ "stoppingPowerFitCoefficients_m", "classPhysics_1_1Gold.html#a6fc20da14780db3d96d96f8e08cde6c2", null ]
+    [ "stoppingPowerFitCoefficients_m", "classPhysics_1_1Gold.html#afbf6aa15ab32ee9a33ef167e8ace6a64", null ]
 ];

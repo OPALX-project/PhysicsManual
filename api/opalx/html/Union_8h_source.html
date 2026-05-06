@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -112,42 +112,42 @@ $(document).ready(function(){initNavTree('Union_8h_source.html',''); initResizab
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemslang.html">mslang</a> {</div>
 <div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structmslang_1_1Union.html">    7</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structmslang_1_1Union.html">Union</a>: <span class="keyword">public</span> <a class="code hl_struct" href="structmslang_1_1Function.html">Function</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structmslang_1_1Union.html">    7</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structmslang_1_1Union.html">Union</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structmslang_1_1Function.html">Function</a> {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structmslang_1_1Union.html#aa27d3808b7e8bbb96c97ec36a7f04cfc">    8</a></span>        std::vector&lt;Function*&gt; <a class="code hl_variable" href="structmslang_1_1Union.html#aa27d3808b7e8bbb96c97ec36a7f04cfc">funcs_m</a>;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structmslang_1_1Union.html#a5d18491408bcae082d25329b309865da">   10</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="structmslang_1_1Union.html#a5d18491408bcae082d25329b309865da">~Union</a> () {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordflow">for</span> (<a class="code hl_struct" href="structmslang_1_1Function.html">Function</a>* func: <a class="code hl_variable" href="structmslang_1_1Union.html#aa27d3808b7e8bbb96c97ec36a7f04cfc">funcs_m</a>) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structmslang_1_1Union.html#a5d18491408bcae082d25329b309865da">   10</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="structmslang_1_1Union.html#a5d18491408bcae082d25329b309865da">~Union</a>() {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keywordflow">for</span> (<a class="code hl_struct" href="structmslang_1_1Function.html">Function</a>* func : <a class="code hl_variable" href="structmslang_1_1Union.html#aa27d3808b7e8bbb96c97ec36a7f04cfc">funcs_m</a>) {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                <span class="keyword">delete</span> func;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            }</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
 </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structmslang_1_1Union.html#ad45fc226fb6bd8570f85fda9173cd26f">print</a>(<span class="keywordtype">int</span> indentwidth);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structmslang_1_1Union.html#af7efa3d11880d5a215cf241fb8005b11">apply</a>(std::vector&lt;std::shared_ptr&lt;Base&gt; &gt; &amp;bfuncs);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structmslang_1_1Union.html#aa24ad989a2d0b47d6285d622ad3a19c5">parse_detail</a>(<a class="code hl_typedef" href="namespacemslang.html#a7a0330f10eb09ae36017c24b9f45365b">iterator</a> &amp;it, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemslang.html#a7a0330f10eb09ae36017c24b9f45365b">iterator</a> &amp;end, <a class="code hl_struct" href="structmslang_1_1Function.html">Function</a>* &amp;fun);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structmslang_1_1Union.html#af7efa3d11880d5a215cf241fb8005b11">apply</a>(std::vector&lt;std::shared_ptr&lt;Base&gt; &gt;&amp; bfuncs);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structmslang_1_1Union.html#aa24ad989a2d0b47d6285d622ad3a19c5">parse_detail</a>(<a class="code hl_typedef" href="namespacemslang.html#a7a0330f10eb09ae36017c24b9f45365b">iterator</a>&amp; it, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemslang.html#a7a0330f10eb09ae36017c24b9f45365b">iterator</a>&amp; end, <a class="code hl_struct" href="structmslang_1_1Function.html">Function</a>*&amp; fun);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    };</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}  <span class="comment">// namespace mslang</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aMSLang_8h_html"><div class="ttname"><a href="MSLang_8h.html">MSLang.h</a></div></div>
 <div class="ttc" id="anamespacemslang_html"><div class="ttname"><a href="namespacemslang.html">mslang</a></div><div class="ttdef"><b>Definition</b> <a href="MSLang_8cpp_source.html#l00030">MSLang.cpp:30</a></div></div>
-<div class="ttc" id="anamespacemslang_html_a7a0330f10eb09ae36017c24b9f45365b"><div class="ttname"><a href="namespacemslang.html#a7a0330f10eb09ae36017c24b9f45365b">mslang::iterator</a></div><div class="ttdeci">std::string::iterator iterator</div><div class="ttdef"><b>Definition</b> <a href="MSLang_8h_source.html#l00015">MSLang.h:15</a></div></div>
-<div class="ttc" id="astructmslang_1_1Function_html"><div class="ttname"><a href="structmslang_1_1Function.html">mslang::Function</a></div><div class="ttdef"><b>Definition</b> <a href="MSLang_8h_source.html#l00025">MSLang.h:25</a></div></div>
+<div class="ttc" id="anamespacemslang_html_a7a0330f10eb09ae36017c24b9f45365b"><div class="ttname"><a href="namespacemslang.html#a7a0330f10eb09ae36017c24b9f45365b">mslang::iterator</a></div><div class="ttdeci">std::string::iterator iterator</div><div class="ttdef"><b>Definition</b> <a href="MSLang_8h_source.html#l00014">MSLang.h:14</a></div></div>
+<div class="ttc" id="astructmslang_1_1Function_html"><div class="ttname"><a href="structmslang_1_1Function.html">mslang::Function</a></div><div class="ttdef"><b>Definition</b> <a href="MSLang_8h_source.html#l00023">MSLang.h:23</a></div></div>
 <div class="ttc" id="astructmslang_1_1Union_html"><div class="ttname"><a href="structmslang_1_1Union.html">mslang::Union</a></div><div class="ttdef"><b>Definition</b> <a href="Union_8h_source.html#l00007">Union.h:7</a></div></div>
 <div class="ttc" id="astructmslang_1_1Union_html_a5d18491408bcae082d25329b309865da"><div class="ttname"><a href="structmslang_1_1Union.html#a5d18491408bcae082d25329b309865da">mslang::Union::~Union</a></div><div class="ttdeci">virtual ~Union()</div><div class="ttdef"><b>Definition</b> <a href="Union_8h_source.html#l00010">Union.h:10</a></div></div>
-<div class="ttc" id="astructmslang_1_1Union_html_aa24ad989a2d0b47d6285d622ad3a19c5"><div class="ttname"><a href="structmslang_1_1Union.html#aa24ad989a2d0b47d6285d622ad3a19c5">mslang::Union::parse_detail</a></div><div class="ttdeci">static bool parse_detail(iterator &amp;it, const iterator &amp;end, Function *&amp;fun)</div><div class="ttdef"><b>Definition</b> <a href="Union_8cpp_source.html#l00031">Union.cpp:31</a></div></div>
+<div class="ttc" id="astructmslang_1_1Union_html_aa24ad989a2d0b47d6285d622ad3a19c5"><div class="ttname"><a href="structmslang_1_1Union.html#aa24ad989a2d0b47d6285d622ad3a19c5">mslang::Union::parse_detail</a></div><div class="ttdeci">static bool parse_detail(iterator &amp;it, const iterator &amp;end, Function *&amp;fun)</div><div class="ttdef"><b>Definition</b> <a href="Union_8cpp_source.html#l00029">Union.cpp:29</a></div></div>
 <div class="ttc" id="astructmslang_1_1Union_html_aa27d3808b7e8bbb96c97ec36a7f04cfc"><div class="ttname"><a href="structmslang_1_1Union.html#aa27d3808b7e8bbb96c97ec36a7f04cfc">mslang::Union::funcs_m</a></div><div class="ttdeci">std::vector&lt; Function * &gt; funcs_m</div><div class="ttdef"><b>Definition</b> <a href="Union_8h_source.html#l00008">Union.h:8</a></div></div>
 <div class="ttc" id="astructmslang_1_1Union_html_ad45fc226fb6bd8570f85fda9173cd26f"><div class="ttname"><a href="structmslang_1_1Union.html#ad45fc226fb6bd8570f85fda9173cd26f">mslang::Union::print</a></div><div class="ttdeci">virtual void print(int indentwidth)</div><div class="ttdef"><b>Definition</b> <a href="Union_8cpp_source.html#l00006">Union.cpp:6</a></div></div>
-<div class="ttc" id="astructmslang_1_1Union_html_af7efa3d11880d5a215cf241fb8005b11"><div class="ttname"><a href="structmslang_1_1Union.html#af7efa3d11880d5a215cf241fb8005b11">mslang::Union::apply</a></div><div class="ttdeci">virtual void apply(std::vector&lt; std::shared_ptr&lt; Base &gt; &gt; &amp;bfuncs)</div><div class="ttdef"><b>Definition</b> <a href="Union_8cpp_source.html#l00022">Union.cpp:22</a></div></div>
+<div class="ttc" id="astructmslang_1_1Union_html_af7efa3d11880d5a215cf241fb8005b11"><div class="ttname"><a href="structmslang_1_1Union.html#af7efa3d11880d5a215cf241fb8005b11">mslang::Union::apply</a></div><div class="ttdeci">virtual void apply(std::vector&lt; std::shared_ptr&lt; Base &gt; &gt; &amp;bfuncs)</div><div class="ttdef"><b>Definition</b> <a href="Union_8cpp_source.html#l00020">Union.cpp:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_0c87a9abf7e92f2206f4d2c17590f0d0.html">MSLang</a></li><li class="navelem"><a class="el" href="Union_8h.html">Union.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:14 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

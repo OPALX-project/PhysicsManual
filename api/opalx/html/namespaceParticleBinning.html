@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -147,10 +147,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ace15d1356bf35aab2c5896751df67869" id="r_ace15d1356bf35aab2c5896751df67869"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType &gt; </td></tr>
-<tr class="memitem:ace15d1356bf35aab2c5896751df67869"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a> = typename <a class="el" href="namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper">ReductionVariantHelper</a>&lt; SizeType, IndexType, std::make_integer_sequence&lt; IndexType, <a class="el" href="namespaceParticleBinning.html#a62512b47ae7bad83f2ad2c43282ac2fa">maxArrSize</a>&lt; IndexType &gt; &gt; &gt;::type</td></tr>
-<tr class="memdesc:ace15d1356bf35aab2c5896751df67869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for a <code>std::variant</code> containing all possible <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> types up to <code>maxArrSize</code>.  <br /></td></tr>
-<tr class="separator:ace15d1356bf35aab2c5896751df67869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204c7bb96c89276a3db6e52417e2c992" id="r_a204c7bb96c89276a3db6e52417e2c992"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType &gt; </td></tr>
+<tr class="memitem:a204c7bb96c89276a3db6e52417e2c992"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a> = typename <a class="el" href="namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper">ReductionVariantHelper</a>&lt; SizeType, IndexType, std::make_integer_sequence&lt; IndexType, <a class="el" href="namespaceParticleBinning.html#a62512b47ae7bad83f2ad2c43282ac2fa">maxArrSize</a>&lt; IndexType &gt; &gt; &gt;::type</td></tr>
+<tr class="memdesc:a204c7bb96c89276a3db6e52417e2c992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for a <code>std::variant</code> containing all possible <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> types up to <code>maxArrSize</code>.  <br /></td></tr>
+<tr class="separator:a204c7bb96c89276a3db6e52417e2c992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -176,11 +176,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:aef04b2670d99c0072c37462159f0abe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the elements in a Kokkos::View are sorted in non-decreasing order.  <br /></td></tr>
 <tr class="separator:aef04b2670d99c0072c37462159f0abe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61774b1863015244b3bf9974924ede07" id="r_a61774b1863015244b3bf9974924ede07"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType , IndexType N&gt; </td></tr>
-<tr class="memitem:a61774b1863015244b3bf9974924ede07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a61774b1863015244b3bf9974924ede07">createReductionObjectHelper</a> (IndexType binCount)</td></tr>
+<tr class="memitem:a61774b1863015244b3bf9974924ede07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a61774b1863015244b3bf9974924ede07">createReductionObjectHelper</a> (IndexType binCount)</td></tr>
 <tr class="memdesc:a61774b1863015244b3bf9974924ede07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive helper function to create <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> objects with compile-time size matching.  <br /></td></tr>
 <tr class="separator:a61774b1863015244b3bf9974924ede07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d59e67ac4758acf8bdb9da6f686de07" id="r_a3d59e67ac4758acf8bdb9da6f686de07"><td class="memTemplParams" colspan="2">template&lt;typename SizeType , typename IndexType &gt; </td></tr>
-<tr class="memitem:a3d59e67ac4758acf8bdb9da6f686de07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a3d59e67ac4758acf8bdb9da6f686de07">createReductionObject</a> (IndexType binCount)</td></tr>
+<tr class="memitem:a3d59e67ac4758acf8bdb9da6f686de07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a>&lt; SizeType, IndexType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceParticleBinning.html#a3d59e67ac4758acf8bdb9da6f686de07">createReductionObject</a> (IndexType binCount)</td></tr>
 <tr class="memdesc:a3d59e67ac4758acf8bdb9da6f686de07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function to create <code><a class="el" href="structParticleBinning_1_1ArrayReduction.html" title="A templated structure for performing array-based reductions in parallel computations.">ArrayReduction</a></code> objects with runtime-specified size.  <br /></td></tr>
 <tr class="separator:a3d59e67ac4758acf8bdb9da6f686de07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae379067c6dab405bfe6c9f1d41bf11a2" id="r_ae379067c6dab405bfe6c9f1d41bf11a2"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> , unsigned Dim&gt; </td></tr>
@@ -336,7 +336,7 @@ struct ParticleBinning::ReductionVariantHelper&lt; SizeType, IndexType, Sequence
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00096">96</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00106">106</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for ParticleBinning::ReductionVariantHelper&lt; SizeType, IndexType, Sequence &gt;:</div>
 <div class="dyncontent">
@@ -371,7 +371,7 @@ struct ParticleBinning::ReductionVariantHelper&lt; SizeType, IndexType, std::int
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00110">110</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00121">121</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for ParticleBinning::ReductionVariantHelper&lt; SizeType, IndexType, std::integer_sequence&lt; IndexType, Sizes... &gt; &gt;:</div>
 <div class="dyncontent">
@@ -393,8 +393,8 @@ type</td>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ace15d1356bf35aab2c5896751df67869" name="ace15d1356bf35aab2c5896751df67869"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace15d1356bf35aab2c5896751df67869">&#9670;&#160;</a></span>ReductionVariant</h2>
+<a id="a204c7bb96c89276a3db6e52417e2c992" name="a204c7bb96c89276a3db6e52417e2c992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204c7bb96c89276a3db6e52417e2c992">&#9670;&#160;</a></span>ReductionVariant</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,7 +402,7 @@ type</td>
 template&lt;typename SizeType , typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ParticleBinning::ReductionVariant</a> = typedef typename <a class="el" href="namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper">ReductionVariantHelper</a>&lt;SizeType, IndexType, std::make_integer_sequence&lt;IndexType, <a class="el" href="namespaceParticleBinning.html#a62512b47ae7bad83f2ad2c43282ac2fa">maxArrSize</a>&lt;IndexType&gt; &gt;&gt;::type</td>
+          <td class="memname">using <a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ParticleBinning::ReductionVariant</a> = typedef typename <a class="el" href="namespaceParticleBinning.html#structParticleBinning_1_1ReductionVariantHelper">ReductionVariantHelper</a>&lt; SizeType, IndexType, std::make_integer_sequence&lt;IndexType, <a class="el" href="namespaceParticleBinning.html#a62512b47ae7bad83f2ad2c43282ac2fa">maxArrSize</a>&lt;IndexType&gt; &gt;&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,7 +417,7 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00125">125</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00137">137</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +503,7 @@ template&lt;typename ViewType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00181">181</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00182">182</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ template&lt;typename ViewType &gt; </div>
 template&lt;typename SizeType , typename IndexType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a>&lt; SizeType, IndexType &gt; ParticleBinning::createReductionObject </td>
+          <td class="memname"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a>&lt; SizeType, IndexType &gt; ParticleBinning::createReductionObject </td>
           <td>(</td>
           <td class="paramtype">IndexType&#160;</td>
           <td class="paramname"><em>binCount</em></td><td>)</td>
@@ -554,7 +554,7 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 <div class="line">    }, createReductionObject&lt;size_type, bin_index_type&gt;(binCount)</div>
 <div class="line">);</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00185">185</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00203">203</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ template&lt;typename SizeType , typename IndexType &gt; </div>
 template&lt;typename SizeType , typename IndexType , IndexType N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceParticleBinning.html#ace15d1356bf35aab2c5896751df67869">ReductionVariant</a>&lt; SizeType, IndexType &gt; ParticleBinning::createReductionObjectHelper </td>
+          <td class="memname"><a class="el" href="namespaceParticleBinning.html#a204c7bb96c89276a3db6e52417e2c992">ReductionVariant</a>&lt; SizeType, IndexType &gt; ParticleBinning::createReductionObjectHelper </td>
           <td>(</td>
           <td class="paramtype">IndexType&#160;</td>
           <td class="paramname"><em>binCount</em></td><td>)</td>
@@ -601,7 +601,7 @@ template&lt;typename SizeType , typename IndexType , IndexType N&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function should not be called directly. Use <code><a class="el" href="namespaceParticleBinning.html#a3d59e67ac4758acf8bdb9da6f686de07" title="Factory function to create ArrayReduction objects with runtime-specified size.">createReductionObject()</a></code> instead and use <code>std::visit</code> to access the reducer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00147">147</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00164">164</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
 </div>
 </div>
@@ -655,7 +655,7 @@ template&lt;typename <a class="el" href="TestBinning_8cpp.html#aaf925660f20059da
 <dl class="section note"><dt>Note</dt><dd>If compiled for a host-only execution environment, the returned mode will always be <code><a class="el" href="namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6bada40424fea3128a16bfed59b56f5a980">HistoReductionMode::HostOnly</a></code>, regardless of <code>modePreference</code>. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6b">HistoReductionMode</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00034">34</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BinningTools_8h_source.html#l00035">35</a> of file <a class="el" href="BinningTools_8h_source.html">BinningTools.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6bada40424fea3128a16bfed59b56f5a980">HostOnly</a>, <a class="el" href="namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6baf15d6c8237b5427c1054f790bf6ec83f">ParallelReduce</a>, <a class="el" href="namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6baeb6d8ae6f20283755b339c0dc273988b">Standard</a>, and <a class="el" href="namespaceParticleBinning.html#a54425c06ae414dc0a04f80500facfe6ba43baf4100864831d71c301d581fcb069">TeamBased</a>.</p>
 
@@ -756,7 +756,7 @@ template&lt;typename <a class="el" href="OPALTypes_8h.html#a6b2d038ea9c8d2651eec
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The computed (p)-norm of the vector field. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00323">323</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00357">357</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +793,7 @@ template&lt;typename IndexType &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>5 is empirically chosen, since in real world applications the team-based reduction is usually enough. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00080">80</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParallelReduceTools_8h_source.html#l00089">89</a> of file <a class="el" href="ParallelReduceTools_8h_source.html">ParallelReduceTools.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +803,7 @@ template&lt;typename IndexType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceParticleBinning.html">ParticleBinning</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:17 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:09 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -41,7 +41,7 @@ var searchData=
   ['log10e_38',['log10e',['../namespacePhysics.html#afac2d94f5b2ddfec866d198c3ffd94f9',1,'Physics']]],
   ['logger_5fm_39',['logger_m',['../classOrbitThreader.html#a8740ab9a2ea2cc238c6c915d85a4c72a',1,'OrbitThreader']]],
   ['loggingfrequency_5fm_40',['loggingFrequency_m',['../classOrbitThreader.html#af5a04c89214a5cb6811be5d0872e46af',1,'OrbitThreader']]],
-  ['lossds_5fm_41',['lossds_m',['../classMonitor.html#a5930d1d572de71ab18887add64db9d7e',1,'Monitor::lossDs_m'],['../classPluginElement.html#ade7d92a030cdf89df89d487b5decd7b5',1,'PluginElement::lossDs_m'],['../classRing.html#a0784aecb1058f8a124ea828a8683a40e',1,'Ring::lossDS_m']]],
+  ['lossds_5fm_41',['lossds_m',['../classRing.html#a0784aecb1058f8a124ea828a8683a40e',1,'Ring::lossDS_m'],['../classMonitor.html#a5930d1d572de71ab18887add64db9d7e',1,'Monitor::lossDs_m'],['../classPluginElement.html#ade7d92a030cdf89df89d487b5decd7b5',1,'PluginElement::lossDs_m']]],
   ['losswrcounter_5fm_42',['lossWrCounter_m',['../classDataSink.html#a924ea620918ba2abe4da5226f593f798',1,'DataSink']]],
   ['lowerleftcorner_5fm_43',['lowerLeftCorner_m',['../classBoundingBox.html#a2f3a29ceb51183e68615c906cf7f470a',1,'BoundingBox']]]
 ];

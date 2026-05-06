@@ -1,5 +1,16 @@
 var NAVTREEINDEX44 =
 {
+"classMultiVariateGaussian.html#af6961a35e4686f8d3320ad0001b0aa42":[3,0,215,27],
+"classMultiVariateGaussian.html#afa364f30d33e6af36d1703ef6e338cb0":[3,0,215,44],
+"classMultiVariateGaussian.html#afcd04f423a2dad3c4c329b877b475b3e":[3,0,215,16],
+"classMultiVariateGaussian.html#afec10301afb89d46e75ab27e1bada714":[3,0,215,47],
+"classMultiVariateGaussianTest.html":[3,0,216],
+"classMultiVariateGaussianTest.html#a0309cbd4923b35dac1a300128de52b9f":[3,0,216,0],
+"classMultiVariateGaussianTest.html#a24cbcafe2fc533ee31f79f54b08ea507":[3,0,216,2],
+"classMultiVariateGaussianTest.html#a32fa4abdebbe9f324f32de64bf8bf424":[3,0,216,4],
+"classMultiVariateGaussianTest.html#a36255a40d4339f7228c9a7fa7789eb5c":[3,0,216,1],
+"classMultiVariateGaussianTest.html#a4e7f57c1aa035d623a9d967817475c1e":[3,0,216,5],
+"classMultiVariateGaussianTest.html#afaea74efd75e16239cbac6df0f3249a8":[3,0,216,3],
 "classMultipole.html":[3,0,207],
 "classMultipole.html#a0020d78781cdfd24fda0c6aa0e298afd":[3,0,207,114],
 "classMultipole.html#a00698c7f2acc8ae799d858ae64e71564":[3,0,207,97],
@@ -238,16 +249,5 @@ var NAVTREEINDEX44 =
 "classMultipoleRep.html#a91b5775556b4b923aa5bfaaa3d252ac2":[3,0,208,24],
 "classMultipoleRep.html#a9282add8d8a2e8973b3cabc1450a4b9b":[3,0,208,25],
 "classMultipoleRep.html#a944a5705dd7278c07f6729924af3d81f":[3,0,208,63],
-"classMultipoleRep.html#a9474fb82a9bc774302a90b46744c26a3":[3,0,208,37],
-"classMultipoleRep.html#a948318b944a160b03767634192993e73":[3,0,208,3],
-"classMultipoleRep.html#a9866c163d61dbd33e24080668a16c9e2":[3,0,208,32],
-"classMultipoleRep.html#a98ba64b0bb174add064da5223a737a66":[3,0,208,74],
-"classMultipoleRep.html#a99b4de4299c809c8c59baf2397742fad":[3,0,208,45],
-"classMultipoleRep.html#a9e98f2456e4382f8b9479cc9cba13f6a":[3,0,208,36],
-"classMultipoleRep.html#aa0e4d06e600e3dfef42caebaf5a3cb59":[3,0,208,50],
-"classMultipoleRep.html#aa2333567d409ce997a19c12bf754a9ed":[3,0,208,131],
-"classMultipoleRep.html#aa3264c1b6b93f0f635a61d75d496af6d":[3,0,208,148],
-"classMultipoleRep.html#aa60aedf5e43e6a4561b4a93e6962f377":[3,0,208,14],
-"classMultipoleRep.html#aa928e44d97164c70876f58ba4ef31842":[3,0,208,6],
-"classMultipoleRep.html#aab40737bbca9bd1b8cf620430f78ff94":[3,0,208,64]
+"classMultipoleRep.html#a9474fb82a9bc774302a90b46744c26a3":[3,0,208,37]
 };

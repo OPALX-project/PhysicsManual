@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (b574ddbd6afb)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (874804e1fce8)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -109,13 +109,13 @@ $(document).ready(function(){initNavTree('ArgumentExtractor_8h_source.html','');
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MSLANG_ARGUMENTEXTRACTOR_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemslang.html">mslang</a> {</div>
 <div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structmslang_1_1ArgumentExtractor.html">    9</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structmslang_1_1ArgumentExtractor.html">ArgumentExtractor</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_struct" href="structmslang_1_1ArgumentExtractor.html">ArgumentExtractor</a>(<span class="keyword">const</span> std::string &amp;input);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_struct" href="structmslang_1_1ArgumentExtractor.html">ArgumentExtractor</a>(<span class="keyword">const</span> std::string&amp; input);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        std::string <a class="code hl_function" href="structmslang_1_1ArgumentExtractor.html#a8d565895406bd7dd2e07b0c0b4fe7836">get</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structmslang_1_1ArgumentExtractor.html#aca305f091c4b77531866cc33bdbfe676">getLengthConsumed</a>() <span class="keyword">const</span>;</div>
@@ -126,15 +126,15 @@ $(document).ready(function(){initNavTree('ArgumentExtractor_8h_source.html','');
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structmslang_1_1ArgumentExtractor.html#a869cd04989f8f3867c9050a9f7e2e860">   18</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structmslang_1_1ArgumentExtractor.html#a869cd04989f8f3867c9050a9f7e2e860">lengthConsumed_m</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    };</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}  <span class="comment">// namespace mslang</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="anamespacemslang_html"><div class="ttname"><a href="namespacemslang.html">mslang</a></div><div class="ttdef"><b>Definition</b> <a href="MSLang_8cpp_source.html#l00030">MSLang.cpp:30</a></div></div>
 <div class="ttc" id="astructmslang_1_1ArgumentExtractor_html"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html">mslang::ArgumentExtractor</a></div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8h_source.html#l00009">ArgumentExtractor.h:9</a></div></div>
 <div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_a3671f91fc3ce375bfc043ddc56c70092"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#a3671f91fc3ce375bfc043ddc56c70092">mslang::ArgumentExtractor::argumentBoundaries_m</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; unsigned int, unsigned int &gt; &gt; argumentBoundaries_m</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8h_source.html#l00016">ArgumentExtractor.h:16</a></div></div>
 <div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_a869cd04989f8f3867c9050a9f7e2e860"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#a869cd04989f8f3867c9050a9f7e2e860">mslang::ArgumentExtractor::lengthConsumed_m</a></div><div class="ttdeci">unsigned int lengthConsumed_m</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8h_source.html#l00018">ArgumentExtractor.h:18</a></div></div>
-<div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_a8bc6c8ad3b232ac27875b1e2298f6c7c"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#a8bc6c8ad3b232ac27875b1e2298f6c7c">mslang::ArgumentExtractor::getNumArguments</a></div><div class="ttdeci">unsigned int getNumArguments() const</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8cpp_source.html#l00049">ArgumentExtractor.cpp:49</a></div></div>
-<div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_a8d565895406bd7dd2e07b0c0b4fe7836"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#a8d565895406bd7dd2e07b0c0b4fe7836">mslang::ArgumentExtractor::get</a></div><div class="ttdeci">std::string get(unsigned int i) const</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8cpp_source.html#l00036">ArgumentExtractor.cpp:36</a></div></div>
-<div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_aca305f091c4b77531866cc33bdbfe676"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#aca305f091c4b77531866cc33bdbfe676">mslang::ArgumentExtractor::getLengthConsumed</a></div><div class="ttdeci">unsigned int getLengthConsumed() const</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8cpp_source.html#l00045">ArgumentExtractor.cpp:45</a></div></div>
+<div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_a8bc6c8ad3b232ac27875b1e2298f6c7c"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#a8bc6c8ad3b232ac27875b1e2298f6c7c">mslang::ArgumentExtractor::getNumArguments</a></div><div class="ttdeci">unsigned int getNumArguments() const</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8cpp_source.html#l00044">ArgumentExtractor.cpp:44</a></div></div>
+<div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_a8d565895406bd7dd2e07b0c0b4fe7836"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#a8d565895406bd7dd2e07b0c0b4fe7836">mslang::ArgumentExtractor::get</a></div><div class="ttdeci">std::string get(unsigned int i) const</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8cpp_source.html#l00031">ArgumentExtractor.cpp:31</a></div></div>
+<div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_aca305f091c4b77531866cc33bdbfe676"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#aca305f091c4b77531866cc33bdbfe676">mslang::ArgumentExtractor::getLengthConsumed</a></div><div class="ttdeci">unsigned int getLengthConsumed() const</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8cpp_source.html#l00042">ArgumentExtractor.cpp:42</a></div></div>
 <div class="ttc" id="astructmslang_1_1ArgumentExtractor_html_acd8c60a32aaf900cb9979e5cd15385d5"><div class="ttname"><a href="structmslang_1_1ArgumentExtractor.html#acd8c60a32aaf900cb9979e5cd15385d5">mslang::ArgumentExtractor::inputArguments_m</a></div><div class="ttdeci">std::string inputArguments_m</div><div class="ttdef"><b>Definition</b> <a href="ArgumentExtractor_8h_source.html#l00017">ArgumentExtractor.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('ArgumentExtractor_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ff383ddf1aa4eab0c4ce7910366d05a5.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_0c87a9abf7e92f2206f4d2c17590f0d0.html">MSLang</a></li><li class="navelem"><a class="el" href="ArgumentExtractor_8h.html">ArgumentExtractor.h</a></li>
-    <li class="footer">Generated on Fri May 1 2026 19:31:13 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 6 2026 07:22:06 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
