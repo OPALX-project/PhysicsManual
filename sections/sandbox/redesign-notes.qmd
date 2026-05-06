@@ -1,0 +1,164 @@
+## OPAL - OPALX Redesign notes
+
+### Comments to the proposels of Jon/Chris
+
+
+#### OpalElemen vs. Element / ElemenBase
+Could OpalElement absorb Element? Technically possible only with a broader refactor, but not directly, because Line and Sequence also depend on Element. We would need to move Element’s responsibilities somewhere else.
+
+Could OpalElement absorb ElementBase? That would couple parser objects to the tracking/beamline runtime model and force either parser classes to implement geometry/tracking/visitor APIs or runtime classes to become OPAL directory objects. That would make ownership, cloning, sharing, and beamline traversal substantially worse.
+
+
+#### TBeamline is a template and has std::list<T> as base class. Is it safe to use std::list<T> as base?
+
+Short answer: it is legal C++, but it is, indeed,  not a good or safe design.
+
+A better shape would be composition:
+
+```cpp
+template <class T>
+class TBeamline : public Beamline {
+public:
+    using container_type = std::list<T>;
+    using iterator = container_type::iterator;
+    using const_iterator = container_type::const_iterator;
+
+    iterator begin();
+    iterator end();
+    const_iterator begin() const;
+    const_iterator end() const;
+
+    void append(const T&);
+    void prepend(const T&);
+    iterator erase(iterator);
+    iterator insert(iterator, const T&);
+
+private:
+    std::list<T> elements_;
+};
+```
+That preserves most call-site ergonomics while giving `TBeamline` control over mutation.
+
+#### The whole Beamline, TBeamline<T>m TLine and FlaggedBeamline dierarchie is complext. Is it nessesary?
+
+Mostly no: the concepts are necessary, but the current hierarchy is more complex than it needs to be.
+
+What is actually needed:
+
+- A runtime beamline object that is an `ElementBase`, so a beamline can appear anywhere an element can appear. That is `Beamline`.
+- An ordered container of beamline entries. That is currently `TBeamline<T>`.
+- A beamline entry type that points to an `ElementBase`. That is `ElmPtr`.
+- Extra entry metadata for `LINE`: reflected/selected flags. That is `FlaggedElmPtr`.
+- Extra entry metadata for `SEQUENCE`: position, relation to previous/next/begin/end, generated drift info, parser-side `Element` pointer. That is `SequenceMember`.
+
+So the data model is defensible. But the implementation is too indirect:
+
+The weak part is not that `LINE` and `SEQUENCE` need different metadata. They do. The weak part is encoding this through public inheritance from `std::list<T>` plus several inherited wrapper objects.
+
+A simpler design would be:
+
+```cpp
+class Beamline : public ElementBase {
+public:
+    using EntryList = std::list<BeamlineEntry>;
+
+    iterator begin();
+    iterator end();
+
+    void append(BeamlineEntry);
+    void insert(iterator, BeamlineEntry);
+    iterator erase(iterator);
+
+private:
+    EntryList entries_;
+};
+```
+
+with one entry type:
+
+```cpp
+struct BeamlineEntry {
+    std::shared_ptr<ElementBase> element;
+
+    bool reflected = false;
+    bool selected = false;
+
+    std::optional<SequencePlacement> sequencePlacement;
+    std::shared_ptr<Element> parserElement;
+};
+```
+
+or, cleaner, separate concrete types:
+
+```text
+BeamlineBase
+  -> LineBeamline      owns list<LineEntry>
+  -> SequenceBeamline  owns list<SequenceEntry>
+```
+
+We could keep the conceptual split between runtime beamline, line entries, and sequence entries. But remove `TBeamline<T> : public std::list<T>` over time. `TLine` and `FlaggedBeamline` are not really independent abstractions; they are type aliases created because `TBeamline` is templated. That is a sign the implementation is serving the template, not the model.
+
+
+#### Three more remarks w.r.t. Posing and Origin etc
+
+See [OPALX has 4 layers of structure](#opalx-has-4-layers-of-structure-need-better-title) in the next Sandbox chapter for the related structure and class-level context.
+
+
+#### Why are bend element split into seperate loops in the compute3DLattice function?
+This answer already is base on the branch `391-placement-of-sbend-and-rbend-analytic-fields-including-fringe-fields`.
+
+They are split because bends need two different pieces of placement state:
+
+1. The bend body/entry pose must be stored explicitly.
+
+   In the first loop in `OpalBeamline.cpp`, the code scans only unpositioned bends. For each `SBEND`/`RBEND`, it computes the desired entry pose, then converts that into the element body pose:
+
+   ```cpp
+   const CoordinateSystemTrafo desiredEntryPose =
+           fromEndLastToBeginThis * currentCoordTrafo;
+   const CoordinateSystemTrafo bodyFromEntry = element->getEdgeToBegin().inverted();
+   setNominalPlacement(element, bodyFromEntry * desiredEntryPose);
+   ```
+
+   That is bend-specific because a bend's useful reference frame is not just "translate by length along z". It has chord length, arc length, bend angle, entrance angle, rotation axis, and sometimes a true design path.
+
+2. The second loop advances the global beamline chain for all elements.
+
+   The second loop then walks every element in beamline order. Straight elements get placed directly with `setNominalPlacement(...)`. Bends are already positioned by the first loop, so the second loop uses them mainly to advance `currentCoordTrafo` and `endPriorPathLength` across the curved/chord geometry.
+
+So the split is basically a compatibility bridge:
+
+- first pass: pre-place bends using bend-entry/body geometry;
+- second pass: place straight elements and advance the running lattice transform through both straight and bend elements.
+
+Is it necessary structurally? Probably not. It is necessary for the current implementation because bend placement is side-effectful and special-cased. A cleaner design would have one placement algorithm where every element exposes:
+
+```cpp
+entryPort()
+exitPort()
+bodyPoseFromEntryPose()
+advanceReferencePose()
+```
+Then bends and straight elements would differ behind the element interface, not through separate loops in `OpalBeamline`. The current split is a symptom that bend geometry is not yet fully hidden behind a uniform placement/port contract. And I guess is a hint that we need to think about this
+in a very general way ... as we do now!
+
+#### The bend element
+
+#### Nested LINE statements will call recursive calls.
+
+Yes. A named nested `LINE` will cause recursive visitor calls.
+
+There is an important distinction in `Line::parseList()`:
+
+- Anonymous nested lists like `(A, B, C)` are flattened immediately into the parent line.
+- Named `LINE` objects are inserted as an `ElementBase*` pointing to their own `FlaggedBeamline`, so they remain nested and are expanded later by recursive visitor traversal.
+
+This is another reason the `Beamline / TBeamline / FlaggedBeamline / visitor` design is hard to reason about: structural nesting is not normalized in one place. Some nesting is flattened during parsing, while named line nesting is expanded during tracking.
+
+There may also be a real behavioral risk: `DefaultVisitor::visitFlaggedElmPtr()` toggles `local_flip` for reflected members, but `ParallelTracker::visitBeamline()` currently does:
+
+```cpp
+fbl->iterate(*this, false);
+```
+
+It ignores `local_flip`. So a reflected named nested line may not be traversed in reverse by `ParallelTracker`, even though the generic `DefaultVisitor::visitBeamline()` would honor `local_flip`. That is worth checking with a small nested/reflected `LINE` test.

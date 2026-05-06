@@ -1,0 +1,13 @@
+::: {.content-visible when-format="html"}
+![Floor Cartesian frame $K=(X,Y,Z)$ with the reference line shown in orange. Two placed element bodies, $e_i$ and $e_{i+1}$, are shown together with a representative point $\mathbf{R}(s)$ on the reference line. The label `placed element body` is kept inside the figure as the only descriptive in-figure annotation.](sections/sandbox/figures/floor-cartesian.png){fig-alt="Draft TikZ preview of the floor Cartesian coordinate system." width="85%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\input{sections/sandbox/figures/tikz/floor-cartesian.tikz.tex}
+\caption{Floor Cartesian frame $K=(X,Y,Z)$ with the reference line shown in orange. Two placed element bodies, $e_i$ and $e_{i+1}$, are shown together with a representative point $\mathbf{R}(s)$ on the reference line. The label \texttt{placed element body} is kept inside the figure as the only descriptive in-figure annotation.}
+\end{figure}
+```
+:::

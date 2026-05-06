@@ -1,0 +1,129 @@
+## Low Energy e-/e+ in a High Energy Coulomb Field
+
+This sandbox note describes the present OPALX model for low-energy
+electron/positron witness particles born near an interaction point and moving
+through the field of a high-energy primary bunch.  The current implementation is
+useful as a first numerical experiment, but it is not yet a complete
+laboratory-frame treatment of a relativistic Coulomb field.
+
+### Implemented model
+
+The implemented path is driven by a `BEAMBEAM` element.  Container `0` is the
+source bunch.  The optional attribute
+
+```opal
+WITNESS_CONTAINERS = "1,2"
+```
+
+selects passive witness containers.  The default is
+
+```opal
+WITNESS_CONTAINERS = "NONE"
+```
+
+so legacy beam-beam tracking is unchanged unless witness kicks are requested.
+
+When the source bunch enters the BeamBeam window, OPALX replaces the normal
+self-field mesh by a fixed interaction-window mesh.  The longitudinal extent is
+the placed `BEAMBEAM` element length, centered on the interaction point.  If an
+aperture is provided, the transverse half widths define the fixed x-y field
+domain.  The source charge density is deposited on this mesh and the open
+Poisson problem is solved in the BeamBeam/source frame,
+
+$$
+\nabla^2 \phi_s(\mathbf r_s) =
+-\frac{\rho_s(\mathbf r_s)}{\epsilon_0},
+\qquad
+\mathbf E_s(\mathbf r_s) = -\nabla \phi_s(\mathbf r_s).
+$$
+
+The witness particles do not contribute to this charge density.  They only
+sample the already-solved source field.  For a witness particle stored relative
+to its own container reference path, the current code maps the longitudinal
+coordinate into the source frame with
+
+$$
+z_s = z_w + (s_w - s_s),
+$$
+
+where \(s_s\) is the source-container reference path length and \(s_w\) is the
+witness-container reference path length.  The transverse coordinates are rotated
+with the same BeamBeam source-frame rotation used for the source bunch.  The
+field is gathered on the fixed BeamBeam mesh and then rotated back to the
+reference frame before the normal Boris kick.
+
+This gives a well-defined one-way coupling:
+
+1. source container deposits charge,
+2. source field is solved on the BeamBeam window mesh,
+3. witness containers gather that field,
+4. witness momenta are kicked,
+5. witness charge never feeds back into the source solve.
+
+This is the approximation currently used for the gamma-gamma pair-tracking
+prototype.  It is a source-field sampling model, not yet a full transformation
+of the high-energy bunch field into the physical frame seen by the low-energy
+pairs.
+
+### Missing physics
+
+The primary missing piece is the relativistic field transformation.  The source
+solve is presently electrostatic in the BeamBeam/source frame.  A high-energy
+bunch seen in the laboratory frame has compressed transverse electric fields
+and a magnetic field.  Starting from a source rest-frame Coulomb field
+\(\mathbf E'\), \(\mathbf B'=0\), the idealized boost along the source velocity
+\(\boldsymbol\beta_s c\) gives, schematically,
+
+$$
+\mathbf E_{\parallel} = \mathbf E'_{\parallel},
+\qquad
+\mathbf E_{\perp} = \gamma_s \mathbf E'_{\perp},
+\qquad
+\mathbf B = \frac{1}{c}\,\boldsymbol\beta_s \times \mathbf E ,
+$$
+
+with signs fixed by the exact frame convention.  The witness kick should then
+use the Lorentz force in a common physical frame,
+
+$$
+\frac{d\mathbf p_w}{dt}
+= q_w \left(\mathbf E_{\mathrm{lab}}
++ \mathbf v_w \times \mathbf B_{\mathrm{lab}}\right).
+$$
+
+For low-energy pairs this magnetic term and the difference between source,
+lab, and witness frames are not optional details: the witnesses can have
+large angles and broad velocities, so a scalar electrostatic kick in the source
+frame is only a first approximation.
+
+The implementation also still treats the witness field sample as synchronous
+with the source field solve.  A more complete model must define the time at
+which pairs are created, the source bunch phase at that time, and whether
+retardation or a quasi-static boosted-field approximation is sufficient for the
+target accuracy.
+
+### Work needed
+
+The next implementation step is to make the frame contract explicit:
+
+1. define the source field frame, the OPALX reference frame, and the witness
+   container frame in one notation;
+2. decide whether the source field should be stored as a rest-frame field plus
+   boost metadata, or directly as a laboratory-frame \((\mathbf E,\mathbf B)\);
+3. apply the Lorentz-transformed field to witnesses in a common frame;
+4. preserve the current one-way coupling switch so `WITNESS_CONTAINERS="NONE"`
+   remains a true no-witness-space-charge mode.
+
+The minimum validation set should include:
+
+1. a boosted point-charge or Gaussian-bunch manufactured solution for
+   \(\mathbf E\) and \(\mathbf B\);
+2. a regression proving that witness containers receive a nonzero kick only
+   when `WITNESS_CONTAINERS` is enabled;
+3. a check that witness particles outside the BeamBeam aperture are counted and
+   reported;
+4. one-rank versus two-rank comparisons for the gamma-gamma pair input;
+5. conservation and reproducibility diagnostics for the source container when
+   witnesses are enabled, verifying that witness charge is not deposited on the
+   BeamBeam source mesh.
+

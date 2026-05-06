@@ -1,0 +1,353 @@
+## Element Placing (Posing)
+
+This subsection is the working area for documenting how OPALX places, or
+*poses*, elements in space in a way that is consistent with
+[Section 2: Coordinate Systems](../coordinate-systems/index.qmd) of the
+manual.
+
+The immediate goal is not yet a final polished derivation. Instead, this
+sandbox section should fix the vocabulary, code anchors, and transformation
+chain used by the current implementation.
+
+The placement topic will need to connect four layers:
+
+- the parser-side placement attributes in `OpalElement`,
+- the runtime pose stored in `ElementBase`,
+- the placed beamline view represented by `PlacedElement`,
+- the way `OpalBeamline`, `OrbitThreader`, and `ParallelTracker` consume those
+  transforms.
+
+### Input placement, the current SE(3) bridge, and mismatch handling
+
+The current OPALX implementation does not have a dedicated \(\mathrm{SE}(3)\) class. The
+role of the rigid-motion carrier is instead played by
+`CoordinateSystemTrafo`. The important convention is that the stored transform
+maps **parent-frame coordinates into local-frame coordinates**. For a point
+$\mathbf{r}_{\mathrm{parent}}$,
+
+$$
+\mathbf{r}_{\mathrm{local}}
+=
+Q\bigl(\mathbf{r}_{\mathrm{parent}} - \mathbf{o}\bigr).
+$$
+
+This is a sound rigid transform, but it is the parent-to-local form rather than
+the local-to-parent pose matrix often used in robotics texts. Composition is
+still an \(\mathrm{SE}(3)\) composition, with the OPALX convention
+
+$$
+(A \cdot B)(\mathbf{r}) = A(B(\mathbf{r})),
+$$
+
+so the right-hand transform acts first.
+
+The notation used in this subsection is:
+
+- bold symbols such as \(\mathbf{r}\), \(\mathbf{o}\), and \(\mathbf{R}(s)\)
+  denote vectors or embedded points in \(\mathbb{R}^3\),
+- plain symbols such as \(s\), \(t\), and \(\Delta t\) denote scalars,
+- frame and space symbols such as \(K\), \(K_s\), \(\mathrm{SO}(3)\), and \(\mathrm{SE}(3)\) are
+  written non-bold,
+- rigid transforms such as \(G_i^{\mathrm{nom}}\), \(\Delta_i\), and
+  \(B_{i,\alpha}\) are treated
+  as maps in \(\mathrm{SE}(3)\), acting on vectors by function application,
+- \(Q \in \mathrm{SO}(3)\) denotes the rotational part of a rigid transform,
+- C++ identifiers such as `CoordinateSystemTrafo` or `PlacedElement` are kept in
+  monospace.
+
+To remain consistent with Chapter 2, this sandbox note reserves:
+
+- \(P_i\) for the **placement map** from the canonical local chart \(U_i\) into
+  the laboratory frame \(K\),
+- \(p_{i,\alpha}\) for the **abstract port** consisting of a marked boundary
+  chart together with an adapted frame,
+- \(T_i(t)\) for the Chapter 2 laboratory-frame pose of the canonical element
+  frame.
+
+The present code discussion therefore uses distinct implementation-side symbols:
+
+- \(G_i^{\mathrm{nom}}\) for the stored parent-to-nominal-body rigid transform,
+- \(G_i^{\mathrm{act}}\) for the stored parent-to-actual-body rigid transform,
+- \(B_{i,\alpha}\) for the body-relative rigid transform of the port frame
+  materialized by `ElementGeometry`.
+
+The words `nominal` and `actual` need to be fixed before the bridge equations.
+In this note:
+
+- `nominal` means the rigid placement of the **canonical element body frame**
+  in the parent frame before any local survey or misalignment correction is
+  applied,
+- `actual` means the rigid placement of that same body frame after the local
+  correction has been applied,
+- these terms refer to **body placement in physical space**, not yet to the
+  field-local charts used later by analytic bends.
+
+For element \(i\), the current bridge therefore distinguishes:
+
+- the nominal body pose
+  \(G_i^{\mathrm{nom}} \in \mathrm{SE}(3)\), stored as
+  `PlacementPose(parentToNominal)`,
+- the local correction
+  \(\Delta_i \in \mathrm{SE}(3)\), stored as `Misalignment(nominalToActual)`,
+- the actual body pose
+  \(G_i^{\mathrm{act}}\), assembled from the first two quantities.
+
+{{< include includes/floor-cartesian-figure.qmd >}}
+
+The figure above should be read as the **floor-frame interpretation of nominal
+placement**. The global frame is the floor Cartesian frame \(K=(X,Y,Z)\). The
+orange reference line is the reference path in that frame, and
+\(\mathbf{R}(s)\) is a representative point on that path. The drawn element
+bodies \(e_i\) and \(e_{i+1}\) represent placed element bodies in floor space.
+At this stage of the discussion they should be read as **nominal** body poses.
+The corresponding actual body poses are obtained by applying the local
+correction \(\Delta_i\) or \(\Delta_{i+1}\) to those nominal poses; they are
+not drawn as separate boxes in this first figure.
+
+The corresponding Chapter 2 to Sandbox crosswalk is:
+
+| Chapter 2 object | Sandbox implementation-side representative | Current code anchor | Comment |
+|---|---|---|---|
+| \(K\) | floor Cartesian parent frame | beamline / lab frame | same object as in Chapter 2 |
+| \(P_i\) | conceptual local-to-lab placement map | not stored directly | Chapter 2 geometric notion |
+| \(G_i^{\mathrm{nom}}\) | stored inverse rigid representative of the nominal body pose | `PlacementPose`, `ElementBase::getCSTrafoGlobal2Local()` | implementation-side parent-to-local map |
+| \(\Delta_i\) | nominal-to-actual local correction | `Misalignment`, `ElementBase::getMisalignment()` | same correction idea as in Chapter 2 |
+| \(G_i^{\mathrm{act}} = \Delta_i \cdot G_i^{\mathrm{nom}}\) | stored inverse rigid representative of the actual body pose | assembled in `PlacedElement` | implementation-side parent-to-local map |
+| \(p_{i,\alpha}\) | abstract port in the Chapter 2 sense | not stored as a single object | marked boundary chart plus adapted frame |
+| \(B_{i,\mathrm{entry}}\), \(B_{i,\mathrm{body}}\), \(B_{i,\mathrm{exit}}\) | body-relative rigid transforms of the port frames | `ElementGeometry` via `getEntryPort()`, `getBodyPort()`, `getExitPort()` | implementation-level port-frame representatives |
+| field-local chart | runtime field-evaluation chart, especially for analytic bends | `OpalBeamline::transformToFieldLocalCS()` and related methods | additional runtime chart beyond Chapter 2 rigid placement |
+
+: Table 10.3.1: Chapter 2 objects and their Sandbox implementation-side representatives. {#tbl-sandbox-placement-frame-vocabulary}
+
+This table makes the key distinction explicit: the bridge first constructs
+**placement in floor space**, and only afterwards do some runtime paths map
+positions and vectors into a separate field-local chart. Those two layers
+should not be conflated.
+
+Under that convention, the current posing bridge can be stated compactly as:
+
+$$
+G_i^{\mathrm{act}} = \Delta_i \cdot G_i^{\mathrm{nom}},
+$$
+
+The canonical port-frame representatives
+\(B_{i,\mathrm{entry}}\), \(B_{i,\mathrm{body}} = I\), and
+\(B_{i,\mathrm{exit}}\)
+are body-relative marked frames. This means the same port can be queried either
+nominally or actually, depending on whether it is composed with
+\(G_i^{\mathrm{nom}}\) or with \(G_i^{\mathrm{act}}\).
+
+The corresponding nominal and actual port transforms are
+
+$$
+G_{i,\mathrm{entry}}^{\mathrm{nom}} = B_{i,\mathrm{entry}} \cdot G_i^{\mathrm{nom}},
+\qquad
+G_{i,\mathrm{exit}}^{\mathrm{nom}} = B_{i,\mathrm{exit}} \cdot G_i^{\mathrm{nom}},
+$$
+
+and
+
+$$
+G_{i,\mathrm{entry}}^{\mathrm{act}} = B_{i,\mathrm{entry}} \cdot G_i^{\mathrm{act}},
+\qquad
+G_{i,\mathrm{exit}}^{\mathrm{act}} = B_{i,\mathrm{exit}} \cdot G_i^{\mathrm{act}}.
+$$
+
+This is exactly the bridge assembled in `PlacedElement`. `ElementBase` stores
+the ingredients `PlacementPose` and `Misalignment`, while `PlacedElement`
+materializes both the nominal and actual body/port transforms.
+
+| Input-file quantity | Geometric meaning | Bridge object | Main C++ entry points |
+|---|---|---|---|
+| `ORIGIN`, `ORIENTATION` | explicit nominal body pose | `PlacementPose` | `OpalElement::update()`, `ElementBase::setCSTrafoGlobal2Local()`, `ElementBase::fixPosition()` |
+| `X`, `Y`, `Z`, `THETA`, `PHI`, `PSI` | explicit nominal body pose in split scalar form | `PlacementPose` | `OpalElement::update()`, `ElementBase::setCSTrafoGlobal2Local()`, `ElementBase::fixPosition()` |
+| `DX`, `DY`, `DZ`, `DTHETA`, `DPHI`, `DPSI` | local nominal-to-actual correction | `Misalignment` | `OpalElement::update()`, `ElementBase::setMisalignment()` |
+| `ELEMEDGE` | compatibility reference-path start coordinate | `elementPosition_m` | `ElementBase::setElementPosition()`, `OpalBeamline::resolveVisitStartField()`, `OpalBeamline::compileCompatibilityPlacement()` |
+| legacy edge geometry | body-relative entry/body/exit ports | `ElementGeometry` | `ElementBase::getEntryPort()`, `getBodyPort()`, `getExitPort()`, `getPlacementGeometry()` |
+
+: Table 10.3.2: Input-file quantities and their placement-bridge interpretation. {#tbl-sandbox-placement-input-bridge}
+
+The parser-side and runtime-side split is therefore:
+
+1. `OpalElement::update()` interprets the input attributes and pushes them into
+   the embedded runtime element.
+2. `ElementBase` stores the nominal rigid transform, the local correction, and
+   the optional `ELEMEDGE` reference coordinate.
+3. `ElementBase::getPlacedElement()` assembles these quantities into the bridge
+   view `PlacedElement`.
+4. `OpalBeamline` consumes that placed-element view, either by respecting an
+   already fixed pose or by compiling compatibility placement from reference
+   order and `ELEMEDGE`.
+
+{{< include includes/placement-se3-bridge-figure.qmd >}}
+
+Current mismatch detection is partial and distributed, not centralized:
+
+- malformed `ORIGIN` or `ORIENTATION` arrays are rejected in
+  `OpalElement::update()` with an `OpalException`,
+- analytic `SBEND` and `RBEND` elements without explicit `Z` placement still
+  require `ELEMEDGE`; this is enforced in
+  `OpalBeamline::resolveVisitStartField()`,
+- explicit nominal placement is protected by `fixPosition()`, so the later
+  compatibility placement pass does not overwrite an already posed element,
+- port continuity and field-local consistency are currently validated mainly by
+  regression tests such as `TestOpalBeamlinePlacement`, together with exported
+  placement summaries, rather than by a dedicated runtime validator.
+
+This also clarifies where a future mismatch detector should sit. The natural
+place is not the parser, but the bridge boundary where `PlacedElement` combines
+the nominal pose, local correction, and body-relative ports into a single
+explicit geometric record.
+
+### Current placement path in the code
+
+At the moment, the placement handoff in OPALX is centered around
+`OpalElement::update()`. That function interprets the parser-side placement
+attributes and writes them into the embedded runtime `ElementBase` object.
+
+In particular, the current path includes:
+
+- global pose through `setCSTrafoGlobal2Local(...)`,
+- the fixed-position flag through `fixPosition()`,
+- local misalignment through `setMisalignment(...)`,
+- optional longitudinal placement through `setElementPosition(...)`.
+
+Once this has been done, `ElementBase::getPlacedElement()` provides the bridge
+to the explicit placed-element representation that is later used by the beamline
+assembly.
+
+```{mermaid}
+%%| label: fig-sandbox-element-placement-flow
+%%| fig-cap: "Draft flow for element posing in the current OPALX implementation."
+flowchart TD
+  A["Parser-side OpalElement"] --> B["Placement attributes"]
+  B --> C["OpalElement::update()"]
+  C --> D["Runtime ElementBase<br/>pose + correction + anchor"]
+  D --> E["ElementBase::getPlacedElement()"]
+  E --> F["PlacedElement"]
+  F --> G["Nominal / actual ports"]
+  F --> H["OpalBeamline"]
+  H --> I["OrbitThreader"]
+  H --> J["ParallelTracker"]
+```
+
+### Scope of the placement note
+
+The intended scope of this sandbox subsection is:
+
+1. restate the placement conventions from Section 2 in code-facing language,
+2. explain how `ORIGIN` / `ORIENTATION` relate to `X`, `Y`, `Z`, `THETA`,
+   `PHI`, `PSI`,
+3. explain how local misalignments `DX`, `DY`, `DZ`, `DTHETA`, `DPHI`, `DPSI`
+   are applied,
+4. explain the role of nominal versus actual placement,
+5. explain how entry, body, and exit transforms are represented for curved
+   elements,
+6. prepare the later `OrbitThreader` documentation.
+
+### Straight elements, curved elements, and runtime charts
+
+For accelerator physicists the practical question is not just how a rigid body
+is posed in floor space, but how that rigid placement is connected to the
+reference trajectory and to the coordinates used later for field evaluation and
+tracking.
+
+The comoving reference-orbit frame is the next layer:
+
+{{< include includes/comoving-frenet-serret-figure.qmd >}}
+
+The comoving Frenet-Serret frame \(K_s=(x,y,s)\) is attached to the reference
+orbit rather than to the placed hardware. In the Chapter 2 language, this is
+the practical split between the **world chart** \((\mathbf r,t)\) used for
+placement in laboratory space and the **reference chart** \(s\) used to report
+where the reference orbit currently sits. For a straight element this
+distinction is almost invisible: the body \(z\)-direction and the reference
+longitudinal coordinate \(s\) coincide, so the body placement and the field
+chart are effectively the same to first order. For a curved element, however,
+that is no longer true. The rigid body is still placed in floor space by a
+single stored pose \(G_i^{\mathrm{nom}}\), but the field chart follows the
+design orbit through the magnet.
+
+This is the key machinery of the current OPALX bridge:
+
+{{< include includes/coordinate-transform-chain-figure.qmd >}}
+
+In accelerator language, the chain is:
+
+1. place the element body in the floor frame \(K\),
+2. define entry/body/exit ports relative to that body,
+3. assemble nominal and actual placed-element transforms,
+4. pass to a reference-orbit-based chart when field evaluation requires it.
+
+This leads to the following conventions.
+
+| Topic | Straight elements | Curved elements (`SBEND`, `RBEND`, `RBEND3D`) | Main code anchors |
+|---|---|---|---|
+| Nominal body pose | one rigid stored pose \(G_i^{\mathrm{nom}}\) in floor space | one rigid stored pose \(G_i^{\mathrm{nom}}\) in floor space | `PlacementPose`, `setCSTrafoGlobal2Local()`, `getPlacedElement()` |
+| Actual body pose | \(G_i^{\mathrm{act}} = \Delta_i \cdot G_i^{\mathrm{nom}}\) | \(G_i^{\mathrm{act}} = \Delta_i \cdot G_i^{\mathrm{nom}}\) | `Misalignment`, `PlacedElement::getActualBodyTransform()` |
+| Entry/body/exit ports | rigid port-frame transforms \(B_{i,\alpha}\) aligned with the straight body chart | rigid port-frame transforms \(B_{i,\alpha}\) attached to the curved element body; they define geometric entry and exit faces | `getEntryPort()`, `getBodyPort()`, `getExitPort()`, `ElementGeometry` |
+| Longitudinal chart used for geometry export | body \(z\) coordinate | nominal body ports plus bend design path / edge geometry | `getNominalEntryTransform()`, `getNominalExitTransform()`, `save3DLattice()` |
+| Longitudinal chart used for field evaluation | body-local chart is usually sufficient | separate field-local chart tied to the reference orbit | `transformToFieldLocalCS()`, `transformFromFieldLocalCS()`, `BendBase` field-local mapping |
+| Compatibility placement without explicit pose | `ELEMEDGE` can supply the start coordinate, but explicit `Z` pose also works | analytic bends remain strict: without explicit `Z`, `ELEMEDGE` is required | `resolveVisitStartField()`, `compileCompatibilityPlacement()` |
+
+: Table 10.3.3: Straight-element versus curved-element placement and chart conventions. {#tbl-sandbox-placement-straight-curved}
+
+The parser-side orientation and misalignment angles should also be stated in
+the same code-facing way they are actually built:
+
+- the orientation quaternion is assembled in `OpalElement::update()` as
+  `rotTheta * (rotPhi * rotPsi)`,
+- the corresponding axes are
+  `theta -> y`, `phi -> x`, and `psi -> z`,
+- the same axis order is used for the local misalignment rotation
+  `rotationY * rotationX * rotationZ`,
+- the transform stored in `CoordinateSystemTrafo` is the conjugated,
+  parent-to-local form.
+
+For the current implementation it is therefore safest to document the parser
+angles by their **construction order in code**, not by introducing additional
+intrinsic/extrinsic terminology that might obscure the existing convention.
+
+From the accelerator-physics point of view, three additional remarks matter.
+
+First, there is a distinction between **survey placement** and **reference
+orbit**. The survey or input placement fixes where the hardware sits in the
+floor frame. The reference orbit is the path that the traced reference particle
+actually follows through the placed lattice. In a perfectly matched straight
+section those two viewpoints nearly coincide. In curved or misaligned sections
+they do not: the survey pose still describes the body in floor space, while the
+reference orbit defines the comoving longitudinal coordinate used later for
+tracking and field queries.
+
+Second, the **entry and exit faces** are geometric ports, not yet the same thing
+as a hard-edge transport model. The ports determine where the canonical body
+chart begins and ends, and they are used for geometric chaining, export, and
+diagnostics. A hard-edge or fringe-field model then decides how the field
+support extends relative to those geometric faces. This distinction is
+especially important for bends, where body extent and field-support extent need
+not coincide.
+
+Third, `ELEMEDGE` should be understood physically as a **reference-path
+anchoring coordinate**. It is not an independent survey pose. In the
+compatibility placement path it specifies where the element edge sits on the
+longitudinal reference coordinate used for beamline assembly. For ordinary
+straight elements this is mostly a convenience. For analytic bends without an
+explicit rigid `Z` placement it remains essential, because the code still needs
+an unambiguous longitudinal anchor from which the bend body and field support
+are laid out.
+
+The main placement split for later runtime documentation is then:
+
+- `OpalElement` parses and constructs the rigid nominal pose and local
+  correction,
+- `ElementBase` stores those ingredients and the optional compatibility
+  longitudinal coordinate,
+- `PlacedElement` assembles the explicit nominal/actual body and port
+  transforms,
+- `OpalBeamline` compiles these into the beamline placement assembly,
+- `OrbitThreader` and `ParallelTracker` consume that assembly, with bends
+  introducing a separate field-local chart on top of the rigid body placement.
+
+This subsection is now the right place to continue with a dedicated
+`OrbitThreader` note, because the distinction between floor placement, body
+ports, and reference-orbit charts has been made explicit.

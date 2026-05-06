@@ -1,0 +1,13 @@
+:::: {.content-visible when-format="html"}
+![Class-level bridge from `OpalElement` to the runtime `ElementBase` hierarchy.](sections/sandbox/figures/opal-element-class-bridge.png){fig-alt="TikZ preview of the OpalElement class bridge." width="85%"}
+::::
+
+:::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\resizebox{0.82\linewidth}{!}{\input{sections/sandbox/figures/tikz/opal-element-class-bridge.tikz.tex}}
+\caption{Class-level bridge from \texttt{OpalElement} to the runtime \texttt{ElementBase} hierarchy.}
+\end{figure}
+```
+::::

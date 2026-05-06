@@ -1,0 +1,13 @@
+::: {.content-visible when-format="html"}
+![Boosted Frenet-Serret-style frame used as a draft field-solver frame. The marked point denotes the bunch centroid, the dashed horizontal line indicates the longitudinal beam direction, the heavy diagonal arrow indicates the boost direction, and the dashed rectangle indicates the solver box in the boosted frame.](figures/boosted-frenet-serret.png){fig-alt="Draft TikZ preview of the boosted Frenet-Serret frame." width="85%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\resizebox{0.82\linewidth}{!}{\input{sections/sandbox/figures/tikz/boosted-frenet-serret.tikz.tex}}
+\caption{Boosted Frenet-Serret-style frame used as a draft field-solver frame. The marked point denotes the bunch centroid, the dashed horizontal line indicates the longitudinal beam direction, the heavy diagonal arrow indicates the boost direction, and the dashed rectangle indicates the solver box in the boosted frame.}
+\end{figure}
+```
+:::

@@ -1,0 +1,100 @@
+## OPALX has 4 Layers of Structure (need better title)
+
+Figure 1 extends the element-only (bend) class structure from the
+Elements chapter into the placement and tracking path used by the present 
+`SBEND` and `RBEND` implementation in OPALX.
+
+The diagram emphasizes four layers:
+
+- parser-facing `Opal*` element definitions,
+- runtime bend and field representations,
+- beamline placement and coordinate-system assembly,
+- reference-path and tracking-side infrastructure.
+
+```{mermaid}
+%%| label: fig-sandbox-bend-placement-tracking-class-diagram
+%%| fig-cap: "Draft class diagram for the current bend, placement, and tracking path in OPALX."
+flowchart TD
+  A["Parser layer<br/>OpalElement -> OpalBend<br/>OpalSBend / OpalRBend"] --> B["Runtime bend reps<br/>SBendRep / RBendRep"]
+  B --> C["Curved geometry + field<br/>PlanarArcGeometry / RBendGeometry<br/>BMultipoleField"]
+  B --> D["Placed beamline<br/>OpalBeamline / PlacedElement"]
+  D --> E["Rigid transforms<br/>CoordinateSystemTrafo"]
+  D --> F["Reference-path layer<br/>OrbitThreader / IndexMap<br/>ReferencePathModel"]
+  D --> G["Tracking layer<br/>ParallelTracker"]
+  F --> G
+```
+
+The parser-side bend objects define attributes, defaults, and input-language
+validation. The actual runtime geometry and field ownership lives in the
+representation classes `SBendRep` and `RBendRep`.
+
+The next structural step is the placement layer. `OpalBeamline` assembles the
+declared components into a placed beamline and keeps a `PlacedElement`
+description for each runtime element, including the nominal and actual body,
+entry, exit, and support transforms.
+
+For tracking, `OrbitThreader` threads a reference path through the placed
+beamline and builds the indexing and registration information needed by the
+tracker. `ParallelTracker` then consumes the placed beamline and the threaded
+reference-path information when updating external fields and advancing the
+reference particle.
+
+### `QUADRUPOLE` and `MULTIPOLE`
+
+The same parser-to-runtime analysis can be carried out for the present
+quadrupole and generic multipole path. The main structural difference relative
+to bends is that `OpalQuadrupole` and `OpalMultipole` inherit **directly** from
+`OpalElement`. There is no intermediate parser-side family class analogous to
+`OpalBend`.
+
+That detail matters because all common element-level attributes are inherited
+immediately from `OpalElement`, including:
+
+- design type and aperture,
+- placement and floor coordinates,
+- orientation angles,
+- local misalignments,
+- output and common element options.
+
+At update time, both parser-side front ends call the common `OpalElement`
+machinery and then configure the same runtime representation `MultipoleRep`.
+`QUADRUPOLE` is therefore a restricted front end on top of the generic
+`MULTIPOLE` runtime path.
+
+```{mermaid}
+%%| label: fig-sandbox-multipole-placement-tracking-class-diagram
+%%| fig-cap: "Draft class diagram for the current `QUADRUPOLE` and `MULTIPOLE` placement and tracking path in OPALX."
+flowchart TD
+  A["Parser layer<br/>OpalElement<br/>OpalQuadrupole / OpalMultipole"] --> B["Runtime multipole rep<br/>MultipoleRep"]
+  B --> C["Straight geometry + field<br/>StraightGeometry<br/>BMultipoleField"]
+  B --> D["Placed beamline<br/>OpalBeamline / PlacedElement"]
+  D --> E["Rigid transforms<br/>CoordinateSystemTrafo"]
+  D --> F["Reference-path layer<br/>OrbitThreader / IndexMap<br/>ReferencePathModel"]
+  D --> G["Tracking layer<br/>ParallelTracker"]
+  F --> G
+```
+
+The runtime path is straight-element based. `MultipoleRep` owns a
+`StraightGeometry` object and a `BMultipoleField`, and both `MULTIPOLE` and
+`QUADRUPOLE` enter the beamline placement pipeline as ordinary `Component`
+instances. Consequently, once the parser-side update has completed, the
+placement and tracking infrastructure is the same one used elsewhere in the
+beamline:
+
+- `OpalBeamline` stores the placed component and its transforms,
+- `PlacedElement` records the nominal and actual coordinate systems,
+- `OrbitThreader` evaluates the host reference-path field model through the
+  placed beamline,
+- `ParallelTracker` uses the same placed component during bunch tracking.
+
+In other words, the present quadrupole family differs from the bend family
+mainly on the parser side and in the runtime geometry type:
+
+- bends use `OpalBend` and specialized curved runtime representations,
+- `QUADRUPOLE` and `MULTIPOLE` use `OpalElement` directly and share one
+  straight multipole runtime representation.
+
+The separate `MULTIPOLET` implementation is not included in this draft
+diagram. It is a different combined-function magnet path and should be
+documented separately once the straight `MULTIPOLE` and `QUADRUPOLE` structure
+is fully settled.

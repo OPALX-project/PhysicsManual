@@ -1,0 +1,50 @@
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=7mm and 12mm,
+  box/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=ebeam!6
+  },
+  runtime/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=photon!10
+  },
+  line/.style={-Latex, thick},
+  cfg/.style={Latex-Latex, thick, dashed}
+]
+
+\node[box] (element) {Element};
+\node[box, below=of element] (opalelement) {OpalElement};
+\node[box, below left=10mm and 12mm of opalelement] (sbend) {OpalSBend};
+\node[box, below=10mm of opalelement] (quad) {OpalQuadrupole};
+\node[box, below right=10mm and 12mm of opalelement] (multi) {OpalMultipole};
+
+\node[runtime, right=28mm of opalelement] (elementbase) {ElementBase};
+\node[runtime, below=of elementbase] (component) {Component};
+\node[runtime, below left=10mm and 12mm of component] (sbendrep) {SBendRep};
+\node[runtime, below right=10mm and 12mm of component] (multrep) {MultipoleRep};
+
+\draw[line] (element) -- (opalelement);
+\draw[line] (element) -- (elementbase);
+\draw[line] (elementbase) -- (component);
+\draw[line] (opalelement) -- (sbend);
+\draw[line] (opalelement) -- (quad);
+\draw[line] (opalelement) -- (multi);
+\draw[line] (component) -- (sbendrep);
+\draw[line] (component) -- (multrep);
+
+\draw[cfg] (sbend) -- (sbendrep);
+\draw[cfg] (quad) -- (multrep);
+\draw[cfg] (multi) -- (multrep);
+
+\end{tikzpicture}

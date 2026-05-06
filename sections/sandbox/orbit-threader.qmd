@@ -1,0 +1,226 @@
+## OrbitThreader
+
+`OrbitThreader` is the first stage where the placed geometry is converted into a
+**traced reference orbit**. For accelerator physicists, its role is simple to
+state:
+
+- start from the reference particle state,
+- move that particle through the placed lattice in the summed external fields,
+- record which elements are active along the traced longitudinal coordinate,
+- hand that occupancy and interval information to the main tracker.
+
+In other words, `OrbitThreader` is the bridge between static placement and the
+dynamic reference-path picture used by time-based tracking.
+
+The symbols \(T_i\), \(\Delta_i\), and \(P_{i,*}\) retain the meanings fixed in
+Table @tbl-sandbox-placement-frame-vocabulary; C++ class and function names stay
+in monospace.
+
+### Physical role of the traced reference path
+
+The placed lattice tells us where hardware sits in floor space. The traced
+reference path tells us which parts of that hardware are actually intersected by
+the reference particle and in what longitudinal order. Those are not the same
+question in a general 3D placed lattice.
+
+This is why `OrbitThreader` exists at all. It does not merely sort elements by a
+nominal `Z` coordinate. It integrates the reference particle through the placed
+fields and constructs a path-based activation model from that integration.
+
+```{mermaid}
+%%| label: fig-sandbox-orbit-threader-role
+%%| fig-cap: "Draft OrbitThreader role in the OPALX tracking machinery."
+flowchart TD
+  A["Placed beamline<br/>OpalBeamline"] --> B["Reference state<br/>r, p, s, t, dt"]
+  B --> C["OrbitThreader::execute()"]
+  C --> D["Traced path<br/>DesignPath.dat"]
+  C --> E["ReferencePathModel<br/>active occupancy"]
+  C --> F["Action-range model<br/>registered intervals"]
+  E --> G["ParallelTracker::computeExternalFields()"]
+  F --> G
+  G --> H["Bunch tracking"]
+```
+
+### Code-side path construction
+
+The current implementation is centered around:
+
+- constructor:
+  `OrbitThreader(ref, r, p, s, maxDiffZBunch, t, dT, stepSizes, beamline)`
+- main driver:
+  `OrbitThreader::execute()`
+- local integrator:
+  `OrbitThreader::integrate(...)`
+
+The input state comes directly from the bunch reference particle in
+`ParallelTracker`:
+
+- reference particle rest data,
+- lab-frame reference position and momentum,
+- current path-length coordinate `s`,
+- bunch time `t`,
+- current time step `dt`.
+
+So `OrbitThreader` does not invent a separate reference particle. It reuses the
+same physical reference state that the main time-based tracker is about to use.
+
+### What OrbitThreader produces
+
+The class owns two distinct path models.
+
+1. `ReferencePathModel` from `imap_m`
+- this is the traced active-element occupancy model,
+- it answers: which elements are active around the current traced longitudinal
+  position?
+
+2. `actionRangeRegistrationModel_m`
+- this is the registration model for backward-compatible action ranges,
+- it answers: which element intervals should be registered on the elements
+  themselves for later legacy-style use?
+
+This split matters physically. The first model is a **traced occupancy model**.
+The second is a **registration model** that translates the traced result into
+legacy element intervals and `ELEMEDGE`-compatible ranges.
+
+### Why bends need special treatment
+
+The field evaluation stage later distinguishes straight elements from analytic
+bends. `ParallelTracker::computeExternalFields()` uses the `OrbitThreader`
+occupancy query, but then treats bends specially:
+
+- straight and most other elements use one rigid local field transform,
+- bends build tracking slices and use an entry-to-slice-local reference-path
+  transform inside each slice.
+
+So the information flow is:
+
+1. `OrbitThreader` says which bend is active along the traced path,
+2. `ParallelTracker` asks the bend for tracking slices,
+3. the bunch is mapped slice-by-slice into the bend’s local reference-path
+   chart,
+4. the bend applies the slice field,
+5. the bunch is mapped back to the reference frame.
+
+This is the point where the distinction made in `10.3.4` becomes operational:
+- rigid floor placement tells us where the bend is,
+- the field-local slice chart tells us how the bunch is advanced through it.
+- reference-path slices and bend-local tracking charts in more detail.
+
+
+
+
+### Disconnected placement and mismatch detection
+
+`OrbitThreader` also contains the first real runtime consistency check for
+placed lattices. After the traced path has been built,
+`validateVisitedElements(...)` scans placed elements that should have been
+reachable and checks whether the reference path ever visited them.
+
+If a nontrivial placed element lies within the traced longitudinal window but is
+never intersected, the code raises a user-facing exception and reports its
+nominal entry, body, and exit coordinates.
+
+This is the current runtime answer to the practical question:
+
+- “Did I place the hardware in a way that the reference trajectory can actually
+  thread through it?”
+
+For an accelerator physicist, this is often the most useful placement
+diagnostic, because it converts a disconnected survey configuration into a
+clear statement about the traced reference orbit.
+
+### Relation to `ELEMEDGE`
+
+`OrbitThreader::registerElement(...)` and `processElementRegister()` are where
+the traced path is turned back into legacy-compatible element ranges.
+
+For general elements, the code infers an effective element-edge coordinate from
+the traced local entrance state. For bends, `processElementRegister()` applies
+the bend field extent explicitly:
+
+- it gets `fieldBegin` and `fieldEnd`,
+- if the bend already has an explicit `ELEMEDGE`, that value is kept as the
+  anchor,
+- the registered action range is then built from that anchored field interval.
+
+Physically, this means:
+- the traced path determines what the reference particle actually visited,
+- `ELEMEDGE` still acts as the longitudinal anchor used to express the bend
+  field interval in the legacy coordinate language.
+
+`ELEMEDGE` should be seen as depricayed, in a linear setup instead `Z` should be used.
+
+
+### Handoff to the main tracker
+
+The handoff is in `ParallelTracker`:
+
+1. construct `OrbitThreader`,
+2. call `execute()`,
+3. retrieve the global bounding box,
+4. use `oth.query(...)` for active elements around each bunch container,
+5. also inspect `oth.getActionRangeRegistrationModel()` to ensure bend segments
+   remain visible in the queried window.
+
+So `OrbitThreader` is not only a diagnostic tool or a design-path logger. It is
+part of the live tracking machinery that decides which elements are considered
+active for field application.
+
+### Worked example: one placed bend
+
+It is useful to make the machinery concrete on the simplest nontrivial case: a
+single placed analytic bend, for example one `SBEND` instance `B1`.
+
+The physical story is:
+
+1. the input deck fixes the bend body pose in floor space, either explicitly by
+   `ORIGIN` / `ORIENTATION` or `X,Y,Z,THETA,PHI,PSI`, or compatibly through a
+   longitudinal anchor such as `ELEMEDGE`,
+2. `OpalElement::update()` turns that into a stored nominal body pose
+   \(G_{B1}^{\mathrm{nom}}\) and an optional
+   local correction,
+3. `OpalBeamline` assembles the corresponding `PlacedElement`,
+4. `OrbitThreader` traces the reference particle and determines the interval
+   along the traced path where `B1` is actually active,
+5. `ParallelTracker` queries that interval and, because `B1` is a bend, applies
+   the bend field slice by slice in a reference-path-local chart.
+
+{{< include includes/one-bend-threading-figure.qmd >}}
+
+For this one-bend case, the key objects and physical meanings are:
+
+| Stage | Object or quantity | Physical meaning | Main code anchors |
+|---|---|---|---|
+| 1 | \(G_{B1}^{\mathrm{nom}}\) | nominal bend body pose in floor space | `PlacementPose`, `setCSTrafoGlobal2Local()` |
+| 2 | \(\Delta_{B1}\) | local survey / misalignment correction | `Misalignment`, `setMisalignment()` |
+| 3 | \(B_{B1,\mathrm{entry}}\), \(B_{B1,\mathrm{exit}}\) | body-relative port-frame transforms for the geometric bend entry and exit faces | `getEntryPort()`, `getExitPort()`, `ElementGeometry` |
+| 4 | traced active interval | part of the reference path where the bend is actually intersected | `OrbitThreader::execute()`, `imap_m.add(...)` |
+| 5 | registered action range | legacy-compatible bend field interval | `registerElement()`, `processElementRegister()` |
+| 6 | bend slices | local reference-path pieces used for field application | `buildTrackingSlices()`, `applySlice()` |
+
+: Table 10.4.1: Worked-example dictionary for one placed analytic bend. {#tbl-sandbox-orbitthreader-one-bend}
+
+The important physics point is that the rigid bend pose alone does not yet tell
+the tracker how to advance the bunch through the bend. It tells the code where
+the hardware sits. `OrbitThreader` then determines where the **reference orbit**
+actually threads that hardware, and the bend tracker finally resolves that path
+into slice-local field applications.
+
+This is also where `ELEMEDGE` enters most clearly. For the worked bend:
+
+- if an explicit bend edge coordinate is already set, that coordinate remains
+  the bend anchor,
+- the traced reference path then determines the visited field interval around
+  that anchor,
+- the action-range registration model carries that interval forward so that the
+  main tracker continues to see the bend in the correct longitudinal window.
+
+So the one-bend example already contains the full machinery in miniature:
+
+- survey placement,
+- nominal/actual body pose,
+- geometric ports,
+- traced occupancy interval,
+- legacy-compatible registration interval,
+- slice-based bend tracking.
+

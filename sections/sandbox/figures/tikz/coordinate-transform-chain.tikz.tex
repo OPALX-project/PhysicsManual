@@ -1,0 +1,17 @@
+\begin{tikzpicture}[>=Stealth, x=1cm, y=1cm, every node/.style={font=\small}]
+  \draw[rounded corners, fill=gray!3, draw=gray!45] (-0.35,-1.0) rectangle (11.6,5.0);
+
+  \node[font=\bfseries] at (0.25,4.55) {(d)};
+
+  \node[draw, rounded corners, fill=blue!8, minimum width=2.2cm, minimum height=0.95cm] (K) at (1.8,2.0) {$K$};
+  \node[draw, rounded corners, fill=green!8, minimum width=2.2cm, minimum height=0.95cm] (Ki) at (4.7,2.0) {$K'_i$};
+  \node[draw, rounded corners, fill=orange!10, minimum width=2.2cm, minimum height=0.95cm] (Ks) at (7.6,2.0) {$K_s$};
+  \node[draw, rounded corners, fill=red!8, minimum width=2.4cm, minimum height=0.95cm] (Kstar) at (10.3,2.0) {$K_s^\star$};
+
+  \draw[->, very thick] (K) -- (Ki);
+  \draw[->, very thick] (Ki) -- (Ks);
+  \draw[->, very thick] (Ks) -- (Kstar);
+
+  \draw[->, thick, dashed] (Ki.south) .. controls +(0,-1.0) and +(0,-1.0) .. (K.south);
+  \draw[->, thick, dashed] (Ks.south) .. controls +(0,-1.0) and +(0,-1.0) .. (Ki.south);
+\end{tikzpicture}

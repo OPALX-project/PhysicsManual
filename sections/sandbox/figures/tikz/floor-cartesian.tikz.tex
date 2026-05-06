@@ -1,0 +1,29 @@
+\begin{tikzpicture}[>=Stealth, x=1cm, y=1cm, every node/.style={font=\small}]
+  \draw[rounded corners, fill=blue!3, draw=blue!45] (-0.35,-1.0) rectangle (9.2,4.8);
+
+  \coordinate (O) at (1.0,0.8);
+  \draw[->, thick] (O) -- ++(6.0,0.0) node[right] {$Z$};
+  \draw[->, thick] (O) -- ++(0.0,3.0) node[above] {$X$};
+  \draw[->, thick] (O) -- ++(-1.6,-1.1) node[left] {$Y$};
+  \node[below left] at ($(O)+(0,0.3)$) {$O_K$};
+  \node[font=\bfseries] at (0.25,4.35) {(a)};
+
+  \draw[very thick, orange!75!black]
+    plot[smooth] coordinates {(1.5,1.2) (2.8,1.45) (4.1,2.0) (5.4,2.55) (6.6,2.95) (8.0,3.25)};
+
+  \begin{scope}[shift={(3.2,1.7)}, rotate=12]
+    \draw[fill=gray!12, line width=0.8pt] (-0.95,-0.28) rectangle (0.95,0.28);
+    \node at (0,0) {$e_i$};
+  \end{scope}
+  \draw[dashed, gray!70] (3.2,1.7) -- (3.2,0.8);
+  \node[font=\scriptsize, anchor=west] at (3.3,0.95) {placed element body};
+
+  \begin{scope}[shift={(6.35,2.7)}, rotate=18]
+    \draw[fill=gray!12, line width=0.8pt] (-1.1,-0.28) rectangle (1.1,0.28);
+    \node at (0,0) {$e_{i+1}$};
+  \end{scope}
+  \draw[dashed, gray!70] (6.35,2.7) -- (6.35,0.8);
+
+  \filldraw[fill=white, draw=orange!75!black, line width=0.8pt] (4.1,2.0) circle (0.07);
+  \node[font=\scriptsize, anchor=south west] at (4.15,2.25) {$\mathbf{R}(s)$};
+\end{tikzpicture}

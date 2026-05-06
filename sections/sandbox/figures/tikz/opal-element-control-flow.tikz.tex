@@ -1,0 +1,49 @@
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=7mm and 10mm,
+  box/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=ebeam!6
+  },
+  sidebox/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=photon!10
+  },
+  line/.style={-Latex, thick}
+]
+
+\node[box] (input) {Input statement\\SBEND / QUADRUPOLE / MULTIPOLE / \dots};
+\node[box, below=of input] (parser) {Derived parser object\\Opal*};
+\node[sidebox, below left=of parser] (parse) {OpalElement::parse()};
+\node[sidebox, below right=of parser] (embed) {embedded runtime object\\ElementBase*};
+\node[box, below=13mm of parser] (update) {derived update()};
+\node[box, below=of update] (common) {OpalElement::update()\\common transfer};
+\node[box, below=of common] (physics) {physics-specific update()};
+\node[box, below=of physics] (runtime) {runtime Component};
+\node[sidebox, below left=of runtime] (beamline) {OpalBeamline};
+\node[sidebox, below=of runtime] (orbit) {OrbitThreader};
+\node[sidebox, below right=of runtime] (tracker) {ParallelTracker};
+
+\draw[line] (input) -- (parser);
+\draw[line] (parser) -- (parse);
+\draw[line] (parser) -- (embed);
+\draw[line] (parse) |- (update);
+\draw[line] (embed) |- (update);
+\draw[line] (update) -- (common);
+\draw[line] (common) -- (physics);
+\draw[line] (physics) -- (runtime);
+\draw[line] (runtime) -- (beamline);
+\draw[line] (beamline) -- (orbit);
+\draw[line] (runtime) -- (tracker);
+
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Stealth, x=1cm, y=1cm, every node/.style={font=\small}]
+  \draw[rounded corners, fill=orange!4, draw=orange!65!black] (-0.35,-1.0) rectangle (9.5,5.2);
+
+  \node[font=\bfseries] at (0.25,4.75) {(c)};
+
+  \coordinate (P) at (4.9,2.15);
+  \filldraw[fill=black] (P) circle (0.04);
+
+  \draw[->, thick, blue!70!black] (P) -- ++(2.0,0.0) node[right] {$\zeta$ or $s^\star$};
+  \draw[->, thick, red!70!black] (P) -- ++(0.0,1.7) node[above] {$x^\star$};
+  \draw[->, thick, purple!75!black] (P) -- ++(-1.3,-0.95) node[left] {$y^\star$};
+
+  \draw[->, very thick, black!75] (P) -- ++(0.95,1.95) node[above right] {$ct^\star$};
+
+  \draw[dashed, gray!70] (2.2,2.15) -- (7.6,2.15);
+
+  \draw[rounded corners, dashed, draw=gray!70] (2.7,0.55) rectangle (7.2,3.75);
+\end{tikzpicture}

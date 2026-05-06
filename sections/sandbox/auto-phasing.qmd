@@ -1,0 +1,241 @@
+## Autophasing
+
+Autophasing fixes the RF phase, or lag, used by an accelerating element for a
+given reference particle. In the old OPAL formulation the RF elements are
+external field maps. The spatial field is sampled on a one-, two-, or
+three-dimensional grid, interpolated at the particle position, and multiplied by
+the time-dependent RF factor
+
+$$
+\cos(\omega t + \varphi),
+$$
+
+where \(\omega\) is the angular RF frequency and \(\varphi\) is the lag. The
+autophasing problem is therefore: choose \(\varphi\) so that the reference
+particle obtains the desired, usually maximal, energy gain through the element.
+
+This sandbox note uses the old OPAL derivation as the starting point, but keeps
+the wording OPALX-facing. The code-facing question for OPALX is how this phase
+condition is tied to the traced reference path, the element-local field map, and
+the time model used during reference-particle threading.
+
+### Standing-Wave Cavity
+
+For a standing-wave cavity with longitudinal field \(E_z(z,r)\), the energy
+gain of a particle with charge \(q\) is written
+
+$$
+\Delta E(\varphi,r)
+= q V_0
+\int_{z_{\mathrm{begin}}}^{z_{\mathrm{end}}}
+\cos\!\left(\omega t(z,\varphi) + \varphi\right) E_z(z,r)\, dz .
+$$
+
+The auto-phase for maximum energy gain satisfies
+
+$$
+\frac{d\Delta E}{d\varphi}=0.
+$$
+
+Keeping the possible phase-dependence of the arrival-time model gives
+
+$$
+\begin{aligned}
+0
+&=
+\int_{z_{\mathrm{begin}}}^{z_{\mathrm{end}}}
+\left(1+\omega \frac{\partial t}{\partial \varphi}\right)
+\sin\!\left(\omega t(z,\varphi)+\varphi\right)E_z(z,r)\,dz  \\
+&=
+\cos\varphi\,\Gamma_1 + \sin\varphi\,\Gamma_2 .
+\end{aligned}
+$$
+
+Thus the lag is determined by
+
+$$
+\tan\varphi = -\frac{\Gamma_1}{\Gamma_2}.
+$$
+
+For a sampled field map, OPAL assumes a linear field interpolation and a linear
+time interpolation between neighboring samples \(z_{i-1}\) and \(z_i\). With
+\(\Delta z_i=z_i-z_{i-1}\), \(\Delta t_i=t_i-t_{i-1}\), and
+\(\Delta E_{z,i}=E_{z,i}-E_{z,i-1}\),
+
+$$
+\Gamma_1 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\int_{z_{i-1}}^{z_i}
+\sin\!\left(
+\omega\left(t_{i-1}+\Delta t_i
+\frac{z-z_{i-1}}{\Delta z_i}\right)
+\right)
+\left(
+E_{z,i-1}+\Delta E_{z,i}\frac{z-z_{i-1}}{\Delta z_i}
+\right) dz
+$$
+
+and
+
+$$
+\Gamma_2 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\int_{z_{i-1}}^{z_i}
+\cos\!\left(
+\omega\left(t_{i-1}+\Delta t_i
+\frac{z-z_{i-1}}{\Delta z_i}\right)
+\right)
+\left(
+E_{z,i-1}+\Delta E_{z,i}\frac{z-z_{i-1}}{\Delta z_i}
+\right) dz .
+$$
+
+The products in these interval integrals can be evaluated analytically. In
+normalized interval coordinates \(\tau\in[0,1]\), define
+
+$$
+\begin{aligned}
+\Gamma_{11,i}
+&= \int_0^1 \sin\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+= -\frac{\cos(\omega t_i)-\cos(\omega t_{i-1})}{\omega\Delta t_i},\\
+\Gamma_{12,i}
+&= \int_0^1 \tau\sin\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+=
+\frac{-\omega\Delta t_i\cos(\omega t_i)
++\sin(\omega t_i)-\sin(\omega t_{i-1})}
+{\omega^2\Delta t_i^2},\\
+\Gamma_{21,i}
+&= \int_0^1 \cos\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+= \frac{\sin(\omega t_i)-\sin(\omega t_{i-1})}{\omega\Delta t_i},\\
+\Gamma_{22,i}
+&= \int_0^1 \tau\cos\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+=
+\frac{\omega\Delta t_i\sin(\omega t_i)
++\cos(\omega t_i)-\cos(\omega t_{i-1})}
+{\omega^2\Delta t_i^2}.
+\end{aligned}
+$$
+
+Then the sampled sums become
+
+$$
+\Gamma_1 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\Delta z_i
+\left[
+E_{z,i-1}(\Gamma_{11,i}-\Gamma_{12,i})
++E_{z,i}\Gamma_{12,i}
+\right],
+$$
+
+and
+
+$$
+\Gamma_2 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\Delta z_i
+\left[
+E_{z,i-1}(\Gamma_{21,i}-\Gamma_{22,i})
++E_{z,i}\Gamma_{22,i}
+\right].
+$$
+
+The remaining ingredient is the time model \(t(z,\varphi)\). The old OPAL
+algorithm initializes it from an approximate kinetic-energy ramp,
+
+```text
+K[i] = K[i-1] + (z[i] - z[0]) * q * V;
+b[i] = sqrt(1. - 1. / ((K[i] - K[i-1]) / (2.*m*c^2) + 1)^2);
+t[i] = t[0] + (z[i] - z[0]) / (c * b[i]);
+```
+
+which assumes that the kinetic energy increases linearly with position and is
+proportional to the maximum voltage. With that provisional time model one
+computes \(\varphi\), updates the kinetic-energy model using the corresponding
+field integral, recomputes the times, and repeats until the phase converges.
+
+For OPALX this iteration should be interpreted as a reference-particle
+preprocessing step. It provides the RF lag consistent with the chosen reference
+trajectory and field-map convention before the main bunch tracking step uses
+the element.
+
+### Traveling-Wave Structure
+
+For a traveling-wave structure, the same idea is applied to a field assembled
+from several phase-shifted pieces. The old manual describes the field as an
+entry fringe field, two core standing-wave contributions, and an exit fringe
+field. A representative energy-gain model is
+
+$$
+\begin{aligned}
+\Delta E(\varphi,r)
+&= q V_0
+\int_{z_{\mathrm{begin}}}^{z_{\mathrm{beginCore}}}
+\cos(\omega t+\varphi) E_z(z,r)\,dz \\
+&\quad + q V_{\mathrm{core}}
+\int_{z_{\mathrm{beginCore}}}^{z_{\mathrm{endCore}}}
+\cos(\omega t+\varphi_{\mathrm{c1}}+\varphi) E_z(z,r)\,dz \\
+&\quad + q V_{\mathrm{core}}
+\int_{z_{\mathrm{beginCore}}}^{z_{\mathrm{endCore}}}
+\cos(\omega t+\varphi_{\mathrm{c2}}+\varphi) E_z(z+s,r)\,dz \\
+&\quad + q V_0
+\int_{z_{\mathrm{endCore}}}^{z_{\mathrm{end}}}
+\cos(\omega t+\varphi_{\mathrm{ef}}+\varphi) E_z(z,r)\,dz ,
+\end{aligned}
+$$
+
+where \(s\) is the cell length. Compared with the standing-wave case, the
+stationarity condition contains several \(\Gamma_1\)- and \(\Gamma_2\)-type
+sums with different phase offsets and integration ranges.
+
+For the old `FINLB02_RAC` example,
+
+```text
+FINLB02_RAC: TravelingWave, L=2.80, VOLT=14.750*30/31,
+             NUMCELLS=40, FMAPFN="FINLB02-RAC.T7",
+             ELEMEDGE=2.67066, MODE=1/3,
+             FREQ=1498.956, LAG=FINLB02_RAC_lag;
+```
+
+the decomposition gives
+
+$$
+\begin{aligned}
+V_{\mathrm{core}} &= \frac{V_0}{\sin(2\pi/3)}
+= \frac{2V_0}{\sqrt{3}},\\
+\varphi_{\mathrm{c1}} &= \frac{\pi}{6},\\
+\varphi_{\mathrm{c2}} &= \frac{\pi}{2},\\
+\varphi_{\mathrm{ef}} &= -2\pi(\mathrm{NUMCELLS}-1)\,\mathrm{MODE}.
+\end{aligned}
+$$
+
+In the ultra-relativistic limit, where \(\beta\) changes only weakly along the
+structure, the arrival time can be approximated by
+
+$$
+t(z,\varphi) \simeq \frac{z}{\beta c}+t_0 .
+$$
+
+The phase condition can then be simplified by exploiting the periodicity of the
+core field and the sinusoidal RF factor. In the old example the core field has
+period \(3s\) and \(\omega/(\beta c)\approx 10\pi\), which reduces the
+traveling-wave autophasing problem to a single periodic convolution-like
+condition over one three-cell interval. This approximation is useful as a
+diagnostic and a fast initial guess, but the general OPALX implementation should
+keep the full piecewise field-map and reference-time model available.
+
+### Consistency Notes for OPALX
+
+- The phase \(\varphi\) is an element-local RF lag, not a global beamline
+  coordinate.
+- The time samples \(t_i\) must be consistent with the reference path used by
+  the element placement and tracking machinery.
+- The sign convention in \(\cos(\omega t+\varphi)\) must be kept aligned with
+  the input-language definition of `LAG` and with any field-map convention.
+- Standing-wave and traveling-wave elements share the same mathematical
+  structure: maximize the reference-particle energy gain with respect to the RF
+  lag, then use the resulting lag during tracking.

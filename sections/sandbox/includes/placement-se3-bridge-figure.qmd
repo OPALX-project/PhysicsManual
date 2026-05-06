@@ -1,0 +1,13 @@
+:::: {.content-visible when-format="html"}
+![Bridge from input-file placement syntax to placed-element transforms and runtime use.](figures/placement-se3-bridge.png){fig-alt="TikZ preview of the placement SE(3) bridge." width="85%"}
+::::
+
+:::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{figure}
+\centering
+\resizebox{0.84\linewidth}{!}{\input{sections/sandbox/figures/tikz/placement-se3-bridge.tikz.tex}}
+\caption{Bridge from input-file placement syntax to placed-element transforms and runtime use.}
+\end{figure}
+```
+::::

@@ -1,0 +1,67 @@
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=7mm and 12mm,
+  box/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=ebeam!6
+  },
+  sidebox/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\small,
+    inner sep=4pt,
+    minimum height=8mm,
+    fill=photon!10
+  },
+  line/.style={-Latex, thick}
+]
+
+\node[sidebox] (pose) {Input pose\\ORIGIN / ORIENTATION\\or X Y Z THETA PHI PSI};
+\node[sidebox, below left=of pose] (corr) {Input correction\\DX DY DZ\\DTHETA DPHI DPSI};
+\node[sidebox, below right=of pose] (edge) {Input anchor\\ELEMEDGE};
+
+\node[box, below=18mm of pose] (update) {OpalElement::update()};
+\node[box, below=of update] (elementbase) {ElementBase\\pose + correction + anchor};
+
+\node[sidebox, below left=of elementbase] (placement) {PlacementPose\\$T_i$};
+\node[sidebox, below=of elementbase] (mis) {Misalignment\\$\Delta_i$};
+\node[sidebox, below right=of elementbase] (geom) {ElementGeometry\\$P_{\mathrm{entry}},P_{\mathrm{body}},P_{\mathrm{exit}}$};
+
+\node[box, below=18mm of elementbase] (placed) {PlacedElement};
+\node[sidebox, below left=of placed] (nom) {Nominal ports\\$P_* \cdot T_i$};
+\node[sidebox, below right=of placed] (act) {Actual ports\\$P_* \cdot \Delta_i \cdot T_i$};
+
+\node[box, below=18mm of placed] (beamline) {OpalBeamline};
+\node[sidebox, below left=of beamline] (export) {Geometry export};
+\node[sidebox, below=of beamline] (orbit) {OrbitThreader};
+\node[sidebox, below right=of beamline] (tracker) {ParallelTracker};
+
+\draw[line] (pose) -- (update);
+\draw[line] (corr) |- (update);
+\draw[line] (edge) |- (update);
+\draw[line] (update) -- (elementbase);
+
+\draw[line] (elementbase) -- (placement);
+\draw[line] (elementbase) -- (mis);
+\draw[line] (elementbase) -- (geom);
+
+\draw[line] (placement) |- (placed);
+\draw[line] (mis) -- (placed);
+\draw[line] (geom) |- (placed);
+
+\draw[line] (placed) -- (nom);
+\draw[line] (placed) -- (act);
+\draw[line] (nom) |- (beamline);
+\draw[line] (act) |- (beamline);
+
+\draw[line] (beamline) -- (export);
+\draw[line] (beamline) -- (orbit);
+\draw[line] (beamline) -- (tracker);
+
+\end{tikzpicture}
