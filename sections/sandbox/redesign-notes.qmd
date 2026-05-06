@@ -3,13 +3,13 @@
 ### Comments to the proposels of Jon/Chris
 
 
-#### OpalElemen vs. Element / ElemenBase
+#### **OpalElemen vs. Element / ElemenBase**
 Could OpalElement absorb Element? Technically possible only with a broader refactor, but not directly, because Line and Sequence also depend on Element. We would need to move Element’s responsibilities somewhere else.
 
 Could OpalElement absorb ElementBase? That would couple parser objects to the tracking/beamline runtime model and force either parser classes to implement geometry/tracking/visitor APIs or runtime classes to become OPAL directory objects. That would make ownership, cloning, sharing, and beamline traversal substantially worse.
 
 
-#### TBeamline is a template and has std::list<T> as base class. Is it safe to use std::list<T> as base?
+#### **TBeamline is a template and has std::list<T> as base class. Is it safe to use std::list<T> as base?**
 
 Short answer: it is legal C++, but it is, indeed,  not a good or safe design.
 
@@ -39,7 +39,7 @@ private:
 ```
 That preserves most call-site ergonomics while giving `TBeamline` control over mutation.
 
-#### The whole Beamline, TBeamline<T>m TLine and FlaggedBeamline dierarchie is complext. Is it nessesary?
+#### **The whole Beamline, TBeamline<T>m TLine and FlaggedBeamline dierarchie is complext. Is it nessesary?**
 
 Mostly no: the concepts are necessary, but the current hierarchy is more complex than it needs to be.
 
@@ -99,7 +99,7 @@ BeamlineBase
 We could keep the conceptual split between runtime beamline, line entries, and sequence entries. But remove `TBeamline<T> : public std::list<T>` over time. `TLine` and `FlaggedBeamline` are not really independent abstractions; they are type aliases created because `TBeamline` is templated. That is a sign the implementation is serving the template, not the model.
 
 
-#### Three more remarks w.r.t. Posing and Origin etc
+#### **Three more remarks w.r.t. Element Placing, Origin etc**
 
 See [OPALX has 4 layers of structure](#opalx-has-4-layers-of-structure-need-better-title) in the next Sandbox chapter for the related structure and class-level context.
 
@@ -142,9 +142,45 @@ advanceReferencePose()
 Then bends and straight elements would differ behind the element interface, not through separate loops in `OpalBeamline`. The current split is a symptom that bend geometry is not yet fully hidden behind a uniform placement/port contract. And I guess is a hint that we need to think about this
 in a very general way ... as we do now!
 
-#### The bend element
+#### **The bend element**
 
-#### Nested LINE statements will call recursive calls.
+The current enum checks should be treated as legacy compatibility logic, not as the design model. The code often does this pattern:
+
+```cpp
+if (element->getType() == ElementType::SBEND ||
+    element->getType() == ElementType::RBEND) {
+    ...
+}
+```
+and then applies bend-specific logic. That is brittle because it confuses two questions:
+
+1. Is this element named/type-tagged as `SBEND` or `RBEND`?
+2. Does this element provide bend geometry/placement behavior?
+
+Those are not the same. `MultipoleT::bends()` can return true when `bendAngle_m != 0.0`, while old-style `Multipole::bends()` returns false. `ScalingFFAMagnet` and `Ring` also bend. So `ElementType::SBEND || ElementType::RBEND` is not a general "bending element" test. It is really a test for "OPALX analytic `BendBase` element with the current SBEND/RBEND placement model."
+
+The better design is capability-based:
+
+```cpp
+if (auto* bend = dynamic_cast<BendBase*>(element.get())) {
+    // use BendBase geometry API
+}
+```
+
+or better still, avoid the branch entirely by giving every element a common placement/port API:
+
+```cpp
+element->getEntryPort();
+element->getExitPort();
+element->advanceReferencePose(...);
+element->getPlacementGeometry();
+```
+
+Then `SBEND`, `RBEND`, curved `MultipoleT`, straight elements, and future elements implement their own geometry. `OpalBeamline` should not need to know the enum except for diagnostics, serialization, or legacy compatibility.
+
+So the comment is absolutly valid we have to replace these checks with capability-based polymorphism: either a `BendBase` interface for analytic bend-specific operations, or preferably a general placement/port interface implemented by all elements. This avoids hard-coded type lists and makes the placement algorithm open to new element classes.
+
+#### **Nested LINE statements will call recursive calls**
 
 Yes. A named nested `LINE` will cause recursive visitor calls.
 
@@ -162,3 +198,20 @@ fbl->iterate(*this, false);
 ```
 
 It ignores `local_flip`. So a reflected named nested line may not be traversed in reverse by `ParallelTracker`, even though the generic `DefaultVisitor::visitBeamline()` would honor `local_flip`. That is worth checking with a small nested/reflected `LINE` test.
+
+
+#### **Proposal - Layout Schemes**
+Please see [General Structure](#opalx-has-4-layers-of-structure-need-better-title),
+[OpalElement as Parser-to-Runtime Bridge](#opalelement-as-parser-to-runtime-bridge) and
+[Element Placing (Posing)](#element-placing-posing). All with thespect to position and orientation is in line maybe a bit more general. 
+
+
+#### **Proposal Input file syntax modifications**
+1. All comments w.r.t LINE and ORIGIN/ORIENTATION are already realized
+2. CLOSED and CLOSED_TOLERANCE is a nessesary feature but maybe can also added to TRACK
+3. LAYOUT_MODE again TRACK is maybe an alternative for adding such an attribute
+4. RINDEFINITION is already out
+
+Note: line is maybe problematic, suppose you have a injection line to your ring. the line gets flatten
+so where is now CLOSED etc. to be applied? You could have 3 tracks one for injection, then the ring and then exptraction.
+So the me this decoration make sense on the TRACK (t.b.f.d).
