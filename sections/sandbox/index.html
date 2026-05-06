@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>10&nbsp; Sandbox – OPALX Physics Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../sections/literature/index.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-36bf55b16c7cb4b1420f41495cb5446a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+window.MathJax = {
+  tex: {
+    tags: 'all'
+  }
+};
+</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sections/sandbox/index.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sandbox</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">OPALX Physics Manual</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/OPALX-project/PhysicsManual" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/coordinate-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Coordinate Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/elements/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Elements</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/field-solvers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Field Solvers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/beam-beam/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Beam-Beam</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/decay-processes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Decay Processes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/literature/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sections/sandbox/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sandbox</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opal---opalx-redesign-notes" id="toc-opal---opalx-redesign-notes" class="nav-link active" data-scroll-target="#opal---opalx-redesign-notes"><span class="header-section-number">10.1</span> OPAL - OPALX Redesign notes</a>
+  <ul class="collapse">
+  <li><a href="#comments-to-the-proposels-of-jonchris" id="toc-comments-to-the-proposels-of-jonchris" class="nav-link" data-scroll-target="#comments-to-the-proposels-of-jonchris"><span class="header-section-number">10.1.1</span> Comments to the proposels of Jon/Chris</a></li>
+  </ul></li>
+  <li><a href="#opalx-has-4-layers-of-structure-need-better-title" id="toc-opalx-has-4-layers-of-structure-need-better-title" class="nav-link" data-scroll-target="#opalx-has-4-layers-of-structure-need-better-title"><span class="header-section-number">10.2</span> OPALX has 4 Layers of Structure (need better title)</a>
+  <ul class="collapse">
+  <li><a href="#quadrupole-and-multipole" id="toc-quadrupole-and-multipole" class="nav-link" data-scroll-target="#quadrupole-and-multipole"><span class="header-section-number">10.2.1</span> <code>QUADRUPOLE</code> and <code>MULTIPOLE</code></a></li>
+  </ul></li>
+  <li><a href="#opalelement-as-parser-to-runtime-bridge" id="toc-opalelement-as-parser-to-runtime-bridge" class="nav-link" data-scroll-target="#opalelement-as-parser-to-runtime-bridge"><span class="header-section-number">10.3</span> <code>OpalElement</code> as Parser-to-Runtime Bridge</a></li>
+  <li><a href="#element-placing-posing" id="toc-element-placing-posing" class="nav-link" data-scroll-target="#element-placing-posing"><span class="header-section-number">10.4</span> Element Placing (Posing)</a>
+  <ul class="collapse">
+  <li><a href="#input-placement-the-current-se3-bridge-and-mismatch-handling" id="toc-input-placement-the-current-se3-bridge-and-mismatch-handling" class="nav-link" data-scroll-target="#input-placement-the-current-se3-bridge-and-mismatch-handling"><span class="header-section-number">10.4.1</span> Input placement, the current SE(3) bridge, and mismatch handling</a></li>
+  <li><a href="#current-placement-path-in-the-code" id="toc-current-placement-path-in-the-code" class="nav-link" data-scroll-target="#current-placement-path-in-the-code"><span class="header-section-number">10.4.2</span> Current placement path in the code</a></li>
+  <li><a href="#scope-of-the-placement-note" id="toc-scope-of-the-placement-note" class="nav-link" data-scroll-target="#scope-of-the-placement-note"><span class="header-section-number">10.4.3</span> Scope of the placement note</a></li>
+  <li><a href="#straight-elements-curved-elements-and-runtime-charts" id="toc-straight-elements-curved-elements-and-runtime-charts" class="nav-link" data-scroll-target="#straight-elements-curved-elements-and-runtime-charts"><span class="header-section-number">10.4.4</span> Straight elements, curved elements, and runtime charts</a></li>
+  </ul></li>
+  <li><a href="#orbitthreader" id="toc-orbitthreader" class="nav-link" data-scroll-target="#orbitthreader"><span class="header-section-number">10.5</span> OrbitThreader</a>
+  <ul class="collapse">
+  <li><a href="#physical-role-of-the-traced-reference-path" id="toc-physical-role-of-the-traced-reference-path" class="nav-link" data-scroll-target="#physical-role-of-the-traced-reference-path"><span class="header-section-number">10.5.1</span> Physical role of the traced reference path</a></li>
+  <li><a href="#code-side-path-construction" id="toc-code-side-path-construction" class="nav-link" data-scroll-target="#code-side-path-construction"><span class="header-section-number">10.5.2</span> Code-side path construction</a></li>
+  <li><a href="#what-orbitthreader-produces" id="toc-what-orbitthreader-produces" class="nav-link" data-scroll-target="#what-orbitthreader-produces"><span class="header-section-number">10.5.3</span> What OrbitThreader produces</a></li>
+  <li><a href="#why-bends-need-special-treatment" id="toc-why-bends-need-special-treatment" class="nav-link" data-scroll-target="#why-bends-need-special-treatment"><span class="header-section-number">10.5.4</span> Why bends need special treatment</a></li>
+  <li><a href="#disconnected-placement-and-mismatch-detection" id="toc-disconnected-placement-and-mismatch-detection" class="nav-link" data-scroll-target="#disconnected-placement-and-mismatch-detection"><span class="header-section-number">10.5.5</span> Disconnected placement and mismatch detection</a></li>
+  <li><a href="#relation-to-elemedge" id="toc-relation-to-elemedge" class="nav-link" data-scroll-target="#relation-to-elemedge"><span class="header-section-number">10.5.6</span> Relation to <code>ELEMEDGE</code></a></li>
+  <li><a href="#handoff-to-the-main-tracker" id="toc-handoff-to-the-main-tracker" class="nav-link" data-scroll-target="#handoff-to-the-main-tracker"><span class="header-section-number">10.5.7</span> Handoff to the main tracker</a></li>
+  <li><a href="#worked-example-one-placed-bend" id="toc-worked-example-one-placed-bend" class="nav-link" data-scroll-target="#worked-example-one-placed-bend"><span class="header-section-number">10.5.8</span> Worked example: one placed bend</a></li>
+  </ul></li>
+  <li><a href="#autophasing" id="toc-autophasing" class="nav-link" data-scroll-target="#autophasing"><span class="header-section-number">10.6</span> Autophasing</a>
+  <ul class="collapse">
+  <li><a href="#standing-wave-cavity" id="toc-standing-wave-cavity" class="nav-link" data-scroll-target="#standing-wave-cavity"><span class="header-section-number">10.6.1</span> Standing-Wave Cavity</a></li>
+  <li><a href="#traveling-wave-structure" id="toc-traveling-wave-structure" class="nav-link" data-scroll-target="#traveling-wave-structure"><span class="header-section-number">10.6.2</span> Traveling-Wave Structure</a></li>
+  <li><a href="#consistency-notes-for-opalx" id="toc-consistency-notes-for-opalx" class="nav-link" data-scroll-target="#consistency-notes-for-opalx"><span class="header-section-number">10.6.3</span> Consistency Notes for OPALX</a></li>
+  </ul></li>
+  <li><a href="#boosted-frenet-serret-frame" id="toc-boosted-frenet-serret-frame" class="nav-link" data-scroll-target="#boosted-frenet-serret-frame"><span class="header-section-number">10.7</span> Boosted Frenet-Serret frame</a></li>
+  <li><a href="#low-energy-e-e-in-a-high-energy-coulomb-field" id="toc-low-energy-e-e-in-a-high-energy-coulomb-field" class="nav-link" data-scroll-target="#low-energy-e-e-in-a-high-energy-coulomb-field"><span class="header-section-number">10.8</span> Low Energy e-/e+ in a High Energy Coulomb Field</a>
+  <ul class="collapse">
+  <li><a href="#implemented-model" id="toc-implemented-model" class="nav-link" data-scroll-target="#implemented-model"><span class="header-section-number">10.8.1</span> Implemented model</a></li>
+  <li><a href="#missing-physics" id="toc-missing-physics" class="nav-link" data-scroll-target="#missing-physics"><span class="header-section-number">10.8.2</span> Missing physics</a></li>
+  <li><a href="#work-needed" id="toc-work-needed" class="nav-link" data-scroll-target="#work-needed"><span class="header-section-number">10.8.3</span> Work needed</a></li>
+  </ul></li>
+  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo"><span class="header-section-number">10.9</span> ToDo</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/sandbox/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sandbox</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This chapter is reserved for exploratory notes, draft diagrams, implementation sketches, and benchmark-driven documentation that is not yet ready to be folded into the formal theory chapters.</p>
+<p>The intended use is:</p>
+<ul>
+<li>keep work-in-progress material visible in the rendered manual,</li>
+<li>document code-facing conventions before promoting them into the final text,</li>
+<li>collect diagrams and benchmark notes that support later physics sections.</li>
+</ul>
+<section id="opal---opalx-redesign-notes" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="opal---opalx-redesign-notes"><span class="header-section-number">10.1</span> OPAL - OPALX Redesign notes</h2>
+<section id="comments-to-the-proposels-of-jonchris" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="comments-to-the-proposels-of-jonchris"><span class="header-section-number">10.1.1</span> Comments to the proposels of Jon/Chris</h3>
+<section id="opalelemen-vs.-element-elemenbase" class="level4">
+<h4 class="anchored" data-anchor-id="opalelemen-vs.-element-elemenbase">OpalElemen vs.&nbsp;Element / ElemenBase</h4>
+<p>Could OpalElement absorb Element? Technically possible only with a broader refactor, but not directly, because Line and Sequence also depend on Element. We would need to move Element’s responsibilities somewhere else.</p>
+<p>Could OpalElement absorb ElementBase? That would couple parser objects to the tracking/beamline runtime model and force either parser classes to implement geometry/tracking/visitor APIs or runtime classes to become OPAL directory objects. That would make ownership, cloning, sharing, and beamline traversal substantially worse.</p>
+</section>
+<section id="tbeamline-is-a-template-and-has-stdlist-as-base-class.-is-it-safe-to-use-stdlist-as-base" class="level4">
+<h4 class="anchored" data-anchor-id="tbeamline-is-a-template-and-has-stdlist-as-base-class.-is-it-safe-to-use-stdlist-as-base">TBeamline is a template and has std::list<t> as base class. Is it safe to use std::list<t> as base?</t></t></h4>
+<p>Short answer: it is legal C++, but it is, indeed, not a good or safe design.</p>
+<p>A better shape would be composition:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">template</span> <span class="op">&lt;</span><span class="kw">class</span> T<span class="op">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TBeamline <span class="op">:</span> <span class="kw">public</span> Beamline <span class="op">{</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> <span class="dt">container_type</span> <span class="op">=</span> <span class="bu">std::</span>list<span class="op">&lt;</span>T<span class="op">&gt;;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> iterator <span class="op">=</span> <span class="dt">container_type</span><span class="op">::</span>iterator<span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> const_iterator <span class="op">=</span> <span class="dt">container_type</span><span class="op">::</span>const_iterator<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    iterator begin<span class="op">();</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    iterator end<span class="op">();</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    const_iterator begin<span class="op">()</span> <span class="at">const</span><span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    const_iterator end<span class="op">()</span> <span class="at">const</span><span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> append<span class="op">(</span><span class="at">const</span> T<span class="op">&amp;);</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> prepend<span class="op">(</span><span class="at">const</span> T<span class="op">&amp;);</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    iterator erase<span class="op">(</span>iterator<span class="op">);</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    iterator insert<span class="op">(</span>iterator<span class="op">,</span> <span class="at">const</span> T<span class="op">&amp;);</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span><span class="op">:</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">std::</span>list<span class="op">&lt;</span>T<span class="op">&gt;</span> <span class="va">elements_</span><span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>That preserves most call-site ergonomics while giving <code>TBeamline</code> control over mutation.</p>
+</section>
+<section id="the-whole-beamline-tbeamlinem-tline-and-flaggedbeamline-dierarchie-is-complext.-is-it-nessesary" class="level4">
+<h4 class="anchored" data-anchor-id="the-whole-beamline-tbeamlinem-tline-and-flaggedbeamline-dierarchie-is-complext.-is-it-nessesary">The whole Beamline, TBeamline<t>m TLine and FlaggedBeamline dierarchie is complext. Is it nessesary?</t></h4>
+<p>Mostly no: the concepts are necessary, but the current hierarchy is more complex than it needs to be.</p>
+<p>What is actually needed:</p>
+<ul>
+<li>A runtime beamline object that is an <code>ElementBase</code>, so a beamline can appear anywhere an element can appear. That is <code>Beamline</code>.</li>
+<li>An ordered container of beamline entries. That is currently <code>TBeamline&lt;T&gt;</code>.</li>
+<li>A beamline entry type that points to an <code>ElementBase</code>. That is <code>ElmPtr</code>.</li>
+<li>Extra entry metadata for <code>LINE</code>: reflected/selected flags. That is <code>FlaggedElmPtr</code>.</li>
+<li>Extra entry metadata for <code>SEQUENCE</code>: position, relation to previous/next/begin/end, generated drift info, parser-side <code>Element</code> pointer. That is <code>SequenceMember</code>.</li>
+</ul>
+<p>So the data model is defensible. But the implementation is too indirect:</p>
+<p>The weak part is not that <code>LINE</code> and <code>SEQUENCE</code> need different metadata. They do. The weak part is encoding this through public inheritance from <code>std::list&lt;T&gt;</code> plus several inherited wrapper objects.</p>
+<p>A simpler design would be:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Beamline <span class="op">:</span> <span class="kw">public</span> ElementBase <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> EntryList <span class="op">=</span> <span class="bu">std::</span>list<span class="op">&lt;</span>BeamlineEntry<span class="op">&gt;;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    iterator begin<span class="op">();</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    iterator end<span class="op">();</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> append<span class="op">(</span>BeamlineEntry<span class="op">);</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> insert<span class="op">(</span>iterator<span class="op">,</span> BeamlineEntry<span class="op">);</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    iterator erase<span class="op">(</span>iterator<span class="op">);</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span><span class="op">:</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    EntryList <span class="va">entries_</span><span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>with one entry type:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> BeamlineEntry <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">std::</span>shared_ptr<span class="op">&lt;</span>ElementBase<span class="op">&gt;</span> element<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bool</span> reflected <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bool</span> selected <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">std::</span>optional<span class="op">&lt;</span>SequencePlacement<span class="op">&gt;</span> sequencePlacement<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">std::</span>shared_ptr<span class="op">&lt;</span>Element<span class="op">&gt;</span> parserElement<span class="op">;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>or, cleaner, separate concrete types:</p>
+<pre class="text"><code>BeamlineBase
+  -&gt; LineBeamline      owns list&lt;LineEntry&gt;
+  -&gt; SequenceBeamline  owns list&lt;SequenceEntry&gt;</code></pre>
+<p>We could keep the conceptual split between runtime beamline, line entries, and sequence entries. But remove <code>TBeamline&lt;T&gt; : public std::list&lt;T&gt;</code> over time. <code>TLine</code> and <code>FlaggedBeamline</code> are not really independent abstractions; they are type aliases created because <code>TBeamline</code> is templated. That is a sign the implementation is serving the template, not the model.</p>
+</section>
+<section id="three-more-remarks-w.r.t.-posing-and-origin-etc" class="level4">
+<h4 class="anchored" data-anchor-id="three-more-remarks-w.r.t.-posing-and-origin-etc">Three more remarks w.r.t. Posing and Origin etc</h4>
+<p>See <a href="#opalx-has-4-layers-of-structure-need-better-title">OPALX has 4 layers of structure</a> in the next Sandbox chapter for the related structure and class-level context.</p>
+</section>
+<section id="why-are-bend-element-split-into-seperate-loops-in-the-compute3dlattice-function" class="level4">
+<h4 class="anchored" data-anchor-id="why-are-bend-element-split-into-seperate-loops-in-the-compute3dlattice-function">Why are bend element split into seperate loops in the compute3DLattice function?</h4>
+<p>This answer already is base on the branch <code>391-placement-of-sbend-and-rbend-analytic-fields-including-fringe-fields</code>.</p>
+<p>They are split because bends need two different pieces of placement state:</p>
+<ol type="1">
+<li><p>The bend body/entry pose must be stored explicitly.</p>
+<p>In the first loop in <code>OpalBeamline.cpp</code>, the code scans only unpositioned bends. For each <code>SBEND</code>/<code>RBEND</code>, it computes the desired entry pose, then converts that into the element body pose:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> CoordinateSystemTrafo desiredEntryPose <span class="op">=</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>        fromEndLastToBeginThis <span class="op">*</span> currentCoordTrafo<span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> CoordinateSystemTrafo bodyFromEntry <span class="op">=</span> element<span class="op">-&gt;</span>getEdgeToBegin<span class="op">().</span>inverted<span class="op">();</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>setNominalPlacement<span class="op">(</span>element<span class="op">,</span> bodyFromEntry <span class="op">*</span> desiredEntryPose<span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>That is bend-specific because a bend’s useful reference frame is not just “translate by length along z”. It has chord length, arc length, bend angle, entrance angle, rotation axis, and sometimes a true design path.</p></li>
+<li><p>The second loop advances the global beamline chain for all elements.</p>
+<p>The second loop then walks every element in beamline order. Straight elements get placed directly with <code>setNominalPlacement(...)</code>. Bends are already positioned by the first loop, so the second loop uses them mainly to advance <code>currentCoordTrafo</code> and <code>endPriorPathLength</code> across the curved/chord geometry.</p></li>
+</ol>
+<p>So the split is basically a compatibility bridge:</p>
+<ul>
+<li>first pass: pre-place bends using bend-entry/body geometry;</li>
+<li>second pass: place straight elements and advance the running lattice transform through both straight and bend elements.</li>
+</ul>
+<p>Is it necessary structurally? Probably not. It is necessary for the current implementation because bend placement is side-effectful and special-cased. A cleaner design would have one placement algorithm where every element exposes:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>entryPort<span class="op">()</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>exitPort<span class="op">()</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>bodyPoseFromEntryPose<span class="op">()</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>advanceReferencePose<span class="op">()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then bends and straight elements would differ behind the element interface, not through separate loops in <code>OpalBeamline</code>. The current split is a symptom that bend geometry is not yet fully hidden behind a uniform placement/port contract. And I guess is a hint that we need to think about this in a very general way … as we do now!</p>
+</section>
+<section id="the-bend-element" class="level4">
+<h4 class="anchored" data-anchor-id="the-bend-element">The bend element</h4>
+</section>
+<section id="nested-line-statements-will-call-recursive-calls." class="level4">
+<h4 class="anchored" data-anchor-id="nested-line-statements-will-call-recursive-calls.">Nested LINE statements will call recursive calls.</h4>
+<p>Yes. A named nested <code>LINE</code> will cause recursive visitor calls.</p>
+<p>There is an important distinction in <code>Line::parseList()</code>:</p>
+<ul>
+<li>Anonymous nested lists like <code>(A, B, C)</code> are flattened immediately into the parent line.</li>
+<li>Named <code>LINE</code> objects are inserted as an <code>ElementBase*</code> pointing to their own <code>FlaggedBeamline</code>, so they remain nested and are expanded later by recursive visitor traversal.</li>
+</ul>
+<p>This is another reason the <code>Beamline / TBeamline / FlaggedBeamline / visitor</code> design is hard to reason about: structural nesting is not normalized in one place. Some nesting is flattened during parsing, while named line nesting is expanded during tracking.</p>
+<p>There may also be a real behavioral risk: <code>DefaultVisitor::visitFlaggedElmPtr()</code> toggles <code>local_flip</code> for reflected members, but <code>ParallelTracker::visitBeamline()</code> currently does:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>fbl<span class="op">-&gt;</span>iterate<span class="op">(*</span><span class="kw">this</span><span class="op">,</span> <span class="kw">false</span><span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>It ignores <code>local_flip</code>. So a reflected named nested line may not be traversed in reverse by <code>ParallelTracker</code>, even though the generic <code>DefaultVisitor::visitBeamline()</code> would honor <code>local_flip</code>. That is worth checking with a small nested/reflected <code>LINE</code> test.</p>
+</section>
+</section>
+</section>
+<section id="opalx-has-4-layers-of-structure-need-better-title" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="opalx-has-4-layers-of-structure-need-better-title"><span class="header-section-number">10.2</span> OPALX has 4 Layers of Structure (need better title)</h2>
+<p>Figure 1 extends the element-only (bend) class structure from the Elements chapter into the placement and tracking path used by the present <code>SBEND</code> and <code>RBEND</code> implementation in OPALX.</p>
+<p>The diagram emphasizes four layers:</p>
+<ul>
+<li>parser-facing <code>Opal*</code> element definitions,</li>
+<li>runtime bend and field representations,</li>
+<li>beamline placement and coordinate-system assembly,</li>
+<li>reference-path and tracking-side infrastructure.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-sandbox-bend-placement-tracking-class-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sandbox-bend-placement-tracking-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-sandbox-bend-placement-tracking-class-diagram">flowchart TD
+  A["Parser layer&lt;br/&gt;OpalElement -&gt; OpalBend&lt;br/&gt;OpalSBend / OpalRBend"] --&gt; B["Runtime bend reps&lt;br/&gt;SBendRep / RBendRep"]
+  B --&gt; C["Curved geometry + field&lt;br/&gt;PlanarArcGeometry / RBendGeometry&lt;br/&gt;BMultipoleField"]
+  B --&gt; D["Placed beamline&lt;br/&gt;OpalBeamline / PlacedElement"]
+  D --&gt; E["Rigid transforms&lt;br/&gt;CoordinateSystemTrafo"]
+  D --&gt; F["Reference-path layer&lt;br/&gt;OrbitThreader / IndexMap&lt;br/&gt;ReferencePathModel"]
+  D --&gt; G["Tracking layer&lt;br/&gt;ParallelTracker"]
+  F --&gt; G
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sandbox-bend-placement-tracking-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: Draft class diagram for the current bend, placement, and tracking path in OPALX.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The parser-side bend objects define attributes, defaults, and input-language validation. The actual runtime geometry and field ownership lives in the representation classes <code>SBendRep</code> and <code>RBendRep</code>.</p>
+<p>The next structural step is the placement layer. <code>OpalBeamline</code> assembles the declared components into a placed beamline and keeps a <code>PlacedElement</code> description for each runtime element, including the nominal and actual body, entry, exit, and support transforms.</p>
+<p>For tracking, <code>OrbitThreader</code> threads a reference path through the placed beamline and builds the indexing and registration information needed by the tracker. <code>ParallelTracker</code> then consumes the placed beamline and the threaded reference-path information when updating external fields and advancing the reference particle.</p>
+<section id="quadrupole-and-multipole" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="quadrupole-and-multipole"><span class="header-section-number">10.2.1</span> <code>QUADRUPOLE</code> and <code>MULTIPOLE</code></h3>
+<p>The same parser-to-runtime analysis can be carried out for the present quadrupole and generic multipole path. The main structural difference relative to bends is that <code>OpalQuadrupole</code> and <code>OpalMultipole</code> inherit <strong>directly</strong> from <code>OpalElement</code>. There is no intermediate parser-side family class analogous to <code>OpalBend</code>.</p>
+<p>That detail matters because all common element-level attributes are inherited immediately from <code>OpalElement</code>, including:</p>
+<ul>
+<li>design type and aperture,</li>
+<li>placement and floor coordinates,</li>
+<li>orientation angles,</li>
+<li>local misalignments,</li>
+<li>output and common element options.</li>
+</ul>
+<p>At update time, both parser-side front ends call the common <code>OpalElement</code> machinery and then configure the same runtime representation <code>MultipoleRep</code>. <code>QUADRUPOLE</code> is therefore a restricted front end on top of the generic <code>MULTIPOLE</code> runtime path.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-sandbox-multipole-placement-tracking-class-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sandbox-multipole-placement-tracking-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-sandbox-multipole-placement-tracking-class-diagram">flowchart TD
+  A["Parser layer&lt;br/&gt;OpalElement&lt;br/&gt;OpalQuadrupole / OpalMultipole"] --&gt; B["Runtime multipole rep&lt;br/&gt;MultipoleRep"]
+  B --&gt; C["Straight geometry + field&lt;br/&gt;StraightGeometry&lt;br/&gt;BMultipoleField"]
+  B --&gt; D["Placed beamline&lt;br/&gt;OpalBeamline / PlacedElement"]
+  D --&gt; E["Rigid transforms&lt;br/&gt;CoordinateSystemTrafo"]
+  D --&gt; F["Reference-path layer&lt;br/&gt;OrbitThreader / IndexMap&lt;br/&gt;ReferencePathModel"]
+  D --&gt; G["Tracking layer&lt;br/&gt;ParallelTracker"]
+  F --&gt; G
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sandbox-multipole-placement-tracking-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Draft class diagram for the current <code>QUADRUPOLE</code> and <code>MULTIPOLE</code> placement and tracking path in OPALX.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The runtime path is straight-element based. <code>MultipoleRep</code> owns a <code>StraightGeometry</code> object and a <code>BMultipoleField</code>, and both <code>MULTIPOLE</code> and <code>QUADRUPOLE</code> enter the beamline placement pipeline as ordinary <code>Component</code> instances. Consequently, once the parser-side update has completed, the placement and tracking infrastructure is the same one used elsewhere in the beamline:</p>
+<ul>
+<li><code>OpalBeamline</code> stores the placed component and its transforms,</li>
+<li><code>PlacedElement</code> records the nominal and actual coordinate systems,</li>
+<li><code>OrbitThreader</code> evaluates the host reference-path field model through the placed beamline,</li>
+<li><code>ParallelTracker</code> uses the same placed component during bunch tracking.</li>
+</ul>
+<p>In other words, the present quadrupole family differs from the bend family mainly on the parser side and in the runtime geometry type:</p>
+<ul>
+<li>bends use <code>OpalBend</code> and specialized curved runtime representations,</li>
+<li><code>QUADRUPOLE</code> and <code>MULTIPOLE</code> use <code>OpalElement</code> directly and share one straight multipole runtime representation.</li>
+</ul>
+<p>The separate <code>MULTIPOLET</code> implementation is not included in this draft diagram. It is a different combined-function magnet path and should be documented separately once the straight <code>MULTIPOLE</code> and <code>QUADRUPOLE</code> structure is fully settled.</p>
+</section>
+</section>
+<section id="opalelement-as-parser-to-runtime-bridge" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="opalelement-as-parser-to-runtime-bridge"><span class="header-section-number">10.3</span> <code>OpalElement</code> as Parser-to-Runtime Bridge</h2>
+<p><code>OpalElement</code> is primarily a parser-side front-end class. It is <strong>not</strong> the object that is later threaded through <code>OpalBeamline</code> or stepped by <code>ParallelTracker</code>. Instead, it is the bridge between the OPAL input language and the runtime <code>ElementBase</code> hierarchy.</p>
+<p>The essential structural point is:</p>
+<ul>
+<li><code>OpalElement</code> inherits from <code>Element</code>,</li>
+<li><code>Element</code> owns an embedded runtime <code>ElementBase</code>,</li>
+<li>derived parser-side classes such as <code>OpalSBend</code>, <code>OpalRBend</code>, <code>OpalQuadrupole</code>, and <code>OpalMultipole</code> configure that embedded runtime object.</li>
+</ul>
+<p>This means that <code>OpalElement</code> has two responsibilities:</p>
+<ol type="1">
+<li>store and parse common OPAL element attributes,</li>
+<li>transfer common placement, orientation, aperture, and misalignment data into the embedded runtime element before the derived class adds physics-specific configuration.</li>
+</ol>
+<p>The common parser-side attributes handled in <code>OpalElement</code> include:</p>
+<ul>
+<li><code>L</code>,</li>
+<li>aperture,</li>
+<li><code>ORIGIN</code> and <code>ORIENTATION</code>,</li>
+<li><code>X</code>, <code>Y</code>, <code>Z</code>, <code>THETA</code>, <code>PHI</code>, <code>PSI</code>,</li>
+<li><code>DX</code>, <code>DY</code>, <code>DZ</code>, <code>DTHETA</code>, <code>DPHI</code>, <code>DPSI</code>,</li>
+<li><code>ELEMEDGE</code>,</li>
+<li>the transverse-exit deletion flag.</li>
+</ul>
+<p>The following diagram shows the role of <code>OpalElement</code> in the current control flow.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/opal-element-control-flow.png" class="img-fluid figure-img" style="width:85.0%" alt="TikZ preview of the OpalElement control-flow bridge."></p>
+<figcaption>Control-flow view of <code>OpalElement</code> as the bridge from parsed OPAL element definitions to runtime <code>ElementBase</code> objects.</figcaption>
+</figure>
+</div>
+<p>The corresponding class-level ownership relation is:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/opal-element-class-bridge.png" class="img-fluid figure-img" style="width:85.0%" alt="TikZ preview of the OpalElement class bridge."></p>
+<figcaption>Class-level bridge from <code>OpalElement</code> to the runtime <code>ElementBase</code> hierarchy.</figcaption>
+</figure>
+</div>
+<p>So the answer to the practical question “where is <code>OpalElement</code> used?” is:</p>
+<ul>
+<li>yes, first of all on the parser/input side,</li>
+<li>but more precisely as the <strong>shared front-end bridge</strong> from parsed element attributes into the runtime <code>ElementBase</code> object,</li>
+<li>after that handoff, placement, reference-path construction, and tracking are performed on the runtime object, not on <code>OpalElement</code> itself.</li>
+</ul>
+<p>This distinction is especially important for the bend work, since parser-side inheritance and runtime-side inheritance are intentionally different:</p>
+<ul>
+<li>parser side: <code>OpalElement -&gt; OpalBend -&gt; OpalSBend / OpalRBend</code>,</li>
+<li>runtime side: <code>ElementBase -&gt; Component -&gt; BendBase -&gt; SBend / RBend -&gt; Rep</code>.</li>
+</ul>
+</section>
+<section id="element-placing-posing" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="element-placing-posing"><span class="header-section-number">10.4</span> Element Placing (Posing)</h2>
+<p>This subsection is the working area for documenting how OPALX places, or <em>poses</em>, elements in space in a way that is consistent with <a href="../../sections/coordinate-systems/index.html">Section 2: Coordinate Systems</a> of the manual.</p>
+<p>The immediate goal is not yet a final polished derivation. Instead, this sandbox section should fix the vocabulary, code anchors, and transformation chain used by the current implementation.</p>
+<p>The placement topic will need to connect four layers:</p>
+<ul>
+<li>the parser-side placement attributes in <code>OpalElement</code>,</li>
+<li>the runtime pose stored in <code>ElementBase</code>,</li>
+<li>the placed beamline view represented by <code>PlacedElement</code>,</li>
+<li>the way <code>OpalBeamline</code>, <code>OrbitThreader</code>, and <code>ParallelTracker</code> consume those transforms.</li>
+</ul>
+<section id="input-placement-the-current-se3-bridge-and-mismatch-handling" class="level3" data-number="10.4.1">
+<h3 data-number="10.4.1" class="anchored" data-anchor-id="input-placement-the-current-se3-bridge-and-mismatch-handling"><span class="header-section-number">10.4.1</span> Input placement, the current SE(3) bridge, and mismatch handling</h3>
+<p>The current OPALX implementation does not have a dedicated ((3)) class. The role of the rigid-motion carrier is instead played by <code>CoordinateSystemTrafo</code>. The important convention is that the stored transform maps <strong>parent-frame coordinates into local-frame coordinates</strong>. For a point <span class="math inline">\(\mathbf{r}_{\mathrm{parent}}\)</span>,</p>
+<p><span class="math display">\[
+\mathbf{r}_{\mathrm{local}}
+=
+Q\bigl(\mathbf{r}_{\mathrm{parent}} - \mathbf{o}\bigr).
+\]</span></p>
+<p>This is a sound rigid transform, but it is the parent-to-local form rather than the local-to-parent pose matrix often used in robotics texts. Composition is still an ((3)) composition, with the OPALX convention</p>
+<p><span class="math display">\[
+(A \cdot B)(\mathbf{r}) = A(B(\mathbf{r})),
+\]</span></p>
+<p>so the right-hand transform acts first.</p>
+<p>The notation used in this subsection is:</p>
+<ul>
+<li>bold symbols such as (), (), and ((s)) denote vectors or embedded points in (^3),</li>
+<li>plain symbols such as (s), (t), and (t) denote scalars,</li>
+<li>frame and space symbols such as (K), (K_s), ((3)), and ((3)) are written non-bold,</li>
+<li>rigid transforms such as (G_i^{}), (<em>i), and (B</em>{i,}) are treated as maps in ((3)), acting on vectors by function application,</li>
+<li>(Q (3)) denotes the rotational part of a rigid transform,</li>
+<li>C++ identifiers such as <code>CoordinateSystemTrafo</code> or <code>PlacedElement</code> are kept in monospace.</li>
+</ul>
+<p>To remain consistent with Chapter 2, this sandbox note reserves:</p>
+<ul>
+<li>(P_i) for the <strong>placement map</strong> from the canonical local chart (U_i) into the laboratory frame (K),</li>
+<li>(p_{i,}) for the <strong>abstract port</strong> consisting of a marked boundary chart together with an adapted frame,</li>
+<li>(T_i(t)) for the Chapter 2 laboratory-frame pose of the canonical element frame.</li>
+</ul>
+<p>The present code discussion therefore uses distinct implementation-side symbols:</p>
+<ul>
+<li>(G_i^{}) for the stored parent-to-nominal-body rigid transform,</li>
+<li>(G_i^{}) for the stored parent-to-actual-body rigid transform,</li>
+<li>(B_{i,}) for the body-relative rigid transform of the port frame materialized by <code>ElementGeometry</code>.</li>
+</ul>
+<p>The words <code>nominal</code> and <code>actual</code> need to be fixed before the bridge equations. In this note:</p>
+<ul>
+<li><code>nominal</code> means the rigid placement of the <strong>canonical element body frame</strong> in the parent frame before any local survey or misalignment correction is applied,</li>
+<li><code>actual</code> means the rigid placement of that same body frame after the local correction has been applied,</li>
+<li>these terms refer to <strong>body placement in physical space</strong>, not yet to the field-local charts used later by analytic bends.</li>
+</ul>
+<p>For element (i), the current bridge therefore distinguishes:</p>
+<ul>
+<li>the nominal body pose (G_i^{} (3)), stored as <code>PlacementPose(parentToNominal)</code>,</li>
+<li>the local correction (_i (3)), stored as <code>Misalignment(nominalToActual)</code>,</li>
+<li>the actual body pose (G_i^{}), assembled from the first two quantities.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/floor-cartesian.png" class="img-fluid figure-img" style="width:85.0%" alt="Draft TikZ preview of the floor Cartesian coordinate system."></p>
+<figcaption>Floor Cartesian frame <span class="math inline">\(K=(X,Y,Z)\)</span> with the reference line shown in orange. Two placed element bodies, <span class="math inline">\(e_i\)</span> and <span class="math inline">\(e_{i+1}\)</span>, are shown together with a representative point <span class="math inline">\(\mathbf{R}(s)\)</span> on the reference line. The label <code>placed element body</code> is kept inside the figure as the only descriptive in-figure annotation.</figcaption>
+</figure>
+</div>
+<p>The figure above should be read as the <strong>floor-frame interpretation of nominal placement</strong>. The global frame is the floor Cartesian frame (K=(X,Y,Z)). The orange reference line is the reference path in that frame, and ((s)) is a representative point on that path. The drawn element bodies (e_i) and (e_{i+1}) represent placed element bodies in floor space. At this stage of the discussion they should be read as <strong>nominal</strong> body poses. The corresponding actual body poses are obtained by applying the local correction (<em>i) or (</em>{i+1}) to those nominal poses; they are not drawn as separate boxes in this first figure.</p>
+<p>The corresponding Chapter 2 to Sandbox crosswalk is:</p>
+<div id="tbl-sandbox-placement-frame-vocabulary" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sandbox-placement-frame-vocabulary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.1: Table 10.3.1: Chapter 2 objects and their Sandbox implementation-side representatives.
+</figcaption>
+<div aria-describedby="tbl-sandbox-placement-frame-vocabulary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chapter 2 object</th>
+<th>Sandbox implementation-side representative</th>
+<th>Current code anchor</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(K)</td>
+<td>floor Cartesian parent frame</td>
+<td>beamline / lab frame</td>
+<td>same object as in Chapter 2</td>
+</tr>
+<tr class="even">
+<td>(P_i)</td>
+<td>conceptual local-to-lab placement map</td>
+<td>not stored directly</td>
+<td>Chapter 2 geometric notion</td>
+</tr>
+<tr class="odd">
+<td>(G_i^{})</td>
+<td>stored inverse rigid representative of the nominal body pose</td>
+<td><code>PlacementPose</code>, <code>ElementBase::getCSTrafoGlobal2Local()</code></td>
+<td>implementation-side parent-to-local map</td>
+</tr>
+<tr class="even">
+<td>(_i)</td>
+<td>nominal-to-actual local correction</td>
+<td><code>Misalignment</code>, <code>ElementBase::getMisalignment()</code></td>
+<td>same correction idea as in Chapter 2</td>
+</tr>
+<tr class="odd">
+<td>(G_i^{} = _i G_i^{})</td>
+<td>stored inverse rigid representative of the actual body pose</td>
+<td>assembled in <code>PlacedElement</code></td>
+<td>implementation-side parent-to-local map</td>
+</tr>
+<tr class="even">
+<td>(p_{i,})</td>
+<td>abstract port in the Chapter 2 sense</td>
+<td>not stored as a single object</td>
+<td>marked boundary chart plus adapted frame</td>
+</tr>
+<tr class="odd">
+<td>(B_{i,}), (B_{i,}), (B_{i,})</td>
+<td>body-relative rigid transforms of the port frames</td>
+<td><code>ElementGeometry</code> via <code>getEntryPort()</code>, <code>getBodyPort()</code>, <code>getExitPort()</code></td>
+<td>implementation-level port-frame representatives</td>
+</tr>
+<tr class="even">
+<td>field-local chart</td>
+<td>runtime field-evaluation chart, especially for analytic bends</td>
+<td><code>OpalBeamline::transformToFieldLocalCS()</code> and related methods</td>
+<td>additional runtime chart beyond Chapter 2 rigid placement</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>This table makes the key distinction explicit: the bridge first constructs <strong>placement in floor space</strong>, and only afterwards do some runtime paths map positions and vectors into a separate field-local chart. Those two layers should not be conflated.</p>
+<p>Under that convention, the current posing bridge can be stated compactly as:</p>
+<p><span class="math display">\[
+G_i^{\mathrm{act}} = \Delta_i \cdot G_i^{\mathrm{nom}},
+\]</span></p>
+<p>The canonical port-frame representatives (B_{i,}), (B_{i,} = I), and (B_{i,}) are body-relative marked frames. This means the same port can be queried either nominally or actually, depending on whether it is composed with (G_i^{}) or with (G_i^{}).</p>
+<p>The corresponding nominal and actual port transforms are</p>
+<p><span class="math display">\[
+G_{i,\mathrm{entry}}^{\mathrm{nom}} = B_{i,\mathrm{entry}} \cdot G_i^{\mathrm{nom}},
+\qquad
+G_{i,\mathrm{exit}}^{\mathrm{nom}} = B_{i,\mathrm{exit}} \cdot G_i^{\mathrm{nom}},
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+G_{i,\mathrm{entry}}^{\mathrm{act}} = B_{i,\mathrm{entry}} \cdot G_i^{\mathrm{act}},
+\qquad
+G_{i,\mathrm{exit}}^{\mathrm{act}} = B_{i,\mathrm{exit}} \cdot G_i^{\mathrm{act}}.
+\]</span></p>
+<p>This is exactly the bridge assembled in <code>PlacedElement</code>. <code>ElementBase</code> stores the ingredients <code>PlacementPose</code> and <code>Misalignment</code>, while <code>PlacedElement</code> materializes both the nominal and actual body/port transforms.</p>
+<div id="tbl-sandbox-placement-input-bridge" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sandbox-placement-input-bridge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.2: Table 10.3.2: Input-file quantities and their placement-bridge interpretation.
+</figcaption>
+<div aria-describedby="tbl-sandbox-placement-input-bridge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Input-file quantity</th>
+<th>Geometric meaning</th>
+<th>Bridge object</th>
+<th>Main C++ entry points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ORIGIN</code>, <code>ORIENTATION</code></td>
+<td>explicit nominal body pose</td>
+<td><code>PlacementPose</code></td>
+<td><code>OpalElement::update()</code>, <code>ElementBase::setCSTrafoGlobal2Local()</code>, <code>ElementBase::fixPosition()</code></td>
+</tr>
+<tr class="even">
+<td><code>X</code>, <code>Y</code>, <code>Z</code>, <code>THETA</code>, <code>PHI</code>, <code>PSI</code></td>
+<td>explicit nominal body pose in split scalar form</td>
+<td><code>PlacementPose</code></td>
+<td><code>OpalElement::update()</code>, <code>ElementBase::setCSTrafoGlobal2Local()</code>, <code>ElementBase::fixPosition()</code></td>
+</tr>
+<tr class="odd">
+<td><code>DX</code>, <code>DY</code>, <code>DZ</code>, <code>DTHETA</code>, <code>DPHI</code>, <code>DPSI</code></td>
+<td>local nominal-to-actual correction</td>
+<td><code>Misalignment</code></td>
+<td><code>OpalElement::update()</code>, <code>ElementBase::setMisalignment()</code></td>
+</tr>
+<tr class="even">
+<td><code>ELEMEDGE</code></td>
+<td>compatibility reference-path start coordinate</td>
+<td><code>elementPosition_m</code></td>
+<td><code>ElementBase::setElementPosition()</code>, <code>OpalBeamline::resolveVisitStartField()</code>, <code>OpalBeamline::compileCompatibilityPlacement()</code></td>
+</tr>
+<tr class="odd">
+<td>legacy edge geometry</td>
+<td>body-relative entry/body/exit ports</td>
+<td><code>ElementGeometry</code></td>
+<td><code>ElementBase::getEntryPort()</code>, <code>getBodyPort()</code>, <code>getExitPort()</code>, <code>getPlacementGeometry()</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The parser-side and runtime-side split is therefore:</p>
+<ol type="1">
+<li><code>OpalElement::update()</code> interprets the input attributes and pushes them into the embedded runtime element.</li>
+<li><code>ElementBase</code> stores the nominal rigid transform, the local correction, and the optional <code>ELEMEDGE</code> reference coordinate.</li>
+<li><code>ElementBase::getPlacedElement()</code> assembles these quantities into the bridge view <code>PlacedElement</code>.</li>
+<li><code>OpalBeamline</code> consumes that placed-element view, either by respecting an already fixed pose or by compiling compatibility placement from reference order and <code>ELEMEDGE</code>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/placement-se3-bridge.png" class="img-fluid figure-img" style="width:85.0%" alt="TikZ preview of the placement SE(3) bridge."></p>
+<figcaption>Bridge from input-file placement syntax to placed-element transforms and runtime use.</figcaption>
+</figure>
+</div>
+<p>Current mismatch detection is partial and distributed, not centralized:</p>
+<ul>
+<li>malformed <code>ORIGIN</code> or <code>ORIENTATION</code> arrays are rejected in <code>OpalElement::update()</code> with an <code>OpalException</code>,</li>
+<li>analytic <code>SBEND</code> and <code>RBEND</code> elements without explicit <code>Z</code> placement still require <code>ELEMEDGE</code>; this is enforced in <code>OpalBeamline::resolveVisitStartField()</code>,</li>
+<li>explicit nominal placement is protected by <code>fixPosition()</code>, so the later compatibility placement pass does not overwrite an already posed element,</li>
+<li>port continuity and field-local consistency are currently validated mainly by regression tests such as <code>TestOpalBeamlinePlacement</code>, together with exported placement summaries, rather than by a dedicated runtime validator.</li>
+</ul>
+<p>This also clarifies where a future mismatch detector should sit. The natural place is not the parser, but the bridge boundary where <code>PlacedElement</code> combines the nominal pose, local correction, and body-relative ports into a single explicit geometric record.</p>
+</section>
+<section id="current-placement-path-in-the-code" class="level3" data-number="10.4.2">
+<h3 data-number="10.4.2" class="anchored" data-anchor-id="current-placement-path-in-the-code"><span class="header-section-number">10.4.2</span> Current placement path in the code</h3>
+<p>At the moment, the placement handoff in OPALX is centered around <code>OpalElement::update()</code>. That function interprets the parser-side placement attributes and writes them into the embedded runtime <code>ElementBase</code> object.</p>
+<p>In particular, the current path includes:</p>
+<ul>
+<li>global pose through <code>setCSTrafoGlobal2Local(...)</code>,</li>
+<li>the fixed-position flag through <code>fixPosition()</code>,</li>
+<li>local misalignment through <code>setMisalignment(...)</code>,</li>
+<li>optional longitudinal placement through <code>setElementPosition(...)</code>.</li>
+</ul>
+<p>Once this has been done, <code>ElementBase::getPlacedElement()</code> provides the bridge to the explicit placed-element representation that is later used by the beamline assembly.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-sandbox-element-placement-flow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sandbox-element-placement-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-sandbox-element-placement-flow">flowchart TD
+  A["Parser-side OpalElement"] --&gt; B["Placement attributes"]
+  B --&gt; C["OpalElement::update()"]
+  C --&gt; D["Runtime ElementBase&lt;br/&gt;pose + correction + anchor"]
+  D --&gt; E["ElementBase::getPlacedElement()"]
+  E --&gt; F["PlacedElement"]
+  F --&gt; G["Nominal / actual ports"]
+  F --&gt; H["OpalBeamline"]
+  H --&gt; I["OrbitThreader"]
+  H --&gt; J["ParallelTracker"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sandbox-element-placement-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: Draft flow for element posing in the current OPALX implementation.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scope-of-the-placement-note" class="level3" data-number="10.4.3">
+<h3 data-number="10.4.3" class="anchored" data-anchor-id="scope-of-the-placement-note"><span class="header-section-number">10.4.3</span> Scope of the placement note</h3>
+<p>The intended scope of this sandbox subsection is:</p>
+<ol type="1">
+<li>restate the placement conventions from Section 2 in code-facing language,</li>
+<li>explain how <code>ORIGIN</code> / <code>ORIENTATION</code> relate to <code>X</code>, <code>Y</code>, <code>Z</code>, <code>THETA</code>, <code>PHI</code>, <code>PSI</code>,</li>
+<li>explain how local misalignments <code>DX</code>, <code>DY</code>, <code>DZ</code>, <code>DTHETA</code>, <code>DPHI</code>, <code>DPSI</code> are applied,</li>
+<li>explain the role of nominal versus actual placement,</li>
+<li>explain how entry, body, and exit transforms are represented for curved elements,</li>
+<li>prepare the later <code>OrbitThreader</code> documentation.</li>
+</ol>
+</section>
+<section id="straight-elements-curved-elements-and-runtime-charts" class="level3" data-number="10.4.4">
+<h3 data-number="10.4.4" class="anchored" data-anchor-id="straight-elements-curved-elements-and-runtime-charts"><span class="header-section-number">10.4.4</span> Straight elements, curved elements, and runtime charts</h3>
+<p>For accelerator physicists the practical question is not just how a rigid body is posed in floor space, but how that rigid placement is connected to the reference trajectory and to the coordinates used later for field evaluation and tracking.</p>
+<p>The comoving reference-orbit frame is the next layer:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/comoving-frenet-serret.png" class="img-fluid figure-img" style="width:85.0%" alt="Draft TikZ preview of the comoving Frenet-Serret frame."></p>
+<figcaption>Comoving Frenet-Serret frame <span class="math inline">\(K_s=(x,y,s)\)</span> attached to the reference orbit. The tripod at <span class="math inline">\(\mathbf{R}(s)\)</span> defines the local axes <span class="math inline">\(\hat{\mathbf{x}}\)</span>, <span class="math inline">\(\hat{\mathbf{y}}\)</span>, and <span class="math inline">\(\hat{\mathbf{s}}\)</span>, and the brace indicates the local longitudinal coordinate <span class="math inline">\(s\)</span> along the reference curve.</figcaption>
+</figure>
+</div>
+<p>The comoving Frenet-Serret frame (K_s=(x,y,s)) is attached to the reference orbit rather than to the placed hardware. In the Chapter 2 language, this is the practical split between the <strong>world chart</strong> ((r,t)) used for placement in laboratory space and the <strong>reference chart</strong> (s) used to report where the reference orbit currently sits. For a straight element this distinction is almost invisible: the body (z)-direction and the reference longitudinal coordinate (s) coincide, so the body placement and the field chart are effectively the same to first order. For a curved element, however, that is no longer true. The rigid body is still placed in floor space by a single stored pose (G_i^{}), but the field chart follows the design orbit through the magnet.</p>
+<p>This is the key machinery of the current OPALX bridge:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/coordinate-transform-chain.png" class="img-fluid figure-img" style="width:90.0%" alt="Draft TikZ preview of the transform chain between floor, element-local, comoving, and boosted coordinate systems."></p>
+<figcaption>Transform chain between the floor frame <span class="math inline">\(K\)</span>, the element-local frame <span class="math inline">\(K'_i\)</span>, the comoving Frenet-Serret frame <span class="math inline">\(K_s\)</span>, and the boosted frame <span class="math inline">\(K_s^\star\)</span>. The solid arrows represent the forward chain through placement pose (<code>CoordinateSystemTrafo</code>), reference-path transform, and Lorentz boost. The dashed arrows indicate inverse or field-query transforms used later in the runtime path.</figcaption>
+</figure>
+</div>
+<p>In accelerator language, the chain is:</p>
+<ol type="1">
+<li>place the element body in the floor frame (K),</li>
+<li>define entry/body/exit ports relative to that body,</li>
+<li>assemble nominal and actual placed-element transforms,</li>
+<li>pass to a reference-orbit-based chart when field evaluation requires it.</li>
+</ol>
+<p>This leads to the following conventions.</p>
+<div id="tbl-sandbox-placement-straight-curved" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sandbox-placement-straight-curved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.3: Table 10.3.3: Straight-element versus curved-element placement and chart conventions.
+</figcaption>
+<div aria-describedby="tbl-sandbox-placement-straight-curved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Topic</th>
+<th>Straight elements</th>
+<th>Curved elements (<code>SBEND</code>, <code>RBEND</code>, <code>RBEND3D</code>)</th>
+<th>Main code anchors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal body pose</td>
+<td>one rigid stored pose (G_i^{}) in floor space</td>
+<td>one rigid stored pose (G_i^{}) in floor space</td>
+<td><code>PlacementPose</code>, <code>setCSTrafoGlobal2Local()</code>, <code>getPlacedElement()</code></td>
+</tr>
+<tr class="even">
+<td>Actual body pose</td>
+<td>(G_i^{} = _i G_i^{})</td>
+<td>(G_i^{} = _i G_i^{})</td>
+<td><code>Misalignment</code>, <code>PlacedElement::getActualBodyTransform()</code></td>
+</tr>
+<tr class="odd">
+<td>Entry/body/exit ports</td>
+<td>rigid port-frame transforms (B_{i,}) aligned with the straight body chart</td>
+<td>rigid port-frame transforms (B_{i,}) attached to the curved element body; they define geometric entry and exit faces</td>
+<td><code>getEntryPort()</code>, <code>getBodyPort()</code>, <code>getExitPort()</code>, <code>ElementGeometry</code></td>
+</tr>
+<tr class="even">
+<td>Longitudinal chart used for geometry export</td>
+<td>body (z) coordinate</td>
+<td>nominal body ports plus bend design path / edge geometry</td>
+<td><code>getNominalEntryTransform()</code>, <code>getNominalExitTransform()</code>, <code>save3DLattice()</code></td>
+</tr>
+<tr class="odd">
+<td>Longitudinal chart used for field evaluation</td>
+<td>body-local chart is usually sufficient</td>
+<td>separate field-local chart tied to the reference orbit</td>
+<td><code>transformToFieldLocalCS()</code>, <code>transformFromFieldLocalCS()</code>, <code>BendBase</code> field-local mapping</td>
+</tr>
+<tr class="even">
+<td>Compatibility placement without explicit pose</td>
+<td><code>ELEMEDGE</code> can supply the start coordinate, but explicit <code>Z</code> pose also works</td>
+<td>analytic bends remain strict: without explicit <code>Z</code>, <code>ELEMEDGE</code> is required</td>
+<td><code>resolveVisitStartField()</code>, <code>compileCompatibilityPlacement()</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The parser-side orientation and misalignment angles should also be stated in the same code-facing way they are actually built:</p>
+<ul>
+<li>the orientation quaternion is assembled in <code>OpalElement::update()</code> as <code>rotTheta * (rotPhi * rotPsi)</code>,</li>
+<li>the corresponding axes are <code>theta -&gt; y</code>, <code>phi -&gt; x</code>, and <code>psi -&gt; z</code>,</li>
+<li>the same axis order is used for the local misalignment rotation <code>rotationY * rotationX * rotationZ</code>,</li>
+<li>the transform stored in <code>CoordinateSystemTrafo</code> is the conjugated, parent-to-local form.</li>
+</ul>
+<p>For the current implementation it is therefore safest to document the parser angles by their <strong>construction order in code</strong>, not by introducing additional intrinsic/extrinsic terminology that might obscure the existing convention.</p>
+<p>From the accelerator-physics point of view, three additional remarks matter.</p>
+<p>First, there is a distinction between <strong>survey placement</strong> and <strong>reference orbit</strong>. The survey or input placement fixes where the hardware sits in the floor frame. The reference orbit is the path that the traced reference particle actually follows through the placed lattice. In a perfectly matched straight section those two viewpoints nearly coincide. In curved or misaligned sections they do not: the survey pose still describes the body in floor space, while the reference orbit defines the comoving longitudinal coordinate used later for tracking and field queries.</p>
+<p>Second, the <strong>entry and exit faces</strong> are geometric ports, not yet the same thing as a hard-edge transport model. The ports determine where the canonical body chart begins and ends, and they are used for geometric chaining, export, and diagnostics. A hard-edge or fringe-field model then decides how the field support extends relative to those geometric faces. This distinction is especially important for bends, where body extent and field-support extent need not coincide.</p>
+<p>Third, <code>ELEMEDGE</code> should be understood physically as a <strong>reference-path anchoring coordinate</strong>. It is not an independent survey pose. In the compatibility placement path it specifies where the element edge sits on the longitudinal reference coordinate used for beamline assembly. For ordinary straight elements this is mostly a convenience. For analytic bends without an explicit rigid <code>Z</code> placement it remains essential, because the code still needs an unambiguous longitudinal anchor from which the bend body and field support are laid out.</p>
+<p>The main placement split for later runtime documentation is then:</p>
+<ul>
+<li><code>OpalElement</code> parses and constructs the rigid nominal pose and local correction,</li>
+<li><code>ElementBase</code> stores those ingredients and the optional compatibility longitudinal coordinate,</li>
+<li><code>PlacedElement</code> assembles the explicit nominal/actual body and port transforms,</li>
+<li><code>OpalBeamline</code> compiles these into the beamline placement assembly,</li>
+<li><code>OrbitThreader</code> and <code>ParallelTracker</code> consume that assembly, with bends introducing a separate field-local chart on top of the rigid body placement.</li>
+</ul>
+<p>This subsection is now the right place to continue with a dedicated <code>OrbitThreader</code> note, because the distinction between floor placement, body ports, and reference-orbit charts has been made explicit.</p>
+</section>
+</section>
+<section id="orbitthreader" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="orbitthreader"><span class="header-section-number">10.5</span> OrbitThreader</h2>
+<p><code>OrbitThreader</code> is the first stage where the placed geometry is converted into a <strong>traced reference orbit</strong>. For accelerator physicists, its role is simple to state:</p>
+<ul>
+<li>start from the reference particle state,</li>
+<li>move that particle through the placed lattice in the summed external fields,</li>
+<li>record which elements are active along the traced longitudinal coordinate,</li>
+<li>hand that occupancy and interval information to the main tracker.</li>
+</ul>
+<p>In other words, <code>OrbitThreader</code> is the bridge between static placement and the dynamic reference-path picture used by time-based tracking.</p>
+<p>The symbols (T_i), (<em>i), and (P</em>{i,*}) retain the meanings fixed in Table <a href="#tbl-sandbox-placement-frame-vocabulary" class="quarto-xref">Table&nbsp;<span>10.1</span></a>; C++ class and function names stay in monospace.</p>
+<section id="physical-role-of-the-traced-reference-path" class="level3" data-number="10.5.1">
+<h3 data-number="10.5.1" class="anchored" data-anchor-id="physical-role-of-the-traced-reference-path"><span class="header-section-number">10.5.1</span> Physical role of the traced reference path</h3>
+<p>The placed lattice tells us where hardware sits in floor space. The traced reference path tells us which parts of that hardware are actually intersected by the reference particle and in what longitudinal order. Those are not the same question in a general 3D placed lattice.</p>
+<p>This is why <code>OrbitThreader</code> exists at all. It does not merely sort elements by a nominal <code>Z</code> coordinate. It integrates the reference particle through the placed fields and constructs a path-based activation model from that integration.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-sandbox-orbit-threader-role" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sandbox-orbit-threader-role-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-sandbox-orbit-threader-role">flowchart TD
+  A["Placed beamline&lt;br/&gt;OpalBeamline"] --&gt; B["Reference state&lt;br/&gt;r, p, s, t, dt"]
+  B --&gt; C["OrbitThreader::execute()"]
+  C --&gt; D["Traced path&lt;br/&gt;DesignPath.dat"]
+  C --&gt; E["ReferencePathModel&lt;br/&gt;active occupancy"]
+  C --&gt; F["Action-range model&lt;br/&gt;registered intervals"]
+  E --&gt; G["ParallelTracker::computeExternalFields()"]
+  F --&gt; G
+  G --&gt; H["Bunch tracking"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sandbox-orbit-threader-role-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: Draft OrbitThreader role in the OPALX tracking machinery.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="code-side-path-construction" class="level3" data-number="10.5.2">
+<h3 data-number="10.5.2" class="anchored" data-anchor-id="code-side-path-construction"><span class="header-section-number">10.5.2</span> Code-side path construction</h3>
+<p>The current implementation is centered around:</p>
+<ul>
+<li>constructor: <code>OrbitThreader(ref, r, p, s, maxDiffZBunch, t, dT, stepSizes, beamline)</code></li>
+<li>main driver: <code>OrbitThreader::execute()</code></li>
+<li>local integrator: <code>OrbitThreader::integrate(...)</code></li>
+</ul>
+<p>The input state comes directly from the bunch reference particle in <code>ParallelTracker</code>:</p>
+<ul>
+<li>reference particle rest data,</li>
+<li>lab-frame reference position and momentum,</li>
+<li>current path-length coordinate <code>s</code>,</li>
+<li>bunch time <code>t</code>,</li>
+<li>current time step <code>dt</code>.</li>
+</ul>
+<p>So <code>OrbitThreader</code> does not invent a separate reference particle. It reuses the same physical reference state that the main time-based tracker is about to use.</p>
+</section>
+<section id="what-orbitthreader-produces" class="level3" data-number="10.5.3">
+<h3 data-number="10.5.3" class="anchored" data-anchor-id="what-orbitthreader-produces"><span class="header-section-number">10.5.3</span> What OrbitThreader produces</h3>
+<p>The class owns two distinct path models.</p>
+<ol type="1">
+<li><code>ReferencePathModel</code> from <code>imap_m</code></li>
+</ol>
+<ul>
+<li>this is the traced active-element occupancy model,</li>
+<li>it answers: which elements are active around the current traced longitudinal position?</li>
+</ul>
+<ol start="2" type="1">
+<li><code>actionRangeRegistrationModel_m</code></li>
+</ol>
+<ul>
+<li>this is the registration model for backward-compatible action ranges,</li>
+<li>it answers: which element intervals should be registered on the elements themselves for later legacy-style use?</li>
+</ul>
+<p>This split matters physically. The first model is a <strong>traced occupancy model</strong>. The second is a <strong>registration model</strong> that translates the traced result into legacy element intervals and <code>ELEMEDGE</code>-compatible ranges.</p>
+</section>
+<section id="why-bends-need-special-treatment" class="level3" data-number="10.5.4">
+<h3 data-number="10.5.4" class="anchored" data-anchor-id="why-bends-need-special-treatment"><span class="header-section-number">10.5.4</span> Why bends need special treatment</h3>
+<p>The field evaluation stage later distinguishes straight elements from analytic bends. <code>ParallelTracker::computeExternalFields()</code> uses the <code>OrbitThreader</code> occupancy query, but then treats bends specially:</p>
+<ul>
+<li>straight and most other elements use one rigid local field transform,</li>
+<li>bends build tracking slices and use an entry-to-slice-local reference-path transform inside each slice.</li>
+</ul>
+<p>So the information flow is:</p>
+<ol type="1">
+<li><code>OrbitThreader</code> says which bend is active along the traced path,</li>
+<li><code>ParallelTracker</code> asks the bend for tracking slices,</li>
+<li>the bunch is mapped slice-by-slice into the bend’s local reference-path chart,</li>
+<li>the bend applies the slice field,</li>
+<li>the bunch is mapped back to the reference frame.</li>
+</ol>
+<p>This is the point where the distinction made in <code>10.3.4</code> becomes operational: - rigid floor placement tells us where the bend is, - the field-local slice chart tells us how the bunch is advanced through it. - reference-path slices and bend-local tracking charts in more detail.</p>
+</section>
+<section id="disconnected-placement-and-mismatch-detection" class="level3" data-number="10.5.5">
+<h3 data-number="10.5.5" class="anchored" data-anchor-id="disconnected-placement-and-mismatch-detection"><span class="header-section-number">10.5.5</span> Disconnected placement and mismatch detection</h3>
+<p><code>OrbitThreader</code> also contains the first real runtime consistency check for placed lattices. After the traced path has been built, <code>validateVisitedElements(...)</code> scans placed elements that should have been reachable and checks whether the reference path ever visited them.</p>
+<p>If a nontrivial placed element lies within the traced longitudinal window but is never intersected, the code raises a user-facing exception and reports its nominal entry, body, and exit coordinates.</p>
+<p>This is the current runtime answer to the practical question:</p>
+<ul>
+<li>“Did I place the hardware in a way that the reference trajectory can actually thread through it?”</li>
+</ul>
+<p>For an accelerator physicist, this is often the most useful placement diagnostic, because it converts a disconnected survey configuration into a clear statement about the traced reference orbit.</p>
+</section>
+<section id="relation-to-elemedge" class="level3" data-number="10.5.6">
+<h3 data-number="10.5.6" class="anchored" data-anchor-id="relation-to-elemedge"><span class="header-section-number">10.5.6</span> Relation to <code>ELEMEDGE</code></h3>
+<p><code>OrbitThreader::registerElement(...)</code> and <code>processElementRegister()</code> are where the traced path is turned back into legacy-compatible element ranges.</p>
+<p>For general elements, the code infers an effective element-edge coordinate from the traced local entrance state. For bends, <code>processElementRegister()</code> applies the bend field extent explicitly:</p>
+<ul>
+<li>it gets <code>fieldBegin</code> and <code>fieldEnd</code>,</li>
+<li>if the bend already has an explicit <code>ELEMEDGE</code>, that value is kept as the anchor,</li>
+<li>the registered action range is then built from that anchored field interval.</li>
+</ul>
+<p>Physically, this means: - the traced path determines what the reference particle actually visited, - <code>ELEMEDGE</code> still acts as the longitudinal anchor used to express the bend field interval in the legacy coordinate language.</p>
+<p><code>ELEMEDGE</code> should be seen as depricayed, in a linear setup instead <code>Z</code> should be used.</p>
+</section>
+<section id="handoff-to-the-main-tracker" class="level3" data-number="10.5.7">
+<h3 data-number="10.5.7" class="anchored" data-anchor-id="handoff-to-the-main-tracker"><span class="header-section-number">10.5.7</span> Handoff to the main tracker</h3>
+<p>The handoff is in <code>ParallelTracker</code>:</p>
+<ol type="1">
+<li>construct <code>OrbitThreader</code>,</li>
+<li>call <code>execute()</code>,</li>
+<li>retrieve the global bounding box,</li>
+<li>use <code>oth.query(...)</code> for active elements around each bunch container,</li>
+<li>also inspect <code>oth.getActionRangeRegistrationModel()</code> to ensure bend segments remain visible in the queried window.</li>
+</ol>
+<p>So <code>OrbitThreader</code> is not only a diagnostic tool or a design-path logger. It is part of the live tracking machinery that decides which elements are considered active for field application.</p>
+</section>
+<section id="worked-example-one-placed-bend" class="level3" data-number="10.5.8">
+<h3 data-number="10.5.8" class="anchored" data-anchor-id="worked-example-one-placed-bend"><span class="header-section-number">10.5.8</span> Worked example: one placed bend</h3>
+<p>It is useful to make the machinery concrete on the simplest nontrivial case: a single placed analytic bend, for example one <code>SBEND</code> instance <code>B1</code>.</p>
+<p>The physical story is:</p>
+<ol type="1">
+<li>the input deck fixes the bend body pose in floor space, either explicitly by <code>ORIGIN</code> / <code>ORIENTATION</code> or <code>X,Y,Z,THETA,PHI,PSI</code>, or compatibly through a longitudinal anchor such as <code>ELEMEDGE</code>,</li>
+<li><code>OpalElement::update()</code> turns that into a stored nominal body pose (G_{B1}^{}) and an optional local correction,</li>
+<li><code>OpalBeamline</code> assembles the corresponding <code>PlacedElement</code>,</li>
+<li><code>OrbitThreader</code> traces the reference particle and determines the interval along the traced path where <code>B1</code> is actually active,</li>
+<li><code>ParallelTracker</code> queries that interval and, because <code>B1</code> is a bend, applies the bend field slice by slice in a reference-path-local chart.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/one-bend-threading.png" class="img-fluid figure-img" style="width:82.0%" alt="TikZ preview of the one-bend OrbitThreader workflow."></p>
+<figcaption>Worked-example flow for one placed analytic bend.</figcaption>
+</figure>
+</div>
+<p>For this one-bend case, the key objects and physical meanings are:</p>
+<div id="tbl-sandbox-orbitthreader-one-bend" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sandbox-orbitthreader-one-bend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.4: Table 10.4.1: Worked-example dictionary for one placed analytic bend.
+</figcaption>
+<div aria-describedby="tbl-sandbox-orbitthreader-one-bend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Object or quantity</th>
+<th>Physical meaning</th>
+<th>Main code anchors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>(G_{B1}^{})</td>
+<td>nominal bend body pose in floor space</td>
+<td><code>PlacementPose</code>, <code>setCSTrafoGlobal2Local()</code></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>(_{B1})</td>
+<td>local survey / misalignment correction</td>
+<td><code>Misalignment</code>, <code>setMisalignment()</code></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>(B_{B1,}), (B_{B1,})</td>
+<td>body-relative port-frame transforms for the geometric bend entry and exit faces</td>
+<td><code>getEntryPort()</code>, <code>getExitPort()</code>, <code>ElementGeometry</code></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>traced active interval</td>
+<td>part of the reference path where the bend is actually intersected</td>
+<td><code>OrbitThreader::execute()</code>, <code>imap_m.add(...)</code></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>registered action range</td>
+<td>legacy-compatible bend field interval</td>
+<td><code>registerElement()</code>, <code>processElementRegister()</code></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>bend slices</td>
+<td>local reference-path pieces used for field application</td>
+<td><code>buildTrackingSlices()</code>, <code>applySlice()</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The important physics point is that the rigid bend pose alone does not yet tell the tracker how to advance the bunch through the bend. It tells the code where the hardware sits. <code>OrbitThreader</code> then determines where the <strong>reference orbit</strong> actually threads that hardware, and the bend tracker finally resolves that path into slice-local field applications.</p>
+<p>This is also where <code>ELEMEDGE</code> enters most clearly. For the worked bend:</p>
+<ul>
+<li>if an explicit bend edge coordinate is already set, that coordinate remains the bend anchor,</li>
+<li>the traced reference path then determines the visited field interval around that anchor,</li>
+<li>the action-range registration model carries that interval forward so that the main tracker continues to see the bend in the correct longitudinal window.</li>
+</ul>
+<p>So the one-bend example already contains the full machinery in miniature:</p>
+<ul>
+<li>survey placement,</li>
+<li>nominal/actual body pose,</li>
+<li>geometric ports,</li>
+<li>traced occupancy interval,</li>
+<li>legacy-compatible registration interval,</li>
+<li>slice-based bend tracking.</li>
+</ul>
+</section>
+</section>
+<section id="autophasing" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="autophasing"><span class="header-section-number">10.6</span> Autophasing</h2>
+<p>Autophasing fixes the RF phase, or lag, used by an accelerating element for a given reference particle. In the old OPAL formulation the RF elements are external field maps. The spatial field is sampled on a one-, two-, or three-dimensional grid, interpolated at the particle position, and multiplied by the time-dependent RF factor</p>
+<p><span class="math display">\[
+\cos(\omega t + \varphi),
+\]</span></p>
+<p>where () is the angular RF frequency and () is the lag. The autophasing problem is therefore: choose () so that the reference particle obtains the desired, usually maximal, energy gain through the element.</p>
+<p>This sandbox note uses the old OPAL derivation as the starting point, but keeps the wording OPALX-facing. The code-facing question for OPALX is how this phase condition is tied to the traced reference path, the element-local field map, and the time model used during reference-particle threading.</p>
+<section id="standing-wave-cavity" class="level3" data-number="10.6.1">
+<h3 data-number="10.6.1" class="anchored" data-anchor-id="standing-wave-cavity"><span class="header-section-number">10.6.1</span> Standing-Wave Cavity</h3>
+<p>For a standing-wave cavity with longitudinal field (E_z(z,r)), the energy gain of a particle with charge (q) is written</p>
+<p><span class="math display">\[
+\Delta E(\varphi,r)
+= q V_0
+\int_{z_{\mathrm{begin}}}^{z_{\mathrm{end}}}
+\cos\!\left(\omega t(z,\varphi) + \varphi\right) E_z(z,r)\, dz .
+\]</span></p>
+<p>The auto-phase for maximum energy gain satisfies</p>
+<p><span class="math display">\[
+\frac{d\Delta E}{d\varphi}=0.
+\]</span></p>
+<p>Keeping the possible phase-dependence of the arrival-time model gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+0
+&amp;=
+\int_{z_{\mathrm{begin}}}^{z_{\mathrm{end}}}
+\left(1+\omega \frac{\partial t}{\partial \varphi}\right)
+\sin\!\left(\omega t(z,\varphi)+\varphi\right)E_z(z,r)\,dz  \\
+&amp;=
+\cos\varphi\,\Gamma_1 + \sin\varphi\,\Gamma_2 .
+\end{aligned}
+\]</span></p>
+<p>Thus the lag is determined by</p>
+<p><span class="math display">\[
+\tan\varphi = -\frac{\Gamma_1}{\Gamma_2}.
+\]</span></p>
+<p>For a sampled field map, OPAL assumes a linear field interpolation and a linear time interpolation between neighboring samples (z_{i-1}) and (z_i). With (z_i=z_i-z_{i-1}), (t_i=t_i-t_{i-1}), and (E_{z,i}=E_{z,i}-E_{z,i-1}),</p>
+<p><span class="math display">\[
+\Gamma_1 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\int_{z_{i-1}}^{z_i}
+\sin\!\left(
+\omega\left(t_{i-1}+\Delta t_i
+\frac{z-z_{i-1}}{\Delta z_i}\right)
+\right)
+\left(
+E_{z,i-1}+\Delta E_{z,i}\frac{z-z_{i-1}}{\Delta z_i}
+\right) dz
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\Gamma_2 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\int_{z_{i-1}}^{z_i}
+\cos\!\left(
+\omega\left(t_{i-1}+\Delta t_i
+\frac{z-z_{i-1}}{\Delta z_i}\right)
+\right)
+\left(
+E_{z,i-1}+\Delta E_{z,i}\frac{z-z_{i-1}}{\Delta z_i}
+\right) dz .
+\]</span></p>
+<p>The products in these interval integrals can be evaluated analytically. In normalized interval coordinates (), define</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Gamma_{11,i}
+&amp;= \int_0^1 \sin\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+= -\frac{\cos(\omega t_i)-\cos(\omega t_{i-1})}{\omega\Delta t_i},\\
+\Gamma_{12,i}
+&amp;= \int_0^1 \tau\sin\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+=
+\frac{-\omega\Delta t_i\cos(\omega t_i)
++\sin(\omega t_i)-\sin(\omega t_{i-1})}
+{\omega^2\Delta t_i^2},\\
+\Gamma_{21,i}
+&amp;= \int_0^1 \cos\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+= \frac{\sin(\omega t_i)-\sin(\omega t_{i-1})}{\omega\Delta t_i},\\
+\Gamma_{22,i}
+&amp;= \int_0^1 \tau\cos\!\left(\omega(t_{i-1}+\tau\Delta t_i)\right)\,d\tau
+=
+\frac{\omega\Delta t_i\sin(\omega t_i)
++\cos(\omega t_i)-\cos(\omega t_{i-1})}
+{\omega^2\Delta t_i^2}.
+\end{aligned}
+\]</span></p>
+<p>Then the sampled sums become</p>
+<p><span class="math display">\[
+\Gamma_1 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\Delta z_i
+\left[
+E_{z,i-1}(\Gamma_{11,i}-\Gamma_{12,i})
++E_{z,i}\Gamma_{12,i}
+\right],
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\Gamma_2 =
+\sum_{i=1}^{N-1}
+\left(1+\omega \frac{\partial t}{\partial\varphi}\right)
+\Delta z_i
+\left[
+E_{z,i-1}(\Gamma_{21,i}-\Gamma_{22,i})
++E_{z,i}\Gamma_{22,i}
+\right].
+\]</span></p>
+<p>The remaining ingredient is the time model (t(z,)). The old OPAL algorithm initializes it from an approximate kinetic-energy ramp,</p>
+<pre class="text"><code>K[i] = K[i-1] + (z[i] - z[0]) * q * V;
+b[i] = sqrt(1. - 1. / ((K[i] - K[i-1]) / (2.*m*c^2) + 1)^2);
+t[i] = t[0] + (z[i] - z[0]) / (c * b[i]);</code></pre>
+<p>which assumes that the kinetic energy increases linearly with position and is proportional to the maximum voltage. With that provisional time model one computes (), updates the kinetic-energy model using the corresponding field integral, recomputes the times, and repeats until the phase converges.</p>
+<p>For OPALX this iteration should be interpreted as a reference-particle preprocessing step. It provides the RF lag consistent with the chosen reference trajectory and field-map convention before the main bunch tracking step uses the element.</p>
+</section>
+<section id="traveling-wave-structure" class="level3" data-number="10.6.2">
+<h3 data-number="10.6.2" class="anchored" data-anchor-id="traveling-wave-structure"><span class="header-section-number">10.6.2</span> Traveling-Wave Structure</h3>
+<p>For a traveling-wave structure, the same idea is applied to a field assembled from several phase-shifted pieces. The old manual describes the field as an entry fringe field, two core standing-wave contributions, and an exit fringe field. A representative energy-gain model is</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Delta E(\varphi,r)
+&amp;= q V_0
+\int_{z_{\mathrm{begin}}}^{z_{\mathrm{beginCore}}}
+\cos(\omega t+\varphi) E_z(z,r)\,dz \\
+&amp;\quad + q V_{\mathrm{core}}
+\int_{z_{\mathrm{beginCore}}}^{z_{\mathrm{endCore}}}
+\cos(\omega t+\varphi_{\mathrm{c1}}+\varphi) E_z(z,r)\,dz \\
+&amp;\quad + q V_{\mathrm{core}}
+\int_{z_{\mathrm{beginCore}}}^{z_{\mathrm{endCore}}}
+\cos(\omega t+\varphi_{\mathrm{c2}}+\varphi) E_z(z+s,r)\,dz \\
+&amp;\quad + q V_0
+\int_{z_{\mathrm{endCore}}}^{z_{\mathrm{end}}}
+\cos(\omega t+\varphi_{\mathrm{ef}}+\varphi) E_z(z,r)\,dz ,
+\end{aligned}
+\]</span></p>
+<p>where (s) is the cell length. Compared with the standing-wave case, the stationarity condition contains several (_1)- and (_2)-type sums with different phase offsets and integration ranges.</p>
+<p>For the old <code>FINLB02_RAC</code> example,</p>
+<pre class="text"><code>FINLB02_RAC: TravelingWave, L=2.80, VOLT=14.750*30/31,
+             NUMCELLS=40, FMAPFN="FINLB02-RAC.T7",
+             ELEMEDGE=2.67066, MODE=1/3,
+             FREQ=1498.956, LAG=FINLB02_RAC_lag;</code></pre>
+<p>the decomposition gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+V_{\mathrm{core}} &amp;= \frac{V_0}{\sin(2\pi/3)}
+= \frac{2V_0}{\sqrt{3}},\\
+\varphi_{\mathrm{c1}} &amp;= \frac{\pi}{6},\\
+\varphi_{\mathrm{c2}} &amp;= \frac{\pi}{2},\\
+\varphi_{\mathrm{ef}} &amp;= -2\pi(\mathrm{NUMCELLS}-1)\,\mathrm{MODE}.
+\end{aligned}
+\]</span></p>
+<p>In the ultra-relativistic limit, where () changes only weakly along the structure, the arrival time can be approximated by</p>
+<p><span class="math display">\[
+t(z,\varphi) \simeq \frac{z}{\beta c}+t_0 .
+\]</span></p>
+<p>The phase condition can then be simplified by exploiting the periodicity of the core field and the sinusoidal RF factor. In the old example the core field has period (3s) and (/(c)), which reduces the traveling-wave autophasing problem to a single periodic convolution-like condition over one three-cell interval. This approximation is useful as a diagnostic and a fast initial guess, but the general OPALX implementation should keep the full piecewise field-map and reference-time model available.</p>
+</section>
+<section id="consistency-notes-for-opalx" class="level3" data-number="10.6.3">
+<h3 data-number="10.6.3" class="anchored" data-anchor-id="consistency-notes-for-opalx"><span class="header-section-number">10.6.3</span> Consistency Notes for OPALX</h3>
+<ul>
+<li>The phase () is an element-local RF lag, not a global beamline coordinate.</li>
+<li>The time samples (t_i) must be consistent with the reference path used by the element placement and tracking machinery.</li>
+<li>The sign convention in ((t+)) must be kept aligned with the input-language definition of <code>LAG</code> and with any field-map convention.</li>
+<li>Standing-wave and traveling-wave elements share the same mathematical structure: maximize the reference-particle energy gain with respect to the RF lag, then use the resulting lag during tracking.</li>
+</ul>
+</section>
+</section>
+<section id="boosted-frenet-serret-frame" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="boosted-frenet-serret-frame"><span class="header-section-number">10.7</span> Boosted Frenet-Serret frame</h2>
+<p>The next refinement step here should be:</p>
+<ol type="1">
+<li>align the boosted-frame notation with the field-solver sections,</li>
+<li>decide how <code>K_s^\star</code> should be named in the final text,</li>
+<li>connect the boosted-frame picture to the actual solver data flow.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/boosted-frenet-serret.png" class="img-fluid figure-img" style="width:85.0%" alt="Draft TikZ preview of the boosted Frenet-Serret frame."></p>
+<figcaption>Boosted Frenet-Serret-style frame used as a draft field-solver frame. The marked point denotes the bunch centroid, the dashed horizontal line indicates the longitudinal beam direction, the heavy diagonal arrow indicates the boost direction, and the dashed rectangle indicates the solver box in the boosted frame.</figcaption>
+</figure>
+</div>
+</section>
+<section id="low-energy-e-e-in-a-high-energy-coulomb-field" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="low-energy-e-e-in-a-high-energy-coulomb-field"><span class="header-section-number">10.8</span> Low Energy e-/e+ in a High Energy Coulomb Field</h2>
+<p>This sandbox note describes the present OPALX model for low-energy electron/positron witness particles born near an interaction point and moving through the field of a high-energy primary bunch. The current implementation is useful as a first numerical experiment, but it is not yet a complete laboratory-frame treatment of a relativistic Coulomb field.</p>
+<section id="implemented-model" class="level3" data-number="10.8.1">
+<h3 data-number="10.8.1" class="anchored" data-anchor-id="implemented-model"><span class="header-section-number">10.8.1</span> Implemented model</h3>
+<p>The implemented path is driven by a <code>BEAMBEAM</code> element. Container <code>0</code> is the source bunch. The optional attribute</p>
+<pre class="opal"><code>WITNESS_CONTAINERS = "1,2"</code></pre>
+<p>selects passive witness containers. The default is</p>
+<pre class="opal"><code>WITNESS_CONTAINERS = "NONE"</code></pre>
+<p>so legacy beam-beam tracking is unchanged unless witness kicks are requested.</p>
+<p>When the source bunch enters the BeamBeam window, OPALX replaces the normal self-field mesh by a fixed interaction-window mesh. The longitudinal extent is the placed <code>BEAMBEAM</code> element length, centered on the interaction point. If an aperture is provided, the transverse half widths define the fixed x-y field domain. The source charge density is deposited on this mesh and the open Poisson problem is solved in the BeamBeam/source frame,</p>
+<p><span class="math display">\[
+\nabla^2 \phi_s(\mathbf r_s) =
+-\frac{\rho_s(\mathbf r_s)}{\epsilon_0},
+\qquad
+\mathbf E_s(\mathbf r_s) = -\nabla \phi_s(\mathbf r_s).
+\]</span></p>
+<p>The witness particles do not contribute to this charge density. They only sample the already-solved source field. For a witness particle stored relative to its own container reference path, the current code maps the longitudinal coordinate into the source frame with</p>
+<p><span class="math display">\[
+z_s = z_w + (s_w - s_s),
+\]</span></p>
+<p>where (s_s) is the source-container reference path length and (s_w) is the witness-container reference path length. The transverse coordinates are rotated with the same BeamBeam source-frame rotation used for the source bunch. The field is gathered on the fixed BeamBeam mesh and then rotated back to the reference frame before the normal Boris kick.</p>
+<p>This gives a well-defined one-way coupling:</p>
+<ol type="1">
+<li>source container deposits charge,</li>
+<li>source field is solved on the BeamBeam window mesh,</li>
+<li>witness containers gather that field,</li>
+<li>witness momenta are kicked,</li>
+<li>witness charge never feeds back into the source solve.</li>
+</ol>
+<p>This is the approximation currently used for the gamma-gamma pair-tracking prototype. It is a source-field sampling model, not yet a full transformation of the high-energy bunch field into the physical frame seen by the low-energy pairs.</p>
+</section>
+<section id="missing-physics" class="level3" data-number="10.8.2">
+<h3 data-number="10.8.2" class="anchored" data-anchor-id="missing-physics"><span class="header-section-number">10.8.2</span> Missing physics</h3>
+<p>The primary missing piece is the relativistic field transformation. The source solve is presently electrostatic in the BeamBeam/source frame. A high-energy bunch seen in the laboratory frame has compressed transverse electric fields and a magnetic field. Starting from a source rest-frame Coulomb field (E’), (B’=0), the idealized boost along the source velocity (_s c) gives, schematically,</p>
+<p><span class="math display">\[
+\mathbf E_{\parallel} = \mathbf E'_{\parallel},
+\qquad
+\mathbf E_{\perp} = \gamma_s \mathbf E'_{\perp},
+\qquad
+\mathbf B = \frac{1}{c}\,\boldsymbol\beta_s \times \mathbf E ,
+\]</span></p>
+<p>with signs fixed by the exact frame convention. The witness kick should then use the Lorentz force in a common physical frame,</p>
+<p><span class="math display">\[
+\frac{d\mathbf p_w}{dt}
+= q_w \left(\mathbf E_{\mathrm{lab}}
++ \mathbf v_w \times \mathbf B_{\mathrm{lab}}\right).
+\]</span></p>
+<p>For low-energy pairs this magnetic term and the difference between source, lab, and witness frames are not optional details: the witnesses can have large angles and broad velocities, so a scalar electrostatic kick in the source frame is only a first approximation.</p>
+<p>The implementation also still treats the witness field sample as synchronous with the source field solve. A more complete model must define the time at which pairs are created, the source bunch phase at that time, and whether retardation or a quasi-static boosted-field approximation is sufficient for the target accuracy.</p>
+</section>
+<section id="work-needed" class="level3" data-number="10.8.3">
+<h3 data-number="10.8.3" class="anchored" data-anchor-id="work-needed"><span class="header-section-number">10.8.3</span> Work needed</h3>
+<p>The next implementation step is to make the frame contract explicit:</p>
+<ol type="1">
+<li>define the source field frame, the OPALX reference frame, and the witness container frame in one notation;</li>
+<li>decide whether the source field should be stored as a rest-frame field plus boost metadata, or directly as a laboratory-frame ((E,B));</li>
+<li>apply the Lorentz-transformed field to witnesses in a common frame;</li>
+<li>preserve the current one-way coupling switch so <code>WITNESS_CONTAINERS="NONE"</code> remains a true no-witness-space-charge mode.</li>
+</ol>
+<p>The minimum validation set should include:</p>
+<ol type="1">
+<li>a boosted point-charge or Gaussian-bunch manufactured solution for (E) and (B);</li>
+<li>a regression proving that witness containers receive a nonzero kick only when <code>WITNESS_CONTAINERS</code> is enabled;</li>
+<li>a check that witness particles outside the BeamBeam aperture are counted and reported;</li>
+<li>one-rank versus two-rank comparisons for the gamma-gamma pair input;</li>
+<li>conservation and reproducibility diagnostics for the source container when witnesses are enabled, verifying that witness charge is not deposited on the BeamBeam source mesh.</li>
+</ol>
+</section>
+</section>
+<section id="todo" class="level2" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="todo"><span class="header-section-number">10.9</span> ToDo</h2>
+<ol type="1">
+<li>OrbitThreader: a short note on <code>trackBack()</code> and why the path is traced slightly backward before the forward pass,</li>
+<li>OrbitThreader: a diagram of the two internal models: <code>ReferencePathModel</code> versus action-range registration,</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../sections/literature/index.html" class="pagination-link" aria-label="Literature">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/sandbox/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
