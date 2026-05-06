@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: docs
+  resources:
+    - etc/*.pdf
 
 book:
   title: "OPALX Physics Manual"
