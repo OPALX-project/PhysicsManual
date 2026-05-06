@@ -1,29 +1,45 @@
 <map id="Beam::getMassPerParticle" name="Beam::getMassPerParticle">
-<area shape="rect" id="Node000001" title="Mass per macro particle in GeV/c^2." alt="" coords="5,95,197,121"/>
-<area shape="rect" id="Node000002" href="$classBeam.html#a61641135ee698769b42408eefca7e294" title="Return the charge number in elementary charge." alt="" coords="517,45,652,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,93,245,80,381,66,503,58,504,64,382,72,246,85,167,98"/>
-<area shape="rect" id="Node000009" href="$classBeam.html#a3f8f77b2109b5a56de9aeb986c69a7df" title="Charge per macro particle in C." alt="" coords="245,95,449,121"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="197,105,232,105,232,111,197,111"/>
-<area shape="rect" id="Node000012" href="$classBeam.html#a834d3211e650bf775fa97d219ccd2a3e" title="Return Particle&#39;s rest mass in GeV." alt="" coords="286,169,409,194"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="146,118,291,162,290,167,144,123"/>
-<area shape="rect" id="Node000003" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="720,119,864,145"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="637,68,673,79,752,111,750,116,671,84,635,73"/>
-<area shape="rect" id="Node000004" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="926,5,1089,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="809,117,854,87,911,55,927,48,929,53,913,60,857,91,812,121"/>
-<area shape="rect" id="Node000005" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="937,70,1077,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="847,117,937,96,939,101,849,122"/>
-<area shape="rect" id="Node000006" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="928,119,1087,145"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="864,129,914,129,914,135,864,135"/>
-<area shape="rect" id="Node000007" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="934,169,1081,194"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="849,142,939,163,937,168,847,147"/>
-<area shape="rect" id="Node000008" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="912,218,1103,243"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="812,143,856,173,913,204,932,211,931,216,911,209,853,178,809,147"/>
-<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="407,93,511,70,512,76,408,98"/>
-<area shape="rect" id="Node000010" href="$classBeam.html#a51a8cda908c565dca8008b77cb68b893" title="Return the bunch charge in C." alt="" coords="497,94,672,119"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="450,105,484,105,484,110,450,110"/>
-<area shape="rect" id="Node000011" href="$classBeam.html#a6da5340e171c7645756b69306224f8e4" title="Return the allocation size (macroparticles) for this beam." alt="" coords="509,143,661,169"/>
-<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="411,118,509,138,508,143,410,123"/>
-<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="673,115,706,119,706,124,672,120"/>
-<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="661,145,706,139,706,145,661,150"/>
-<area shape="poly" id="edge15_Node000012_Node000003" title=" " alt="" coords="409,186,531,191,602,188,671,179,715,166,754,149,756,154,717,171,673,184,602,194,531,196,409,191"/>
+<area shape="rect" id="Node000001" title="Mass per macro particle in GeV/c^2." alt="" coords="5,167,183,192"/>
+<area shape="rect" id="Node000002" href="$classBeam.html#a61641135ee698769b42408eefca7e294" title="Return the charge number in elementary charge." alt="" coords="484,116,608,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,163,230,152,356,138,472,132,467,134,357,143,231,157,161,169"/>
+<area shape="rect" id="Node000017" href="$classBeam.html#a3f8f77b2109b5a56de9aeb986c69a7df" title="Charge per macro particle in C." alt="" coords="231,167,418,192"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="182,177,217,179,213,180,183,182"/>
+<area shape="rect" id="Node000020" href="$classBeam.html#a834d3211e650bf775fa97d219ccd2a3e" title="Return Particle&#39;s rest mass in GeV." alt="" coords="268,240,381,266"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="137,190,269,233,265,236,137,196"/>
+<area shape="rect" id="Node000003" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="674,191,805,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="595,140,627,150,700,184,695,184,625,155,595,145"/>
+<area shape="rect" id="Node000004" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="863,76,1015,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="757,188,799,158,851,126,861,125,866,123,854,131,802,162,759,192"/>
+<area shape="rect" id="Node000013" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="876,141,1002,167"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="794,187,866,172,872,171,795,193"/>
+<area shape="rect" id="Node000014" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="868,191,1010,216"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="805,201,855,203,850,204,805,206"/>
+<area shape="rect" id="Node000015" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="873,240,1004,266"/>
+<area shape="poly" id="edge14_Node000003_Node000015" title=" " alt="" coords="795,214,872,236,866,236,794,220"/>
+<area shape="rect" id="Node000016" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="853,289,1025,315"/>
+<area shape="poly" id="edge15_Node000003_Node000016" title=" " alt="" coords="758,214,801,245,854,276,869,284,864,283,851,281,798,250,757,219"/>
+<area shape="rect" id="Node000005" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="1073,27,1260,52"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1015,75,1095,57,1100,56,1016,80"/>
+<area shape="rect" id="Node000006" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="1090,76,1243,117"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1015,94,1078,97,1072,97,1015,99"/>
+<area shape="rect" id="Node000011" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="1086,141,1248,167"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="1015,113,1100,137,1095,137,1015,119"/>
+<area shape="rect" id="Node000007" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="1332,5,1437,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1231,73,1259,62,1307,40,1321,37,1327,36,1309,45,1261,67,1232,78"/>
+<area shape="rect" id="Node000008" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="1308,55,1461,80"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1243,84,1296,79,1290,80,1244,89"/>
+<area shape="rect" id="Node000010" href="$classExpressions_1_1SRefAttr.html#ae5bd0acc16f2c15a7dc55b28b998e7ab" title="Constructor." alt="" coords="1308,104,1461,145"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="1243,104,1296,113,1290,113,1243,109"/>
+<area shape="rect" id="Node000009" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1509,55,1648,80"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1461,65,1496,67,1491,68,1461,70"/>
+<area shape="rect" id="Node000012" href="$classAttributeBase.html#aab7e762da4a5303b75b1d878c94cc8d5" title="Print value." alt="" coords="1318,169,1451,195"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1248,162,1305,172,1300,172,1248,167"/>
+<area shape="poly" id="edge19_Node000017_Node000002" title=" " alt="" coords="383,163,475,145,470,146,385,169"/>
+<area shape="rect" id="Node000018" href="$classBeam.html#a51a8cda908c565dca8008b77cb68b893" title="Return the bunch charge in C." alt="" coords="466,165,626,191"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="418,176,453,178,448,179,419,182"/>
+<area shape="rect" id="Node000019" href="$classBeam.html#a6da5340e171c7645756b69306224f8e4" title="Return the allocation size (macroparticles) for this beam." alt="" coords="477,215,615,240"/>
+<area shape="poly" id="edge20_Node000017_Node000019" title=" " alt="" coords="387,190,471,210,466,211,387,196"/>
+<area shape="poly" id="edge18_Node000018_Node000003" title=" " alt="" coords="627,186,662,193,656,193,627,191"/>
+<area shape="poly" id="edge21_Node000019_Node000003" title=" " alt="" coords="615,216,662,213,657,214,616,222"/>
+<area shape="poly" id="edge23_Node000020_Node000003" title=" " alt="" coords="381,257,495,262,561,260,626,250,666,238,700,224,705,223,667,243,627,255,561,265,495,268,381,262"/>
 </map>

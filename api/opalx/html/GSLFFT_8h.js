@@ -21,7 +21,7 @@ var GSLFFT_8h =
       [ "n", "GSLFFT_8h.html#a54592e7b1f066a54c71712dda2c3b709", null ],
       [ "work", "GSLFFT_8h.html#a4e286e710f2f224273f549ccfd053bc2", null ]
     ] ],
-    [ "fft_real_transform", "GSLFFT_8h.html#a732e0d766e26925290974dc5bbbe6a0e", null ],
+    [ "FFT::fft_real_transform", "namespaceFFT.html#a732e0d766e26925290974dc5bbbe6a0e", null ],
     [ "gsl_fft_complex_forward", "GSLFFT_8h.html#ace51f066036d66a16fa79e59b578882f", null ],
     [ "gsl_fft_complex_inverse", "GSLFFT_8h.html#abf7cf6ccc15eecd4fdf50c39a2b6b32f", null ],
     [ "gsl_fft_complex_radix2_forward", "GSLFFT_8h.html#af7b3fd10a117ff4b45ba4437ce27d1c6", null ],

@@ -52,9 +52,9 @@ var annotated_dup =
       [ "SRefExpr", "classExpressions_1_1SRefExpr.html", "classExpressions_1_1SRefExpr" ],
       [ "SUnary", "classExpressions_1_1SUnary.html", "classExpressions_1_1SUnary" ],
       [ "SValue", "classExpressions_1_1SValue.html", "classExpressions_1_1SValue" ],
-      [ "TFunction0", "structExpressions_1_1TFunction0.html", "structExpressions_1_1TFunction0" ],
-      [ "TFunction1", "structExpressions_1_1TFunction1.html", "structExpressions_1_1TFunction1" ],
-      [ "TFunction2", "structExpressions_1_1TFunction2.html", "structExpressions_1_1TFunction2" ]
+      [ "TFunction0", "namespaceExpressions.html#structExpressions_1_1TFunction0", "namespaceExpressions_structExpressions_1_1TFunction0_dup" ],
+      [ "TFunction1", "namespaceExpressions.html#structExpressions_1_1TFunction1", "namespaceExpressions_structExpressions_1_1TFunction1_dup" ],
+      [ "TFunction2", "namespaceExpressions.html#structExpressions_1_1TFunction2", "namespaceExpressions_structExpressions_1_1TFunction2_dup" ]
     ] ],
     [ "interpolation", "namespaceinterpolation.html", [
       [ "Interpolator3dGridTo1d", "classinterpolation_1_1Interpolator3dGridTo1d.html", "classinterpolation_1_1Interpolator3dGridTo1d" ],
@@ -338,7 +338,7 @@ var annotated_dup =
     [ "gsl_fft_halfcomplex_workspace", "GSLFFT_8h.html#structgsl__fft__halfcomplex__workspace", "GSLFFT_8h_structgsl__fft__halfcomplex__workspace" ],
     [ "gsl_fft_real_wavetable", "GSLFFT_8h.html#structgsl__fft__real__wavetable", "GSLFFT_8h_structgsl__fft__real__wavetable" ],
     [ "gsl_fft_real_workspace", "GSLFFT_8h.html#structgsl__fft__real__workspace", "GSLFFT_8h_structgsl__fft__real__workspace" ],
-    [ "gsl_function", "structgsl__function.html", "structgsl__function" ],
+    [ "gsl_function", "GSLIntegration_8h.html#structgsl__function", "GSLIntegration_8h_structgsl__function" ],
     [ "gsl_histogram", "classgsl__histogram.html", "classgsl__histogram" ],
     [ "gsl_histogram2d", "classgsl__histogram2d.html", "classgsl__histogram2d" ],
     [ "gsl_histogram2d_pdf", "classgsl__histogram2d__pdf.html", "classgsl__histogram2d__pdf" ],

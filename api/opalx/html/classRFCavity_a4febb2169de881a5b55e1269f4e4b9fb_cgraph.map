@@ -1,11 +1,10 @@
 <map id="RFCavity::apply" name="RFCavity::apply">
-<area shape="rect" id="Node000001" title="Apply to particle i." alt="" coords="5,55,129,80"/>
-<area shape="rect" id="Node000002" href="$classRFCavity.html#a3dbcc64f530779b030fdc0156a003469" title="Applies the Standing Wave RF Cavity field to all particles inside the RF cavity." alt="" coords="177,29,301,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,56,163,51,164,56,130,61"/>
-<area shape="rect" id="Node000005" href="$classPartBunch.html#a01d1474e4564a031f13f792825c4894a" title="Do not use; throws (access positions via ParticleContainer::R)." alt="" coords="187,79,291,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="130,73,174,80,173,85,129,79"/>
-<area shape="rect" id="Node000003" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="349,5,481,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,31,336,26,336,31,302,36"/>
-<area shape="rect" id="Node000004" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="353,55,477,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="302,48,340,54,339,59,301,54"/>
+<area shape="rect" id="Node000001" title="Apply to particle i." alt="" coords="5,29,122,55"/>
+<area shape="rect" id="Node000002" href="$classRFCavity.html#a3dbcc64f530779b030fdc0156a003469" title="Applies the Standing Wave RF Cavity field to all particles inside the RF cavity." alt="" coords="170,29,286,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,40,157,42,151,42,122,45"/>
+<area shape="rect" id="Node000003" href="$classFM2DDynamic.html#a72938e0eebaf3c9a66d239868767029a" title="Apply the RF&#45;scaled dynamic field map to all particles." alt="" coords="334,29,528,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,40,321,42,316,42,286,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="397,28,391,21,395,11,408,5,431,3,456,5,470,15,465,14,455,10,431,8,410,10,398,15,396,20,402,30"/>
+<area shape="rect" id="Node000004" href="$classFM2DDynamic.html#af3d876aed85b0bd9a6a0126b61aebeae" title=" " alt="" coords="576,29,772,55"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="529,40,564,42,558,42,529,45"/>
 </map>

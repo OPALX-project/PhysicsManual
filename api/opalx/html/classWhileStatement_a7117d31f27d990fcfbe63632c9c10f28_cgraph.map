@@ -1,33 +1,40 @@
 <map id="WhileStatement::execute" name="WhileStatement::execute">
-<area shape="rect" id="Node000001" title="Execute." alt="" coords="5,242,192,267"/>
-<area shape="rect" id="Node000002" href="$classStatement.html#abf261c86e06adc4f7d0a395779d53546" title="Execute." alt="" coords="249,94,398,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,240,161,186,198,155,239,128,252,122,255,127,241,133,201,159,165,190,113,244"/>
-<area shape="rect" id="Node000003" href="$namespaceAttributes.html#a8f4df54f34b43a8304cb34f961a1c488" title="Return logical value." alt="" coords="251,143,395,169"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,240,173,209,239,178,259,170,261,175,241,182,175,214,122,244"/>
-<area shape="rect" id="Node000009" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="240,193,407,218"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="157,239,251,218,252,224,158,245"/>
-<area shape="rect" id="Node000011" href="$namespaceAttributes.html#a0456a7ab32848a41f018f6464bc6ffde" title="Make logical attribute." alt="" coords="244,242,403,267"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="192,252,230,252,230,257,192,257"/>
-<area shape="rect" id="Node000012" href="$classAttribute.html#a6bc9587ae494cd83cc90b37bdc8b4780" title="Parse attribute." alt="" coords="262,291,385,317"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="158,265,252,286,251,291,157,270"/>
-<area shape="rect" id="Node000013" href="$classStatement.html#ad48f4bde092bb9fb68423da5b89d37d3" title="Print statement." alt="" coords="259,341,387,366"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="122,265,175,295,241,327,261,334,259,339,239,332,173,300,119,270"/>
-<area shape="rect" id="Node000014" href="$classOpalData.html#a65a9283faa4cf08b07376be4357d0f58" title="Update all objects." alt="" coords="255,390,391,415"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="113,266,165,319,201,350,241,376,255,383,252,388,239,381,198,354,161,323,109,269"/>
-<area shape="rect" id="Node000004" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="469,5,631,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="382,141,405,129,421,111,428,93,436,74,453,55,461,50,464,54,456,59,441,77,433,95,425,114,408,133,385,146"/>
-<area shape="rect" id="Node000005" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="480,70,620,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="370,141,406,128,454,104,477,97,479,102,456,109,408,133,372,146"/>
-<area shape="rect" id="Node000006" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="471,119,629,145"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="395,146,457,139,457,144,396,151"/>
-<area shape="rect" id="Node000007" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="477,169,623,194"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="396,161,463,169,462,174,395,167"/>
-<area shape="rect" id="Node000008" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="455,218,645,243"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="375,166,408,178,432,190,456,203,481,212,480,217,454,208,429,195,406,182,373,171"/>
-<area shape="rect" id="Node000010" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="474,267,626,293"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="375,216,408,227,432,240,456,252,481,261,480,266,454,257,429,244,406,232,373,221"/>
-<area shape="rect" id="Node000015" href="$classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253" title="First object in alphabetic order of name." alt="" coords="487,341,613,366"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="382,387,477,366,478,372,383,393"/>
-<area shape="rect" id="Node000016" href="$classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978" title="Last object in alphabetic order of name." alt="" coords="493,390,607,415"/>
-<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="392,400,480,400,480,405,392,405"/>
+<area shape="rect" id="Node000001" title="Execute." alt="" coords="5,345,174,371"/>
+<area shape="rect" id="Node000002" href="$namespaceAttributes.html#a8f4df54f34b43a8304cb34f961a1c488" title="Return logical value." alt="" coords="229,144,358,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,343,267,178,270,183,106,347"/>
+<area shape="rect" id="Node000007" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="869,235,1021,260"/>
+<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="117,342,165,322,221,305,307,288,395,274,569,256,728,247,856,246,851,247,728,252,570,261,395,279,308,293,222,310,167,327,120,347"/>
+<area shape="rect" id="Node000016" href="$namespaceAttributes.html#a0456a7ab32848a41f018f6464bc6ffde" title="Make logical attribute." alt="" coords="222,320,365,346"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="173,345,209,342,204,345,175,350"/>
+<area shape="rect" id="Node000017" href="$classAttribute.html#a6bc9587ae494cd83cc90b37bdc8b4780" title="Parse attribute." alt="" coords="238,369,348,395"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="173,365,226,373,221,375,174,371"/>
+<area shape="rect" id="Node000018" href="$classStatement.html#ad48f4bde092bb9fb68423da5b89d37d3" title="Print statement." alt="" coords="236,419,350,444"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="126,369,223,405,240,413,235,413,221,410,125,374"/>
+<area shape="rect" id="Node000019" href="$classOpalData.html#a65a9283faa4cf08b07376be4357d0f58" title="Update all objects." alt="" coords="232,468,355,494"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="106,369,156,411,223,455,234,462,229,461,220,459,153,415,104,374"/>
+<area shape="rect" id="Node000003" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="423,55,575,96"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,141,412,105,430,100,425,103,414,110,328,146"/>
+<area shape="rect" id="Node000012" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="436,120,562,146"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="357,147,423,141,418,143,359,152"/>
+<area shape="rect" id="Node000013" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="428,169,570,195"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="358,162,415,171,410,173,359,167"/>
+<area shape="rect" id="Node000014" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="434,219,565,244"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="323,168,414,205,435,213,430,214,412,210,323,173"/>
+<area shape="rect" id="Node000015" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="413,5,585,31"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="303,142,347,93,377,65,412,41,427,36,423,39,414,46,381,69,350,97,307,145"/>
+<area shape="rect" id="Node000004" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="633,88,821,114"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="575,81,621,88,615,89,576,87"/>
+<area shape="rect" id="Node000005" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="651,147,803,188"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="557,94,586,105,667,140,662,141,584,110,557,99"/>
+<area shape="rect" id="Node000010" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="646,39,808,64"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="575,65,633,61,628,63,576,70"/>
+<area shape="rect" id="Node000006" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="892,164,998,190"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="803,168,879,173,874,174,804,173"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="784,186,896,229,890,229,784,191"/>
+<area shape="rect" id="Node000009" href="$classExpressions_1_1SRefAttr.html#ae5bd0acc16f2c15a7dc55b28b998e7ab" title="Constructor." alt="" coords="869,99,1021,140"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="803,148,856,139,851,140,804,153"/>
+<area shape="rect" id="Node000008" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1069,235,1208,260"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1021,245,1056,247,1051,248,1021,250"/>
+<area shape="rect" id="Node000011" href="$classAttributeBase.html#aab7e762da4a5303b75b1d878c94cc8d5" title="Print value." alt="" coords="878,39,1012,64"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="808,49,865,51,860,52,809,54"/>
 </map>

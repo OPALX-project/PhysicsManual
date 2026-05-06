@@ -1,33 +1,33 @@
 <map id="Attributes::TokenListArray::parse" name="Attributes::TokenListArray::parse">
-<area shape="rect" id="Node000001" title="Parse the attribute." alt="" coords="5,355,195,395"/>
-<area shape="rect" id="Node000002" href="$namespaceExpressions.html#a8e6b91ed510e0e624e94f226b10bde74" title="Parse a token list array (for LIST commands)." alt="" coords="243,314,447,354"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,357,229,351,229,356,195,362"/>
-<area shape="rect" id="Node000012" href="$namespaceAttributes.html#aa3b4d9eb6835f29069a8554320a31663" title="Set token list array value." alt="" coords="257,387,432,427"/>
-<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="195,385,244,392,243,397,195,390"/>
-<area shape="rect" id="Node000003" href="$classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11" title="Test for delimiter." alt="" coords="1017,312,1174,337"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,344,495,347,634,350,772,347,1003,331,1003,337,772,352,634,356,495,353,447,349"/>
-<area shape="rect" id="Node000004" href="$namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599" title="Test for one&#45;character delimiter." alt="" coords="495,312,700,337"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="447,328,481,326,481,332,447,333"/>
-<area shape="rect" id="Node000005" href="$namespaceExpressions.html#a946c14794d1fd1880795af2c17054c16" title="Parse a token list (for macro argument and the like)." alt="" coords="495,161,699,187"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="376,311,563,192,566,197,379,316"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="700,322,1003,322,1003,327,700,327"/>
-<area shape="rect" id="Node000006" href="$classStatement.html#addc8463ab069024b814f2a291c3fa620" title="Test for end of command." alt="" coords="1028,161,1163,187"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="700,171,1014,171,1014,177,700,177"/>
-<area shape="rect" id="Node000007" href="$classStatement.html#a1a0eb4cada570aae1069034300a11092" title="Return current token and skip it." alt="" coords="1012,5,1179,31"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="607,159,662,103,702,71,747,46,810,26,876,14,940,9,998,9,998,14,940,15,877,20,811,31,749,51,705,76,666,107,611,163"/>
-<area shape="rect" id="Node000008" href="$classToken.html#a2954e99066d74d540ededed11eaf469c" title="Test for delimiter." alt="" coords="1045,92,1145,117"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="610,159,666,113,705,89,747,71,786,62,827,58,907,60,982,71,1043,86,1042,91,981,76,907,65,827,63,787,68,749,77,707,94,669,118,613,163"/>
-<area shape="rect" id="Node000009" href="$classStatement.html#ac7a9b7e88c7c356b6f41f3eb19cc7734" title="Mark position in command." alt="" coords="790,212,922,237"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="664,184,778,207,777,212,663,189"/>
-<area shape="rect" id="Node000010" href="$namespaceExpressions.html#aa03d83d4e42f30aee6aa517c60ee3254" title=" " alt="" coords="748,111,964,136"/>
-<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="663,159,777,136,778,141,664,164"/>
-<area shape="rect" id="Node000011" href="$classStatement.html#aa3a59708d440dd319ac301ae50b92451" title="Return to marked position." alt="" coords="784,261,928,287"/>
-<area shape="poly" id="edge16_Node000005_Node000011" title=" " alt="" coords="621,184,678,215,749,246,778,255,776,260,747,251,676,220,619,189"/>
-<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="879,134,966,197,1026,252,1075,300,1071,304,1022,256,962,201,876,138"/>
-<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="918,134,1022,156,1021,161,916,139"/>
-<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="885,108,1052,34,1054,39,887,113"/>
-<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="964,112,1031,107,1031,112,964,118"/>
-<area shape="poly" id="edge15_Node000010_Node000010" title=" " alt="" coords="817,112,809,102,813,92,829,86,856,84,889,88,902,97,899,102,887,93,856,89,831,91,817,96,814,102,821,109"/>
-<area shape="rect" id="Node000013" href="$classAttribute.html#a6cd34bcfad889b4215734cbc0b5eafc2" title="Define new value." alt="" coords="544,413,651,439"/>
-<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="432,411,531,418,530,424,432,416"/>
+<area shape="rect" id="Node000001" title="Parse the attribute." alt="" coords="5,356,178,397"/>
+<area shape="rect" id="Node000002" href="$namespaceExpressions.html#a8e6b91ed510e0e624e94f226b10bde74" title="Parse a token list array (for LIST commands)." alt="" coords="226,314,415,354"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,358,213,354,208,356,178,363"/>
+<area shape="rect" id="Node000012" href="$namespaceAttributes.html#aa3b4d9eb6835f29069a8554320a31663" title="Set token list array value." alt="" coords="241,388,400,429"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="178,386,228,395,222,396,178,392"/>
+<area shape="rect" id="Node000003" href="$classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11" title="Test for delimiter." alt="" coords="954,312,1092,338"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,344,463,348,593,350,723,347,941,334,935,334,723,352,593,356,463,353,416,349"/>
+<area shape="rect" id="Node000004" href="$namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599" title="Test for one&#45;character delimiter." alt="" coords="465,312,650,338"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="415,328,452,329,447,330,416,333"/>
+<area shape="rect" id="Node000005" href="$namespaceExpressions.html#a946c14794d1fd1880795af2c17054c16" title="Parse a token list (for macro argument and the like)." alt="" coords="463,161,652,187"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="351,311,522,197,527,195,354,316"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="651,322,941,324,935,325,651,327"/>
+<area shape="rect" id="Node000006" href="$classStatement.html#addc8463ab069024b814f2a291c3fa620" title="Test for end of command." alt="" coords="961,152,1084,178"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="652,170,948,166,943,167,653,175"/>
+<area shape="rect" id="Node000007" href="$classStatement.html#a1a0eb4cada570aae1069034300a11092" title="Return current token and skip it." alt="" coords="948,5,1098,31"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="567,159,619,103,656,71,699,46,758,27,819,15,878,10,935,11,930,13,879,16,819,21,759,32,701,51,659,76,622,106,571,163"/>
+<area shape="rect" id="Node000008" href="$classToken.html#a2954e99066d74d540ededed11eaf469c" title="Test for delimiter." alt="" coords="976,92,1070,118"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="570,159,623,113,659,89,699,72,735,63,771,59,844,60,912,70,970,87,965,87,911,76,843,65,771,64,736,68,701,77,662,94,626,117,573,163"/>
+<area shape="rect" id="Node000009" href="$classStatement.html#ac7a9b7e88c7c356b6f41f3eb19cc7734" title="Mark position in command." alt="" coords="741,212,859,238"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="623,185,728,209,723,210,623,190"/>
+<area shape="rect" id="Node000010" href="$namespaceExpressions.html#aa03d83d4e42f30aee6aa517c60ee3254" title=" " alt="" coords="700,111,900,136"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="622,158,723,139,718,141,623,163"/>
+<area shape="rect" id="Node000011" href="$classStatement.html#aa3a59708d440dd319ac301ae50b92451" title="Return to marked position." alt="" coords="735,261,865,287"/>
+<area shape="poly" id="edge16_Node000005_Node000011" title=" " alt="" coords="580,185,634,216,701,248,723,257,718,257,699,253,632,221,579,190"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="821,134,901,197,957,251,1002,301,997,300,953,254,898,202,819,139"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="873,134,949,150,943,151,873,140"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="828,108,978,39,983,37,830,113"/>
+<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="899,113,963,109,958,111,900,118"/>
+<area shape="poly" id="edge15_Node000010_Node000010" title=" " alt="" coords="763,110,756,102,760,92,775,86,800,84,827,87,843,96,837,96,826,92,800,89,776,91,764,96,761,101,768,111"/>
+<area shape="rect" id="Node000013" href="$classAttribute.html#a6cd34bcfad889b4215734cbc0b5eafc2" title="Define new value." alt="" coords="510,413,606,439"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="401,412,496,421,491,422,400,417"/>
 </map>

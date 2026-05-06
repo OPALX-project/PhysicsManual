@@ -1,5 +1,25 @@
 <map id="PartBunch::bunchUpdate" name="PartBunch::bunchUpdate">
-<area shape="rect" id="Node000001" title="Refresh mesh from particle extents, update layouts, and recompute moments." alt="" coords="5,13,187,38"/>
-<area shape="rect" id="Node000002" href="$classBinnedFieldSolver.html#a2a62f4357104926f3a1cc1162eb16fa3" title="Check whether the explicit image&#45;charge pass should run for a given timestep." alt="" coords="235,5,445,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,23,221,23,221,28,187,28"/>
+<area shape="rect" id="Node000001" title="Refresh mesh from particle extents, update layouts, and recompute moments." alt="" coords="5,143,173,168"/>
+<area shape="rect" id="Node000002" href="$classPartBunch.html#ad2d10d2059439eb37eb03426a8297b2a" title="Updates the mesh/grid and internal data structures to match the given spatial bounds." alt="" coords="230,5,417,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,141,151,96,184,70,219,48,254,35,250,38,222,53,187,75,154,100,105,144"/>
+<area shape="rect" id="Node000003" href="$classPartBunch.html#a01d3e7a8897af9e96feb6c131c63af96" title="Computes the spatial bounds for the field solver based on the current particle distribution." alt="" coords="231,106,416,146"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,143,218,138,213,141,174,147"/>
+<area shape="rect" id="Node000004" href="$classPartBunch.html#ad0cb4c028b3b8bafd4a45a832e0ae0f9" title="Non&#45;const pointer to the concrete BinnedFieldSolver." alt="" coords="484,52,657,78"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="111,140,160,114,220,92,283,78,348,69,470,63,466,65,349,74,284,83,221,97,162,119,114,144"/>
+<area shape="rect" id="Node000006" href="$classBinnedFieldSolver.html#a2a62f4357104926f3a1cc1162eb16fa3" title="Check whether the explicit image&#45;charge pass should run for a given timestep." alt="" coords="474,167,666,208"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="173,158,460,178,457,182,173,164"/>
+<area shape="rect" id="Node000007" href="$classPartBunch.html#ac7518fe94585ba61dfae9ae5be5df8dc" title="Current global tracking step." alt="" coords="221,221,426,247"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="127,166,222,200,266,216,261,217,220,205,127,172"/>
+<area shape="rect" id="Node000008" href="$classPartBunch.html#a4154146a943e8b06773a7281a47c2716" title="Reinitialize the z dimension of the field grid to nrZ cells." alt="" coords="233,273,414,299"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="103,166,154,211,186,236,222,257,243,268,238,268,219,262,183,240,150,215,103,171"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="407,103,503,81,498,83,409,108"/>
+<area shape="rect" id="Node000005" href="$classBinnedFieldSolver.html#a24258c5cdf34819745275c01ab3e2405" title=" " alt="" coords="491,102,649,142"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="415,122,478,123,473,124,417,127"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="408,144,474,163,469,163,408,150"/>
+<area shape="rect" id="Node000009" href="$classPartBunch.html#ace93b5b47adfc992626c1d6dc42fd640" title="Current boundary&#45;condition handler." alt="" coords="484,232,656,258"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="404,270,477,260,472,261,405,275"/>
+<area shape="rect" id="Node000010" href="$classPartBunch.html#aa5e554b5536b2eb55f08cf7776893c84" title="Scratch B field used by the binned solver path." alt="" coords="482,281,659,307"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="414,286,469,291,463,291,414,292"/>
+<area shape="rect" id="Node000011" href="$classPartBunch.html#a1755b0f12a9bd921fa533eedf655cb43" title="Scratch E field used by the binned solver path." alt="" coords="482,331,659,356"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="382,297,499,326,494,327,382,302"/>
 </map>

@@ -1,43 +1,39 @@
 <map id="TrackRun" name="TrackRun">
-<area shape="rect" id="Node000001" title=" " alt="" coords="491,5276,735,5831"/>
-<area shape="rect" id="Node000002" href="$classAction.html" title="The base class for all OPAL actions." alt="" coords="5,1049,136,1295"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,1309,66,1869,63,2594,63,4902,66,4951,74,4998,88,5044,107,5088,130,5131,156,5173,217,5250,285,5320,357,5382,427,5436,493,5479,490,5484,424,5440,353,5386,281,5324,212,5254,151,5176,125,5134,102,5091,83,5046,69,4999,60,4951,57,4902,57,2594,61,1869,66,1309"/>
-<area shape="rect" id="Node000003" href="$classObject.html" title="The base class for all OPAL objects." alt="" coords="99,5,234,751"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,764,88,1050,83,1049,117,764"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="236,304,246,314,254,329,259,351,261,378,257,414,248,439,243,437,252,413,255,378,254,351,249,331,242,317,233,308"/>
-<area shape="rect" id="Node000005" href="$classDefinition.html" title="The base class for all OPAL definitions." alt="" coords="281,800,410,1025"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="241,592,310,799,305,801,236,594"/>
-<area shape="rect" id="Node000010" href="$classValueDefinition.html" title="The base class for all OPAL value definitions." alt="" coords="80,2403,253,2788"/>
-<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="169,765,169,2402,164,2402,164,765"/>
-<area shape="rect" id="Node000004" href="$classFieldSolverCmd.html" title=" " alt="" coords="249,1556,441,2141"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="337,2142,322,2686,315,3313,315,4902,319,4967,330,5031,347,5095,369,5157,424,5273,485,5376,480,5379,419,5276,364,5159,342,5096,325,5032,313,4967,309,4902,309,3313,317,2686,332,2141"/>
-<area shape="rect" id="Node000011" href="$classPartBunch.html" title=" " alt="" coords="483,2812,743,3817"/>
-<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="348,2141,352,2343,361,2542,377,2701,388,2755,401,2786,416,2797,434,2798,453,2799,472,2810,474,2812,470,2815,469,2814,452,2804,433,2804,414,2802,397,2790,383,2757,372,2702,356,2542,347,2343,343,2141"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="348,1039,348,1556,343,1556,343,1039"/>
-<area shape="rect" id="Node000013" href="$classBoundaryGeometry.html" title=" " alt="" coords="872,1319,1115,2379"/>
-<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="423,951,524,1010,642,1092,703,1141,761,1196,814,1254,861,1317,874,1339,869,1341,856,1320,810,1258,757,1199,699,1145,639,1096,521,1014,421,955"/>
-<area shape="rect" id="Node000006" href="$classDataSink.html" title=" " alt="" coords="625,1556,847,2141"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="798,2141,841,2391,882,2684,899,2840,913,2999,922,3157,925,3313,925,4902,921,4968,909,5034,891,5099,868,5162,840,5223,810,5281,747,5384,742,5381,806,5278,836,5221,863,5160,886,5098,904,5033,916,4968,920,4902,920,3313,917,3158,908,2999,894,2841,877,2685,836,2392,793,2142"/>
-<area shape="rect" id="Node000008" href="$structOpalDataImpl.html" title=" " alt="" coords="517,3880,709,4525"/>
-<area shape="poly" id="edge18_Node000008_Node000006" title=" " alt="" coords="762,2142,776,2403,779,2780,774,3240,765,3636,757,3818,740,3891,717,3964,712,3963,735,3890,752,3817,759,3636,769,3240,774,2780,771,2403,757,2142"/>
-<area shape="poly" id="edge17_Node000011_Node000006" title=" " alt="" coords="712,2142,689,2403,657,2796,652,2795,684,2402,707,2141"/>
-<area shape="rect" id="Node000007" href="$classOpalData.html" title="The global OPAL structure." alt="" coords="525,4588,701,5213"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="616,5214,616,5259,611,5259,611,5214"/>
-<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="703,4839,713,4848,721,4862,728,4901,725,4929,716,4950,711,4948,720,4928,723,4901,716,4864,709,4852,700,4843"/>
-<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="616,4526,616,4571,611,4571,611,4526"/>
-<area shape="rect" id="Node000009" href="$classDirectory.html" title="A map of string versus pointer to Object." alt="" coords="349,3192,459,3437"/>
-<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="415,3437,436,3618,452,3718,473,3817,514,3951,509,3953,468,3818,447,3719,430,3618,410,3438"/>
-<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="146,2788,123,3054,115,3204,112,3356,115,3501,128,3631,138,3688,151,3739,167,3782,186,3816,204,3835,223,3846,243,3851,264,3853,310,3857,335,3864,360,3878,402,3911,441,3949,510,4031,506,4034,437,3953,398,3915,357,3882,333,3869,309,3862,264,3858,242,3857,221,3851,201,3839,182,3819,162,3784,146,3740,133,3689,122,3632,110,3501,106,3356,110,3204,118,3054,141,2788"/>
-<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="616,3818,616,3863,611,3863,611,3818"/>
-<area shape="rect" id="Node000012" href="$classPartData.html" title="Particle reference data." alt="" coords="489,1656,601,2041"/>
-<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="543,2042,541,2389,544,2589,553,2788,554,2796,549,2796,548,2788,539,2589,535,2389,537,2042"/>
-<area shape="poly" id="edge19_Node000008_Node000013" title=" " alt="" coords="1040,2379,1045,2538,1044,2709,1039,2889,1026,3075,1005,3264,974,3453,932,3639,879,3818,848,3891,809,3961,766,4026,722,4084,718,4081,761,4023,804,3958,843,3889,873,3816,927,3637,969,3452,999,3263,1020,3075,1033,2889,1039,2709,1039,2538,1035,2379"/>
-<area shape="rect" id="Node000014" href="$classgsl__rng.html" title=" " alt="" coords="935,820,1052,1005"/>
-<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="996,1006,996,1302,991,1302,991,1006"/>
-<area shape="rect" id="Node000015" href="$classBiMap.html" title=" " alt="" coords="974,4781,1146,5021"/>
-<area shape="poly" id="edge22_Node000001_Node000015" title=" " alt="" coords="1038,5022,1001,5138,975,5197,944,5253,901,5311,852,5365,801,5414,750,5457,747,5453,797,5410,849,5361,897,5307,939,5251,970,5195,996,5136,1033,5020"/>
-<area shape="rect" id="Node000016" href="$structBiMap_1_1left__view.html" title="Left&#45;map view with find/at helpers." alt="" coords="992,4133,1128,4273"/>
-<area shape="poly" id="edge23_Node000015_Node000016" title=" " alt="" coords="1063,4273,1063,4764,1057,4764,1057,4273"/>
-<area shape="rect" id="Node000017" href="$structBiMap_1_1right__view.html" title="Right&#45;map view with find/at helpers." alt="" coords="1152,4133,1288,4273"/>
-<area shape="poly" id="edge24_Node000015_Node000017" title=" " alt="" coords="1207,4274,1094,4765,1088,4764,1201,4273"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="544,4641,759,5205"/>
+<area shape="rect" id="Node000002" href="$classAction.html" title="The base class for all OPAL actions." alt="" coords="5,1136,122,1386"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,1398,76,2041,81,2884,81,4253,85,4305,94,4356,110,4405,130,4452,155,4498,184,4542,251,4623,326,4697,403,4761,478,4815,547,4861,542,4862,475,4820,400,4765,322,4701,247,4627,180,4545,151,4501,126,4455,105,4407,89,4357,79,4306,76,4253,76,2884,71,2041,66,1403"/>
+<area shape="rect" id="Node000003" href="$classObject.html" title="The base class for all OPAL objects." alt="" coords="99,5,216,763"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,751,92,813,78,982,70,1137,65,1136,73,981,87,812,97,746"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="214,307,227,316,235,332,240,355,242,384,239,422,230,447,225,446,234,421,237,384,235,355,230,334,223,319,216,312"/>
+<area shape="rect" id="Node000005" href="$classDefinition.html" title="The base class for all OPAL definitions." alt="" coords="101,812,213,1041"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="157,775,160,813,155,813,157,781"/>
+<area shape="rect" id="Node000010" href="$classValueDefinition.html" title="The base class for all OPAL value definitions." alt="" coords="558,1065,709,1457"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="222,503,560,1121,555,1122,223,509"/>
+<area shape="rect" id="Node000004" href="$classFieldSolverCmd.html" title=" " alt="" coords="120,2588,291,3183"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="265,3180,399,3820,480,4196,565,4569,578,4625,573,4623,560,4570,475,4197,394,3822,264,3185"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="153,1053,150,1329,148,1703,153,2130,160,2349,170,2564,172,2588,167,2588,165,2564,154,2350,147,2131,142,1703,145,1329,153,1059"/>
+<area shape="rect" id="Node000012" href="$classBoundaryGeometry.html" title=" " alt="" coords="180,1484,393,2561"/>
+<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="172,1053,226,1484,220,1484,172,1058"/>
+<area shape="rect" id="Node000006" href="$classDataSink.html" title=" " alt="" coords="976,1725,1173,2320"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="1060,2317,1028,2857,977,3506,945,3828,910,4124,871,4378,850,4483,828,4570,802,4646,769,4721,765,4718,797,4644,823,4569,844,4482,865,4377,904,4124,940,3827,972,3505,1023,2856,1058,2322"/>
+<area shape="rect" id="Node000008" href="$structOpalDataImpl.html" title=" " alt="" coords="566,3207,737,3863"/>
+<area shape="poly" id="edge15_Node000008_Node000006" title=" " alt="" coords="1069,2317,1056,2387,1033,2452,1001,2512,959,2566,947,2575,934,2579,909,2578,885,2577,875,2581,865,2590,858,2603,853,2626,845,2694,841,2881,841,3070,839,3141,834,3184,818,3237,797,3289,748,3386,743,3384,792,3287,813,3235,829,3182,834,3141,835,3070,835,2881,840,2693,848,2625,853,2602,861,2586,872,2576,884,2572,909,2572,933,2574,944,2570,955,2562,997,2509,1028,2450,1051,2385,1068,2323"/>
+<area shape="rect" id="Node000007" href="$classOpalData.html" title="The global OPAL structure." alt="" coords="575,3934,729,4570"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="653,4567,654,4625,649,4623,651,4572"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="728,4186,740,4196,748,4209,754,4228,755,4252,752,4282,743,4304,739,4301,747,4281,750,4252,748,4229,744,4212,736,4199,729,4192"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="652,3860,654,3918,649,3916,651,3865"/>
+<area shape="rect" id="Node000009" href="$classDirectory.html" title="A map of string versus pointer to Object." alt="" coords="417,1898,510,2147"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="465,2144,472,2346,485,2605,511,2893,529,3040,552,3183,565,3245,560,3245,547,3183,524,3040,506,2894,480,2605,467,2346,464,2150"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="708,1346,752,1409,770,1444,784,1480,796,1528,805,1583,815,1713,818,1861,814,2019,798,2326,784,2564,767,2875,753,3010,729,3183,728,3191,723,3189,724,3183,748,3010,762,2874,779,2564,793,2326,809,2019,812,1861,810,1714,799,1584,790,1529,779,1482,765,1446,748,1412,709,1351"/>
+<area shape="rect" id="Node000011" href="$classPartBunch.html" title=" " alt="" coords="535,1481,769,2564"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="652,2561,654,3190,649,3190,651,2566"/>
+<area shape="poly" id="edge16_Node000008_Node000012" title=" " alt="" coords="304,2558,325,2714,351,2873,386,3030,433,3182,459,3243,490,3303,559,3412,554,3413,485,3305,454,3245,428,3184,381,3032,346,2874,319,2715,304,2564"/>
+<area shape="rect" id="Node000013" href="$classgsl__rng.html" title=" " alt="" coords="237,833,339,1021"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="288,1018,290,1467,285,1467,288,1024"/>
+<area shape="rect" id="Node000014" href="$classBiMap.html" title=" " alt="" coords="1004,4130,1156,4374"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="1068,4371,1057,4433,1040,4496,1017,4559,987,4618,942,4683,888,4742,830,4795,774,4841,771,4837,827,4791,884,4739,937,4679,983,4615,1012,4557,1035,4494,1052,4432,1065,4376"/>
+<area shape="rect" id="Node000015" href="$structBiMap_1_1left__view.html" title="Left&#45;map view with find/at helpers." alt="" coords="1012,3464,1132,3606"/>
+<area shape="poly" id="edge20_Node000014_Node000015" title=" " alt="" coords="1074,3604,1081,4114,1076,4112,1071,3608"/>
+<area shape="rect" id="Node000016" href="$structBiMap_1_1right__view.html" title="Right&#45;map view with find/at helpers." alt="" coords="1157,3464,1278,3606"/>
+<area shape="poly" id="edge21_Node000014_Node000016" title=" " alt="" coords="1205,3604,1109,4114,1104,4113,1202,3608"/>
 </map>

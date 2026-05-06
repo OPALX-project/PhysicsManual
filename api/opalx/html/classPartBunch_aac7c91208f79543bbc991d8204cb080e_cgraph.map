@@ -1,73 +1,93 @@
 <map id="PartBunch::PartBunch" name="PartBunch::PartBunch">
-<area shape="rect" id="Node000001" title="Construct a multi&#45;beam bunch: mesh, solver, containers, and capacity." alt="" coords="5,457,165,483"/>
-<area shape="rect" id="Node000002" href="$classFieldSolverCmd.html#a1b13a9d15a724ba79ab2b03068047f95" title="Returns solver boundary conditions handler object." alt="" coords="222,203,414,243"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,456,102,417,127,362,164,304,186,277,212,253,218,248,222,253,215,257,190,281,168,307,132,365,107,419,93,458"/>
-<area shape="rect" id="Node000012" href="$classPartBunch.html#ace93b5b47adfc992626c1d6dc42fd640" title="Current boundary&#45;condition handler." alt="" coords="225,268,411,293"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="90,456,107,424,133,383,169,339,212,302,223,296,225,301,215,307,172,343,138,386,111,427,95,458"/>
-<area shape="rect" id="Node000013" href="$classFieldSolverCmd.html#ae0e21cba7086a440c69e7473a7d80a7d" title=" " alt="" coords="213,153,423,179"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="86,457,96,406,118,334,134,295,155,256,181,220,212,189,220,183,224,187,215,193,185,224,160,259,139,297,123,336,101,408,91,458"/>
-<area shape="rect" id="Node000015" href="$classFieldSolverCmd.html#a6deaa15198ab367bd62d354fdf119f5b" title="Return meshsize." alt="" coords="232,104,404,129"/>
-<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="85,457,92,399,111,313,127,266,149,219,177,176,212,139,218,133,222,138,215,143,181,179,154,222,132,268,116,314,97,400,90,458"/>
-<area shape="rect" id="Node000017" href="$classFieldSolverCmd.html#aa512282ed4050685a3a4eb0b1a82a262" title="Return meshsize." alt="" coords="233,5,403,31"/>
-<area shape="poly" id="edge26_Node000001_Node000017" title=" " alt="" coords="84,457,85,385,90,332,99,272,115,210,138,148,169,90,211,40,219,34,222,38,215,44,174,93,142,150,120,211,104,273,95,332,90,385,89,457"/>
-<area shape="rect" id="Node000018" href="$classFieldSolverCmd.html#aabe481f2b02ecaff1f7f86c0076a1e72" title="Return meshsize." alt="" coords="232,55,404,80"/>
-<area shape="poly" id="edge28_Node000001_Node000018" title=" " alt="" coords="84,457,88,392,105,292,121,238,143,183,173,133,211,89,218,84,221,88,215,93,177,136,148,186,126,239,110,294,94,392,89,457"/>
-<area shape="rect" id="Node000019" href="$classPartBunch.html#a139fd26a38bfa25e4e9dbb0e783f87ca" title="Particle species name for container i (from BEAM PARTICLE input)." alt="" coords="217,317,419,343"/>
-<area shape="poly" id="edge30_Node000001_Node000019" title=" " alt="" coords="95,455,142,405,175,377,212,353,231,345,233,349,215,358,178,381,146,409,99,459"/>
-<area shape="rect" id="Node000020" href="$classParticleProperties.html#af929a4aaca5748e6ffab3d29e25b4279" title=" " alt="" coords="250,367,386,407"/>
-<area shape="poly" id="edge31_Node000001_Node000020" title=" " alt="" coords="117,455,212,418,239,409,240,414,214,423,119,460"/>
-<area shape="rect" id="Node000021" href="$classPartBunch.html#ab312ee7cffe005fc4cd43d41ff5253ff" title=" " alt="" coords="227,432,409,457"/>
-<area shape="poly" id="edge32_Node000001_Node000021" title=" " alt="" coords="166,459,212,453,213,459,166,464"/>
-<area shape="rect" id="Node000022" href="$classPartBunch.html#aa5e554b5536b2eb55f08cf7776893c84" title="Scratch B field used by the binned solver path." alt="" coords="223,481,413,507"/>
-<area shape="poly" id="edge33_Node000001_Node000022" title=" " alt="" coords="166,476,209,480,209,485,166,481"/>
-<area shape="rect" id="Node000023" href="$classPartBunch.html#a1755b0f12a9bd921fa533eedf655cb43" title="Scratch E field used by the binned solver path." alt="" coords="223,531,413,556"/>
-<area shape="poly" id="edge34_Node000001_Node000023" title=" " alt="" coords="117,480,214,517,243,525,241,530,213,522,115,485"/>
-<area shape="rect" id="Node000024" href="$classPartBunch.html#a240d8f06f0a03ed1f1c092db641e03ee" title="Warm&#45;up: zero rho and run the field solver once (skip full dumps)." alt="" coords="246,580,390,605"/>
-<area shape="poly" id="edge35_Node000001_Node000024" title=" " alt="" coords="101,481,148,523,180,547,214,566,234,574,232,579,212,571,177,551,145,527,97,485"/>
-<area shape="rect" id="Node000025" href="$classPartBunch.html#aebb18ec9feaded489faa2b0097e7560f" title="At segment start: active if container is non&#45;empty; inactive if empty." alt="" coords="226,629,410,655"/>
-<area shape="poly" id="edge36_Node000001_Node000025" title=" " alt="" coords="96,481,140,546,174,584,215,616,226,622,224,627,212,620,171,588,136,550,91,484"/>
-<area shape="rect" id="Node000026" href="$classPartBunch.html#a75d991edaa7c9843fe2ce4d283b5d5e6" title=" " alt="" coords="226,679,410,704"/>
-<area shape="poly" id="edge37_Node000001_Node000026" title=" " alt="" coords="94,482,108,519,133,569,169,621,191,645,215,665,224,671,221,675,212,669,187,649,165,625,129,572,103,521,89,484"/>
-<area shape="rect" id="Node000027" href="$classPartBunch.html#a87a7f8e9076979500c12ac5749e52cf8" title="Build field solver and load balancer from OPALFieldSolver_m." alt="" coords="240,728,396,753"/>
-<area shape="poly" id="edge38_Node000001_Node000027" title=" " alt="" coords="92,483,104,528,127,591,163,658,187,688,215,715,229,723,226,728,212,719,183,692,159,661,122,593,99,529,87,484"/>
-<area shape="rect" id="Node000028" href="$classPartBunch.html#a26f3955399833a680d9b50428da05eaa" title="Set the current simulation time." alt="" coords="257,777,379,803"/>
-<area shape="poly" id="edge39_Node000001_Node000028" title=" " alt="" coords="91,483,100,535,121,612,137,653,158,694,184,732,215,764,245,780,242,784,212,768,179,735,153,697,132,656,116,614,94,537,85,484"/>
-<area shape="rect" id="Node000029" href="$classPartBunch.html#aa707b28b766c7ae5c771c9616889ef4e" title=" " alt="" coords="223,827,413,852"/>
-<area shape="poly" id="edge40_Node000001_Node000029" title=" " alt="" coords="90,482,96,542,114,632,130,681,152,730,180,775,215,813,220,818,217,822,212,817,176,778,147,732,125,683,109,634,91,543,85,483"/>
-<area shape="rect" id="Node000030" href="$classPartBunch.html#a9ebe17186c85e57e5be5e840f860a087" title=" " alt="" coords="223,876,413,901"/>
-<area shape="poly" id="edge41_Node000001_Node000030" title=" " alt="" coords="89,483,93,550,108,653,124,710,146,766,176,818,215,863,220,867,216,871,211,867,172,821,141,768,119,712,103,654,87,551,84,483"/>
-<area shape="rect" id="Node000003" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="471,211,624,236"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,221,457,221,457,226,414,226"/>
-<area shape="rect" id="Node000004" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="686,146,849,186"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,208,677,187,678,192,598,213"/>
-<area shape="rect" id="Node000005" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="697,211,837,236"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="624,221,684,221,684,226,624,226"/>
-<area shape="rect" id="Node000006" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="688,260,847,285"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="605,233,697,254,696,260,604,239"/>
-<area shape="rect" id="Node000007" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="684,359,851,384"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="560,234,604,288,637,319,673,345,686,351,684,356,671,350,633,323,600,292,556,238"/>
-<area shape="rect" id="Node000009" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="694,47,841,72"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="590,208,622,188,633,175,639,162,644,135,650,108,658,94,670,81,680,74,683,79,674,85,662,98,655,110,650,136,644,163,637,178,626,192,593,213"/>
-<area shape="rect" id="Node000010" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="672,96,863,121"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="585,208,622,188,637,174,645,160,654,146,670,132,685,124,687,129,674,136,659,149,650,163,641,177,626,192,587,213"/>
-<area shape="rect" id="Node000011" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="715,309,820,335"/>
-<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="568,234,615,264,673,294,702,305,701,310,671,299,612,268,565,238"/>
-<area shape="rect" id="Node000008" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="911,359,1063,384"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="851,369,897,369,897,374,851,374"/>
-<area shape="rect" id="Node000014" href="$namespaceAttributes.html#a8f4df54f34b43a8304cb34f961a1c488" title="Return logical value." alt="" coords="475,153,619,179"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="423,163,462,163,462,169,423,169"/>
-<area shape="poly" id="edge14_Node000014_Node000004" title=" " alt="" coords="620,163,672,163,672,169,620,169"/>
-<area shape="poly" id="edge15_Node000014_Node000005" title=" " alt="" coords="598,176,705,205,704,210,596,181"/>
-<area shape="poly" id="edge16_Node000014_Node000006" title=" " alt="" coords="588,176,626,196,640,209,650,222,659,234,673,245,689,253,686,257,671,250,655,237,645,225,636,213,622,200,585,181"/>
-<area shape="poly" id="edge17_Node000014_Node000009" title=" " alt="" coords="590,151,622,134,637,121,645,108,655,94,671,81,683,75,685,80,673,86,659,98,650,111,641,125,626,139,593,156"/>
-<area shape="poly" id="edge18_Node000014_Node000010" title=" " alt="" coords="596,151,704,122,705,127,598,156"/>
-<area shape="rect" id="Node000016" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="475,100,619,125"/>
-<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="404,112,462,111,462,117,404,118"/>
-<area shape="poly" id="edge21_Node000016_Node000004" title=" " alt="" coords="601,123,673,141,672,146,600,128"/>
-<area shape="poly" id="edge22_Node000016_Node000005" title=" " alt="" coords="596,123,626,139,641,154,650,168,659,182,674,196,687,203,685,208,670,200,654,186,645,171,637,157,622,143,593,128"/>
-<area shape="poly" id="edge23_Node000016_Node000006" title=" " alt="" coords="601,123,626,139,638,153,644,167,650,194,656,221,662,233,674,245,682,251,679,256,670,249,658,236,651,222,645,195,639,168,633,156,622,143,599,128"/>
-<area shape="poly" id="edge24_Node000016_Node000009" title=" " alt="" coords="600,97,700,73,702,78,601,102"/>
-<area shape="poly" id="edge25_Node000016_Node000010" title=" " alt="" coords="620,109,658,108,658,113,620,114"/>
-<area shape="poly" id="edge27_Node000017_Node000016" title=" " alt="" coords="388,28,424,40,474,64,517,90,515,94,472,68,422,44,386,33"/>
-<area shape="poly" id="edge29_Node000018_Node000016" title=" " alt="" coords="384,77,469,95,468,100,383,83"/>
+<area shape="rect" id="Node000001" title="Construct a multi&#45;beam bunch: mesh, solver, containers, and capacity." alt="" coords="5,317,157,343"/>
+<area shape="rect" id="Node000002" href="$classPartBunch.html#ace93b5b47adfc992626c1d6dc42fd640" title="Current boundary&#45;condition handler." alt="" coords="212,5,384,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,316,90,265,111,190,127,150,147,110,172,72,203,40,209,37,206,42,206,44,176,76,151,112,131,152,116,192,95,266,86,317"/>
+<area shape="rect" id="Node000003" href="$classPartBunch.html#a139fd26a38bfa25e4e9dbb0e783f87ca" title="Particle species name for container i (from BEAM PARTICLE input)." alt="" coords="205,55,392,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,316,95,273,117,212,153,147,176,117,203,91,213,86,209,90,206,95,180,120,157,150,122,214,100,275,88,318"/>
+<area shape="rect" id="Node000004" href="$classParticleProperties.html#af929a4aaca5748e6ffab3d29e25b4279" title=" " alt="" coords="236,104,360,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="86,316,102,283,127,240,161,194,203,155,224,144,220,148,206,159,165,198,132,243,107,286,91,318"/>
+<area shape="rect" id="Node000005" href="$classPartBunch.html#ab312ee7cffe005fc4cd43d41ff5253ff" title=" " alt="" coords="214,169,382,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="89,316,134,261,166,230,203,204,216,199,212,203,206,208,170,234,138,265,94,318"/>
+<area shape="rect" id="Node000006" href="$classPartBunch.html#aa5e554b5536b2eb55f08cf7776893c84" title="Scratch B field used by the binned solver path." alt="" coords="210,219,387,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="98,315,145,284,204,253,223,248,219,251,206,258,148,288,102,318"/>
+<area shape="rect" id="Node000007" href="$classPartBunch.html#a1755b0f12a9bd921fa533eedf655cb43" title="Scratch E field used by the binned solver path." alt="" coords="210,268,387,294"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="140,314,226,296,222,300,142,319"/>
+<area shape="rect" id="Node000008" href="$classPartBunch.html#a240d8f06f0a03ed1f1c092db641e03ee" title="Warm&#45;up: zero rho and run the field solver once (skip full dumps)." alt="" coords="232,317,365,343"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="156,328,218,329,214,332,158,333"/>
+<area shape="rect" id="Node000010" href="$classPartBunch.html#aebb18ec9feaded489faa2b0097e7560f" title="At segment start: active if container is non&#45;empty; inactive if empty." alt="" coords="212,367,384,392"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="140,341,226,361,222,364,142,346"/>
+<area shape="rect" id="Node000011" href="$classPartBunch.html#a75d991edaa7c9843fe2ce4d283b5d5e6" title=" " alt="" coords="212,416,384,442"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="100,341,148,372,206,402,223,410,218,412,204,407,145,376,101,346"/>
+<area shape="rect" id="Node000012" href="$classPartBunch.html#a87a7f8e9076979500c12ac5749e52cf8" title="Build field solver and load balancer from OPALFieldSolver_m." alt="" coords="226,465,371,491"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="92,341,138,395,170,426,206,452,217,459,212,460,203,456,166,430,134,399,91,346"/>
+<area shape="rect" id="Node000039" href="$classPartBunch.html#a26f3955399833a680d9b50428da05eaa" title="Set the current simulation time." alt="" coords="240,515,356,540"/>
+<area shape="poly" id="edge48_Node000001_Node000039" title=" " alt="" coords="88,341,106,375,131,418,164,463,206,501,228,514,223,515,203,506,160,467,126,421,101,377,88,346"/>
+<area shape="rect" id="Node000040" href="$classPartBunch.html#aa707b28b766c7ae5c771c9616889ef4e" title=" " alt="" coords="210,564,387,590"/>
+<area shape="poly" id="edge49_Node000001_Node000040" title=" " alt="" coords="86,341,101,384,124,440,159,500,181,527,206,551,212,557,207,556,203,555,177,531,155,503,119,443,96,386,85,346"/>
+<area shape="rect" id="Node000041" href="$classPartBunch.html#a9ebe17186c85e57e5be5e840f860a087" title=" " alt="" coords="210,613,387,639"/>
+<area shape="poly" id="edge50_Node000001_Node000041" title=" " alt="" coords="85,341,97,392,118,461,133,499,153,536,177,571,206,600,211,606,206,605,203,604,173,574,149,539,129,501,113,463,91,393,84,346"/>
+<area shape="rect" id="Node000009" href="$classPartBunch.html#ad0cb4c028b3b8bafd4a45a832e0ae0f9" title="Non&#45;const pointer to the concrete BinnedFieldSolver." alt="" coords="440,317,613,343"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="365,328,427,329,422,331,366,333"/>
+<area shape="rect" id="Node000013" href="$classPartBunch.html#a7bcff4dbb376bab8fec724b0177a6442" title=" " alt="" coords="450,491,604,516"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="371,484,437,493,431,494,371,489"/>
+<area shape="rect" id="Node000014" href="$classPartBunch.html#ad4204bca3040d71c25b6951ad20ac4ab" title="Create adaptive bins from the binning command (VELOCITYZ / GAMMAZ)." alt="" coords="460,441,594,467"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="370,468,447,462,442,464,372,473"/>
+<area shape="poly" id="edge47_Node000014_Node000014" title=" " alt="" coords="488,440,481,433,486,423,501,417,527,415,555,417,570,427,565,427,553,422,527,420,502,422,489,427,487,432,494,442"/>
+<area shape="rect" id="Node000015" href="$classBinningCmd.html#a2e85b9c89b524c9bdd684e1b07a52209" title=" " alt="" coords="667,268,862,294"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="538,439,607,359,660,303,668,301,673,299,663,307,611,363,541,443"/>
+<area shape="rect" id="Node000030" href="$classBinningCmd.html#abf24dc5c4969603051c1f5ba04865eef" title=" " alt="" coords="670,317,859,343"/>
+<area shape="poly" id="edge29_Node000014_Node000030" title=" " alt="" coords="540,439,590,396,624,372,660,352,678,347,673,349,662,357,627,377,593,400,543,443"/>
+<area shape="rect" id="Node000031" href="$classPartBunch.html#a3ddc8045a5a139a46cef9c227332ea6d" title="Non&#45;const access to adaptive binning state." alt="" coords="697,515,832,540"/>
+<area shape="poly" id="edge31_Node000014_Node000031" title=" " alt="" coords="582,465,614,476,639,489,662,501,685,511,679,510,660,506,636,493,612,481,582,470"/>
+<area shape="rect" id="Node000032" href="$classBinningCmd.html#a06cc63b80a19eb94cc5d39c46de28a76" title=" " alt="" coords="666,367,863,392"/>
+<area shape="poly" id="edge32_Node000014_Node000032" title=" " alt="" coords="559,438,661,401,688,396,683,397,662,406,561,443"/>
+<area shape="rect" id="Node000033" href="$classBinningCmd.html#a5a81241b839049dcc4266be6b8364a5c" title=" " alt="" coords="680,416,849,442"/>
+<area shape="poly" id="edge34_Node000014_Node000033" title=" " alt="" coords="594,444,667,439,662,440,595,450"/>
+<area shape="rect" id="Node000034" href="$classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39" title="Return object name." alt="" coords="691,564,838,590"/>
+<area shape="poly" id="edge36_Node000014_Node000034" title=" " alt="" coords="594,465,615,476,632,495,640,515,647,533,663,551,679,562,674,561,660,555,642,536,635,517,627,498,612,480,594,470"/>
+<area shape="rect" id="Node000035" href="$classBinningCmd.html#a945e99026feeefd5a101373f0976a181" title=" " alt="" coords="675,465,854,491"/>
+<area shape="poly" id="edge37_Node000014_Node000035" title=" " alt="" coords="594,458,662,467,657,468,594,464"/>
+<area shape="rect" id="Node000038" href="$classBinningCmd.html#a6d9603c23fde8f76daba6e7ba776a12e" title=" " alt="" coords="661,613,868,639"/>
+<area shape="poly" id="edge46_Node000014_Node000038" title=" " alt="" coords="595,463,615,476,628,492,636,508,640,540,644,571,651,586,663,600,667,606,662,604,659,604,646,589,639,573,634,541,630,510,624,495,612,480,594,469"/>
+<area shape="rect" id="Node000016" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="919,367,1050,392"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="837,292,869,302,916,328,957,357,952,357,913,332,867,307,837,297"/>
+<area shape="rect" id="Node000017" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="1111,370,1263,410"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1050,380,1098,385,1093,386,1050,386"/>
+<area shape="rect" id="Node000026" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="1124,271,1250,296"/>
+<area shape="poly" id="edge25_Node000016_Node000026" title=" " alt="" coords="1002,364,1045,335,1100,305,1113,303,1118,301,1102,310,1048,339,1005,368"/>
+<area shape="rect" id="Node000027" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="1116,320,1258,346"/>
+<area shape="poly" id="edge26_Node000016_Node000027" title=" " alt="" coords="1043,363,1116,349,1111,350,1044,369"/>
+<area shape="rect" id="Node000028" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="1122,435,1253,460"/>
+<area shape="poly" id="edge27_Node000016_Node000028" title=" " alt="" coords="1021,390,1102,420,1127,430,1122,430,1100,425,1020,396"/>
+<area shape="rect" id="Node000029" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="1101,484,1273,510"/>
+<area shape="poly" id="edge28_Node000016_Node000029" title=" " alt="" coords="1004,390,1055,431,1078,452,1102,471,1115,478,1109,478,1100,475,1074,457,1051,435,1002,396"/>
+<area shape="rect" id="Node000018" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="1321,464,1509,490"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1249,409,1275,420,1299,435,1322,449,1343,459,1338,459,1320,454,1296,440,1272,425,1248,414"/>
+<area shape="rect" id="Node000019" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="1339,399,1491,440"/>
+<area shape="poly" id="edge18_Node000017_Node000019" title=" " alt="" coords="1263,397,1326,408,1321,408,1264,403"/>
+<area shape="rect" id="Node000024" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="1334,349,1496,375"/>
+<area shape="poly" id="edge23_Node000017_Node000024" title=" " alt="" coords="1263,378,1321,374,1315,374,1264,383"/>
+<area shape="rect" id="Node000020" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="1580,403,1686,428"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="1491,415,1568,417,1562,417,1492,421"/>
+<area shape="rect" id="Node000021" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="1557,539,1709,564"/>
+<area shape="poly" id="edge20_Node000019_Node000021" title=" " alt="" coords="1489,438,1510,449,1526,463,1536,476,1545,489,1558,503,1596,531,1590,530,1555,507,1541,492,1531,479,1522,466,1507,454,1488,443"/>
+<area shape="rect" id="Node000023" href="$classExpressions_1_1SRefAttr.html#ae5bd0acc16f2c15a7dc55b28b998e7ab" title="Constructor." alt="" coords="1557,452,1709,493"/>
+<area shape="poly" id="edge22_Node000019_Node000023" title=" " alt="" coords="1492,435,1544,451,1539,450,1491,441"/>
+<area shape="rect" id="Node000022" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1757,539,1896,564"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="1709,549,1744,551,1739,552,1709,554"/>
+<area shape="rect" id="Node000025" href="$classAttributeBase.html#aab7e762da4a5303b75b1d878c94cc8d5" title="Print value." alt="" coords="1566,349,1700,375"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="1496,360,1553,362,1548,362,1497,365"/>
+<area shape="poly" id="edge30_Node000030_Node000016" title=" " alt="" coords="825,341,912,362,906,363,825,346"/>
+<area shape="poly" id="edge33_Node000032_Node000016" title=" " alt="" coords="863,377,906,379,901,380,864,382"/>
+<area shape="poly" id="edge35_Node000033_Node000016" title=" " alt="" coords="825,413,912,396,906,397,826,418"/>
+<area shape="rect" id="Node000036" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="916,445,1053,471"/>
+<area shape="poly" id="edge38_Node000035_Node000036" title=" " alt="" coords="854,467,902,465,897,466,855,473"/>
+<area shape="poly" id="edge39_Node000036_Node000017" title=" " alt="" coords="1025,442,1107,417,1113,415,1026,447"/>
+<area shape="poly" id="edge42_Node000036_Node000021" title=" " alt="" coords="995,469,1037,522,1067,549,1102,569,1164,589,1228,600,1294,604,1359,602,1479,587,1570,569,1575,569,1480,592,1359,607,1294,609,1228,605,1163,594,1100,574,1064,553,1033,525,993,474"/>
+<area shape="poly" id="edge40_Node000036_Node000026" title=" " alt="" coords="1006,442,1029,425,1051,403,1066,377,1072,353,1080,329,1099,306,1108,302,1112,300,1103,309,1084,332,1077,354,1071,379,1055,406,1032,429,1008,447"/>
+<area shape="poly" id="edge41_Node000036_Node000027" title=" " alt="" coords="1002,443,1051,403,1074,378,1100,356,1111,353,1116,351,1102,360,1078,382,1055,407,1004,447"/>
+<area shape="poly" id="edge43_Node000036_Node000028" title=" " alt="" coords="1053,452,1109,451,1103,452,1054,457"/>
+<area shape="poly" id="edge44_Node000036_Node000029" title=" " alt="" coords="1054,469,1104,480,1098,480,1053,474"/>
+<area shape="rect" id="Node000037" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="1140,533,1235,559"/>
+<area shape="poly" id="edge45_Node000036_Node000037" title=" " alt="" coords="1007,469,1050,494,1102,520,1127,531,1122,530,1100,525,1048,499,1006,474"/>
 </map>

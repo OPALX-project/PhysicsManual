@@ -1,24 +1,24 @@
 <map id="Physics::LinearCompton::labPhotonEnergyGeV" name="Physics::LinearCompton::labPhotonEnergyGeV">
-<area shape="rect" id="Node000001" title="Laboratory&#45;frame photon energy from electron&#45;rest&#45;frame scattering angles." alt="" coords="5,149,184,189"/>
-<area shape="rect" id="Node000002" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="621,127,664,153"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,173,335,178,420,176,505,169,559,160,608,147,609,153,561,165,506,175,421,181,335,183,184,179"/>
-<area shape="rect" id="Node000003" href="$namespacePhysics_1_1LinearCompton.html#ae5d0fb2022d822c8ec85fd7443c0a919" title="Compute the electron speed in units of c from total energy." alt="" coords="553,63,732,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,147,177,124,231,105,311,90,393,81,540,76,540,82,393,86,312,95,233,111,179,129,132,152"/>
-<area shape="rect" id="Node000004" href="$namespacePhysics_1_1LinearCompton.html#a3ef4d38a4307f7a1a96ee05485e7a14b" title="Compute the electron Lorentz factor from total energy." alt="" coords="780,117,959,157"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="184,179,232,183,373,191,483,195,592,190,732,172,792,158,794,164,732,177,593,196,483,201,373,197,232,188,184,184"/>
-<area shape="rect" id="Node000005" href="$namespacePhysics_1_1LinearCompton.html#ac97cb1cf66cf65b1fd6cd7090d709eaf" title="Incoming laser&#45;photon direction in the electron rest frame." alt="" coords="239,120,499,160"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="184,157,225,153,225,158,184,162"/>
-<area shape="rect" id="Node000006" href="$namespacePhysics_1_1LinearCompton.html#af1dc480fe18b0e751cacad16f5928980" title="Compute the incoming photon energy in the electron rest frame." alt="" coords="232,5,505,45"/>
-<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="115,147,165,104,197,81,231,62,265,47,267,52,233,66,200,86,169,108,119,151"/>
-<area shape="rect" id="Node000007" href="$namespacePhysics_1_1LinearCompton.html#add69fdb209ad5eca98deb3cd41192bfa" title="Compute the scattered photon energy in the electron rest frame." alt="" coords="252,285,485,325"/>
-<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="121,187,171,226,233,264,269,279,267,284,231,269,167,231,117,192"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="727,100,773,111,772,117,726,105"/>
-<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="499,137,608,137,608,143,499,143"/>
-<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="464,117,540,101,541,107,465,123"/>
-<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="499,157,554,163,643,168,732,163,770,157,771,162,732,168,643,173,553,168,498,163"/>
-<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="408,43,475,77,554,112,609,129,607,134,552,117,473,82,405,48"/>
-<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="465,43,541,59,540,64,464,48"/>
-<area shape="poly" id="edge12_Node000006_Node000004" title=" " alt="" coords="506,16,618,24,676,33,733,48,788,74,835,106,832,111,786,79,731,53,675,38,617,29,505,22"/>
-<area shape="rect" id="Node000008" href="$namespacePhysics_1_1LinearCompton.html#afe9e8d02b6fb8390c51970925967fc55" title="Compute the dimensionless Klein&#45;Nishina parameter ." alt="" coords="553,285,732,325"/>
-<area shape="poly" id="edge14_Node000007_Node000008" title=" " alt="" coords="485,303,540,303,540,308,485,308"/>
+<area shape="rect" id="Node000001" title="Laboratory&#45;frame photon energy from electron&#45;rest&#45;frame scattering angles." alt="" coords="5,149,170,190"/>
+<area shape="rect" id="Node000002" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="578,128,617,153"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,174,309,178,388,176,467,170,517,160,565,150,560,152,518,166,467,175,389,182,309,183,171,179"/>
+<area shape="rect" id="Node000003" href="$namespacePhysics_1_1LinearCompton.html#ae5d0fb2022d822c8ec85fd7443c0a919" title="Compute the electron speed in units of c from total energy." alt="" coords="515,63,679,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,147,166,124,217,106,290,91,364,82,502,78,497,81,365,87,291,96,218,111,169,129,125,151"/>
+<area shape="rect" id="Node000004" href="$namespacePhysics_1_1LinearCompton.html#a3ef4d38a4307f7a1a96ee05485e7a14b" title="Compute the electron Lorentz factor from total energy." alt="" coords="727,117,892,158"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="170,179,218,183,348,192,449,196,550,191,679,174,733,163,738,162,680,179,551,197,449,201,348,197,217,188,171,184"/>
+<area shape="rect" id="Node000005" href="$namespacePhysics_1_1LinearCompton.html#ac97cb1cf66cf65b1fd6cd7090d709eaf" title="Incoming laser&#45;photon direction in the electron rest frame." alt="" coords="225,120,460,161"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="169,158,212,154,207,157,171,163"/>
+<area shape="rect" id="Node000006" href="$namespacePhysics_1_1LinearCompton.html#af1dc480fe18b0e751cacad16f5928980" title="Compute the incoming photon energy in the electron rest frame." alt="" coords="218,5,467,46"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="107,147,155,104,216,62,247,50,243,53,219,67,158,109,111,151"/>
+<area shape="rect" id="Node000007" href="$namespacePhysics_1_1LinearCompton.html#add69fdb209ad5eca98deb3cd41192bfa" title="Compute the scattered photon energy in the electron rest frame." alt="" coords="233,285,452,326"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="112,188,160,227,219,265,249,280,243,280,216,269,157,231,111,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="679,101,716,113,710,113,679,107"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="460,138,565,140,560,141,461,143"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="435,117,503,104,498,106,437,122"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="460,157,515,163,597,168,679,163,715,160,709,161,680,168,597,173,515,168,460,163"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="379,44,443,78,516,113,565,131,560,131,514,117,440,83,379,49"/>
+<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="436,44,503,61,497,62,436,49"/>
+<area shape="poly" id="edge12_Node000006_Node000004" title=" " alt="" coords="467,17,573,24,627,34,680,49,732,74,777,108,771,107,729,79,678,53,626,39,572,30,468,23"/>
+<area shape="rect" id="Node000008" href="$namespacePhysics_1_1LinearCompton.html#afe9e8d02b6fb8390c51970925967fc55" title="Compute the dimensionless Klein&#45;Nishina parameter ." alt="" coords="515,285,679,326"/>
+<area shape="poly" id="edge14_Node000007_Node000008" title=" " alt="" coords="452,303,502,306,497,306,452,308"/>
 </map>

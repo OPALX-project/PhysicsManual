@@ -1,14 +1,14 @@
 var classParticleBinning_1_1Histogram =
 [
-    [ "dindex_transform_type", "classParticleBinning_1_1Histogram.html#a3d1e7f9b55c4a131ec8964105742da77", null ],
+    [ "dindex_transform_type", "classParticleBinning_1_1Histogram.html#a2179c5b017f28357f9c7f983dc533a90", null ],
     [ "dview_type", "classParticleBinning_1_1Histogram.html#a7338259c40acfaca490ee20f2c02ebad", null ],
     [ "dwidth_view_type", "classParticleBinning_1_1Histogram.html#ad86fff74241208a023c1b6ea5b7dd205", null ],
     [ "hindex_transform_type", "classParticleBinning_1_1Histogram.html#ab086b98f7eea830cb261ecf3bbcf7fee", null ],
     [ "hview_type", "classParticleBinning_1_1Histogram.html#a33fbdf9b65eda59db8efe2e664d8757c", null ],
     [ "hwidth_view_type", "classParticleBinning_1_1Histogram.html#a372a0123b1d63598c17460b8104373ba", null ],
     [ "index_transform_type", "classParticleBinning_1_1Histogram.html#a31810ce08f23e8491cab2e53da3c12c2", null ],
-    [ "view_type", "classParticleBinning_1_1Histogram.html#adad2344739b59aa1b2347ff136acf76b", null ],
-    [ "width_view_type", "classParticleBinning_1_1Histogram.html#a7e09eb589e0fedce033eda78ce917095", null ],
+    [ "view_type", "classParticleBinning_1_1Histogram.html#a713d3595d56d618526ed9aac423409ed", null ],
+    [ "width_view_type", "classParticleBinning_1_1Histogram.html#a12d24e4a873a84fc3cbd6a68dcc44b46", null ],
     [ "Histogram", "classParticleBinning_1_1Histogram.html#a2c76d1a3edb591263c0ce04e1a7e2b83", null ],
     [ "Histogram", "classParticleBinning_1_1Histogram.html#a009a05059021afb2aaace7d91b705cdc", null ],
     [ "Histogram", "classParticleBinning_1_1Histogram.html#af73769634a7e048d4adbee2f256e5569", null ],

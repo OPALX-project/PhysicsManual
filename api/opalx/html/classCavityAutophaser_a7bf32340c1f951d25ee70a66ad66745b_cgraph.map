@@ -1,44 +1,38 @@
 <map id="CavityAutophaser::optimizeCavityPhase" name="CavityAutophaser::optimizeCavityPhase">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,208,113"/>
-<area shape="rect" id="Node000002" href="$classRFCavity.html#a61ca169d6bfb338941f4aa2364d408c3" title=" " alt="" coords="256,5,463,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,70,255,39,286,31,287,37,257,45,163,75"/>
-<area shape="rect" id="Node000003" href="$classRFCavity.html#aa78f1fa142681e670afccaac01f8cba3" title=" " alt="" coords="265,55,454,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,80,251,76,251,81,209,85"/>
-<area shape="rect" id="Node000004" href="$classRFCavity.html#a05624fbb526f1796329afed4013f0af0" title=" " alt="" coords="537,80,699,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,90,524,90,524,95,208,95"/>
-<area shape="rect" id="Node000005" href="$classCavityAutophaser.html#a4e0425aa96902fe3bf08c4a95e4c2719" title=" " alt="" coords="270,180,449,205"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="160,110,314,172,312,177,158,115"/>
-<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="380,178,438,146,510,114,535,106,536,111,512,119,440,151,383,182"/>
-<area shape="rect" id="Node000006" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="793,204,957,229"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="449,203,511,209,652,215,780,215,780,221,652,220,510,214,449,208"/>
-<area shape="rect" id="Node000008" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="816,155,935,180"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="449,186,802,168,802,174,449,191"/>
-<area shape="rect" id="Node000009" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="817,571,934,596"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="372,204,428,275,469,321,513,365,580,428,634,474,693,514,774,556,804,567,802,572,772,560,691,518,631,479,576,432,509,369,465,325,424,279,368,207"/>
-<area shape="rect" id="Node000010" href="$classRFCavity.html#a83e48e03c9beba578b150a99961f59b5" title=" " alt="" coords="538,129,698,155"/>
-<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="425,177,539,155,540,160,426,182"/>
-<area shape="rect" id="Node000011" href="$classRFCavity.html#a77d5ae497916552ced4ab32004fbe1b6" title=" " alt="" coords="511,331,725,356"/>
-<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="384,203,584,321,582,326,381,208"/>
-<area shape="rect" id="Node000007" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="1060,229,1187,255"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="958,222,1047,232,1046,237,957,228"/>
-<area shape="poly" id="edge16_Node000011_Node000006" title=" " alt="" coords="636,328,695,289,772,246,812,231,814,236,774,251,697,293,639,333"/>
-<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="652,328,708,309,773,290,917,263,1046,247,1046,252,918,268,774,295,709,314,653,333"/>
-<area shape="poly" id="edge17_Node000011_Node000008" title=" " alt="" coords="626,329,682,262,724,222,772,189,802,177,804,182,775,194,728,226,686,265,631,332"/>
-<area shape="poly" id="edge18_Node000011_Node000009" title=" " alt="" coords="636,354,679,398,728,457,742,486,748,511,756,534,775,556,805,572,802,576,772,560,751,536,743,512,737,487,723,459,675,401,632,358"/>
-<area shape="rect" id="Node000012" href="$classRFCavity.html#aea1f8376a359364df059c0e2aaef3e57" title="Apply to reference particle with position R and momemtum P." alt="" coords="773,506,977,546"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="633,354,703,428,743,467,775,492,786,498,784,503,772,496,740,471,699,432,629,358"/>
-<area shape="rect" id="Node000014" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="1102,405,1145,431"/>
-<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="653,354,709,372,774,389,862,402,950,410,1088,415,1088,421,950,415,861,407,773,394,708,377,652,359"/>
-<area shape="rect" id="Node000015" href="$classPartBunch.html#ab312ee7cffe005fc4cd43d41ff5253ff" title=" " alt="" coords="784,355,967,380"/>
-<area shape="poly" id="edge19_Node000011_Node000015" title=" " alt="" coords="726,351,771,355,770,360,725,356"/>
-<area shape="rect" id="Node000016" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="808,456,943,481"/>
-<area shape="poly" id="edge20_Node000011_Node000016" title=" " alt="" coords="639,354,697,392,774,434,814,449,812,454,772,439,695,397,636,358"/>
-<area shape="rect" id="Node000018" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="806,305,945,331"/>
-<area shape="poly" id="edge23_Node000011_Node000018" title=" " alt="" coords="725,330,792,323,792,329,726,335"/>
-<area shape="rect" id="Node000013" href="$classFieldmap.html#a02b2453d94e652c04010373f0ef352f4" title="Get the field strength at a given point." alt="" coords="1025,513,1221,539"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="978,523,1011,523,1011,529,978,529"/>
-<area shape="poly" id="edge22_Node000016_Node000014" title=" " alt="" coords="938,453,1088,422,1089,428,939,458"/>
-<area shape="rect" id="Node000017" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="1095,456,1151,481"/>
-<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="943,466,1082,466,1082,471,943,471"/>
-<area shape="poly" id="edge24_Node000018_Node000014" title=" " alt="" coords="942,328,978,340,1039,367,1091,396,1089,401,1037,372,976,344,940,333"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,188,113"/>
+<area shape="rect" id="Node000002" href="$classRFCavity.html#a61ca169d6bfb338941f4aa2364d408c3" title=" " alt="" coords="236,5,428,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,70,235,40,261,34,257,37,236,45,152,74"/>
+<area shape="rect" id="Node000003" href="$classRFCavity.html#aa78f1fa142681e670afccaac01f8cba3" title=" " alt="" coords="244,55,420,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,81,231,77,227,80,189,85"/>
+<area shape="rect" id="Node000004" href="$classRFCavity.html#a05624fbb526f1796329afed4013f0af0" title=" " alt="" coords="501,105,652,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,95,487,111,484,115,189,100"/>
+<area shape="rect" id="Node000005" href="$classCavityAutophaser.html#a4e0425aa96902fe3bf08c4a95e4c2719" title=" " alt="" coords="251,156,413,182"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,111,277,149,273,152,163,116"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="396,153,499,133,494,136,398,158"/>
+<area shape="rect" id="Node000006" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="746,123,895,148"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="413,161,733,140,729,143,414,166"/>
+<area shape="rect" id="Node000008" href="$classRFCavity.html#a83e48e03c9beba578b150a99961f59b5" title=" " alt="" coords="501,207,652,232"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="397,180,499,202,494,204,398,185"/>
+<area shape="rect" id="Node000009" href="$classRFCavity.html#a77d5ae497916552ced4ab32004fbe1b6" title=" " alt="" coords="476,288,677,314"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="358,180,540,279,535,281,357,185"/>
+<area shape="rect" id="Node000007" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="964,148,1077,174"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="895,142,951,151,946,152,896,148"/>
+<area shape="poly" id="edge13_Node000009_Node000006" title=" " alt="" coords="610,285,643,267,675,243,690,223,698,204,706,185,724,165,744,156,749,153,727,170,711,188,703,206,695,226,679,247,646,272,612,290"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="602,285,676,243,699,224,724,209,781,190,841,176,951,164,946,165,842,181,783,195,726,214,702,229,679,247,604,290"/>
+<area shape="rect" id="Node000010" href="$classRFCavity.html#aea1f8376a359364df059c0e2aaef3e57" title="Apply to reference particle with position R and momemtum P." alt="" coords="725,223,916,264"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="634,285,719,267,713,269,635,290"/>
+<area shape="rect" id="Node000011" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="1001,437,1040,463"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="677,286,734,285,796,289,858,301,917,324,947,344,972,370,1008,425,1003,423,968,374,943,348,914,329,857,306,795,294,734,290,678,291"/>
+<area shape="rect" id="Node000012" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="765,339,876,364"/>
+<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="642,312,753,337,747,337,642,317"/>
+<area shape="rect" id="Node000013" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="766,388,875,414"/>
+<area shape="poly" id="edge15_Node000009_Node000013" title=" " alt="" coords="601,312,657,343,726,374,754,385,748,385,724,379,655,348,600,317"/>
+<area shape="rect" id="Node000014" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="758,487,883,512"/>
+<area shape="poly" id="edge16_Node000009_Node000014" title=" " alt="" coords="586,312,608,346,639,389,679,435,727,473,746,485,741,484,724,478,675,439,635,393,603,349,584,317"/>
+<area shape="rect" id="Node000016" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="756,437,885,463"/>
+<area shape="poly" id="edge19_Node000009_Node000016" title=" " alt="" coords="590,312,646,367,685,397,727,424,744,434,739,433,724,429,681,402,643,370,589,317"/>
+<area shape="poly" id="edge18_Node000014_Node000011" title=" " alt="" coords="875,483,983,459,988,458,876,489"/>
+<area shape="rect" id="Node000015" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="994,487,1047,512"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="883,497,981,499,976,500,883,502"/>
+<area shape="poly" id="edge20_Node000016_Node000011" title=" " alt="" coords="885,448,988,450,982,450,885,453"/>
 </map>

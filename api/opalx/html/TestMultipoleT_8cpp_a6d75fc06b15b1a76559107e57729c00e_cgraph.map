@@ -1,13 +1,127 @@
 <map id="TEST_F" name="TEST_F">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,75,56"/>
-<area shape="rect" id="Node000002" href="$classBeam.html#a605283d014f9629e67ce7f75489d84c8" title="Find named BEAM." alt="" coords="123,31,215,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,41,109,41,109,46,75,46"/>
-<area shape="rect" id="Node000003" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="289,5,403,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,34,274,25,275,31,215,39"/>
-<area shape="rect" id="Node000005" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="263,55,429,80"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="215,47,249,52,249,57,215,52"/>
-<area shape="rect" id="Node000004" href="$classDirectory.html#a9004a43fe680a069941293f8ab075c24" title="Find entry." alt="" coords="497,5,610,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,15,483,15,483,21,404,21"/>
-<area shape="rect" id="Node000006" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="477,55,629,80"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="429,65,464,65,464,70,429,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1103,76,1128"/>
+<area shape="rect" id="Node000002" href="$classBeam.html#a605283d014f9629e67ce7f75489d84c8" title="Find named BEAM." alt="" coords="124,1103,208,1128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,1113,110,1114,106,1117,76,1118"/>
+<area shape="rect" id="Node000003" href="$classBeam.html#aa2f4785d060499243482e165b6bcdd5f" title="Exemplar constructor." alt="" coords="256,280,353,306"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="167,1102,296,321,301,322,172,1103"/>
+<area shape="rect" id="Node000017" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="1729,1024,1882,1050"/>
+<area shape="poly" id="edge75_Node000002_Node000017" title=" " alt="" coords="209,1113,492,1113,1358,1113,1465,1107,1572,1091,1667,1071,1742,1055,1747,1054,1669,1076,1573,1096,1466,1112,1358,1118,492,1118,209,1118"/>
+<area shape="rect" id="Node000031" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="1753,1099,1858,1124"/>
+<area shape="poly" id="edge74_Node000002_Node000031" title=" " alt="" coords="209,1124,335,1149,413,1159,492,1164,1358,1164,1462,1159,1566,1149,1735,1125,1740,1125,1566,1154,1462,1165,1358,1169,492,1169,412,1165,334,1154,208,1129"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="280,280,276,271,279,262,289,256,305,253,322,256,332,264,327,266,320,261,305,259,290,261,283,265,281,271,286,280"/>
+<area shape="rect" id="Node000004" href="$classBeam.html#a62098d9fa037a4104eb59134fc02fa1a" title="Make clone." alt="" coords="446,153,540,179"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="321,278,356,244,400,208,429,193,460,183,457,187,431,198,403,213,359,247,326,281"/>
+<area shape="rect" id="Node000005" href="$classOpalData.html#ad98bcdd94e9a6ce0149f2d3d976c8779" title="Define a new object." alt="" coords="433,304,553,330"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="353,297,420,306,416,309,355,302"/>
+<area shape="rect" id="Node000016" href="$classDefinition.html#a90cf9458bd0af91f490ee3cf87c39682" title="Constructor for exemplars." alt="" coords="884,24,1024,50"/>
+<area shape="poly" id="edge19_Node000003_Node000016" title=" " alt="" coords="326,278,400,240,429,231,454,227,499,224,540,217,561,207,583,190,596,172,603,154,604,116,606,79,615,61,631,44,661,26,695,14,729,6,765,3,834,7,896,19,891,21,833,12,765,9,730,12,696,19,664,31,634,48,619,64,612,80,609,117,608,155,601,175,587,193,564,212,542,222,500,230,455,232,430,236,402,245,330,282"/>
+<area shape="poly" id="edge21_Node000003_Node000017" title=" " alt="" coords="307,304,314,376,329,487,357,618,378,684,404,746,444,817,486,865,532,911,587,974,607,1010,617,1025,634,1037,677,1058,716,1070,751,1075,786,1075,860,1068,953,1062,1358,1062,1548,1056,1711,1046,1716,1046,1549,1061,1358,1068,953,1068,860,1073,786,1081,751,1081,715,1075,676,1063,631,1042,613,1028,603,1013,582,977,528,915,482,869,440,820,399,749,373,685,352,619,324,488,309,377,306,309"/>
+<area shape="rect" id="Node000019" href="$namespaceAttributes.html#a68b7d34fbeb1da8447087c5ae6f3564f" title="Make predefined string attribute." alt="" coords="403,987,583,1028"/>
+<area shape="poly" id="edge23_Node000003_Node000019" title=" " alt="" coords="307,304,312,430,325,628,337,733,354,831,376,912,389,943,403,967,412,978,407,977,399,971,384,946,371,913,349,832,332,734,320,629,307,430,306,309"/>
+<area shape="rect" id="Node000020" href="$namespaceAttributes.html#a6e6d302b6aceb7118637b3670373809b" title="Make real attribute." alt="" coords="421,1052,565,1078"/>
+<area shape="poly" id="edge24_Node000003_Node000020" title=" " alt="" coords="306,303,309,442,318,663,330,780,347,888,371,978,386,1012,403,1038,410,1046,405,1045,399,1041,381,1015,366,979,341,889,324,781,313,663,303,442,305,309"/>
+<area shape="rect" id="Node000021" href="$namespaceAttributes.html#ae9a947ca42d331f722e06f3a921fe170" title="Make string attribute." alt="" coords="417,39,569,64"/>
+<area shape="poly" id="edge25_Node000003_Node000021" title=" " alt="" coords="305,279,313,239,330,184,358,126,377,99,400,75,408,71,405,75,403,79,381,102,363,128,335,186,319,240,310,280"/>
+<area shape="rect" id="Node000022" href="$namespaceAttributes.html#a263b7b64504bc4e88141a8de608cbf84" title="Make uppercase string array attribute." alt="" coords="401,89,585,129"/>
+<area shape="poly" id="edge26_Node000003_Node000022" title=" " alt="" coords="308,278,340,212,366,173,400,139,408,135,404,140,403,143,370,176,345,215,313,280"/>
+<area shape="rect" id="Node000023" href="$classObject.html#a11c14d6b194bf37c2883bb42922852ac" title=" " alt="" coords="407,255,579,280"/>
+<area shape="poly" id="edge27_Node000003_Node000023" title=" " alt="" coords="352,284,393,280,389,283,355,289"/>
+<area shape="rect" id="Node000025" href="$classBeam.html#a8e37cab990f7b4aa87f7cd481949e873" title="Update the BEAM data." alt="" coords="442,709,544,735"/>
+<area shape="poly" id="edge31_Node000003_Node000025" title=" " alt="" coords="313,304,483,695,477,696,310,309"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="443,169,403,189,356,227,322,268,317,266,352,223,400,184,447,165"/>
+<area shape="rect" id="Node000006" href="$classObject.html#a2462226f913277dbeec5928dd40c25c9" title="Test if replacement is allowed." alt="" coords="878,329,1030,355"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="503,327,526,354,555,385,592,416,634,439,686,455,729,460,772,454,825,438,856,424,885,405,930,368,934,365,888,409,859,429,827,443,773,460,729,466,685,460,632,443,589,420,551,389,522,357,504,333"/>
+<area shape="rect" id="Node000008" href="$classOpalData.html#a352ed422ba6872cc3c76cc4dc32dc9d1" title="Delete existing entry." alt="" coords="671,156,788,182"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="552,307,583,291,594,279,600,268,606,242,612,216,619,203,631,191,658,178,654,181,634,195,623,206,617,218,611,243,605,269,598,282,586,295,555,311"/>
+<area shape="rect" id="Node000011" href="$classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39" title="Return object name." alt="" coords="656,403,803,428"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="515,328,569,358,634,389,653,397,648,399,632,394,566,363,516,333"/>
+<area shape="rect" id="Node000012" href="$classObject.html#ae7e75b2311e00969ae6308e899d32686" title="True, if [b]this[/b] is a built&#45;in object." alt="" coords="673,353,786,379"/>
+<area shape="poly" id="edge15_Node000005_Node000012" title=" " alt="" coords="553,327,660,350,655,353,554,332"/>
+<area shape="rect" id="Node000013" href="$classTable.html#a83eb57bb3e4e17a0893ba0b217448a67" title="Find out if table depends on the object identified by [b]name[/b]." alt="" coords="663,205,796,231"/>
+<area shape="poly" id="edge16_Node000005_Node000013" title=" " alt="" coords="551,304,583,291,598,279,606,266,616,253,631,240,650,233,646,236,634,245,620,256,611,269,602,282,586,295,555,308"/>
+<area shape="rect" id="Node000014" href="$classObject.html#aa48af24109cadc6f450bcc37523651a5" title="Set/reset the [b]modified[/b] flag." alt="" coords="673,255,786,280"/>
+<area shape="poly" id="edge17_Node000005_Node000014" title=" " alt="" coords="552,302,660,281,655,284,555,307"/>
+<area shape="rect" id="Node000015" href="$classOpalData.html#a43390aa41dfa944e82a47c760923c242" title="Set the global momentum." alt="" coords="670,304,788,330"/>
+<area shape="poly" id="edge18_Node000005_Node000015" title=" " alt="" coords="552,315,657,316,653,318,554,319"/>
+<area shape="rect" id="Node000007" href="$classObject.html#a83e89407c41a89f1a52086b8029fd99e" title="Constructor for exemplars." alt="" coords="1098,132,1204,158"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="966,327,1124,171,1128,167,970,331"/>
+<area shape="rect" id="Node000009" href="$classObject.html#a489e6b0505923e64c18a8bb83062d5e3" title="Return parent pointer." alt="" coords="892,107,1016,132"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="787,154,880,135,875,138,789,159"/>
+<area shape="rect" id="Node000010" href="$classObject.html#a01d106dd393b42e0622f2158b2f0a6da" title="Set parent object." alt="" coords="892,156,1016,182"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="787,167,879,168,874,170,789,171"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="1016,125,1086,135,1081,137,1017,130"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="1015,159,1086,152,1081,154,1018,164"/>
+<area shape="poly" id="edge20_Node000016_Node000007" title=" " alt="" coords="979,48,1115,124,1110,125,980,53"/>
+<area shape="rect" id="Node000018" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1930,1024,2069,1050"/>
+<area shape="poly" id="edge22_Node000017_Node000018" title=" " alt="" coords="1882,1034,1917,1037,1912,1037,1882,1040"/>
+<area shape="poly" id="edge30_Node000023_Node000009" title=" " alt="" coords="555,252,583,234,596,214,603,195,603,154,602,134,605,114,614,95,631,77,666,59,703,49,742,47,782,52,857,72,918,99,913,100,855,77,781,57,742,53,704,55,667,64,634,82,618,98,610,116,608,134,608,154,608,196,601,217,587,238,559,256"/>
+<area shape="poly" id="edge29_Node000023_Node000011" title=" " alt="" coords="567,278,586,290,598,302,605,315,611,341,617,366,623,378,634,390,644,398,639,398,631,394,619,381,612,368,606,342,600,317,594,305,583,294,568,284"/>
+<area shape="rect" id="Node000024" href="$classAttributeHandler.html#a550c346064f9c4e06ff5c88ff4b0ae9e" title=" " alt="" coords="633,91,826,132"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="551,252,583,234,600,212,606,189,613,165,631,142,638,139,634,143,635,145,618,168,611,190,604,214,586,238,555,256"/>
+<area shape="poly" id="edge47_Node000025_Node000011" title=" " alt="" coords="498,708,546,613,585,550,631,490,662,460,697,435,693,439,665,464,635,493,589,553,551,615,502,711"/>
+<area shape="rect" id="Node000026" href="$classBeam.html#a61641135ee698769b42408eefca7e294" title="Return the charge number in elementary charge." alt="" coords="892,735,1016,760"/>
+<area shape="poly" id="edge32_Node000025_Node000026" title=" " alt="" coords="544,722,879,742,874,745,545,728"/>
+<area shape="rect" id="Node000027" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="1086,740,1216,766"/>
+<area shape="poly" id="edge60_Node000025_Node000027" title=" " alt="" coords="544,715,636,709,758,705,896,707,1035,720,1097,735,1091,736,1034,725,896,712,758,710,637,714,545,720"/>
+<area shape="rect" id="Node000039" href="$classBeam.html#a834d3211e650bf775fa97d219ccd2a3e" title="Return Particle&#39;s rest mass in GeV." alt="" coords="898,784,1011,810"/>
+<area shape="poly" id="edge45_Node000025_Node000039" title=" " alt="" coords="544,728,633,742,885,785,880,786,632,748,545,733"/>
+<area shape="rect" id="Node000040" href="$classParticleProperties.html#ac1987a9b0fec1632a680cb2093407c3e" title=" " alt="" coords="663,987,796,1028"/>
+<area shape="poly" id="edge48_Node000025_Node000040" title=" " alt="" coords="499,733,516,778,543,840,583,908,607,939,634,967,652,981,646,980,631,971,603,943,578,911,539,843,511,780,497,738"/>
+<area shape="rect" id="Node000041" href="$classParticleProperties.html#a7375dfb0fc68ebc0f8779cd2fc1f3bd1" title=" " alt="" coords="667,503,792,544"/>
+<area shape="poly" id="edge49_Node000025_Node000041" title=" " alt="" coords="500,707,549,636,587,593,631,555,655,544,651,547,634,559,590,596,553,639,504,711"/>
+<area shape="rect" id="Node000042" href="$classBeam.html#a03e6460760866b6c5de7d3fa91037f3b" title="Return Particle&#39;s name." alt="" coords="874,836,1034,862"/>
+<area shape="poly" id="edge50_Node000025_Node000042" title=" " alt="" coords="521,733,573,756,633,778,750,809,861,833,856,834,749,814,632,783,571,761,521,738"/>
+<area shape="rect" id="Node000045" href="$classParticleProperties.html#af929a4aaca5748e6ffab3d29e25b4279" title=" " alt="" coords="667,569,792,609"/>
+<area shape="poly" id="edge59_Node000025_Node000045" title=" " alt="" coords="507,707,560,664,631,619,655,610,650,613,634,623,563,669,511,711"/>
+<area shape="rect" id="Node000046" href="$classBeam.html#a69955852cb58a78356261fb54f124d21" title="True if this beam is configured as a photon beam." alt="" coords="672,887,786,912"/>
+<area shape="poly" id="edge61_Node000025_Node000046" title=" " alt="" coords="504,733,556,797,593,833,634,865,661,881,656,881,631,870,589,837,552,800,503,738"/>
+<area shape="rect" id="Node000047" href="$classObject.html#ace74608c221c27844e0eb08d6d25d269" title="Set object name." alt="" coords="656,633,803,659"/>
+<area shape="poly" id="edge63_Node000025_Node000047" title=" " alt="" coords="534,706,675,663,670,666,537,711"/>
+<area shape="rect" id="Node000048" href="$namespaceAttributes.html#aa92fad2ca301134087589e159653b624" title="Set real value." alt="" coords="1086,863,1216,888"/>
+<area shape="poly" id="edge64_Node000025_Node000048" title=" " alt="" coords="499,733,516,774,543,827,582,881,606,904,634,923,695,947,761,958,828,960,894,953,957,941,1015,925,1104,895,1109,894,1017,930,958,946,895,958,828,965,760,964,694,952,631,927,603,908,578,885,538,830,511,776,498,738"/>
+<area shape="poly" id="edge33_Node000026_Node000027" title=" " alt="" coords="1016,747,1073,750,1068,751,1017,752"/>
+<area shape="rect" id="Node000028" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="1281,626,1433,667"/>
+<area shape="poly" id="edge34_Node000027_Node000028" title=" " alt="" coords="1198,737,1218,727,1233,714,1242,702,1251,689,1266,676,1273,675,1277,673,1269,680,1255,693,1246,705,1236,718,1221,731,1200,742"/>
+<area shape="rect" id="Node000035" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="1294,691,1420,716"/>
+<area shape="poly" id="edge41_Node000027_Node000035" title=" " alt="" coords="1207,737,1288,720,1283,721,1209,742"/>
+<area shape="rect" id="Node000036" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="1286,740,1428,766"/>
+<area shape="poly" id="edge42_Node000027_Node000036" title=" " alt="" coords="1216,750,1273,753,1268,753,1217,756"/>
+<area shape="rect" id="Node000037" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="1291,789,1422,815"/>
+<area shape="poly" id="edge43_Node000027_Node000037" title=" " alt="" coords="1208,764,1288,785,1282,785,1208,769"/>
+<area shape="rect" id="Node000038" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="1271,839,1443,864"/>
+<area shape="poly" id="edge44_Node000027_Node000038" title=" " alt="" coords="1170,764,1214,795,1269,825,1285,834,1280,833,1267,830,1211,799,1169,769"/>
+<area shape="rect" id="Node000029" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="1494,796,1681,822"/>
+<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="1425,665,1447,676,1483,701,1516,729,1568,785,1563,783,1512,733,1480,705,1445,681,1425,670"/>
+<area shape="rect" id="Node000030" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="1512,959,1664,1000"/>
+<area shape="poly" id="edge36_Node000028_Node000030" title=" " alt="" coords="1433,665,1448,676,1463,696,1473,715,1480,751,1483,789,1496,833,1530,894,1564,948,1559,946,1525,896,1492,835,1478,790,1475,752,1468,716,1459,699,1444,680,1432,670"/>
+<area shape="rect" id="Node000033" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="1506,633,1669,659"/>
+<area shape="poly" id="edge40_Node000028_Node000033" title=" " alt="" coords="1433,644,1493,646,1488,647,1434,649"/>
+<area shape="poly" id="edge38_Node000030_Node000017" title=" " alt="" coords="1665,997,1742,1020,1736,1019,1664,1002"/>
+<area shape="poly" id="edge37_Node000030_Node000031" title=" " alt="" coords="1624,998,1773,1091,1767,1090,1622,1003"/>
+<area shape="rect" id="Node000032" href="$classExpressions_1_1SRefAttr.html#ae5bd0acc16f2c15a7dc55b28b998e7ab" title="Constructor." alt="" coords="1729,959,1882,1000"/>
+<area shape="poly" id="edge39_Node000030_Node000032" title=" " alt="" coords="1664,977,1717,979,1711,980,1664,982"/>
+<area shape="poly" id="edge46_Node000039_Node000027" title=" " alt="" coords="1010,782,1078,769,1073,770,1012,787"/>
+<area shape="rect" id="Node000043" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="1082,691,1220,716"/>
+<area shape="poly" id="edge51_Node000042_Node000043" title=" " alt="" coords="1012,833,1033,820,1050,798,1056,774,1063,750,1080,726,1083,726,1088,724,1084,729,1067,752,1061,776,1054,800,1036,824,1014,838"/>
+<area shape="poly" id="edge55_Node000043_Node000017" title=" " alt="" coords="1162,688,1204,648,1234,627,1267,612,1296,608,1348,606,1487,607,1619,613,1683,619,1704,642,1718,665,1727,688,1731,712,1727,761,1715,810,1702,860,1696,910,1698,935,1703,960,1714,985,1731,1010,1734,1015,1729,1013,1727,1013,1710,987,1698,962,1692,936,1691,910,1697,859,1710,809,1722,760,1725,713,1722,690,1714,667,1700,645,1680,623,1619,618,1486,613,1348,611,1297,613,1268,617,1237,632,1208,652,1165,693"/>
+<area shape="poly" id="edge52_Node000043_Node000028" title=" " alt="" coords="1199,688,1269,670,1264,672,1201,693"/>
+<area shape="poly" id="edge53_Node000043_Node000035" title=" " alt="" coords="1220,701,1281,703,1276,704,1220,706"/>
+<area shape="poly" id="edge54_Node000043_Node000036" title=" " alt="" coords="1208,714,1288,736,1282,736,1208,720"/>
+<area shape="poly" id="edge56_Node000043_Node000037" title=" " alt="" coords="1199,714,1221,725,1236,739,1246,752,1255,764,1269,776,1279,783,1274,783,1266,781,1251,768,1241,755,1232,742,1218,730,1199,720"/>
+<area shape="poly" id="edge57_Node000043_Node000038" title=" " alt="" coords="1204,714,1221,726,1233,739,1240,752,1246,778,1252,802,1258,814,1269,826,1274,831,1269,830,1266,830,1254,817,1247,804,1241,779,1235,754,1229,742,1218,730,1203,720"/>
+<area shape="rect" id="Node000044" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="1309,525,1404,551"/>
+<area shape="poly" id="edge58_Node000043_Node000044" title=" " alt="" coords="1159,688,1200,631,1231,598,1266,568,1292,557,1297,555,1269,573,1234,602,1204,635,1162,692"/>
+<area shape="poly" id="edge62_Node000046_Node000042" title=" " alt="" coords="786,884,881,865,876,867,787,889"/>
+<area shape="poly" id="edge66_Node000048_Node000035" title=" " alt="" coords="1159,860,1210,788,1240,750,1266,725,1277,722,1282,720,1269,730,1244,754,1214,791,1163,865"/>
+<area shape="poly" id="edge67_Node000048_Node000036" title=" " alt="" coords="1163,860,1205,818,1234,795,1266,775,1276,773,1281,771,1269,779,1238,799,1209,822,1165,865"/>
+<area shape="poly" id="edge68_Node000048_Node000037" title=" " alt="" coords="1180,860,1267,824,1285,821,1290,819,1269,829,1182,865"/>
+<area shape="poly" id="edge69_Node000048_Node000038" title=" " alt="" coords="1216,865,1257,863,1252,864,1217,871"/>
+<area shape="rect" id="Node000049" href="$classExpressions_1_1SValue.html#a57f881a2c660170aeab462b6880fc5a0" title="Evaluate." alt="" coords="1286,987,1428,1028"/>
+<area shape="poly" id="edge65_Node000048_Node000049" title=" " alt="" coords="1165,886,1210,929,1269,973,1279,981,1273,980,1266,978,1206,933,1164,892"/>
+<area shape="rect" id="Node000050" href="$classAttribute.html#a6cd34bcfad889b4215734cbc0b5eafc2" title="Define new value." alt="" coords="1309,888,1405,914"/>
+<area shape="poly" id="edge70_Node000048_Node000050" title=" " alt="" coords="1217,881,1296,893,1291,893,1217,886"/>
+<area shape="rect" id="Node000051" href="$classExpressions_1_1SRefAttr.html#a9f2de4ecdd67c51008baf6f6d247c0b1" title="Store new value." alt="" coords="1268,937,1446,963"/>
+<area shape="poly" id="edge71_Node000048_Node000051" title=" " alt="" coords="1180,886,1269,924,1290,933,1284,932,1267,929,1180,892"/>
+<area shape="poly" id="edge72_Node000051_Node000029" title=" " alt="" coords="1420,934,1445,924,1479,903,1511,879,1561,835,1566,832,1514,883,1482,907,1447,929,1421,939"/>
+<area shape="poly" id="edge73_Node000051_Node000030" title=" " alt="" coords="1446,959,1499,968,1493,968,1446,964"/>
 </map>

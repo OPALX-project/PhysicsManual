@@ -1,17 +1,17 @@
 <map id="FlatTop::testNumEmitParticles" name="FlatTop::testNumEmitParticles">
-<area shape="rect" id="Node000001" title="Tests the number of emitted particles over a given number of steps." alt="" coords="5,169,224,194"/>
-<area shape="rect" id="Node000002" href="$classFlatTop.html#ae59df1c7e2dc7503000a807ff13cc04b" title="Counts the number of particles entering per rank in a given time interval." alt="" coords="272,112,495,152"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,166,260,152,261,157,185,171"/>
-<area shape="rect" id="Node000007" href="$classFlatTop.html#a17147ac4da8a969f258bb5197f2ce20e" title="Generates particles (x,y) uniformly on a disk distribution." alt="" coords="275,197,492,222"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="224,190,261,194,261,199,224,195"/>
-<area shape="rect" id="Node000003" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="555,5,770,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,110,477,82,542,55,565,47,567,52,544,60,479,87,423,114"/>
-<area shape="rect" id="Node000004" href="$classFlatTop.html#a7f4b759081ce89b112073272bb3341dc" title="Computes the local number of particles uniformly distributed among ranks." alt="" coords="543,70,783,95"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="494,110,576,95,577,100,495,115"/>
-<area shape="rect" id="Node000005" href="$classFlatTop.html#a26dac9221a7d23f41602dfdc33864ead" title="Computes the flat&#45;top profile value at a given time." alt="" coords="580,119,745,145"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="495,129,566,129,566,135,495,135"/>
-<area shape="rect" id="Node000006" href="$classFlatTop.html#a773ee38218141908061b8429d84db01b" title="Integrates using the trapezoidal rule." alt="" coords="557,169,768,194"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="495,149,577,164,576,169,494,154"/>
-<area shape="rect" id="Node000008" href="$VectorMath_8h.html#ae35e3c7b11f541ba1edcdb0e58e20a99" title=" " alt="" coords="599,218,726,243"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="492,215,586,222,586,228,492,220"/>
+<area shape="rect" id="Node000001" title="Tests the number of emitted particles over a given number of steps." alt="" coords="5,169,206,194"/>
+<area shape="rect" id="Node000002" href="$classFlatTop.html#ae59df1c7e2dc7503000a807ff13cc04b" title="Counts the number of particles entering per rank in a given time interval." alt="" coords="254,112,457,153"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,166,241,155,236,156,175,171"/>
+<area shape="rect" id="Node000007" href="$classFlatTop.html#a17147ac4da8a969f258bb5197f2ce20e" title="Generates particles (x,y) uniformly on a disk distribution." alt="" coords="258,197,453,222"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="206,190,245,197,239,197,206,196"/>
+<area shape="rect" id="Node000003" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="516,5,710,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,109,445,82,504,55,519,52,524,50,506,60,447,87,395,114"/>
+<area shape="rect" id="Node000004" href="$classFlatTop.html#a7f4b759081ce89b112073272bb3341dc" title="Computes the local number of particles uniformly distributed among ranks." alt="" coords="505,70,720,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="457,110,529,99,524,100,458,115"/>
+<area shape="rect" id="Node000005" href="$classFlatTop.html#a26dac9221a7d23f41602dfdc33864ead" title="Computes the flat&#45;top profile value at a given time." alt="" coords="536,120,689,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="457,130,524,132,519,133,458,135"/>
+<area shape="rect" id="Node000006" href="$classFlatTop.html#a773ee38218141908061b8429d84db01b" title="Integrates using the trapezoidal rule." alt="" coords="518,169,707,194"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="457,149,530,165,524,165,457,154"/>
+<area shape="rect" id="Node000008" href="$VectorMath_8h.html#ae35e3c7b11f541ba1edcdb0e58e20a99" title=" " alt="" coords="556,218,669,244"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="453,215,544,225,538,225,453,220"/>
 </map>

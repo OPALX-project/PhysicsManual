@@ -1,7 +1,7 @@
 var searchData=
 [
   ['acceleratingfield_0',['AcceleratingField',['../AcceleratingField_8h.html#a4bbd4f23aa351823b1a183532088ca46',1,'AcceleratingField.h']]],
-  ['adaptbins_5ft_1',['adaptbins_t',['../classBinnedFieldSolver.html#a9f83f0729148130a633fa52dbe984d3b',1,'BinnedFieldSolver::AdaptBins_t'],['../classPartBunch.html#a526d8e1542778daa85c31fc0635def20',1,'PartBunch::AdaptBins_t'],['../TestBinning_8cpp.html#ae737c84f0c6068fdc0ab27e55c2abc08',1,'AdaptBins_t:&#160;TestBinning.cpp']]],
+  ['adaptbins_5ft_1',['AdaptBins_t',['../classBinnedFieldSolver.html#a9f83f0729148130a633fa52dbe984d3b',1,'BinnedFieldSolver::AdaptBins_t'],['../classPartBunch.html#a526d8e1542778daa85c31fc0635def20',1,'PartBunch::AdaptBins_t'],['../TestBinning_8cpp.html#ae737c84f0c6068fdc0ab27e55c2abc08',1,'AdaptBins_t:&#160;TestBinning.cpp']]],
   ['arrayfun_2',['ArrayFun',['../namespaceExpressions.html#a1f3e7f02c3743227253c0f289e558a86',1,'Expressions']]],
   ['astra1ddynamic_3',['Astra1DDynamic',['../Definitions_8h.html#a2a18d104edf25044c5f1994ce188029e',1,'Definitions.h']]],
   ['astra1ddynamic_5ffast_4',['Astra1DDynamic_fast',['../Definitions_8h.html#a0d0b1f87983fff67a9a39252f5c22ef7',1,'Definitions.h']]],

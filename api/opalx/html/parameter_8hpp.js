@@ -9,5 +9,5 @@ var parameter_8hpp =
     ] ],
     [ "BOOST_SPIRIT_NO_PREDEFINED_TERMINALS", "parameter_8hpp.html#afd994602a1d960a01dd5200ad164f12b", null ],
     [ "BOOST_SPIRIT_QI_DEBUG", "parameter_8hpp.html#ab58c64bda03361ce3203ccfacce652b6", null ],
-    [ "operator<<", "parameter_8hpp.html#a8f53219b3204d1adf1d519ffab1d2d49", null ]
+    [ "SDDS::operator<<", "namespaceSDDS.html#a8f53219b3204d1adf1d519ffab1d2d49", null ]
 ];

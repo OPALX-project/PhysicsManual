@@ -1,20 +1,20 @@
 <map id="TEST_F" name="TEST_F">
-<area shape="rect" id="Node000001" title="This test counts the number of particles entering the domain per rank for a FlatTop pulse." alt="" coords="5,169,75,194"/>
-<area shape="rect" id="Node000002" href="$classFlatTop.html#a32d07a2a16791ab64ac6e53566c02052" title="Allocates memory for a given number of particles." alt="" coords="147,54,331,79"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,166,77,128,97,107,121,90,138,82,140,86,124,94,101,111,81,132,52,170"/>
-<area shape="rect" id="Node000003" href="$classFlatTop.html#ae59df1c7e2dc7503000a807ff13cc04b" title="Counts the number of particles entering per rank in a given time interval." alt="" coords="127,104,350,144"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,169,155,145,157,150,76,174"/>
-<area shape="rect" id="Node000006" href="$classFlatTop.html#a26dac9221a7d23f41602dfdc33864ead" title="Computes the flat&#45;top profile value at a given time." alt="" coords="440,169,605,194"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="75,179,426,179,426,184,75,184"/>
-<area shape="rect" id="Node000008" href="$classFlatTop.html#afc5347015e292a565f317a18955f2ace" title="Returns the total area of the distribution." alt="" coords="161,219,316,245"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="76,187,176,213,174,218,74,193"/>
-<area shape="rect" id="Node000009" href="$classFlatTop.html#a852d4cc9285b5a76fff8fe8d5052c32c" title="Sets whether to use domain decomposition." alt="" coords="123,269,355,294"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="53,193,83,225,102,241,124,255,139,262,137,267,121,260,99,245,79,228,49,196"/>
-<area shape="rect" id="Node000004" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="415,5,630,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="320,101,353,88,377,72,401,55,420,47,422,52,404,60,380,76,356,93,322,106"/>
-<area shape="rect" id="Node000005" href="$classFlatTop.html#a7f4b759081ce89b112073272bb3341dc" title="Computes the local number of particles uniformly distributed among ranks." alt="" coords="403,70,643,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="350,105,421,95,422,100,351,110"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="338,141,403,155,446,163,445,169,402,160,337,147"/>
-<area shape="rect" id="Node000007" href="$classFlatTop.html#a773ee38218141908061b8429d84db01b" title="Integrates using the trapezoidal rule." alt="" coords="417,119,628,145"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="350,124,404,126,404,131,350,130"/>
+<area shape="rect" id="Node000001" title="This test counts the number of particles entering the domain per rank for a FlatTop pulse." alt="" coords="5,169,76,194"/>
+<area shape="rect" id="Node000002" href="$classFlatTop.html#a32d07a2a16791ab64ac6e53566c02052" title="Allocates memory for a given number of particles." alt="" coords="145,54,314,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,167,77,129,98,108,122,90,138,84,134,88,125,95,102,112,81,132,52,170"/>
+<area shape="rect" id="Node000003" href="$classFlatTop.html#ae59df1c7e2dc7503000a807ff13cc04b" title="Counts the number of particles entering per rank in a given time interval." alt="" coords="128,104,331,145"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="75,169,147,148,144,152,77,174"/>
+<area shape="rect" id="Node000006" href="$classFlatTop.html#a26dac9221a7d23f41602dfdc33864ead" title="Computes the flat&#45;top profile value at a given time." alt="" coords="414,169,567,194"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="76,179,400,179,399,184,76,184"/>
+<area shape="rect" id="Node000008" href="$classFlatTop.html#afc5347015e292a565f317a18955f2ace" title="Returns the total area of the distribution." alt="" coords="159,220,300,245"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="76,188,166,213,162,217,76,194"/>
+<area shape="rect" id="Node000009" href="$classFlatTop.html#a852d4cc9285b5a76fff8fe8d5052c32c" title="Sets whether to use domain decomposition." alt="" coords="124,269,335,294"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="53,192,84,225,125,255,138,263,133,263,122,260,80,229,51,197"/>
+<area shape="rect" id="Node000004" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="394,5,588,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,101,334,90,357,73,382,55,397,51,393,53,384,60,361,77,336,95,310,106"/>
+<area shape="rect" id="Node000005" href="$classFlatTop.html#a7f4b759081ce89b112073272bb3341dc" title="Computes the local number of particles uniformly distributed among ranks." alt="" coords="383,70,598,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="331,106,393,98,388,100,332,111"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="325,143,416,164,411,165,325,148"/>
+<area shape="rect" id="Node000007" href="$classFlatTop.html#a773ee38218141908061b8429d84db01b" title="Integrates using the trapezoidal rule." alt="" coords="396,120,585,145"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="331,125,383,128,378,130,332,130"/>
 </map>

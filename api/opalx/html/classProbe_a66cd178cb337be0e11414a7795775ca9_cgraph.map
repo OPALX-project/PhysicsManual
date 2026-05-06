@@ -1,23 +1,23 @@
 <map id="Probe::doCheck" name="Probe::doCheck">
-<area shape="rect" id="Node000001" title="Record probe hits when bunch particles pass." alt="" coords="5,146,128,171"/>
-<area shape="rect" id="Node000002" href="$classPluginElement.html#abbfbead301a64381ff66c52ce7fa4538" title="Calculate angle of particle/bunch wrt to element." alt="" coords="189,5,372,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,144,118,104,175,62,201,48,204,53,177,66,122,108,82,148"/>
-<area shape="rect" id="Node000003" href="$classPluginElement.html#a4c738e1000b3af8b5f1ae0837af2e2ed" title="Change probe width depending on step size and angle of particle." alt="" coords="176,121,385,146"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,149,162,145,162,150,129,154"/>
-<area shape="rect" id="Node000004" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="503,47,546,73"/>
-<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="89,144,128,124,175,105,263,85,351,71,489,59,490,64,352,76,264,90,177,111,130,128,91,148"/>
-<area shape="rect" id="Node000006" href="$classPartBunch.html#a83c34065192f9beb066f6707bdcdb29f" title="Do not use; throws (access momenta via ParticleContainer::P)." alt="" coords="473,195,576,221"/>
-<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="129,163,460,198,459,204,128,168"/>
-<area shape="rect" id="Node000009" href="$classPluginElement.html#a10b18616b8ee50849ca1af87158d21c3" title="Checks if coordinate is within element." alt="" coords="183,222,378,247"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="99,169,177,200,223,215,222,221,175,205,97,174"/>
-<area shape="rect" id="Node000010" href="$classPartBunch.html#a01d1474e4564a031f13f792825c4894a" title="Do not use; throws (access positions via ParticleContainer::R)." alt="" coords="229,271,333,297"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="80,170,119,213,147,237,177,258,216,272,214,277,175,262,143,242,116,217,76,173"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="324,118,384,99,433,81,489,66,491,71,434,87,386,104,326,123"/>
-<area shape="rect" id="Node000005" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="461,97,588,122"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="385,120,448,114,448,119,386,126"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="326,144,386,163,434,180,463,189,462,194,432,185,384,168,324,149"/>
-<area shape="rect" id="Node000007" href="$classPluginElement.html#a1470361a1fb6b23c441f9015cecbdb36" title="Sets geometry geom_m with element width dist." alt="" coords="433,146,616,171"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="386,142,420,145,420,150,385,147"/>
-<area shape="rect" id="Node000008" href="$classPluginElement.html#a5562e4353b0ded237b1e6471c5319ece" title="Virtual hook for setGeom." alt="" coords="664,146,864,171"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="616,156,650,156,650,161,616,161"/>
+<area shape="rect" id="Node000001" title="Record probe hits when bunch particles pass." alt="" coords="5,146,121,172"/>
+<area shape="rect" id="Node000002" href="$classPluginElement.html#abbfbead301a64381ff66c52ce7fa4538" title="Calculate angle of particle/bunch wrt to element." alt="" coords="181,5,346,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,144,113,105,167,62,191,51,187,55,170,67,117,109,78,147"/>
+<area shape="rect" id="Node000003" href="$classPluginElement.html#a4c738e1000b3af8b5f1ae0837af2e2ed" title="Change probe width depending on step size and angle of particle." alt="" coords="169,121,358,146"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,149,155,146,151,149,122,154"/>
+<area shape="rect" id="Node000004" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="470,48,509,73"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="85,144,123,124,168,106,247,86,327,72,456,61,451,63,327,78,248,91,169,111,125,128,88,148"/>
+<area shape="rect" id="Node000006" href="$classPartBunch.html#a83c34065192f9beb066f6707bdcdb29f" title="Do not use; throws (access momenta via ParticleContainer::P)." alt="" coords="440,196,539,221"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="121,163,425,198,423,203,121,168"/>
+<area shape="rect" id="Node000009" href="$classPluginElement.html#a10b18616b8ee50849ca1af87158d21c3" title="Checks if coordinate is within element." alt="" coords="174,222,352,248"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="95,170,170,201,209,216,204,217,168,205,95,175"/>
+<area shape="rect" id="Node000010" href="$classPartBunch.html#a01d1474e4564a031f13f792825c4894a" title="Do not use; throws (access positions via ParticleContainer::R)." alt="" coords="213,272,314,297"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="75,170,114,214,141,238,170,258,201,273,195,273,167,263,137,242,111,218,73,175"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="303,118,357,99,405,82,457,69,452,71,407,87,359,104,305,123"/>
+<area shape="rect" id="Node000005" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="432,97,546,122"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="358,121,420,116,414,118,359,126"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="305,144,359,163,407,182,428,191,423,191,405,187,357,168,305,150"/>
+<area shape="rect" id="Node000007" href="$classPluginElement.html#a1470361a1fb6b23c441f9015cecbdb36" title="Sets geometry geom_m with element width dist." alt="" coords="406,146,572,172"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="358,142,393,148,388,148,359,147"/>
+<area shape="rect" id="Node000008" href="$classPluginElement.html#a5562e4353b0ded237b1e6471c5319ece" title="Virtual hook for setGeom." alt="" coords="620,146,803,172"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="573,156,607,159,602,159,573,162"/>
 </map>

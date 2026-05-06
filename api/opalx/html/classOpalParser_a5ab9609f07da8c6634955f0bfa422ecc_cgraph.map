@@ -1,48 +1,46 @@
 <map id="OpalParser::run" name="OpalParser::run">
-<area shape="rect" id="Node000001" title="Read current stream." alt="" coords="5,459,127,484"/>
-<area shape="rect" id="Node000002" href="$classStatement.html#abf261c86e06adc4f7d0a395779d53546" title="Execute." alt="" coords="199,360,348,385"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,456,121,425,174,394,192,387,194,392,176,399,124,430,84,461"/>
-<area shape="rect" id="Node000003" href="$classOpalParser.html#a91fab748b82bd09d4005c8d6d34cd6fe" title="Read complete statement from a token stream." alt="" coords="175,433,372,459"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,461,161,457,162,462,127,467"/>
-<area shape="rect" id="Node000017" href="$classOpalException.html#a3d9ca0995475f373066c0e15a3ea348e" title="Return the message string for the exception." alt="" coords="440,707,596,732"/>
-<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="127,471,194,477,266,486,331,500,356,510,374,521,391,542,399,564,401,587,399,609,399,652,406,673,422,693,430,700,426,704,418,697,402,675,394,653,394,608,395,587,394,565,386,545,370,525,353,515,329,505,265,491,193,482,127,477"/>
-<area shape="rect" id="Node000018" href="$classOpalException.html#a5a3f31d56907ab6dcf382e7f9d49baf2" title="Return the name of the method or function which detected the exception." alt="" coords="191,535,355,560"/>
-<area shape="poly" id="edge28_Node000001_Node000018" title=" " alt="" coords="98,482,176,513,219,528,217,533,174,518,96,487"/>
-<area shape="poly" id="edge23_Node000003_Node000003" title=" " alt="" coords="240,435,232,425,236,415,250,409,273,407,302,410,313,419,310,424,300,415,273,412,251,414,240,419,238,424,244,432"/>
-<area shape="rect" id="Node000004" href="$classStatement.html#a1f850d85458bb5d1a2a8b55a6643fb4b" title="Append a token." alt="" coords="930,256,1077,281"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,431,342,416,370,395,386,370,391,346,398,321,406,309,418,298,483,263,552,240,625,227,698,223,769,225,835,231,942,250,941,256,834,237,768,230,698,228,625,233,553,245,485,268,422,303,410,313,403,324,397,347,391,372,374,398,345,420,314,436"/>
-<area shape="rect" id="Node000005" href="$classToken.html#af3c75bb1563dc851c714cead195c36ef" title="Return the token&#39;s file name." alt="" coords="463,509,573,535"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="316,456,464,503,462,508,314,461"/>
-<area shape="rect" id="Node000006" href="$classToken.html#aabfcea7b4d2df9591a87095440764993" title="Return the token&#39;s line number." alt="" coords="461,559,575,584"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="335,456,374,476,390,494,398,512,406,529,422,545,448,558,446,563,418,549,402,532,393,514,386,497,370,480,333,461"/>
-<area shape="rect" id="Node000007" href="$classToken.html#a2954e99066d74d540ededed11eaf469c" title="Test for delimiter." alt="" coords="953,307,1053,332"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="305,431,338,415,370,395,384,381,393,367,402,354,419,342,487,316,558,298,631,288,703,284,773,286,837,290,940,304,940,309,836,295,772,291,703,290,632,293,559,303,488,321,421,347,406,358,397,370,388,384,374,399,340,420,308,436"/>
-<area shape="rect" id="Node000008" href="$classToken.html#a4822f01048ccce2d0de033ee2be460f0" title="Test for end of file." alt="" coords="951,483,1055,508"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="361,456,616,495,664,503,768,508,872,503,937,499,938,504,872,509,768,513,664,509,616,501,360,461"/>
-<area shape="rect" id="Node000009" href="$classToken.html#a6774fc0b928966b65a6904effe76f676" title="Test for keyword." alt="" coords="467,608,569,633"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="342,457,374,476,386,491,394,507,398,538,403,567,410,581,422,595,437,605,454,611,452,616,434,609,418,599,405,584,398,569,393,538,388,508,382,494,370,480,339,461"/>
-<area shape="rect" id="Node000010" href="$classToken.html#a1d4fce76848b7015d61b658df4130902" title="Test for string." alt="" coords="460,657,576,683"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="344,456,374,476,390,498,397,520,398,563,399,604,406,624,422,644,448,660,445,664,418,648,402,627,394,605,393,563,392,521,385,500,370,480,341,461"/>
-<area shape="rect" id="Node000011" href="$classToken.html#a39bf9220800c0ca8341c3197fb201c00" title="Test for word." alt="" coords="463,5,573,31"/>
-<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="320,431,347,416,370,395,384,371,394,348,401,303,397,259,388,216,380,172,378,129,389,85,401,63,418,40,432,29,449,21,451,26,435,33,422,44,405,66,394,87,383,129,385,172,393,215,402,258,406,303,399,350,389,374,374,398,350,421,322,436"/>
-<area shape="rect" id="Node000012" href="$classOpalParser.html#a716da8362840d3c406cea96cc42ee48c" title=" " alt="" coords="664,432,872,457"/>
-<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="372,443,650,442,650,448,372,448"/>
-<area shape="rect" id="Node000014" href="$classOpalParser.html#a1d6f4cfc4ffed6f762a793493e903d34" title=" " alt="" coords="420,357,616,383"/>
-<area shape="poly" id="edge17_Node000003_Node000014" title=" " alt="" coords="314,431,462,384,464,389,316,436"/>
-<area shape="rect" id="Node000015" href="$classTokenStream.html#ac36e3948badf6b62c16c0cbcf775e8f3" title="Read single token from stream." alt="" coords="428,55,608,80"/>
-<area shape="poly" id="edge24_Node000003_Node000015" title=" " alt="" coords="319,431,347,416,370,395,391,355,398,316,396,278,389,241,383,203,382,166,392,128,418,90,421,86,425,90,422,93,397,130,387,166,388,203,394,240,401,278,403,316,396,357,374,398,350,421,321,436"/>
-<area shape="rect" id="Node000016" href="$classStatement.html#aec9c470a2c810d6e9b1a076f58eae21b" title="Return to start." alt="" coords="454,104,582,129"/>
-<area shape="poly" id="edge25_Node000003_Node000016" title=" " alt="" coords="318,431,346,416,370,395,388,363,395,332,395,301,391,271,387,241,388,210,397,179,418,147,440,130,443,134,422,150,402,181,393,211,393,240,396,270,400,301,400,332,393,365,374,398,349,421,320,436"/>
-<area shape="poly" id="edge26_Node000003_Node000017" title=" " alt="" coords="345,457,374,476,393,504,400,533,401,560,398,588,395,615,395,641,403,667,422,694,430,700,426,704,418,697,398,670,390,642,389,615,392,587,395,560,395,533,388,507,370,480,342,461"/>
-<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="777,430,832,364,873,326,919,292,933,284,936,289,921,296,876,330,836,368,781,433"/>
-<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="792,430,965,336,968,341,794,434"/>
-<area shape="poly" id="edge14_Node000012_Node000008" title=" " alt="" coords="829,455,939,479,937,484,827,460"/>
-<area shape="poly" id="edge15_Node000012_Node000012" title=" " alt="" coords="730,434,722,424,726,414,742,408,768,405,801,409,814,419,810,423,799,414,768,411,743,413,729,418,727,423,734,430"/>
-<area shape="rect" id="Node000013" href="$classOpalParser.html#a1c27a3df8d6667e5a74053890a5524fe" title="Return next input token." alt="" coords="920,395,1087,420"/>
-<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="848,429,909,420,910,425,849,435"/>
-<area shape="poly" id="edge18_Node000014_Node000004" title=" " alt="" coords="556,355,663,323,796,297,916,277,917,283,797,302,665,329,557,360"/>
-<area shape="poly" id="edge19_Node000014_Node000007" title=" " alt="" coords="616,357,939,323,940,329,617,362"/>
-<area shape="poly" id="edge20_Node000014_Node000008" title=" " alt="" coords="534,381,589,426,625,449,665,467,736,486,809,496,878,499,937,498,937,503,878,504,808,501,735,491,663,473,623,454,585,430,531,385"/>
-<area shape="poly" id="edge21_Node000014_Node000012" title=" " alt="" coords="563,380,713,426,711,431,561,385"/>
-<area shape="poly" id="edge22_Node000014_Node000013" title=" " alt="" coords="616,374,872,393,907,396,906,401,872,398,616,379"/>
+<area shape="rect" id="Node000001" title="Read current stream." alt="" coords="5,583,118,608"/>
+<area shape="rect" id="Node000002" href="$classOpalParser.html#a91fab748b82bd09d4005c8d6d34cd6fe" title="Read complete statement from a token stream." alt="" coords="166,433,345,459"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,580,225,466,225,472,82,584"/>
+<area shape="rect" id="Node000016" href="$classOpalException.html#a3d9ca0995475f373066c0e15a3ea348e" title="Return the message string for the exception." alt="" coords="413,707,555,732"/>
+<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="117,584,169,581,228,583,289,594,319,605,347,619,364,636,372,656,379,676,395,693,402,700,397,699,391,698,374,678,367,658,360,639,343,623,317,609,288,599,228,588,169,586,119,589"/>
+<area shape="rect" id="Node000017" href="$classOpalException.html#a5a3f31d56907ab6dcf382e7f9d49baf2" title="Return the name of the method or function which detected the exception." alt="" coords="181,633,330,659"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="113,606,191,628,187,630,114,612"/>
+<area shape="poly" id="edge22_Node000002_Node000002" title=" " alt="" coords="222,433,216,425,220,415,234,409,255,407,279,409,293,418,287,419,278,414,255,412,235,414,224,419,222,424,228,433"/>
+<area shape="rect" id="Node000003" href="$classStatement.html#a1f850d85458bb5d1a2a8b55a6643fb4b" title="Append a token." alt="" coords="875,256,1006,282"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,431,282,403,311,368,348,332,392,304,451,280,514,263,578,252,641,246,761,246,862,256,857,257,761,251,642,251,578,257,515,268,453,285,394,309,352,336,315,371,286,407,267,434"/>
+<area shape="rect" id="Node000004" href="$classToken.html#af3c75bb1563dc851c714cead195c36ef" title="Return the token&#39;s file name." alt="" coords="432,509,536,535"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="297,457,431,503,426,505,297,462"/>
+<area shape="rect" id="Node000005" href="$classToken.html#aabfcea7b4d2df9591a87095440764993" title="Return the token&#39;s line number." alt="" coords="431,559,537,584"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="271,457,324,500,358,524,394,545,419,557,414,557,392,550,355,529,320,505,270,462"/>
+<area shape="rect" id="Node000006" href="$classToken.html#a2954e99066d74d540ededed11eaf469c" title="Test for delimiter." alt="" coords="894,307,988,332"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="268,431,319,386,354,361,392,342,457,322,524,308,592,300,659,296,782,299,881,310,876,311,782,304,659,302,592,305,525,314,458,327,394,347,356,366,322,390,271,435"/>
+<area shape="rect" id="Node000007" href="$classToken.html#a4822f01048ccce2d0de033ee2be460f0" title="Test for end of file." alt="" coords="890,483,992,508"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="345,457,576,494,624,504,719,508,816,504,877,502,872,503,816,509,719,513,623,509,575,499,346,462"/>
+<area shape="rect" id="Node000008" href="$classToken.html#a6774fc0b928966b65a6904effe76f676" title="Test for keyword." alt="" coords="436,608,533,634"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="265,457,315,524,352,562,394,595,423,609,418,609,392,599,348,566,311,527,264,462"/>
+<area shape="rect" id="Node000009" href="$classToken.html#a1d4fce76848b7015d61b658df4130902" title="Test for string." alt="" coords="430,657,538,683"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="267,457,395,644,418,658,413,658,391,648,264,461"/>
+<area shape="rect" id="Node000010" href="$classToken.html#a39bf9220800c0ca8341c3197fb201c00" title="Test for word." alt="" coords="432,5,536,31"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="254,432,259,364,278,258,295,200,319,142,351,87,391,40,419,26,415,29,395,44,355,91,324,144,300,201,283,259,265,364,259,434"/>
+<area shape="rect" id="Node000011" href="$classOpalParser.html#a716da8362840d3c406cea96cc42ee48c" title=" " alt="" coords="623,432,816,458"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="345,443,610,444,605,447,346,449"/>
+<area shape="rect" id="Node000013" href="$classOpalParser.html#a1d6f4cfc4ffed6f762a793493e903d34" title=" " alt="" coords="393,357,575,383"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="295,430,431,387,427,390,298,435"/>
+<area shape="rect" id="Node000014" href="$classTokenStream.html#ac36e3948badf6b62c16c0cbcf775e8f3" title="Read single token from stream." alt="" coords="401,55,567,80"/>
+<area shape="poly" id="edge23_Node000002_Node000014" title=" " alt="" coords="255,432,263,371,284,278,301,227,325,177,354,130,391,90,398,87,394,91,395,93,359,134,329,180,306,229,289,280,268,372,260,434"/>
+<area shape="rect" id="Node000015" href="$classStatement.html#aec9c470a2c810d6e9b1a076f58eae21b" title="Return to start." alt="" coords="426,104,542,130"/>
+<area shape="poly" id="edge24_Node000002_Node000015" title=" " alt="" coords="257,432,268,380,293,304,311,262,333,220,360,181,391,147,414,134,411,137,395,151,364,185,337,223,316,264,298,305,273,381,261,434"/>
+<area shape="poly" id="edge25_Node000002_Node000016" title=" " alt="" coords="268,457,306,508,347,576,360,611,366,640,374,667,395,694,402,701,397,700,391,697,369,669,360,641,355,612,343,578,301,511,266,462"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="728,429,780,365,818,326,862,292,871,290,876,287,865,296,822,330,784,368,732,434"/>
+<area shape="poly" id="edge12_Node000011_Node000006" title=" " alt="" coords="743,429,901,341,906,339,745,434"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="779,456,878,480,872,481,779,461"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="682,431,675,423,680,414,695,407,720,405,747,408,762,417,757,417,745,413,719,411,696,413,683,417,681,423,687,432"/>
+<area shape="rect" id="Node000012" href="$classOpalParser.html#a1c27a3df8d6667e5a74053890a5524fe" title="Return next input token." alt="" coords="864,395,1018,420"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="799,429,851,422,846,424,800,434"/>
+<area shape="poly" id="edge17_Node000013_Node000003" title=" " alt="" coords="520,354,623,322,747,296,862,279,857,281,748,301,624,327,522,359"/>
+<area shape="poly" id="edge18_Node000013_Node000006" title=" " alt="" coords="575,358,881,325,876,328,576,363"/>
+<area shape="poly" id="edge19_Node000013_Node000007" title=" " alt="" coords="499,381,552,426,586,449,624,468,689,486,756,495,819,498,877,500,872,501,819,504,755,500,688,491,622,473,584,454,548,430,498,386"/>
+<area shape="poly" id="edge20_Node000013_Node000011" title=" " alt="" coords="527,381,664,426,659,427,527,386"/>
+<area shape="poly" id="edge21_Node000013_Node000012" title=" " alt="" coords="576,374,816,393,851,398,846,399,815,398,576,379"/>
 </map>

@@ -1,7 +1,7 @@
 var classPartBunch =
 [
     [ "AdaptBins_t", "classPartBunch.html#a526d8e1542778daa85c31fc0635def20", null ],
-    [ "Base", "classPartBunch.html#abdf7e3a0549b3f7033caacb2ba8d6010", null ],
+    [ "Base", "classPartBunch.html#a4948cb60d7cb04108a2ccd2790912359", null ],
     [ "BCHandler_t", "classPartBunch.html#a36026404fd392f8d58a95b0e81538894", null ],
     [ "binIndex_t", "classPartBunch.html#ab316b7324f31a3e151a7abc96cf57737", null ],
     [ "BinnedFieldSolver_t", "classPartBunch.html#a06106f8b7d3903a67fd603d81e562f3d", null ],

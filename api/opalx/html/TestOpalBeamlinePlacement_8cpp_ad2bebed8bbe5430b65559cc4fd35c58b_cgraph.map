@@ -1,108 +1,115 @@
 <map id="TEST_F" name="TEST_F">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,668,75,693"/>
-<area shape="rect" id="Node000002" href="$classOpalBeamline.html#aa8747acdec0bc10a08dd3f679f406d64" title=" " alt="" coords="142,107,346,132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,667,231,144,236,146,48,669"/>
-<area shape="rect" id="Node000006" href="$classOpalBeamline.html#a8698f924d17bcda4c2c87c7ea46c9d0d" title="Return the placed&#45;element view used by the bridge stage." alt="" coords="124,577,364,603"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="51,666,81,638,121,612,139,604,142,609,124,616,85,642,55,670"/>
-<area shape="rect" id="Node000007" href="$classOpalBeamline.html#a930717579e990fd8ddd6063819f12acf" title=" " alt="" coords="131,627,357,652"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="74,671,167,652,168,657,76,676"/>
-<area shape="rect" id="Node000042" href="$classElementBase.html#a2b59853ce20c48c2436d0c136adeea69" title="Set design length." alt="" coords="127,693,361,719"/>
-<area shape="poly" id="edge54_Node000001_Node000042" title=" " alt="" coords="75,682,129,689,128,694,75,688"/>
-<area shape="rect" id="Node000044" href="$classElementBase.html#a015eabbc7163b06af9ab098fda26eee8" title="Access to ELEMEDGE attribute." alt="" coords="123,743,365,768"/>
-<area shape="poly" id="edge57_Node000001_Node000044" title=" " alt="" coords="60,691,89,710,124,728,151,737,150,742,122,732,86,715,57,696"/>
-<area shape="rect" id="Node000045" href="$classOpalBeamline.html#ad629df0e0136262172b883d1bd66d192" title=" " alt="" coords="169,803,319,828"/>
-<area shape="poly" id="edge58_Node000001_Node000045" title=" " alt="" coords="51,692,79,734,100,757,124,777,163,796,161,801,121,782,96,761,75,737,46,695"/>
-<area shape="rect" id="Node000003" href="$classOpalBeamline.html#ad5ebc8048ed102a8b648f972cbc32d8b" title=" " alt="" coords="449,35,641,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,104,436,76,437,81,305,109"/>
-<area shape="rect" id="Node000004" href="$classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title="Map a point from the parent frame to the local frame." alt="" coords="457,99,632,139"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="346,117,443,117,443,122,346,122"/>
-<area shape="rect" id="Node000005" href="$Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1" title=" " alt="" coords="780,5,879,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="631,102,675,85,689,74,698,63,707,51,723,40,766,24,767,29,725,44,711,55,702,66,693,78,677,90,633,107"/>
-<area shape="rect" id="Node000008" href="$classOpalBeamline.html#aaa234ca01785adaa15c57f509b36f599" title="Compile legacy reference&#45;order placement into explicit nominal poses." alt="" coords="413,289,676,329"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="341,624,364,612,393,573,438,497,524,340,529,342,443,500,398,576,367,616,343,629"/>
-<area shape="rect" id="Node000040" href="$classOpalBeamline.html#ab207d438622a6b5fed4ba184022961d6" title="Refresh the beamline&#45;owned placed&#45;element assembly record." alt="" coords="985,677,1183,717"/>
-<area shape="poly" id="edge53_Node000007_Node000040" title=" " alt="" coords="357,635,622,638,779,647,935,662,989,671,988,676,934,667,778,652,621,644,357,640"/>
-<area shape="rect" id="Node000041" href="$classBeamlineFieldElement.html#ab31396c8fe0186b16e7ac80ff3931c5c" title=" " alt="" coords="460,562,629,602"/>
-<area shape="poly" id="edge52_Node000007_Node000041" title=" " alt="" coords="311,624,446,598,447,603,312,629"/>
-<area shape="rect" id="Node000009" href="$classQuaternion.html#a23fa21eb2e14c5207f90e840787c348a" title="Return the quaternion conjugate ." alt="" coords="1001,167,1167,192"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="612,286,723,255,1005,192,1006,197,725,261,614,291"/>
-<area shape="rect" id="Node000012" href="$VectorMath_8h.html#ae35e3c7b11f541ba1edcdb0e58e20a99" title=" " alt="" coords="766,271,893,296"/>
-<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="676,294,752,287,753,293,677,300"/>
-<area shape="rect" id="Node000013" href="$classBendBase.html#a6248731d050834eda9d0612e50f167fb" title=" " alt="" coords="736,320,923,345"/>
-<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="676,317,722,321,722,326,676,322"/>
-<area shape="rect" id="Node000014" href="$classBendBase.html#a49703e2547809f3facd773caa0a524d7" title="Return the geometric chord between entrance and exit frames." alt="" coords="730,369,929,395"/>
-<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="619,326,725,354,762,363,761,369,723,359,618,331"/>
-<area shape="rect" id="Node000029" href="$classBendBase.html#a2695f1c2ee06a55faa04fc7722d84452" title="Sample the local curved reference path of the bend body." alt="" coords="735,528,924,553"/>
-<area shape="poly" id="edge32_Node000008_Node000029" title=" " alt="" coords="572,327,804,517,800,521,569,331"/>
-<area shape="rect" id="Node000033" href="$classBendBase.html#aba2fe3ad14c15238edcccb5441e0fbd0" title=" " alt="" coords="724,55,935,80"/>
-<area shape="poly" id="edge42_Node000008_Node000033" title=" " alt="" coords="561,287,674,150,695,117,706,104,723,90,737,83,739,87,725,95,709,108,700,121,678,153,565,290"/>
-<area shape="rect" id="Node000034" href="$classElementBase.html#aab7ccd4b61b3d8289f042e0569f5b92f" title=" " alt="" coords="733,105,925,145"/>
-<area shape="poly" id="edge43_Node000008_Node000034" title=" " alt="" coords="562,287,629,222,674,186,723,154,736,148,739,152,725,159,677,190,633,226,566,290"/>
-<area shape="rect" id="Node000035" href="$classQuaternion.html#a4e2690c2c4334b141a55b681ce751c19" title="Rotate a spatial vector by a unit quaternion." alt="" coords="759,169,900,195"/>
-<area shape="poly" id="edge44_Node000008_Node000035" title=" " alt="" coords="578,286,644,249,723,212,766,196,768,201,725,216,646,254,580,291"/>
-<area shape="rect" id="Node000039" href="$classOpalBeamline.html#aa8600b9c63bc1e6c5d3a73521671fc9b" title="Update the nominal rigid placement transform of one element." alt="" coords="731,677,928,717"/>
-<area shape="poly" id="edge50_Node000008_Node000039" title=" " alt="" coords="562,327,631,429,726,563,805,664,801,668,722,566,627,432,557,330"/>
-<area shape="rect" id="Node000010" href="$classQuaternion.html#af633bd5f29028af4864daa09e914aef4" title="Return the vector part ." alt="" coords="1277,167,1412,192"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1168,177,1264,177,1264,182,1168,182"/>
-<area shape="rect" id="Node000011" href="$classQuaternion.html#a237c3a9dfefea10e7ec6b5f373546427" title="Return the scalar part ." alt="" coords="1281,216,1408,241"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1152,189,1268,212,1267,217,1151,195"/>
-<area shape="rect" id="Node000015" href="$classElementBase.html#a645c362640caa4d333b5a5b2ce5b339b" title="Get transform." alt="" coords="987,365,1181,405"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="929,380,973,381,973,386,929,386"/>
-<area shape="rect" id="Node000022" href="$classElementBase.html#a32d09417eeb63d146563cf83eef799e5" title="Get transform." alt="" coords="983,528,1185,553"/>
-<area shape="poly" id="edge21_Node000014_Node000022" title=" " alt="" coords="843,393,900,451,940,485,984,513,1003,521,1001,526,981,518,936,489,896,455,839,397"/>
-<area shape="rect" id="Node000025" href="$classEuclid3D.html#aa11d7ee987d9f85367425adcdc783b81" title="Get displacement." alt="" coords="1009,429,1159,455"/>
-<area shape="poly" id="edge28_Node000014_Node000025" title=" " alt="" coords="885,392,1017,424,1016,429,883,397"/>
-<area shape="rect" id="Node000026" href="$classVector3D.html#a6eb2b565b36b32858b79714151fc6df0" title="Get component." alt="" coords="1025,216,1143,241"/>
-<area shape="poly" id="edge29_Node000014_Node000026" title=" " alt="" coords="913,367,933,355,944,343,951,330,956,304,962,277,969,264,981,251,1010,235,1013,240,984,255,973,267,967,279,961,305,956,332,949,346,936,359,915,371"/>
-<area shape="rect" id="Node000027" href="$classVector3D.html#a40ae4bf4605ba79725876e00861f74c6" title="Get component." alt="" coords="1025,265,1143,291"/>
-<area shape="poly" id="edge30_Node000014_Node000027" title=" " alt="" coords="906,367,933,354,948,342,956,328,965,314,981,300,1010,287,1012,292,984,304,969,317,961,331,952,345,936,359,908,372"/>
-<area shape="rect" id="Node000028" href="$classVector3D.html#a9a4b4c6ee6f7bffa65fb81b2ace4a8eb" title="Get component." alt="" coords="1025,315,1143,340"/>
-<area shape="poly" id="edge31_Node000014_Node000028" title=" " alt="" coords="889,367,1011,340,1012,345,890,372"/>
-<area shape="rect" id="Node000016" href="$classBGeometryBase.html#a80203d8413eeb9a6895c24682cb0a500" title="Get transform." alt="" coords="1237,365,1452,405"/>
-<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1181,382,1224,382,1224,387,1181,387"/>
-<area shape="rect" id="Node000021" href="$classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="1243,529,1446,555"/>
-<area shape="poly" id="edge20_Node000015_Node000021" title=" " alt="" coords="1170,403,1187,415,1199,427,1206,441,1211,467,1217,492,1224,503,1235,515,1244,521,1241,525,1232,519,1220,506,1212,494,1206,468,1201,443,1194,431,1184,419,1167,407"/>
-<area shape="rect" id="Node000017" href="$classBGeometryBase.html#a5db85da1c96e5be8ffbdd0b2b913be47" title="Get entrance position." alt="" coords="1508,429,1723,455"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1440,402,1542,424,1541,429,1439,407"/>
-<area shape="rect" id="Node000020" href="$classBGeometryBase.html#a0b27cf0c53d13be32e8cec8343c31900" title="Get transform." alt="" coords="1504,480,1727,505"/>
-<area shape="poly" id="edge19_Node000016_Node000020" title=" " alt="" coords="1381,403,1438,434,1505,464,1538,474,1536,479,1503,468,1435,438,1378,407"/>
-<area shape="rect" id="Node000018" href="$classBGeometryBase.html#a801847a7293b13d6f3e589d14e705385" title="Get origin position." alt="" coords="1775,479,1971,504"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1683,452,1793,473,1792,479,1682,457"/>
-<area shape="rect" id="Node000019" href="$classBGeometryBase.html#ad65fbb978aab956e163378ef589d74c0" title="Get arc length." alt="" coords="2019,504,2241,529"/>
-<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="1971,498,2005,502,2005,507,1971,504"/>
-<area shape="poly" id="edge27_Node000022_Node000021" title=" " alt="" coords="1185,539,1230,539,1230,544,1185,544"/>
-<area shape="rect" id="Node000023" href="$classBGeometryBase.html#a191e6b8816e2906eb3b539751e1fafa9" title="Get transform." alt="" coords="1233,480,1456,505"/>
-<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="1153,525,1261,505,1262,511,1154,531"/>
-<area shape="poly" id="edge26_Node000023_Node000020" title=" " alt="" coords="1456,490,1490,490,1490,495,1456,495"/>
-<area shape="rect" id="Node000024" href="$classBGeometryBase.html#a6a97a8c8e41886fcf6115188674468a0" title="Get exit position." alt="" coords="1524,529,1707,555"/>
-<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="1415,503,1532,524,1531,529,1415,508"/>
-<area shape="poly" id="edge25_Node000024_Node000018" title=" " alt="" coords="1680,527,1793,504,1795,509,1681,532"/>
-<area shape="poly" id="edge24_Node000024_Node000019" title=" " alt="" coords="1707,535,2005,520,2005,525,1707,540"/>
-<area shape="rect" id="Node000030" href="$classElementBase.html#a9474fb82a9bc774302a90b46744c26a3" title="Get entrance position." alt="" coords="987,479,1181,504"/>
-<area shape="poly" id="edge33_Node000029_Node000030" title=" " alt="" coords="895,525,1004,504,1005,509,896,531"/>
-<area shape="rect" id="Node000031" href="$classElementBase.html#a13851a5e61d04cfc731320293c4f6adc" title="Get exit position." alt="" coords="1003,627,1165,652"/>
-<area shape="poly" id="edge36_Node000029_Node000031" title=" " alt="" coords="855,551,913,581,984,612,1012,620,1010,626,982,616,910,586,853,556"/>
-<area shape="rect" id="Node000032" href="$classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7" title="Get transform." alt="" coords="983,577,1185,603"/>
-<area shape="poly" id="edge39_Node000029_Node000032" title=" " alt="" coords="896,551,1005,572,1004,577,895,556"/>
-<area shape="poly" id="edge34_Node000030_Node000017" title=" " alt="" coords="1155,476,1233,465,1368,452,1494,444,1494,450,1368,458,1234,470,1156,481"/>
-<area shape="poly" id="edge35_Node000030_Node000021" title=" " alt="" coords="1151,502,1266,524,1265,529,1150,507"/>
-<area shape="poly" id="edge38_Node000031_Node000021" title=" " alt="" coords="1142,624,1184,611,1249,585,1305,559,1308,563,1251,590,1186,617,1144,629"/>
-<area shape="poly" id="edge37_Node000031_Node000024" title=" " alt="" coords="1165,638,1302,633,1380,624,1455,609,1522,586,1578,559,1581,564,1524,591,1457,614,1380,629,1303,638,1165,644"/>
-<area shape="poly" id="edge41_Node000032_Node000020" title=" " alt="" coords="1186,600,1249,602,1318,598,1388,586,1455,564,1470,553,1478,541,1487,527,1503,514,1517,508,1519,513,1505,519,1491,531,1483,544,1473,557,1457,568,1389,592,1318,604,1249,607,1186,605"/>
-<area shape="poly" id="edge40_Node000032_Node000021" title=" " alt="" coords="1153,575,1261,555,1262,560,1154,580"/>
-<area shape="poly" id="edge45_Node000035_Node000009" title=" " alt="" coords="900,179,987,178,987,183,900,184"/>
-<area shape="rect" id="Node000036" href="$classQuaternion.html#aa29522eb8e682639a9efddce09a49f6f" title="Return true if &#160;within a fixed tolerance." alt="" coords="1014,65,1154,91"/>
-<area shape="poly" id="edge46_Node000035_Node000036" title=" " alt="" coords="899,168,933,154,948,144,957,132,966,120,981,108,1013,93,1016,98,984,112,970,124,961,135,951,147,936,159,901,173"/>
-<area shape="rect" id="Node000037" href="$classQuaternion.html#afd6f04fe42007759224bbfb5c7727eb0" title="Return ." alt="" coords="1275,91,1414,116"/>
-<area shape="poly" id="edge49_Node000035_Node000037" title=" " alt="" coords="896,167,982,151,1261,111,1262,116,983,157,896,172"/>
-<area shape="poly" id="edge47_Node000036_Node000037" title=" " alt="" coords="1154,82,1262,93,1261,98,1154,87"/>
-<area shape="rect" id="Node000038" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="1594,91,1637,116"/>
-<area shape="poly" id="edge48_Node000037_Node000038" title=" " alt="" coords="1414,101,1580,101,1580,106,1414,106"/>
-<area shape="poly" id="edge51_Node000039_Node000040" title=" " alt="" coords="928,694,971,694,971,699,928,699"/>
-<area shape="poly" id="edge55_Node000042_Node000021" title=" " alt="" coords="362,712,579,726,834,738,1059,740,1138,736,1184,726,1210,712,1234,693,1275,649,1307,604,1329,566,1334,568,1312,607,1279,653,1237,697,1213,716,1186,731,1139,741,1059,746,834,743,579,731,361,717"/>
-<area shape="rect" id="Node000043" href="$classBGeometryBase.html#a4d338ebcb0efefa851ff4bdc08f7efb2" title="Set geometry length." alt="" coords="439,759,650,799"/>
-<area shape="poly" id="edge56_Node000042_Node000043" title=" " alt="" coords="314,716,366,727,463,753,462,758,365,733,313,721"/>
-<area shape="rect" id="Node000046" href="$classOpalBeamline.html#a255ca6d4b47240c33538cf87a9343a5b" title=" " alt="" coords="431,823,659,863"/>
-<area shape="poly" id="edge59_Node000045_Node000046" title=" " alt="" coords="320,820,417,829,416,834,319,825"/>
-<area shape="poly" id="edge60_Node000046_Node000039" title=" " alt="" coords="644,821,675,809,709,790,741,768,796,724,799,728,745,772,712,795,677,814,646,826"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,505,76,530"/>
+<area shape="rect" id="Node000002" href="$classOpalBeamline.html#aa8747acdec0bc10a08dd3f679f406d64" title=" " alt="" coords="142,78,326,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,503,220,115,222,120,50,505"/>
+<area shape="rect" id="Node000006" href="$classOpalBeamline.html#a8698f924d17bcda4c2c87c7ea46c9d0d" title="Return the placed&#45;element view used by the bridge stage." alt="" coords="126,430,342,456"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="57,503,87,483,123,465,143,459,140,463,125,469,90,487,61,506"/>
+<area shape="rect" id="Node000007" href="$classOpalBeamline.html#a930717579e990fd8ddd6063819f12acf" title=" " alt="" coords="132,578,336,604"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="59,528,90,547,125,565,144,572,140,575,123,569,88,552,61,533"/>
+<area shape="rect" id="Node000045" href="$classElementBase.html#a2b59853ce20c48c2436d0c136adeea69" title="Set design length." alt="" coords="128,480,340,505"/>
+<area shape="poly" id="edge58_Node000001_Node000045" title=" " alt="" coords="74,511,118,506,115,510,78,515"/>
+<area shape="rect" id="Node000047" href="$classElementBase.html#a015eabbc7163b06af9ab098fda26eee8" title="Access to ELEMEDGE attribute." alt="" coords="124,628,344,653"/>
+<area shape="poly" id="edge61_Node000001_Node000047" title=" " alt="" coords="49,528,80,572,101,595,125,614,135,620,130,622,122,619,97,599,76,575,49,534"/>
+<area shape="rect" id="Node000048" href="$classOpalBeamline.html#ad629df0e0136262172b883d1bd66d192" title=" " alt="" coords="167,529,301,554"/>
+<area shape="poly" id="edge62_Node000001_Node000048" title=" " alt="" coords="75,520,153,530,149,533,77,524"/>
+<area shape="rect" id="Node000003" href="$classOpalBeamline.html#ad5ebc8048ed102a8b648f972cbc32d8b" title=" " alt="" coords="419,5,596,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,75,407,48,403,52,292,80"/>
+<area shape="rect" id="Node000004" href="$classCoordinateSystemTrafo.html#ab74423cba432b24b153f2a6ae350a7f0" title="Map a point from the parent frame to the local frame." alt="" coords="428,71,587,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="325,89,414,89,410,93,327,93"/>
+<area shape="rect" id="Node000005" href="$Matrix_8h.html#a9cf217e73b1634ddf0afb9ee7236ebd1" title=" " alt="" coords="723,78,812,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="587,89,710,90,705,92,589,93"/>
+<area shape="rect" id="Node000008" href="$classOpalBeamline.html#aaa234ca01785adaa15c57f509b36f599" title="Compile legacy reference&#45;order placement into explicit nominal poses." alt="" coords="392,555,623,595"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="336,583,379,581,374,584,338,587"/>
+<area shape="rect" id="Node000041" href="$classOpalBeamline.html#ab207d438622a6b5fed4ba184022961d6" title="Refresh the beamline&#45;owned placed&#45;element assembly record." alt="" coords="915,799,1094,839"/>
+<area shape="poly" id="edge57_Node000007_Node000041" title=" " alt="" coords="328,602,346,613,360,629,367,647,370,681,373,715,380,730,394,745,430,766,482,782,545,795,616,804,766,814,902,820,897,820,765,820,616,809,544,800,481,787,428,770,390,749,376,733,368,716,365,682,362,648,355,632,342,617,328,607"/>
+<area shape="rect" id="Node000042" href="$classBeamlineFieldElement.html#ab31396c8fe0186b16e7ac80ff3931c5c" title=" " alt="" coords="432,856,583,897"/>
+<area shape="poly" id="edge54_Node000007_Node000042" title=" " alt="" coords="330,602,346,613,366,641,375,669,375,697,372,725,369,753,369,781,376,808,394,836,420,858,415,857,390,839,371,810,363,781,363,753,367,725,370,697,370,670,361,643,342,617,330,607"/>
+<area shape="rect" id="Node000009" href="$classQuaternion.html#a23fa21eb2e14c5207f90e840787c348a" title="Return the quaternion conjugate ." alt="" coords="930,597,1078,622"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="623,580,917,602,912,604,624,586"/>
+<area shape="rect" id="Node000013" href="$VectorMath_8h.html#ae35e3c7b11f541ba1edcdb0e58e20a99" title=" " alt="" coords="711,692,824,717"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="535,593,597,636,672,678,699,689,694,690,670,683,594,641,535,598"/>
+<area shape="rect" id="Node000014" href="$classBendBase.html#a6248731d050834eda9d0612e50f167fb" title=" " alt="" coords="682,236,853,261"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="582,552,604,539,621,523,640,490,647,459,646,427,642,396,638,365,638,334,647,302,669,271,671,273,675,269,673,274,652,304,643,335,643,365,647,396,652,427,652,459,645,492,625,526,607,544,585,556"/>
+<area shape="rect" id="Node000015" href="$classBendBase.html#a49703e2547809f3facd773caa0a524d7" title="Return the geometric chord between entrance and exit frames." alt="" coords="677,428,858,453"/>
+<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="569,552,597,538,622,522,636,507,644,492,653,477,670,462,681,458,677,461,673,466,658,480,649,495,640,510,625,526,599,543,572,556"/>
+<area shape="rect" id="Node000030" href="$classBendBase.html#a2695f1c2ee06a55faa04fc7722d84452" title="Sample the local curved reference path of the bend body." alt="" coords="680,285,855,310"/>
+<area shape="poly" id="edge33_Node000008_Node000030" title=" " alt="" coords="577,552,601,539,621,522,640,497,648,472,655,445,669,414,705,363,741,324,745,320,709,366,674,416,660,447,654,473,645,499,625,526,604,543,580,556"/>
+<area shape="rect" id="Node000034" href="$classBendBase.html#aba2fe3ad14c15238edcccb5441e0fbd0" title=" " alt="" coords="671,477,864,502"/>
+<area shape="poly" id="edge43_Node000008_Node000034" title=" " alt="" coords="561,552,671,512,700,506,695,508,672,518,563,556"/>
+<area shape="rect" id="Node000035" href="$classElementBase.html#aab7ccd4b61b3d8289f042e0569f5b92f" title=" " alt="" coords="680,527,855,567"/>
+<area shape="poly" id="edge44_Node000008_Node000035" title=" " alt="" coords="623,560,667,557,662,559,624,565"/>
+<area shape="rect" id="Node000036" href="$classQuaternion.html#a4e2690c2c4334b141a55b681ce751c19" title="Rotate a spatial vector by a unit quaternion." alt="" coords="705,642,830,668"/>
+<area shape="poly" id="edge45_Node000008_Node000036" title=" " alt="" coords="576,593,711,637,706,638,576,599"/>
+<area shape="rect" id="Node000040" href="$classOpalBeamline.html#aa8600b9c63bc1e6c5d3a73521671fc9b" title="Update the nominal rigid placement transform of one element." alt="" coords="679,741,856,782"/>
+<area shape="poly" id="edge52_Node000008_Node000040" title=" " alt="" coords="532,593,625,681,648,706,673,727,682,735,677,734,670,732,644,710,621,685,530,598"/>
+<area shape="rect" id="Node000010" href="$classQuaternion.html#af633bd5f29028af4864daa09e914aef4" title="Return the vector part ." alt="" coords="1186,548,1307,573"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1070,594,1174,575,1169,576,1072,599"/>
+<area shape="rect" id="Node000011" href="$classQuaternion.html#abcc01358aada56ea5f0db4da18aaf77d" title="Construct the identity rotation quaternion ." alt="" coords="1169,648,1324,673"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1069,620,1170,644,1165,644,1069,626"/>
+<area shape="rect" id="Node000012" href="$classQuaternion.html#a237c3a9dfefea10e7ec6b5f373546427" title="Return the scalar part ." alt="" coords="1190,597,1303,622"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="1079,607,1177,609,1172,610,1079,612"/>
+<area shape="rect" id="Node000016" href="$classElementBase.html#a645c362640caa4d333b5a5b2ce5b339b" title="Get transform." alt="" coords="916,335,1093,375"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="803,425,911,384,931,380,926,382,913,390,805,429"/>
+<area shape="rect" id="Node000023" href="$classElementBase.html#a32d09417eeb63d146563cf83eef799e5" title="Get transform." alt="" coords="912,186,1097,212"/>
+<area shape="poly" id="edge22_Node000015_Node000023" title=" " alt="" coords="780,425,818,381,861,322,874,293,881,268,890,245,910,221,918,218,914,222,913,225,894,247,886,270,879,295,866,324,822,384,783,429"/>
+<area shape="rect" id="Node000026" href="$classEuclid3D.html#aa11d7ee987d9f85367425adcdc783b81" title="Get displacement." alt="" coords="935,548,1074,573"/>
+<area shape="poly" id="edge29_Node000015_Node000026" title=" " alt="" coords="844,451,865,462,882,480,890,499,898,517,913,534,924,542,918,542,910,538,893,520,885,501,878,483,862,466,844,456"/>
+<area shape="rect" id="Node000027" href="$classVector3D.html#a6eb2b565b36b32858b79714151fc6df0" title="Get component." alt="" coords="949,400,1060,425"/>
+<area shape="poly" id="edge30_Node000015_Node000027" title=" " alt="" coords="858,427,936,420,931,422,859,432"/>
+<area shape="rect" id="Node000028" href="$classVector3D.html#a40ae4bf4605ba79725876e00861f74c6" title="Get component." alt="" coords="949,449,1060,474"/>
+<area shape="poly" id="edge31_Node000015_Node000028" title=" " alt="" coords="858,446,936,455,930,456,859,451"/>
+<area shape="rect" id="Node000029" href="$classVector3D.html#a9a4b4c6ee6f7bffa65fb81b2ace4a8eb" title="Get component." alt="" coords="949,498,1060,524"/>
+<area shape="poly" id="edge32_Node000015_Node000029" title=" " alt="" coords="829,451,865,462,913,485,937,494,932,495,911,489,863,467,829,456"/>
+<area shape="rect" id="Node000017" href="$classBGeometryBase.html#a80203d8413eeb9a6895c24682cb0a500" title="Get transform." alt="" coords="1149,287,1344,327"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1093,335,1136,328,1131,330,1094,340"/>
+<area shape="rect" id="Node000022" href="$classElementBase.html#af8a0383ebe63f78e61bbf532e3c81874" title="Get geometry." alt="" coords="1156,186,1338,212"/>
+<area shape="poly" id="edge21_Node000016_Node000022" title=" " alt="" coords="1075,332,1095,321,1120,299,1143,273,1212,223,1216,220,1147,277,1124,302,1099,325,1077,336"/>
+<area shape="rect" id="Node000018" href="$classBGeometryBase.html#a5db85da1c96e5be8ffbdd0b2b913be47" title="Get entrance position." alt="" coords="1400,294,1595,320"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1344,304,1387,306,1381,308,1345,310"/>
+<area shape="rect" id="Node000021" href="$classBGeometryBase.html#a0b27cf0c53d13be32e8cec8343c31900" title="Get transform." alt="" coords="1396,237,1599,262"/>
+<area shape="poly" id="edge20_Node000017_Node000021" title=" " alt="" coords="1338,284,1426,266,1421,267,1340,289"/>
+<area shape="rect" id="Node000019" href="$classBGeometryBase.html#a801847a7293b13d6f3e589d14e705385" title="Get origin position." alt="" coords="1647,188,1824,213"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="1546,291,1598,273,1652,246,1698,223,1703,220,1654,251,1600,277,1548,296"/>
+<area shape="rect" id="Node000020" href="$classBGeometryBase.html#ad65fbb978aab956e163378ef589d74c0" title="Get arc length." alt="" coords="1872,162,2074,188"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="1824,188,1859,187,1854,188,1825,193"/>
+<area shape="poly" id="edge28_Node000023_Node000022" title=" " alt="" coords="1097,196,1143,198,1137,200,1098,202"/>
+<area shape="rect" id="Node000024" href="$classBGeometryBase.html#a191e6b8816e2906eb3b539751e1fafa9" title="Get transform." alt="" coords="1145,137,1348,162"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="1070,183,1168,165,1163,167,1072,188"/>
+<area shape="poly" id="edge27_Node000024_Node000021" title=" " alt="" coords="1314,160,1349,171,1410,198,1464,229,1459,229,1408,203,1347,176,1314,166"/>
+<area shape="rect" id="Node000025" href="$classBGeometryBase.html#a6a97a8c8e41886fcf6115188674468a0" title="Get exit position." alt="" coords="1414,137,1581,162"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="1348,147,1402,149,1396,150,1350,152"/>
+<area shape="poly" id="edge26_Node000025_Node000019" title=" " alt="" coords="1561,160,1660,183,1654,184,1561,166"/>
+<area shape="poly" id="edge25_Node000025_Node000020" title=" " alt="" coords="1581,151,1859,168,1854,169,1582,157"/>
+<area shape="rect" id="Node000031" href="$classElementBase.html#a9474fb82a9bc774302a90b46744c26a3" title="Get entrance position." alt="" coords="916,285,1093,310"/>
+<area shape="poly" id="edge34_Node000030_Node000031" title=" " alt="" coords="855,295,902,297,897,299,856,300"/>
+<area shape="rect" id="Node000032" href="$classElementBase.html#a13851a5e61d04cfc731320293c4f6adc" title="Get exit position." alt="" coords="930,85,1078,110"/>
+<area shape="poly" id="edge37_Node000030_Node000032" title=" " alt="" coords="845,282,862,272,881,249,888,226,894,200,910,172,938,142,972,118,968,121,942,146,914,175,899,202,893,227,885,252,865,276,848,286"/>
+<area shape="rect" id="Node000033" href="$classElementBase.html#a7e39dd0332154bf171aee424b6a1d3f7" title="Get transform." alt="" coords="912,236,1096,261"/>
+<area shape="poly" id="edge40_Node000030_Node000033" title=" " alt="" coords="832,282,927,264,922,266,834,287"/>
+<area shape="poly" id="edge35_Node000031_Node000018" title=" " alt="" coords="1056,308,1098,320,1122,330,1146,336,1202,344,1246,345,1348,336,1435,323,1429,325,1349,342,1246,351,1202,349,1144,342,1120,335,1096,326,1056,314"/>
+<area shape="poly" id="edge36_Node000031_Node000022" title=" " alt="" coords="1063,282,1096,271,1156,245,1211,219,1207,221,1158,250,1098,276,1065,287"/>
+<area shape="poly" id="edge39_Node000032_Node000022" title=" " alt="" coords="1056,108,1098,127,1113,139,1123,151,1132,162,1146,173,1159,180,1153,181,1144,177,1128,166,1119,155,1110,143,1096,132,1056,114"/>
+<area shape="poly" id="edge38_Node000032_Node000025" title=" " alt="" coords="1078,99,1205,107,1349,122,1414,133,1408,134,1348,127,1205,113,1079,104"/>
+<area shape="poly" id="edge42_Node000033_Node000021" title=" " alt="" coords="1096,246,1383,248,1378,250,1097,251"/>
+<area shape="poly" id="edge41_Node000033_Node000022" title=" " alt="" coords="1070,232,1168,214,1163,217,1072,237"/>
+<area shape="poly" id="edge46_Node000036_Node000009" title=" " alt="" coords="830,641,921,625,916,627,831,646"/>
+<area shape="poly" id="edge51_Node000036_Node000011" title=" " alt="" coords="830,653,1156,659,1151,660,831,658"/>
+<area shape="rect" id="Node000037" href="$classQuaternion.html#aa29522eb8e682639a9efddce09a49f6f" title="Return true if &#160;within a fixed tolerance." alt="" coords="941,698,1068,724"/>
+<area shape="poly" id="edge47_Node000036_Node000037" title=" " alt="" coords="825,666,934,694,929,694,825,671"/>
+<area shape="rect" id="Node000038" href="$classQuaternion.html#afd6f04fe42007759224bbfb5c7727eb0" title="Return ." alt="" coords="1184,724,1309,749"/>
+<area shape="poly" id="edge50_Node000036_Node000038" title=" " alt="" coords="831,662,865,677,881,692,889,708,897,722,913,734,945,746,979,755,1049,761,1117,758,1179,752,1173,753,1117,764,1049,767,978,760,944,751,910,739,893,726,885,710,877,695,862,681,831,667"/>
+<area shape="poly" id="edge48_Node000037_Node000038" title=" " alt="" coords="1068,715,1172,728,1166,728,1068,720"/>
+<area shape="rect" id="Node000039" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="1478,724,1517,749"/>
+<area shape="poly" id="edge49_Node000038_Node000039" title=" " alt="" coords="1309,734,1465,736,1460,737,1310,739"/>
+<area shape="poly" id="edge53_Node000040_Node000041" title=" " alt="" coords="854,780,905,794,900,794,854,785"/>
+<area shape="rect" id="Node000043" href="$classBeamlineFieldElement.html#aa8b7ac5542aed09f42965fec9f6881d8" title=" " alt="" coords="688,856,847,897"/>
+<area shape="poly" id="edge55_Node000042_Node000043" title=" " alt="" coords="584,874,675,876,670,877,584,879"/>
+<area shape="rect" id="Node000044" href="$classElementBase.html#a07827d00308052e65fe03da558f0b987" title="Get element name." alt="" coords="687,921,848,946"/>
+<area shape="poly" id="edge56_Node000042_Node000044" title=" " alt="" coords="584,890,694,917,689,917,583,896"/>
+<area shape="poly" id="edge59_Node000045_Node000022" title=" " alt="" coords="313,477,343,466,397,437,440,406,475,375,506,343,537,311,572,280,615,250,670,221,735,195,788,183,911,171,1004,165,1097,171,1168,182,1163,184,1097,176,1004,171,912,176,789,188,736,201,672,225,618,254,575,284,540,315,509,347,478,379,443,411,400,441,345,471,317,481"/>
+<area shape="rect" id="Node000046" href="$classBGeometryBase.html#a4d338ebcb0efefa851ff4bdc08f7efb2" title="Set geometry length." alt="" coords="412,472,603,513"/>
+<area shape="poly" id="edge60_Node000045_Node000046" title=" " alt="" coords="339,490,398,491,394,494,341,495"/>
+<area shape="rect" id="Node000049" href="$classOpalBeamline.html#a255ca6d4b47240c33538cf87a9343a5b" title=" " alt="" coords="406,695,609,735"/>
+<area shape="poly" id="edge63_Node000048_Node000049" title=" " alt="" coords="301,548,345,563,476,684,471,685,343,568,302,553"/>
+<area shape="poly" id="edge64_Node000049_Node000040" title=" " alt="" coords="610,731,667,743,661,743,610,736"/>
 </map>

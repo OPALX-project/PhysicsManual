@@ -18,7 +18,7 @@ var searchData=
   ['gsl_5ffft_5fhalfcomplex_5fworkspace_15',['gsl_fft_halfcomplex_workspace',['../GSLFFT_8h.html#structgsl__fft__halfcomplex__workspace',1,'']]],
   ['gsl_5ffft_5freal_5fwavetable_16',['gsl_fft_real_wavetable',['../GSLFFT_8h.html#structgsl__fft__real__wavetable',1,'']]],
   ['gsl_5ffft_5freal_5fworkspace_17',['gsl_fft_real_workspace',['../GSLFFT_8h.html#structgsl__fft__real__workspace',1,'']]],
-  ['gsl_5ffunction_18',['gsl_function',['../structgsl__function.html',1,'']]],
+  ['gsl_5ffunction_18',['gsl_function',['../GSLIntegration_8h.html#structgsl__function',1,'']]],
   ['gsl_5fhistogram_19',['gsl_histogram',['../classgsl__histogram.html',1,'']]],
   ['gsl_5fhistogram2d_20',['gsl_histogram2d',['../classgsl__histogram2d.html',1,'']]],
   ['gsl_5fhistogram2d_5fpdf_21',['gsl_histogram2d_pdf',['../classgsl__histogram2d__pdf.html',1,'']]],

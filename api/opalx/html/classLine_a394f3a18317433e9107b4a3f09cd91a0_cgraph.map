@@ -1,131 +1,122 @@
 <map id="Line::parse" name="Line::parse">
-<area shape="rect" id="Node000001" title="Parse the line object." alt="" coords="5,768,99,793"/>
-<area shape="rect" id="Node000002" href="$classOpalData.html#a696d78c4b23e4b0375ba2b3e0fc01e3b" title="Apply a function to all objects." alt="" coords="191,55,318,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,768,57,651,73,465,85,366,101,273,121,195,144,139,174,107,209,84,212,89,177,111,149,142,126,197,106,274,91,367,78,466,63,651,56,768"/>
-<area shape="rect" id="Node000005" href="$classElementBase.html#aa60aedf5e43e6a4561b4a93e6962f377" title="Make a structural copy." alt="" coords="151,153,358,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="51,768,56,695,69,579,97,441,118,371,144,304,163,269,185,238,228,187,232,190,189,241,167,272,149,306,123,372,102,442,75,580,61,696,56,768"/>
-<area shape="rect" id="Node000008" href="$classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11" title="Test for delimiter." alt="" coords="2139,1012,2297,1037"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="57,793,63,883,79,1018,91,1088,107,1152,126,1204,149,1238,193,1273,236,1294,278,1304,320,1306,414,1296,468,1290,529,1287,1731,1287,1785,1290,1833,1295,1915,1306,1952,1307,1991,1301,2033,1287,2079,1262,2106,1241,2130,1216,2167,1157,2193,1098,2208,1050,2213,1052,2198,1100,2172,1159,2134,1219,2110,1245,2081,1267,2035,1292,1992,1306,1953,1312,1914,1311,1832,1300,1785,1295,1731,1293,529,1293,468,1295,415,1301,320,1311,277,1309,234,1299,191,1277,145,1241,121,1206,102,1153,86,1089,74,1019,58,883,51,794"/>
-<area shape="rect" id="Node000009" href="$classLine.html#a6f07ce0131d1333a29669ad687ae7834" title="Return the embedded OPALX beam line." alt="" coords="471,672,589,697"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="98,766,146,754,313,720,457,694,458,699,314,725,147,759,99,771"/>
-<area shape="rect" id="Node000011" href="$classElement.html#a5b40298e379b7847c418b98760c601da" title="Find named Element." alt="" coords="201,667,309,692"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="66,766,101,737,145,709,186,693,188,698,148,714,104,742,69,770"/>
-<area shape="rect" id="Node000014" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="447,573,613,599"/>
-<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="51,767,57,724,71,665,83,633,99,603,120,576,145,554,188,533,234,522,282,518,330,522,377,530,420,541,490,566,488,571,418,546,375,535,329,527,282,524,235,527,190,538,148,559,123,580,104,606,88,636,76,666,62,725,57,768"/>
-<area shape="rect" id="Node000016" href="$classObject.html#aaba6fa24b81be56d195924fa9f6ea9bd" title="Find an attribute by name." alt="" coords="178,568,331,593"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="54,767,64,734,81,690,108,643,125,622,145,604,164,593,166,597,148,608,129,626,112,646,86,692,69,736,59,769"/>
-<area shape="rect" id="Node000017" href="$classElement.html#a2887789df3412413802444eca18b64df" title="Return the embedded OPALX element as shared_ptr." alt="" coords="166,617,343,643"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="57,766,89,711,114,680,145,653,158,646,161,650,148,658,118,683,93,714,61,769"/>
-<area shape="rect" id="Node000018" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="183,317,327,343"/>
-<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="52,768,60,684,77,559,90,494,105,435,123,385,145,352,168,337,171,341,149,356,128,388,110,436,95,495,82,560,65,685,57,768"/>
-<area shape="rect" id="Node000024" href="$namespaceAttributes.html#ab98e27fb1c758b0a63d9e242fcbe68e6" title="Get array value." alt="" coords="165,367,344,392"/>
-<area shape="poly" id="edge24_Node000001_Node000024" title=" " alt="" coords="52,768,58,715,73,635,100,545,120,500,145,459,178,423,215,397,218,401,182,427,149,462,125,503,105,547,78,637,63,716,57,768"/>
-<area shape="rect" id="Node000025" href="$classObject.html#aa6e71ce6385ca4963129458e9c51ae91" title="Increment and return the occurrence counter." alt="" coords="185,768,324,793"/>
-<area shape="poly" id="edge29_Node000001_Node000025" title=" " alt="" coords="99,778,171,778,171,783,99,783"/>
-<area shape="rect" id="Node000026" href="$classExpressions_1_1PtrToScalar.html#ad7a5eeeae01a595eb22c92ec5e34ded9" title=" " alt="" coords="1887,1213,2067,1253"/>
-<area shape="poly" id="edge30_Node000001_Node000026" title=" " alt="" coords="56,793,57,851,67,937,79,984,95,1032,118,1076,149,1115,193,1157,235,1188,276,1210,318,1224,362,1232,411,1236,529,1237,1494,1237,1874,1232,1874,1238,1494,1242,529,1242,411,1241,362,1237,316,1229,274,1214,232,1192,190,1161,145,1118,114,1079,91,1034,74,986,62,938,51,851,50,793"/>
-<area shape="rect" id="Node000027" href="$classExpressions_1_1SBinary.html#a02d55f31bfe013598c4501f55ad45c71" title="Make a new expression." alt="" coords="1898,642,2057,682"/>
-<area shape="poly" id="edge31_Node000001_Node000027" title=" " alt="" coords="51,767,54,719,67,651,79,614,96,578,117,545,145,517,193,485,238,466,281,458,324,457,416,468,469,474,529,477,1267,477,1428,480,1553,495,1675,525,1828,577,1886,603,1937,632,1934,637,1883,608,1826,582,1673,531,1552,500,1427,486,1267,482,529,482,469,479,416,473,324,462,282,463,240,471,196,490,148,521,121,548,100,580,84,616,73,652,60,720,56,768"/>
-<area shape="rect" id="Node000029" href="$classAttribute.html#a6bc9587ae494cd83cc90b37bdc8b4780" title="Parse attribute." alt="" coords="193,943,316,968"/>
-<area shape="poly" id="edge33_Node000001_Node000029" title=" " alt="" coords="61,792,91,854,117,890,148,921,181,938,179,943,145,925,112,894,87,857,56,795"/>
-<area shape="rect" id="Node000030" href="$namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599" title="Test for one&#45;character delimiter." alt="" coords="1875,1088,2080,1113"/>
-<area shape="poly" id="edge34_Node000001_Node000030" title=" " alt="" coords="58,793,66,830,82,881,109,934,127,958,148,979,220,1032,288,1075,354,1109,417,1134,479,1153,541,1165,602,1171,665,1174,793,1168,933,1155,1088,1141,1264,1135,1494,1135,1688,1128,1861,1112,1861,1117,1688,1133,1494,1141,1264,1141,1088,1147,933,1160,794,1173,665,1179,602,1177,540,1170,478,1158,416,1139,352,1113,286,1079,217,1036,145,983,123,962,105,937,77,883,61,831,53,794"/>
-<area shape="rect" id="Node000031" href="$classLine.html#ab5fc08aed2a0d3d18c6f51b2b1daa62e" title=" " alt="" coords="197,841,313,867"/>
-<area shape="poly" id="edge36_Node000001_Node000031" title=" " alt="" coords="89,791,207,834,205,839,87,796"/>
-<area shape="rect" id="Node000035" href="$namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582" title="Parse string value." alt="" coords="439,949,621,975"/>
-<area shape="poly" id="edge75_Node000001_Node000035" title=" " alt="" coords="64,792,97,835,121,858,148,877,190,891,267,909,446,944,445,949,266,914,189,896,145,882,118,862,93,838,60,795"/>
-<area shape="rect" id="Node000066" href="$classAttribute.html#a49d45325718bbe8a51e90c6c9ac064e4" title="Assign default value." alt="" coords="177,1328,332,1353"/>
-<area shape="poly" id="edge76_Node000001_Node000066" title=" " alt="" coords="56,793,62,893,77,1048,89,1129,105,1204,125,1266,136,1289,149,1307,167,1321,163,1325,145,1310,132,1292,120,1268,100,1205,84,1130,72,1049,57,894,51,794"/>
-<area shape="rect" id="Node000067" href="$classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3" title=" " alt="" coords="147,1377,363,1403"/>
-<area shape="poly" id="edge77_Node000001_Node000067" title=" " alt="" coords="56,793,60,903,73,1076,84,1167,100,1250,122,1319,134,1345,149,1364,152,1367,148,1371,145,1368,130,1347,117,1321,95,1251,79,1167,67,1076,54,903,51,793"/>
-<area shape="rect" id="Node000068" href="$classTBeamline.html#a420209e2255923b62461f2d20447389b" title=" " alt="" coords="166,1427,343,1452"/>
-<area shape="poly" id="edge78_Node000001_Node000068" title=" " alt="" coords="56,794,58,912,70,1100,81,1198,98,1289,120,1364,133,1392,149,1414,156,1420,152,1424,145,1417,129,1395,115,1366,92,1290,76,1199,64,1100,53,913,51,794"/>
-<area shape="rect" id="Node000069" href="$classTBeamline.html#a24e669334acb5468c24c1607e03b54e3" title=" " alt="" coords="153,1476,356,1501"/>
-<area shape="poly" id="edge79_Node000001_Node000069" title=" " alt="" coords="56,794,57,920,67,1123,78,1229,95,1328,118,1409,132,1440,149,1463,152,1466,148,1470,145,1466,128,1442,113,1411,90,1329,73,1230,62,1123,52,920,51,794"/>
-<area shape="rect" id="Node000003" href="$classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253" title="First object in alphabetic order of name." alt="" coords="467,55,593,80"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,65,454,65,454,70,318,70"/>
-<area shape="rect" id="Node000004" href="$classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978" title="Last object in alphabetic order of name." alt="" coords="473,5,587,31"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="318,53,459,28,460,33,319,59"/>
-<area shape="rect" id="Node000006" href="$classElementBase.html#a50a34a1b9a7db73b407bc5100a07030c" title="Return clone." alt="" coords="455,153,605,179"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="358,163,441,163,441,169,358,169"/>
-<area shape="rect" id="Node000007" href="$classElementBase.html#ac39f80091bcbce72cd429499a33c18f5" title="Test if the element can be shared." alt="" coords="438,104,622,129"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="326,151,445,129,446,134,327,156"/>
-<area shape="rect" id="Node000010" href="$classElement.html#a68136aee2ed8edfe943a7bf2933b08ca" title="Return the embedded OPALX element." alt="" coords="723,672,882,697"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="589,682,709,682,709,687,589,687"/>
-<area shape="rect" id="Node000012" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="473,623,587,648"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="309,668,459,644,459,649,310,673"/>
-<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="308,670,335,664,361,653,376,643,385,632,394,620,409,609,432,599,434,604,412,614,398,624,389,635,379,647,364,658,337,669,310,676"/>
-<area shape="rect" id="Node000013" href="$classDirectory.html#a9004a43fe680a069941293f8ab075c24" title="Find entry." alt="" coords="746,623,859,648"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="588,633,732,633,732,638,588,638"/>
-<area shape="rect" id="Node000015" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="727,573,879,599"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="613,583,713,583,713,589,613,589"/>
-<area shape="rect" id="Node000019" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="449,203,611,243"/>
-<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="278,315,337,285,410,253,434,244,436,250,412,258,339,289,280,320"/>
-<area shape="rect" id="Node000020" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="460,367,600,392"/>
-<area shape="poly" id="edge20_Node000018_Node000020" title=" " alt="" coords="327,340,447,362,446,367,326,345"/>
-<area shape="rect" id="Node000021" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="451,416,609,441"/>
-<area shape="poly" id="edge21_Node000018_Node000021" title=" " alt="" coords="328,337,364,352,380,364,389,378,397,391,412,402,438,413,436,418,409,407,394,394,384,381,376,368,361,356,326,342"/>
-<area shape="rect" id="Node000022" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="457,268,603,293"/>
-<area shape="poly" id="edge22_Node000018_Node000022" title=" " alt="" coords="326,315,445,293,446,298,327,320"/>
-<area shape="rect" id="Node000023" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="435,317,625,343"/>
-<area shape="poly" id="edge23_Node000018_Node000023" title=" " alt="" coords="327,327,421,327,421,333,327,333"/>
-<area shape="poly" id="edge25_Node000024_Node000020" title=" " alt="" coords="344,377,446,377,446,382,344,382"/>
-<area shape="poly" id="edge26_Node000024_Node000021" title=" " alt="" coords="327,389,446,411,445,416,326,395"/>
-<area shape="poly" id="edge27_Node000024_Node000022" title=" " alt="" coords="332,364,361,352,376,340,384,328,394,315,409,302,442,289,444,294,412,307,398,318,389,331,380,344,364,356,334,369"/>
-<area shape="poly" id="edge28_Node000024_Node000023" title=" " alt="" coords="326,364,445,343,446,348,327,369"/>
-<area shape="rect" id="Node000028" href="$classExpressions_1_1PtrToScalar.html#a75920bbff1ee496984a01f36a0fd83ac" title=" " alt="" coords="2128,674,2308,714"/>
-<area shape="poly" id="edge32_Node000027_Node000028" title=" " alt="" coords="2058,670,2114,678,2114,683,2057,675"/>
-<area shape="poly" id="edge35_Node000030_Node000008" title=" " alt="" coords="2018,1085,2079,1066,2164,1039,2165,1044,2081,1071,2020,1090"/>
-<area shape="poly" id="edge37_Node000031_Node000008" title=" " alt="" coords="313,846,786,799,1021,772,1128,756,1142,741,1149,725,1152,691,1154,655,1162,637,1175,620,1215,587,1253,560,1290,539,1327,524,1364,515,1400,509,1474,510,1552,521,1635,539,1726,559,1827,577,1902,580,1964,579,1992,582,2021,590,2050,605,2082,628,2095,648,2112,686,2149,791,2212,998,2207,999,2144,793,2107,688,2091,651,2078,632,2048,609,2019,595,1991,587,1963,585,1902,586,1826,582,1725,565,1634,545,1551,527,1474,515,1401,515,1365,520,1329,530,1293,544,1256,564,1218,591,1179,624,1166,640,1160,657,1157,692,1154,727,1146,744,1131,760,1022,778,787,804,313,851"/>
-<area shape="poly" id="edge38_Node000031_Node000009" title=" " alt="" coords="300,839,332,825,361,804,377,780,383,756,390,731,409,708,432,695,457,687,458,692,434,700,412,712,394,734,388,757,382,782,365,808,335,829,303,844"/>
-<area shape="poly" id="edge39_Node000031_Node000012" title=" " alt="" coords="305,839,335,825,361,804,373,786,380,768,382,731,386,695,394,676,409,659,432,644,458,636,460,641,434,649,412,663,398,679,391,696,387,732,385,769,378,788,365,808,338,829,307,844"/>
-<area shape="poly" id="edge40_Node000031_Node000014" title=" " alt="" coords="307,839,336,825,361,804,376,779,383,755,381,706,380,682,382,658,390,633,409,609,432,594,435,598,412,613,395,636,387,659,385,682,387,706,388,756,381,782,365,808,339,829,309,844"/>
-<area shape="poly" id="edge44_Node000031_Node000030" title=" " alt="" coords="313,860,571,902,909,961,1009,985,1086,1009,1163,1027,1209,1032,1264,1034,1494,1034,1607,1039,1720,1051,1905,1083,1904,1088,1719,1056,1607,1044,1494,1039,1264,1039,1209,1037,1162,1032,1084,1014,1007,990,907,966,570,907,312,865"/>
-<area shape="poly" id="edge45_Node000031_Node000031" title=" " alt="" coords="221,843,214,833,218,823,232,817,255,815,283,818,294,828,291,832,281,823,255,820,233,822,222,827,219,832,226,840"/>
-<area shape="rect" id="Node000032" href="$classStatement.html#ac89801cdd2ceaf990ae5e7fecfdbbdb2" title="Return signed integer." alt="" coords="458,771,602,796"/>
-<area shape="poly" id="edge41_Node000031_Node000032" title=" " alt="" coords="305,839,466,797,467,802,306,844"/>
-<area shape="poly" id="edge46_Node000031_Node000035" title=" " alt="" coords="305,864,364,884,433,912,493,941,490,946,431,917,362,888,303,869"/>
-<area shape="rect" id="Node000065" href="$classFlaggedElmPtr.html#a573261c872dbeaace4bdc1eadc69630a" title="Set reflection flag." alt="" coords="411,721,649,747"/>
-<area shape="poly" id="edge74_Node000031_Node000065" title=" " alt="" coords="292,839,326,824,361,804,375,792,384,780,394,768,409,757,428,749,430,754,412,762,397,772,388,783,379,795,364,808,329,828,294,844"/>
-<area shape="rect" id="Node000033" href="$classToken.html#ada1cc62aa4bf9b993429d885d99a8e6e" title="Return integer value." alt="" coords="735,721,870,747"/>
-<area shape="poly" id="edge42_Node000032_Node000033" title=" " alt="" coords="600,768,722,746,723,751,601,773"/>
-<area shape="rect" id="Node000034" href="$classToken.html#ab01344d54896e47732673fdca50e9d81" title=" " alt="" coords="987,720,1098,745"/>
-<area shape="poly" id="edge43_Node000033_Node000034" title=" " alt="" coords="870,731,974,730,974,736,870,736"/>
-<area shape="poly" id="edge47_Node000035_Node000008" title=" " alt="" coords="545,973,606,1033,650,1067,699,1094,779,1128,849,1153,912,1169,973,1179,1034,1184,1101,1186,1264,1186,1494,1186,1662,1190,1794,1191,1856,1186,1922,1174,1995,1154,2079,1124,2112,1107,2143,1087,2193,1045,2196,1049,2146,1091,2115,1112,2081,1128,1997,1159,1923,1179,1857,1191,1794,1196,1662,1195,1494,1191,1264,1191,1101,1192,1034,1190,972,1184,911,1174,847,1158,777,1133,696,1099,647,1071,602,1037,541,977"/>
-<area shape="poly" id="edge48_Node000035_Node000030" title=" " alt="" coords="549,973,611,1017,653,1041,698,1059,792,1083,867,1089,1041,1085,1494,1085,1688,1087,1861,1093,1861,1098,1688,1093,1494,1090,1041,1090,867,1095,791,1088,696,1065,651,1046,609,1022,545,977"/>
-<area shape="rect" id="Node000036" href="$namespaceExpressions.html#acab3a7269ef8ca60c0ac1da0fcdb4bc0" title="Parse real constant." alt="" coords="697,823,908,848"/>
-<area shape="poly" id="edge49_Node000035_Node000036" title=" " alt="" coords="558,947,761,851,763,856,560,952"/>
-<area shape="rect" id="Node000061" href="$classStatement.html#a4f177c8818ebf7047e4302b5886dca1e" title="Return string value." alt="" coords="745,975,860,1000"/>
-<area shape="poly" id="edge72_Node000035_Node000061" title=" " alt="" coords="622,968,732,978,731,983,621,973"/>
-<area shape="rect" id="Node000062" href="$classStatement.html#ac8e21e0dce1b621eacc7d1405f760af4" title="Return word value." alt="" coords="737,1024,868,1049"/>
-<area shape="poly" id="edge73_Node000035_Node000062" title=" " alt="" coords="571,972,698,1010,730,1018,729,1023,697,1015,570,977"/>
-<area shape="rect" id="Node000037" href="$namespaceExpressions.html#a1f8eac44bce6d98fadb0eb1dafe2e0b7" title="Parse real expression." alt="" coords="956,821,1129,847"/>
-<area shape="poly" id="edge50_Node000036_Node000037" title=" " alt="" coords="908,832,942,832,942,837,908,837"/>
-<area shape="poly" id="edge51_Node000037_Node000008" title=" " alt="" coords="1087,844,1217,881,1411,931,1639,981,1758,1002,1875,1018,2006,1026,2126,1026,2126,1031,2006,1032,1874,1023,1757,1007,1638,986,1410,936,1216,887,1085,849"/>
-<area shape="poly" id="edge54_Node000037_Node000027" title=" " alt="" coords="1097,819,1128,800,1139,786,1145,771,1150,741,1155,711,1162,696,1176,681,1217,651,1262,627,1309,607,1358,593,1409,583,1460,577,1563,575,1663,583,1757,598,1839,617,1905,635,1904,640,1837,622,1756,603,1663,588,1563,580,1460,582,1409,588,1359,598,1311,612,1264,631,1220,656,1179,685,1167,699,1160,712,1155,742,1150,773,1144,788,1131,804,1100,823"/>
-<area shape="rect" id="Node000038" href="$classExpressions_1_1SUnary.html#aebb27b99fea35b7889e32a9c2cad8726" title="Make a new expression." alt="" coords="1900,706,2055,746"/>
-<area shape="poly" id="edge52_Node000037_Node000038" title=" " alt="" coords="1092,819,1128,800,1142,783,1150,765,1158,748,1176,732,1221,709,1267,690,1365,665,1466,653,1566,651,1662,657,1751,669,1895,700,1894,705,1751,675,1662,663,1566,656,1466,658,1366,670,1269,695,1223,714,1179,736,1163,751,1155,768,1147,786,1131,804,1094,824"/>
-<area shape="rect" id="Node000039" href="$namespaceExpressions.html#a4a48ce79884dc753e78895eb75a14fa4" title=" " alt="" coords="1177,745,1353,771"/>
-<area shape="poly" id="edge55_Node000037_Node000039" title=" " alt="" coords="1080,819,1213,773,1215,778,1082,824"/>
-<area shape="poly" id="edge53_Node000038_Node000028" title=" " alt="" coords="2055,713,2114,705,2115,710,2056,718"/>
-<area shape="poly" id="edge56_Node000039_Node000008" title=" " alt="" coords="1354,751,1528,747,1741,750,1846,757,1942,769,2023,786,2055,797,2081,810,2107,829,2130,852,2167,903,2194,955,2211,998,2206,1000,2189,957,2162,906,2126,855,2103,833,2079,815,2053,802,2021,791,1942,774,1846,762,1741,756,1528,752,1354,757"/>
-<area shape="poly" id="edge57_Node000039_Node000027" title=" " alt="" coords="1298,743,1346,726,1401,711,1531,689,1663,675,1884,661,1884,667,1663,680,1532,695,1402,717,1347,731,1300,748"/>
-<area shape="rect" id="Node000040" href="$namespaceExpressions.html#af9fcbbca5cd08d2061002ca6ae12e9ba" title=" " alt="" coords="1401,771,1584,796"/>
-<area shape="poly" id="edge58_Node000039_Node000040" title=" " alt="" coords="1354,765,1388,769,1387,774,1353,770"/>
-<area shape="poly" id="edge59_Node000040_Node000008" title=" " alt="" coords="1585,793,1632,799,1701,805,1761,806,1865,801,1914,803,1964,811,2019,828,2081,857,2123,888,2159,926,2187,965,2206,998,2202,1001,2182,968,2155,929,2120,892,2079,862,2017,833,1963,816,1913,808,1865,807,1761,811,1701,811,1632,805,1584,798"/>
-<area shape="poly" id="edge60_Node000040_Node000027" title=" " alt="" coords="1545,768,1826,698,1885,683,1887,688,1827,703,1547,773"/>
-<area shape="rect" id="Node000041" href="$namespaceExpressions.html#abfeeadbea0c5dbdb90afb93fc3381e14" title=" " alt="" coords="1632,879,1827,904"/>
-<area shape="poly" id="edge61_Node000040_Node000041" title=" " alt="" coords="1540,794,1585,813,1610,832,1633,850,1678,871,1676,876,1631,855,1606,836,1583,818,1538,799"/>
-<area shape="poly" id="edge62_Node000041_Node000008" title=" " alt="" coords="1756,902,1828,942,1851,959,1876,972,1939,991,2005,1004,2126,1018,2125,1024,2004,1009,1938,996,1874,976,1849,963,1825,947,1753,907"/>
-<area shape="poly" id="edge64_Node000041_Node000026" title=" " alt="" coords="1740,903,1793,998,1832,1062,1877,1124,1912,1166,1947,1201,1943,1205,1908,1169,1873,1128,1828,1065,1788,1000,1735,905"/>
-<area shape="poly" id="edge67_Node000041_Node000027" title=" " alt="" coords="1737,877,1809,774,1848,721,1873,692,1884,685,1887,689,1876,696,1852,724,1813,777,1742,880"/>
-<area shape="poly" id="edge68_Node000041_Node000030" title=" " alt="" coords="1747,902,1876,1016,1951,1078,1948,1082,1873,1020,1743,906"/>
-<area shape="poly" id="edge71_Node000041_Node000035" title=" " alt="" coords="1632,900,636,959,635,953,1632,894"/>
-<area shape="poly" id="edge70_Node000041_Node000036" title=" " alt="" coords="1631,894,1330,886,1143,877,956,862,887,853,887,848,956,857,1143,872,1330,881,1632,888"/>
-<area shape="poly" id="edge69_Node000041_Node000037" title=" " alt="" coords="1665,881,1584,869,1346,848,1143,839,1143,834,1347,843,1584,863,1666,876"/>
-<area shape="poly" id="edge66_Node000041_Node000038" title=" " alt="" coords="1748,876,1934,751,1937,756,1751,881"/>
-<area shape="rect" id="Node000042" href="$namespaceExpressions.html#a6df3e22f0501817353f558a4ab982acb" title="Look up name." alt="" coords="1911,936,2043,961"/>
-<area shape="poly" id="edge63_Node000041_Node000042" title=" " alt="" coords="1786,901,1909,930,1908,935,1785,907"/>
-<area shape="rect" id="Node000043" href="$classExpressions_1_1SNull.html#aeb29aa7117f09aba950408ef120edf3b" title="Make expression." alt="" coords="1906,871,2049,911"/>
-<area shape="poly" id="edge65_Node000041_Node000043" title=" " alt="" coords="1827,889,1892,889,1892,894,1827,894"/>
+<area shape="rect" id="Node000001" title="Parse the line object." alt="" coords="5,1040,91,1066"/>
+<area shape="rect" id="Node000002" href="$classOpalData.html#a696d78c4b23e4b0375ba2b3e0fc01e3b" title="Apply a function to all objects." alt="" coords="177,56,292,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,1039,53,855,68,553,80,396,95,257,114,150,125,114,137,91,163,74,161,79,141,95,130,116,119,151,101,257,86,396,74,553,58,855,52,1039"/>
+<area shape="rect" id="Node000003" href="$classElementBase.html#aa60aedf5e43e6a4561b4a93e6962f377" title="Make a structural copy." alt="" coords="141,105,329,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="47,1039,54,866,71,582,83,435,98,305,116,204,126,170,137,149,151,137,149,142,141,152,131,172,121,206,103,305,89,436,77,582,60,866,52,1040"/>
+<area shape="rect" id="Node000007" href="$classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11" title="Test for delimiter." alt="" coords="913,307,1051,332"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="47,1039,48,909,59,698,70,587,86,482,108,395,121,361,137,334,159,310,189,287,227,266,269,247,368,214,477,189,589,174,695,168,788,174,827,181,859,192,893,212,923,238,967,294,962,294,920,242,890,216,857,197,825,186,787,179,695,174,590,179,478,194,369,219,271,251,229,271,192,291,163,314,141,337,126,363,113,397,91,483,75,587,64,699,54,909,52,1039"/>
+<area shape="rect" id="Node000008" href="$classElement.html#aab5f775fd5050d282be9e41ec2190ce4" title="Constructor for exemplars." alt="" coords="919,584,1044,610"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="48,1039,55,955,72,829,84,764,99,703,116,654,137,619,178,580,225,548,275,524,329,507,385,495,442,489,500,488,558,490,672,505,776,527,866,553,935,577,930,579,864,558,775,532,671,510,558,496,500,493,442,495,385,501,330,512,277,529,227,553,182,584,141,623,121,656,104,705,89,765,77,830,61,956,53,1040"/>
+<area shape="rect" id="Node000010" href="$classLine.html#a6f07ce0131d1333a29669ad687ae7834" title="Return the embedded OPALX beam line." alt="" coords="434,911,541,936"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="54,1039,86,995,110,972,137,953,173,938,209,927,285,914,357,911,422,914,417,917,357,916,286,920,211,932,174,943,140,958,113,976,90,998,59,1041"/>
+<area shape="rect" id="Node000012" href="$classElement.html#a5b40298e379b7847c418b98760c601da" title="Find named Element." alt="" coords="702,809,800,835"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="51,1039,62,1012,80,977,105,942,137,913,206,876,280,849,356,830,433,818,507,811,575,809,689,814,684,817,575,815,507,817,434,823,357,835,281,854,208,881,140,918,109,946,84,980,67,1014,56,1040"/>
+<area shape="rect" id="Node000014" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="906,911,1058,936"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="65,1038,98,1017,138,1000,244,972,335,958,417,953,494,955,655,960,748,957,857,946,911,939,906,941,858,951,748,963,655,965,494,960,417,959,336,963,245,978,140,1005,101,1022,70,1041"/>
+<area shape="rect" id="Node000016" href="$classObject.html#aaba6fa24b81be56d195924fa9f6ea9bd" title="Find an attribute by name." alt="" coords="166,1113,304,1139"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="69,1064,103,1082,140,1100,159,1107,154,1110,138,1105,100,1087,71,1069"/>
+<area shape="rect" id="Node000017" href="$classElement.html#a2887789df3412413802444eca18b64df" title="Return the embedded OPALX element as shared_ptr." alt="" coords="155,1163,315,1188"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="57,1064,92,1107,114,1130,140,1149,150,1155,145,1157,137,1154,111,1134,88,1110,58,1069"/>
+<area shape="rect" id="Node000018" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="170,1015,300,1040"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="89,1045,156,1036,152,1040,93,1049"/>
+<area shape="rect" id="Node000029" href="$namespaceAttributes.html#ab98e27fb1c758b0a63d9e242fcbe68e6" title="Get array value." alt="" coords="154,1064,316,1090"/>
+<area shape="poly" id="edge31_Node000001_Node000029" title=" " alt="" coords="90,1056,141,1063,137,1066,93,1061"/>
+<area shape="rect" id="Node000030" href="$classObject.html#aa6e71ce6385ca4963129458e9c51ae91" title="Increment and return the occurrence counter." alt="" coords="173,1212,297,1238"/>
+<area shape="poly" id="edge36_Node000001_Node000030" title=" " alt="" coords="53,1064,67,1094,84,1130,109,1167,140,1199,160,1211,155,1213,137,1203,104,1171,79,1133,62,1096,54,1069"/>
+<area shape="rect" id="Node000031" href="$classExpressions_1_1PtrToScalar.html#ad7a5eeeae01a595eb22c92ec5e34ded9" title=" " alt="" coords="150,1262,320,1302"/>
+<area shape="poly" id="edge37_Node000001_Node000031" title=" " alt="" coords="51,1063,62,1102,78,1151,104,1203,121,1227,141,1248,144,1252,139,1254,137,1252,117,1230,99,1206,73,1153,57,1103,52,1069"/>
+<area shape="rect" id="Node000032" href="$classExpressions_1_1SBinary.html#a02d55f31bfe013598c4501f55ad45c71" title="Make a new expression." alt="" coords="161,1327,308,1368"/>
+<area shape="poly" id="edge38_Node000001_Node000032" title=" " alt="" coords="50,1063,57,1112,71,1178,82,1214,97,1249,116,1283,141,1312,150,1321,145,1322,137,1316,112,1286,92,1252,77,1216,66,1179,52,1112,50,1068"/>
+<area shape="rect" id="Node000036" href="$classAttribute.html#a6bc9587ae494cd83cc90b37bdc8b4780" title="Parse attribute." alt="" coords="180,1392,290,1418"/>
+<area shape="poly" id="edge42_Node000001_Node000036" title=" " alt="" coords="49,1064,52,1123,62,1207,72,1253,88,1298,111,1341,140,1378,167,1395,162,1397,137,1381,106,1344,84,1300,67,1254,56,1208,47,1124,49,1069"/>
+<area shape="rect" id="Node000037" href="$namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599" title="Test for one&#45;character delimiter." alt="" coords="658,207,844,232"/>
+<area shape="poly" id="edge43_Node000001_Node000037" title=" " alt="" coords="47,1040,52,925,66,743,78,646,93,556,112,480,136,426,159,396,184,369,242,324,307,288,377,261,448,242,518,229,645,218,640,221,519,234,449,247,379,267,310,293,245,328,188,373,163,400,141,429,117,482,98,557,83,647,71,743,57,925,52,1040"/>
+<area shape="rect" id="Node000038" href="$classLine.html#ab5fc08aed2a0d3d18c6f51b2b1daa62e" title=" " alt="" coords="182,657,288,683"/>
+<area shape="poly" id="edge45_Node000001_Node000038" title=" " alt="" coords="50,1039,80,939,105,870,136,802,174,742,214,693,212,697,178,745,141,805,110,872,85,940,55,1040"/>
+<area shape="rect" id="Node000050" href="$namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582" title="Parse string value." alt="" coords="404,355,571,380"/>
+<area shape="poly" id="edge66_Node000001_Node000050" title=" " alt="" coords="47,1039,52,935,66,773,77,688,93,609,112,544,124,518,137,498,162,471,191,449,256,413,324,390,390,376,387,380,325,395,258,418,194,453,166,475,141,501,128,520,117,545,98,610,83,689,71,774,57,936,52,1040"/>
+<area shape="rect" id="Node000082" href="$classAttribute.html#a49d45325718bbe8a51e90c6c9ac064e4" title="Assign default value." alt="" coords="166,1441,304,1467"/>
+<area shape="poly" id="edge67_Node000001_Node000082" title=" " alt="" coords="51,1063,62,1141,80,1250,106,1358,122,1400,141,1428,155,1440,149,1441,137,1432,118,1403,101,1360,75,1251,57,1141,51,1069"/>
+<area shape="rect" id="Node000083" href="$classTBeamline.html#a80d81bfbcd0ff398a8ca40ed17f0a4c3" title=" " alt="" coords="139,1491,331,1516"/>
+<area shape="poly" id="edge68_Node000001_Node000083" title=" " alt="" coords="50,1063,60,1149,77,1274,88,1338,103,1397,120,1445,141,1478,143,1481,138,1481,137,1481,116,1448,98,1399,83,1339,71,1274,55,1150,50,1069"/>
+<area shape="rect" id="Node000084" href="$classTBeamline.html#a420209e2255923b62461f2d20447389b" title=" " alt="" coords="155,1540,315,1566"/>
+<area shape="poly" id="edge69_Node000001_Node000084" title=" " alt="" coords="50,1063,59,1158,74,1297,85,1370,100,1436,119,1491,141,1527,145,1533,140,1532,137,1530,114,1493,95,1438,80,1371,68,1298,53,1158,50,1069"/>
+<area shape="rect" id="Node000085" href="$classTBeamline.html#a24e669334acb5468c24c1607e03b54e3" title=" " alt="" coords="144,1589,326,1615"/>
+<area shape="poly" id="edge70_Node000001_Node000085" title=" " alt="" coords="50,1063,57,1166,71,1320,82,1401,97,1475,117,1536,128,1559,141,1576,143,1580,138,1579,137,1580,124,1562,112,1538,92,1476,77,1402,65,1321,52,1166,50,1069"/>
+<area shape="rect" id="Node000004" href="$classElementBase.html#a50a34a1b9a7db73b407bc5100a07030c" title="Return clone." alt="" coords="418,5,557,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="306,103,330,92,344,80,353,67,362,53,378,40,405,29,402,33,380,44,366,56,357,69,348,83,332,96,310,106"/>
+<area shape="rect" id="Node000005" href="$classElementBase.html#a3f68872b192c622f46c69a9616b048c1" title="Constructor with given name." alt="" coords="658,56,844,82"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="328,112,456,103,596,90,659,83,655,86,597,95,457,108,331,116"/>
+<area shape="rect" id="Node000006" href="$classElementBase.html#ac39f80091bcbce72cd429499a33c18f5" title="Test if the element can be shared." alt="" coords="404,55,572,80"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="301,103,407,82,403,86,304,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="556,29,668,51,663,54,559,34"/>
+<area shape="rect" id="Node000009" href="$classObject.html#a83e89407c41a89f1a52086b8029fd99e" title="Constructor for exemplars." alt="" coords="1123,584,1228,610"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1044,594,1110,596,1105,598,1046,599"/>
+<area shape="rect" id="Node000011" href="$classElement.html#a68136aee2ed8edfe943a7bf2933b08ca" title="Return the embedded OPALX element." alt="" coords="679,911,823,936"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="540,921,666,922,661,925,542,926"/>
+<area shape="poly" id="edge13_Node000012_Node000008" title=" " alt="" coords="772,807,813,779,856,744,915,680,961,624,964,620,919,683,859,748,816,784,776,811"/>
+<area shape="rect" id="Node000013" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="929,809,1034,835"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="800,820,916,821,911,823,802,825"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="800,832,859,852,906,875,950,902,945,902,904,880,857,857,801,837"/>
+<area shape="rect" id="Node000015" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1106,911,1245,936"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1057,921,1093,923,1088,924,1059,926"/>
+<area shape="rect" id="Node000019" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="412,1011,564,1052"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="299,1026,398,1029,394,1032,302,1031"/>
+<area shape="rect" id="Node000025" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="424,1125,551,1151"/>
+<area shape="poly" id="edge27_Node000018_Node000025" title=" " alt="" coords="300,1035,333,1049,349,1065,357,1082,365,1098,380,1112,412,1127,407,1129,378,1116,361,1101,353,1084,345,1068,329,1054,301,1040"/>
+<area shape="rect" id="Node000026" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="417,1175,558,1200"/>
+<area shape="poly" id="edge28_Node000018_Node000026" title=" " alt="" coords="300,1033,333,1049,345,1063,353,1078,357,1107,362,1136,369,1149,381,1161,405,1177,400,1178,377,1166,364,1152,357,1137,352,1108,347,1080,341,1066,329,1054,301,1038"/>
+<area shape="rect" id="Node000027" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="422,1224,553,1250"/>
+<area shape="poly" id="edge29_Node000018_Node000027" title=" " alt="" coords="300,1032,318,1039,333,1050,349,1070,356,1091,357,1132,359,1173,366,1192,381,1211,409,1229,404,1230,377,1215,361,1195,353,1174,352,1133,351,1092,344,1072,329,1053,315,1044,301,1037"/>
+<area shape="rect" id="Node000028" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="402,1076,574,1102"/>
+<area shape="poly" id="edge30_Node000018_Node000028" title=" " alt="" coords="289,1038,380,1061,417,1071,412,1073,378,1066,290,1044"/>
+<area shape="rect" id="Node000020" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="657,1125,845,1151"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="564,1046,598,1061,613,1074,622,1088,631,1100,646,1112,657,1119,652,1120,643,1116,627,1104,618,1091,609,1078,595,1066,565,1051"/>
+<area shape="rect" id="Node000021" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="675,1011,827,1052"/>
+<area shape="poly" id="edge23_Node000019_Node000021" title=" " alt="" coords="564,1029,661,1030,657,1033,565,1034"/>
+<area shape="rect" id="Node000023" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="670,1076,832,1102"/>
+<area shape="poly" id="edge26_Node000019_Node000023" title=" " alt="" coords="564,1045,676,1071,671,1073,565,1051"/>
+<area shape="poly" id="edge24_Node000021_Node000013" title=" " alt="" coords="779,1009,856,947,904,896,954,848,958,845,908,900,859,951,783,1013"/>
+<area shape="poly" id="edge25_Node000021_Node000014" title=" " alt="" coords="813,1008,857,990,948,943,944,946,859,995,816,1013"/>
+<area shape="poly" id="edge32_Node000029_Node000025" title=" " alt="" coords="289,1088,332,1098,380,1112,412,1121,407,1122,378,1117,330,1103,291,1093"/>
+<area shape="poly" id="edge33_Node000029_Node000026" title=" " alt="" coords="310,1088,333,1099,349,1115,357,1131,365,1147,381,1161,405,1174,400,1175,377,1166,361,1150,353,1134,345,1118,329,1103,311,1093"/>
+<area shape="poly" id="edge34_Node000029_Node000027" title=" " alt="" coords="314,1088,333,1099,345,1113,353,1127,357,1157,362,1185,369,1198,381,1211,410,1228,404,1229,377,1215,364,1201,357,1187,352,1157,347,1129,341,1116,329,1103,315,1093"/>
+<area shape="poly" id="edge35_Node000029_Node000028" title=" " alt="" coords="315,1078,388,1083,384,1085,317,1083"/>
+<area shape="rect" id="Node000033" href="$classExpressions_1_1PtrToScalar.html#a75920bbff1ee496984a01f36a0fd83ac" title=" " alt="" coords="403,1404,572,1445"/>
+<area shape="poly" id="edge39_Node000032_Node000033" title=" " alt="" coords="304,1366,407,1399,401,1400,304,1371"/>
+<area shape="rect" id="Node000034" href="$classExpressions_1_1SBinary.html#af316e497c4795493215ae50b7bb09716" title="Constructor." alt="" coords="414,1274,561,1314"/>
+<area shape="poly" id="edge40_Node000032_Node000034" title=" " alt="" coords="308,1330,401,1312,396,1314,310,1334"/>
+<area shape="rect" id="Node000035" href="$classExpressions_1_1Scalar.html#ac5215b7efbec8fef5dcbbccaf48559d4" title=" " alt="" coords="418,1339,557,1380"/>
+<area shape="poly" id="edge41_Node000032_Node000035" title=" " alt="" coords="308,1348,406,1354,401,1357,309,1354"/>
+<area shape="poly" id="edge44_Node000037_Node000007" title=" " alt="" coords="825,230,859,241,909,267,953,297,948,298,907,271,857,246,827,235"/>
+<area shape="poly" id="edge46_Node000038_Node000007" title=" " alt="" coords="245,655,298,600,336,568,378,541,446,509,507,490,563,479,617,473,670,467,726,457,787,440,856,410,910,377,957,341,954,345,913,381,859,415,789,445,727,462,671,472,617,478,564,484,508,495,448,514,380,546,339,573,302,604,250,658"/>
+<area shape="poly" id="edge47_Node000038_Node000008" title=" " alt="" coords="287,655,447,622,545,606,644,594,782,588,906,592,901,594,782,594,645,599,546,611,448,628,290,660"/>
+<area shape="poly" id="edge48_Node000038_Node000010" title=" " alt="" coords="241,681,260,723,289,779,329,838,353,866,381,889,400,901,422,911,417,913,397,906,377,894,350,869,325,842,284,782,255,725,241,686"/>
+<area shape="poly" id="edge49_Node000038_Node000013" title=" " alt="" coords="288,678,858,794,916,808,911,809,857,799,289,683"/>
+<area shape="poly" id="edge50_Node000038_Node000014" title=" " alt="" coords="246,681,301,737,339,768,380,794,903,905,899,909,378,799,335,773,298,741,247,686"/>
+<area shape="poly" id="edge57_Node000038_Node000037" title=" " alt="" coords="236,656,247,599,272,515,291,469,314,422,343,379,377,340,644,241,672,235,668,238,645,246,381,344,347,382,319,425,296,471,277,517,252,601,241,657"/>
+<area shape="poly" id="edge58_Node000038_Node000038" title=" " alt="" coords="203,657,197,649,201,639,214,633,235,631,257,633,270,641,266,643,256,638,235,636,215,638,205,643,203,648,208,656"/>
+<area shape="rect" id="Node000039" href="$classStatement.html#ac89801cdd2ceaf990ae5e7fecfdbbdb2" title="Return signed integer." alt="" coords="424,759,552,784"/>
+<area shape="poly" id="edge51_Node000038_Node000039" title=" " alt="" coords="259,681,315,708,380,737,423,753,418,755,378,742,313,713,261,686"/>
+<area shape="rect" id="Node000040" href="$classLine.html#acc11b8a429d8cdd63ba6803dff5602b3" title="Exemplar constructor." alt="" coords="449,657,526,683"/>
+<area shape="poly" id="edge52_Node000038_Node000040" title=" " alt="" coords="287,668,436,668,432,672,290,672"/>
+<area shape="poly" id="edge59_Node000038_Node000050" title=" " alt="" coords="240,656,291,564,331,504,377,447,414,414,454,387,451,391,417,418,381,451,335,507,296,567,245,658"/>
+<area shape="rect" id="Node000081" href="$classFlaggedElmPtr.html#a573261c872dbeaace4bdc1eadc69630a" title="Set reflection flag." alt="" coords="379,556,596,582"/>
+<area shape="poly" id="edge65_Node000038_Node000081" title=" " alt="" coords="258,655,313,627,378,598,422,585,418,589,380,603,315,632,262,659"/>
+<area shape="rect" id="Node000041" href="$classBeamSequence.html#a4a4c4fd50e56adbac2cf65affb6b9ba9" title="Constructor for exemplars." alt="" coords="644,609,858,635"/>
+<area shape="poly" id="edge53_Node000040_Node000041" title=" " alt="" coords="526,661,664,637,660,640,528,665"/>
+<area shape="rect" id="Node000042" href="$namespaceAttributes.html#a6e6d302b6aceb7118637b3670373809b" title="Make real attribute." alt="" coords="679,708,823,734"/>
+<area shape="poly" id="edge55_Node000040_Node000042" title=" " alt="" coords="526,675,668,703,663,706,528,680"/>
+<area shape="rect" id="Node000043" href="$namespaceAttributes.html#aaaca5bec00805e40b85ec44bf0b1a873" title="Create real array attribute." alt="" coords="663,659,839,684"/>
+<area shape="poly" id="edge56_Node000040_Node000043" title=" " alt="" coords="526,668,651,670,646,672,528,673"/>
+<area shape="poly" id="edge54_Node000041_Node000008" title=" " alt="" coords="857,608,906,604,902,607,859,613"/>
+<area shape="poly" id="edge60_Node000050_Node000007" title=" " alt="" coords="537,379,603,392,683,402,771,404,814,399,857,390,909,368,955,340,951,344,911,373,858,395,815,404,771,409,683,408,602,397,539,383"/>
+<area shape="poly" id="edge61_Node000050_Node000037" title=" " alt="" coords="538,352,568,339,595,322,610,302,617,282,625,261,643,241,652,238,648,242,646,246,629,264,622,283,615,304,598,325,571,344,542,356"/>
+<area shape="rect" id="Node000051" href="$namespaceExpressions.html#acab3a7269ef8ca60c0ac1da0fcdb4bc0" title="Parse real constant." alt="" coords="653,305,849,331"/>
+<area shape="poly" id="edge62_Node000050_Node000051" title=" " alt="" coords="559,352,666,333,661,336,562,356"/>
+<area shape="rect" id="Node000077" href="$classStatement.html#a4f177c8818ebf7047e4302b5886dca1e" title="Return string value." alt="" coords="699,355,803,380"/>
+<area shape="poly" id="edge63_Node000050_Node000077" title=" " alt="" coords="571,365,686,366,681,369,573,370"/>
+<area shape="rect" id="Node000078" href="$classStatement.html#ac8e21e0dce1b621eacc7d1405f760af4" title="Return word value." alt="" coords="692,256,810,282"/>
+<area shape="poly" id="edge64_Node000050_Node000078" title=" " alt="" coords="525,352,595,321,619,305,643,290,679,280,675,284,645,295,621,310,598,326,528,356"/>
 </map>

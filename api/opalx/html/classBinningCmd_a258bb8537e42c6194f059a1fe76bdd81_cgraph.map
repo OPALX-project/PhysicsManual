@@ -1,30 +1,43 @@
 <map id="BinningCmd::getDumpBinsFrequency" name="BinningCmd::getDumpBinsFrequency">
-<area shape="rect" id="Node000001" title="Get the frequency of dumping bins to a file." alt="" coords="5,140,269,165"/>
-<area shape="rect" id="Node000002" href="$classBinningCmd.html#a72f9ce33e2b89c953fc01db292b735c6" title="Check if dumping bins to a file is enabled." alt="" coords="317,165,528,191"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,162,304,165,303,170,269,167"/>
-<area shape="rect" id="Node000012" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="581,113,725,139"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="269,143,567,128,567,133,269,149"/>
-<area shape="rect" id="Node000003" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="576,168,729,193"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="528,177,562,177,562,182,528,182"/>
-<area shape="rect" id="Node000004" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="791,105,954,145"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="703,165,780,146,781,151,704,171"/>
-<area shape="rect" id="Node000005" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="803,169,943,195"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="729,178,789,179,789,184,729,184"/>
-<area shape="rect" id="Node000006" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="793,219,952,244"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="709,191,804,213,803,218,708,196"/>
-<area shape="rect" id="Node000007" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="789,317,956,343"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="665,192,710,246,742,277,779,304,791,310,789,315,776,308,739,282,706,250,661,195"/>
-<area shape="rect" id="Node000009" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="799,5,946,31"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="700,166,728,148,738,135,745,122,750,94,756,67,763,53,776,40,785,33,789,37,779,44,767,56,761,69,755,96,750,123,743,138,731,152,703,170"/>
-<area shape="rect" id="Node000010" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="777,55,968,80"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="694,166,728,148,742,134,751,119,760,105,776,90,790,83,793,87,779,95,764,108,755,122,746,137,731,152,697,170"/>
-<area shape="rect" id="Node000011" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="820,268,925,293"/>
-<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="673,191,719,222,778,253,808,263,806,268,776,258,717,226,670,196"/>
-<area shape="rect" id="Node000008" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1016,317,1168,343"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="957,327,1002,327,1002,333,957,333"/>
-<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="725,123,777,123,777,128,725,128"/>
-<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="704,136,810,163,808,168,703,141"/>
-<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="697,136,731,153,746,167,755,180,764,192,779,204,794,211,792,216,776,208,760,196,751,183,742,170,728,158,695,141"/>
-<area shape="poly" id="edge15_Node000012_Node000009" title=" " alt="" coords="667,111,714,76,776,40,795,32,797,37,778,44,717,80,671,115"/>
-<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="700,111,777,90,810,81,812,86,778,95,702,116"/>
+<area shape="rect" id="Node000001" title="Get the frequency of dumping bins to a file." alt="" coords="5,140,246,166"/>
+<area shape="rect" id="Node000002" href="$classBinningCmd.html#a72f9ce33e2b89c953fc01db292b735c6" title="Check if dumping bins to a file is enabled." alt="" coords="294,165,487,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,162,281,167,276,168,247,167"/>
+<area shape="rect" id="Node000018" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="538,113,669,139"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="246,144,525,128,522,133,247,149"/>
+<area shape="rect" id="Node000003" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="535,168,672,194"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,177,522,179,517,180,488,182"/>
+<area shape="rect" id="Node000004" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="730,104,883,145"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="652,165,713,151,718,149,654,170"/>
+<area shape="rect" id="Node000008" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="1176,273,1328,299"/>
+<area shape="poly" id="edge14_Node000003_Node000008" title=" " alt="" coords="613,192,630,218,654,250,685,281,721,304,783,325,848,337,914,341,979,339,1042,333,1100,323,1191,304,1197,304,1101,328,1043,338,980,344,914,346,847,342,782,330,719,309,681,285,650,253,626,221,611,196"/>
+<area shape="rect" id="Node000013" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="743,5,870,31"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="648,165,671,150,681,136,688,123,693,95,699,68,706,54,719,40,727,37,732,34,722,44,711,57,704,70,698,96,693,124,686,139,674,153,650,170"/>
+<area shape="rect" id="Node000014" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="736,55,877,80"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="643,165,671,149,685,135,694,120,703,105,719,91,727,88,732,86,722,95,707,109,698,123,689,138,674,154,646,170"/>
+<area shape="rect" id="Node000015" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="741,169,872,195"/>
+<area shape="poly" id="edge15_Node000003_Node000015" title=" " alt="" coords="673,179,728,181,723,182,673,184"/>
+<area shape="rect" id="Node000016" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="720,219,893,244"/>
+<area shape="poly" id="edge16_Node000003_Node000016" title=" " alt="" coords="658,192,740,214,735,214,658,197"/>
+<area shape="rect" id="Node000017" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="759,268,854,294"/>
+<area shape="poly" id="edge17_Node000003_Node000017" title=" " alt="" coords="622,192,666,223,721,254,747,266,741,266,719,259,663,228,621,197"/>
+<area shape="rect" id="Node000005" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="941,199,1128,224"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="868,143,894,154,918,170,942,184,963,194,957,193,940,189,915,174,891,159,867,148"/>
+<area shape="rect" id="Node000006" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="958,134,1110,174"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="883,132,945,142,940,143,883,137"/>
+<area shape="rect" id="Node000011" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="953,84,1116,110"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="882,113,940,108,935,109,883,118"/>
+<area shape="rect" id="Node000007" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="1200,137,1305,163"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1111,150,1187,151,1182,152,1111,155"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1108,173,1130,184,1145,197,1155,210,1164,223,1178,237,1215,266,1210,264,1174,242,1160,227,1151,213,1141,201,1126,188,1107,178"/>
+<area shape="rect" id="Node000010" href="$classExpressions_1_1SRefAttr.html#ae5bd0acc16f2c15a7dc55b28b998e7ab" title="Constructor." alt="" coords="1176,187,1328,228"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="1111,170,1164,185,1158,185,1111,175"/>
+<area shape="rect" id="Node000009" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1376,273,1516,299"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1328,284,1364,286,1358,286,1329,289"/>
+<area shape="rect" id="Node000012" href="$classAttributeBase.html#aab7e762da4a5303b75b1d878c94cc8d5" title="Print value." alt="" coords="1186,84,1319,110"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1116,94,1172,97,1167,97,1116,99"/>
+<area shape="poly" id="edge19_Node000018_Node000004" title=" " alt="" coords="669,123,717,125,712,126,670,128"/>
+<area shape="poly" id="edge20_Node000018_Node000013" title=" " alt="" coords="618,111,661,76,719,40,731,38,735,36,722,45,664,80,621,115"/>
+<area shape="poly" id="edge21_Node000018_Node000014" title=" " alt="" coords="650,110,747,84,742,86,652,115"/>
+<area shape="poly" id="edge22_Node000018_Node000015" title=" " alt="" coords="653,137,745,164,740,165,653,142"/>
+<area shape="poly" id="edge23_Node000018_Node000016" title=" " alt="" coords="644,137,674,153,689,167,698,181,707,193,722,205,731,212,726,212,719,210,703,197,694,184,685,171,671,158,643,142"/>
 </map>

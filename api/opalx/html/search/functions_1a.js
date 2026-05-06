@@ -201,7 +201,7 @@ var searchData=
   ['_7erealvariable_198',['~RealVariable',['../classRealVariable.html#acf1f03790aaae64a1deae74128c6aca2',1,'RealVariable']]],
   ['_7erealvector_199',['~RealVector',['../classRealVector.html#ad0169093886c2398ff61c58052603284',1,'RealVector']]],
   ['_7erectangle_200',['~Rectangle',['../structmslang_1_1Rectangle.html#aec83d5c07c9e4b397f2d4c6a5a84b8a5',1,'mslang::Rectangle']]],
-  ['_7ereference_201',['~reference',['../structSequenceParser_1_1Reference.html#a7199456c722ba062cba081458ba3819c',1,'SequenceParser::Reference::~Reference()'],['../classAttributes_1_1Reference.html#a7d3b8a009aaef1666cf11cb68da9e371',1,'Attributes::Reference::~Reference()']]],
+  ['_7ereference_201',['~Reference',['../classAttributes_1_1Reference.html#a7d3b8a009aaef1666cf11cb68da9e371',1,'Attributes::Reference::~Reference()'],['../structSequenceParser_1_1Reference.html#a7199456c722ba062cba081458ba3819c',1,'SequenceParser::Reference::~Reference()']]],
   ['_7eregularexpression_202',['~RegularExpression',['../classRegularExpression.html#a97a52d13f9cfc429ce0593a3e3d2e410',1,'RegularExpression']]],
   ['_7erepeat_203',['~Repeat',['../structmslang_1_1Repeat.html#a5dd44abf09336ebb19408720d9b020b5',1,'mslang::Repeat']]],
   ['_7ereplacer_204',['~Replacer',['../classReplacer.html#a897f224c9cdf7bfd474b87b56081f365',1,'Replacer']]],

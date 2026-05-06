@@ -3,7 +3,7 @@ var classImageChargeScatterController =
     [ "BinPolicy_t", "classImageChargeScatterController.html#a0b25e8ce0cd607a8266a50b13ba186fc", null ],
     [ "Hash_t", "classImageChargeScatterController.html#a4eab2bb08dd03ad2f2f2d5a1b4572bfc", null ],
     [ "ParticleCtr_t", "classImageChargeScatterController.html#aa9aad0194767604dcf3c019f7692f609", null ],
-    [ "PositionAttr_t", "classImageChargeScatterController.html#a4e9529b0218abfae88e38615aac16f39", null ],
+    [ "PositionAttr_t", "classImageChargeScatterController.html#a61042795ad1c8e330a62d79688c45aed", null ],
     [ "RhoField_t", "classImageChargeScatterController.html#a5eda445d8f9aa9f070f384f64153d188", null ],
     [ "ImageChargeScatterController", "classImageChargeScatterController.html#a450cc4742ef194abca6aaca67fe3bd90", null ],
     [ "ImageChargeScatterController", "classImageChargeScatterController.html#a8c8df9ffbcca90a69021d80e097c1f64", null ],

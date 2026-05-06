@@ -1,10 +1,10 @@
-@INCLUDE = /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/Doxyfile.in
-PROJECT_NUMBER = master (0083bbb84059)
-OUTPUT_DIRECTORY = /home/runner/work/PhysicsManual/PhysicsManual/docs/api/opalx
+@INCLUDE = /Users/adelmann/git/physics-manual-opalx/.external/OPALX/Doxyfile.in
+PROJECT_NUMBER = master (da4e05a6d560)
+OUTPUT_DIRECTORY = /Users/adelmann/git/physics-manual-opalx/docs/api/opalx
 HTML_OUTPUT = html
-INPUT = /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/unit_tests
-STRIP_FROM_PATH = /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX
-WARN_LOGFILE = /home/runner/work/PhysicsManual/PhysicsManual/docs/api/opalx/doxygen-warnings.log
+INPUT = /Users/adelmann/git/physics-manual-opalx/.external/OPALX/src /Users/adelmann/git/physics-manual-opalx/.external/OPALX/unit_tests
+STRIP_FROM_PATH = /Users/adelmann/git/physics-manual-opalx/.external/OPALX
+WARN_LOGFILE = /Users/adelmann/git/physics-manual-opalx/docs/api/opalx/doxygen-warnings.log
 CREATE_SUBDIRS = NO
 SHORT_NAMES = NO
 GENERATE_TREEVIEW = YES

@@ -1,7 +1,8 @@
 <map id="RFCavity::apply" name="RFCavity::apply">
-<area shape="rect" id="Node000001" title="Applies the Standing Wave RF Cavity field to all particles inside the RF cavity." alt="" coords="5,31,129,56"/>
-<area shape="rect" id="Node000002" href="$classPartBunch.html#a21e2e4815f3b2d26704f277c4c5ee882" title="Get the global time step." alt="" coords="177,5,309,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,32,164,27,164,32,130,37"/>
-<area shape="rect" id="Node000003" href="$classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a" title="Get the current simulation time." alt="" coords="181,55,305,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,49,168,54,167,60,129,54"/>
+<area shape="rect" id="Node000001" title="Applies the Standing Wave RF Cavity field to all particles inside the RF cavity." alt="" coords="5,29,122,55"/>
+<area shape="rect" id="Node000002" href="$classFM2DDynamic.html#a72938e0eebaf3c9a66d239868767029a" title="Apply the RF&#45;scaled dynamic field map to all particles." alt="" coords="170,29,364,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,40,157,42,151,42,122,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="233,28,226,21,230,11,244,5,267,3,292,5,306,15,301,14,290,10,267,8,245,10,234,15,231,20,237,30"/>
+<area shape="rect" id="Node000003" href="$classFM2DDynamic.html#af3d876aed85b0bd9a6a0126b61aebeae" title=" " alt="" coords="412,29,607,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="364,40,399,42,394,42,365,45"/>
 </map>

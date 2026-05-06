@@ -1,13 +1,11 @@
 <map id="MultiVariateGaussian::emitParticles" name="MultiVariateGaussian::emitParticles">
-<area shape="rect" id="Node000001" title="Time&#45;stepped emission hook for one&#45;shot delayed injection." alt="" coords="5,99,167,139"/>
-<area shape="rect" id="Node000002" href="$classMultiVariateGaussian.html#ad7aa5c532798b8c90de08e13b4e8462b" title="Generates particles based on the defined Gaussian distribution." alt="" coords="241,69,402,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,106,227,98,227,104,167,111"/>
-<area shape="rect" id="Node000006" href="$classDistribution.html#a776919ee03f26046f0aac77e95fa998a" title=" " alt="" coords="215,134,428,159"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,126,201,130,201,135,166,131"/>
-<area shape="rect" id="Node000003" href="$classMultiVariateGaussian.html#af3fa7d660019755d1f5591bd1e719bcf" title="Computes centered bounds for the particle distribution." alt="" coords="493,5,689,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,68,492,46,494,51,403,73"/>
-<area shape="rect" id="Node000004" href="$classMultiVariateGaussian.html#a83aad07bb68be46359f48a5b2b1f87fe" title="Computes the Cholesky factorization of the covariance matrix." alt="" coords="476,69,707,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,87,462,87,462,92,402,92"/>
-<area shape="rect" id="Node000005" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="484,133,699,173"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="403,106,494,128,492,133,402,111"/>
+<area shape="rect" id="Node000001" title="Time&#45;stepped emission hook for one&#45;shot delayed injection." alt="" coords="5,71,150,111"/>
+<area shape="rect" id="Node000002" href="$classMultiVariateGaussian.html#ad7aa5c532798b8c90de08e13b4e8462b" title="Generates particles based on the defined Gaussian distribution." alt="" coords="198,71,342,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,88,185,90,180,92,151,94"/>
+<area shape="rect" id="Node000003" href="$classMultiVariateGaussian.html#af3fa7d660019755d1f5591bd1e719bcf" title="Computes centered bounds for the particle distribution." alt="" coords="406,5,586,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,68,411,50,406,52,343,73"/>
+<area shape="rect" id="Node000004" href="$classMultiVariateGaussian.html#a83aad07bb68be46359f48a5b2b1f87fe" title="Computes the Cholesky factorization of the covariance matrix." alt="" coords="390,71,602,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="342,88,377,91,372,91,343,94"/>
+<area shape="rect" id="Node000005" href="$classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e" title="Computes the number of particles this rank should emit so that the global total equals totalToSample ..." alt="" coords="399,136,593,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="343,109,411,131,406,131,342,115"/>
 </map>

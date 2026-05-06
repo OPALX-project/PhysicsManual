@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sampledevent_0',['sampledevent',['../namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SampledEvent',1,'Physics::LinearCompton::SampledEvent'],['../namespacePhysics_1_1LinearBreitWheeler.html#structPhysics_1_1LinearBreitWheeler_1_1SampledEvent',1,'Physics::LinearBreitWheeler::SampledEvent']]],
+  ['sampledevent_0',['SampledEvent',['../namespacePhysics_1_1LinearBreitWheeler.html#structPhysics_1_1LinearBreitWheeler_1_1SampledEvent',1,'Physics::LinearBreitWheeler::SampledEvent'],['../namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SampledEvent',1,'Physics::LinearCompton::SampledEvent']]],
   ['sampledphotonbeamstate_1',['SampledPhotonBeamState',['../namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1SampledPhotonBeamState',1,'LinearBreitWheelerBenchmark']]],
   ['samplingbase_2',['SamplingBase',['../classSamplingBase.html',1,'']]],
-  ['samplingkernel_3',['samplingkernel',['../namespacePhysics_1_1LinearBreitWheeler.html#structPhysics_1_1LinearBreitWheeler_1_1SamplingKernel',1,'Physics::LinearBreitWheeler::SamplingKernel'],['../namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SamplingKernel',1,'Physics::LinearCompton::SamplingKernel']]],
+  ['samplingkernel_3',['SamplingKernel',['../namespacePhysics_1_1LinearBreitWheeler.html#structPhysics_1_1LinearBreitWheeler_1_1SamplingKernel',1,'Physics::LinearBreitWheeler::SamplingKernel'],['../namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SamplingKernel',1,'Physics::LinearCompton::SamplingKernel']]],
   ['sautomatic_4',['SAutomatic',['../classExpressions_1_1SAutomatic.html',1,'Expressions']]],
   ['savitzkygolayfilter_5',['SavitzkyGolayFilter',['../classSavitzkyGolayFilter.html',1,'']]],
   ['sbend_6',['SBend',['../classSBend.html',1,'']]],

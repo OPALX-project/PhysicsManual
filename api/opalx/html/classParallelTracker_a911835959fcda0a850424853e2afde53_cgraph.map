@@ -1,31 +1,20 @@
 <map id="ParallelTracker::timeIntegration2" name="ParallelTracker::timeIntegration2">
-<area shape="rect" id="Node000001" title="Second half: kick then push all active containers." alt="" coords="5,141,239,167"/>
-<area shape="rect" id="Node000002" href="$classPartBunch.html#ad95a98af63183a4ead37e30ffc624f7f" title=" " alt="" coords="311,92,473,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,139,308,117,309,123,193,144"/>
-<area shape="rect" id="Node000003" href="$classParallelTracker.html#a546364cd387f3f111115a6ad363da5e0" title="Boris half&#45;kick using E, B and per&#45;particle dt on one container." alt="" coords="289,141,495,167"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,151,275,151,275,157,239,157"/>
-<area shape="rect" id="Node000011" href="$classParallelTracker.html#ae7d90bb80adcc63e13b01abb7343dafb" title="Boris position push (unitless positions) on one container." alt="" coords="287,284,497,309"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="149,165,356,275,353,280,146,169"/>
-<area shape="rect" id="Node000004" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="583,5,702,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="473,139,496,127,512,106,519,85,526,62,544,40,569,26,571,31,547,44,530,64,524,86,517,109,499,131,476,144"/>
-<area shape="rect" id="Node000005" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="584,55,701,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="462,139,496,126,520,109,544,90,570,80,572,85,547,95,523,113,499,131,464,144"/>
-<area shape="rect" id="Node000006" href="$classParticleContainer.html#ab28c6abd4a08a4aaf1c1337b949b4130" title="Get reference particle data." alt="" coords="572,105,713,145"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="495,139,558,132,558,137,496,145"/>
-<area shape="rect" id="Node000007" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="575,169,710,195"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="496,163,562,170,561,176,495,168"/>
-<area shape="rect" id="Node000010" href="$classParticleContainer.html#ad5edf55f8a0ac2ad0c61d06f9fbfc983" title=" " alt="" coords="568,219,717,259"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="431,164,571,212,569,217,430,169"/>
-<area shape="rect" id="Node000008" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="788,169,844,195"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="710,179,774,179,774,185,710,185"/>
-<area shape="rect" id="Node000009" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="795,251,837,276"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="708,192,741,205,769,221,792,240,789,244,766,226,739,210,706,197"/>
-<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="448,281,554,257,555,262,449,287"/>
-<area shape="rect" id="Node000012" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="573,284,712,309"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="497,294,560,294,560,299,497,299"/>
-<area shape="rect" id="Node000013" href="$classParticleContainer.html#a727406555a177f5f241f1eb69d8b78dd" title="Restore physical positions from unitless form using each particle&#39;s dt[i]." alt="" coords="545,334,740,374"/>
-<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="449,307,542,328,541,334,448,312"/>
-<area shape="rect" id="Node000014" href="$classParticleContainer.html#ac7de4fb303ff6393ee27d9d276b068e2" title="Transform positions to unitless coordinates using each particle&#39;s dt[i]." alt="" coords="547,398,738,438"/>
-<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="414,307,472,344,546,384,563,391,561,396,544,388,469,349,411,312"/>
-<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="708,281,781,267,782,272,710,287"/>
+<area shape="rect" id="Node000001" title="Second half: kick then push all active containers." alt="" coords="5,105,215,131"/>
+<area shape="rect" id="Node000002" href="$classParallelTracker.html#a546364cd387f3f111115a6ad363da5e0" title="Boris half&#45;kick using E, B and per&#45;particle dt on one container." alt="" coords="265,68,456,94"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,102,257,96,252,97,201,107"/>
+<area shape="rect" id="Node000008" href="$classParallelTracker.html#ae7d90bb80adcc63e13b01abb7343dafb" title="Boris position push (unitless positions) on one container." alt="" coords="263,129,458,155"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="215,126,249,131,244,132,215,131"/>
+<area shape="rect" id="Node000003" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="515,5,625,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,65,507,37,512,35,407,70"/>
+<area shape="rect" id="Node000004" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="516,55,625,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="456,72,503,71,498,72,457,77"/>
+<area shape="rect" id="Node000005" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="508,104,632,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="439,92,495,104,490,104,439,97"/>
+<area shape="rect" id="Node000006" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="682,104,736,130"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="633,114,669,117,664,117,633,119"/>
+<area shape="rect" id="Node000007" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="689,153,729,179"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="609,128,678,155,672,154,608,133"/>
+<area shape="rect" id="Node000009" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="506,153,634,179"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="459,151,493,157,488,157,458,156"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="635,164,676,166,671,166,635,169"/>
 </map>

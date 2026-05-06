@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classBVector.html" title="A magnetic field vector." alt="" coords="5,5,77,31"/>
+<area shape="rect" id="Node000000" href="$classConstChannel.html" title="Abstract interface for read&#45;only access to variable." alt="" coords="5,55,110,80"/>
+<area shape="rect" id="Node000001" href="$classChannel.html" title="Abstract interface for read/write access to variable." alt="" coords="158,55,227,80"/>
+<area shape="poly" id="edge138_Node000000_Node000001" title=" " alt="" coords="125,65,160,67,155,68,126,70"/>
+<area shape="rect" id="Node000002" href="$classDirectChannel.html" title="Direct access to a [b]double[/b] variable." alt="" coords="296,5,401,31"/>
+<area shape="poly" id="edge139_Node000001_Node000002" title=" " alt="" coords="241,50,308,31,303,32,242,55"/>
+<area shape="rect" id="Node000003" href="$classIndexedChannel.html" title="Access to an indexed [b]double[/b] data member." alt="" coords="275,55,422,80"/>
+<area shape="poly" id="edge140_Node000001_Node000003" title=" " alt="" coords="242,65,277,67,272,68,243,70"/>
+<area shape="rect" id="Node000004" href="$classIndirectChannel.html" title="Access to a [b]double[/b] data member." alt="" coords="276,104,421,130"/>
+<area shape="poly" id="edge141_Node000001_Node000004" title=" " alt="" coords="242,80,308,103,303,103,241,86"/>
 </map>

@@ -1,4 +1,8 @@
 var TFunction0_8h =
 [
-    [ "Expressions::TFunction0< T >", "structExpressions_1_1TFunction0.html", "structExpressions_1_1TFunction0" ]
+    [ "Expressions::TFunction0< T >", "namespaceExpressions.html#structExpressions_1_1TFunction0", [
+      [ "function", "namespaceExpressions.html#adcaf2c0f1f1430ec36ec80d08660e513", null ],
+      [ "name", "namespaceExpressions.html#a8aefeb875b9c4b0e25a0a387e693b81c", null ],
+      [ "precedence", "namespaceExpressions.html#a3c97e7994839d2b05a8c9e1c52bc4d77", null ]
+    ] ]
 ];

@@ -1,130 +1,124 @@
 <map id="SequenceParser::parse" name="SequenceParser::parse">
-<area shape="rect" id="Node000001" title="Parse sequence member." alt="" coords="5,952,175,977"/>
-<area shape="rect" id="Node000002" href="$classSequence.html#ace25f6664556fd0308e006ec75541f39" title=" " alt="" coords="237,371,431,396"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,952,101,882,125,770,164,638,190,572,220,509,240,478,262,449,306,404,310,407,267,453,244,481,225,511,195,574,169,640,130,771,107,883,96,952"/>
-<area shape="rect" id="Node000006" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="1044,447,1211,472"/>
-<area shape="poly" id="edge22_Node000001_Node000006" title=" " alt="" coords="88,952,88,852,92,775,101,686,117,589,141,489,175,391,220,299,276,216,303,185,332,158,363,136,400,116,492,78,635,29,697,13,756,4,813,5,872,18,932,44,998,85,1036,122,1067,166,1090,214,1106,265,1117,315,1124,361,1129,433,1123,433,1119,362,1112,316,1101,266,1085,216,1062,168,1032,125,994,90,930,49,870,23,813,10,756,9,698,18,636,34,494,83,402,121,366,140,335,162,307,188,280,219,225,302,180,393,146,491,122,590,106,686,97,776,93,853,93,952"/>
-<area shape="rect" id="Node000017" href="$classSequenceParser.html#a733c061dd9c81756a9657f52589034d5" title=" " alt="" coords="230,313,438,339"/>
-<area shape="poly" id="edge11_Node000001_Node000017" title=" " alt="" coords="90,951,101,838,125,659,143,564,165,477,190,405,205,377,221,356,237,343,241,347,225,360,210,380,195,408,170,479,148,565,131,660,106,838,95,952"/>
-<area shape="rect" id="Node000026" href="$classSequence.html#a510a396fca8cb52fdc5e2e06df2e96be" title=" " alt="" coords="251,1001,417,1027"/>
-<area shape="poly" id="edge23_Node000001_Node000026" title=" " alt="" coords="154,975,257,996,256,1001,153,980"/>
-<area shape="rect" id="Node000028" href="$classStatement.html#aaa1bb4a243de8fa46292cacffd574edf" title="Test for keyword." alt="" coords="811,821,965,847"/>
-<area shape="poly" id="edge26_Node000001_Node000028" title=" " alt="" coords="131,949,289,905,390,881,493,861,654,842,798,834,798,839,655,847,494,866,391,886,290,910,133,955"/>
-<area shape="rect" id="Node000029" href="$classOpalData.html#a37632da51948a41456659b55e2176c91" title="Invalidate expressions." alt="" coords="255,1051,413,1076"/>
-<area shape="poly" id="edge27_Node000001_Node000029" title=" " alt="" coords="111,975,161,1005,224,1036,252,1045,250,1050,222,1041,158,1010,109,980"/>
-<area shape="rect" id="Node000031" href="$classOpalParser.html#a479d09c292d7e35db8c840f9a520c893" title="Check for end of statement." alt="" coords="533,1461,693,1487"/>
-<area shape="poly" id="edge29_Node000001_Node000031" title=" " alt="" coords="103,976,151,1029,185,1060,224,1085,256,1098,286,1103,341,1101,368,1101,394,1104,421,1116,447,1138,471,1171,481,1204,481,1237,477,1270,472,1303,471,1336,477,1370,495,1406,524,1434,559,1454,557,1458,521,1438,491,1409,472,1372,465,1336,467,1302,472,1269,476,1237,475,1205,466,1173,443,1141,418,1120,393,1109,368,1106,341,1106,285,1108,254,1103,221,1090,182,1064,147,1033,99,979"/>
-<area shape="rect" id="Node000036" href="$classSequenceParser.html#abcc89d1c31f94dfd8ae866f5cf3cf6ac" title=" " alt="" coords="223,952,445,977"/>
-<area shape="poly" id="edge34_Node000001_Node000036" title=" " alt="" coords="175,962,209,962,209,967,175,967"/>
-<area shape="rect" id="Node000086" href="$classStatement.html#aec9c470a2c810d6e9b1a076f58eae21b" title="Return to start." alt="" coords="270,1152,398,1177"/>
-<area shape="poly" id="edge67_Node000001_Node000086" title=" " alt="" coords="100,976,118,1008,145,1049,181,1093,224,1131,258,1147,256,1152,221,1135,177,1097,141,1053,113,1010,95,979"/>
-<area shape="rect" id="Node000087" href="$classOpalParser.html#ab4dc58bf909195b3d9439e5f25c871dc" title="Set stop flag." alt="" coords="270,1201,398,1227"/>
-<area shape="poly" id="edge68_Node000001_Node000087" title=" " alt="" coords="98,977,111,1018,137,1076,174,1136,198,1163,224,1187,258,1203,255,1207,221,1191,194,1167,170,1139,132,1078,107,1020,92,979"/>
-<area shape="rect" id="Node000088" href="$classSequence.html#a8dbfda8f4794c8afb8be0fef2a490663" title="Store sequence line." alt="" coords="257,523,411,548"/>
-<area shape="poly" id="edge69_Node000001_Node000088" title=" " alt="" coords="96,951,317,559,321,561,101,953"/>
-<area shape="rect" id="Node000003" href="$classElement.html#a5b40298e379b7847c418b98760c601da" title="Find named Element." alt="" coords="834,421,942,447"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,387,732,413,821,423,820,428,732,418,431,393"/>
-<area shape="rect" id="Node000008" href="$classElement.html#a2887789df3412413802444eca18b64df" title="Return the embedded OPALX element as shared_ptr." alt="" coords="524,207,701,232"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="408,368,427,360,444,348,455,335,461,323,466,296,472,268,479,254,492,241,510,230,513,235,495,246,483,257,477,270,471,297,466,324,459,338,447,352,430,364,410,373"/>
-<area shape="rect" id="Node000009" href="$classSequence.html#a05b2a85a91a9b5c6212e0cd61aac45c5" title="Return sequence length." alt="" coords="533,157,692,183"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="411,368,429,360,443,348,458,329,464,310,466,271,468,231,476,211,492,192,519,176,521,180,495,196,480,214,473,232,471,271,470,311,462,332,447,352,431,364,413,373"/>
-<area shape="rect" id="Node000016" href="$classElmPtr.html#a7c6a3c02d66b3cb4c97f05b08b102fef" title="Set the element pointer." alt="" coords="539,1076,686,1101"/>
-<area shape="poly" id="edge10_Node000002_Node000016" title=" " alt="" coords="353,394,402,441,428,473,448,509,461,562,464,631,459,795,458,878,461,954,472,1017,482,1042,495,1062,510,1074,527,1082,525,1086,507,1078,491,1065,478,1044,467,1018,456,954,452,878,454,795,459,632,455,563,443,511,423,476,398,444,350,398"/>
-<area shape="rect" id="Node000004" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="1070,624,1185,649"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="906,445,1102,613,1099,617,902,449"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="943,437,1030,447,1030,452,942,442"/>
-<area shape="rect" id="Node000005" href="$classDirectory.html#a9004a43fe680a069941293f8ab075c24" title="Find entry." alt="" coords="1278,1045,1391,1071"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1137,649,1324,1032,1319,1034,1133,651"/>
-<area shape="rect" id="Node000007" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1259,447,1411,472"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1211,457,1245,457,1245,462,1211,462"/>
-<area shape="rect" id="Node000010" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="816,197,960,223"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="693,179,803,195,802,200,692,184"/>
-<area shape="rect" id="Node000018" href="$classSequenceParser.html#a4ac8e379456e51920af23d95b196b31d" title=" " alt="" coords="517,93,708,133"/>
-<area shape="poly" id="edge12_Node000017_Node000018" title=" " alt="" coords="340,312,362,278,396,232,440,184,492,143,504,136,506,141,495,147,444,188,400,235,367,281,345,315"/>
-<area shape="rect" id="Node000020" href="$classSequenceParser.html#ae10562b7f6b5aec7866336e6b0687235" title=" " alt="" coords="501,306,725,346"/>
-<area shape="poly" id="edge14_Node000017_Node000020" title=" " alt="" coords="438,323,487,323,487,329,438,329"/>
-<area shape="rect" id="Node000019" href="$classSequence.html#a69aecc72fb71b30ad17d433832eedc29" title=" " alt="" coords="780,100,996,125"/>
-<area shape="poly" id="edge13_Node000018_Node000019" title=" " alt="" coords="708,110,766,110,766,115,708,115"/>
-<area shape="poly" id="edge15_Node000020_Node000003" title=" " alt="" coords="680,344,733,362,849,413,847,418,731,367,678,349"/>
-<area shape="poly" id="edge19_Node000020_Node000010" title=" " alt="" coords="693,303,731,290,797,259,853,227,856,232,800,264,733,295,695,308"/>
-<area shape="rect" id="Node000021" href="$classObject.html#aaba6fa24b81be56d195924fa9f6ea9bd" title="Find an attribute by name." alt="" coords="811,575,965,600"/>
-<area shape="poly" id="edge16_Node000020_Node000021" title=" " alt="" coords="637,344,865,563,861,566,633,348"/>
-<area shape="rect" id="Node000022" href="$classElement.html#a58f835862b37de4aa36f82f51abd9ee5" title="Return element length." alt="" coords="813,337,963,363"/>
-<area shape="poly" id="edge17_Node000020_Node000022" title=" " alt="" coords="725,333,800,340,800,345,725,339"/>
-<area shape="rect" id="Node000023" href="$classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39" title="Return object name." alt="" coords="807,871,969,896"/>
-<area shape="poly" id="edge18_Node000020_Node000023" title=" " alt="" coords="634,345,685,415,712,460,735,509,748,562,750,610,740,696,736,736,738,775,752,815,782,856,796,868,792,872,778,860,748,817,733,776,730,736,734,695,745,610,743,563,729,511,708,463,680,418,629,348"/>
-<area shape="rect" id="Node000024" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="811,288,965,313"/>
-<area shape="poly" id="edge20_Node000020_Node000024" title=" " alt="" coords="725,313,798,306,798,312,725,318"/>
-<area shape="poly" id="edge21_Node000024_Node000006" title=" " alt="" coords="966,309,997,322,1033,347,1065,377,1112,434,1108,437,1061,381,1030,351,995,327,964,314"/>
-<area shape="poly" id="edge24_Node000026_Node000016" title=" " alt="" coords="408,1024,446,1036,471,1048,494,1061,527,1071,525,1076,492,1066,468,1053,444,1041,406,1029"/>
-<area shape="rect" id="Node000027" href="$classElementBase.html#a02db7a51bd2dee275faf331a9c2db557" title="Set element name." alt="" coords="525,1336,700,1361"/>
-<area shape="poly" id="edge25_Node000026_Node000027" title=" " alt="" coords="418,1018,434,1025,447,1036,471,1071,480,1107,479,1142,473,1177,467,1212,465,1247,473,1281,495,1315,514,1330,511,1334,491,1319,468,1283,460,1247,461,1211,468,1176,474,1141,475,1107,466,1073,443,1040,431,1030,416,1023"/>
-<area shape="rect" id="Node000030" href="$classObject.html#aa48af24109cadc6f450bcc37523651a5" title="Set/reset the [b]modified[/b] flag." alt="" coords="826,1375,950,1400"/>
-<area shape="poly" id="edge28_Node000029_Node000030" title=" " alt="" coords="415,1072,432,1081,447,1094,470,1130,477,1166,475,1203,468,1239,461,1274,460,1307,470,1340,480,1355,495,1371,517,1383,549,1392,632,1400,726,1399,812,1393,812,1398,726,1404,632,1405,548,1397,515,1388,492,1375,476,1359,465,1342,455,1308,456,1273,463,1238,470,1202,472,1167,465,1132,443,1097,429,1085,413,1077"/>
-<area shape="rect" id="Node000032" href="$classStatement.html#addc8463ab069024b814f2a291c3fa620" title="Test for end of command." alt="" coords="821,1424,955,1449"/>
-<area shape="poly" id="edge30_Node000031_Node000032" title=" " alt="" coords="693,1461,807,1445,807,1450,693,1466"/>
-<area shape="rect" id="Node000033" href="$classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11" title="Test for delimiter." alt="" coords="1049,1299,1206,1324"/>
-<area shape="poly" id="edge31_Node000031_Node000033" title=" " alt="" coords="634,1485,697,1523,741,1545,790,1564,842,1578,895,1584,947,1578,971,1570,995,1558,1023,1537,1047,1511,1067,1481,1083,1449,1106,1387,1119,1337,1124,1338,1111,1389,1088,1452,1071,1484,1051,1514,1026,1541,997,1563,973,1575,948,1583,895,1589,841,1583,788,1569,739,1550,695,1528,631,1489"/>
-<area shape="rect" id="Node000034" href="$classStatement.html#a432b410630045f73fcd57435499ecc3e" title="Return current character number in line." alt="" coords="813,1473,963,1499"/>
-<area shape="poly" id="edge32_Node000031_Node000034" title=" " alt="" coords="693,1475,799,1480,799,1485,693,1480"/>
-<area shape="rect" id="Node000035" href="$classStatement.html#ad48f4bde092bb9fb68423da5b89d37d3" title="Print statement." alt="" coords="824,1523,952,1548"/>
-<area shape="poly" id="edge33_Node000031_Node000035" title=" " alt="" coords="671,1484,818,1517,817,1522,670,1489"/>
-<area shape="poly" id="edge54_Node000036_Node000006" title=" " alt="" coords="336,951,351,898,380,821,401,779,426,738,457,700,492,667,523,647,553,636,581,632,609,631,666,628,697,621,731,606,745,596,754,584,763,572,779,560,830,537,904,514,1058,473,1059,478,905,519,832,542,781,564,767,576,758,587,749,599,733,611,699,626,667,634,609,636,582,637,554,641,526,651,495,671,460,703,431,741,406,782,385,823,356,900,341,952"/>
-<area shape="poly" id="edge65_Node000036_Node000016" title=" " alt="" coords="425,975,447,987,464,1005,472,1025,479,1044,495,1061,527,1076,525,1081,492,1066,474,1047,467,1027,460,1008,444,991,423,980"/>
-<area shape="poly" id="edge55_Node000036_Node000023" title=" " alt="" coords="445,949,732,910,810,896,811,901,732,915,445,955"/>
-<area shape="poly" id="edge56_Node000036_Node000031" title=" " alt="" coords="434,976,447,987,466,1011,480,1034,488,1058,493,1081,493,1126,485,1172,476,1219,470,1267,475,1317,483,1344,496,1371,512,1396,533,1418,578,1452,575,1456,530,1422,508,1400,491,1374,478,1346,470,1318,465,1267,470,1218,480,1171,487,1126,488,1081,483,1059,475,1037,462,1014,443,991,430,980"/>
-<area shape="poly" id="edge50_Node000036_Node000033" title=" " alt="" coords="433,976,447,987,470,1021,479,1055,478,1089,472,1123,466,1157,464,1190,473,1222,495,1254,511,1266,532,1277,587,1295,656,1307,733,1314,894,1318,1034,1314,1035,1320,894,1324,732,1320,655,1312,586,1300,530,1282,508,1271,491,1257,468,1224,459,1190,460,1156,466,1122,472,1088,474,1055,465,1023,443,991,429,980"/>
-<area shape="rect" id="Node000037" href="$classElementBase.html#aa60aedf5e43e6a4561b4a93e6962f377" title="Make a structural copy." alt="" coords="509,724,716,749"/>
-<area shape="poly" id="edge35_Node000036_Node000037" title=" " alt="" coords="349,950,584,756,587,760,353,954"/>
-<area shape="rect" id="Node000040" href="$classOpalData.html#ad98bcdd94e9a6ce0149f2d3d976c8779" title="Define a new object." alt="" coords="547,1027,678,1052"/>
-<area shape="poly" id="edge38_Node000036_Node000040" title=" " alt="" coords="408,975,446,986,471,999,494,1012,534,1023,533,1028,492,1017,468,1004,444,991,406,980"/>
-<area shape="rect" id="Node000052" href="$classOpalParser.html#a6a3db2c0d1f0d4ac01af106e57752505" title="Find object by name in the main directory." alt="" coords="826,624,950,649"/>
-<area shape="poly" id="edge51_Node000036_Node000052" title=" " alt="" coords="337,951,354,904,385,838,406,802,430,768,459,736,492,709,539,694,622,676,812,645,813,650,623,681,540,699,495,714,463,740,435,771,410,805,389,840,359,906,342,953"/>
-<area shape="rect" id="Node000053" href="$classSequenceParser.html#af3bc9b1e491c5aca7388b53713462d50" title=" " alt="" coords="502,977,723,1003"/>
-<area shape="poly" id="edge57_Node000036_Node000053" title=" " alt="" coords="446,972,488,976,488,981,445,978"/>
-<area shape="rect" id="Node000069" href="$namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582" title="Parse string value." alt="" coords="797,1273,979,1299"/>
-<area shape="poly" id="edge64_Node000036_Node000069" title=" " alt="" coords="430,975,447,987,461,1002,469,1017,474,1048,478,1080,484,1095,495,1111,529,1143,566,1170,606,1195,648,1215,731,1247,805,1268,803,1273,729,1252,646,1220,603,1199,563,1175,525,1147,491,1115,479,1098,473,1081,469,1049,464,1019,456,1005,444,991,427,980"/>
-<area shape="rect" id="Node000085" href="$classFlaggedElmPtr.html#a573261c872dbeaace4bdc1eadc69630a" title="Set reflection flag." alt="" coords="493,876,732,901"/>
-<area shape="poly" id="edge66_Node000036_Node000085" title=" " alt="" coords="380,949,493,918,550,902,552,908,494,923,381,955"/>
-<area shape="rect" id="Node000038" href="$classElementBase.html#a50a34a1b9a7db73b407bc5100a07030c" title="Return clone." alt="" coords="813,673,963,699"/>
-<area shape="poly" id="edge36_Node000037_Node000038" title=" " alt="" coords="682,721,804,699,805,704,683,727"/>
-<area shape="rect" id="Node000039" href="$classElementBase.html#ac39f80091bcbce72cd429499a33c18f5" title="Test if the element can be shared." alt="" coords="796,723,980,748"/>
-<area shape="poly" id="edge37_Node000037_Node000039" title=" " alt="" coords="716,734,783,733,783,739,716,739"/>
-<area shape="poly" id="edge46_Node000040_Node000005" title=" " alt="" coords="679,1041,707,1048,734,1061,751,1080,758,1101,765,1120,782,1136,840,1164,893,1181,942,1188,989,1187,1037,1180,1089,1167,1210,1130,1262,1107,1306,1077,1309,1082,1265,1111,1212,1135,1090,1172,1039,1185,990,1193,942,1194,892,1186,838,1169,778,1140,760,1123,753,1103,746,1083,730,1066,705,1053,678,1046"/>
-<area shape="poly" id="edge47_Node000040_Node000023" title=" " alt="" coords="678,1034,706,1026,730,1012,741,1001,748,989,754,965,760,939,767,926,778,913,800,899,803,904,782,917,771,929,765,941,759,966,753,991,746,1004,734,1016,708,1031,679,1039"/>
-<area shape="poly" id="edge49_Node000040_Node000030" title=" " alt="" coords="679,1037,708,1045,734,1061,757,1092,767,1122,769,1152,766,1181,762,1212,761,1243,766,1275,782,1309,812,1341,848,1366,845,1370,809,1345,778,1312,761,1277,756,1243,756,1211,760,1181,763,1151,762,1123,752,1094,730,1065,706,1050,677,1042"/>
-<area shape="rect" id="Node000041" href="$classDirectory.html#a6af87fa7c132144a4fed854a5c0ba253" title="First object in alphabetic order of name." alt="" coords="1065,1096,1190,1121"/>
-<area shape="poly" id="edge39_Node000040_Node000041" title=" " alt="" coords="679,1043,707,1050,733,1061,748,1072,758,1085,767,1096,781,1105,850,1123,922,1130,991,1128,1051,1121,1052,1126,991,1133,922,1135,849,1129,779,1110,763,1100,753,1088,745,1076,731,1066,705,1055,678,1049"/>
-<area shape="rect" id="Node000042" href="$classObject.html#a2462226f913277dbeec5928dd40c25c9" title="Test if replacement is allowed." alt="" coords="806,972,970,997"/>
-<area shape="poly" id="edge40_Node000040_Node000042" title=" " alt="" coords="677,1024,810,998,811,1003,678,1029"/>
-<area shape="rect" id="Node000043" href="$classDirectory.html#a4a8d6e8dc3b5f4f851a86b64daad1978" title="Last object in alphabetic order of name." alt="" coords="1071,921,1184,947"/>
-<area shape="poly" id="edge41_Node000040_Node000043" title=" " alt="" coords="678,1031,705,1023,731,1012,745,999,753,985,762,970,779,957,813,943,850,932,924,920,995,918,1057,922,1057,927,995,923,924,926,851,937,815,948,781,962,766,974,758,987,749,1002,733,1016,707,1028,679,1036"/>
-<area shape="rect" id="Node000044" href="$classOpalData.html#a352ed422ba6872cc3c76cc4dc32dc9d1" title="Delete existing entry." alt="" coords="825,1071,951,1096"/>
-<area shape="poly" id="edge42_Node000040_Node000044" title=" " alt="" coords="679,1047,811,1069,811,1074,678,1052"/>
-<area shape="rect" id="Node000048" href="$classDirectory.html#afd593b9994a1000a969046c02dd66846" title="Define new object." alt="" coords="825,1021,951,1047"/>
-<area shape="poly" id="edge48_Node000040_Node000048" title=" " alt="" coords="678,1035,810,1033,811,1038,678,1041"/>
-<area shape="poly" id="edge45_Node000044_Node000005" title=" " alt="" coords="951,1077,1264,1059,1264,1065,952,1083"/>
-<area shape="poly" id="edge43_Node000044_Node000041" title=" " alt="" coords="952,1087,1052,1098,1051,1103,951,1093"/>
-<area shape="poly" id="edge44_Node000044_Node000043" title=" " alt="" coords="951,1072,995,1056,1029,1033,1059,1007,1106,956,1110,959,1063,1011,1032,1038,997,1060,953,1077"/>
-<area shape="poly" id="edge52_Node000052_Node000004" title=" " alt="" coords="950,634,1056,634,1056,639,950,639"/>
-<area shape="poly" id="edge53_Node000052_Node000006" title=" " alt="" coords="949,627,973,620,995,609,1032,581,1064,547,1110,483,1114,486,1068,550,1035,585,997,614,975,625,951,632"/>
-<area shape="poly" id="edge59_Node000053_Node000021" title=" " alt="" coords="646,975,691,950,712,932,730,911,749,870,755,831,752,794,746,757,741,720,741,684,752,647,778,610,797,596,800,600,782,613,757,649,746,685,746,720,751,756,758,793,760,832,754,872,734,914,716,936,694,954,648,980"/>
-<area shape="poly" id="edge60_Node000053_Node000023" title=" " alt="" coords="681,975,731,956,745,946,754,935,764,924,779,913,814,898,816,903,781,918,767,928,758,939,748,950,733,960,683,980"/>
-<area shape="poly" id="edge61_Node000053_Node000028" title=" " alt="" coords="636,975,681,947,730,911,744,896,753,882,762,869,779,856,797,847,799,852,781,860,766,872,757,885,748,899,734,915,684,952,639,980"/>
-<area shape="poly" id="edge58_Node000053_Node000033" title=" " alt="" coords="714,1001,734,1012,753,1034,760,1058,767,1081,782,1106,817,1139,855,1169,936,1222,1015,1263,1080,1291,1078,1296,1013,1268,934,1227,852,1174,813,1143,778,1109,762,1084,755,1059,748,1037,730,1016,712,1005"/>
-<area shape="poly" id="edge62_Node000053_Node000069" title=" " alt="" coords="718,1001,734,1012,752,1035,762,1058,765,1081,764,1104,764,1151,769,1176,782,1202,815,1238,852,1264,849,1269,811,1242,778,1205,764,1178,759,1152,759,1104,760,1081,757,1059,748,1038,730,1016,715,1005"/>
-<area shape="poly" id="edge63_Node000069_Node000033" title=" " alt="" coords="980,1293,1035,1299,1035,1304,979,1298"/>
-<area shape="poly" id="edge74_Node000088_Node000003" title=" " alt="" coords="357,520,417,491,493,464,580,446,669,436,820,430,820,436,669,442,581,452,494,469,419,495,359,525"/>
-<area shape="poly" id="edge75_Node000088_Node000006" title=" " alt="" coords="406,520,493,507,786,479,1030,462,1031,467,787,484,494,513,407,525"/>
-<area shape="rect" id="Node000089" href="$classOpalData.html#a696d78c4b23e4b0375ba2b3e0fc01e3b" title="Apply a function to all objects." alt="" coords="825,772,951,797"/>
-<area shape="poly" id="edge70_Node000088_Node000089" title=" " alt="" coords="342,547,360,590,391,649,412,681,436,710,464,737,495,758,533,776,574,789,616,797,658,802,740,803,811,796,811,801,740,808,658,807,615,803,572,794,531,781,492,763,460,741,432,714,407,684,386,652,355,592,337,549"/>
-<area shape="rect" id="Node000090" href="$classSequence.html#a7a11f38b6f5a642a4587a2ba1e9b1d95" title="Return the embedded OPALX beam line." alt="" coords="536,572,689,597"/>
-<area shape="poly" id="edge73_Node000088_Node000090" title=" " alt="" coords="407,546,527,567,526,572,406,551"/>
-<area shape="rect" id="Node000092" href="$classSequence.html#ae507f99575ceb3143d1b7538dbaba2b9" title="Return the reference type flag." alt="" coords="523,256,703,281"/>
-<area shape="poly" id="edge76_Node000088_Node000092" title=" " alt="" coords="347,521,393,473,443,406,457,374,462,346,470,319,492,292,509,281,511,286,495,296,474,321,467,347,462,376,448,409,397,476,351,525"/>
-<area shape="rect" id="Node000093" href="$classObject.html#aa6e71ce6385ca4963129458e9c51ae91" title="Increment and return the occurrence counter." alt="" coords="543,523,682,548"/>
-<area shape="poly" id="edge78_Node000088_Node000093" title=" " alt="" coords="411,533,530,533,530,538,411,538"/>
-<area shape="poly" id="edge71_Node000089_Node000041" title=" " alt="" coords="952,785,976,793,998,807,1014,824,1024,842,1032,877,1035,914,1046,957,1081,1026,1113,1083,1109,1086,1076,1029,1042,959,1030,915,1026,877,1019,844,1010,828,994,811,974,798,951,790"/>
-<area shape="poly" id="edge72_Node000089_Node000043" title=" " alt="" coords="953,790,997,806,1032,829,1063,857,1110,909,1106,912,1059,860,1029,833,995,811,951,795"/>
-<area shape="poly" id="edge77_Node000092_Node000024" title=" " alt="" coords="703,277,798,288,798,293,703,282"/>
+<area shape="rect" id="Node000001" title="Parse sequence member." alt="" coords="5,807,163,832"/>
+<area shape="rect" id="Node000002" href="$classSequenceParser.html#a733c061dd9c81756a9657f52589034d5" title=" " alt="" coords="217,321,409,347"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,806,92,740,113,638,129,580,150,520,176,462,209,409,238,377,274,353,271,358,241,381,213,412,181,465,155,522,134,581,118,639,97,741,89,806"/>
+<area shape="rect" id="Node000009" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="966,467,1118,492"/>
+<area shape="poly" id="edge25_Node000001_Node000009" title=" " alt="" coords="94,805,146,748,230,668,282,625,338,584,399,548,462,520,525,499,591,484,658,474,724,468,848,464,953,470,948,472,848,470,724,473,659,479,592,490,527,505,464,525,401,553,341,589,285,629,233,672,150,752,99,807"/>
+<area shape="rect" id="Node000025" href="$classStatement.html#aaa1bb4a243de8fa46292cacffd574edf" title="Test for keyword." alt="" coords="743,1020,882,1046"/>
+<area shape="poly" id="edge26_Node000001_Node000025" title=" " alt="" coords="131,830,752,1013,749,1017,131,836"/>
+<area shape="rect" id="Node000026" href="$classOpalData.html#a37632da51948a41456659b55e2176c91" title="Invalidate expressions." alt="" coords="241,945,385,971"/>
+<area shape="poly" id="edge27_Node000001_Node000026" title=" " alt="" coords="97,830,146,876,178,902,212,924,244,939,239,941,209,929,175,906,143,880,98,836"/>
+<area shape="rect" id="Node000028" href="$classOpalParser.html#a479d09c292d7e35db8c840f9a520c893" title="Check for end of statement." alt="" coords="497,416,646,442"/>
+<area shape="poly" id="edge29_Node000001_Node000028" title=" " alt="" coords="83,806,86,742,102,646,118,594,140,544,170,498,209,459,241,438,276,423,313,413,351,407,425,405,493,412,489,415,425,410,351,412,314,418,278,428,244,443,212,463,174,501,145,546,123,596,108,648,92,743,88,806"/>
+<area shape="rect" id="Node000033" href="$classSequenceParser.html#abcc89d1c31f94dfd8ae866f5cf3cf6ac" title=" " alt="" coords="211,719,415,744"/>
+<area shape="poly" id="edge34_Node000001_Node000033" title=" " alt="" coords="118,804,264,748,262,753,122,808"/>
+<area shape="rect" id="Node000086" href="$classStatement.html#aec9c470a2c810d6e9b1a076f58eae21b" title="Return to start." alt="" coords="255,995,370,1020"/>
+<area shape="poly" id="edge71_Node000001_Node000086" title=" " alt="" coords="91,830,110,862,136,903,170,946,212,981,243,996,238,998,209,986,167,949,132,907,106,865,92,835"/>
+<area shape="rect" id="Node000087" href="$classOpalParser.html#ab4dc58bf909195b3d9439e5f25c871dc" title="Set stop flag." alt="" coords="253,1044,372,1070"/>
+<area shape="poly" id="edge72_Node000001_Node000087" title=" " alt="" coords="89,830,105,871,129,925,165,983,187,1008,212,1031,241,1046,236,1048,209,1035,183,1012,160,986,124,928,100,873,89,835"/>
+<area shape="rect" id="Node000003" href="$classSequenceParser.html#a4ac8e379456e51920af23d95b196b31d" title=" " alt="" coords="484,314,660,354"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,332,470,333,466,336,411,336"/>
+<area shape="rect" id="Node000004" href="$classSequenceParser.html#ae10562b7f6b5aec7866336e6b0687235" title=" " alt="" coords="469,211,674,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="346,319,506,256,503,260,349,323"/>
+<area shape="rect" id="Node000005" href="$classElement.html#a5b40298e379b7847c418b98760c601da" title="Find named Element." alt="" coords="763,268,862,294"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="673,250,750,266,745,269,675,255"/>
+<area shape="rect" id="Node000011" href="$classElement.html#a58f835862b37de4aa36f82f51abd9ee5" title="Return element length." alt="" coords="745,219,880,244"/>
+<area shape="poly" id="edge9_Node000004_Node000011" title=" " alt="" coords="673,229,732,230,727,233,676,234"/>
+<area shape="rect" id="Node000012" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="747,120,878,146"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="610,209,665,181,727,154,747,149,743,153,729,159,667,186,614,213"/>
+<area shape="rect" id="Node000023" href="$namespaceAttributes.html#ad795567b62ebabd9fe7de3e4336303c2" title="Get string value." alt="" coords="744,169,881,195"/>
+<area shape="poly" id="edge17_Node000004_Node000023" title=" " alt="" coords="673,208,733,197,729,200,676,213"/>
+<area shape="rect" id="Node000006" href="$classElement.html#aab5f775fd5050d282be9e41ec2190ce4" title="Constructor for exemplars." alt="" coords="980,317,1105,343"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="861,289,967,312,962,315,863,294"/>
+<area shape="rect" id="Node000008" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="990,541,1095,567"/>
+<area shape="poly" id="edge6_Node000005_Node000008" title=" " alt="" coords="862,283,882,291,899,303,917,328,925,353,927,378,926,403,925,452,931,477,947,503,964,520,986,534,980,535,961,524,943,506,927,479,920,453,920,403,922,378,920,354,912,331,895,307,880,295,863,289"/>
+<area shape="poly" id="edge7_Node000005_Node000009" title=" " alt="" coords="861,287,898,303,954,364,1024,454,1019,454,950,368,895,307,863,292"/>
+<area shape="rect" id="Node000010" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1188,467,1327,492"/>
+<area shape="poly" id="edge8_Node000009_Node000010" title=" " alt="" coords="1118,477,1175,478,1170,481,1120,482"/>
+<area shape="poly" id="edge10_Node000011_Node000006" title=" " alt="" coords="874,242,898,253,914,266,923,279,932,292,946,304,967,315,962,316,943,308,928,296,918,283,910,270,895,258,875,247"/>
+<area shape="rect" id="Node000013" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="966,55,1118,96"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="866,117,953,97,949,100,869,122"/>
+<area shape="rect" id="Node000019" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="979,120,1106,146"/>
+<area shape="poly" id="edge13_Node000012_Node000019" title=" " alt="" coords="877,130,966,131,961,134,880,135"/>
+<area shape="rect" id="Node000020" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="972,169,1113,195"/>
+<area shape="poly" id="edge14_Node000012_Node000020" title=" " alt="" coords="875,144,967,164,962,167,877,149"/>
+<area shape="rect" id="Node000021" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="977,219,1108,244"/>
+<area shape="poly" id="edge15_Node000012_Node000021" title=" " alt="" coords="874,144,898,155,914,168,923,181,932,193,946,205,965,215,959,217,943,210,928,197,918,184,910,171,895,159,875,149"/>
+<area shape="rect" id="Node000022" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="956,5,1128,31"/>
+<area shape="poly" id="edge16_Node000012_Node000022" title=" " alt="" coords="827,118,877,80,943,41,965,35,961,38,946,46,880,84,831,121"/>
+<area shape="poly" id="edge21_Node000023_Node000009" title=" " alt="" coords="881,193,898,204,914,223,923,240,930,276,933,313,938,333,947,354,983,409,1020,455,1015,455,978,412,942,357,933,334,928,313,925,276,918,242,910,225,895,208,882,198"/>
+<area shape="poly" id="edge18_Node000023_Node000013" title=" " alt="" coords="873,167,895,156,910,144,919,131,928,118,943,105,954,101,950,105,946,110,932,122,923,135,914,148,898,160,876,171"/>
+<area shape="poly" id="edge19_Node000023_Node000019" title=" " alt="" coords="874,166,966,148,962,151,877,171"/>
+<area shape="poly" id="edge20_Node000023_Node000020" title=" " alt="" coords="880,180,959,181,954,183,883,185"/>
+<area shape="poly" id="edge22_Node000023_Node000021" title=" " alt="" coords="875,193,967,214,962,216,877,198"/>
+<area shape="poly" id="edge23_Node000023_Node000022" title=" " alt="" coords="879,167,895,156,907,143,913,129,918,100,923,71,930,56,943,42,953,37,949,41,946,45,935,59,928,72,923,101,918,131,911,146,898,160,882,171"/>
+<area shape="rect" id="Node000024" href="$namespaceUtil.html#a5347325ce1b23ac589ce924b91af4b7c" title=" " alt="" coords="995,268,1090,294"/>
+<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="874,193,898,204,914,217,923,230,932,243,946,255,982,270,977,272,943,259,928,246,918,233,910,220,895,208,875,198"/>
+<area shape="rect" id="Node000027" href="$classObject.html#aa48af24109cadc6f450bcc37523651a5" title="Set/reset the [b]modified[/b] flag." alt="" coords="756,1365,869,1391"/>
+<area shape="poly" id="edge28_Node000026_Node000027" title=" " alt="" coords="385,962,403,969,417,980,439,1011,448,1042,449,1073,445,1104,441,1134,440,1165,447,1196,465,1229,493,1259,525,1284,561,1306,598,1324,673,1350,743,1368,738,1369,672,1356,596,1329,558,1311,522,1289,489,1262,461,1232,442,1198,435,1166,435,1134,440,1103,443,1073,443,1043,434,1014,413,984,400,974,386,967"/>
+<area shape="rect" id="Node000029" href="$classStatement.html#addc8463ab069024b814f2a291c3fa620" title="Test for end of command." alt="" coords="751,416,874,442"/>
+<area shape="poly" id="edge30_Node000028_Node000029" title=" " alt="" coords="645,426,737,427,733,430,648,431"/>
+<area shape="rect" id="Node000030" href="$classStatement.html#aeb97c1ae2faf5064efe45c9cc49a3b11" title="Test for delimiter." alt="" coords="1188,720,1327,746"/>
+<area shape="poly" id="edge31_Node000028_Node000030" title=" " alt="" coords="584,440,668,536,730,604,786,629,837,641,884,644,930,642,976,639,1025,638,1079,644,1141,661,1188,683,1230,711,1224,711,1186,688,1139,666,1078,650,1025,644,976,644,930,647,884,649,836,646,785,634,727,608,664,539,584,445"/>
+<area shape="rect" id="Node000031" href="$classStatement.html#a432b410630045f73fcd57435499ecc3e" title="Return current character number in line." alt="" coords="745,317,880,343"/>
+<area shape="poly" id="edge32_Node000028_Node000031" title=" " alt="" coords="596,413,655,383,727,352,748,346,743,350,729,357,658,388,600,417"/>
+<area shape="rect" id="Node000032" href="$classStatement.html#ad48f4bde092bb9fb68423da5b89d37d3" title="Print statement." alt="" coords="755,367,870,392"/>
+<area shape="poly" id="edge33_Node000028_Node000032" title=" " alt="" coords="637,413,742,393,738,396,640,418"/>
+<area shape="poly" id="edge52_Node000033_Node000009" title=" " alt="" coords="319,717,338,682,370,637,411,591,435,570,462,553,952,489,949,493,464,558,439,575,415,595,374,640,343,685,323,719"/>
+<area shape="poly" id="edge53_Node000033_Node000028" title=" " alt="" coords="319,717,373,626,414,566,461,510,498,476,538,448,535,453,501,480,465,513,418,570,377,629,324,719"/>
+<area shape="poly" id="edge48_Node000033_Node000030" title=" " alt="" coords="414,728,738,726,1140,728,1176,730,1171,732,1140,733,738,731,416,733"/>
+<area shape="rect" id="Node000034" href="$classElementBase.html#aa60aedf5e43e6a4561b4a93e6962f377" title="Make a structural copy." alt="" coords="478,1440,666,1466"/>
+<area shape="poly" id="edge35_Node000033_Node000034" title=" " alt="" coords="323,742,369,821,396,875,418,932,430,976,437,1015,442,1081,447,1147,454,1185,466,1229,486,1285,511,1340,557,1427,552,1426,506,1342,481,1287,460,1231,448,1187,442,1148,437,1082,432,1015,425,978,412,934,391,877,365,823,322,747"/>
+<area shape="rect" id="Node000038" href="$classOpalData.html#ad98bcdd94e9a6ce0149f2d3d976c8779" title="Define a new object." alt="" coords="512,1192,631,1218"/>
+<area shape="poly" id="edge40_Node000033_Node000038" title=" " alt="" coords="323,742,559,1178,553,1179,320,747"/>
+<area shape="rect" id="Node000047" href="$classOpalParser.html#a6a3db2c0d1f0d4ac01af106e57752505" title="Find object by name in the main directory." alt="" coords="755,568,870,594"/>
+<area shape="poly" id="edge49_Node000033_Node000047" title=" " alt="" coords="414,717,543,693,612,675,679,653,733,628,782,601,778,604,735,633,681,658,614,680,544,698,417,721"/>
+<area shape="rect" id="Node000048" href="$classSequenceParser.html#af3bc9b1e491c5aca7388b53713462d50" title=" " alt="" coords="470,844,674,870"/>
+<area shape="poly" id="edge54_Node000033_Node000048" title=" " alt="" coords="341,742,532,836,527,838,342,748"/>
+<area shape="rect" id="Node000068" href="$namespaceExpressions.html#a9e29aecbec1ad7229b05c0a932040582" title="Parse string value." alt="" coords="729,767,896,792"/>
+<area shape="poly" id="edge68_Node000033_Node000068" title=" " alt="" coords="414,742,463,748,716,771,711,774,463,753,417,747"/>
+<area shape="rect" id="Node000084" href="$classElmPtr.html#a7c6a3c02d66b3cb4c97f05b08b102fef" title="Set the element pointer." alt="" coords="504,568,639,594"/>
+<area shape="poly" id="edge69_Node000033_Node000084" title=" " alt="" coords="323,717,379,661,418,629,462,602,491,593,488,596,464,607,421,634,382,665,328,720"/>
+<area shape="rect" id="Node000085" href="$classFlaggedElmPtr.html#a573261c872dbeaace4bdc1eadc69630a" title="Set reflection flag." alt="" coords="463,617,680,643"/>
+<area shape="poly" id="edge70_Node000033_Node000085" title=" " alt="" coords="338,716,395,688,462,660,507,646,503,650,464,665,397,693,342,720"/>
+<area shape="rect" id="Node000035" href="$classElementBase.html#a50a34a1b9a7db73b407bc5100a07030c" title="Return clone." alt="" coords="743,1516,882,1542"/>
+<area shape="poly" id="edge36_Node000034_Node000035" title=" " alt="" coords="615,1464,757,1511,752,1511,615,1469"/>
+<area shape="rect" id="Node000036" href="$classElementBase.html#a3f68872b192c622f46c69a9616b048c1" title="Constructor with given name." alt="" coords="950,1491,1135,1516"/>
+<area shape="poly" id="edge38_Node000034_Node000036" title=" " alt="" coords="666,1460,937,1492,931,1492,666,1466"/>
+<area shape="rect" id="Node000037" href="$classElementBase.html#ac39f80091bcbce72cd429499a33c18f5" title="Test if the element can be shared." alt="" coords="728,1415,897,1440"/>
+<area shape="poly" id="edge39_Node000034_Node000037" title=" " alt="" coords="666,1440,715,1438,710,1438,667,1446"/>
+<area shape="poly" id="edge37_Node000035_Node000036" title=" " alt="" coords="882,1519,932,1516,937,1515,882,1524"/>
+<area shape="poly" id="edge46_Node000038_Node000027" title=" " alt="" coords="587,1215,730,1352,744,1361,738,1360,727,1356,586,1220"/>
+<area shape="rect" id="Node000039" href="$classObject.html#a2462226f913277dbeec5928dd40c25c9" title="Test if replacement is allowed." alt="" coords="736,1168,889,1194"/>
+<area shape="poly" id="edge41_Node000038_Node000039" title=" " alt="" coords="631,1196,723,1189,718,1191,633,1201"/>
+<area shape="rect" id="Node000040" href="$classOpalData.html#a352ed422ba6872cc3c76cc4dc32dc9d1" title="Delete existing entry." alt="" coords="754,1217,871,1243"/>
+<area shape="poly" id="edge42_Node000038_Node000040" title=" " alt="" coords="632,1208,741,1222,736,1223,632,1214"/>
+<area shape="rect" id="Node000043" href="$classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39" title="Return object name." alt="" coords="739,1069,886,1095"/>
+<area shape="poly" id="edge43_Node000038_Node000043" title=" " alt="" coords="589,1189,648,1148,727,1104,745,1099,740,1102,729,1109,651,1152,592,1194"/>
+<area shape="rect" id="Node000044" href="$classObject.html#ae7e75b2311e00969ae6308e899d32686" title="True, if [b]this[/b] is a built&#45;in object." alt="" coords="756,1267,869,1292"/>
+<area shape="poly" id="edge44_Node000038_Node000044" title=" " alt="" coords="613,1216,729,1253,752,1262,747,1262,728,1258,613,1221"/>
+<area shape="rect" id="Node000045" href="$classTable.html#a83eb57bb3e4e17a0893ba0b217448a67" title="Find out if table depends on the object identified by [b]name[/b]." alt="" coords="746,1316,879,1342"/>
+<area shape="poly" id="edge45_Node000038_Node000045" title=" " alt="" coords="591,1216,651,1258,729,1302,745,1311,739,1310,727,1307,648,1263,590,1221"/>
+<area shape="rect" id="Node000046" href="$classOpalData.html#a43390aa41dfa944e82a47c760923c242" title="Set the global momentum." alt="" coords="753,1119,872,1144"/>
+<area shape="poly" id="edge47_Node000038_Node000046" title=" " alt="" coords="613,1189,728,1153,752,1148,747,1150,729,1158,615,1194"/>
+<area shape="poly" id="edge50_Node000047_Node000008" title=" " alt="" coords="869,572,976,561,972,563,872,577"/>
+<area shape="poly" id="edge51_Node000047_Node000009" title=" " alt="" coords="849,565,896,546,1003,498,999,501,898,551,852,570"/>
+<area shape="poly" id="edge58_Node000048_Node000025" title=" " alt="" coords="649,868,682,887,695,901,702,915,707,944,713,972,719,985,730,999,747,1013,742,1013,726,1003,714,988,708,973,702,945,697,917,690,904,679,891,649,873"/>
+<area shape="poly" id="edge55_Node000048_Node000030" title=" " alt="" coords="635,868,682,887,697,898,706,910,715,921,730,930,842,979,891,996,938,1006,985,1008,1032,1001,1083,984,1139,955,1163,936,1184,913,1216,860,1237,806,1250,763,1253,759,1242,807,1221,862,1188,917,1167,940,1141,959,1085,989,1034,1006,985,1014,938,1012,890,1001,840,984,727,935,711,925,702,913,693,902,679,891,636,873"/>
+<area shape="poly" id="edge57_Node000048_Node000043" title=" " alt="" coords="580,867,602,906,634,957,678,1010,703,1035,730,1056,738,1062,732,1062,727,1060,699,1039,674,1014,630,960,597,909,579,873"/>
+<area shape="rect" id="Node000049" href="$classObject.html#aaba6fa24b81be56d195924fa9f6ea9bd" title="Find an attribute by name." alt="" coords="744,868,881,894"/>
+<area shape="poly" id="edge56_Node000048_Node000049" title=" " alt="" coords="674,865,731,872,726,873,675,870"/>
+<area shape="rect" id="Node000050" href="$namespaceExpressions.html#aaede2a5e3540f59d253c0a565f161599" title="Test for one&#45;character delimiter." alt="" coords="950,869,1135,895"/>
+<area shape="poly" id="edge59_Node000048_Node000050" title=" " alt="" coords="673,849,782,847,897,853,969,865,964,866,896,858,781,853,675,854"/>
+<area shape="rect" id="Node000051" href="$namespaceExpressions.html#acab3a7269ef8ca60c0ac1da0fcdb4bc0" title="Parse real constant." alt="" coords="945,919,1140,944"/>
+<area shape="poly" id="edge61_Node000048_Node000051" title=" " alt="" coords="620,868,681,886,705,896,729,904,831,920,931,929,926,930,830,925,728,909,703,901,679,891,621,873"/>
+<area shape="poly" id="edge62_Node000048_Node000068" title=" " alt="" coords="613,841,757,796,753,799,616,846"/>
+<area shape="poly" id="edge60_Node000050_Node000030" title=" " alt="" coords="1116,866,1139,856,1169,834,1196,808,1237,760,1241,757,1200,812,1172,838,1141,860,1118,871"/>
+<area shape="poly" id="edge63_Node000068_Node000030" title=" " alt="" coords="889,764,944,756,1175,737,1171,739,945,761,891,769"/>
+<area shape="poly" id="edge64_Node000068_Node000050" title=" " alt="" coords="858,790,898,809,913,822,922,834,932,845,946,856,958,863,952,863,943,860,928,849,918,837,909,825,895,814,859,796"/>
+<area shape="poly" id="edge65_Node000068_Node000051" title=" " alt="" coords="829,790,899,854,921,882,931,894,946,905,956,912,951,912,943,910,927,898,917,885,895,857,829,795"/>
+<area shape="rect" id="Node000069" href="$classStatement.html#a4f177c8818ebf7047e4302b5886dca1e" title="Return string value." alt="" coords="990,771,1094,796"/>
+<area shape="poly" id="edge66_Node000068_Node000069" title=" " alt="" coords="896,778,977,781,972,783,897,783"/>
+<area shape="rect" id="Node000070" href="$classStatement.html#ac8e21e0dce1b621eacc7d1405f760af4" title="Return word value." alt="" coords="984,820,1101,846"/>
+<area shape="poly" id="edge67_Node000068_Node000070" title=" " alt="" coords="871,790,972,815,967,817,872,796"/>
 </map>

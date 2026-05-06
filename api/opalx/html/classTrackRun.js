@@ -1,7 +1,7 @@
 var classTrackRun =
 [
     [ "bunch_type", "classTrackRun.html#af6ad9cf9e4ca42d6a04e00e10fad2334", null ],
-    [ "emittingSamplers_t", "classTrackRun.html#a95d134aae0af0253964fe85dfd452c90", null ],
+    [ "emittingSamplers_t", "classTrackRun.html#a665e762805b0510118a3179c53cccd44", null ],
     [ "RunMethod", "classTrackRun.html#a0e71895bdb34a2b47d71602fa559ecaa", [
       [ "NONE", "classTrackRun.html#a0e71895bdb34a2b47d71602fa559ecaaab50339a10e1de285ac99d4c3990b8693", null ],
       [ "PARALLEL", "classTrackRun.html#a0e71895bdb34a2b47d71602fa559ecaaadf13a99b035d6f0bce4f44ab18eec8eb", null ]

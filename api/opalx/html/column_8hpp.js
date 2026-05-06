@@ -9,5 +9,5 @@ var column_8hpp =
     ] ],
     [ "BOOST_SPIRIT_NO_PREDEFINED_TERMINALS", "column_8hpp.html#afd994602a1d960a01dd5200ad164f12b", null ],
     [ "BOOST_SPIRIT_QI_DEBUG", "column_8hpp.html#ab58c64bda03361ce3203ccfacce652b6", null ],
-    [ "operator<<", "column_8hpp.html#a276fc443e777c4be9df5f76e3b3747fc", null ]
+    [ "SDDS::operator<<", "namespaceSDDS.html#a276fc443e777c4be9df5f76e3b3747fc", null ]
 ];

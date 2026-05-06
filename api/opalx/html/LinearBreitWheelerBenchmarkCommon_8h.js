@@ -87,37 +87,37 @@ var LinearBreitWheelerBenchmarkCommon_8h =
       [ "x_m", "namespaceLinearBreitWheelerBenchmark.html#aa6e82886cc9d2fef6bb3bdb7e77c7e3c", null ],
       [ "y_m", "namespaceLinearBreitWheelerBenchmark.html#aa26b5e0d024bcd69404c95ecc81bfcaf", null ]
     ] ],
-    [ "FinalState", "LinearBreitWheelerBenchmarkCommon_8h.html#a4519340e6506a5ff2428f447554eab1f", [
-      [ "Electron", "LinearBreitWheelerBenchmarkCommon_8h.html#a4519340e6506a5ff2428f447554eab1fa0df2da9cf88450e6758356da45b4d04f", null ],
-      [ "Positron", "LinearBreitWheelerBenchmarkCommon_8h.html#a4519340e6506a5ff2428f447554eab1fa3df650e3999a6460e9d1ef885bcbab98", null ]
+    [ "LinearBreitWheelerBenchmark::FinalState", "namespaceLinearBreitWheelerBenchmark.html#a4519340e6506a5ff2428f447554eab1f", [
+      [ "LinearBreitWheelerBenchmark::FinalState::Electron", "namespaceLinearBreitWheelerBenchmark.html#a4519340e6506a5ff2428f447554eab1fa0df2da9cf88450e6758356da45b4d04f", null ],
+      [ "LinearBreitWheelerBenchmark::FinalState::Positron", "namespaceLinearBreitWheelerBenchmark.html#a4519340e6506a5ff2428f447554eab1fa3df650e3999a6460e9d1ef885bcbab98", null ]
     ] ],
-    [ "Observable", "LinearBreitWheelerBenchmarkCommon_8h.html#a95731bb5fd1d915bd92ac9eedad4beb6", [
-      [ "Energy", "LinearBreitWheelerBenchmarkCommon_8h.html#a95731bb5fd1d915bd92ac9eedad4beb6a5cc28f31113ec7cd7e546b836ccae2b9", null ],
-      [ "Theta", "LinearBreitWheelerBenchmarkCommon_8h.html#a95731bb5fd1d915bd92ac9eedad4beb6ad21c855a168b8f09d1ebb1bc596be927", null ]
+    [ "LinearBreitWheelerBenchmark::Observable", "namespaceLinearBreitWheelerBenchmark.html#a95731bb5fd1d915bd92ac9eedad4beb6", [
+      [ "LinearBreitWheelerBenchmark::Observable::Energy", "namespaceLinearBreitWheelerBenchmark.html#a95731bb5fd1d915bd92ac9eedad4beb6a5cc28f31113ec7cd7e546b836ccae2b9", null ],
+      [ "LinearBreitWheelerBenchmark::Observable::Theta", "namespaceLinearBreitWheelerBenchmark.html#a95731bb5fd1d915bd92ac9eedad4beb6ad21c855a168b8f09d1ebb1bc596be927", null ]
     ] ],
-    [ "buildTransverseBasis", "LinearBreitWheelerBenchmarkCommon_8h.html#a5c93b44f147e053a9b0819793c67518d", null ],
-    [ "effectiveSpatialOverlapSigma", "LinearBreitWheelerBenchmarkCommon_8h.html#ac3f0c64693b455354ae090de64dc0a1b", null ],
-    [ "effectiveTemporalOverlapSigma", "LinearBreitWheelerBenchmarkCommon_8h.html#a12fb6cf4cd2e4857a45c43e481a29e5f", null ],
-    [ "histogramArea", "LinearBreitWheelerBenchmarkCommon_8h.html#a9edd252428705d103a931ccc27bddece", null ],
-    [ "histogramL1Distance", "LinearBreitWheelerBenchmarkCommon_8h.html#a34676d3ff153f36d0a589d3e0be169bd", null ],
-    [ "histogramMean", "LinearBreitWheelerBenchmarkCommon_8h.html#a1de79dbef4ed3a7da738d8482d6e7557", null ],
-    [ "jointHistogramArea", "LinearBreitWheelerBenchmarkCommon_8h.html#ac563c8f12faea384721f8924ecdc3a1d", null ],
-    [ "jointHistogramL1Distance", "LinearBreitWheelerBenchmarkCommon_8h.html#ac41495ca9d568fc4e4728dd191fdd918", null ],
-    [ "jointHistogramMeanEnergyGeV", "LinearBreitWheelerBenchmarkCommon_8h.html#a8ba0bb5c8dbf9bd05d8c4c92f31e8533", null ],
-    [ "jointHistogramMeanThetaRad", "LinearBreitWheelerBenchmarkCommon_8h.html#af8bd676d3df0632e9485eedcd298696c", null ],
-    [ "polarAngleRad", "LinearBreitWheelerBenchmarkCommon_8h.html#a39638792e0e8578b80f4a88dd680d6f0", null ],
-    [ "readHistogramCSV", "LinearBreitWheelerBenchmarkCommon_8h.html#ad003176e8eb6949584adaee03d0d891c", null ],
-    [ "readJointHistogramCSV", "LinearBreitWheelerBenchmarkCommon_8h.html#ab13ddead89cf0432b5e17757f18c4d10", null ],
-    [ "sampledObservable", "LinearBreitWheelerBenchmarkCommon_8h.html#a3137fdfc9158600ddf20997d0b87da50", null ],
-    [ "sampleFinitePhotonBeamHistogram", "LinearBreitWheelerBenchmarkCommon_8h.html#a51c9f57181605d4870bead5d464eec1e", null ],
-    [ "sampleFinitePhotonBeamJointHistogram", "LinearBreitWheelerBenchmarkCommon_8h.html#a3e6c8dc1bf8aa4819e7e674f97315365", null ],
-    [ "sampleHighEnergyPhotonEnergyGeV", "LinearBreitWheelerBenchmarkCommon_8h.html#a7f5a53cd5f8f344eff154763f0453e52", null ],
-    [ "sampleHistogram", "LinearBreitWheelerBenchmarkCommon_8h.html#a60b667b921c7105c5780eaffeb85e136", null ],
-    [ "sampleJointHistogram", "LinearBreitWheelerBenchmarkCommon_8h.html#a800f42b28fcbd4f865cf3e71c33e2bdb", null ],
-    [ "sampleOverlapPhotonBeamState", "LinearBreitWheelerBenchmarkCommon_8h.html#a8de75d2ffccad74c3a994d6aaae2c966", null ],
-    [ "sampleOverlapPhotonBeamState", "LinearBreitWheelerBenchmarkCommon_8h.html#a2478d0c5fe177a6c92461cc62ccaf8cd", null ],
-    [ "samplePhotonBeamDirection", "LinearBreitWheelerBenchmarkCommon_8h.html#a7299bb32ba08446da55bab4412023d25", null ],
-    [ "samplePhotonBeamState", "LinearBreitWheelerBenchmarkCommon_8h.html#a7b073d6591b7790d7303f1762e88bec7", null ],
-    [ "writeHistogramCSV", "LinearBreitWheelerBenchmarkCommon_8h.html#af6a1ce1d4a67f447ae3274f56106c517", null ],
-    [ "writeJointHistogramCSV", "LinearBreitWheelerBenchmarkCommon_8h.html#a4e309de4007e3ac08a9db5c1db31a690", null ]
+    [ "LinearBreitWheelerBenchmark::buildTransverseBasis", "namespaceLinearBreitWheelerBenchmark.html#a5c93b44f147e053a9b0819793c67518d", null ],
+    [ "LinearBreitWheelerBenchmark::effectiveSpatialOverlapSigma", "namespaceLinearBreitWheelerBenchmark.html#ac3f0c64693b455354ae090de64dc0a1b", null ],
+    [ "LinearBreitWheelerBenchmark::effectiveTemporalOverlapSigma", "namespaceLinearBreitWheelerBenchmark.html#a12fb6cf4cd2e4857a45c43e481a29e5f", null ],
+    [ "LinearBreitWheelerBenchmark::histogramArea", "namespaceLinearBreitWheelerBenchmark.html#a9edd252428705d103a931ccc27bddece", null ],
+    [ "LinearBreitWheelerBenchmark::histogramL1Distance", "namespaceLinearBreitWheelerBenchmark.html#a34676d3ff153f36d0a589d3e0be169bd", null ],
+    [ "LinearBreitWheelerBenchmark::histogramMean", "namespaceLinearBreitWheelerBenchmark.html#a1de79dbef4ed3a7da738d8482d6e7557", null ],
+    [ "LinearBreitWheelerBenchmark::jointHistogramArea", "namespaceLinearBreitWheelerBenchmark.html#ac563c8f12faea384721f8924ecdc3a1d", null ],
+    [ "LinearBreitWheelerBenchmark::jointHistogramL1Distance", "namespaceLinearBreitWheelerBenchmark.html#ac41495ca9d568fc4e4728dd191fdd918", null ],
+    [ "LinearBreitWheelerBenchmark::jointHistogramMeanEnergyGeV", "namespaceLinearBreitWheelerBenchmark.html#a8ba0bb5c8dbf9bd05d8c4c92f31e8533", null ],
+    [ "LinearBreitWheelerBenchmark::jointHistogramMeanThetaRad", "namespaceLinearBreitWheelerBenchmark.html#af8bd676d3df0632e9485eedcd298696c", null ],
+    [ "LinearBreitWheelerBenchmark::polarAngleRad", "namespaceLinearBreitWheelerBenchmark.html#a39638792e0e8578b80f4a88dd680d6f0", null ],
+    [ "LinearBreitWheelerBenchmark::readHistogramCSV", "namespaceLinearBreitWheelerBenchmark.html#ad003176e8eb6949584adaee03d0d891c", null ],
+    [ "LinearBreitWheelerBenchmark::readJointHistogramCSV", "namespaceLinearBreitWheelerBenchmark.html#ab13ddead89cf0432b5e17757f18c4d10", null ],
+    [ "LinearBreitWheelerBenchmark::sampledObservable", "namespaceLinearBreitWheelerBenchmark.html#a3137fdfc9158600ddf20997d0b87da50", null ],
+    [ "LinearBreitWheelerBenchmark::sampleFinitePhotonBeamHistogram", "namespaceLinearBreitWheelerBenchmark.html#a51c9f57181605d4870bead5d464eec1e", null ],
+    [ "LinearBreitWheelerBenchmark::sampleFinitePhotonBeamJointHistogram", "namespaceLinearBreitWheelerBenchmark.html#a3e6c8dc1bf8aa4819e7e674f97315365", null ],
+    [ "LinearBreitWheelerBenchmark::sampleHighEnergyPhotonEnergyGeV", "namespaceLinearBreitWheelerBenchmark.html#a7f5a53cd5f8f344eff154763f0453e52", null ],
+    [ "LinearBreitWheelerBenchmark::sampleHistogram", "namespaceLinearBreitWheelerBenchmark.html#a60b667b921c7105c5780eaffeb85e136", null ],
+    [ "LinearBreitWheelerBenchmark::sampleJointHistogram", "namespaceLinearBreitWheelerBenchmark.html#a800f42b28fcbd4f865cf3e71c33e2bdb", null ],
+    [ "LinearBreitWheelerBenchmark::sampleOverlapPhotonBeamState", "namespaceLinearBreitWheelerBenchmark.html#a8de75d2ffccad74c3a994d6aaae2c966", null ],
+    [ "LinearBreitWheelerBenchmark::sampleOverlapPhotonBeamState", "namespaceLinearBreitWheelerBenchmark.html#a2478d0c5fe177a6c92461cc62ccaf8cd", null ],
+    [ "LinearBreitWheelerBenchmark::samplePhotonBeamDirection", "namespaceLinearBreitWheelerBenchmark.html#a7299bb32ba08446da55bab4412023d25", null ],
+    [ "LinearBreitWheelerBenchmark::samplePhotonBeamState", "namespaceLinearBreitWheelerBenchmark.html#a7b073d6591b7790d7303f1762e88bec7", null ],
+    [ "LinearBreitWheelerBenchmark::writeHistogramCSV", "namespaceLinearBreitWheelerBenchmark.html#af6a1ce1d4a67f447ae3274f56106c517", null ],
+    [ "LinearBreitWheelerBenchmark::writeJointHistogramCSV", "namespaceLinearBreitWheelerBenchmark.html#a4e309de4007e3ac08a9db5c1db31a690", null ]
 ];

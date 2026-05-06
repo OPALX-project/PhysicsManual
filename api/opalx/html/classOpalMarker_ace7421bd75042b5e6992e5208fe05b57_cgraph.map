@@ -1,28 +1,42 @@
 <map id="OpalMarker::update" name="OpalMarker::update">
-<area shape="rect" id="Node000001" title="Update the embedded OPALX marker." alt="" coords="5,96,156,121"/>
-<area shape="rect" id="Node000002" href="$classElement.html#a68136aee2ed8edfe943a7bf2933b08ca" title="Return the embedded OPALX element." alt="" coords="235,71,393,96"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,98,221,91,222,96,157,103"/>
-<area shape="rect" id="Node000003" href="$classOpalElement.html#ab0c3e3b9796fc7f288fcfddb4a39080f" title="Transmit the `‘unknown’&#39; (not known to OPALX) attributes to OPALX." alt="" coords="204,120,424,145"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,114,190,117,190,123,156,119"/>
-<area shape="rect" id="Node000004" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="735,5,882,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,117,739,31,740,36,370,123"/>
-<area shape="rect" id="Node000005" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="497,120,641,145"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="424,130,483,130,483,135,424,135"/>
-<area shape="rect" id="Node000010" href="$classElementBase.html#a5c0cf4c10bceff7bc9fb225bae470174" title="Set value of an attribute." alt="" coords="472,268,665,293"/>
-<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="339,143,535,259,533,263,336,148"/>
-<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="588,118,653,75,712,41,735,32,737,37,714,46,655,80,591,122"/>
-<area shape="rect" id="Node000006" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="727,55,890,95"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="622,117,714,95,715,100,623,123"/>
-<area shape="rect" id="Node000007" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="739,120,879,145"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="641,130,725,130,725,135,641,135"/>
-<area shape="rect" id="Node000008" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="729,169,888,195"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="632,143,733,164,732,169,631,148"/>
-<area shape="rect" id="Node000009" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="713,219,904,244"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="593,143,647,173,714,204,740,212,739,217,712,208,645,178,590,148"/>
-<area shape="rect" id="Node000011" href="$classElementBase.html#a02257dc2843938a8baa24583fdd6b273" title="Construct a read/write channel." alt="" coords="713,268,904,293"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="666,278,700,278,700,283,666,283"/>
-<area shape="rect" id="Node000013" href="$classChannel.html#aad3b7b15033b6db682bcc91a52db5132" title="Test if settable." alt="" coords="735,317,883,343"/>
-<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="632,291,733,312,732,317,631,296"/>
-<area shape="rect" id="Node000012" href="$classAttributeSet.html#a9ca26ee9df44ab1d5c19554d647b8c4d" title="Construct a read/write channel." alt="" coords="952,268,1135,293"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="904,278,939,278,939,283,904,283"/>
+<area shape="rect" id="Node000001" title="Update the embedded OPALX marker." alt="" coords="5,117,141,143"/>
+<area shape="rect" id="Node000002" href="$classElement.html#a68136aee2ed8edfe943a7bf2933b08ca" title="Return the embedded OPALX element." alt="" coords="216,92,360,118"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,120,203,113,199,117,142,125"/>
+<area shape="rect" id="Node000003" href="$classOpalElement.html#ab0c3e3b9796fc7f288fcfddb4a39080f" title="Transmit the `‘unknown’&#39; (not known to OPALX) attributes to OPALX." alt="" coords="189,141,387,167"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,135,176,140,171,143,142,140"/>
+<area shape="rect" id="Node000004" href="$classAttribute.html#a3d97098a5ee6cd812bc1c7e492ef52ac" title="Return the attribute name." alt="" coords="678,27,810,52"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,138,386,128,678,55,674,58,388,133,346,143"/>
+<area shape="rect" id="Node000005" href="$namespaceAttributes.html#a04ef4de7f8e753119a3d32411a0f0a2d" title="Return real value." alt="" coords="457,141,587,167"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="387,152,444,153,439,155,388,157"/>
+<area shape="rect" id="Node000018" href="$classElementBase.html#a5c0cf4c10bceff7bc9fb225bae470174" title="Set value of an attribute." alt="" coords="435,289,609,315"/>
+<area shape="poly" id="edge18_Node000003_Node000018" title=" " alt="" coords="311,165,490,280,485,281,309,170"/>
+<area shape="poly" id="edge16_Node000005_Node000004" title=" " alt="" coords="538,139,589,101,656,62,677,57,672,59,659,67,592,106,541,143"/>
+<area shape="rect" id="Node000006" href="$classExpressions_1_1SRefAttr.html#ae8c45c92363031d6fadb6928be624d13" title="Evaluate." alt="" coords="668,76,820,117"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="574,138,655,119,650,121,576,143"/>
+<area shape="rect" id="Node000015" href="$classAttribute.html#a3ad89aafd57487e0cbbc62d29515b29f" title="Return reference to polymorphic value." alt="" coords="681,141,807,167"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="587,152,668,154,663,155,588,157"/>
+<area shape="rect" id="Node000016" href="$classAttribute.html#aea141e99b173cc9db4e66a0f62786ac9" title="Return a reference to the parser." alt="" coords="673,191,815,216"/>
+<area shape="poly" id="edge15_Node000005_Node000016" title=" " alt="" coords="583,165,671,186,665,187,583,170"/>
+<area shape="rect" id="Node000017" href="$classAttribute.html#ad501832e9f9617f12978cf0db5e3ca7a" title=" " alt="" coords="658,240,830,266"/>
+<area shape="poly" id="edge17_Node000005_Node000017" title=" " alt="" coords="544,165,596,196,658,226,676,235,670,235,656,231,593,200,544,170"/>
+<area shape="rect" id="Node000007" href="$classAttributeBase.html#a104fd2ac257a81d1d163d07c74b15593" title=" " alt="" coords="879,27,1066,52"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="820,75,906,56,901,58,821,80"/>
+<area shape="rect" id="Node000008" href="$classExpressions_1_1SRefAttr.html#acd0370ba62fb847bd57299ccb844dc45" title=" " alt="" coords="896,76,1048,117"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="820,94,883,96,878,97,821,99"/>
+<area shape="rect" id="Node000013" href="$classAttributeBase.html#aa6e7593d1e89ea199c909e24dcada8f9" title="Convert to string." alt="" coords="891,141,1054,167"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="821,113,906,137,900,137,820,119"/>
+<area shape="rect" id="Node000009" href="$classOpalData.html#a8847589c28aa77d2797a61e8118ff5c6" title="Find entry." alt="" coords="1138,5,1243,31"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1036,73,1065,62,1113,40,1127,37,1132,36,1115,45,1067,67,1038,78"/>
+<area shape="rect" id="Node000010" href="$classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0" title=" " alt="" coords="1114,55,1266,80"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1048,84,1101,79,1096,80,1049,89"/>
+<area shape="rect" id="Node000012" href="$classExpressions_1_1SRefAttr.html#ae5bd0acc16f2c15a7dc55b28b998e7ab" title="Constructor." alt="" coords="1114,104,1266,145"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="1049,104,1101,113,1096,113,1049,109"/>
+<area shape="rect" id="Node000011" href="$classOpalData.html#accc445ea08f633c3157728e420fd47c6" title=" " alt="" coords="1314,55,1454,80"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1266,65,1302,67,1296,68,1267,70"/>
+<area shape="rect" id="Node000014" href="$classAttributeBase.html#aab7e762da4a5303b75b1d878c94cc8d5" title="Print value." alt="" coords="1124,169,1257,195"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1054,162,1111,172,1106,172,1054,167"/>
+<area shape="rect" id="Node000019" href="$classElementBase.html#a02257dc2843938a8baa24583fdd6b273" title="Construct a read/write channel." alt="" coords="657,289,831,315"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="609,300,644,302,639,302,610,305"/>
+<area shape="rect" id="Node000020" href="$classChannel.html#aad3b7b15033b6db682bcc91a52db5132" title="Test if settable." alt="" coords="676,339,812,364"/>
+<area shape="poly" id="edge20_Node000018_Node000020" title=" " alt="" coords="584,313,671,335,665,335,583,318"/>
 </map>

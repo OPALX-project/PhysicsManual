@@ -1,6 +1,6 @@
 var classDistributionMoments =
 [
-    [ "iterator_t", "classDistributionMoments.html#a3112b516729301886f8e8fd87c2f921c", null ],
+    [ "iterator_t", "classDistributionMoments.html#a07a8b5038b2359b4031bf12e371c50ec", null ],
     [ "DistributionMoments", "classDistributionMoments.html#a7174b572bfb832207f422f16dd2d0f6b", null ],
     [ "compute", "classDistributionMoments.html#a6a600c6ac90bb042bf1129fc04a613ae", null ],
     [ "computeDebyeLength", "classDistributionMoments.html#a15cdf48791d039e8b436bdaeb0727784", null ],

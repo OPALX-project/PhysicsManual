@@ -1,25 +1,23 @@
 <map id="LaserProfile::setupRNG" name="LaserProfile::setupRNG">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,157,176,182"/>
-<area shape="rect" id="Node000002" href="$GSLHistogram_8h.html#aee08fa039832a3486fc23569b1f1e1a8" title="Allocate a 2D histogram PDF." alt="" coords="238,5,397,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,155,154,111,223,62,248,49,250,53,225,66,157,115,107,159"/>
-<area shape="rect" id="Node000003" href="$GSLHistogram_8h.html#a6d8fed29f97735916dae246ffd1f41f5" title="Initialize a PDF from a histogram." alt="" coords="224,130,411,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,157,210,153,211,158,176,162"/>
-<area shape="rect" id="Node000006" href="$classgsl__histogram2d.html#abab035c6a8ec2dbe54f6dcfe598a376c" title="Number of x bins." alt="" coords="679,29,834,54"/>
-<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="119,154,167,134,223,116,342,90,461,70,665,46,665,51,462,75,343,95,225,121,169,139,121,159"/>
-<area shape="rect" id="Node000007" href="$classgsl__histogram2d.html#ae5e1c97c6d009f956e7569076f0cdf17" title="Number of y bins." alt="" coords="679,226,834,251"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="176,175,666,227,665,232,176,181"/>
-<area shape="rect" id="Node000010" href="$Random_8h.html#acf285be852e811b9f6edcf5114e50f82" title=" " alt="" coords="264,235,371,261"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="129,180,225,213,267,228,266,233,223,219,127,185"/>
-<area shape="rect" id="Node000011" href="$Random_8h.html#a8a10f4159b09bf5e727d172bd4a0868d" title=" " alt="" coords="246,285,389,310"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="106,180,156,225,189,250,225,271,241,278,239,283,223,276,186,254,152,229,103,184"/>
-<area shape="rect" id="Node000004" href="$classgsl__histogram2d__pdf.html#ab2a2a03d3c90256053e4aea6d9322cce" title="Initialize a PDF from a 2D histogram." alt="" coords="459,120,617,160"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="411,139,445,138,445,144,411,144"/>
-<area shape="rect" id="Node000005" href="$classgsl__histogram2d.html#a1ade9ac0f5e027e0b180c75958165684" title="Bin count array." alt="" coords="677,78,836,103"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="617,119,686,104,687,109,619,125"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="582,118,616,99,639,80,664,63,681,56,683,61,667,68,642,85,619,104,585,122"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="585,158,619,176,642,195,667,212,683,219,681,224,664,217,639,200,616,181,582,162"/>
-<area shape="rect" id="Node000008" href="$classgsl__histogram2d.html#aed01ed7916c6340473127191051ea422" title="X&#45;axis bin edges." alt="" coords="665,127,848,153"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="618,137,651,137,651,143,618,143"/>
-<area shape="rect" id="Node000009" href="$classgsl__histogram2d.html#a910b394a833a0801dc4acf7c59f03b59" title="Y&#45;axis bin edges." alt="" coords="665,177,848,202"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="619,155,687,171,686,176,617,161"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,166,155"/>
+<area shape="rect" id="Node000002" href="$GSLHistogram_8h.html#aee08fa039832a3486fc23569b1f1e1a8" title="Allocate a 2D histogram PDF." alt="" coords="226,39,367,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,126,213,89,230,85,225,87,215,94,121,131"/>
+<area shape="rect" id="Node000003" href="$GSLHistogram_8h.html#a6d8fed29f97735916dae246ffd1f41f5" title="Initialize a PDF from a histogram." alt="" coords="214,104,379,130"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,130,201,128,196,130,167,135"/>
+<area shape="rect" id="Node000010" href="$Random_8h.html#acf285be852e811b9f6edcf5114e50f82" title=" " alt="" coords="248,153,345,179"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="166,149,235,158,230,160,166,154"/>
+<area shape="rect" id="Node000011" href="$Random_8h.html#a8a10f4159b09bf5e727d172bd4a0868d" title=" " alt="" coords="231,203,362,228"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="119,153,215,189,236,198,230,198,213,194,118,158"/>
+<area shape="rect" id="Node000004" href="$classgsl__histogram2d__pdf.html#ab2a2a03d3c90256053e4aea6d9322cce" title="Initialize a PDF from a 2D histogram." alt="" coords="427,96,568,137"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="379,114,414,116,409,117,380,119"/>
+<area shape="rect" id="Node000005" href="$classgsl__histogram2d.html#a1ade9ac0f5e027e0b180c75958165684" title="Bin count array." alt="" coords="627,5,769,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="526,94,567,66,615,40,627,37,632,36,617,45,569,71,528,99"/>
+<area shape="rect" id="Node000006" href="$classgsl__histogram2d.html#abab035c6a8ec2dbe54f6dcfe598a376c" title="Number of x bins." alt="" coords="629,55,767,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="568,97,626,85,631,84,569,102"/>
+<area shape="rect" id="Node000007" href="$classgsl__histogram2d.html#ae5e1c97c6d009f956e7569076f0cdf17" title="Number of y bins." alt="" coords="629,104,767,130"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="568,114,616,117,610,117,569,119"/>
+<area shape="rect" id="Node000008" href="$classgsl__histogram2d.html#aed01ed7916c6340473127191051ea422" title="X&#45;axis bin edges." alt="" coords="616,153,780,179"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="569,132,631,149,626,149,568,137"/>
+<area shape="rect" id="Node000009" href="$classgsl__histogram2d.html#a910b394a833a0801dc4acf7c59f03b59" title="Y&#45;axis bin edges." alt="" coords="616,203,780,228"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="527,135,569,163,617,189,633,198,627,197,615,194,567,167,526,140"/>
 </map>

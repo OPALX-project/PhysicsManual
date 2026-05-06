@@ -1,25 +1,36 @@
 <map id="interpolation::MMatrix::eigenvalues" name="interpolation::MMatrix::eigenvalues">
-<area shape="rect" id="Node000001" title="returns a vector of eigenvalues. Throws an exception if either this matrix is not square or the eigen..." alt="" coords="5,137,172,177"/>
-<area shape="rect" id="Node000002" href="$classinterpolation_1_1MVector.html#acfc6f81454fa09501d977bcd298351a3" title=" " alt="" coords="243,5,409,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,135,158,95,219,55,234,48,236,53,221,60,161,99,113,139"/>
-<area shape="rect" id="Node000003" href="$GSLEigen_8h.html#a48c6694b5883dcd0eadacc47b2c9659c" title="Compute eigenvalues of a real nonsymmetric matrix." alt="" coords="248,70,404,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,135,219,105,252,96,254,101,221,111,140,140"/>
-<area shape="rect" id="Node000009" href="$GSLEigen_8h.html#ab1ca57825940f3e4c0e921805a0f2d94" title="Allocate a nonsymmetric eigenvalue workspace for &#160;matrices." alt="" coords="229,119,423,145"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="172,146,215,141,216,146,172,151"/>
-<area shape="rect" id="Node000010" href="$GSLEigen_8h.html#ac21847ac48b75507e230b4a8e25a4e3b" title="Free a workspace allocated by gsl_eigen_nonsymm_alloc." alt="" coords="231,169,421,194"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="172,163,218,168,217,173,172,168"/>
-<area shape="rect" id="Node000011" href="$GSLEigen_8h.html#a7c01cc35abb2134fb6a0cf20a0603262" title="Accept GSL&#45;style parameters (no&#45;op in this implementation)." alt="" coords="220,218,432,243"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="139,175,221,204,250,212,249,217,219,209,137,180"/>
-<area shape="rect" id="Node000012" href="$namespaceinterpolation.html#a2ec626b0d2d5bbb9b4d08e4f54dfba89" title=" " alt="" coords="231,268,421,308"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="113,175,161,215,221,254,237,261,234,266,219,258,158,219,110,179"/>
-<area shape="rect" id="Node000004" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="547,21,590,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="389,67,533,38,534,43,390,73"/>
-<area shape="rect" id="Node000005" href="$GSLMatrix_8h.html#aa527f408353b0806a9c15a570213a402" title="Return pointer to element &#160;in a real matrix." alt="" coords="511,70,627,95"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="405,80,497,80,497,85,405,85"/>
-<area shape="rect" id="Node000007" href="$GSLMatrix_8h.html#a41d67fcf89a53af05aec95e0891174d5" title="Return pointer to element &#160;in a complex vector." alt="" coords="480,119,657,145"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="390,93,493,114,491,119,389,98"/>
-<area shape="rect" id="Node000006" href="$structgsl__matrix.html#a683e3aca92fdbf1bd974b5b14dbcfa7e" title=" " alt="" coords="736,70,853,95"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="627,80,722,80,722,85,627,85"/>
-<area shape="rect" id="Node000008" href="$structgsl__vector__complex.html#a7d5342b3c712ab730a136b2f1fa7e24d" title=" " alt="" coords="705,119,884,145"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="658,129,692,129,692,135,658,135"/>
+<area shape="rect" id="Node000001" title="returns a vector of eigenvalues. Throws an exception if either this matrix is not square or the eigen..." alt="" coords="5,252,152,293"/>
+<area shape="rect" id="Node000002" href="$classinterpolation_1_1MMatrix.html#a37e7634651d9b5aabd0ba8d9a8930482" title=" " alt="" coords="222,5,368,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,251,99,212,123,161,156,109,198,62,216,52,212,56,201,66,160,112,128,164,104,214,89,253"/>
+<area shape="rect" id="Node000003" href="$classinterpolation_1_1MMatrix.html#ad6d39e69b03d08aa82680fd5fdd1192e" title="default constructor makes an empty MMatrix of size (0,0)" alt="" coords="444,19,591,59"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="86,250,103,218,128,179,159,139,198,106,231,94,289,80,431,53,427,57,290,86,232,100,201,111,163,143,132,182,108,221,91,252"/>
+<area shape="rect" id="Node000004" href="$classinterpolation_1_1MVector.html#acfc6f81454fa09501d977bcd298351a3" title=" " alt="" coords="221,120,369,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,250,142,210,198,170,211,165,207,169,201,175,145,214,102,253"/>
+<area shape="rect" id="Node000006" href="$GSLEigen_8h.html#a48c6694b5883dcd0eadacc47b2c9659c" title="Compute eigenvalues of a real nonsymmetric matrix." alt="" coords="225,185,365,210"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,249,199,219,223,213,219,217,201,224,126,254"/>
+<area shape="rect" id="Node000012" href="$GSLEigen_8h.html#ab1ca57825940f3e4c0e921805a0f2d94" title="Allocate a nonsymmetric eigenvalue workspace for &#160;matrices." alt="" coords="208,234,382,260"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="151,261,194,257,190,261,153,266"/>
+<area shape="rect" id="Node000013" href="$GSLEigen_8h.html#ac21847ac48b75507e230b4a8e25a4e3b" title="Free a workspace allocated by gsl_eigen_nonsymm_alloc." alt="" coords="210,284,380,309"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="151,278,197,284,193,287,153,283"/>
+<area shape="rect" id="Node000014" href="$GSLEigen_8h.html#a7c01cc35abb2134fb6a0cf20a0603262" title="Accept GSL&#45;style parameters (no&#45;op in this implementation)." alt="" coords="200,333,390,358"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="126,291,201,319,223,327,218,329,199,324,127,296"/>
+<area shape="rect" id="Node000015" href="$namespaceinterpolation.html#a2ec626b0d2d5bbb9b4d08e4f54dfba89" title=" " alt="" coords="212,383,378,423"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="100,290,146,330,201,369,212,376,207,376,198,373,142,334,100,296"/>
+<area shape="rect" id="Node000016" href="$classinterpolation_1_1MMatrix.html#a485ae568ec26cd973074cf3704bc6938" title="returns number of columns in the matrix" alt="" coords="222,448,368,489"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="90,290,134,361,165,399,201,433,211,441,205,441,198,437,161,403,129,364,89,296"/>
+<area shape="rect" id="Node000017" href="$classinterpolation_1_1MMatrix.html#a885f1a7f322a023feb4f156338a83076" title="returns number of rows in the matrix" alt="" coords="222,513,368,554"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="86,291,101,335,124,391,158,448,178,475,201,498,211,507,206,506,198,502,174,478,153,451,120,393,96,337,85,296"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,28,431,32,427,35,369,33"/>
+<area shape="rect" id="Node000005" href="$classinterpolation_1_1MVector.html#a916077871a3581a4ff250a045f0ff2ee" title=" " alt="" coords="444,108,592,149"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="368,134,430,132,425,134,370,139"/>
+<area shape="rect" id="Node000007" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="498,173,537,198"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="364,191,485,186,480,189,366,196"/>
+<area shape="rect" id="Node000008" href="$GSLMatrix_8h.html#aa527f408353b0806a9c15a570213a402" title="Return pointer to element &#160;in a real matrix." alt="" coords="466,222,569,248"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="365,207,453,223,448,225,366,212"/>
+<area shape="rect" id="Node000010" href="$GSLMatrix_8h.html#a41d67fcf89a53af05aec95e0891174d5" title="Return pointer to element &#160;in a complex vector." alt="" coords="438,272,597,297"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="363,209,391,219,406,229,416,239,425,249,439,258,451,265,446,266,437,263,422,253,412,243,403,233,389,224,364,214"/>
+<area shape="rect" id="Node000009" href="$structgsl__matrix.html#a683e3aca92fdbf1bd974b5b14dbcfa7e" title=" " alt="" coords="673,222,778,248"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="569,232,661,234,655,236,570,238"/>
+<area shape="rect" id="Node000011" href="$structgsl__vector__complex.html#a7d5342b3c712ab730a136b2f1fa7e24d" title=" " alt="" coords="645,272,806,297"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="597,282,632,284,627,285,598,287"/>
 </map>

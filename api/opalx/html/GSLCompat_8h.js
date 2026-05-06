@@ -11,7 +11,7 @@ var GSLCompat_8h =
     [ "gsl_sf_fact", "GSLCompat_8h.html#a6b364d1e339333f46061f2b7a722fcdd", null ],
     [ "gsl_sf_gamma", "GSLCompat_8h.html#a0e751f12ca270caa7a0bbef373c90c55", null ],
     [ "gsl_sf_pow_int", "GSLCompat_8h.html#a6d8b5eaaa9f7343d1c30802744a26db3", null ],
-    [ "GSL_NAN", "GSLCompat_8h.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c", null ],
-    [ "GSL_NEGINF", "GSLCompat_8h.html#a344d2d7fb8dd9314a092d75724668642", null ],
-    [ "GSL_POSINF", "GSLCompat_8h.html#a98cec2c928a885ffc7105d8759dc99b4", null ]
+    [ "gsl::GSL_NAN", "namespacegsl.html#a8df0599bb9ab9c19d2ae47a2cbe2cc1c", null ],
+    [ "gsl::GSL_NEGINF", "namespacegsl.html#a344d2d7fb8dd9314a092d75724668642", null ],
+    [ "gsl::GSL_POSINF", "namespacegsl.html#a98cec2c928a885ffc7105d8759dc99b4", null ]
 ];

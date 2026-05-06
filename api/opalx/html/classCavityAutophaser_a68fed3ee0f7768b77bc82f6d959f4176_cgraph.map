@@ -1,75 +1,66 @@
 <map id="CavityAutophaser::guessCavityPhase" name="CavityAutophaser::guessCavityPhase">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,197,232,237"/>
-<area shape="rect" id="Node000002" href="$classRFCavity.html#ab658bb13dcceff736505e3c5965d1192" title=" " alt="" coords="280,589,516,615"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,235,382,576,377,580,132,238"/>
-<area shape="rect" id="Node000005" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="1131,420,1295,445"/>
-<area shape="poly" id="edge38_Node000001_Node000005" title=" " alt="" coords="232,212,436,213,681,224,800,235,909,252,999,276,1035,290,1064,307,1077,318,1084,330,1090,356,1096,381,1102,393,1112,404,1124,412,1121,416,1109,408,1097,396,1090,383,1085,357,1079,332,1073,321,1061,311,1033,295,997,281,908,258,800,241,680,229,436,218,232,217"/>
-<area shape="rect" id="Node000007" href="$classRFCavity.html#a05624fbb526f1796329afed4013f0af0" title=" " alt="" coords="875,156,1036,181"/>
-<area shape="poly" id="edge40_Node000001_Node000007" title=" " alt="" coords="232,208,861,171,861,177,232,213"/>
-<area shape="rect" id="Node000013" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="1153,5,1272,31"/>
-<area shape="poly" id="edge39_Node000001_Node000013" title=" " alt="" coords="159,194,215,169,279,146,400,116,523,91,767,53,982,30,1139,19,1140,24,982,36,768,58,524,96,401,121,281,151,217,174,161,199"/>
-<area shape="rect" id="Node000014" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="1154,55,1271,80"/>
-<area shape="poly" id="edge41_Node000001_Node000014" title=" " alt="" coords="209,194,280,181,527,143,771,112,1140,72,1141,77,772,117,528,149,280,186,210,199"/>
-<area shape="rect" id="Node000032" href="$classRFCavity.html#a61ca169d6bfb338941f4aa2364d408c3" title=" " alt="" coords="295,639,501,664"/>
-<area shape="poly" id="edge37_Node000001_Node000032" title=" " alt="" coords="124,237,134,311,159,416,179,473,206,529,240,580,282,624,290,630,287,634,278,628,236,583,201,531,174,475,154,418,129,312,119,237"/>
-<area shape="rect" id="Node000003" href="$classRFCavity.html#af4210912c9e107525970cf5ed8aba86c" title=" " alt="" coords="564,302,800,342"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,588,421,543,454,479,502,410,530,379,562,352,571,346,574,351,566,356,534,383,506,414,459,481,426,545,407,590"/>
-<area shape="rect" id="Node000004" href="$namespaceUtil.html#a401859d11cb91676474629baceb07612" title=" " alt="" coords="877,500,1033,525"/>
-<area shape="poly" id="edge22_Node000002_Node000004" title=" " alt="" coords="516,601,653,595,727,586,799,573,862,553,917,529,919,534,864,558,801,578,728,591,653,600,516,607"/>
-<area shape="rect" id="Node000019" href="$classRFCavity.html#ab4882ff20d696dea0bd3bb1528310f37" title=" " alt="" coords="619,837,745,863"/>
-<area shape="poly" id="edge23_Node000002_Node000019" title=" " alt="" coords="502,613,518,624,537,649,545,675,545,701,543,726,540,752,541,776,548,801,566,824,584,837,606,845,604,850,582,842,562,828,543,803,535,777,535,751,537,726,540,700,539,676,532,651,514,628,499,617"/>
-<area shape="rect" id="Node000020" href="$classRFCavity.html#a249b34e7ae3a33714b81d6e46bc6fea0" title=" " alt="" coords="619,887,745,912"/>
-<area shape="poly" id="edge24_Node000002_Node000020" title=" " alt="" coords="503,613,518,624,540,655,548,687,548,719,543,751,538,783,537,813,545,844,566,873,584,887,606,894,604,899,582,891,562,877,540,846,532,814,532,782,537,750,542,719,543,688,535,658,514,628,500,617"/>
-<area shape="rect" id="Node000021" href="$classRFCavity.html#a215e10b357c6fc9916d3b8ab30badaed" title=" " alt="" coords="619,936,745,961"/>
-<area shape="poly" id="edge25_Node000002_Node000021" title=" " alt="" coords="504,613,518,624,533,643,543,662,552,700,550,738,543,776,535,813,533,850,542,887,551,905,566,923,584,936,607,944,605,949,582,941,562,927,547,908,537,889,528,851,530,813,537,775,545,737,547,700,538,664,529,646,514,628,500,617"/>
-<area shape="rect" id="Node000022" href="$classRFCavity.html#afe7eee108d80b1825e8e34ec8f46a1f4" title=" " alt="" coords="619,367,745,392"/>
-<area shape="poly" id="edge26_Node000002_Node000022" title=" " alt="" coords="404,588,425,550,460,499,506,446,533,422,563,401,605,384,607,389,565,406,537,426,510,450,464,503,430,553,408,591"/>
-<area shape="rect" id="Node000023" href="$classFieldmap.html#a48d4a155d03d902144d550544e96964d" title=" " alt="" coords="597,440,767,465"/>
-<area shape="poly" id="edge27_Node000002_Node000023" title=" " alt="" coords="410,587,472,532,516,501,563,474,582,467,584,472,565,479,518,505,476,536,414,591"/>
-<area shape="rect" id="Node000024" href="$GSLSpline_8h.html#a6ea02224b0d877ea09afe99295c1ba3c" title="Allocate an interpolation accelerator." alt="" coords="599,489,765,515"/>
-<area shape="poly" id="edge29_Node000002_Node000024" title=" " alt="" coords="421,587,484,555,563,523,592,515,593,520,565,529,487,560,424,592"/>
-<area shape="rect" id="Node000025" href="$GSLSpline_8h.html#ab885962a484a042fcbce27a3907d45a7" title="Free an accelerator instance." alt="" coords="602,539,762,564"/>
-<area shape="poly" id="edge30_Node000002_Node000025" title=" " alt="" coords="469,587,596,564,597,569,470,592"/>
-<area shape="rect" id="Node000026" href="$GSLSpline_8h.html#ac4ca6c61b57d511a89036e56598c6fae" title="Allocate a spline instance (size ignored)." alt="" coords="619,640,745,665"/>
-<area shape="poly" id="edge31_Node000002_Node000026" title=" " alt="" coords="470,612,606,637,605,642,469,617"/>
-<area shape="rect" id="Node000027" href="$GSLSpline_8h.html#a415d921772dbd434ea265610271aebb6" title="Evaluate a spline at x using an accelerator." alt="" coords="621,689,743,715"/>
-<area shape="poly" id="edge32_Node000002_Node000027" title=" " alt="" coords="491,612,517,624,533,636,542,650,551,663,565,674,608,691,607,696,563,679,547,666,538,653,529,640,515,628,489,617"/>
-<area shape="rect" id="Node000029" href="$GSLSpline_8h.html#a7be5f5cef721e21283843f7751cd2545" title="Free a spline instance." alt="" coords="622,739,742,764"/>
-<area shape="poly" id="edge34_Node000002_Node000029" title=" " alt="" coords="499,613,518,624,530,636,537,649,543,675,548,701,555,713,566,724,586,736,609,744,608,749,584,741,562,728,550,716,543,703,537,676,532,651,525,639,514,628,496,617"/>
-<area shape="rect" id="Node000030" href="$GSLSpline_8h.html#a73b9951b82bb96ca3bc4e580c1d50cbf" title="Initialize a spline with tabulated data." alt="" coords="625,788,739,813"/>
-<area shape="poly" id="edge35_Node000002_Node000030" title=" " alt="" coords="501,613,518,624,533,643,541,662,543,701,544,739,551,757,566,775,587,788,612,796,610,801,585,793,562,779,547,760,539,740,537,701,536,663,529,645,514,628,498,617"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="776,340,802,352,860,408,935,488,931,491,856,412,798,356,774,344"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="800,305,863,304,931,308,999,321,1064,345,1080,357,1090,371,1098,385,1112,398,1142,413,1139,418,1109,403,1094,389,1085,374,1077,361,1061,350,998,326,930,314,863,309,800,310"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="701,300,763,245,803,215,847,190,864,183,866,188,849,195,806,220,766,249,705,304"/>
-<area shape="rect" id="Node000008" href="$classRFCavity.html#a83e48e03c9beba578b150a99961f59b5" title=" " alt="" coords="875,360,1035,385"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="791,339,874,355,873,360,790,345"/>
-<area shape="rect" id="Node000009" href="$classRFCavity.html#a77d5ae497916552ced4ab32004fbe1b6" title=" " alt="" coords="848,205,1063,231"/>
-<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="735,299,907,233,909,238,736,304"/>
-<area shape="rect" id="Node000006" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="1397,395,1524,420"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1294,422,1383,412,1384,418,1295,427"/>
-<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="1034,229,1064,248,1079,267,1087,287,1089,325,1092,363,1099,381,1113,399,1130,412,1127,416,1109,403,1094,383,1087,364,1084,325,1082,288,1075,270,1061,252,1031,233"/>
-<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="1030,228,1064,248,1076,262,1083,276,1088,304,1094,331,1100,343,1112,355,1132,365,1159,374,1230,388,1309,397,1384,402,1384,407,1309,402,1229,393,1158,379,1130,370,1109,359,1096,346,1089,333,1083,305,1078,278,1072,265,1061,252,1028,233"/>
-<area shape="rect" id="Node000010" href="$classRFCavity.html#aea1f8376a359364df059c0e2aaef3e57" title="Apply to reference particle with position R and momemtum P." alt="" coords="1111,305,1315,345"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1016,228,1064,248,1079,258,1089,269,1098,279,1112,289,1127,297,1125,302,1109,294,1095,283,1085,272,1075,262,1061,252,1014,233"/>
-<area shape="rect" id="Node000012" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="1439,155,1482,180"/>
-<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="1025,203,1110,190,1288,174,1426,166,1426,171,1288,179,1111,195,1026,208"/>
-<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="1042,203,1061,191,1075,173,1082,155,1084,117,1086,78,1094,59,1109,40,1139,23,1142,27,1112,44,1098,62,1091,80,1089,117,1087,156,1080,176,1064,195,1045,208"/>
-<area shape="poly" id="edge15_Node000009_Node000014" title=" " alt="" coords="1040,203,1061,191,1072,179,1079,167,1084,141,1090,115,1097,102,1109,89,1139,73,1142,78,1112,93,1101,105,1095,117,1089,143,1084,169,1076,182,1064,195,1043,208"/>
-<area shape="rect" id="Node000015" href="$classPartBunch.html#ab312ee7cffe005fc4cd43d41ff5253ff" title=" " alt="" coords="1121,255,1304,280"/>
-<area shape="poly" id="edge16_Node000009_Node000015" title=" " alt="" coords="1023,228,1133,249,1132,255,1022,233"/>
-<area shape="rect" id="Node000016" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="1145,205,1280,231"/>
-<area shape="poly" id="edge17_Node000009_Node000016" title=" " alt="" coords="1063,215,1131,215,1131,221,1063,221"/>
-<area shape="rect" id="Node000018" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="1143,104,1282,129"/>
-<area shape="poly" id="edge20_Node000009_Node000018" title=" " alt="" coords="1030,203,1061,190,1076,180,1085,169,1094,158,1109,146,1142,131,1145,136,1112,151,1098,162,1089,173,1079,184,1064,195,1032,208"/>
-<area shape="rect" id="Node000011" href="$classFieldmap.html#a02b2453d94e652c04010373f0ef352f4" title="Get the field strength at a given point." alt="" coords="1363,312,1559,337"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1315,322,1349,322,1349,327,1315,327"/>
-<area shape="poly" id="edge19_Node000016_Node000012" title=" " alt="" coords="1275,203,1425,172,1426,177,1276,208"/>
-<area shape="rect" id="Node000017" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="1433,205,1489,231"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1280,215,1419,215,1419,221,1280,221"/>
-<area shape="poly" id="edge21_Node000018_Node000012" title=" " alt="" coords="1276,127,1426,158,1425,163,1275,132"/>
-<area shape="poly" id="edge28_Node000023_Node000023" title=" " alt="" coords="638,442,629,432,634,422,652,415,682,413,721,417,732,422,735,428,731,431,728,426,720,423,682,419,653,421,637,426,634,431,642,438"/>
-<area shape="rect" id="Node000028" href="$classAbstractSpline.html#a056905708563540010f2a24f1a524fb4" title="Evaluate the spline at x using an accelerator." alt="" coords="879,689,1031,715"/>
-<area shape="poly" id="edge33_Node000027_Node000028" title=" " alt="" coords="743,699,865,699,865,705,743,705"/>
-<area shape="rect" id="Node000031" href="$classAbstractSpline.html#a1b0768476997ef75cdab202818129cf4" title="Initialize from tabulated data (natural spline)." alt="" coords="883,788,1028,813"/>
-<area shape="poly" id="edge36_Node000030_Node000031" title=" " alt="" coords="739,798,869,798,869,803,739,803"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,151,212,191"/>
+<area shape="rect" id="Node000002" href="$classRFCavity.html#ab658bb13dcceff736505e3c5965d1192" title=" " alt="" coords="260,315,479,341"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,189,336,306,331,308,144,194"/>
+<area shape="rect" id="Node000005" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="1065,39,1213,65"/>
+<area shape="poly" id="edge34_Node000001_Node000005" title=" " alt="" coords="139,148,193,115,259,86,337,60,404,42,465,30,522,23,641,16,794,10,895,3,940,4,996,10,1043,19,1089,34,1084,35,1042,24,995,15,939,9,895,8,794,15,642,21,522,28,466,35,406,47,339,65,261,91,196,120,143,152"/>
+<area shape="rect" id="Node000007" href="$classRFCavity.html#a05624fbb526f1796329afed4013f0af0" title=" " alt="" coords="819,25,971,50"/>
+<area shape="poly" id="edge35_Node000001_Node000007" title=" " alt="" coords="185,148,342,108,527,71,672,52,806,42,802,44,673,57,527,76,343,113,188,152"/>
+<area shape="rect" id="Node000029" href="$classRFCavity.html#a61ca169d6bfb338941f4aa2364d408c3" title=" " alt="" coords="273,365,466,390"/>
+<area shape="poly" id="edge33_Node000001_Node000029" title=" " alt="" coords="120,189,144,226,175,270,214,314,261,351,271,358,265,359,258,356,211,318,171,273,140,229,121,194"/>
+<area shape="rect" id="Node000003" href="$classRFCavity.html#af4210912c9e107525970cf5ed8aba86c" title=" " alt="" coords="527,176,746,217"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,313,446,271,526,226,543,221,539,224,528,231,449,275,390,317"/>
+<area shape="rect" id="Node000004" href="$namespaceUtil.html#a401859d11cb91676474629baceb07612" title=" " alt="" coords="825,75,965,101"/>
+<area shape="poly" id="edge20_Node000002_Node000004" title=" " alt="" coords="373,314,391,272,423,216,468,158,495,132,526,111,560,95,596,83,671,70,744,68,812,74,807,76,744,73,672,76,597,89,562,100,528,116,498,136,472,161,427,219,396,275,378,316"/>
+<area shape="rect" id="Node000017" href="$classRFCavity.html#ab4882ff20d696dea0bd3bb1528310f37" title=" " alt="" coords="577,290,696,316"/>
+<area shape="poly" id="edge21_Node000002_Node000017" title=" " alt="" coords="479,315,564,309,559,311,480,320"/>
+<area shape="rect" id="Node000018" href="$classRFCavity.html#a249b34e7ae3a33714b81d6e46bc6fea0" title=" " alt="" coords="577,339,696,365"/>
+<area shape="poly" id="edge22_Node000002_Node000018" title=" " alt="" coords="479,335,564,345,559,346,480,341"/>
+<area shape="rect" id="Node000019" href="$classRFCavity.html#a215e10b357c6fc9916d3b8ab30badaed" title=" " alt="" coords="577,389,696,414"/>
+<area shape="poly" id="edge23_Node000002_Node000019" title=" " alt="" coords="443,339,480,350,504,363,528,375,564,388,559,388,526,380,502,367,478,355,444,344"/>
+<area shape="rect" id="Node000020" href="$classRFCavity.html#afe7eee108d80b1825e8e34ec8f46a1f4" title=" " alt="" coords="578,438,696,464"/>
+<area shape="poly" id="edge24_Node000002_Node000020" title=" " alt="" coords="459,339,481,350,498,369,505,389,513,407,529,425,565,443,560,443,525,429,508,410,501,391,493,372,477,354,460,344"/>
+<area shape="rect" id="Node000021" href="$GSLSpline_8h.html#a6ea02224b0d877ea09afe99295c1ba3c" title="Allocate an interpolation accelerator." alt="" coords="562,487,711,513"/>
+<area shape="poly" id="edge25_Node000002_Node000021" title=" " alt="" coords="463,339,481,350,494,366,502,382,506,414,509,445,516,460,529,474,550,489,544,488,525,478,512,463,504,447,500,415,497,383,490,368,477,354,463,344"/>
+<area shape="rect" id="Node000022" href="$GSLSpline_8h.html#ab885962a484a042fcbce27a3907d45a7" title="Free an accelerator instance." alt="" coords="564,537,709,562"/>
+<area shape="poly" id="edge26_Node000002_Node000022" title=" " alt="" coords="464,339,481,350,498,372,505,394,506,439,506,483,513,503,529,524,552,540,547,540,525,528,508,506,501,483,500,439,500,395,493,374,477,354,464,344"/>
+<area shape="rect" id="Node000023" href="$GSLSpline_8h.html#ac4ca6c61b57d511a89036e56598c6fae" title="Allocate a spline instance (size ignored)." alt="" coords="580,586,693,612"/>
+<area shape="poly" id="edge27_Node000002_Node000023" title=" " alt="" coords="465,339,481,350,501,378,509,407,509,435,506,464,502,492,502,520,510,546,529,573,546,585,567,596,562,595,543,590,525,577,505,549,497,520,497,492,500,463,504,435,504,408,496,381,477,354,465,344"/>
+<area shape="rect" id="Node000024" href="$GSLSpline_8h.html#a415d921772dbd434ea265610271aebb6" title="Evaluate a spline at x using an accelerator." alt="" coords="582,635,692,661"/>
+<area shape="poly" id="edge28_Node000002_Node000024" title=" " alt="" coords="466,339,481,350,504,385,513,419,512,454,506,489,500,523,498,557,506,590,529,622,546,635,569,646,564,645,544,640,525,626,502,592,493,557,494,522,500,488,506,454,508,420,500,387,477,354,465,344"/>
+<area shape="rect" id="Node000026" href="$GSLSpline_8h.html#a7be5f5cef721e21283843f7751cd2545" title="Free a spline instance." alt="" coords="582,126,691,152"/>
+<area shape="poly" id="edge30_Node000002_Node000026" title=" " alt="" coords="377,313,399,282,433,241,476,198,526,162,570,147,565,150,528,167,479,202,437,245,403,286,381,317"/>
+<area shape="rect" id="Node000027" href="$GSLSpline_8h.html#a73b9951b82bb96ca3bc4e580c1d50cbf" title="Initialize a spline with tabulated data." alt="" coords="585,241,688,266"/>
+<area shape="poly" id="edge31_Node000002_Node000027" title=" " alt="" coords="407,313,526,275,572,266,567,268,528,280,409,317"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="723,173,745,162,759,150,768,136,777,123,793,110,813,103,808,106,796,114,781,127,772,139,763,153,748,166,726,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="746,209,807,210,872,204,936,189,966,176,994,161,1005,152,1011,142,1018,120,1024,97,1042,74,1049,73,1053,70,1045,78,1029,99,1023,121,1016,144,1009,155,997,165,968,181,937,194,873,209,807,215,747,214"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="729,173,745,162,756,150,762,138,768,113,773,87,781,73,793,61,807,54,803,57,796,65,785,77,778,88,773,114,767,140,760,153,748,166,732,177"/>
+<area shape="rect" id="Node000008" href="$classRFCavity.html#a83e48e03c9beba578b150a99961f59b5" title=" " alt="" coords="819,125,971,150"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="728,173,823,153,818,155,730,178"/>
+<area shape="rect" id="Node000009" href="$classRFCavity.html#a77d5ae497916552ced4ab32004fbe1b6" title=" " alt="" coords="794,226,996,252"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="746,212,800,222,795,223,747,217"/>
+<area shape="rect" id="Node000006" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="1282,90,1395,116"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1193,63,1235,74,1273,85,1268,86,1233,79,1193,68"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="965,223,994,205,1006,189,1013,174,1017,141,1021,107,1028,91,1042,74,1049,72,1053,69,1046,78,1033,93,1026,109,1022,141,1018,175,1011,192,997,209,967,228"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="945,223,994,204,1018,190,1043,175,1132,150,1270,119,1265,120,1134,155,1045,180,1021,194,997,209,947,228"/>
+<area shape="rect" id="Node000010" href="$classRFCavity.html#aea1f8376a359364df059c0e2aaef3e57" title="Apply to reference particle with position R and momemtum P." alt="" coords="1044,189,1234,230"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="995,224,1031,222,1026,224,997,229"/>
+<area shape="rect" id="Node000011" href="$Vector3D_8cpp.html#a731854fb8292e52014666a5412601853" title="Vector dot product." alt="" coords="1319,305,1358,330"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="996,250,1235,290,1306,308,1301,309,1233,295,996,255"/>
+<area shape="rect" id="Node000012" href="$classPartData.html#a6a0c491b2c01dc28039f3c183e91240d" title="The constant mass per particle." alt="" coords="1084,403,1194,429"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="980,250,997,261,1011,277,1019,294,1022,327,1026,360,1033,375,1045,390,1071,407,1066,407,1042,394,1028,378,1021,361,1017,328,1014,295,1007,280,994,265,979,255"/>
+<area shape="rect" id="Node000013" href="$classPartData.html#aff933668515ef92449dd267740772bbf" title="The constant charge per particle." alt="" coords="1084,89,1194,114"/>
+<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="959,223,994,205,1010,187,1017,169,1025,150,1042,131,1068,120,1072,117,1045,136,1030,153,1022,171,1014,190,997,209,961,228"/>
+<area shape="rect" id="Node000014" href="$classBorisPusher.html#aedbf779143496ec2367e04ed1e869d66" title=" " alt="" coords="1077,354,1201,380"/>
+<area shape="poly" id="edge15_Node000009_Node000014" title=" " alt="" coords="977,250,997,261,1015,281,1022,302,1029,322,1045,341,1065,354,1060,353,1042,345,1025,325,1017,304,1010,284,994,265,977,255"/>
+<area shape="rect" id="Node000016" href="$classBorisPusher.html#af1468d35531bef4d74b33ea32dd310e2" title=" " alt="" coords="1075,305,1203,330"/>
+<area shape="poly" id="edge18_Node000009_Node000016" title=" " alt="" coords="960,250,997,260,1045,283,1083,299,1078,299,1043,288,995,265,961,255"/>
+<area shape="poly" id="edge17_Node000014_Node000011" title=" " alt="" coords="1193,351,1307,325,1302,327,1195,356"/>
+<area shape="rect" id="Node000015" href="$Vector3D_8cpp.html#a01046d3dab4c1e9ad6b2b6dee8cc8310" title="Vector cross product." alt="" coords="1312,354,1365,380"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1201,364,1299,367,1294,367,1202,370"/>
+<area shape="poly" id="edge19_Node000016_Node000011" title=" " alt="" coords="1203,315,1306,317,1301,318,1204,320"/>
+<area shape="rect" id="Node000025" href="$classAbstractSpline.html#a056905708563540010f2a24f1a524fb4" title="Evaluate the spline at x using an accelerator." alt="" coords="826,635,964,661"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="692,646,813,648,808,648,692,651"/>
+<area shape="rect" id="Node000028" href="$classAbstractSpline.html#a1b0768476997ef75cdab202818129cf4" title="Initialize from tabulated data (natural spline)." alt="" coords="829,275,961,301"/>
+<area shape="poly" id="edge32_Node000027_Node000028" title=" " alt="" coords="688,258,817,277,811,278,689,263"/>
 </map>

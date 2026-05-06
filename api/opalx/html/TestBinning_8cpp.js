@@ -11,7 +11,6 @@ var TestBinning_8cpp =
     [ "Field", "TestBinning_8cpp.html#ac96462ba5ddf81f7b4bded4078509ff5", null ],
     [ "Mesh_t", "TestBinning_8cpp.html#acf6afef09138aaa7329f5076e9d2d27f", null ],
     [ "Selector_t", "TestBinning_8cpp.html#abb5b79830a89a44f2825c37783f60de3", null ],
-    [ "size_type", "TestBinning_8cpp.html#a117948da4a7f2c353ea5ef900c1762c4", null ],
     [ "TestFL_t", "TestBinning_8cpp.html#a42eb55a0674f4f93753227b974098e6f", null ],
     [ "TestMesh_t", "TestBinning_8cpp.html#a2ca75d5d92e970be4e496048b9e3b5f8", null ],
     [ "TestPLayout_t", "TestBinning_8cpp.html#aa965ca1b28c2f2c13ae6edeaf908d076", null ],

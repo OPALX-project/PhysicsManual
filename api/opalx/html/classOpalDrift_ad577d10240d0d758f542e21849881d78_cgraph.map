@@ -1,19 +1,35 @@
 <map id="OpalDrift::clone" name="OpalDrift::clone">
-<area shape="rect" id="Node000001" title="Make clone." alt="" coords="5,80,128,105"/>
-<area shape="rect" id="Node000002" href="$classOpalDrift.html#abf700394e75fb5c78f08a3076cf00f7d" title="Exemplar constructor." alt="" coords="176,80,323,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,90,162,90,162,95,128,95"/>
-<area shape="rect" id="Node000003" href="$namespaceAttributes.html#a6e6d302b6aceb7118637b3670373809b" title="Make real attribute." alt="" coords="408,5,567,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,77,319,58,370,39,400,31,402,36,371,45,321,63,278,82"/>
-<area shape="rect" id="Node000004" href="$namespaceAttributes.html#ae9a947ca42d331f722e06f3a921fe170" title="Make string attribute." alt="" coords="403,55,571,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="323,82,389,75,390,80,323,88"/>
-<area shape="rect" id="Node000005" href="$classOpalElement.html#af17ddf4b6ccfdcc6ce4ab34caa7ace82" title=" " alt="" coords="371,104,604,129"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="323,97,357,101,357,106,323,103"/>
-<area shape="rect" id="Node000009" href="$classElement.html#adcaf1c30b170487a357d7cc9ad8404cf" title="Assign new OPALX element." alt="" coords="408,153,567,179"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="280,103,371,138,406,148,405,153,370,143,278,108"/>
-<area shape="rect" id="Node000006" href="$classAttributeHandler.html#a550c346064f9c4e06ff5c88ff4b0ae9e" title=" " alt="" coords="652,39,871,79"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="548,101,651,80,653,85,549,107"/>
-<area shape="rect" id="Node000007" href="$classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39" title="Return object name." alt="" coords="680,104,843,129"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="604,114,666,114,666,119,604,119"/>
-<area shape="rect" id="Node000008" href="$classObject.html#a489e6b0505923e64c18a8bb83062d5e3" title="Return parent pointer." alt="" coords="694,153,829,179"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="559,127,681,149,680,154,558,132"/>
+<area shape="rect" id="Node000001" title="Make clone." alt="" coords="5,153,118,179"/>
+<area shape="rect" id="Node000002" href="$classOpalDrift.html#abf700394e75fb5c78f08a3076cf00f7d" title="Exemplar constructor." alt="" coords="166,153,299,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,164,152,165,148,168,119,168"/>
+<area shape="rect" id="Node000003" href="$namespaceAttributes.html#a6e6d302b6aceb7118637b3670373809b" title="Make real attribute." alt="" coords="629,5,773,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,151,294,124,346,98,415,75,485,55,616,30,611,32,486,60,416,80,348,103,296,129,255,155"/>
+<area shape="rect" id="Node000004" href="$namespaceAttributes.html#ae9a947ca42d331f722e06f3a921fe170" title="Make string attribute." alt="" coords="625,55,777,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="292,150,346,138,621,82,617,86,348,143,294,155"/>
+<area shape="rect" id="Node000005" href="$classOpalElement.html#aeaba1e2a14e13d29e11a9feaec265d1f" title="Exemplar constructor." alt="" coords="362,153,541,179"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="298,164,349,165,344,167,300,169"/>
+<area shape="rect" id="Node000012" href="$classOpalElement.html#af17ddf4b6ccfdcc6ce4ab34caa7ace82" title=" " alt="" coords="347,325,556,351"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="252,177,424,314,419,316,250,182"/>
+<area shape="rect" id="Node000015" href="$classElement.html#adcaf1c30b170487a357d7cc9ad8404cf" title="Assign new OPALX element." alt="" coords="380,375,523,400"/>
+<area shape="poly" id="edge18_Node000002_Node000015" title=" " alt="" coords="238,177,252,215,274,265,306,317,326,341,349,361,368,374,363,374,345,366,322,345,301,321,269,268,247,217,236,182"/>
+<area shape="poly" id="edge10_Node000005_Node000003" title=" " alt="" coords="464,151,520,97,560,66,603,40,619,35,615,38,606,45,563,70,524,101,467,155"/>
+<area shape="poly" id="edge12_Node000005_Node000004" title=" " alt="" coords="475,151,532,120,603,89,626,84,621,86,605,94,534,125,477,155"/>
+<area shape="rect" id="Node000006" href="$classAttributeHandler.html#a550c346064f9c4e06ff5c88ff4b0ae9e" title=" " alt="" coords="604,318,798,358"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="464,177,522,238,562,273,606,304,616,311,611,311,603,308,558,277,518,241,463,182"/>
+<area shape="rect" id="Node000007" href="$classElement.html#aab5f775fd5050d282be9e41ec2190ce4" title="Constructor for exemplars." alt="" coords="638,268,764,294"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="472,177,531,214,605,253,627,263,622,263,603,258,528,219,471,182"/>
+<area shape="rect" id="Node000009" href="$namespaceAttributes.html#a0456a7ab32848a41f018f6464bc6ffde" title="Make logical attribute." alt="" coords="629,153,773,179"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="541,164,616,165,611,167,542,169"/>
+<area shape="rect" id="Node000010" href="$namespaceAttributes.html#a68b7d34fbeb1da8447087c5ae6f3564f" title="Make predefined string attribute." alt="" coords="611,203,791,244"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="511,177,599,199,594,200,511,182"/>
+<area shape="rect" id="Node000011" href="$namespaceAttributes.html#aaaca5bec00805e40b85ec44bf0b1a873" title="Create real array attribute." alt="" coords="613,104,789,130"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="520,150,620,132,615,134,521,155"/>
+<area shape="rect" id="Node000008" href="$classObject.html#a83e89407c41a89f1a52086b8029fd99e" title="Constructor for exemplars." alt="" coords="846,325,951,351"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="755,292,798,304,845,320,840,320,797,309,755,297"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="557,336,591,338,586,338,557,341"/>
+<area shape="rect" id="Node000013" href="$classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39" title="Return object name." alt="" coords="627,432,775,458"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="534,349,558,360,574,375,583,390,591,405,606,419,615,426,610,425,603,423,587,408,578,393,570,378,555,364,534,354"/>
+<area shape="rect" id="Node000014" href="$classObject.html#a489e6b0505923e64c18a8bb83062d5e3" title="Return parent pointer." alt="" coords="639,383,763,408"/>
+<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="511,349,557,360,630,379,625,379,556,365,511,354"/>
+<area shape="poly" id="edge17_Node000014_Node000008" title=" " alt="" coords="754,379,797,368,840,357,845,356,798,373,755,385"/>
 </map>

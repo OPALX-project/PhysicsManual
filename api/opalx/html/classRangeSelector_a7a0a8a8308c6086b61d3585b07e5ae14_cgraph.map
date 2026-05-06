@@ -1,38 +1,17 @@
 <map id="RangeSelector::visitFlaggedElmPtr" name="RangeSelector::visitFlaggedElmPtr">
-<area shape="rect" id="Node000001" title="Apply the visitor to an FlaggedElmPtr." alt="" coords="5,147,209,187"/>
-<area shape="rect" id="Node000002" href="$classRangeRep.html#ae4bdd62f050aadfdd3af3323a6cf51a8" title="Enter an element or line." alt="" coords="307,55,438,80"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,145,194,116,256,89,293,78,295,83,258,94,196,121,143,150"/>
-<area shape="rect" id="Node000005" href="$classElmPtr.html#a5e93800b724a0a93cbb985fdc52cbf0f" title="Get the element pointer." alt="" coords="829,148,977,173"/>
-<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="210,164,815,159,815,164,210,169"/>
-<area shape="rect" id="Node000008" href="$classRangeSelector.html#acf92d9633eadd2731575ddb7e9345da6" title="The operation to be done for beamlines." alt="" coords="257,205,488,231"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="210,184,293,200,292,205,209,189"/>
-<area shape="rect" id="Node000012" href="$classRangeSelector.html#a06985d97c2f76283f7ce1f3030ef6c24" title="The operation to be done for elements." alt="" coords="261,255,484,280"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="143,185,196,214,258,241,285,249,283,254,256,246,194,219,141,190"/>
-<area shape="rect" id="Node000014" href="$classRangeRep.html#acf5342b3314794fe2c85e93323d3a38f" title="Leave an element or line." alt="" coords="307,104,439,129"/>
-<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="209,145,293,129,294,134,210,151"/>
-<area shape="rect" id="Node000003" href="$classPlaceRep.html#aa01662d550b7b2d054c498fe831ee3aa" title="Enter an element or line." alt="" coords="574,5,698,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,53,560,29,561,35,439,58"/>
-<area shape="rect" id="Node000007" href="$classPlaceRep.html#a1da2b96ba1a0e688351dee8260199324" title="Return status." alt="" coords="565,55,707,80"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="438,65,551,65,551,70,438,70"/>
-<area shape="rect" id="Node000004" href="$classFlaggedElmPtr.html#a006432c0346ba8e6faf0d0005da632b3" title="Get clone counter." alt="" coords="805,92,1002,117"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="696,28,737,39,860,84,858,89,735,45,694,33"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="699,22,719,29,738,40,756,62,763,85,769,107,786,128,818,145,815,150,782,132,764,110,758,87,751,65,734,44,717,34,697,27"/>
-<area shape="rect" id="Node000006" href="$classElementBase.html#a07827d00308052e65fe03da558f0b987" title="Get element name." alt="" coords="815,19,991,44"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="698,18,801,24,801,29,698,24"/>
-<area shape="rect" id="Node000009" href="$classDefaultVisitor.html#a29aece39de29cad76a21632061a2c192" title="Apply the algorithm to a FlaggedElmPtr." alt="" coords="536,205,736,245"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="488,218,522,219,522,224,488,224"/>
-<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="720,202,836,174,837,179,721,207"/>
-<area shape="rect" id="Node000010" href="$classElementBase.html#a4c963794b96d83d5d3be0a9fe3c44322" title="Apply visitor." alt="" coords="824,251,983,276"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="737,236,811,247,810,253,736,242"/>
-<area shape="rect" id="Node000011" href="$classFlaggedElmPtr.html#acc70d7f5db8ffe5b47920a6503bfcad9" title="Get reflection flag." alt="" coords="784,201,1023,227"/>
-<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="736,218,770,217,771,222,736,223"/>
-<area shape="poly" id="edge15_Node000012_Node000009" title=" " alt="" coords="451,252,522,240,523,246,452,257"/>
-<area shape="rect" id="Node000013" href="$classRangeRep.html#a35001fb89ccde652a9327ef97b0094bb" title="Test for active range." alt="" coords="562,269,710,295"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="484,271,548,274,548,280,484,276"/>
-<area shape="poly" id="edge17_Node000014_Node000007" title=" " alt="" coords="438,102,554,80,555,85,439,107"/>
-<area shape="rect" id="Node000015" href="$classPlaceRep.html#ae6a10fa8ed09716088384fc8315e6bbc" title="Leave an element or line." alt="" coords="573,104,699,129"/>
-<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="439,114,559,114,559,119,439,119"/>
-<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="699,111,791,107,791,112,700,117"/>
-<area shape="poly" id="edge20_Node000015_Node000005" title=" " alt="" coords="700,124,816,144,815,149,699,130"/>
-<area shape="poly" id="edge21_Node000015_Node000006" title=" " alt="" coords="690,101,735,89,856,46,858,52,737,94,692,106"/>
+<area shape="rect" id="Node000001" title="Apply the visitor to an FlaggedElmPtr." alt="" coords="5,47,191,88"/>
+<area shape="rect" id="Node000002" href="$classElmPtr.html#a5e93800b724a0a93cbb985fdc52cbf0f" title="Get the element pointer." alt="" coords="761,5,897,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,46,238,40,378,27,517,20,748,17,743,18,517,25,378,33,239,45,192,52"/>
+<area shape="rect" id="Node000003" href="$classRangeSelector.html#acf92d9633eadd2731575ddb7e9345da6" title="The operation to be done for beamlines." alt="" coords="239,55,446,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,65,226,67,220,68,191,70"/>
+<area shape="rect" id="Node000007" href="$classRangeSelector.html#a06985d97c2f76283f7ce1f3030ef6c24" title="The operation to be done for elements." alt="" coords="242,104,443,130"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="191,84,263,100,257,101,191,89"/>
+<area shape="rect" id="Node000004" href="$classDefaultVisitor.html#a29aece39de29cad76a21632061a2c192" title="Apply the algorithm to a FlaggedElmPtr." alt="" coords="494,54,672,94"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="446,68,481,71,476,71,447,73"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="672,51,752,35,757,35,673,56"/>
+<area shape="rect" id="Node000005" href="$classElementBase.html#a4c963794b96d83d5d3be0a9fe3c44322" title="Apply visitor." alt="" coords="756,59,902,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="673,71,743,72,738,73,673,76"/>
+<area shape="rect" id="Node000006" href="$classFlaggedElmPtr.html#acc70d7f5db8ffe5b47920a6503bfcad9" title="Get reflection flag." alt="" coords="720,108,938,134"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="673,88,746,105,740,104,673,94"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="419,101,476,93,482,92,419,106"/>
 </map>
