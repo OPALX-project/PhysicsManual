@@ -1,17 +1,28 @@
 <map id="LossDataSink::computeSetStatistics" name="LossDataSink::computeSetStatistics">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,146,187,186"/>
-<area shape="rect" id="Node000002" href="$classOpalParticle.html#aae9cb79e7f52b562aca9556ee468b827" title="Get horizontal momentum (no dimension)." alt="" coords="241,5,376,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,144,164,92,197,64,233,40,245,36,241,39,236,44,201,69,168,96,117,147"/>
-<area shape="rect" id="Node000003" href="$classOpalParticle.html#a1c5d8b391478188cf9a776989cf08d66" title="Get vertical momentum (no dimension)." alt="" coords="241,55,376,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,143,178,116,234,89,250,85,246,88,236,94,181,121,133,147"/>
-<area shape="rect" id="Node000004" href="$classOpalParticle.html#a2ba808950a8bf8486dce06232ce7f666" title="Get relative momentum error (no dimension)." alt="" coords="241,104,376,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,143,238,132,233,135,187,148"/>
-<area shape="rect" id="Node000005" href="$classOpalParticle.html#a98ccb7f7dc75caf71f5131a09c2d404d" title="Get time." alt="" coords="235,153,382,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="186,164,221,165,216,167,188,169"/>
-<area shape="rect" id="Node000006" href="$classOpalParticle.html#ab697ff46a3a13dfc0538d5662db77d71" title="Get horizontal position in m." alt="" coords="245,203,372,228"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="186,184,238,198,233,199,186,190"/>
-<area shape="rect" id="Node000007" href="$classOpalParticle.html#a5c3c9b986068d3508b019b81a63b174a" title="Get vertical displacement in m." alt="" coords="245,252,372,278"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="132,184,181,212,236,238,250,246,245,246,234,243,178,216,131,190"/>
-<area shape="rect" id="Node000008" href="$classOpalParticle.html#a856ea94a4588822d4c9cfad5cc7e176a" title="Get longitudinal displacement c*t in m." alt="" coords="245,301,372,327"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="116,185,168,236,201,264,236,288,246,295,241,294,233,292,197,268,164,240,114,190"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,273,201,313"/>
+<area shape="rect" id="Node000002" href="$classOpalParticle.html#a800665e69ae22e293a64382a31b53c93" title="Get charge in Coulomb." alt="" coords="249,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,272,127,226,156,166,196,103,220,74,248,48,270,34,273,38,251,52,224,78,200,107,160,169,132,228,114,274"/>
+<area shape="rect" id="Node000003" href="$namespaceUtil.html#a4c0cdb63d48c6f4d3e7f97b18339b6b6" title=" " alt="" coords="472,81,599,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,272,128,231,156,180,197,130,221,109,248,92,276,80,305,72,364,66,422,68,473,76,472,81,422,74,365,71,306,78,277,85,251,96,224,113,200,134,161,183,132,233,114,274"/>
+<area shape="rect" id="Node000004" href="$namespaceUtil.html#a84808cd834cb5a288459377d2edbc193" title=" " alt="" coords="255,107,419,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="117,271,169,207,206,171,248,141,260,135,263,140,251,146,210,175,173,210,121,274"/>
+<area shape="rect" id="Node000005" href="$classOpalParticle.html#a95c514cd5afeb4444c294c10ab96ea0b" title="Get mass in GeV/c^2." alt="" coords="255,156,418,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="127,271,180,230,248,190,265,183,267,188,251,195,183,235,130,275"/>
+<area shape="rect" id="Node000006" href="$classOpalParticle.html#a3440a9237f2bba796b9c2176588770fb" title="Get momentum." alt="" coords="268,205,405,231"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="158,270,249,239,274,232,275,237,250,245,160,275"/>
+<area shape="rect" id="Node000007" href="$classOpalParticle.html#aae9cb79e7f52b562aca9556ee468b827" title="Get horizontal momentum (no dimension)." alt="" coords="264,255,409,280"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="201,279,250,274,250,279,202,285"/>
+<area shape="rect" id="Node000008" href="$classOpalParticle.html#a1c5d8b391478188cf9a776989cf08d66" title="Get vertical momentum (no dimension)." alt="" coords="264,304,409,329"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="202,300,250,305,250,310,201,305"/>
+<area shape="rect" id="Node000009" href="$classOpalParticle.html#a2ba808950a8bf8486dce06232ce7f666" title="Get relative momentum error (no dimension)." alt="" coords="265,353,409,379"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="164,310,250,338,279,347,277,352,249,343,163,315"/>
+<area shape="rect" id="Node000010" href="$classOpalParticle.html#a98ccb7f7dc75caf71f5131a09c2d404d" title="Get time." alt="" coords="255,403,418,428"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="131,311,184,349,251,388,271,396,269,401,248,392,181,354,128,315"/>
+<area shape="rect" id="Node000011" href="$classOpalParticle.html#ab697ff46a3a13dfc0538d5662db77d71" title="Get horizontal position in m." alt="" coords="267,452,406,477"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="121,311,174,373,210,408,251,437,266,445,263,449,248,442,207,412,170,377,117,315"/>
+<area shape="rect" id="Node000012" href="$classOpalParticle.html#a5c3c9b986068d3508b019b81a63b174a" title="Get vertical displacement in m." alt="" coords="268,501,405,527"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="116,311,136,349,166,396,204,445,251,487,263,494,260,498,248,491,200,449,161,399,131,352,112,314"/>
+<area shape="rect" id="Node000013" href="$classOpalParticle.html#a856ea94a4588822d4c9cfad5cc7e176a" title="Get longitudinal displacement c*t in m." alt="" coords="267,551,406,576"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="113,312,130,358,159,419,199,482,223,511,251,536,261,542,258,547,248,540,220,515,195,485,154,421,125,360,108,314"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="419,106,458,101,459,106,419,112"/>
 </map>

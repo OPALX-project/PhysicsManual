@@ -12,6 +12,7 @@ var classBinningCmd =
     [ "execute", "classBinningCmd.html#a73f5c363717c98d52734f6d7b12a197a", null ],
     [ "findAttribute", "classBinningCmd.html#aaba6fa24b81be56d195924fa9f6ea9bd", null ],
     [ "findAttribute", "classBinningCmd.html#ace8334a44a2768aff474cb5455f643a5", null ],
+    [ "getAdaptiveBinning", "classBinningCmd.html#a5b42543666c4c742e466a5ab4ab9653d", null ],
     [ "getBaseObject", "classBinningCmd.html#a51ae802b40acf9b12487c2ae3c9e67e7", null ],
     [ "getBinningAlpha", "classBinningCmd.html#a2e85b9c89b524c9bdd684e1b07a52209", null ],
     [ "getBinningBeta", "classBinningCmd.html#abf24dc5c4969603051c1f5ba04865eef", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y_0',['y',['../Component_8h.html#afa38be143ae800e6ad69ce8ed4df62d8',1,'Point::y'],['../classPoint3D.html#abcb44b06e310b076fa9d65dec8541dd4',1,'Point3D::y']]],
+  ['y_0',['y',['../Component_8h.html#afa38be143ae800e6ad69ce8ed4df62d8',1,'Point::y'],['../classEmittedFromFile.html#aed5b504af97a8ba52c238688f2518671',1,'EmittedFromFile::RawRecord::y'],['../classPoint3D.html#abcb44b06e310b076fa9d65dec8541dd4',1,'Point3D::y']]],
   ['y_5f_1',['y_',['../classAbstractSpline.html#ab2222f28de9a7517a7d2364dc98b39de',1,'AbstractSpline']]],
   ['y_5fdata_2',['y_data',['../classCubicSplineTest.html#aca9cac8a672b62579d3b7ac1413250fa',1,'CubicSplineTest::y_data'],['../classLinearSplineTest.html#accfe905ccb92489e034e214cba819933',1,'LinearSplineTest::y_data']]],
   ['y_5fm_3',['y_m',['../classinterpolation_1_1ThreeDGrid.html#a29d8a2640974878a8504710cb1dfaad7',1,'interpolation::ThreeDGrid::y_m'],['../structmslang_1_1Mask_1_1IntPoint.html#a0b680da994a36c9ad02932a476a789ac',1,'mslang::Mask::IntPoint::y_m'],['../namespaceLinearBreitWheelerBenchmark.html#aa26b5e0d024bcd69404c95ecc81bfcaf',1,'LinearBreitWheelerBenchmark::SampledPhotonBeamState::y_m']]],

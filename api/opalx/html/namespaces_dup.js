@@ -111,6 +111,7 @@ var namespaces_dup =
       [ "seed", "namespaceOptions.html#add25cbd96b6ba4bbbc8da3a9805c3dcd", null ],
       [ "sptDumpFreq", "namespaceOptions.html#a453b96859e7bdbd1f5df17f34f6981eb", null ],
       [ "statDumpFreq", "namespaceOptions.html#ae1dc7de1cbb27c5535580db7cdf7be6a", null ],
+      [ "stepInfoFreq", "namespaceOptions.html#a040d80666ca7a035a6a1192532ad8b41", null ],
       [ "useQMAttributes", "namespaceOptions.html#a8bfb608c9dcc372d6edef0fea5a02375", null ],
       [ "version", "namespaceOptions.html#a3313e6cb3b9a07dfaea7fe089710b5b5", null ],
       [ "warn", "namespaceOptions.html#a56037bb6d9ae67bde5ff52bf579dce80", null ],

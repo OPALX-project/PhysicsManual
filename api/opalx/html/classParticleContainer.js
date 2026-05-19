@@ -1,6 +1,6 @@
 var classParticleContainer =
 [
-    [ "Base", "classParticleContainer.html#a3b34c7abde5ec4df014095ef8ed05c1f", null ],
+    [ "Base", "classParticleContainer.html#ab9be86caa0a7125ac12020372d1d76b8", null ],
     [ "bin_index_type", "classParticleContainer.html#aaf67b531c4ad7b532bdebddb702046d7", null ],
     [ "qm_view_type", "classParticleContainer.html#aae2e5e8effddcb9de403f860fec4a5e3", null ],
     [ "QMStorageMode", "classParticleContainer.html#a911940db7b85790ef5834cadad9e7870", [
@@ -14,8 +14,7 @@ var classParticleContainer =
     [ "computeDebyeLength", "classParticleContainer.html#a6a9168adc2cb5203f5472c3b6f3e9918", null ],
     [ "computeMinMaxR", "classParticleContainer.html#a3f213158364195b3e385b369cf5e5cc4", null ],
     [ "createParticles", "classParticleContainer.html#ad90e0152b681b50cf6f8b7b4c1767bc9", null ],
-    [ "deleteParticlesOutside", "classParticleContainer.html#a5758a329759a1317f28c61779c17c6b0", null ],
-    [ "destroyParticles", "classParticleContainer.html#a3f30c6caef2775d57cfc46af0529ea70", null ],
+    [ "deleteInvalidParticles", "classParticleContainer.html#aecfe1245aec560053a959bfc18e935c9", null ],
     [ "get_sPos", "classParticleContainer.html#af675edb707b99640373f6364f0e929ca", null ],
     [ "getCentroid", "classParticleContainer.html#a7d5dc912be261d1564210a1ceeccb953", null ],
     [ "getChargePerParticle", "classParticleContainer.html#ab7eee1b1fa2276682f4447a40f946427", null ],
@@ -60,6 +59,7 @@ var classParticleContainer =
     [ "isUnitlessPositions", "classParticleContainer.html#af8e6c4297a685f68a108d0d9af312e9f", null ],
     [ "markMomentsClean", "classParticleContainer.html#a93becfc2332d10aea3c59d8b089fd75e", null ],
     [ "markMomentsDirty", "classParticleContainer.html#ad5edf55f8a0ac2ad0c61d06f9fbfc983", null ],
+    [ "markParticlesOutside", "classParticleContainer.html#a70710619dcd94e32ca44a2aae9647ed6", null ],
     [ "registerAttributes", "classParticleContainer.html#afae5b41161e99ee7e103b73a2f4e3e73", null ],
     [ "scaleDtByCharge", "classParticleContainer.html#a54fd810fb53d9ff5dd8e2c6b625bd431", null ],
     [ "set_sPos", "classParticleContainer.html#af780e75235193876afe81f84657023c0", null ],

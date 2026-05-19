@@ -1,4 +1,4 @@
 var Configure_8h =
 [
-    [ "Configure::configure", "namespaceConfigure.html#a3d0c5652c42eb1959966a44a0084a063", null ]
+    [ "configure", "Configure_8h.html#a3d0c5652c42eb1959966a44a0084a063", null ]
 ];

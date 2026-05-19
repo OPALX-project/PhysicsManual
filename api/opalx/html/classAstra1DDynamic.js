@@ -3,6 +3,7 @@ var classAstra1DDynamic =
     [ "Astra1DDynamic", "classAstra1DDynamic.html#ac96e8bc31dfc1130989e74b42c1a0651", null ],
     [ "~Astra1DDynamic", "classAstra1DDynamic.html#a9478e07a1f328013797592cbefd54199", null ],
     [ "applyField", "classAstra1DDynamic.html#aa67248666e69a54a151dff19410a7623", null ],
+    [ "applyRFField", "classAstra1DDynamic.html#a4e38aa3a3c6b781c1c5feda1607aea5c", null ],
     [ "applyTravelingWave", "classAstra1DDynamic.html#abc3b1f7e2d7b529debedfe19fd25aa9f", null ],
     [ "checkMap", "classAstra1DDynamic.html#ab5e462435986c82f95c172e06e8fa48f", null ],
     [ "checkMap", "classAstra1DDynamic.html#a60afde568a81880abf753472789ddc6d", null ],
@@ -43,7 +44,6 @@ var classAstra1DDynamic =
     [ "write3DField", "classAstra1DDynamic.html#afced7ac15a14eae9121e2f2a47109e05", null ],
     [ "Fieldmap", "classAstra1DDynamic.html#a5f8819c695f767b13ddd9c8a79d6dab8", null ],
     [ "accuracy_m", "classAstra1DDynamic.html#a911afefcf23afe6fd08732d16bb22dc6", null ],
-    [ "ezRaw_m", "classAstra1DDynamic.html#a38ba32d75cd8d2c7844f1e312883d724", null ],
     [ "Filename_m", "classAstra1DDynamic.html#ac75e498f9098c08156a12c101d67f57a", null ],
     [ "FourCoefs_m", "classAstra1DDynamic.html#a3e935a325b07df4037eef061caf266f3", null ],
     [ "frequency_m", "classAstra1DDynamic.html#abd1299de97fb22f0d9e1caa2a977e15e", null ],
@@ -54,6 +54,5 @@ var classAstra1DDynamic =
     [ "Type", "classAstra1DDynamic.html#a013c731f1054bc64c20cc9a97a8d0782", null ],
     [ "xlrep_m", "classAstra1DDynamic.html#a061239dfc5079258560c2e2fa778470c", null ],
     [ "zbegin_m", "classAstra1DDynamic.html#aefe86bad757830166e725ddbca87eac7", null ],
-    [ "zend_m", "classAstra1DDynamic.html#a63bdb267cb620bf6efb0084f2f3564e3", null ],
-    [ "zRaw_m", "classAstra1DDynamic.html#ac8c594005dfcc5960adbe47a50e7a14f", null ]
+    [ "zend_m", "classAstra1DDynamic.html#a63bdb267cb620bf6efb0084f2f3564e3", null ]
 ];

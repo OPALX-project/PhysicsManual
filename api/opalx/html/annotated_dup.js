@@ -52,9 +52,9 @@ var annotated_dup =
       [ "SRefExpr", "classExpressions_1_1SRefExpr.html", "classExpressions_1_1SRefExpr" ],
       [ "SUnary", "classExpressions_1_1SUnary.html", "classExpressions_1_1SUnary" ],
       [ "SValue", "classExpressions_1_1SValue.html", "classExpressions_1_1SValue" ],
-      [ "TFunction0", "namespaceExpressions.html#structExpressions_1_1TFunction0", "namespaceExpressions_structExpressions_1_1TFunction0_dup" ],
-      [ "TFunction1", "namespaceExpressions.html#structExpressions_1_1TFunction1", "namespaceExpressions_structExpressions_1_1TFunction1_dup" ],
-      [ "TFunction2", "namespaceExpressions.html#structExpressions_1_1TFunction2", "namespaceExpressions_structExpressions_1_1TFunction2_dup" ]
+      [ "TFunction0", "structExpressions_1_1TFunction0.html", "structExpressions_1_1TFunction0" ],
+      [ "TFunction1", "structExpressions_1_1TFunction1.html", "structExpressions_1_1TFunction1" ],
+      [ "TFunction2", "structExpressions_1_1TFunction2.html", "structExpressions_1_1TFunction2" ]
     ] ],
     [ "interpolation", "namespaceinterpolation.html", [
       [ "Interpolator3dGridTo1d", "classinterpolation_1_1Interpolator3dGridTo1d.html", "classinterpolation_1_1Interpolator3dGridTo1d" ],
@@ -134,6 +134,11 @@ var annotated_dup =
     ] ],
     [ "OPALTimer", "namespaceOPALTimer.html", [
       [ "Timer", "classOPALTimer_1_1Timer.html", "classOPALTimer_1_1Timer" ]
+    ] ],
+    [ "opalx", "namespaceopalx.html", [
+      [ "test", "namespaceopalx_1_1test.html", [
+        [ "Histogram1D", "structopalx_1_1test_1_1Histogram1D.html", "structopalx_1_1test_1_1Histogram1D" ]
+      ] ]
     ] ],
     [ "ParticleBinning", "namespaceParticleBinning.html", [
       [ "AdaptBins", "classParticleBinning_1_1AdaptBins.html", "classParticleBinning_1_1AdaptBins" ],
@@ -215,6 +220,8 @@ var annotated_dup =
     [ "ArithmeticError", "classArithmeticError.html", "classArithmeticError" ],
     [ "Astra1DDynamic", "classAstra1DDynamic.html", "classAstra1DDynamic" ],
     [ "Astra1DDynamicTest", "classAstra1DDynamicTest.html", "classAstra1DDynamicTest" ],
+    [ "Astra1DMagnetoStatic", "classAstra1DMagnetoStatic.html", "classAstra1DMagnetoStatic" ],
+    [ "Astra1DMagnetoStaticTest", "classAstra1DMagnetoStaticTest.html", "classAstra1DMagnetoStaticTest" ],
     [ "Attribute", "classAttribute.html", "classAttribute" ],
     [ "AttributeBase", "classAttributeBase.html", "classAttributeBase" ],
     [ "AttributeHandler", "classAttributeHandler.html", "classAttributeHandler" ],
@@ -286,6 +293,7 @@ var annotated_dup =
     [ "DummyFieldTW", "classDummyFieldTW.html", "classDummyFieldTW" ],
     [ "DummyGeometry", "classDummyGeometry.html", "classDummyGeometry" ],
     [ "DummyGeometryTW", "classDummyGeometryTW.html", "classDummyGeometryTW" ],
+    [ "DummyMonitorField", "classDummyMonitorField.html", "classDummyMonitorField" ],
     [ "DumpEMFields", "classDumpEMFields.html", "classDumpEMFields" ],
     [ "EBVectors", "classEBVectors.html", "classEBVectors" ],
     [ "Echo", "classEcho.html", "classEcho" ],
@@ -297,6 +305,8 @@ var annotated_dup =
     [ "EMField", "classEMField.html", "classEMField" ],
     [ "EmissionSource", "classEmissionSource.html", "classEmissionSource" ],
     [ "EmissionSourceList", "classEmissionSourceList.html", "classEmissionSourceList" ],
+    [ "EmittedFromFile", "classEmittedFromFile.html", "classEmittedFromFile" ],
+    [ "EmittedFromFileTest", "classEmittedFromFileTest.html", "classEmittedFromFileTest" ],
     [ "Euclid3D", "classEuclid3D.html", "classEuclid3D" ],
     [ "Euclid3DGeometry", "classEuclid3DGeometry.html", "classEuclid3DGeometry" ],
     [ "EVector", "classEVector.html", "classEVector" ],
@@ -338,7 +348,7 @@ var annotated_dup =
     [ "gsl_fft_halfcomplex_workspace", "GSLFFT_8h.html#structgsl__fft__halfcomplex__workspace", "GSLFFT_8h_structgsl__fft__halfcomplex__workspace" ],
     [ "gsl_fft_real_wavetable", "GSLFFT_8h.html#structgsl__fft__real__wavetable", "GSLFFT_8h_structgsl__fft__real__wavetable" ],
     [ "gsl_fft_real_workspace", "GSLFFT_8h.html#structgsl__fft__real__workspace", "GSLFFT_8h_structgsl__fft__real__workspace" ],
-    [ "gsl_function", "GSLIntegration_8h.html#structgsl__function", "GSLIntegration_8h_structgsl__function" ],
+    [ "gsl_function", "structgsl__function.html", "structgsl__function" ],
     [ "gsl_histogram", "classgsl__histogram.html", "classgsl__histogram" ],
     [ "gsl_histogram2d", "classgsl__histogram2d.html", "classgsl__histogram2d" ],
     [ "gsl_histogram2d_pdf", "classgsl__histogram2d__pdf.html", "classgsl__histogram2d__pdf" ],
@@ -399,6 +409,7 @@ var annotated_dup =
     [ "Monitor", "classMonitor.html", "classMonitor" ],
     [ "MonitorRep", "classMonitorRep.html", "classMonitorRep" ],
     [ "MonitorStatisticsWriter", "classMonitorStatisticsWriter.html", "classMonitorStatisticsWriter" ],
+    [ "MonitorTest", "classMonitorTest.html", null ],
     [ "Multipole", "classMultipole.html", "classMultipole" ],
     [ "MultipoleRep", "classMultipoleRep.html", "classMultipoleRep" ],
     [ "MultipoleT", "classMultipoleT.html", "classMultipoleT" ],
@@ -425,6 +436,8 @@ var annotated_dup =
     [ "OpalElement", "classOpalElement.html", "classOpalElement" ],
     [ "OpalException", "classOpalException.html", "classOpalException" ],
     [ "OpalFilter", "classOpalFilter.html", "classOpalFilter" ],
+    [ "OpalFlatTop", "classOpalFlatTop.html", "classOpalFlatTop" ],
+    [ "OpalFlatTopTest", "classOpalFlatTopTest.html", "classOpalFlatTopTest" ],
     [ "OpalLaser", "classOpalLaser.html", "classOpalLaser" ],
     [ "OpalMarker", "classOpalMarker.html", "classOpalMarker" ],
     [ "OpalMonitor", "classOpalMonitor.html", "classOpalMonitor" ],
@@ -547,6 +560,7 @@ var annotated_dup =
     [ "TBeamline", "classTBeamline.html", "classTBeamline" ],
     [ "TestableBinningCmd", "classTestableBinningCmd.html", "classTestableBinningCmd" ],
     [ "TestBunch", "structTestBunch.html", "structTestBunch" ],
+    [ "TestMonitor", "classTestMonitor.html", "classTestMonitor" ],
     [ "TestMultipoleT", "classTestMultipoleT.html", "classTestMultipoleT" ],
     [ "TestMultipoleTCurvedConstRadius", "classTestMultipoleTCurvedConstRadius.html", "classTestMultipoleTCurvedConstRadius" ],
     [ "TestMultipoleTStraight", "classTestMultipoleTStraight.html", "classTestMultipoleTStraight" ],

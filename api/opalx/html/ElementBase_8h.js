@@ -13,6 +13,7 @@ var ElementBase_8h =
       [ "DRIFT", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a4f050d29b83236482979e9d1a38c6bbb", null ],
       [ "LASER", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8ad97026430a9e5d1a0c48ef2cad3755b1", null ],
       [ "MARKER", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a415f48644024b2956d2d3a94a363a2bb", null ],
+      [ "MONITOR", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8aff3e179b3cc64393841107ccba0d6e48", null ],
       [ "MULTIPOLE", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8a51312d2adb53b02ed7795a7e3f02bd06", null ],
       [ "MULTIPOLET", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8afb99dd12d4365c33786462f7635c1e53", null ],
       [ "RFCAVITY", "ElementBase_8h.html#a1d3efb4a54c06179c8699d81435593c8ac04b3cc5b1a13dc2463b809070bbb67e", null ],

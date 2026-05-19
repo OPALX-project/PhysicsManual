@@ -78,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -288,6 +288,7 @@ window.Quarto = {
   <li><a href="#relation-to-elemedge" id="toc-relation-to-elemedge" class="nav-link" data-scroll-target="#relation-to-elemedge"><span class="header-section-number">10.5.6</span> Relation to <code>ELEMEDGE</code></a></li>
   <li><a href="#handoff-to-the-main-tracker" id="toc-handoff-to-the-main-tracker" class="nav-link" data-scroll-target="#handoff-to-the-main-tracker"><span class="header-section-number">10.5.7</span> Handoff to the main tracker</a></li>
   <li><a href="#worked-example-one-placed-bend" id="toc-worked-example-one-placed-bend" class="nav-link" data-scroll-target="#worked-example-one-placed-bend"><span class="header-section-number">10.5.8</span> Worked example: one placed bend</a></li>
+  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo"><span class="header-section-number">10.5.9</span> ToDo</a></li>
   </ul></li>
   <li><a href="#autophasing" id="toc-autophasing" class="nav-link" data-scroll-target="#autophasing"><span class="header-section-number">10.6</span> Autophasing</a>
   <ul class="collapse">
@@ -295,14 +296,17 @@ window.Quarto = {
   <li><a href="#traveling-wave-structure" id="toc-traveling-wave-structure" class="nav-link" data-scroll-target="#traveling-wave-structure"><span class="header-section-number">10.6.2</span> Traveling-Wave Structure</a></li>
   <li><a href="#consistency-notes-for-opalx" id="toc-consistency-notes-for-opalx" class="nav-link" data-scroll-target="#consistency-notes-for-opalx"><span class="header-section-number">10.6.3</span> Consistency Notes for OPALX</a></li>
   </ul></li>
-  <li><a href="#boosted-frenet-serret-frame" id="toc-boosted-frenet-serret-frame" class="nav-link" data-scroll-target="#boosted-frenet-serret-frame"><span class="header-section-number">10.7</span> Boosted Frenet-Serret frame</a></li>
+  <li><a href="#sec-sandbox-koordinate-systems" id="toc-sec-sandbox-koordinate-systems" class="nav-link" data-scroll-target="#sec-sandbox-koordinate-systems"><span class="header-section-number">10.7</span> Koordinate Systems</a>
+  <ul class="collapse">
+  <li><a href="#sec-sandbox-coordinate-frame-apis" id="toc-sec-sandbox-coordinate-frame-apis" class="nav-link" data-scroll-target="#sec-sandbox-coordinate-frame-apis"><span class="header-section-number">10.7.1</span> OPALX Coordinate Frames and Transform APIs</a></li>
+  <li><a href="#boosted-frenet-serret-frame" id="toc-boosted-frenet-serret-frame" class="nav-link" data-scroll-target="#boosted-frenet-serret-frame"><span class="header-section-number">10.7.2</span> Boosted Frenet-Serret frame</a></li>
+  </ul></li>
   <li><a href="#low-energy-e-e-in-a-high-energy-coulomb-field" id="toc-low-energy-e-e-in-a-high-energy-coulomb-field" class="nav-link" data-scroll-target="#low-energy-e-e-in-a-high-energy-coulomb-field"><span class="header-section-number">10.8</span> Low Energy e-/e+ in a High Energy Coulomb Field</a>
   <ul class="collapse">
   <li><a href="#implemented-model" id="toc-implemented-model" class="nav-link" data-scroll-target="#implemented-model"><span class="header-section-number">10.8.1</span> Implemented model</a></li>
   <li><a href="#missing-physics" id="toc-missing-physics" class="nav-link" data-scroll-target="#missing-physics"><span class="header-section-number">10.8.2</span> Missing physics</a></li>
   <li><a href="#work-needed" id="toc-work-needed" class="nav-link" data-scroll-target="#work-needed"><span class="header-section-number">10.8.3</span> Work needed</a></li>
   </ul></li>
-  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo"><span class="header-section-number">10.9</span> ToDo</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/sandbox/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -1332,6 +1336,13 @@ Table&nbsp;10.4: Table 10.4.1: Worked-example dictionary for one placed analytic
 <li>slice-based bend tracking.</li>
 </ul>
 </section>
+<section id="todo" class="level3" data-number="10.5.9">
+<h3 data-number="10.5.9" class="anchored" data-anchor-id="todo"><span class="header-section-number">10.5.9</span> ToDo</h3>
+<ol type="1">
+<li>OrbitThreader: a short note on <code>trackBack()</code> and why the path is traced slightly backward before the forward pass,</li>
+<li>OrbitThreader: a diagram of the two internal models: <code>ReferencePathModel</code> versus action-range registration,</li>
+</ol>
+</section>
 </section>
 <section id="autophasing" class="level2" data-number="10.6">
 <h2 data-number="10.6" class="anchored" data-anchor-id="autophasing"><span class="header-section-number">10.6</span> Autophasing</h2>
@@ -1502,8 +1513,328 @@ t(z,\varphi) \simeq \frac{z}{\beta c}+t_0 .
 </ul>
 </section>
 </section>
-<section id="boosted-frenet-serret-frame" class="level2" data-number="10.7">
-<h2 data-number="10.7" class="anchored" data-anchor-id="boosted-frenet-serret-frame"><span class="header-section-number">10.7</span> Boosted Frenet-Serret frame</h2>
+<section id="sec-sandbox-koordinate-systems" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="sec-sandbox-koordinate-systems"><span class="header-section-number">10.7</span> Koordinate Systems</h2>
+<section id="sec-sandbox-coordinate-frame-apis" class="level3" data-number="10.7.1">
+<h3 data-number="10.7.1" class="anchored" data-anchor-id="sec-sandbox-coordinate-frame-apis"><span class="header-section-number">10.7.1</span> OPALX Coordinate Frames and Transform APIs</h3>
+<p>This note summarizes the coordinate frames currently used in OPALX and maps the PhysicsManual terminology to the concrete code structures and helper functions.</p>
+<p>The PhysicsManual coordinate-system chapter uses the following conceptual language:</p>
+<ul>
+<li><code>K = (X,Y,Z)</code>: laboratory or floor Cartesian frame.</li>
+<li><code>B</code>: reference base used for ordering and reporting, such as a transfer-line interval, ring circle, or graph.</li>
+<li><code>s</code>: reference/reporting coordinate on <code>B</code>.</li>
+<li><code>U_i</code>: canonical local chart of element <code>i</code>.</li>
+<li><code>Omega_i</code>: local support of the element field, aperture, or material model.</li>
+<li><code>p_i</code>: named port or marked boundary chart, such as entrance or exit.</li>
+<li><code>P_i</code>: rigid placement map embedding the local chart into the lab frame.</li>
+<li><code>T_i</code>: rigid placement transform, represented by a translation and rotation.</li>
+<li><code>Gamma_i(ell)</code>: optional intrinsic reference path of element <code>i</code>.</li>
+<li><code>C_pq</code> or <code>g_ij</code>: port-to-port or chart-to-chart transition map.</li>
+</ul>
+<p>In the current code, <code>lab</code>, <code>global</code>, and <code>floor</code> are often used interchangeably for the same Cartesian world frame. For element placement, treat these as aliases of the lab/floor frame <code>K</code>.</p>
+<section id="core-transform-convention" class="level4">
+<h4 class="anchored" data-anchor-id="core-transform-convention">Core Transform Convention</h4>
+<p>The common implementation type is <code>CoordinateSystemTrafo</code>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>API</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>transformTo(r)</code></td>
+<td>Transform a point from the parent/source frame into this transform’s target frame.</td>
+</tr>
+<tr class="even">
+<td><code>transformFrom(r)</code></td>
+<td>Transform a point from the target frame back to the parent/source frame.</td>
+</tr>
+<tr class="odd">
+<td><code>rotateTo(v)</code></td>
+<td>Rotate a vector into the target frame, without translation.</td>
+</tr>
+<tr class="even">
+<td><code>rotateFrom(v)</code></td>
+<td>Rotate a vector back to the parent/source frame, without translation.</td>
+</tr>
+<tr class="odd">
+<td><code>transformBunchTo(R,n)</code></td>
+<td>Apply <code>transformTo</code> to a particle-position view.</td>
+</tr>
+<tr class="even">
+<td><code>transformBunchFrom(R,n)</code></td>
+<td>Apply <code>transformFrom</code> to a particle-position view.</td>
+</tr>
+<tr class="odd">
+<td><code>rotateBunchTo(P,n)</code></td>
+<td>Apply <code>rotateTo</code> to a particle/vector view.</td>
+</tr>
+<tr class="even">
+<td><code>rotateBunchFrom(P,n)</code></td>
+<td>Apply <code>rotateFrom</code> to a particle/vector view.</td>
+</tr>
+<tr class="odd">
+<td><code>inverted()</code></td>
+<td>Return the inverse transform.</td>
+</tr>
+</tbody>
+</table>
+<p>Relevant implementation:</p>
+<ul>
+<li><code>src/Algorithms/CoordinateSystemTrafo.h</code></li>
+<li><code>src/Algorithms/CoordinateSystemTrafo.cpp</code></li>
+</ul>
+</section>
+<section id="frame-table" class="level4">
+<h4 class="anchored" data-anchor-id="frame-table">Frame Table</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Frame</th>
+<th>PhysicsManual name</th>
+<th>Code storage</th>
+<th>Into this frame</th>
+<th>Out of this frame</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lab / floor / global Cartesian</td>
+<td><code>K = (X,Y,Z)</code></td>
+<td>implicit root frame</td>
+<td>identity</td>
+<td>identity</td>
+</tr>
+<tr class="even">
+<td>Beamline / line frame</td>
+<td>line <code>ORIGIN</code>, <code>ORIENTATION</code>; compatibility reference for <code>ELEMEDGE</code></td>
+<td><code>OpalBeamline::coordTransformationTo_m</code></td>
+<td><code>OpalBeamline::transformTo</code>, <code>rotateTo</code>, <code>getCSTrafoLab2Local()</code></td>
+<td><code>transformFrom</code>, <code>rotateFrom</code>, <code>getCSTrafoLab2Local().inverted()</code></td>
+</tr>
+<tr class="odd">
+<td>Element nominal local/body frame</td>
+<td>local chart <code>U_i</code>, placed by <code>P_i</code></td>
+<td><code>ElementBase::csTrafoGlobal2Local_m</code></td>
+<td><code>OpalBeamline::transformToLocalCS(comp,r)</code> or <code>comp-&gt;getCSTrafoGlobal2Local().transformTo(r)</code></td>
+<td><code>transformFromLocalCS</code>, <code>rotateFromLocalCS</code>, or <code>comp-&gt;getCSTrafoGlobal2Local().transformFrom(r)</code></td>
+</tr>
+<tr class="even">
+<td>Explicitly posed element frame</td>
+<td><code>X,Y,Z,THETA,PHI,PSI</code> placement</td>
+<td>set in <code>OpalElement::update()</code></td>
+<td>same as element local frame after <code>setCSTrafoGlobal2Local()</code></td>
+<td>same as element local frame</td>
+</tr>
+<tr class="odd">
+<td>Misaligned element frame</td>
+<td>static error transform <code>Delta T_i^err</code></td>
+<td><code>ElementBase::misalignment_m</code></td>
+<td><code>getMisalignment(comp) * getCSTrafoLab2Local(comp)</code>; in tracking also <code>* pc-&gt;getToLabTrafo()</code></td>
+<td>invert the full chain, e.g.&nbsp;<code>localToRefCSTrafo = refToLocalCSTrafo.inverted()</code></td>
+</tr>
+<tr class="even">
+<td>Element begin / entrance port</td>
+<td><code>p_i^in</code>, entrance boundary chart</td>
+<td><code>ElementBase::getEdgeToBegin()</code></td>
+<td>lab to begin: <code>getEdgeToBegin() * getCSTrafoGlobal2Local()</code></td>
+<td>use <code>.transformFrom()</code> on the composed transform</td>
+</tr>
+<tr class="odd">
+<td>Element end / exit port</td>
+<td><code>p_i^out</code>, exit boundary chart</td>
+<td><code>ElementBase::getEdgeToEnd()</code></td>
+<td>lab to end: <code>getEdgeToEnd() * getCSTrafoGlobal2Local()</code></td>
+<td>use <code>.transformFrom()</code> on the composed transform</td>
+</tr>
+<tr class="even">
+<td>Bend intrinsic reference path</td>
+<td><code>Gamma_i(ell)</code></td>
+<td><code>PlanarArcGeometry</code>, <code>RBendGeometry</code>, <code>Euclid3D</code></td>
+<td><code>getTransform(s)</code>, <code>getEntranceFrame()</code>, <code>getExitFrame()</code></td>
+<td><code>Euclid3D</code> inverse / reverse transform logic; not the same API as <code>CoordinateSystemTrafo</code></td>
+</tr>
+<tr class="odd">
+<td>Runtime moving reference/bunch frame</td>
+<td>tracker reference frame around reference particle</td>
+<td><code>ParticleContainer::toLabTrafo_m</code>, <code>refPartR_m</code>, <code>refPartP_m</code>, <code>sPos_m</code></td>
+<td>reference to lab is used through <code>pc-&gt;getToLabTrafo()</code> in transform chains</td>
+<td>lab/reference update via <code>ParticleContainer::updateRefToLabCSTrafo()</code></td>
+</tr>
+<tr class="even">
+<td>Element-local field-evaluation frame</td>
+<td>element local frame plus errors</td>
+<td>temporary chain in <code>ParallelTracker::computeExternalFields()</code></td>
+<td><code>refToLocalCSTrafo = misalignment * (lab2local * pc-&gt;getToLabTrafo())</code>; then <code>pc-&gt;transformBunch(refToLocalCSTrafo)</code></td>
+<td><code>localToRefCSTrafo = refToLocalCSTrafo.inverted()</code></td>
+</tr>
+<tr class="odd">
+<td>Beam / self-field frame</td>
+<td>beam frame, origin at reference, <code>z</code> along mean momentum</td>
+<td>local variables in <code>ParallelTracker::computeSpaceChargeFields()</code></td>
+<td><code>referenceToBeamCSTrafo.transformBunchTo(R)</code></td>
+<td><code>beamToReferenceCSTrafo.transformBunchTo(R)</code> and <code>rotateBunchTo(E/B)</code></td>
+</tr>
+<tr class="even">
+<td>Mesh frame for self fields</td>
+<td>follows current particle <code>R</code> representation</td>
+<td>field solver mesh state</td>
+<td>if <code>R</code> is beam-frame, mesh is beam-frame</td>
+<td>after transform back, <code>bunchUpdate()</code> restores reference-frame mesh</td>
+</tr>
+<tr class="odd">
+<td>Adaptive-bin rest frame</td>
+<td>per-bin quasi-rest frame</td>
+<td><code>BinnedFieldSolver::BinKinematics</code></td>
+<td>not a rigid <code>CoordinateSystemTrafo</code>; uses <code>gammaBin</code>, <code>pmean</code>, <code>prepareRhoForBin()</code></td>
+<td><code>accumulateFieldToTemp()</code> Lorentz-transforms <code>E'</code> to lab <code>E,B</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="important-code-paths" class="level4">
+<h4 class="anchored" data-anchor-id="important-code-paths">Important Code Paths</h4>
+<section id="explicit-element-placement" class="level5">
+<h5 class="anchored" data-anchor-id="explicit-element-placement">Explicit Element Placement</h5>
+<p>For elements with absolute placement attributes, <code>OpalElement::update()</code> builds the placement transform from <code>X</code>, <code>Y</code>, <code>Z</code>, <code>THETA</code>, <code>PHI</code>, and <code>PSI</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo global2local<span class="op">(</span>origin<span class="op">,</span> rotation<span class="op">.</span>conjugate<span class="op">());</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>base<span class="op">-&gt;</span>setCSTrafoGlobal2Local<span class="op">(</span>global2local<span class="op">);</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>base<span class="op">-&gt;</span>fixPosition<span class="op">();</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This makes the element-local frame accessible through <code>ElementBase::getCSTrafoGlobal2Local()</code>.</p>
+<p>Relevant files:</p>
+<ul>
+<li><code>src/Elements/OpalElement.cpp</code></li>
+<li><code>src/AbsBeamline/ElementBase.h</code></li>
+</ul>
+</section>
+<section id="beamline-to-element-local" class="level5">
+<h5 class="anchored" data-anchor-id="beamline-to-element-local">Beamline to Element Local</h5>
+<p><code>OpalBeamline</code> wraps the element transform API:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>transformToLocalCS<span class="op">(</span>comp<span class="op">,</span> r<span class="op">)</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>transformFromLocalCS<span class="op">(</span>comp<span class="op">,</span> r<span class="op">)</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>rotateToLocalCS<span class="op">(</span>comp<span class="op">,</span> v<span class="op">)</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>rotateFromLocalCS<span class="op">(</span>comp<span class="op">,</span> v<span class="op">)</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>getCSTrafoLab2Local<span class="op">(</span>comp<span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Internally these use <code>comp-&gt;getCSTrafoGlobal2Local()</code>.</p>
+<p>Relevant file:</p>
+<ul>
+<li><code>src/Elements/OpalBeamline.h</code></li>
+</ul>
+</section>
+<section id="begin-and-end-port-frames" class="level5">
+<h5 class="anchored" data-anchor-id="begin-and-end-port-frames">Begin and End Port Frames</h5>
+<p>The default element begin and end frames are:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>getEdgeToBegin<span class="op">()</span> <span class="op">=</span> identity</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>getEdgeToEnd<span class="op">()</span>   <span class="op">=</span> translation by <span class="op">(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> L<span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The lab-frame begin and end poses are usually formed as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo toBegin <span class="op">=</span> element<span class="op">-&gt;</span>getEdgeToBegin<span class="op">()</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                              <span class="op">*</span> element<span class="op">-&gt;</span>getCSTrafoGlobal2Local<span class="op">();</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo toEnd <span class="op">=</span> element<span class="op">-&gt;</span>getEdgeToEnd<span class="op">()</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>                            <span class="op">*</span> element<span class="op">-&gt;</span>getCSTrafoGlobal2Local<span class="op">();</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Relevant files:</p>
+<ul>
+<li><code>src/AbsBeamline/ElementBase.h</code></li>
+<li><code>src/Elements/OpalBeamline.cpp</code></li>
+</ul>
+</section>
+<section id="runtime-field-evaluation-chain" class="level5">
+<h5 class="anchored" data-anchor-id="runtime-field-evaluation-chain">Runtime Field Evaluation Chain</h5>
+<p>During particle tracking, particle coordinates are stored in the moving reference frame. To apply an element, OPALX composes:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo refToLocalCSTrafo <span class="op">=</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    itsOpalBeamline_m<span class="op">.</span>getMisalignment<span class="op">(</span>element<span class="op">)</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">*</span> <span class="op">(</span>itsOpalBeamline_m<span class="op">.</span>getCSTrafoLab2Local<span class="op">(</span>element<span class="op">)</span> <span class="op">*</span> pc<span class="op">-&gt;</span>getToLabTrafo<span class="op">());</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo localToRefCSTrafo <span class="op">=</span> refToLocalCSTrafo<span class="op">.</span>inverted<span class="op">();</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>transformBunch<span class="op">(</span>refToLocalCSTrafo<span class="op">);</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>element<span class="op">-&gt;</span>apply<span class="op">(</span>pc<span class="op">);</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>transformBunch<span class="op">(</span>localToRefCSTrafo<span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is the active runtime transition:</p>
+<pre class="text"><code>reference frame -&gt; lab frame -&gt; nominal element local -&gt; misaligned element local</code></pre>
+<p>and then back again.</p>
+<p>Relevant file:</p>
+<ul>
+<li><code>src/Algorithms/ParallelTracker.cpp</code></li>
+</ul>
+</section>
+<section id="moving-reference-frame" class="level5">
+<h5 class="anchored" data-anchor-id="moving-reference-frame">Moving Reference Frame</h5>
+<p>Each particle container stores the current moving reference state:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>refPartR_m</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>refPartP_m</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>sPos_m</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>toLabTrafo_m</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Useful accessors:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>getRefPartR<span class="op">()</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>getRefPartP<span class="op">()</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>get_sPos<span class="op">()</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>getToLabTrafo<span class="op">()</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>pc<span class="op">-&gt;</span>updateRefToLabCSTrafo<span class="op">(</span>dt<span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Relevant file:</p>
+<ul>
+<li><code>src/PartBunch/ParticleContainer.hpp</code></li>
+</ul>
+</section>
+<section id="beam-frame-for-space-charge" class="level5">
+<h5 class="anchored" data-anchor-id="beam-frame-for-space-charge">Beam Frame for Space Charge</h5>
+<p><code>ParallelTracker::computeSpaceChargeFields()</code> temporarily transforms the bunch into a beam frame whose origin is the reference particle and whose local <code>z</code> axis is aligned with the mean momentum.</p>
+<p>The code builds:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo beamToReferenceCSTrafo<span class="op">(</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Vector_t</span><span class="op">&lt;</span><span class="dt">double</span><span class="op">,</span> <span class="dv">3</span><span class="op">&gt;(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> pc<span class="op">-&gt;</span>get_sPos<span class="op">()),</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    alignment<span class="op">.</span>conjugate<span class="op">());</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>CoordinateSystemTrafo referenceToBeamCSTrafo <span class="op">=</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    beamToReferenceCSTrafo<span class="op">.</span>inverted<span class="op">();</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then it transforms particle positions to the beam frame, solves self-fields, and transforms positions and fields back to the reference frame.</p>
+<p>Relevant file:</p>
+<ul>
+<li><code>src/Algorithms/ParallelTracker.cpp</code></li>
+</ul>
+</section>
+<section id="adaptive-bin-rest-frames" class="level5">
+<h5 class="anchored" data-anchor-id="adaptive-bin-rest-frames">Adaptive-Bin Rest Frames</h5>
+<p>The binned space-charge solver does not use a rigid coordinate transform for the rest frame. Instead it computes per-bin kinematics:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>BinnedFieldSolver<span class="op">::</span>BinKinematics <span class="op">{</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Vector_t</span><span class="op">&lt;</span><span class="dt">double</span><span class="op">,</span> Dim<span class="op">&gt;</span> pmean<span class="op">;</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> gammaBin<span class="op">;</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The solver treats the mesh field as a bin-frame electric field <code>E'</code>, applies the Lorentz scaling, and accumulates lab-frame <code>E</code> and <code>B</code>.</p>
+<p>Relevant file:</p>
+<ul>
+<li><code>src/PartBunch/BinnedFieldSolver.h</code></li>
+</ul>
+</section>
+</section>
+<section id="notes-and-terminology-cleanup" class="level4">
+<h4 class="anchored" data-anchor-id="notes-and-terminology-cleanup">Notes and Terminology Cleanup</h4>
+<p>The current implementation would be easier to reason about if the transform names were made explicit:</p>
+<ul>
+<li><code>Lab2Element</code></li>
+<li><code>Element2Lab</code></li>
+<li><code>Reference2Lab</code></li>
+<li><code>Lab2Reference</code></li>
+<li><code>Reference2Element</code></li>
+<li><code>Element2Reference</code></li>
+</ul>
+<p>In the current code, <code>getCSTrafoLab2Local()</code> returns <code>getCSTrafoGlobal2Local()</code>. This is mathematically fine because <code>lab</code>, <code>global</code>, and <code>floor</code> are aliases here, but the naming obscures the intended frame chain.</p>
+</section>
+</section>
+<section id="boosted-frenet-serret-frame" class="level3" data-number="10.7.2">
+<h3 data-number="10.7.2" class="anchored" data-anchor-id="boosted-frenet-serret-frame"><span class="header-section-number">10.7.2</span> Boosted Frenet-Serret frame</h3>
 <p>The next refinement step here should be:</p>
 <ol type="1">
 <li>align the boosted-frame notation with the field-solver sections,</li>
@@ -1516,6 +1847,7 @@ t(z,\varphi) \simeq \frac{z}{\beta c}+t_0 .
 <figcaption>Boosted Frenet-Serret-style frame used as a draft field-solver frame. The marked point denotes the bunch centroid, the dashed horizontal line indicates the longitudinal beam direction, the heavy diagonal arrow indicates the boost direction, and the dashed rectangle indicates the solver box in the boosted frame.</figcaption>
 </figure>
 </div>
+</section>
 </section>
 <section id="low-energy-e-e-in-a-high-energy-coulomb-field" class="level2" data-number="10.8">
 <h2 data-number="10.8" class="anchored" data-anchor-id="low-energy-e-e-in-a-high-energy-coulomb-field"><span class="header-section-number">10.8</span> Low Energy e-/e+ in a High Energy Coulomb Field</h2>
@@ -1585,16 +1917,9 @@ z_s = z_w + (s_w - s_s),
 <li>one-rank versus two-rank comparisons for the gamma-gamma pair input;</li>
 <li>conservation and reproducibility diagnostics for the source container when witnesses are enabled, verifying that witness charge is not deposited on the BeamBeam source mesh.</li>
 </ol>
-</section>
-</section>
-<section id="todo" class="level2" data-number="10.9">
-<h2 data-number="10.9" class="anchored" data-anchor-id="todo"><span class="header-section-number">10.9</span> ToDo</h2>
-<ol type="1">
-<li>OrbitThreader: a short note on <code>trackBack()</code> and why the path is traced slightly backward before the forward pass,</li>
-<li>OrbitThreader: a diagram of the two internal models: <code>ReferencePathModel</code> versus action-range registration,</li>
-</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

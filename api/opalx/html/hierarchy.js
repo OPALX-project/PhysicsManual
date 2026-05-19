@@ -11,7 +11,6 @@ var hierarchy =
     ] ],
     [ "AbstractSpline::Accelerator", "classAbstractSpline_1_1Accelerator.html", null ],
     [ "ParticleBinning::AdaptBinsBase< BunchType >", "classParticleBinning_1_1AdaptBinsBase.html", [
-      [ "ParticleBinning::AdaptBins< Container_t, Selector_t >", "classParticleBinning_1_1AdaptBins.html", null ],
       [ "ParticleBinning::AdaptBins< BunchType, BinningSelector >", "classParticleBinning_1_1AdaptBins.html", null ]
     ] ],
     [ "mslang::AffineTransformation", "structmslang_1_1AffineTransformation.html", null ],
@@ -71,6 +70,10 @@ var hierarchy =
       ] ]
     ] ],
     [ "BiMap< Left, Right >", "classBiMap.html", null ],
+    [ "BiMap< CavityType, std::string >", "classBiMap.html", null ],
+    [ "BiMap< DumpFrame, std::string >", "classBiMap.html", null ],
+    [ "BiMap< ParticleType, std::string >", "classBiMap.html", null ],
+    [ "BiMap< RunMethod, std::string >", "classBiMap.html", null ],
     [ "matheval::detail::binary_op< real_t >", "structmatheval_1_1detail_1_1binary__op.html", null ],
     [ "BinConfigWriter", "classBinConfigWriter.html", null ],
     [ "BinnedFieldSolver< T, Dim >::BinKinematics", "classBinnedFieldSolver.html#structBinnedFieldSolver_1_1BinKinematics", null ],
@@ -129,6 +132,7 @@ var hierarchy =
     [ "EMField", "classEMField.html", [
       [ "DummyField", "classDummyField.html", null ],
       [ "DummyFieldTW", "classDummyFieldTW.html", null ],
+      [ "DummyMonitorField", "classDummyMonitorField.html", null ],
       [ "NullField", "classNullField.html", null ],
       [ "StaticElectricField", "classStaticElectricField.html", [
         [ "ConstEzField", "classConstEzField.html", [
@@ -146,8 +150,6 @@ var hierarchy =
     [ "std::enable_shared_from_this", null, [
       [ "ElementBase", "classElementBase.html", [
         [ "Beamline", "classBeamline.html", [
-          [ "TBeamline< FlaggedElmPtr >", "classTBeamline.html", null ],
-          [ "TBeamline< SequenceMember >", "classTBeamline.html", null ],
           [ "DummyBeamline", "classDummyBeamline.html", null ],
           [ "DummyBeamline", "classDummyBeamline.html", null ],
           [ "DummyBeamline", "classDummyBeamline.html", null ],
@@ -176,7 +178,8 @@ var hierarchy =
             [ "MarkerRep", "classMarkerRep.html", null ]
           ] ],
           [ "Monitor", "classMonitor.html", [
-            [ "MonitorRep", "classMonitorRep.html", null ]
+            [ "MonitorRep", "classMonitorRep.html", null ],
+            [ "TestMonitor", "classTestMonitor.html", null ]
           ] ],
           [ "Multipole", "classMultipole.html", [
             [ "MultipoleRep", "classMultipoleRep.html", null ]
@@ -227,6 +230,7 @@ var hierarchy =
     [ "FieldContainer< T, Dim >", "classFieldContainer.html", null ],
     [ "Fieldmap", "classFieldmap.html", [
       [ "Astra1DDynamic", "classAstra1DDynamic.html", null ],
+      [ "Astra1DMagnetoStatic", "classAstra1DMagnetoStatic.html", null ],
       [ "FM2DDynamic", "classFM2DDynamic.html", null ],
       [ "FM2DMagnetoStatic", "classFM2DMagnetoStatic.html", null ],
       [ "FakeFieldmap", "classFakeFieldmap.html", null ],
@@ -284,7 +288,7 @@ var hierarchy =
     [ "gsl_fft_halfcomplex_workspace", "GSLFFT_8h.html#structgsl__fft__halfcomplex__workspace", null ],
     [ "gsl_fft_real_wavetable", "GSLFFT_8h.html#structgsl__fft__real__wavetable", null ],
     [ "gsl_fft_real_workspace", "GSLFFT_8h.html#structgsl__fft__real__workspace", null ],
-    [ "gsl_function", "GSLIntegration_8h.html#structgsl__function", null ],
+    [ "gsl_function", "structgsl__function.html", null ],
     [ "gsl_histogram", "classgsl__histogram.html", null ],
     [ "gsl_histogram2d", "classgsl__histogram2d.html", null ],
     [ "gsl_histogram2d_pdf", "classgsl__histogram2d__pdf.html", null ],
@@ -303,6 +307,9 @@ var hierarchy =
     [ "H5Writer", "classH5Writer.html", null ],
     [ "LinearBreitWheelerBenchmark::Histogram", "namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1Histogram", null ],
     [ "ParticleBinning::Histogram< size_type, bin_index_type, value_type, UseDualView, Properties >", "classParticleBinning_1_1Histogram.html", null ],
+    [ "opalx::test::Histogram1D", "structopalx_1_1test_1_1Histogram1D.html", null ],
+    [ "ParticleBinning::Histogram< size_type, bin_index_type, value_type, false, Kokkos::HostSpace >", "classParticleBinning_1_1Histogram.html", null ],
+    [ "ParticleBinning::Histogram< size_type, bin_index_type, value_type, true >", "classParticleBinning_1_1Histogram.html", null ],
     [ "LinearBreitWheelerBenchmark::HistogramConfig", "namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1HistogramConfig", null ],
     [ "matheval::detail::holds_alternative_impl< T >", "structmatheval_1_1detail_1_1holds__alternative__impl.html", null ],
     [ "ParticleBinning::HostArrayReduction< SizeType, IndexType >", "structParticleBinning_1_1HostArrayReduction.html", null ],
@@ -338,8 +345,6 @@ var hierarchy =
     [ "BiMap< Left, Right >::left_view", "structBiMap_1_1left__view.html", null ],
     [ "std::less< SetStatistics >", "structstd_1_1less_3_01SetStatistics_01_4.html", null ],
     [ "std::list< T >", null, [
-      [ "TBeamline< FlaggedElmPtr >", "classTBeamline.html", null ],
-      [ "TBeamline< SequenceMember >", "classTBeamline.html", null ],
       [ "SDDS::arrayList", "structSDDS_1_1arrayList.html", null ],
       [ "SDDS::associateList", "structSDDS_1_1associateList.html", null ],
       [ "SDDS::includeList", "structSDDS_1_1includeList.html", null ],
@@ -365,6 +370,8 @@ var hierarchy =
     ] ],
     [ "Matrix3D", "classMatrix3D.html", null ],
     [ "matrix_t< Rows, Cols >", "structmatrix__t.html", null ],
+    [ "matrix_t< 3, 3 >", "structmatrix__t.html", null ],
+    [ "matrix_t< 6, 6 >", "structmatrix__t.html", null ],
     [ "MaxArray< N >", "structMaxArray.html", null ],
     [ "interpolation::Mesh", "classinterpolation_1_1Mesh.html", [
       [ "interpolation::NDGrid", "classinterpolation_1_1NDGrid.html", null ],
@@ -376,6 +383,7 @@ var hierarchy =
     [ "MinArray< N >", "structMinArray.html", null ],
     [ "Misalignment", "classMisalignment.html", null ],
     [ "interpolation::MMatrix< Tmplt >", "classinterpolation_1_1MMatrix.html", null ],
+    [ "interpolation::MMatrix< double >", "classinterpolation_1_1MMatrix.html", null ],
     [ "MultipoleTBase", "classMultipoleTBase.html", [
       [ "MultipoleTBaseTest", "classMultipoleTBaseTest.html", null ],
       [ "MultipoleTCurvedConstRadius", "classMultipoleTCurvedConstRadius.html", null ],
@@ -419,6 +427,7 @@ var hierarchy =
       [ "Definition", "classDefinition.html", [
         [ "Beam", "classBeam.html", null ],
         [ "BinningCmd", "classBinningCmd.html", [
+          [ "TestableBinningCmd", "classTestableBinningCmd.html", null ],
           [ "TestableBinningCmd", "classTestableBinningCmd.html", null ]
         ] ],
         [ "BoundaryGeometry", "classBoundaryGeometry.html", null ],
@@ -517,15 +526,12 @@ var hierarchy =
     ] ],
     [ "PartData", "classPartData.html", null ],
     [ "ippl::ParticleBase", null, [
-      [ "ParticleContainer< double, 3 >", "classParticleContainer.html", null ],
-      [ "ParticleContainer< T, Dim >", "classParticleContainer.html", null ],
       [ "ParticleContainer< T, Dim >", "classParticleContainer.html", null ],
       [ "TestBunch", "structTestBunch.html", null ]
     ] ],
     [ "ParticleProperties", "classParticleProperties.html", null ],
     [ "PeakFinder", "classPeakFinder.html", null ],
     [ "ippl::PicManager", null, [
-      [ "PartBunch< double, 3 >", "classPartBunch.html", null ],
       [ "PartBunch< T, Dim >", "classPartBunch.html", null ]
     ] ],
     [ "PlacedElement", "classPlacedElement.html", null ],
@@ -540,12 +546,17 @@ var hierarchy =
     [ "PortableGraymapReader", "classPortableGraymapReader.html", null ],
     [ "interpolation::PPSolveFactory", "classinterpolation_1_1PPSolveFactory.html", null ],
     [ "Expressions::PtrToArray< T >", "classExpressions_1_1PtrToArray.html", null ],
+    [ "Expressions::PtrToArray< U >", "classExpressions_1_1PtrToArray.html", null ],
     [ "Expressions::PtrToScalar< T >", "classExpressions_1_1PtrToScalar.html", null ],
+    [ "Expressions::PtrToScalar< double >", "classExpressions_1_1PtrToScalar.html", null ],
+    [ "Expressions::PtrToScalar< U >", "classExpressions_1_1PtrToScalar.html", null ],
     [ "mslang::QuadTree", "structmslang_1_1QuadTree.html", null ],
     [ "Random", "classRandom.html", null ],
     [ "IndexMap::Range", "classIndexMap.html#structIndexMap_1_1Range", null ],
     [ "RangeRep", "classRangeRep.html", null ],
+    [ "EmittedFromFile::RawRecord", "classEmittedFromFile.html#structEmittedFromFile_1_1RawRecord", null ],
     [ "Ray", "classRay.html", null ],
+    [ "EmittedFromFile::Record", "classEmittedFromFile.html#structEmittedFromFile_1_1Record", null ],
     [ "matheval::detail::recursive_wrapper< T >", "structmatheval_1_1detail_1_1recursive__wrapper.html", null ],
     [ "Kokkos::reduction_identity< MaxArray< N > >", "structKokkos_1_1reduction__identity_3_01MaxArray_3_01N_01_4_01_4.html", null ],
     [ "Kokkos::reduction_identity< MinArray< N > >", "structKokkos_1_1reduction__identity_3_01MinArray_3_01N_01_4_01_4.html", null ],
@@ -573,10 +584,12 @@ var hierarchy =
     [ "Physics::LinearCompton::SampledEvent", "namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SampledEvent", null ],
     [ "LinearBreitWheelerBenchmark::SampledPhotonBeamState", "namespaceLinearBreitWheelerBenchmark.html#structLinearBreitWheelerBenchmark_1_1SampledPhotonBeamState", null ],
     [ "SamplingBase", "classSamplingBase.html", [
+      [ "EmittedFromFile", "classEmittedFromFile.html", null ],
       [ "FlatTop", "classFlatTop.html", null ],
       [ "FromFile", "classFromFile.html", null ],
       [ "Gaussian", "classGaussian.html", null ],
-      [ "MultiVariateGaussian", "classMultiVariateGaussian.html", null ]
+      [ "MultiVariateGaussian", "classMultiVariateGaussian.html", null ],
+      [ "OpalFlatTop", "classOpalFlatTop.html", null ]
     ] ],
     [ "Physics::LinearBreitWheeler::SamplingKernel", "namespacePhysics_1_1LinearBreitWheeler.html#structPhysics_1_1LinearBreitWheeler_1_1SamplingKernel", null ],
     [ "Physics::LinearCompton::SamplingKernel", "namespacePhysics_1_1LinearCompton.html#structPhysics_1_1LinearCompton_1_1SamplingKernel", null ],
@@ -631,6 +644,7 @@ var hierarchy =
     [ "TableRowRep", "classTableRowRep.html", null ],
     [ "testing::Test", null, [
       [ "Astra1DDynamicTest", "classAstra1DDynamicTest.html", null ],
+      [ "Astra1DMagnetoStaticTest", "classAstra1DMagnetoStaticTest.html", null ],
       [ "BCHandlerTest", "classBCHandlerTest.html", null ],
       [ "BiMapTest", "classBiMapTest.html", null ],
       [ "BinConfigWriterTest", "classBinConfigWriterTest.html", null ],
@@ -641,6 +655,7 @@ var hierarchy =
       [ "CubicSplineTest", "classCubicSplineTest.html", null ],
       [ "DirichletPlaneWriterTest", "classDirichletPlaneWriterTest.html", null ],
       [ "DistributionMomentsTest", "classDistributionMomentsTest.html", null ],
+      [ "EmittedFromFileTest", "classEmittedFromFileTest.html", null ],
       [ "FFTTest", "classFFTTest.html", null ],
       [ "FM2DDynamicTest", "classFM2DDynamicTest.html", null ],
       [ "FM2DMagnetoStaticTest", "classFM2DMagnetoStaticTest.html", null ],
@@ -656,9 +671,11 @@ var hierarchy =
       [ "GaussianTest", "classGaussianTest.html", null ],
       [ "HistogramTest", "classHistogramTest.html", null ],
       [ "LinearSplineTest", "classLinearSplineTest.html", null ],
+      [ "MonitorTest", "classMonitorTest.html", null ],
       [ "MultiVariateGaussianTest", "classMultiVariateGaussianTest.html", null ],
       [ "MultipoleTBaseTest", "classMultipoleTBaseTest.html", null ],
       [ "OpalBeamlinePlacementTest", "classOpalBeamlinePlacementTest.html", null ],
+      [ "OpalFlatTopTest", "classOpalFlatTopTest.html", null ],
       [ "OrbitThreaderTest", "classOrbitThreaderTest.html", null ],
       [ "PlacedElementTest", "classPlacedElementTest.html", null ],
       [ "QuasiRandomTest", "classQuasiRandomTest.html", null ],
@@ -675,9 +692,10 @@ var hierarchy =
       [ "TestVariableRFCavity", "classTestVariableRFCavity.html", null ],
       [ "TravelingWaveTest", "classTravelingWaveTest.html", null ]
     ] ],
-    [ "Expressions::TFunction0< T >", "namespaceExpressions.html#structExpressions_1_1TFunction0", null ],
-    [ "Expressions::TFunction1< T, U >", "namespaceExpressions.html#structExpressions_1_1TFunction1", null ],
-    [ "Expressions::TFunction2< T, U >", "namespaceExpressions.html#structExpressions_1_1TFunction2", null ],
+    [ "Expressions::TFunction0< T >", "structExpressions_1_1TFunction0.html", null ],
+    [ "Expressions::TFunction1< T, U >", "structExpressions_1_1TFunction1.html", null ],
+    [ "Expressions::TFunction1< T, const std::vector< T > & >", "structExpressions_1_1TFunction1.html", null ],
+    [ "Expressions::TFunction2< T, U >", "structExpressions_1_1TFunction2.html", null ],
     [ "OPALTimer::Timer", "classOPALTimer_1_1Timer.html", null ],
     [ "Token", "classToken.html", null ],
     [ "TokenStream", "classTokenStream.html", [
@@ -698,6 +716,8 @@ var hierarchy =
     [ "matheval::detail::unary_op< real_t >", "structmatheval_1_1detail_1_1unary__op.html", null ],
     [ "SDDS::parser::ValueParser", "classSDDS_1_1parser_1_1ValueParser.html", null ],
     [ "ValueRange< T >", "classValueRange.html", null ],
+    [ "ValueRange< double >", "classValueRange.html", null ],
+    [ "ValueRange< long >", "classValueRange.html", null ],
     [ "ippl::Vector", null, [
       [ "Quaternion", "classQuaternion.html", null ]
     ] ],

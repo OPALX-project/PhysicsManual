@@ -1,91 +1,102 @@
 <map id="AbstractSpline.h" name="AbstractSpline.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="1660,5,1777,31"/>
-<area shape="rect" id="Node000002" href="$AbstractSpline_8cpp.html" title=" " alt="" coords="1512,79,1643,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1684,37,1602,81,1601,76,1679,39"/>
-<area shape="rect" id="Node000003" href="$CubicSpline_8h.html" title=" " alt="" coords="1668,79,1770,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1720,44,1721,80,1717,77,1717,49"/>
-<area shape="rect" id="Node000035" href="$LinearSpline_8h.html" title=" " alt="" coords="1856,79,1960,105"/>
-<area shape="poly" id="edge48_Node000001_Node000035" title=" " alt="" coords="1765,34,1878,79,1873,78,1764,39"/>
-<area shape="rect" id="Node000004" href="$CubicSpline_8cpp.html" title=" " alt="" coords="1531,153,1648,178"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1686,112,1612,155,1610,150,1681,113"/>
-<area shape="rect" id="Node000005" href="$GSLSpline_8h.html" title=" " alt="" coords="1672,153,1766,178"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1720,118,1721,154,1717,150,1717,122"/>
-<area shape="rect" id="Node000028" href="$TestCubicSpline_8cpp.html" title="Unit tests for CubicSpline interpolation (replacement for gsl_spline)" alt="" coords="5,226,147,252"/>
-<area shape="poly" id="edge47_Node000003_Node000028" title=" " alt="" coords="1649,105,1426,134,1234,153,908,174,582,193,391,207,166,229,148,231,146,226,165,224,390,202,581,188,907,169,1234,147,1426,129,1655,104"/>
-<area shape="rect" id="Node000029" href="$SplineTimeDependence_8h.html" title=" " alt="" coords="1823,153,1993,178"/>
-<area shape="poly" id="edge41_Node000003_Node000029" title=" " alt="" coords="1765,108,1878,152,1873,152,1764,113"/>
-<area shape="rect" id="Node000006" href="$Astra1DDynamic_8cpp.html" title=" " alt="" coords="1916,374,2062,399"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1728,190,1745,223,1756,238,1769,250,1810,269,1850,275,1888,271,1926,264,1964,257,2000,257,2036,269,2053,281,2070,298,2076,309,2076,321,2064,342,2041,361,2016,376,2014,370,2038,356,2060,339,2071,320,2071,311,2066,302,2050,285,2033,274,1999,263,1964,262,1927,269,1889,276,1849,280,1808,274,1767,254,1752,241,1740,226,1725,195"/>
-<area shape="rect" id="Node000007" href="$Fieldmap_8h.html" title=" " alt="" coords="1271,226,1356,252"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1659,179,1357,233,1356,228,1654,179"/>
-<area shape="rect" id="Node000015" href="$RFCavity_8cpp.html" title=" " alt="" coords="184,374,285,399"/>
-<area shape="poly" id="edge39_Node000005_Node000015" title=" " alt="" coords="1654,179,1539,188,1361,193,908,208,677,220,474,239,390,252,321,266,270,283,239,302,230,318,228,337,233,375,228,372,222,337,225,316,235,298,267,278,319,261,389,246,474,234,677,215,907,202,1360,188,1539,182,1659,178"/>
-<area shape="poly" id="edge40_Node000005_Node000028" title=" " alt="" coords="1654,179,1430,202,1238,212,1068,215,910,213,583,210,391,215,166,229,148,230,146,226,165,224,391,209,583,204,910,208,1068,209,1238,207,1430,197,1659,178"/>
-<area shape="rect" id="Node000008" href="$Astra1DDynamic_8h.html" title=" " alt="" coords="1923,300,2056,326"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1371,243,1607,264,1911,297,1926,302,1920,301,1910,303,1607,270,1371,248"/>
-<area shape="rect" id="Node000009" href="$Fieldmap_8cpp.html" title=" " alt="" coords="1388,374,1487,399"/>
-<area shape="poly" id="edge22_Node000007_Node000009" title=" " alt="" coords="1344,259,1387,298,1415,338,1434,375,1429,372,1411,340,1383,302,1342,264"/>
-<area shape="rect" id="Node000010" href="$TestAstra1DDynamic_8cpp.html" title="Unit tests for Astra1DDynamic fieldmap class." alt="" coords="2244,374,2415,399"/>
-<area shape="poly" id="edge32_Node000007_Node000010" title=" " alt="" coords="1372,240,1745,259,1953,276,2039,286,2105,297,2162,313,2218,333,2307,373,2302,373,2216,338,2161,318,2103,303,2039,292,1953,282,1745,265,1372,245"/>
-<area shape="rect" id="Node000011" href="$TravelingWave_8cpp.html" title=" " alt="" coords="2087,374,2220,399"/>
-<area shape="poly" id="edge38_Node000007_Node000011" title=" " alt="" coords="1372,240,1759,260,1956,277,2027,287,2069,298,2095,313,2117,334,2148,374,2143,372,2113,337,2092,318,2067,302,2026,292,1956,282,1758,266,1372,245"/>
-<area shape="rect" id="Node000012" href="$DataSink_8cpp.html" title=" " alt="" coords="1675,300,1776,326"/>
-<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="1372,248,1678,303,1672,303,1371,253"/>
-<area shape="rect" id="Node000013" href="$FM2DDynamic_8h.html" title=" " alt="" coords="1253,300,1374,326"/>
-<area shape="poly" id="edge13_Node000007_Node000013" title=" " alt="" coords="1315,266,1315,301,1311,298,1311,269"/>
-<area shape="poly" id="edge30_Node000007_Node000015" title=" " alt="" coords="1253,240,1022,243,709,249,554,256,419,267,317,282,283,292,262,302,249,318,241,337,236,375,232,372,236,336,244,315,258,298,281,287,316,277,419,262,554,251,708,244,1022,237,1258,240"/>
-<area shape="rect" id="Node000016" href="$TestFM2DDynamic_8cpp.html" title="Unit tests for FM2DDynamic fieldmap class." alt="" coords="1046,374,1205,399"/>
-<area shape="poly" id="edge33_Node000007_Node000016" title=" " alt="" coords="1289,261,1142,376,1140,371,1284,262"/>
-<area shape="rect" id="Node000017" href="$FM2DMagnetoStatic_8h.html" title=" " alt="" coords="1448,300,1600,326"/>
-<area shape="poly" id="edge18_Node000007_Node000017" title=" " alt="" coords="1364,255,1491,300,1485,299,1363,260"/>
-<area shape="rect" id="Node000019" href="$TestFM2DMagnetoStatic_8cpp.html" title="Unit tests for FM2DMagnetoStatic fieldmap class." alt="" coords="1511,374,1702,399"/>
-<area shape="poly" id="edge34_Node000007_Node000019" title=" " alt="" coords="1371,241,1438,247,1510,258,1574,274,1598,285,1614,298,1623,317,1624,338,1614,375,1610,371,1618,337,1618,318,1610,302,1595,290,1572,279,1509,263,1437,252,1371,246"/>
-<area shape="rect" id="Node000020" href="$Fieldmap_8hpp.html" title=" " alt="" coords="1800,300,1899,326"/>
-<area shape="poly" id="edge23_Node000007_Node000020" title=" " alt="" coords="1372,244,1558,266,1788,297,1802,302,1797,302,1788,303,1557,271,1372,249"/>
-<area shape="rect" id="Node000021" href="$Main_8cpp.html" title=" " alt="" coords="272,300,346,326"/>
-<area shape="poly" id="edge27_Node000007_Node000021" title=" " alt="" coords="1252,241,1099,246,877,255,620,273,488,286,359,303,348,305,346,299,358,297,487,281,620,267,877,250,1099,241,1258,241"/>
-<area shape="rect" id="Node000022" href="$Monitor_8cpp.html" title=" " alt="" coords="370,300,459,326"/>
-<area shape="poly" id="edge28_Node000007_Node000022" title=" " alt="" coords="1252,242,921,260,698,277,471,303,460,304,459,299,470,297,697,272,921,255,1258,242"/>
-<area shape="rect" id="Node000023" href="$Multipole_8cpp.html" title=" " alt="" coords="483,300,581,326"/>
-<area shape="poly" id="edge29_Node000007_Node000023" title=" " alt="" coords="1252,244,970,264,783,281,594,303,582,304,581,299,593,297,782,275,970,259,1258,243"/>
-<area shape="rect" id="Node000024" href="$Solenoid_8cpp.html" title=" " alt="" coords="605,300,702,326"/>
-<area shape="poly" id="edge31_Node000007_Node000024" title=" " alt="" coords="1253,245,1019,267,867,283,714,303,702,304,701,299,713,297,866,278,1018,262,1258,244"/>
-<area shape="rect" id="Node000025" href="$TestRFCavity_8cpp.html" title="Unit tests for RFCavity component (base layer)." alt="" coords="725,300,851,326"/>
-<area shape="poly" id="edge35_Node000007_Node000025" title=" " alt="" coords="1258,247,863,303,851,304,851,299,862,297,1253,248"/>
-<area shape="rect" id="Node000026" href="$TestSolenoid_8cpp.html" title=" " alt="" coords="875,300,997,326"/>
-<area shape="poly" id="edge36_Node000007_Node000026" title=" " alt="" coords="1258,251,997,303,996,297,1252,252"/>
-<area shape="rect" id="Node000027" href="$TestTravelingWave_8cpp.html" title="Unit tests for TravelingWave component." alt="" coords="1021,300,1179,326"/>
-<area shape="poly" id="edge37_Node000007_Node000027" title=" " alt="" coords="1266,257,1137,302,1136,297,1260,258"/>
-<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="1991,339,1991,375,1987,371,1987,343"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1910,326,1702,351,1499,376,1488,378,1487,373,1498,371,1701,346,1905,326"/>
-<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="2063,327,2274,373,2269,373,2062,332"/>
-<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="2032,330,2128,374,2123,373,2031,335"/>
-<area shape="poly" id="edge15_Node000013_Node000009" title=" " alt="" coords="1348,331,1419,374,1414,372,1346,336"/>
-<area shape="rect" id="Node000014" href="$FM2DDynamic_8cpp.html" title=" " alt="" coords="1229,374,1363,399"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1309,339,1301,375,1297,371,1305,342"/>
-<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="1240,321,1191,328,662,364,286,385,285,380,662,359,1190,323,1235,322"/>
-<area shape="poly" id="edge17_Node000013_Node000016" title=" " alt="" coords="1270,331,1158,376,1157,370,1265,332"/>
-<area shape="poly" id="edge20_Node000017_Node000009" title=" " alt="" coords="1500,335,1453,376,1451,371,1495,337"/>
-<area shape="rect" id="Node000018" href="$FM2DMagnetoStatic_8cpp.html" title=" " alt="" coords="1726,374,1892,399"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1588,327,1763,373,1758,373,1587,333"/>
-<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="1551,334,1595,374,1590,372,1549,339"/>
-<area shape="poly" id="edge24_Node000020_Node000006" title=" " alt="" coords="1887,330,1968,374,1963,373,1886,336"/>
-<area shape="poly" id="edge25_Node000020_Node000014" title=" " alt="" coords="1787,326,1579,354,1376,376,1364,378,1363,373,1376,371,1579,349,1782,326"/>
-<area shape="poly" id="edge26_Node000020_Node000018" title=" " alt="" coords="1838,338,1817,375,1815,371,1833,341"/>
-<area shape="rect" id="Node000030" href="$OpalSplineTimeDependence_8cpp.html" title=" " alt="" coords="1780,226,1991,252"/>
-<area shape="poly" id="edge42_Node000029_Node000030" title=" " alt="" coords="1902,191,1891,228,1887,224,1898,195"/>
-<area shape="rect" id="Node000031" href="$SplineTimeDependence_8cpp.html" title=" " alt="" coords="2014,226,2199,252"/>
-<area shape="poly" id="edge43_Node000029_Node000031" title=" " alt="" coords="1956,181,2075,226,2070,225,1955,187"/>
-<area shape="rect" id="Node000032" href="$TestMultipoleT_8cpp.html" title=" " alt="" coords="2223,226,2353,252"/>
-<area shape="poly" id="edge44_Node000029_Node000032" title=" " alt="" coords="1988,179,2226,226,2221,226,1988,184"/>
-<area shape="rect" id="Node000033" href="$TestOpalSplineTimeDependence_8cpp.html" title=" " alt="" coords="2376,226,2613,252"/>
-<area shape="poly" id="edge45_Node000029_Node000033" title=" " alt="" coords="2008,176,2397,226,2392,226,2008,182"/>
-<area shape="rect" id="Node000034" href="$TestSplineTimeDependence_8cpp.html" title=" " alt="" coords="2637,226,2846,252"/>
-<area shape="poly" id="edge46_Node000029_Node000034" title=" " alt="" coords="2008,176,2319,201,2626,224,2639,227,2634,227,2625,229,2318,206,2008,181"/>
-<area shape="poly" id="edge49_Node000035_Node000005" title=" " alt="" coords="1865,110,1752,155,1750,149,1859,111"/>
-<area shape="poly" id="edge51_Node000035_Node000029" title=" " alt="" coords="1910,118,1910,154,1906,150,1906,122"/>
-<area shape="rect" id="Node000036" href="$LinearSpline_8cpp.html" title=" " alt="" coords="2017,153,2135,178"/>
-<area shape="poly" id="edge50_Node000035_Node000036" title=" " alt="" coords="1951,108,2050,152,2045,152,1950,114"/>
-<area shape="rect" id="Node000037" href="$TestLinearSpline_8cpp.html" title=" " alt="" coords="2158,153,2300,178"/>
-<area shape="poly" id="edge52_Node000035_Node000037" title=" " alt="" coords="1975,105,2177,152,2172,152,1975,111"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1510,5,1638,31"/>
+<area shape="rect" id="Node000002" href="$AbstractSpline_8cpp.html" title=" " alt="" coords="1352,79,1495,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1539,39,1449,81,1447,76,1536,34"/>
+<area shape="rect" id="Node000003" href="$CubicSpline_8h.html" title=" " alt="" coords="1519,79,1629,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1577,44,1577,79,1571,79,1571,44"/>
+<area shape="rect" id="Node000038" href="$LinearSpline_8h.html" title=" " alt="" coords="2347,79,2462,104"/>
+<area shape="poly" id="edge56_Node000001_Node000038" title=" " alt="" coords="1652,23,2347,82,2347,88,1651,29"/>
+<area shape="rect" id="Node000004" href="$CubicSpline_8cpp.html" title=" " alt="" coords="1375,152,1501,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1542,113,1461,154,1459,149,1539,108"/>
+<area shape="rect" id="Node000005" href="$GSLSpline_8h.html" title=" " alt="" coords="1525,152,1623,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1577,118,1577,152,1571,152,1571,118"/>
+<area shape="rect" id="Node000031" href="$TestCubicSpline_8cpp.html" title="Unit tests for CubicSpline interpolation (replacement for gsl_spline)" alt="" coords="5,225,156,251"/>
+<area shape="poly" id="edge55_Node000003_Node000031" title=" " alt="" coords="1505,107,1131,149,839,172,548,194,176,228,156,230,156,225,175,223,547,188,838,167,1130,144,1505,101"/>
+<area shape="rect" id="Node000032" href="$SplineTimeDependence_8h.html" title=" " alt="" coords="2311,152,2499,177"/>
+<area shape="poly" id="edge49_Node000003_Node000032" title=" " alt="" coords="1643,96,2311,153,2310,158,1643,101"/>
+<area shape="rect" id="Node000006" href="$Astra1DDynamic_8cpp.html" title=" " alt="" coords="473,372,632,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1511,180,1401,187,1264,188,956,189,804,196,732,204,666,215,606,230,554,248,511,272,477,300,472,309,472,318,484,337,506,355,530,370,528,374,503,360,480,341,467,320,467,308,473,297,508,267,552,243,605,224,665,210,732,199,803,191,956,183,1264,183,1400,182,1511,175"/>
+<area shape="rect" id="Node000007" href="$Astra1DMagnetoStatic_8cpp.html" title=" " alt="" coords="254,372,449,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1511,180,1364,194,1238,200,1024,200,812,203,688,211,542,228,490,232,443,232,361,229,324,233,289,244,255,265,222,300,216,312,216,322,222,332,233,341,266,357,302,369,301,374,264,362,231,346,218,335,211,324,210,311,217,297,252,261,287,239,323,228,360,224,443,226,490,227,542,223,687,206,812,197,1024,195,1238,195,1363,188,1511,175"/>
+<area shape="rect" id="Node000008" href="$Fieldmap_8h.html" title=" " alt="" coords="1527,225,1621,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1577,191,1577,225,1571,225,1571,191"/>
+<area shape="rect" id="Node000011" href="$RFCavity_8cpp.html" title=" " alt="" coords="2433,372,2539,397"/>
+<area shape="poly" id="edge47_Node000005_Node000011" title=" " alt="" coords="1638,173,2154,248,2231,252,2330,255,2380,259,2426,266,2463,278,2489,297,2499,315,2501,336,2493,372,2488,371,2495,336,2494,317,2485,300,2461,283,2424,271,2380,264,2330,260,2230,257,2154,253,1637,178"/>
+<area shape="poly" id="edge48_Node000005_Node000031" title=" " alt="" coords="1511,180,1308,198,1135,208,983,211,842,211,549,210,378,215,176,228,156,230,156,224,175,223,377,210,549,205,842,205,983,206,1135,203,1308,193,1511,175"/>
+<area shape="rect" id="Node000009" href="$Astra1DDynamic_8h.html" title=" " alt="" coords="1915,299,2059,324"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1635,247,1921,296,1920,301,1635,252"/>
+<area shape="rect" id="Node000010" href="$Fieldmap_8cpp.html" title=" " alt="" coords="1751,372,1861,397"/>
+<area shape="poly" id="edge28_Node000008_Node000010" title=" " alt="" coords="1636,241,1697,248,1761,259,1818,275,1839,285,1853,297,1859,307,1860,318,1853,339,1838,358,1822,373,1819,370,1834,354,1848,336,1855,317,1854,309,1849,300,1836,289,1816,280,1760,264,1696,253,1635,246"/>
+<area shape="poly" id="edge37_Node000008_Node000011" title=" " alt="" coords="1635,237,1836,239,2095,248,2222,255,2332,265,2415,279,2444,287,2462,297,2476,314,2484,334,2489,371,2484,372,2479,336,2472,316,2459,301,2442,292,2414,284,2331,271,2221,260,2095,253,1836,245,1635,242"/>
+<area shape="rect" id="Node000012" href="$TestAstra1DDynamic_8cpp.html" title="Unit tests for Astra1DDynamic fieldmap class." alt="" coords="2223,372,2408,397"/>
+<area shape="poly" id="edge39_Node000008_Node000012" title=" " alt="" coords="1636,239,1841,254,1968,271,2095,296,2187,328,2289,369,2287,374,2186,333,2093,301,1967,276,1840,259,1635,244"/>
+<area shape="rect" id="Node000013" href="$TravelingWave_8cpp.html" title=" " alt="" coords="1885,372,2029,397"/>
+<area shape="poly" id="edge46_Node000008_Node000013" title=" " alt="" coords="1635,239,1753,247,1890,258,2009,275,2051,285,2073,297,2081,310,2080,322,2073,334,2062,344,2031,361,1996,374,1995,370,2028,356,2059,340,2069,330,2075,321,2075,311,2069,301,2049,290,2008,280,1890,263,1752,252,1635,245"/>
+<area shape="rect" id="Node000014" href="$Astra1DMagnetoStatic_8h.html" title=" " alt="" coords="232,299,412,324"/>
+<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="1513,245,1080,267,476,301,413,306,412,300,475,296,1079,261,1512,240"/>
+<area shape="rect" id="Node000015" href="$TestAstra1DMagnetoStatic_8cpp.html" title=" " alt="" coords="9,372,230,397"/>
+<area shape="poly" id="edge40_Node000008_Node000015" title=" " alt="" coords="1513,242,1223,246,819,255,438,272,300,285,252,293,220,301,192,316,167,336,130,374,126,370,163,332,189,312,218,296,251,288,299,280,438,267,818,249,1223,240,1513,237"/>
+<area shape="rect" id="Node000016" href="$DataSink_8cpp.html" title=" " alt="" coords="2185,299,2293,324"/>
+<area shape="poly" id="edge18_Node000008_Node000016" title=" " alt="" coords="1636,242,1869,263,2166,296,2186,299,2185,304,2166,301,1868,268,1635,247"/>
+<area shape="rect" id="Node000017" href="$FM2DDynamic_8h.html" title=" " alt="" coords="2318,299,2449,324"/>
+<area shape="poly" id="edge19_Node000008_Node000017" title=" " alt="" coords="1635,240,1924,261,2305,296,2318,298,2317,303,2304,301,1924,266,1635,246"/>
+<area shape="rect" id="Node000019" href="$TestFM2DDynamic_8cpp.html" title="Unit tests for FM2DDynamic fieldmap class." alt="" coords="2563,372,2734,397"/>
+<area shape="poly" id="edge41_Node000008_Node000019" title=" " alt="" coords="1636,237,1821,241,2068,251,2312,268,2412,281,2488,296,2531,312,2572,332,2634,370,2631,374,2570,337,2529,317,2487,301,2411,286,2311,273,2068,256,1821,247,1635,243"/>
+<area shape="rect" id="Node000020" href="$FM2DMagnetoStatic_8h.html" title=" " alt="" coords="1673,299,1840,324"/>
+<area shape="poly" id="edge24_Node000008_Node000020" title=" " alt="" coords="1617,253,1728,296,1726,301,1615,258"/>
+<area shape="rect" id="Node000022" href="$TestFM2DMagnetoStatic_8cpp.html" title="Unit tests for FM2DMagnetoStatic fieldmap class." alt="" coords="1520,372,1727,397"/>
+<area shape="poly" id="edge42_Node000008_Node000022" title=" " alt="" coords="1593,261,1612,298,1622,338,1626,371,1620,372,1617,339,1608,300,1588,263"/>
+<area shape="rect" id="Node000023" href="$Fieldmap_8hpp.html" title=" " alt="" coords="488,299,599,324"/>
+<area shape="poly" id="edge29_Node000008_Node000023" title=" " alt="" coords="1513,243,1131,259,873,276,610,301,599,303,599,297,610,296,873,271,1131,254,1513,238"/>
+<area shape="rect" id="Node000024" href="$Main_8cpp.html" title=" " alt="" coords="623,299,704,324"/>
+<area shape="poly" id="edge34_Node000008_Node000024" title=" " alt="" coords="1513,243,1173,258,947,275,717,301,705,303,704,298,716,296,946,270,1173,253,1513,238"/>
+<area shape="rect" id="Node000025" href="$Monitor_8cpp.html" title=" " alt="" coords="729,299,827,324"/>
+<area shape="poly" id="edge35_Node000008_Node000025" title=" " alt="" coords="1513,245,1222,263,1032,279,840,301,828,303,827,298,839,296,1032,274,1222,258,1513,239"/>
+<area shape="rect" id="Node000026" href="$Multipole_8cpp.html" title=" " alt="" coords="852,299,963,324"/>
+<area shape="poly" id="edge36_Node000008_Node000026" title=" " alt="" coords="1513,247,1276,267,974,301,963,303,963,298,974,296,1276,262,1512,241"/>
+<area shape="rect" id="Node000027" href="$Solenoid_8cpp.html" title=" " alt="" coords="987,299,1092,324"/>
+<area shape="poly" id="edge38_Node000008_Node000027" title=" " alt="" coords="1513,249,1330,270,1104,301,1092,303,1092,298,1103,296,1329,265,1512,243"/>
+<area shape="rect" id="Node000028" href="$TestRFCavity_8cpp.html" title="Unit tests for RFCavity component (base layer)." alt="" coords="1116,299,1248,324"/>
+<area shape="poly" id="edge43_Node000008_Node000028" title=" " alt="" coords="1513,253,1246,301,1245,296,1512,248"/>
+<area shape="rect" id="Node000029" href="$TestSolenoid_8cpp.html" title=" " alt="" coords="1273,299,1403,324"/>
+<area shape="poly" id="edge44_Node000008_Node000029" title=" " alt="" coords="1524,257,1377,301,1375,296,1522,252"/>
+<area shape="rect" id="Node000030" href="$TestTravelingWave_8cpp.html" title="Unit tests for TravelingWave component." alt="" coords="1427,299,1598,324"/>
+<area shape="poly" id="edge45_Node000008_Node000030" title=" " alt="" coords="1557,263,1525,300,1521,297,1553,260"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="1901,323,1852,327,1495,347,1145,364,632,383,632,378,1145,358,1495,342,1851,321,1901,318"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1947,331,1837,374,1835,369,1945,326"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="2073,321,2421,369,2433,371,2432,377,2420,375,2073,326"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="2054,324,2263,369,2262,374,2053,329"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="1979,338,1964,373,1959,371,1974,336"/>
+<area shape="poly" id="edge15_Node000014_Node000007" title=" " alt="" coords="335,336,349,371,344,373,330,338"/>
+<area shape="poly" id="edge16_Node000014_Node000010" title=" " alt="" coords="426,318,475,321,668,330,831,334,1107,336,1384,342,1547,352,1738,369,1751,371,1751,376,1738,375,1546,358,1384,348,1107,341,831,339,668,335,475,327,426,324"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="278,331,153,374,151,369,276,326"/>
+<area shape="poly" id="edge21_Node000017_Node000010" title=" " alt="" coords="2304,327,2086,350,1873,375,1861,376,1861,371,1872,369,2086,345,2304,321"/>
+<area shape="poly" id="edge22_Node000017_Node000011" title=" " alt="" coords="2413,330,2471,370,2468,374,2410,334"/>
+<area shape="rect" id="Node000018" href="$FM2DDynamic_8cpp.html" title=" " alt="" coords="2053,372,2199,397"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="2330,330,2168,374,2167,369,2328,325"/>
+<area shape="poly" id="edge23_Node000017_Node000019" title=" " alt="" coords="2440,325,2606,369,2605,374,2439,330"/>
+<area shape="poly" id="edge26_Node000020_Node000010" title=" " alt="" coords="1775,334,1800,370,1796,373,1770,337"/>
+<area shape="rect" id="Node000021" href="$FM2DMagnetoStatic_8cpp.html" title=" " alt="" coords="986,372,1167,397"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="1660,325,1168,377,1168,371,1659,320"/>
+<area shape="poly" id="edge27_Node000020_Node000022" title=" " alt="" coords="1725,333,1646,374,1644,369,1722,328"/>
+<area shape="poly" id="edge30_Node000023_Node000006" title=" " alt="" coords="549,337,554,372,549,372,544,338"/>
+<area shape="poly" id="edge31_Node000023_Node000007" title=" " alt="" coords="500,331,384,374,382,369,499,326"/>
+<area shape="poly" id="edge32_Node000023_Node000018" title=" " alt="" coords="613,321,830,339,1014,348,1176,351,1328,349,1641,349,1825,355,2041,369,2053,370,2053,376,2040,375,1824,360,1641,354,1328,355,1176,356,1014,353,830,345,612,327"/>
+<area shape="poly" id="edge33_Node000023_Node000021" title=" " alt="" coords="613,322,986,370,985,376,612,327"/>
+<area shape="rect" id="Node000033" href="$OpalSplineTimeDependence_8cpp.html" title=" " alt="" coords="2167,225,2400,251"/>
+<area shape="poly" id="edge50_Node000032_Node000033" title=" " alt="" coords="2374,187,2305,227,2302,223,2372,182"/>
+<area shape="rect" id="Node000034" href="$SplineTimeDependence_8cpp.html" title=" " alt="" coords="2425,225,2627,251"/>
+<area shape="poly" id="edge51_Node000032_Node000034" title=" " alt="" coords="2438,182,2507,223,2505,227,2435,187"/>
+<area shape="rect" id="Node000035" href="$TestMultipoleT_8cpp.html" title=" " alt="" coords="2652,225,2795,251"/>
+<area shape="poly" id="edge52_Node000032_Node000035" title=" " alt="" coords="2469,178,2672,223,2671,228,2468,183"/>
+<area shape="rect" id="Node000036" href="$TestOpalSplineTimeDependence_8cpp.html" title=" " alt="" coords="2819,225,3078,251"/>
+<area shape="poly" id="edge53_Node000032_Node000036" title=" " alt="" coords="2506,176,2861,223,2861,228,2505,182"/>
+<area shape="rect" id="Node000037" href="$TestSplineTimeDependence_8cpp.html" title=" " alt="" coords="3102,225,3331,251"/>
+<area shape="poly" id="edge54_Node000032_Node000037" title=" " alt="" coords="2513,175,2803,200,3090,223,3102,224,3101,229,3090,228,2803,205,2512,180"/>
+<area shape="poly" id="edge57_Node000038_Node000005" title=" " alt="" coords="2334,101,1624,162,1623,156,2333,96"/>
+<area shape="poly" id="edge59_Node000038_Node000032" title=" " alt="" coords="2407,118,2407,152,2402,152,2402,118"/>
+<area shape="rect" id="Node000039" href="$LinearSpline_8cpp.html" title=" " alt="" coords="2523,152,2652,177"/>
+<area shape="poly" id="edge58_Node000038_Node000039" title=" " alt="" coords="2448,106,2558,149,2556,154,2446,111"/>
+<area shape="rect" id="Node000040" href="$TestLinearSpline_8cpp.html" title=" " alt="" coords="2677,152,2831,177"/>
+<area shape="poly" id="edge60_Node000038_Node000040" title=" " alt="" coords="2475,104,2698,149,2697,155,2474,109"/>
 </map>

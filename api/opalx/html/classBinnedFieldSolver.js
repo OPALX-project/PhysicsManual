@@ -27,7 +27,7 @@ var classBinnedFieldSolver =
     [ "ScatterAttribute", "classBinnedFieldSolver.html#aa881365353e8b978784265cb2a381452", [
       [ "ChargeQ", "classBinnedFieldSolver.html#aa881365353e8b978784265cb2a381452aae9b666c354b8112f9b21fa4b53cb982", null ]
     ] ],
-    [ "BinnedFieldSolver", "classBinnedFieldSolver.html#aadbfd92e0f8f3e6fbd1a7f7720d9cddb", null ],
+    [ "BinnedFieldSolver", "classBinnedFieldSolver.html#ad975dc81813b471f9c09f513ae89fb13", null ],
     [ "accumulateFieldToTemp", "classBinnedFieldSolver.html#a406941f3a3514a5ecf64055edd36531f", null ],
     [ "buildFlippedZSlab", "classBinnedFieldSolver.html#abfd3f4dd58c6e29fcc60282ee1692672", null ],
     [ "computeBinnedSelfFields", "classBinnedFieldSolver.html#a462bf082084156c23ceb50a726b98a07", null ],
@@ -91,6 +91,7 @@ var classBinnedFieldSolver =
     [ "setShiftedGreensConfiguration", "classBinnedFieldSolver.html#a4f86a6b14c77799aeb076d83dbf41231", null ],
     [ "setZerofaceMaxSteps", "classBinnedFieldSolver.html#a72302e5a19805e2cdb272b3e0f08191f", null ],
     [ "setZeroFacePlaneDumpFrequency", "classBinnedFieldSolver.html#a8d2f714daca23f2a1d228b9176ac9c7a", null ],
+    [ "adaptiveBinning_m", "classBinnedFieldSolver.html#a9e39e48707b663d449226dd2bf329461", null ],
     [ "bcHandler_m", "classBinnedFieldSolver.html#add1abdae3ee1ce25177c034cb8d47d73", null ],
     [ "call_counter_m", "classBinnedFieldSolver.html#ab2d8ad2042b20b61ff4eb3dc900dcf9f", null ],
     [ "E_m", "classBinnedFieldSolver.html#a924bebd96974c66cfe8f45abd6fe3eb3", null ],

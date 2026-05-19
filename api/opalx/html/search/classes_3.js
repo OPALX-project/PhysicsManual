@@ -27,5 +27,6 @@ var searchData=
   ['dummyfieldtw_24',['DummyFieldTW',['../classDummyFieldTW.html',1,'']]],
   ['dummygeometry_25',['DummyGeometry',['../classDummyGeometry.html',1,'']]],
   ['dummygeometrytw_26',['DummyGeometryTW',['../classDummyGeometryTW.html',1,'']]],
-  ['dumpemfields_27',['DumpEMFields',['../classDumpEMFields.html',1,'']]]
+  ['dummymonitorfield_27',['DummyMonitorField',['../classDummyMonitorField.html',1,'']]],
+  ['dumpemfields_28',['DumpEMFields',['../classDumpEMFields.html',1,'']]]
 ];

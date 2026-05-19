@@ -11,7 +11,9 @@ var Distribution_8h =
       [ "GAUSS", "Distribution_8h.html#add802868496e19113f6924d041d7d9aba37a2f93fd56db2dd5f74780e8bca23b3", null ],
       [ "MULTIVARIATEGAUSS", "Distribution_8h.html#add802868496e19113f6924d041d7d9abae0580e7fbc5cc01568e65174ab2e29e9", null ],
       [ "FLATTOP", "Distribution_8h.html#add802868496e19113f6924d041d7d9aba842f6cfd70cb80465bfb6a20190e7f3f", null ],
-      [ "FROMFILE", "Distribution_8h.html#add802868496e19113f6924d041d7d9abaa689fe8f0fbe6f20034cbd7de3bc8b69", null ]
+      [ "OPALFLATTOP", "Distribution_8h.html#add802868496e19113f6924d041d7d9aba887ed912dd21b8e8025544b6049b057e", null ],
+      [ "FROMFILE", "Distribution_8h.html#add802868496e19113f6924d041d7d9abaa689fe8f0fbe6f20034cbd7de3bc8b69", null ],
+      [ "EMITTEDFROMFILE", "Distribution_8h.html#add802868496e19113f6924d041d7d9abad0b39743e242e28f4f12c2d47a28dc1f", null ]
     ] ],
     [ "operator<<", "Distribution_8h.html#a74572237be800002f857c42ee59da732", null ]
 ];

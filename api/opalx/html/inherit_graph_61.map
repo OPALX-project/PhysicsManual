@@ -1,11 +1,15 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classFilter.html" title=" " alt="" coords="5,80,56,106"/>
-<area shape="rect" id="Node000001" href="$classFixedFFTLowPassFilter.html" title=" " alt="" coords="112,5,272,31"/>
-<area shape="poly" id="edge171_Node000000_Node000001" title=" " alt="" coords="57,68,102,40,133,30,129,33,105,45,61,72"/>
-<area shape="rect" id="Node000002" href="$classRelativeFFTLowPassFilter.html" title=" " alt="" coords="104,55,280,80"/>
-<area shape="poly" id="edge172_Node000000_Node000002" title=" " alt="" coords="70,84,108,79,104,83,72,89"/>
-<area shape="rect" id="Node000003" href="$classSavitzkyGolayFilter.html" title=" " alt="" coords="124,104,260,130"/>
-<area shape="poly" id="edge173_Node000000_Node000003" title=" " alt="" coords="71,96,126,105,121,108,71,101"/>
-<area shape="rect" id="Node000004" href="$classStencilFilter.html" title=" " alt="" coords="147,153,237,179"/>
-<area shape="poly" id="edge174_Node000000_Node000004" title=" " alt="" coords="61,113,105,140,149,156,144,157,103,145,59,118"/>
+<area shape="rect" id="Node000000" href="$classFieldmap.html" title="Abstract base class for all field maps. It acts as a factory for creating specific field map types ba..." alt="" coords="5,129,88,155"/>
+<area shape="rect" id="Node000001" href="$classAstra1DDynamic.html" title=" " alt="" coords="154,5,286,31"/>
+<area shape="poly" id="edge168_Node000000_Node000001" title=" " alt="" coords="61,116,92,77,112,57,135,40,158,28,161,33,137,44,116,61,96,80,65,119"/>
+<area shape="rect" id="Node000002" href="$classAstra1DMagnetoStatic.html" title=" " alt="" coords="136,55,304,80"/>
+<area shape="poly" id="edge169_Node000000_Node000002" title=" " alt="" coords="78,119,135,89,167,78,169,83,137,94,80,124"/>
+<area shape="rect" id="Node000003" href="$classFM2DDynamic.html" title=" " alt="" coords="161,104,279,129"/>
+<area shape="poly" id="edge170_Node000000_Node000003" title=" " alt="" coords="101,131,160,123,161,128,102,137"/>
+<area shape="rect" id="Node000004" href="$classFM2DMagnetoStatic.html" title=" " alt="" coords="143,153,297,179"/>
+<area shape="poly" id="edge171_Node000000_Node000004" title=" " alt="" coords="102,147,143,153,142,158,101,152"/>
+<area shape="rect" id="Node000005" href="$classFakeFieldmap.html" title=" " alt="" coords="165,203,275,228"/>
+<area shape="poly" id="edge172_Node000000_Node000005" title=" " alt="" coords="82,159,137,188,172,200,170,205,135,192,79,164"/>
+<area shape="rect" id="Node000006" href="$classFakeTWFieldmap.html" title=" " alt="" coords="154,252,286,277"/>
+<area shape="poly" id="edge173_Node000000_Node000006" title=" " alt="" coords="66,164,96,202,137,237,164,250,161,254,135,242,93,206,62,168"/>
 </map>

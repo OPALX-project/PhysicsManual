@@ -35,6 +35,7 @@ var classDistribution =
     [ "getCategory", "classDistribution.html#a2c810f53897da42fc32c4cfa96cc124d", null ],
     [ "getCutoffP", "classDistribution.html#a35bd47f7fa69026d4d69de97551aa595", null ],
     [ "getCutoffR", "classDistribution.html#aff51ed461f236eeb8e1dac90fb717dd6", null ],
+    [ "getEmissionSteps", "classDistribution.html#aefa66ae1976777e8f3bb4bcd22c8e1b1", null ],
     [ "getFilename", "classDistribution.html#a73233fd8d8f688a9a28c09da21344bd0", null ],
     [ "getFTOSCAmplitude", "classDistribution.html#a7e44d14fc60a0d80aa6bbde40e094c39", null ],
     [ "getFTOSCPeriods", "classDistribution.html#adcfc3f7f21abeb2e47600152787ed165", null ],

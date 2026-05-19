@@ -4,6 +4,8 @@ var dir_fb8bdcd0f0d978eb351f718e3f696688 =
     [ "AcceleratingField.h", "AcceleratingField_8h.html", "AcceleratingField_8h" ],
     [ "Astra1DDynamic.cpp", "Astra1DDynamic_8cpp.html", null ],
     [ "Astra1DDynamic.h", "Astra1DDynamic_8h.html", "Astra1DDynamic_8h" ],
+    [ "Astra1DMagnetoStatic.cpp", "Astra1DMagnetoStatic_8cpp.html", null ],
+    [ "Astra1DMagnetoStatic.h", "Astra1DMagnetoStatic_8h.html", "Astra1DMagnetoStatic_8h" ],
     [ "BDipoleField.cpp", "BDipoleField_8cpp.html", null ],
     [ "BDipoleField.h", "BDipoleField_8h.html", "BDipoleField_8h" ],
     [ "BMultipoleField.cpp", "BMultipoleField_8cpp.html", null ],

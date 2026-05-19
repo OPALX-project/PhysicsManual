@@ -2,6 +2,9 @@ var TestAstra1DDynamic_8cpp =
 [
     [ "Astra1DDynamicTest", "classAstra1DDynamicTest.html", "classAstra1DDynamicTest" ],
     [ "TEST_F", "TestAstra1DDynamic_8cpp.html#a70b8df950759ac7ae218cdb5f50c71c9", null ],
+    [ "TEST_F", "TestAstra1DDynamic_8cpp.html#a09d7ba6c353c76c283616bfe055e3bd7", null ],
+    [ "TEST_F", "TestAstra1DDynamic_8cpp.html#a7d25ce14c7c760616396c27892c6d303", null ],
+    [ "TEST_F", "TestAstra1DDynamic_8cpp.html#a1fb144952c422a3e11622bcbb3406a7c", null ],
     [ "TEST_F", "TestAstra1DDynamic_8cpp.html#a7a597091279801989937ae61e1360988", null ],
     [ "TEST_F", "TestAstra1DDynamic_8cpp.html#af4d5ae759ff178c0f28bf98f0da190f7", null ],
     [ "TEST_F", "TestAstra1DDynamic_8cpp.html#a97e2c0f77747531b999d606f89e472f7", null ],
