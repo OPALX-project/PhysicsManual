@@ -7,17 +7,43 @@ Describes the underlying physics of OPALX.
 Render the full manual:
 
 ```bash
-quarto render /Users/adelmann/git/PhysicsManual --to html
+quarto render /Users/adelmann/git/physics-manual-opalx --to html
 ```
 
 Render one chapter to PDF:
 
 ```bash
-quarto render /Users/adelmann/git/PhysicsManual/sections/coordinate-systems/index.qmd --to pdf
-quarto render /Users/adelmann/git/PhysicsManual/sections/gamma-gamma/index.qmd --to pdf
+quarto render /Users/adelmann/git/physics-manual-opalx/sections/coordinate-systems/index.qmd --to pdf
+quarto render /Users/adelmann/git/physics-manual-opalx/sections/gamma-gamma/index.qmd --to pdf
 ```
 
 The website output is written to `docs/`.
+
+## Publish Workflow
+
+The repository uses two branches for different purposes:
+
+- `main` contains the Quarto source files, figures, bibliography, scripts, and
+  workflow configuration.
+- `gh-pages` contains the generated website that GitHub Pages serves.
+
+Normal editing workflow:
+
+```bash
+git checkout main
+quarto render . --to html
+git add _quarto.yml index.qmd sections references.bib README.md scripts
+git commit -m "Describe the manual change"
+git push origin main
+```
+
+After `main` is pushed, the GitHub Actions workflow renders the HTML manual,
+builds the OPALX Doxygen API, and publishes the generated site to `gh-pages`.
+Do not manually commit or push `docs/` from `main`; it is generated output and
+is ignored there.
+
+To check the deployed output, inspect the live GitHub Pages site or the
+generated files on `gh-pages`. Do not edit `gh-pages` directly in normal use.
 
 ## OPALX Doxygen API
 

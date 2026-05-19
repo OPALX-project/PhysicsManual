@@ -1,0 +1,242 @@
+## Koordinate Systems {#sec-sandbox-koordinate-systems}
+
+### OPALX Coordinate Frames and Transform APIs {#sec-sandbox-coordinate-frame-apis}
+
+This note summarizes the coordinate frames currently used in OPALX and maps
+the PhysicsManual terminology to the concrete code structures and helper
+functions.
+
+The PhysicsManual coordinate-system chapter uses the following conceptual
+language:
+
+- `K = (X,Y,Z)`: laboratory or floor Cartesian frame.
+- `B`: reference base used for ordering and reporting, such as a transfer-line
+  interval, ring circle, or graph.
+- `s`: reference/reporting coordinate on `B`.
+- `U_i`: canonical local chart of element `i`.
+- `Omega_i`: local support of the element field, aperture, or material model.
+- `p_i`: named port or marked boundary chart, such as entrance or exit.
+- `P_i`: rigid placement map embedding the local chart into the lab frame.
+- `T_i`: rigid placement transform, represented by a translation and rotation.
+- `Gamma_i(ell)`: optional intrinsic reference path of element `i`.
+- `C_pq` or `g_ij`: port-to-port or chart-to-chart transition map.
+
+In the current code, `lab`, `global`, and `floor` are often used
+interchangeably for the same Cartesian world frame. For element placement,
+treat these as aliases of the lab/floor frame `K`.
+
+#### Core Transform Convention
+
+The common implementation type is `CoordinateSystemTrafo`.
+
+| API | Meaning |
+|---|---|
+| `transformTo(r)` | Transform a point from the parent/source frame into this transform's target frame. |
+| `transformFrom(r)` | Transform a point from the target frame back to the parent/source frame. |
+| `rotateTo(v)` | Rotate a vector into the target frame, without translation. |
+| `rotateFrom(v)` | Rotate a vector back to the parent/source frame, without translation. |
+| `transformBunchTo(R,n)` | Apply `transformTo` to a particle-position view. |
+| `transformBunchFrom(R,n)` | Apply `transformFrom` to a particle-position view. |
+| `rotateBunchTo(P,n)` | Apply `rotateTo` to a particle/vector view. |
+| `rotateBunchFrom(P,n)` | Apply `rotateFrom` to a particle/vector view. |
+| `inverted()` | Return the inverse transform. |
+
+Relevant implementation:
+
+- `src/Algorithms/CoordinateSystemTrafo.h`
+- `src/Algorithms/CoordinateSystemTrafo.cpp`
+
+#### Frame Table
+
+| Frame | PhysicsManual name | Code storage | Into this frame | Out of this frame |
+|---|---|---|---|---|
+| Lab / floor / global Cartesian | `K = (X,Y,Z)` | implicit root frame | identity | identity |
+| Beamline / line frame | line `ORIGIN`, `ORIENTATION`; compatibility reference for `ELEMEDGE` | `OpalBeamline::coordTransformationTo_m` | `OpalBeamline::transformTo`, `rotateTo`, `getCSTrafoLab2Local()` | `transformFrom`, `rotateFrom`, `getCSTrafoLab2Local().inverted()` |
+| Element nominal local/body frame | local chart `U_i`, placed by `P_i` | `ElementBase::csTrafoGlobal2Local_m` | `OpalBeamline::transformToLocalCS(comp,r)` or `comp->getCSTrafoGlobal2Local().transformTo(r)` | `transformFromLocalCS`, `rotateFromLocalCS`, or `comp->getCSTrafoGlobal2Local().transformFrom(r)` |
+| Explicitly posed element frame | `X,Y,Z,THETA,PHI,PSI` placement | set in `OpalElement::update()` | same as element local frame after `setCSTrafoGlobal2Local()` | same as element local frame |
+| Misaligned element frame | static error transform `Delta T_i^err` | `ElementBase::misalignment_m` | `getMisalignment(comp) * getCSTrafoLab2Local(comp)`; in tracking also `* pc->getToLabTrafo()` | invert the full chain, e.g. `localToRefCSTrafo = refToLocalCSTrafo.inverted()` |
+| Element begin / entrance port | `p_i^in`, entrance boundary chart | `ElementBase::getEdgeToBegin()` | lab to begin: `getEdgeToBegin() * getCSTrafoGlobal2Local()` | use `.transformFrom()` on the composed transform |
+| Element end / exit port | `p_i^out`, exit boundary chart | `ElementBase::getEdgeToEnd()` | lab to end: `getEdgeToEnd() * getCSTrafoGlobal2Local()` | use `.transformFrom()` on the composed transform |
+| Bend intrinsic reference path | `Gamma_i(ell)` | `PlanarArcGeometry`, `RBendGeometry`, `Euclid3D` | `getTransform(s)`, `getEntranceFrame()`, `getExitFrame()` | `Euclid3D` inverse / reverse transform logic; not the same API as `CoordinateSystemTrafo` |
+| Runtime moving reference/bunch frame | tracker reference frame around reference particle | `ParticleContainer::toLabTrafo_m`, `refPartR_m`, `refPartP_m`, `sPos_m` | reference to lab is used through `pc->getToLabTrafo()` in transform chains | lab/reference update via `ParticleContainer::updateRefToLabCSTrafo()` |
+| Element-local field-evaluation frame | element local frame plus errors | temporary chain in `ParallelTracker::computeExternalFields()` | `refToLocalCSTrafo = misalignment * (lab2local * pc->getToLabTrafo())`; then `pc->transformBunch(refToLocalCSTrafo)` | `localToRefCSTrafo = refToLocalCSTrafo.inverted()` |
+| Beam / self-field frame | beam frame, origin at reference, `z` along mean momentum | local variables in `ParallelTracker::computeSpaceChargeFields()` | `referenceToBeamCSTrafo.transformBunchTo(R)` | `beamToReferenceCSTrafo.transformBunchTo(R)` and `rotateBunchTo(E/B)` |
+| Mesh frame for self fields | follows current particle `R` representation | field solver mesh state | if `R` is beam-frame, mesh is beam-frame | after transform back, `bunchUpdate()` restores reference-frame mesh |
+| Adaptive-bin rest frame | per-bin quasi-rest frame | `BinnedFieldSolver::BinKinematics` | not a rigid `CoordinateSystemTrafo`; uses `gammaBin`, `pmean`, `prepareRhoForBin()` | `accumulateFieldToTemp()` Lorentz-transforms `E'` to lab `E,B` |
+
+#### Important Code Paths
+
+##### Explicit Element Placement
+
+For elements with absolute placement attributes, `OpalElement::update()` builds
+the placement transform from `X`, `Y`, `Z`, `THETA`, `PHI`, and `PSI`:
+
+```cpp
+CoordinateSystemTrafo global2local(origin, rotation.conjugate());
+base->setCSTrafoGlobal2Local(global2local);
+base->fixPosition();
+```
+
+This makes the element-local frame accessible through
+`ElementBase::getCSTrafoGlobal2Local()`.
+
+Relevant files:
+
+- `src/Elements/OpalElement.cpp`
+- `src/AbsBeamline/ElementBase.h`
+
+##### Beamline to Element Local
+
+`OpalBeamline` wraps the element transform API:
+
+```cpp
+transformToLocalCS(comp, r)
+transformFromLocalCS(comp, r)
+rotateToLocalCS(comp, v)
+rotateFromLocalCS(comp, v)
+getCSTrafoLab2Local(comp)
+```
+
+Internally these use `comp->getCSTrafoGlobal2Local()`.
+
+Relevant file:
+
+- `src/Elements/OpalBeamline.h`
+
+##### Begin and End Port Frames
+
+The default element begin and end frames are:
+
+```cpp
+getEdgeToBegin() = identity
+getEdgeToEnd()   = translation by (0, 0, L)
+```
+
+The lab-frame begin and end poses are usually formed as:
+
+```cpp
+CoordinateSystemTrafo toBegin = element->getEdgeToBegin()
+                              * element->getCSTrafoGlobal2Local();
+
+CoordinateSystemTrafo toEnd = element->getEdgeToEnd()
+                            * element->getCSTrafoGlobal2Local();
+```
+
+Relevant files:
+
+- `src/AbsBeamline/ElementBase.h`
+- `src/Elements/OpalBeamline.cpp`
+
+##### Runtime Field Evaluation Chain
+
+During particle tracking, particle coordinates are stored in the moving
+reference frame. To apply an element, OPALX composes:
+
+```cpp
+CoordinateSystemTrafo refToLocalCSTrafo =
+    itsOpalBeamline_m.getMisalignment(element)
+    * (itsOpalBeamline_m.getCSTrafoLab2Local(element) * pc->getToLabTrafo());
+
+CoordinateSystemTrafo localToRefCSTrafo = refToLocalCSTrafo.inverted();
+
+pc->transformBunch(refToLocalCSTrafo);
+element->apply(pc);
+pc->transformBunch(localToRefCSTrafo);
+```
+
+This is the active runtime transition:
+
+```text
+reference frame -> lab frame -> nominal element local -> misaligned element local
+```
+
+and then back again.
+
+Relevant file:
+
+- `src/Algorithms/ParallelTracker.cpp`
+
+##### Moving Reference Frame
+
+Each particle container stores the current moving reference state:
+
+```cpp
+refPartR_m
+refPartP_m
+sPos_m
+toLabTrafo_m
+```
+
+Useful accessors:
+
+```cpp
+pc->getRefPartR()
+pc->getRefPartP()
+pc->get_sPos()
+pc->getToLabTrafo()
+pc->updateRefToLabCSTrafo(dt)
+```
+
+Relevant file:
+
+- `src/PartBunch/ParticleContainer.hpp`
+
+##### Beam Frame for Space Charge
+
+`ParallelTracker::computeSpaceChargeFields()` temporarily transforms the bunch
+into a beam frame whose origin is the reference particle and whose local `z`
+axis is aligned with the mean momentum.
+
+The code builds:
+
+```cpp
+CoordinateSystemTrafo beamToReferenceCSTrafo(
+    Vector_t<double, 3>(0, 0, pc->get_sPos()),
+    alignment.conjugate());
+
+CoordinateSystemTrafo referenceToBeamCSTrafo =
+    beamToReferenceCSTrafo.inverted();
+```
+
+Then it transforms particle positions to the beam frame, solves self-fields,
+and transforms positions and fields back to the reference frame.
+
+Relevant file:
+
+- `src/Algorithms/ParallelTracker.cpp`
+
+##### Adaptive-Bin Rest Frames
+
+The binned space-charge solver does not use a rigid coordinate transform for
+the rest frame. Instead it computes per-bin kinematics:
+
+```cpp
+BinnedFieldSolver::BinKinematics {
+    Vector_t<double, Dim> pmean;
+    double gammaBin;
+}
+```
+
+The solver treats the mesh field as a bin-frame electric field `E'`, applies
+the Lorentz scaling, and accumulates lab-frame `E` and `B`.
+
+Relevant file:
+
+- `src/PartBunch/BinnedFieldSolver.h`
+
+#### Notes and Terminology Cleanup
+
+The current implementation would be easier to reason about if the transform
+names were made explicit:
+
+- `Lab2Element`
+- `Element2Lab`
+- `Reference2Lab`
+- `Lab2Reference`
+- `Reference2Element`
+- `Element2Reference`
+
+In the current code, `getCSTrafoLab2Local()` returns
+`getCSTrafoGlobal2Local()`. This is mathematically fine because `lab`,
+`global`, and `floor` are aliases here, but the naming obscures the intended
+frame chain.
