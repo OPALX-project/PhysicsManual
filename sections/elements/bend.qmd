@@ -479,3 +479,119 @@ classDiagram
 The key distinction is that `OpalSBend` and `OpalRBend` are the input and
 update front ends, while `SBendRep` and `RBendRep` own the actual geometry and
 local normalized multipole field used during tracking.
+
+
+### Example: C-Type Chicane
+
+A useful multi-element benchmark for explicit bend placement is a symmetric
+C-type four-dipole chicane.  The example below is deliberately kept at the
+analytic hard-edge `SBEND` level: no field maps are used, the four bend bodies
+are posed explicitly with `X`, `Y`, `Z`, `THETA`, `PHI`, and `PSI`, and the
+output is checked through the exported element positions and a small
+off-momentum \(R_{56}\) probe.
+
+The complete runnable input and local post-processing scripts are stored with
+this chapter:
+
+- [test-chicane-1.in](examples/test-chicane-1/test-chicane-1.in)
+- [test-chicane-1_distribution.txt](examples/test-chicane-1/test-chicane-1_distribution.txt)
+- [check-r56.py](examples/test-chicane-1/check-r56.py)
+
+The benchmark uses four equal hard-edge sector bends with physical survey
+bend signs
+$$
+(+\theta,\,-\theta,\,-\theta,\,+\theta),
+$$
+magnetic arc length \(L_b\), outer drift \(D\) between bends 1--2 and 3--4,
+and central drift \(C\) between bends 2--3.  This is the standard
+small-angle four-dipole bunch-compressor model used in text book
+treatments of C-type chicanes [@uspas2014bunchcompression; @dimitri2018].
+The numerical seed used here is
+$$
+L_b = 1.0\ \mathrm{m},\qquad
+\theta = 0.1\ \mathrm{rad},\qquad
+D = 1.5\ \mathrm{m},\qquad
+C = 2.0\ \mathrm{m}.
+$$
+
+For placement, the reference entrance is centered at
+\((X,Y,Z)=(0,0,0)\), with tangent along global \(+Z\).  The OPALX input keeps
+the survey symbolic.  With
+$$
+\rho = \frac{L_b}{\theta},
+$$
+the reusable increments are
+$$
+\begin{aligned}
+  \Delta x_b &= \rho(1-\cos\theta),
+  &\Delta z_b &= \rho\sin\theta,\\
+  \Delta x_{b/2} &= \rho\left(1-\cos\frac{\theta}{2}\right),
+  &\Delta z_{b/2} &= \rho\sin\frac{\theta}{2},\\
+  \Delta x_{r/2} &= \rho\left(\cos\frac{\theta}{2}-\cos\theta\right),
+  &\Delta z_{r/2} &= \rho\left(\sin\theta-\sin\frac{\theta}{2}\right),\\
+  \Delta x_D &= D\sin\theta,
+  &\Delta z_D &= D\cos\theta .
+\end{aligned}
+$$
+The `REAL` block in the input names these quantities as `SB_DX`, `SB_DZ`,
+`SBH_DX`, `SBH_DZ`, `RBH_DX`, `RBH_DZ`, `DR_DX`, and `DR_DZ`.  It then
+assembles the actual element body origins and monitor locations as `B1_X`,
+`B1_Z`, ..., `MEXIT_X`, `MEXIT_Z`.  This is important because OPALX places an
+analytic bend by its body origin, not by an entrance edge.
+
+OPALX's current `SBEND` angle sign is opposite to the positive-\(X\) survey
+convention used in this example.  Therefore the first and fourth bends use
+`ANGLE = -TH`, while the second and third use `ANGLE = TH`.  The element
+placement remains survey-positive in the named `X` and `Z` variables.
+
+The resulting design survey is:
+
+| point | \(Z\) [m] | \(X\) [m] |
+|---|---:|---:|
+| B1 entry | 0.000000000 | 0.000000000 |
+| B1 exit / D12 begin | 0.998334166 | 0.049958347 |
+| B2 entry | 2.490840414 | 0.199708472 |
+| B2 exit / D23 begin | 3.489174581 | 0.249666819 |
+| B3 entry | 5.489174581 | 0.249666819 |
+| B3 exit / D34 begin | 6.487508747 | 0.199708472 |
+| B4 entry | 7.980014995 | 0.049958347 |
+| B4 exit / MEXIT | 8.978349162 | 0.000000000 |
+
+![Projected OPALX element-position export for the analytic four-`SBEND`
+C-type chicane.  The projection was made from the OPALX-generated
+`test-chicane-1_ElementPositions.py` script using the \(X\)-\(Z\) plane.](figures/test-chicane-1_ElementPositions.png){#fig-elements-c-type-chicane-placement fig-align="center" width="90%"}
+
+The same input also carries a five-particle momentum scan for a first
+longitudinal check.  The launched particles have
+$$
+\delta = \frac{p_z-p_0}{p_0}
+       \in \{-2\times10^{-3},\,-10^{-3},\,0,\,+10^{-3},\,+2\times10^{-3}\},
+$$
+with \(p_0=1957.9509\) in OPALX normalized \(\beta\gamma\) units.  The
+small-angle formula for the chicane is
+$$
+R_{56}
+  \simeq
+  -\theta^2\left(\frac{4}{3}L_b + 2D\right)
+  =
+  -4.3334\times10^{-2}\ \mathrm{m}.
+$$
+For this monitor convention the local OPALX coordinate has the opposite sign
+to the usual transport \(R_{56}\), so the extractor reports
+$$
+R_{56} = -\frac{d z_{\mathrm{OPALX},\,\mathrm{exit}}}{d\delta}.
+$$
+With `DT = 1.0e-11 s`, the current run gives
+$$
+R_{56} = -4.3114\times10^{-2}\ \mathrm{m},
+$$
+about $$ 2.19 \times 10^{-4}\ \mathrm{m} $$ difference from the analytic model.
+
+Run the example from its local directory with:
+
+```sh
+cd sections/elements/examples/test-chicane-1
+/path/to/opalx test-chicane-1.in --info 2
+python3 dasta/test-chicane-1_ElementPositions.py --project-to-plane --normal 0 1 0
+python3 check-r56.py
+```
