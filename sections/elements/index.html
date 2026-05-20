@@ -23,7 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -230,6 +284,7 @@ window.Quarto = {
   <li><a href="#sliced-bend-model" id="toc-sliced-bend-model" class="nav-link" data-scroll-target="#sliced-bend-model"><span class="header-section-number">3.1.5</span> Sliced Bend Model</a></li>
   <li><a href="#code-to-code-and-analytic-comparisons" id="toc-code-to-code-and-analytic-comparisons" class="nav-link" data-scroll-target="#code-to-code-and-analytic-comparisons"><span class="header-section-number">3.1.6</span> Code-to-code and analytic comparisons</a></li>
   <li><a href="#sbend-and-rbend-class-structure" id="toc-sbend-and-rbend-class-structure" class="nav-link" data-scroll-target="#sbend-and-rbend-class-structure"><span class="header-section-number">3.1.7</span> <code>SBEND</code> and <code>RBEND</code> class structure</a></li>
+  <li><a href="#example-c-type-chicane" id="toc-example-c-type-chicane" class="nav-link" data-scroll-target="#example-c-type-chicane"><span class="header-section-number">3.1.8</span> Example: C-Type Chicane</a></li>
   </ul></li>
   <li><a href="#sec-elements-multipoles" id="toc-sec-elements-multipoles" class="nav-link" data-scroll-target="#sec-elements-multipoles"><span class="header-section-number">3.2</span> Multipole family</a>
   <ul class="collapse">
@@ -589,6 +644,120 @@ Figure&nbsp;3.3: Parser-side and runtime-side class structure for the current OP
 </div>
 <p>The key distinction is that <code>OpalSBend</code> and <code>OpalRBend</code> are the input and update front ends, while <code>SBendRep</code> and <code>RBendRep</code> own the actual geometry and local normalized multipole field used during tracking.</p>
 </section>
+<section id="example-c-type-chicane" class="level3" data-number="3.1.8">
+<h3 data-number="3.1.8" class="anchored" data-anchor-id="example-c-type-chicane"><span class="header-section-number">3.1.8</span> Example: C-Type Chicane</h3>
+<p>A useful multi-element benchmark for explicit bend placement is a symmetric C-type four-dipole chicane. The example below is deliberately kept at the analytic hard-edge <code>SBEND</code> level: no field maps are used, the four bend bodies are posed explicitly with <code>X</code>, <code>Y</code>, <code>Z</code>, <code>THETA</code>, <code>PHI</code>, and <code>PSI</code>, and the output is checked through the exported element positions and a small off-momentum (R_{56}) probe.</p>
+<p>The complete runnable input and local post-processing scripts are stored with this chapter:</p>
+<ul>
+<li><a href="examples/test-chicane-1/test-chicane-1.in">test-chicane-1.in</a></li>
+<li><a href="examples/test-chicane-1/test-chicane-1_distribution.txt">test-chicane-1_distribution.txt</a></li>
+<li><a href="examples/test-chicane-1/check-r56.py">check-r56.py</a></li>
+</ul>
+<p>The benchmark uses four equal hard-edge sector bends with physical survey bend signs <span class="math display">\[
+(+\theta,\,-\theta,\,-\theta,\,+\theta),
+\]</span> magnetic arc length (L_b), outer drift (D) between bends 1–2 and 3–4, and central drift (C) between bends 2–3. This is the standard small-angle four-dipole bunch-compressor model used in text book treatments of C-type chicanes <span class="citation" data-cites="uspas2014bunchcompression dimitri2018">(<a href="../literature/index.html#ref-uspas2014bunchcompression" role="doc-biblioref">Nguyen et al. 2014</a>; <a href="../literature/index.html#ref-dimitri2018" role="doc-biblioref">Di Mitri 2018</a>)</span>. The numerical seed used here is <span class="math display">\[
+L_b = 1.0\ \mathrm{m},\qquad
+\theta = 0.1\ \mathrm{rad},\qquad
+D = 1.5\ \mathrm{m},\qquad
+C = 2.0\ \mathrm{m}.
+\]</span></p>
+<p>For placement, the reference entrance is centered at ((X,Y,Z)=(0,0,0)), with tangent along global (+Z). The OPALX input keeps the survey symbolic. With <span class="math display">\[
+\rho = \frac{L_b}{\theta},
+\]</span> the reusable increments are <span class="math display">\[
+\begin{aligned}
+  \Delta x_b &amp;= \rho(1-\cos\theta),
+  &amp;\Delta z_b &amp;= \rho\sin\theta,\\
+  \Delta x_{b/2} &amp;= \rho\left(1-\cos\frac{\theta}{2}\right),
+  &amp;\Delta z_{b/2} &amp;= \rho\sin\frac{\theta}{2},\\
+  \Delta x_{r/2} &amp;= \rho\left(\cos\frac{\theta}{2}-\cos\theta\right),
+  &amp;\Delta z_{r/2} &amp;= \rho\left(\sin\theta-\sin\frac{\theta}{2}\right),\\
+  \Delta x_D &amp;= D\sin\theta,
+  &amp;\Delta z_D &amp;= D\cos\theta .
+\end{aligned}
+\]</span> The <code>REAL</code> block in the input names these quantities as <code>SB_DX</code>, <code>SB_DZ</code>, <code>SBH_DX</code>, <code>SBH_DZ</code>, <code>RBH_DX</code>, <code>RBH_DZ</code>, <code>DR_DX</code>, and <code>DR_DZ</code>. It then assembles the actual element body origins and monitor locations as <code>B1_X</code>, <code>B1_Z</code>, …, <code>MEXIT_X</code>, <code>MEXIT_Z</code>. This is important because OPALX places an analytic bend by its body origin, not by an entrance edge.</p>
+<p>OPALX’s current <code>SBEND</code> angle sign is opposite to the positive-(X) survey convention used in this example. Therefore the first and fourth bends use <code>ANGLE = -TH</code>, while the second and third use <code>ANGLE = TH</code>. The element placement remains survey-positive in the named <code>X</code> and <code>Z</code> variables.</p>
+<p>The resulting design survey is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>point</th>
+<th style="text-align: right;">(Z) [m]</th>
+<th style="text-align: right;">(X) [m]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>B1 entry</td>
+<td style="text-align: right;">0.000000000</td>
+<td style="text-align: right;">0.000000000</td>
+</tr>
+<tr class="even">
+<td>B1 exit / D12 begin</td>
+<td style="text-align: right;">0.998334166</td>
+<td style="text-align: right;">0.049958347</td>
+</tr>
+<tr class="odd">
+<td>B2 entry</td>
+<td style="text-align: right;">2.490840414</td>
+<td style="text-align: right;">0.199708472</td>
+</tr>
+<tr class="even">
+<td>B2 exit / D23 begin</td>
+<td style="text-align: right;">3.489174581</td>
+<td style="text-align: right;">0.249666819</td>
+</tr>
+<tr class="odd">
+<td>B3 entry</td>
+<td style="text-align: right;">5.489174581</td>
+<td style="text-align: right;">0.249666819</td>
+</tr>
+<tr class="even">
+<td>B3 exit / D34 begin</td>
+<td style="text-align: right;">6.487508747</td>
+<td style="text-align: right;">0.199708472</td>
+</tr>
+<tr class="odd">
+<td>B4 entry</td>
+<td style="text-align: right;">7.980014995</td>
+<td style="text-align: right;">0.049958347</td>
+</tr>
+<tr class="even">
+<td>B4 exit / MEXIT</td>
+<td style="text-align: right;">8.978349162</td>
+<td style="text-align: right;">0.000000000</td>
+</tr>
+</tbody>
+</table>
+<div id="fig-elements-c-type-chicane-placement" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elements-c-type-chicane-placement-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/test-chicane-1_ElementPositions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-c-type-chicane-placement-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Projected OPALX element-position export for the analytic four-<code>SBEND</code> C-type chicane. The projection was made from the OPALX-generated <code>test-chicane-1_ElementPositions.py</code> script using the (X)-(Z) plane.
+</figcaption>
+</figure>
+</div>
+<p>The same input also carries a five-particle momentum scan for a first longitudinal check. The launched particles have <span class="math display">\[
+\delta = \frac{p_z-p_0}{p_0}
+       \in \{-2\times10^{-3},\,-10^{-3},\,0,\,+10^{-3},\,+2\times10^{-3}\},
+\]</span> with (p_0=1957.9509) in OPALX normalized () units. The small-angle formula for the chicane is <span class="math display">\[
+R_{56}
+  \simeq
+  -\theta^2\left(\frac{4}{3}L_b + 2D\right)
+  =
+  -4.3334\times10^{-2}\ \mathrm{m}.
+\]</span> For this monitor convention the local OPALX coordinate has the opposite sign to the usual transport (R_{56}), so the extractor reports <span class="math display">\[
+R_{56} = -\frac{d z_{\mathrm{OPALX},\,\mathrm{exit}}}{d\delta}.
+\]</span> With <code>DT = 1.0e-11 s</code>, the current run gives <span class="math display">\[
+R_{56} = -4.3114\times10^{-2}\ \mathrm{m},
+\]</span> about <span class="math display">\[ 2.19 \times 10^{-4}\ \mathrm{m} \]</span> difference from the analytic model.</p>
+<p>Run the example from its local directory with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> sections/elements/examples/test-chicane-1</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/path/to/opalx</span> test-chicane-1.in <span class="at">--info</span> 2</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> dasta/test-chicane-1_ElementPositions.py <span class="at">--project-to-plane</span> <span class="at">--normal</span> 0 1 0</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> check-r56.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 </section>
 <section id="sec-elements-multipoles" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="sec-elements-multipoles"><span class="header-section-number">3.2</span> Multipole family</h2>
@@ -755,7 +924,7 @@ z \in [0, L].
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-multipole-class-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.4: Parser-side and runtime-side class structure for the current <code>MULTIPOLE</code> and <code>QUADRUPOLE</code> implementation. Sextupole content currently enters through the generic <code>MULTIPOLE</code> coefficient path.
+Figure&nbsp;3.5: Parser-side and runtime-side class structure for the current <code>MULTIPOLE</code> and <code>QUADRUPOLE</code> implementation. Sextupole content currently enters through the generic <code>MULTIPOLE</code> coefficient path.
 </figcaption>
 </figure>
 </div>
@@ -764,6 +933,14 @@ Figure&nbsp;3.4: Parser-side and runtime-side class structure for the current <c
 <p>In other words, <code>QUADRUPOLE</code> is presently a thin parser-side specialization of the generic multipole path, and sextupole behavior is likewise represented through <code>MultipoleRep</code>, but without a dedicated <code>OpalSextupole</code> wrapper yet.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-dimitri2018" class="csl-entry" role="listitem">
+Di Mitri, S. 2018. <span>“Bunch-Length Compressors.”</span> In <em>Proceedings of the CAS-CERN Accelerator School on Free Electron Lasers and Energy Recovery Linacs</em>, vol. 1. CERN Yellow Reports: School Proceedings. <a href="https://doi.org/10.23730/CYRSP-2018-001.361">https://doi.org/10.23730/CYRSP-2018-001.361</a>.
+</div>
+<div id="ref-uspas2014bunchcompression" class="csl-entry" role="listitem">
+Nguyen, D., J. Lewellen, and L. Duffy. 2014. <em>RF Linac for High-Gain FEL: Bunch Compression</em>. US Particle Accelerator School. <a href="https://uspas.fnal.gov/materials/14UNM/E_Bunch_Compression.pdf">https://uspas.fnal.gov/materials/14UNM/E_Bunch_Compression.pdf</a>.
+</div>
+</div>
 </section>
 </section>
 
