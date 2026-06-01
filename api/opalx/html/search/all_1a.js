@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z_0',['z',['../classinterpolation_1_1ThreeDGrid.html#a9d5705d76423f69730596274fb7dc230',1,'interpolation::ThreeDGrid::z(const int &amp;k)'],['../classinterpolation_1_1ThreeDGrid.html#a66cd6b2b4e086ce1ed57200a54340c3d',1,'interpolation::ThreeDGrid::z(const int &amp;j) const'],['../classOpalElement.html#ac5cbdef4159482662715ea82d8118fbaa9df637562aa88a690351178f705f1d0d',1,'OpalElement::Z'],['../classPoint3D.html#a9f4a32e3afccb3c9fe9b5cd88e179c3d',1,'Point3D::z']]],
+  ['z_0',['z',['../classPoint3D.html#a9f4a32e3afccb3c9fe9b5cd88e179c3d',1,'Point3D::z'],['../classinterpolation_1_1ThreeDGrid.html#a9d5705d76423f69730596274fb7dc230',1,'interpolation::ThreeDGrid::z(const int &amp;k)'],['../classinterpolation_1_1ThreeDGrid.html#a66cd6b2b4e086ce1ed57200a54340c3d',1,'interpolation::ThreeDGrid::z(const int &amp;j) const'],['../classOpalElement.html#ac5cbdef4159482662715ea82d8118fbaa9df637562aa88a690351178f705f1d0d',1,'OpalElement::Z']]],
   ['z_5fm_1',['z_m',['../classinterpolation_1_1ThreeDGrid.html#a5e1abbcc0a052a41c20df3b0a3cbf8e4',1,'interpolation::ThreeDGrid']]],
   ['z_5fp_2',['z_p',['../namespacePhysics.html#ab06a8c5a9578ef50859aea2d2dc34a3b',1,'Physics']]],
   ['z_5fstart_3',['Z_START',['../classDumpEMFields.html#aa95a61cf42bfcd786a11e032167a8c2fa01f743aa7498a4947735235c5d91b687',1,'DumpEMFields']]],

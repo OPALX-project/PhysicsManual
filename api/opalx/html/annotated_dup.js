@@ -538,6 +538,8 @@ var annotated_dup =
     [ "SolenoidPlacementTest", "classSolenoidPlacementTest.html", "classSolenoidPlacementTest" ],
     [ "SolenoidRep", "classSolenoidRep.html", "classSolenoidRep" ],
     [ "SpecificElementVisitor", "classSpecificElementVisitor.html", "classSpecificElementVisitor" ],
+    [ "SpinTBMTPusher", "classSpinTBMTPusher.html", "classSpinTBMTPusher" ],
+    [ "SpinTBMTPusherTest", "classSpinTBMTPusherTest.html", null ],
     [ "SplineTimeDependence", "classSplineTimeDependence.html", "classSplineTimeDependence" ],
     [ "StatBaseWriter", "classStatBaseWriter.html", "classStatBaseWriter" ],
     [ "Statement", "classStatement.html", "classStatement" ],

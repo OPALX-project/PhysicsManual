@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (93a612ec5182)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (dc2a29eed580)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -460,63 +460,65 @@ $(document).ready(function(){initNavTree('FromFile_8cpp_source.html',''); initRe
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    mALL &lt;&lt; <span class="stringliteral">&quot;Rank &quot;</span> &lt;&lt; rank &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; nlocal &lt;&lt; <span class="stringliteral">&quot; local particles&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    ippl::Comm-&gt;barrier();</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;markMomentsDirty();</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>}</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <a class="code hl_function" href="classSamplingBase.html#ad9ed1ce858a5c8e58c4209ba8118756c">fillPolarization</a>(nlocalCurrent, nlocal);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;markMomentsDirty();</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
 </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="foldopen" id="foldopen00348" data-start="{" data-end="}">
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="classFromFile.html#af5e6d5e20e12f6fbc48393b11226444f">  348</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classFromFile.html#af5e6d5e20e12f6fbc48393b11226444f">FromFile::emitParticles</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt) {</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="comment">// One-shot delayed emission for FROMFILE sources.</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tStart = t;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tEnd   = t + dt;</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a>) {</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="comment">// Don&#39;t sample again.</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    }</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt;= 0.0) {</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    }</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keywordflow">if</span> (!(tStart &lt;= <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &amp;&amp; <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt; tEnd)) {</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        <span class="comment">// Not time to emit yet.</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    }</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="comment">// If bound to a Distribution, respect its NPARTDIST; otherwise fall back to file count.</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordtype">size_t</span> requested = <a class="code hl_variable" href="classFromFile.html#a350ee2522741d7e8bfabbb42fdf8e866">numParticles_m</a>;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a> &amp;&amp; <a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>-&gt;<a class="code hl_function" href="classDistribution.html#a776919ee03f26046f0aac77e95fa998a">getNumParticles</a>() &gt; 0) {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        requested = <a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>-&gt;<a class="code hl_function" href="classDistribution.html#a776919ee03f26046f0aac77e95fa998a">getNumParticles</a>();</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    }</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">if</span> (requested == 0) {</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <span class="comment">// Short circuit: no particles to emit.</span></div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalBefore = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="foldopen" id="foldopen00350" data-start="{" data-end="}">
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="classFromFile.html#af5e6d5e20e12f6fbc48393b11226444f">  350</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classFromFile.html#af5e6d5e20e12f6fbc48393b11226444f">FromFile::emitParticles</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt) {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="comment">// One-shot delayed emission for FROMFILE sources.</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tStart = t;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tEnd   = t + dt;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a>) {</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="comment">// Don&#39;t sample again.</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt;= 0.0) {</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    }</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">if</span> (!(tStart &lt;= <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &amp;&amp; <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt; tEnd)) {</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        <span class="comment">// Not time to emit yet.</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="comment">// If bound to a Distribution, respect its NPARTDIST; otherwise fall back to file count.</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordtype">size_t</span> requested = <a class="code hl_variable" href="classFromFile.html#a350ee2522741d7e8bfabbb42fdf8e866">numParticles_m</a>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a> &amp;&amp; <a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>-&gt;<a class="code hl_function" href="classDistribution.html#a776919ee03f26046f0aac77e95fa998a">getNumParticles</a>() &gt; 0) {</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        requested = <a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>-&gt;<a class="code hl_function" href="classDistribution.html#a776919ee03f26046f0aac77e95fa998a">getNumParticles</a>();</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keywordflow">if</span> (requested == 0) {</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        <span class="comment">// Short circuit: no particles to emit.</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    }</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> dummyNr(0.0);</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <a class="code hl_function" href="classFromFile.html#a7ac631c24893e0271db8ca940bb136b8">generateParticles</a>(requested, dummyNr);</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="comment">// Set per-particle dt for newly created particles.</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="comment">// switchToUnitlessPositions(use_dt_per_particle=true) in pushParticles scales</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="comment">// R by 1/(c * dtview(i)).  New particles come with dtview = 0 (Kokkos</span></div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">// zero-init), so that division produces inf, and the subsequent multiply by</span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="comment">// c*0 in switchOffUnitlessPositions gives inf*0 = NaN positions.</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalAfter = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nNew        = nlocalAfter - nlocalBefore;</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">if</span> (nNew &gt; 0) {</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> fracDt = tEnd - <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a>;</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        <span class="keyword">auto</span> dtview         = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;dt.getView();</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> offset = nlocalBefore;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        Kokkos::parallel_for(</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                <span class="stringliteral">&quot;FromFile_setDt&quot;</span>, nNew,</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                KOKKOS_LAMBDA(<span class="keyword">const</span> <span class="keywordtype">size_t</span> j) { dtview(offset + j) = fracDt; });</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        Kokkos::fence();</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    }</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>}</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalBefore = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> dummyNr(0.0);</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <a class="code hl_function" href="classFromFile.html#a7ac631c24893e0271db8ca940bb136b8">generateParticles</a>(requested, dummyNr);</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="comment">// Set per-particle dt for newly created particles.</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">// switchToUnitlessPositions(use_dt_per_particle=true) in pushParticles scales</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="comment">// R by 1/(c * dtview(i)).  New particles come with dtview = 0 (Kokkos</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="comment">// zero-init), so that division produces inf, and the subsequent multiply by</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="comment">// c*0 in switchOffUnitlessPositions gives inf*0 = NaN positions.</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalAfter = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nNew        = nlocalAfter - nlocalBefore;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordflow">if</span> (nNew &gt; 0) {</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> fracDt = tEnd - <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a>;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        <span class="keyword">auto</span> dtview         = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;dt.getView();</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> offset = nlocalBefore;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        Kokkos::parallel_for(</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                <span class="stringliteral">&quot;FromFile_setDt&quot;</span>, nNew,</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                KOKKOS_LAMBDA(<span class="keyword">const</span> <span class="keywordtype">size_t</span> j) { dtview(offset + j) = fracDt; });</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        Kokkos::fence();</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    }</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>}</div>
 </div>
 <div class="ttc" id="aDistributionMoments_8h_html_a716e97cb94129a4800d15dc3d2fa4063"><div class="ttname"><a href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a></div><div class="ttdeci">ippl::Vector&lt; T, Dim &gt; Vector_t</div><div class="ttdef"><b>Definition</b> <a href="DistributionMoments_8h_source.html#l00031">DistributionMoments.h:31</a></div></div>
 <div class="ttc" id="aDistribution_8cpp_html_abac6b71b6ea68a6c8bb864e8ebd5fe62"><div class="ttname"><a href="Distribution_8cpp.html#abac6b71b6ea68a6c8bb864e8ebd5fe62">view_type</a></div><div class="ttdeci">typename ippl::detail::ViewType&lt; ippl::Vector&lt; double, Dim &gt;, 1 &gt;::view_type view_type</div><div class="ttdef"><b>Definition</b> <a href="Distribution_8cpp_source.html#l00053">Distribution.cpp:53</a></div></div>
@@ -537,17 +539,18 @@ $(document).ready(function(){initNavTree('FromFile_8cpp_source.html',''); initRe
 <div class="ttc" id="aclassFromFile_html_a9e7f819039ced069df50806070321fe6"><div class="ttname"><a href="classFromFile.html#a9e7f819039ced069df50806070321fe6">FromFile::filename_m</a></div><div class="ttdeci">std::string filename_m</div><div class="ttdoc">File path to read particle data from.</div><div class="ttdef"><b>Definition</b> <a href="FromFile_8h_source.html#l00097">FromFile.h:97</a></div></div>
 <div class="ttc" id="aclassFromFile_html_aa612b71e36d79d2d13c92a42a66afede"><div class="ttname"><a href="classFromFile.html#aa612b71e36d79d2d13c92a42a66afede">FromFile::columnIndices_m</a></div><div class="ttdeci">std::vector&lt; size_t &gt; columnIndices_m</div><div class="ttdoc">Column indices mapping: [x_idx, y_idx, z_idx, px_idx, py_idx, pz_idx].</div><div class="ttdef"><b>Definition</b> <a href="FromFile_8h_source.html#l00106">FromFile.h:106</a></div></div>
 <div class="ttc" id="aclassFromFile_html_adfc9a5996a4172ae9477fa2ff738d2a2"><div class="ttname"><a href="classFromFile.html#adfc9a5996a4172ae9477fa2ff738d2a2">FromFile::particleData_m</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; double &gt; &gt; particleData_m</div><div class="ttdoc">Stored particle data: each element is a 6D phase space vector [x, y, z, px, py, pz].</div><div class="ttdef"><b>Definition</b> <a href="FromFile_8h_source.html#l00100">FromFile.h:100</a></div></div>
-<div class="ttc" id="aclassFromFile_html_af5e6d5e20e12f6fbc48393b11226444f"><div class="ttname"><a href="classFromFile.html#af5e6d5e20e12f6fbc48393b11226444f">FromFile::emitParticles</a></div><div class="ttdeci">void emitParticles(double t, double dt) override</div><div class="ttdoc">Time-stepped emission hook for one-shot delayed file-based injection.</div><div class="ttdef"><b>Definition</b> <a href="FromFile_8cpp_source.html#l00348">FromFile.cpp:348</a></div></div>
+<div class="ttc" id="aclassFromFile_html_af5e6d5e20e12f6fbc48393b11226444f"><div class="ttname"><a href="classFromFile.html#af5e6d5e20e12f6fbc48393b11226444f">FromFile::emitParticles</a></div><div class="ttdeci">void emitParticles(double t, double dt) override</div><div class="ttdoc">Time-stepped emission hook for one-shot delayed file-based injection.</div><div class="ttdef"><b>Definition</b> <a href="FromFile_8cpp_source.html#l00350">FromFile.cpp:350</a></div></div>
 <div class="ttc" id="aclassOpalData_html_a77ee645b42c83ac03ac8d6e1d1a8a1c1"><div class="ttname"><a href="classOpalData.html#a77ee645b42c83ac03ac8d6e1d1a8a1c1">OpalData::getInputFn</a></div><div class="ttdeci">std::string getInputFn()</div><div class="ttdoc">get opals input filename</div><div class="ttdef"><b>Definition</b> <a href="OpalData_8cpp_source.html#l00569">OpalData.cpp:569</a></div></div>
 <div class="ttc" id="aclassOpalData_html_ac79e35ccb2194504a19ce52ddc5fd6e0"><div class="ttname"><a href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a></div><div class="ttdeci">static OpalData * getInstance()</div><div class="ttdef"><b>Definition</b> <a href="OpalData_8cpp_source.html#l00193">OpalData.cpp:193</a></div></div>
 <div class="ttc" id="aclassOpalException_html"><div class="ttname"><a href="classOpalException.html">OpalException</a></div><div class="ttdef"><b>Definition</b> <a href="OpalException_8h_source.html#l00030">OpalException.h:30</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html"><div class="ttname"><a href="classSamplingBase.html">SamplingBase</a></div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00015">SamplingBase.hpp:15</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a21c9bf55679a6a2b0d0c5c30c20887d7"><div class="ttname"><a href="classSamplingBase.html#a21c9bf55679a6a2b0d0c5c30c20887d7">SamplingBase::P0_m</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; P0_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00023">SamplingBase.hpp:23</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a644b972689300f7176c99b3bc9c3d04a"><div class="ttname"><a href="classSamplingBase.html#a644b972689300f7176c99b3bc9c3d04a">SamplingBase::R0_m</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; R0_m</div><div class="ttdoc">Emission source offset: position R0, momentum P0, start time t0 (applied in sample step).</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00022">SamplingBase.hpp:22</a></div></div>
-<div class="ttc" id="aclassSamplingBase_html_a69e7abdaa2d451f1250e96c87360606e"><div class="ttname"><a href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">SamplingBase::hasEmittedOnce_m</a></div><div class="ttdeci">bool hasEmittedOnce_m</div><div class="ttdoc">For one-shot emitters (e.g. Gaussian at delayed t0): guard to avoid double sampling.</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00028">SamplingBase.hpp:28</a></div></div>
+<div class="ttc" id="aclassSamplingBase_html_a69e7abdaa2d451f1250e96c87360606e"><div class="ttname"><a href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">SamplingBase::hasEmittedOnce_m</a></div><div class="ttdeci">bool hasEmittedOnce_m</div><div class="ttdoc">For one-shot emitters (e.g. Gaussian at delayed t0): guard to avoid double sampling.</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00033">SamplingBase.hpp:33</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a8711b5cac5a21827723d5c8c35bee87e"><div class="ttname"><a href="classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e">SamplingBase::computeLocalEmitCount</a></div><div class="ttdeci">size_t computeLocalEmitCount(size_t totalToSample) const</div><div class="ttdoc">Computes the number of particles this rank should emit so that the global total equals totalToSample ...</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8cpp_source.html#l00006">SamplingBase.cpp:6</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a8769bb22cf5c1f4dcd5fd38a5d33febb"><div class="ttname"><a href="classSamplingBase.html#a8769bb22cf5c1f4dcd5fd38a5d33febb">SamplingBase::emissionModel_m</a></div><div class="ttdeci">std::string emissionModel_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00025">SamplingBase.hpp:25</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_acc2d8f02845ed8483a9d78503f580850"><div class="ttname"><a href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">SamplingBase::opalDist_m</a></div><div class="ttdeci">Distribution_t * opalDist_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00019">SamplingBase.hpp:19</a></div></div>
+<div class="ttc" id="aclassSamplingBase_html_ad9ed1ce858a5c8e58c4209ba8118756c"><div class="ttname"><a href="classSamplingBase.html#ad9ed1ce858a5c8e58c4209ba8118756c">SamplingBase::fillPolarization</a></div><div class="ttdeci">void fillPolarization(size_t startIdx, size_t count)</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00063">SamplingBase.hpp:63</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_af31ecce2a95676da3a4c7502b3cb444f"><div class="ttname"><a href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">SamplingBase::t0_m</a></div><div class="ttdeci">double t0_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00024">SamplingBase.hpp:24</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_afec10301afb89d46e75ab27e1bada714"><div class="ttname"><a href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">SamplingBase::pc_m</a></div><div class="ttdeci">std::shared_ptr&lt; ParticleContainer_t &gt; pc_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00017">SamplingBase.hpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -556,7 +559,7 @@ $(document).ready(function(){initNavTree('FromFile_8cpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4043ae54a69fe9133a0541b78a48bd8d.html">Distribution</a></li><li class="navelem"><a class="el" href="FromFile_8cpp.html">FromFile.cpp</a></li>
-    <li class="footer">Generated on Wed May 20 2026 14:08:26 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 1 2026 10:40:52 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

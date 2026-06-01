@@ -25,6 +25,7 @@ var namespacePhysics =
     [ "Water", "classPhysics_1_1Water.html", "classPhysics_1_1Water" ],
     [ "a0", "namespacePhysics.html#a8652eee10e39466222c256e137564868", null ],
     [ "a_e", "namespacePhysics.html#abc1b1bec52382665121187b7e5696138", null ],
+    [ "a_mu", "namespacePhysics.html#a49727ed9815f0b1054580bbe44a11bb0", null ],
     [ "a_p", "namespacePhysics.html#a7b077d0ea9e416e75bc5473a5888a7d6", null ],
     [ "alpha", "namespacePhysics.html#ab639aef14caa1a17aedf618fae09d9dd", null ],
     [ "amu", "namespacePhysics.html#a5f2296e787ee54e4d01d72a5f3497018", null ],

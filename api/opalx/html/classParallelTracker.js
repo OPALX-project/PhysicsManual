@@ -16,6 +16,7 @@ var classParallelTracker =
     [ "doBinaryRepartition", "classParallelTracker.html#a48732b1c85d7befa57350d6db80149ef", null ],
     [ "dumpStats", "classParallelTracker.html#ac109eefa5a863afdbc58f74f12fd7a2a", null ],
     [ "emitFromEmissionSources", "classParallelTracker.html#a68a2d08a2fea2bf0f5538b419c06d5a3", null ],
+    [ "evolveSpinTBMT", "classParallelTracker.html#a2974d56d995da3b377c9aa663f088a15", null ],
     [ "execute", "classParallelTracker.html#a6ed6dc56586af0bbb34d549e50172658", null ],
     [ "findStartPositions", "classParallelTracker.html#aba78548bc46011a2f278f11836a5c053", null ],
     [ "getBunch", "classParallelTracker.html#ab3c1570a3407fed5e14b31624667de1c", null ],

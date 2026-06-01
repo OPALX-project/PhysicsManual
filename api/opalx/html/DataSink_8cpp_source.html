@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (93a612ec5182)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (dc2a29eed580)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -265,196 +265,201 @@ $(document).ready(function(){initNavTree('DataSink_8cpp_source.html',''); initRe
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        }</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keyword">auto</span> pc = beam.getParticleContainer(i);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">if</span> (!pc || pc-&gt;getTotalNum() == 0) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">if</span> (!pc) {</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        pc-&gt;<a class="code hl_function" href="classPartBunch.html#a117c20efd29d1cc097afd12cbebee671">updateMoments</a>();</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordtype">size_t</span> npOutside = 0;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespaceOptions.html#abb56a89cae4c4ee4ec1c942358196641">Options::beamHaloBoundary</a> &gt; 0) {</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            npOutside = beam.<a class="code hl_function" href="classPartBunch.html#a74549190646a1d08d79b9421f4f203ee">calcNumPartsOutside</a>(<a class="code hl_variable" href="namespaceOptions.html#abb56a89cae4c4ee4ec1c942358196641">Options::beamHaloBoundary</a> * pc-&gt;getRmsR());</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        }</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> fd[2] = {fdextPerContainer[i][0], fdextPerContainer[i][1]};</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;write(beam, fd, losses, azimuth, npOutside, i);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    beam.<a class="code hl_function" href="classPartBunch.html#a0905a1ac37537a44437535884668b48e">gatherLoadBalanceStatistics</a>();</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    beam.<a class="code hl_function" href="classPartBunch.html#a434e5e49229a11f06bf7b0358684e9dd">calcBeamParameters</a>();</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classDataSink.html#a84c1d080850b8909f7c79aba76354bd6">StatMarkerTimer_m</a>);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordtype">size_t</span> npOutside = 0;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">if</span> (pc-&gt;getTotalNum() &gt; 0) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            pc-&gt;<a class="code hl_function" href="classPartBunch.html#a117c20efd29d1cc097afd12cbebee671">updateMoments</a>();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespaceOptions.html#abb56a89cae4c4ee4ec1c942358196641">Options::beamHaloBoundary</a> &gt; 0) {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                npOutside = beam.<a class="code hl_function" href="classPartBunch.html#a74549190646a1d08d79b9421f4f203ee">calcNumPartsOutside</a>(<a class="code hl_variable" href="namespaceOptions.html#abb56a89cae4c4ee4ec1c942358196641">Options::beamHaloBoundary</a> * pc-&gt;getRmsR());</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> fd[2] = {fdextPerContainer[i][0], fdextPerContainer[i][1]};</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;write(beam, fd, losses, azimuth, npOutside, i);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    beam.<a class="code hl_function" href="classPartBunch.html#a0905a1ac37537a44437535884668b48e">gatherLoadBalanceStatistics</a>();</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">auto</span> primary = beam.getParticleContainer(0);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">if</span> (primary &amp;&amp; primary-&gt;getTotalNum() &gt; 0) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        beam.<a class="code hl_function" href="classPartBunch.html#a434e5e49229a11f06bf7b0358684e9dd">calcBeamParameters</a>();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classDataSink.html#a84c1d080850b8909f7c79aba76354bd6">StatMarkerTimer_m</a>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
 </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classDataSink.html#a79da20bd81dfc2ce40f38a30e57d95d0">  167</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a79da20bd81dfc2ce40f38a30e57d95d0">DataSink::storeCavityInformation</a>() {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="namespaceOptions.html#a3ba1effac9d06b6d0f88899f1d20d04f">Options::enableHDF5</a> || <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.empty()) {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[0]-&gt;storeCavityInformation();</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="}">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classDataSink.html#a79da20bd81dfc2ce40f38a30e57d95d0">  172</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a79da20bd81dfc2ce40f38a30e57d95d0">DataSink::storeCavityInformation</a>() {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="namespaceOptions.html#a3ba1effac9d06b6d0f88899f1d20d04f">Options::enableHDF5</a> || <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.empty()) {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[0]-&gt;storeCavityInformation();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
 </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classDataSink.html#a63ff9079afda89306e06c287024706d6">  175</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a63ff9079afda89306e06c287024706d6">DataSink::changeH5Wrappers</a>(<span class="keyword">const</span> std::vector&lt;H5PartWrapper*&gt;&amp; h5wrappers) {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="namespaceOptions.html#a3ba1effac9d06b6d0f88899f1d20d04f">Options::enableHDF5</a>) {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">if</span> (h5wrappers.size() != <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.size()) {</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="stringliteral">&quot;DataSink::changeH5Wrappers&quot;</span>, <span class="stringliteral">&quot;Expected &quot;</span> + std::to_string(<a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.size())</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                                                      + <span class="stringliteral">&quot; wrappers, got &quot;</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                                                      + std::to_string(h5wrappers.size()) + <span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; h5wrappers.size(); ++i) {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[i]-&gt;changeH5Wrapper(h5wrappers[i]);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
-</div>
+<div class="foldopen" id="foldopen00180" data-start="{" data-end="}">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classDataSink.html#a63ff9079afda89306e06c287024706d6">  180</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a63ff9079afda89306e06c287024706d6">DataSink::changeH5Wrappers</a>(<span class="keyword">const</span> std::vector&lt;H5PartWrapper*&gt;&amp; h5wrappers) {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="namespaceOptions.html#a3ba1effac9d06b6d0f88899f1d20d04f">Options::enableHDF5</a>) {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">if</span> (h5wrappers.size() != <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.size()) {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                <span class="stringliteral">&quot;DataSink::changeH5Wrappers&quot;</span>, <span class="stringliteral">&quot;Expected &quot;</span> + std::to_string(<a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.size())</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                                                      + <span class="stringliteral">&quot; wrappers, got &quot;</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                                                      + std::to_string(h5wrappers.size()) + <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="foldopen" id="foldopen00192" data-start="{" data-end="}">
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classDataSink.html#a647a91f4fc5d96ef2db30f1db00099bb">  192</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a647a91f4fc5d96ef2db30f1db00099bb">DataSink::writeGeomToVtk</a>(<a class="code hl_class" href="classBoundaryGeometry.html">BoundaryGeometry</a>&amp; bg, std::string fn) {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">if</span> (ippl::Comm-&gt;rank() == 0 &amp;&amp; <a class="code hl_variable" href="namespaceOptions.html#a32c22d4ed2f2d9b5ae3c70b8a63d545f">Options::enableVTK</a>) {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        bg.<a class="code hl_function" href="classBoundaryGeometry.html#aa9b0792f64a8bd2e1cbfcd56519fd205">writeGeomToVtk</a>(fn);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; h5wrappers.size(); ++i) {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[i]-&gt;changeH5Wrapper(h5wrappers[i]);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
 </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="foldopen" id="foldopen00198" data-start="{" data-end="}">
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classDataSink.html#a7458ca2f19a9aadd623cea802fddcb1d">  198</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a7458ca2f19a9aadd623cea802fddcb1d">DataSink::writeImpactStatistics</a>(</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keyword">const</span> <a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>&amp; beam, <span class="keywordtype">long</span> <span class="keywordtype">long</span>&amp; step, <span class="keywordtype">size_t</span>&amp; impact, <span class="keywordtype">double</span>&amp; sey_num,</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordtype">size_t</span> numberOfFieldEmittedParticles, <span class="keywordtype">bool</span> nEmissionMode, std::string fn) {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordtype">double</span> charge  = 0.0;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">size_t</span> Npart   = 0;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordtype">double</span> Npart_d = 0.0;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">if</span> (!nEmissionMode) {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pc = beam.getParticleContainers()[0];</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        charge        = -1.0 * pc-&gt;<a class="code hl_function" href="classPartBunch.html#a3b7a8ffe1cc13d15b143d8de8edf96e7">getTotalCharge</a>();</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="comment">// reduce(charge, charge, OpAddAssign());</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        Npart_d = -1.0 * charge / pc-&gt;getChargePerParticle();</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        Npart = beam.getParticleContainers()[0]-&gt;getTotalNum();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">if</span> (ippl::Comm-&gt;rank() == 0) {</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        std::string ffn = fn + std::string(<span class="stringliteral">&quot;.dat&quot;</span>);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        std::unique_ptr&lt;Inform&gt; ofp(<span class="keyword">new</span> Inform(<span class="keyword">nullptr</span>, ffn.c_str(), Inform::APPEND, 0));</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        Inform&amp; fid = *ofp;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        fid.precision(6);</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        fid &lt;&lt; std::setiosflags(std::ios::scientific);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordtype">double</span> t = beam.<a class="code hl_function" href="classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a">getT</a>() * <a class="code hl_variable" href="namespaceUnits.html#ae751b04bf56c8b789fbcf34e84573985">Units::s2ns</a>;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">if</span> (!nEmissionMode) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="keywordflow">if</span> (step == 0) {</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                fid &lt;&lt; <span class="stringliteral">&quot;#Time/ns&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;#Geometry impacts&quot;</span> &lt;&lt; std::setw(18)</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    &lt;&lt; <span class="stringliteral">&quot;tot_sey&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;TotalCharge&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;PartNum&quot;</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                    &lt;&lt; <span class="stringliteral">&quot; numberOfFieldEmittedParticles &quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            fid &lt;&lt; t &lt;&lt; std::setw(18) &lt;&lt; impact &lt;&lt; std::setw(18) &lt;&lt; sey_num &lt;&lt; std::setw(18)</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                &lt;&lt; charge &lt;&lt; std::setw(18) &lt;&lt; Npart_d &lt;&lt; std::setw(18)</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                &lt;&lt; numberOfFieldEmittedParticles &lt;&lt; endl;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="keywordflow">if</span> (step == 0) {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                fid &lt;&lt; <span class="stringliteral">&quot;#Time/ns&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;#Geometry impacts&quot;</span> &lt;&lt; std::setw(18)</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                    &lt;&lt; <span class="stringliteral">&quot;tot_sey&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;ParticleNumber&quot;</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    &lt;&lt; <span class="stringliteral">&quot; numberOfFieldEmittedParticles &quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            fid &lt;&lt; t &lt;&lt; std::setw(18) &lt;&lt; impact &lt;&lt; std::setw(18) &lt;&lt; sey_num &lt;&lt; std::setw(18)</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                &lt;&lt; double(Npart) &lt;&lt; std::setw(18) &lt;&lt; numberOfFieldEmittedParticles &lt;&lt; endl;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classDataSink.html#a647a91f4fc5d96ef2db30f1db00099bb">  197</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a647a91f4fc5d96ef2db30f1db00099bb">DataSink::writeGeomToVtk</a>(<a class="code hl_class" href="classBoundaryGeometry.html">BoundaryGeometry</a>&amp; bg, std::string fn) {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">if</span> (ippl::Comm-&gt;rank() == 0 &amp;&amp; <a class="code hl_variable" href="namespaceOptions.html#a32c22d4ed2f2d9b5ae3c70b8a63d545f">Options::enableVTK</a>) {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        bg.<a class="code hl_function" href="classBoundaryGeometry.html#aa9b0792f64a8bd2e1cbfcd56519fd205">writeGeomToVtk</a>(fn);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}</div>
 </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="foldopen" id="foldopen00241" data-start="{" data-end="}">
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="classDataSink.html#ab985b16a8a32c345cee02d0f967221e0">  241</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#ab985b16a8a32c345cee02d0f967221e0">DataSink::dumpBinConfig</a>(</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordtype">long</span> <span class="keywordtype">long</span> step, <span class="keywordtype">double</span> time, <span class="keywordtype">bool</span> preMerge, <span class="keyword">const</span> std::vector&lt;std::size_t&gt;&amp; binCounts,</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keyword">const</span> std::vector&lt;double&gt;&amp; binWidths, <span class="keywordtype">double</span> xMin, <span class="keyword">const</span> std::string&amp; fileName) {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">if</span> (ippl::Comm-&gt;rank() != 0) {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    Inform m(<span class="stringliteral">&quot;DataSink::dumpBinConfig&quot;</span>);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">if</span> (binCounts.size() != binWidths.size()) {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        m &lt;&lt; level4 &lt;&lt; <span class="stringliteral">&quot;Invalid bin configuration: binCounts.size() = &quot;</span> &lt;&lt; binCounts.size()</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>          &lt;&lt; <span class="stringliteral">&quot;, binWidths.size() = &quot;</span> &lt;&lt; binWidths.size() &lt;&lt; endl;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                <span class="stringliteral">&quot;DataSink::dumpBinConfig&quot;</span>, <span class="stringliteral">&quot;binCounts and binWidths must have the same length.&quot;</span>);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    }</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">binConfigWriter_m</a>) {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        m &lt;&lt; level4 &lt;&lt; <span class="stringliteral">&quot;Creating BinConfigWriter for JSON binning output file \&quot;&quot;</span> &lt;&lt; fileName</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>          &lt;&lt; <span class="stringliteral">&quot;\&quot;.&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <a class="code hl_variable" href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">binConfigWriter_m</a> = std::make_unique&lt;BinConfigWriter&gt;(fileName);</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    m &lt;&lt; level5 &lt;&lt; <span class="stringliteral">&quot;Dumping bin configuration snapshot: step=&quot;</span> &lt;&lt; step &lt;&lt; <span class="stringliteral">&quot;, time=&quot;</span> &lt;&lt; time</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      &lt;&lt; <span class="stringliteral">&quot;, preMerge=&quot;</span> &lt;&lt; (preMerge ? 1 : 0) &lt;&lt; <span class="stringliteral">&quot;, nBins=&quot;</span> &lt;&lt; binCounts.size() &lt;&lt; <span class="stringliteral">&quot;, xMin=&quot;</span> &lt;&lt; xMin</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      &lt;&lt; endl;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <a class="code hl_variable" href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">binConfigWriter_m</a>-&gt;writeEntry(step, time, preMerge, binCounts, binWidths, xMin);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classDataSink.html#a7458ca2f19a9aadd623cea802fddcb1d">  203</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a7458ca2f19a9aadd623cea802fddcb1d">DataSink::writeImpactStatistics</a>(</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keyword">const</span> <a class="code hl_class" href="classPartBunch.html">PartBunch_t</a>&amp; beam, <span class="keywordtype">long</span> <span class="keywordtype">long</span>&amp; step, <span class="keywordtype">size_t</span>&amp; impact, <span class="keywordtype">double</span>&amp; sey_num,</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordtype">size_t</span> numberOfFieldEmittedParticles, <span class="keywordtype">bool</span> nEmissionMode, std::string fn) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordtype">double</span> charge  = 0.0;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordtype">size_t</span> Npart   = 0;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordtype">double</span> Npart_d = 0.0;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">if</span> (!nEmissionMode) {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pc = beam.getParticleContainers()[0];</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        charge        = -1.0 * pc-&gt;<a class="code hl_function" href="classPartBunch.html#a3b7a8ffe1cc13d15b143d8de8edf96e7">getTotalCharge</a>();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="comment">// reduce(charge, charge, OpAddAssign());</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        Npart_d = -1.0 * charge / pc-&gt;getChargePerParticle();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        Npart = beam.getParticleContainers()[0]-&gt;getTotalNum();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordflow">if</span> (ippl::Comm-&gt;rank() == 0) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        std::string ffn = fn + std::string(<span class="stringliteral">&quot;.dat&quot;</span>);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        std::unique_ptr&lt;Inform&gt; ofp(<span class="keyword">new</span> Inform(<span class="keyword">nullptr</span>, ffn.c_str(), Inform::APPEND, 0));</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        Inform&amp; fid = *ofp;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        fid.precision(6);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        fid &lt;&lt; std::setiosflags(std::ios::scientific);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordtype">double</span> t = beam.<a class="code hl_function" href="classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a">getT</a>() * <a class="code hl_variable" href="namespaceUnits.html#ae751b04bf56c8b789fbcf34e84573985">Units::s2ns</a>;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordflow">if</span> (!nEmissionMode) {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keywordflow">if</span> (step == 0) {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                fid &lt;&lt; <span class="stringliteral">&quot;#Time/ns&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;#Geometry impacts&quot;</span> &lt;&lt; std::setw(18)</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                    &lt;&lt; <span class="stringliteral">&quot;tot_sey&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;TotalCharge&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;PartNum&quot;</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                    &lt;&lt; <span class="stringliteral">&quot; numberOfFieldEmittedParticles &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            fid &lt;&lt; t &lt;&lt; std::setw(18) &lt;&lt; impact &lt;&lt; std::setw(18) &lt;&lt; sey_num &lt;&lt; std::setw(18)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                &lt;&lt; charge &lt;&lt; std::setw(18) &lt;&lt; Npart_d &lt;&lt; std::setw(18)</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                &lt;&lt; numberOfFieldEmittedParticles &lt;&lt; endl;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">if</span> (step == 0) {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                fid &lt;&lt; <span class="stringliteral">&quot;#Time/ns&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;#Geometry impacts&quot;</span> &lt;&lt; std::setw(18)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                    &lt;&lt; <span class="stringliteral">&quot;tot_sey&quot;</span> &lt;&lt; std::setw(18) &lt;&lt; <span class="stringliteral">&quot;ParticleNumber&quot;</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                    &lt;&lt; <span class="stringliteral">&quot; numberOfFieldEmittedParticles &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            fid &lt;&lt; t &lt;&lt; std::setw(18) &lt;&lt; impact &lt;&lt; std::setw(18) &lt;&lt; sey_num &lt;&lt; std::setw(18)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                &lt;&lt; double(Npart) &lt;&lt; std::setw(18) &lt;&lt; numberOfFieldEmittedParticles &lt;&lt; endl;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
 </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="foldopen" id="foldopen00270" data-start="{" data-end="}">
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="classDataSink.html#a0dff21b9bc96518fd7f971c55f021c96">  270</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a0dff21b9bc96518fd7f971c55f021c96">DataSink::rewindLines</a>() {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> linesToRewind = 0;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.size(); ++i) {</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordtype">double</span> spos = <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[i]-&gt;getLastPosition();</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">if</span> (i &lt; <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>.size() &amp;&amp; <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;exists()) {</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> li = <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;rewindToSpos(spos);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;replaceVersionString();</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            linesToRewind = std::max(linesToRewind, li);</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        }</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[i]-&gt;close();</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">if</span> (linesToRewind &gt; 0) {</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>.size(); ++i) {</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>[i]-&gt;rewindLines(linesToRewind);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>[i]-&gt;replaceVersionString();</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        }</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    }</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>}</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="foldopen" id="foldopen00246" data-start="{" data-end="}">
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="classDataSink.html#ab985b16a8a32c345cee02d0f967221e0">  246</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#ab985b16a8a32c345cee02d0f967221e0">DataSink::dumpBinConfig</a>(</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordtype">long</span> <span class="keywordtype">long</span> step, <span class="keywordtype">double</span> time, <span class="keywordtype">bool</span> preMerge, <span class="keyword">const</span> std::vector&lt;std::size_t&gt;&amp; binCounts,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keyword">const</span> std::vector&lt;double&gt;&amp; binWidths, <span class="keywordtype">double</span> xMin, <span class="keyword">const</span> std::string&amp; fileName) {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordflow">if</span> (ippl::Comm-&gt;rank() != 0) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    Inform m(<span class="stringliteral">&quot;DataSink::dumpBinConfig&quot;</span>);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">if</span> (binCounts.size() != binWidths.size()) {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        m &lt;&lt; level4 &lt;&lt; <span class="stringliteral">&quot;Invalid bin configuration: binCounts.size() = &quot;</span> &lt;&lt; binCounts.size()</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>          &lt;&lt; <span class="stringliteral">&quot;, binWidths.size() = &quot;</span> &lt;&lt; binWidths.size() &lt;&lt; endl;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                <span class="stringliteral">&quot;DataSink::dumpBinConfig&quot;</span>, <span class="stringliteral">&quot;binCounts and binWidths must have the same length.&quot;</span>);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">binConfigWriter_m</a>) {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        m &lt;&lt; level4 &lt;&lt; <span class="stringliteral">&quot;Creating BinConfigWriter for JSON binning output file \&quot;&quot;</span> &lt;&lt; fileName</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>          &lt;&lt; <span class="stringliteral">&quot;\&quot;.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <a class="code hl_variable" href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">binConfigWriter_m</a> = std::make_unique&lt;BinConfigWriter&gt;(fileName);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    m &lt;&lt; level5 &lt;&lt; <span class="stringliteral">&quot;Dumping bin configuration snapshot: step=&quot;</span> &lt;&lt; step &lt;&lt; <span class="stringliteral">&quot;, time=&quot;</span> &lt;&lt; time</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      &lt;&lt; <span class="stringliteral">&quot;, preMerge=&quot;</span> &lt;&lt; (preMerge ? 1 : 0) &lt;&lt; <span class="stringliteral">&quot;, nBins=&quot;</span> &lt;&lt; binCounts.size() &lt;&lt; <span class="stringliteral">&quot;, xMin=&quot;</span> &lt;&lt; xMin</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      &lt;&lt; endl;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <a class="code hl_variable" href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">binConfigWriter_m</a>-&gt;writeEntry(step, time, preMerge, binCounts, binWidths, xMin);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>}</div>
 </div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="foldopen" id="foldopen00291" data-start="{" data-end="}">
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classDataSink.html#a860fc032ae3a3d2c7ba0880d98177c3b">  291</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a860fc032ae3a3d2c7ba0880d98177c3b">DataSink::init</a>(</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordtype">bool</span> restart, <span class="keyword">const</span> std::vector&lt;H5PartWrapper*&gt;&amp; h5wrappers, <span class="keywordtype">size_t</span> numParticleContainers) {</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    std::string fn = <a class="code hl_function" href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a>()-&gt;<a class="code hl_function" href="classOpalData.html#a3539361fbd2937b2b70723d6470ba8a6">getInputBasename</a>();</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <a class="code hl_variable" href="classDataSink.html#a924ea620918ba2abe4da5226f593f798">lossWrCounter_m</a>   = 0;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <a class="code hl_variable" href="classDataSink.html#a84c1d080850b8909f7c79aba76354bd6">StatMarkerTimer_m</a> = IpplTimings::getTimer(<span class="stringliteral">&quot;Write Stat&quot;</span>);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>.clear();</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numParticleContainers; ++i) {</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        std::string stem = <a class="code hl_function" href="classDataSink.html#a7e66a15efd0a09352e25adb1c9b4a90f">diagnosticStemForContainer</a>(fn, numParticleContainers, i);</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>.push_back(<a class="code hl_typedef" href="classDataSink.html#af88971a44de5c74901a1d160c8639d58">statWriter_t</a>(<span class="keyword">new</span> <a class="code hl_class" href="classStatWriter.html">StatWriter</a>(stem + std::string(<span class="stringliteral">&quot;.stat&quot;</span>), restart)));</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    }</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>.clear();</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>.push_back(<a class="code hl_typedef" href="classDataSink.html#a64da9b7216c5092fe100c1a924c12912">sddsWriter_t</a>(<span class="keyword">new</span> <a class="code hl_class" href="classLBalWriter.html">LBalWriter</a>(fn + std::string(<span class="stringliteral">&quot;.lbal&quot;</span>), restart)));</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.clear();</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespaceOptions.html#a3ba1effac9d06b6d0f88899f1d20d04f">Options::enableHDF5</a>) {</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keywordflow">if</span> (h5wrappers.size() != numParticleContainers) {</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                    <span class="stringliteral">&quot;DataSink::init&quot;</span>,</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                    <span class="stringliteral">&quot;HDF5 enabled: expected &quot;</span> + std::to_string(numParticleContainers)</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                            + <span class="stringliteral">&quot; H5PartWrapper(s), got &quot;</span> + std::to_string(h5wrappers.size()) + <span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        }</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keywordflow">for</span> (<a class="code hl_class" href="classH5PartWrapper.html">H5PartWrapper</a>* w : h5wrappers) {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.push_back(<a class="code hl_typedef" href="classDataSink.html#a8af5b6e9b6e5e6c1083f90e6aa325a4b">h5Writer_t</a>(<span class="keyword">new</span> <a class="code hl_class" href="classH5Writer.html">H5Writer</a>(w, restart)));</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        }</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!h5wrappers.empty()) {</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(<span class="stringliteral">&quot;DataSink::init&quot;</span>, <span class="stringliteral">&quot;H5 wrappers passed while HDF5 is disabled.&quot;</span>);</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="foldopen" id="foldopen00275" data-start="{" data-end="}">
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="classDataSink.html#a0dff21b9bc96518fd7f971c55f021c96">  275</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a0dff21b9bc96518fd7f971c55f021c96">DataSink::rewindLines</a>() {</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> linesToRewind = 0;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.size(); ++i) {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        <span class="keywordtype">double</span> spos = <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[i]-&gt;getLastPosition();</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span> (i &lt; <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>.size() &amp;&amp; <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;exists()) {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> li = <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;rewindToSpos(spos);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>[i]-&gt;replaceVersionString();</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            linesToRewind = std::max(linesToRewind, li);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>[i]-&gt;close();</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">if</span> (linesToRewind &gt; 0) {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>.size(); ++i) {</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>[i]-&gt;rewindLines(linesToRewind);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>[i]-&gt;replaceVersionString();</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        }</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>}</div>
+</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="foldopen" id="foldopen00296" data-start="{" data-end="}">
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="classDataSink.html#a860fc032ae3a3d2c7ba0880d98177c3b">  296</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classDataSink.html#a860fc032ae3a3d2c7ba0880d98177c3b">DataSink::init</a>(</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordtype">bool</span> restart, <span class="keyword">const</span> std::vector&lt;H5PartWrapper*&gt;&amp; h5wrappers, <span class="keywordtype">size_t</span> numParticleContainers) {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    std::string fn = <a class="code hl_function" href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a>()-&gt;<a class="code hl_function" href="classOpalData.html#a3539361fbd2937b2b70723d6470ba8a6">getInputBasename</a>();</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_variable" href="classDataSink.html#a924ea620918ba2abe4da5226f593f798">lossWrCounter_m</a>   = 0;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <a class="code hl_variable" href="classDataSink.html#a84c1d080850b8909f7c79aba76354bd6">StatMarkerTimer_m</a> = IpplTimings::getTimer(<span class="stringliteral">&quot;Write Stat&quot;</span>);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>.clear();</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numParticleContainers; ++i) {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        std::string stem = <a class="code hl_function" href="classDataSink.html#a7e66a15efd0a09352e25adb1c9b4a90f">diagnosticStemForContainer</a>(fn, numParticleContainers, i);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <a class="code hl_variable" href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">statWriters_m</a>.push_back(<a class="code hl_typedef" href="classDataSink.html#af88971a44de5c74901a1d160c8639d58">statWriter_t</a>(<span class="keyword">new</span> <a class="code hl_class" href="classStatWriter.html">StatWriter</a>(stem + std::string(<span class="stringliteral">&quot;.stat&quot;</span>), restart)));</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>.clear();</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <a class="code hl_variable" href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">sddsWriter_m</a>.push_back(<a class="code hl_typedef" href="classDataSink.html#a64da9b7216c5092fe100c1a924c12912">sddsWriter_t</a>(<span class="keyword">new</span> <a class="code hl_class" href="classLBalWriter.html">LBalWriter</a>(fn + std::string(<span class="stringliteral">&quot;.lbal&quot;</span>), restart)));</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.clear();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespaceOptions.html#a3ba1effac9d06b6d0f88899f1d20d04f">Options::enableHDF5</a>) {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordflow">if</span> (h5wrappers.size() != numParticleContainers) {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                    <span class="stringliteral">&quot;DataSink::init&quot;</span>,</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    <span class="stringliteral">&quot;HDF5 enabled: expected &quot;</span> + std::to_string(numParticleContainers)</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                            + <span class="stringliteral">&quot; H5PartWrapper(s), got &quot;</span> + std::to_string(h5wrappers.size()) + <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        }</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keywordflow">for</span> (<a class="code hl_class" href="classH5PartWrapper.html">H5PartWrapper</a>* w : h5wrappers) {</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            <a class="code hl_variable" href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">h5Writers_m</a>.push_back(<a class="code hl_typedef" href="classDataSink.html#a8af5b6e9b6e5e6c1083f90e6aa325a4b">h5Writer_t</a>(<span class="keyword">new</span> <a class="code hl_class" href="classH5Writer.html">H5Writer</a>(w, restart)));</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        }</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!h5wrappers.empty()) {</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classOpalException.html">OpalException</a>(<span class="stringliteral">&quot;DataSink::init&quot;</span>, <span class="stringliteral">&quot;H5 wrappers passed while HDF5 is disabled.&quot;</span>);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>}</div>
 </div>
 <div class="ttc" id="aBoundaryGeometry_8h_html"><div class="ttname"><a href="BoundaryGeometry_8h.html">BoundaryGeometry.h</a></div></div>
 <div class="ttc" id="aDataSink_8h_html"><div class="ttname"><a href="DataSink_8h.html">DataSink.h</a></div></div>
@@ -470,22 +475,22 @@ $(document).ready(function(){initNavTree('DataSink_8cpp_source.html',''); initRe
 <div class="ttc" id="aclassBoundaryGeometry_html"><div class="ttname"><a href="classBoundaryGeometry.html">BoundaryGeometry</a></div><div class="ttdef"><b>Definition</b> <a href="BoundaryGeometry_8h_source.html#l00054">BoundaryGeometry.h:54</a></div></div>
 <div class="ttc" id="aclassBoundaryGeometry_html_aa9b0792f64a8bd2e1cbfcd56519fd205"><div class="ttname"><a href="classBoundaryGeometry.html#aa9b0792f64a8bd2e1cbfcd56519fd205">BoundaryGeometry::writeGeomToVtk</a></div><div class="ttdeci">void writeGeomToVtk(std::string fn)</div><div class="ttdef"><b>Definition</b> <a href="BoundaryGeometry_8cpp_source.html#l02201">BoundaryGeometry.cpp:2201</a></div></div>
 <div class="ttc" id="aclassDataSink_html"><div class="ttname"><a href="classDataSink.html">DataSink</a></div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00048">DataSink.h:48</a></div></div>
-<div class="ttc" id="aclassDataSink_html_a0dff21b9bc96518fd7f971c55f021c96"><div class="ttname"><a href="classDataSink.html#a0dff21b9bc96518fd7f971c55f021c96">DataSink::rewindLines</a></div><div class="ttdeci">void rewindLines()</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00270">DataSink.cpp:270</a></div></div>
+<div class="ttc" id="aclassDataSink_html_a0dff21b9bc96518fd7f971c55f021c96"><div class="ttname"><a href="classDataSink.html#a0dff21b9bc96518fd7f971c55f021c96">DataSink::rewindLines</a></div><div class="ttdeci">void rewindLines()</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00275">DataSink.cpp:275</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a2013989d5ada2c4964c32e918ac95e57"><div class="ttname"><a href="classDataSink.html#a2013989d5ada2c4964c32e918ac95e57">DataSink::sddsWriter_m</a></div><div class="ttdeci">std::vector&lt; sddsWriter_t &gt; sddsWriter_m</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00190">DataSink.h:190</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a3162531685d08924da255c3921ac145e"><div class="ttname"><a href="classDataSink.html#a3162531685d08924da255c3921ac145e">DataSink::losses_t</a></div><div class="ttdeci">StatWriter::losses_t losses_t</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00050">DataSink.h:50</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a556b74fac6b2759688487dee9482271f"><div class="ttname"><a href="classDataSink.html#a556b74fac6b2759688487dee9482271f">DataSink::dumpH5</a></div><div class="ttdeci">void dumpH5(PartBunch_t &amp;beam, Vector_t&lt; double, 3 &gt; FDext[]) const</div><div class="ttdoc">Write H5 phase-space data for all particle containers.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00071">DataSink.cpp:71</a></div></div>
-<div class="ttc" id="aclassDataSink_html_a63ff9079afda89306e06c287024706d6"><div class="ttname"><a href="classDataSink.html#a63ff9079afda89306e06c287024706d6">DataSink::changeH5Wrappers</a></div><div class="ttdeci">void changeH5Wrappers(const std::vector&lt; H5PartWrapper * &gt; &amp;h5wrappers)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00175">DataSink.cpp:175</a></div></div>
-<div class="ttc" id="aclassDataSink_html_a647a91f4fc5d96ef2db30f1db00099bb"><div class="ttname"><a href="classDataSink.html#a647a91f4fc5d96ef2db30f1db00099bb">DataSink::writeGeomToVtk</a></div><div class="ttdeci">void writeGeomToVtk(BoundaryGeometry &amp;bg, std::string fn)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00192">DataSink.cpp:192</a></div></div>
+<div class="ttc" id="aclassDataSink_html_a63ff9079afda89306e06c287024706d6"><div class="ttname"><a href="classDataSink.html#a63ff9079afda89306e06c287024706d6">DataSink::changeH5Wrappers</a></div><div class="ttdeci">void changeH5Wrappers(const std::vector&lt; H5PartWrapper * &gt; &amp;h5wrappers)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00180">DataSink.cpp:180</a></div></div>
+<div class="ttc" id="aclassDataSink_html_a647a91f4fc5d96ef2db30f1db00099bb"><div class="ttname"><a href="classDataSink.html#a647a91f4fc5d96ef2db30f1db00099bb">DataSink::writeGeomToVtk</a></div><div class="ttdeci">void writeGeomToVtk(BoundaryGeometry &amp;bg, std::string fn)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00197">DataSink.cpp:197</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a64da9b7216c5092fe100c1a924c12912"><div class="ttname"><a href="classDataSink.html#a64da9b7216c5092fe100c1a924c12912">DataSink::sddsWriter_t</a></div><div class="ttdeci">std::unique_ptr&lt; SDDSWriter &gt; sddsWriter_t</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00052">DataSink.h:52</a></div></div>
-<div class="ttc" id="aclassDataSink_html_a7458ca2f19a9aadd623cea802fddcb1d"><div class="ttname"><a href="classDataSink.html#a7458ca2f19a9aadd623cea802fddcb1d">DataSink::writeImpactStatistics</a></div><div class="ttdeci">void writeImpactStatistics(const PartBunch_t &amp;beam, long long int &amp;step, size_t &amp;impact, double &amp;sey_num, size_t numberOfFieldEmittedParticles, bool nEmissionMode, std::string fn)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00198">DataSink.cpp:198</a></div></div>
+<div class="ttc" id="aclassDataSink_html_a7458ca2f19a9aadd623cea802fddcb1d"><div class="ttname"><a href="classDataSink.html#a7458ca2f19a9aadd623cea802fddcb1d">DataSink::writeImpactStatistics</a></div><div class="ttdeci">void writeImpactStatistics(const PartBunch_t &amp;beam, long long int &amp;step, size_t &amp;impact, double &amp;sey_num, size_t numberOfFieldEmittedParticles, bool nEmissionMode, std::string fn)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00203">DataSink.cpp:203</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a75b04d2cf8179deca1376eec2b23d17a"><div class="ttname"><a href="classDataSink.html#a75b04d2cf8179deca1376eec2b23d17a">DataSink::h5Writers_m</a></div><div class="ttdeci">std::vector&lt; h5Writer_t &gt; h5Writers_m</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00188">DataSink.h:188</a></div></div>
-<div class="ttc" id="aclassDataSink_html_a79da20bd81dfc2ce40f38a30e57d95d0"><div class="ttname"><a href="classDataSink.html#a79da20bd81dfc2ce40f38a30e57d95d0">DataSink::storeCavityInformation</a></div><div class="ttdeci">void storeCavityInformation()</div><div class="ttdoc">Write cavity information from H5 file.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00167">DataSink.cpp:167</a></div></div>
+<div class="ttc" id="aclassDataSink_html_a79da20bd81dfc2ce40f38a30e57d95d0"><div class="ttname"><a href="classDataSink.html#a79da20bd81dfc2ce40f38a30e57d95d0">DataSink::storeCavityInformation</a></div><div class="ttdeci">void storeCavityInformation()</div><div class="ttdoc">Write cavity information from H5 file.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00172">DataSink.cpp:172</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a7e66a15efd0a09352e25adb1c9b4a90f"><div class="ttname"><a href="classDataSink.html#a7e66a15efd0a09352e25adb1c9b4a90f">DataSink::diagnosticStemForContainer</a></div><div class="ttdeci">static std::string diagnosticStemForContainer(const std::string &amp;inputBasename, size_t numContainers, size_t index)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00043">DataSink.cpp:43</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a84c1d080850b8909f7c79aba76354bd6"><div class="ttname"><a href="classDataSink.html#a84c1d080850b8909f7c79aba76354bd6">DataSink::StatMarkerTimer_m</a></div><div class="ttdeci">IpplTimings::TimerRef StatMarkerTimer_m</div><div class="ttdoc">Timer to track statistics write time.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00204">DataSink.h:204</a></div></div>
-<div class="ttc" id="aclassDataSink_html_a860fc032ae3a3d2c7ba0880d98177c3b"><div class="ttname"><a href="classDataSink.html#a860fc032ae3a3d2c7ba0880d98177c3b">DataSink::init</a></div><div class="ttdeci">void init(bool restart, const std::vector&lt; H5PartWrapper * &gt; &amp;h5wrappers, size_t numParticleContainers)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00291">DataSink.cpp:291</a></div></div>
+<div class="ttc" id="aclassDataSink_html_a860fc032ae3a3d2c7ba0880d98177c3b"><div class="ttname"><a href="classDataSink.html#a860fc032ae3a3d2c7ba0880d98177c3b">DataSink::init</a></div><div class="ttdeci">void init(bool restart, const std::vector&lt; H5PartWrapper * &gt; &amp;h5wrappers, size_t numParticleContainers)</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00296">DataSink.cpp:296</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a8af5b6e9b6e5e6c1083f90e6aa325a4b"><div class="ttname"><a href="classDataSink.html#a8af5b6e9b6e5e6c1083f90e6aa325a4b">DataSink::h5Writer_t</a></div><div class="ttdeci">std::unique_ptr&lt; H5Writer &gt; h5Writer_t</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00053">DataSink.h:53</a></div></div>
 <div class="ttc" id="aclassDataSink_html_a924ea620918ba2abe4da5226f593f798"><div class="ttname"><a href="classDataSink.html#a924ea620918ba2abe4da5226f593f798">DataSink::lossWrCounter_m</a></div><div class="ttdeci">unsigned int lossWrCounter_m</div><div class="ttdoc">needed to create index for vtk file</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00201">DataSink.h:201</a></div></div>
-<div class="ttc" id="aclassDataSink_html_ab985b16a8a32c345cee02d0f967221e0"><div class="ttname"><a href="classDataSink.html#ab985b16a8a32c345cee02d0f967221e0">DataSink::dumpBinConfig</a></div><div class="ttdeci">void dumpBinConfig(long long step, double time, bool preMerge, const std::vector&lt; std::size_t &gt; &amp;binCounts, const std::vector&lt; double &gt; &amp;binWidths, double xMin, const std::string &amp;fileName)</div><div class="ttdoc">Append a binning configuration snapshot to a JSON file.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00241">DataSink.cpp:241</a></div></div>
+<div class="ttc" id="aclassDataSink_html_ab985b16a8a32c345cee02d0f967221e0"><div class="ttname"><a href="classDataSink.html#ab985b16a8a32c345cee02d0f967221e0">DataSink::dumpBinConfig</a></div><div class="ttdeci">void dumpBinConfig(long long step, double time, bool preMerge, const std::vector&lt; std::size_t &gt; &amp;binCounts, const std::vector&lt; double &gt; &amp;binWidths, double xMin, const std::string &amp;fileName)</div><div class="ttdoc">Append a binning configuration snapshot to a JSON file.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00246">DataSink.cpp:246</a></div></div>
 <div class="ttc" id="aclassDataSink_html_ac1b08967d3a374c0407e8854d4bdce2b"><div class="ttname"><a href="classDataSink.html#ac1b08967d3a374c0407e8854d4bdce2b">DataSink::binConfigWriter_m</a></div><div class="ttdeci">std::unique_ptr&lt; BinConfigWriter &gt; binConfigWriter_m</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00193">DataSink.h:193</a></div></div>
 <div class="ttc" id="aclassDataSink_html_ad4e7b672a1f521822e945b1aa55b7124"><div class="ttname"><a href="classDataSink.html#ad4e7b672a1f521822e945b1aa55b7124">DataSink::DataSink</a></div><div class="ttdeci">DataSink()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8cpp_source.html#l00051">DataSink.cpp:51</a></div></div>
 <div class="ttc" id="aclassDataSink_html_ae1da1373f443d995d8d8669226ca717a"><div class="ttname"><a href="classDataSink.html#ae1da1373f443d995d8d8669226ca717a">DataSink::statWriters_m</a></div><div class="ttdeci">std::vector&lt; statWriter_t &gt; statWriters_m</div><div class="ttdef"><b>Definition</b> <a href="DataSink_8h_source.html#l00189">DataSink.h:189</a></div></div>
@@ -498,10 +503,10 @@ $(document).ready(function(){initNavTree('DataSink_8cpp_source.html',''); initRe
 <div class="ttc" id="aclassOpalData_html_ac79e35ccb2194504a19ce52ddc5fd6e0"><div class="ttname"><a href="classOpalData.html#ac79e35ccb2194504a19ce52ddc5fd6e0">OpalData::getInstance</a></div><div class="ttdeci">static OpalData * getInstance()</div><div class="ttdef"><b>Definition</b> <a href="OpalData_8cpp_source.html#l00193">OpalData.cpp:193</a></div></div>
 <div class="ttc" id="aclassOpalException_html"><div class="ttname"><a href="classOpalException.html">OpalException</a></div><div class="ttdef"><b>Definition</b> <a href="OpalException_8h_source.html#l00030">OpalException.h:30</a></div></div>
 <div class="ttc" id="aclassPartBunch_html"><div class="ttname"><a href="classPartBunch.html">PartBunch</a></div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00052">PartBunch.h:54</a></div></div>
-<div class="ttc" id="aclassPartBunch_html_a0905a1ac37537a44437535884668b48e"><div class="ttname"><a href="classPartBunch.html#a0905a1ac37537a44437535884668b48e">PartBunch::gatherLoadBalanceStatistics</a></div><div class="ttdeci">void gatherLoadBalanceStatistics()</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8cpp_source.html#l00229">PartBunch.cpp:229</a></div></div>
+<div class="ttc" id="aclassPartBunch_html_a0905a1ac37537a44437535884668b48e"><div class="ttname"><a href="classPartBunch.html#a0905a1ac37537a44437535884668b48e">PartBunch::gatherLoadBalanceStatistics</a></div><div class="ttdeci">void gatherLoadBalanceStatistics()</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8cpp_source.html#l00231">PartBunch.cpp:231</a></div></div>
 <div class="ttc" id="aclassPartBunch_html_a117c20efd29d1cc097afd12cbebee671"><div class="ttname"><a href="classPartBunch.html#a117c20efd29d1cc097afd12cbebee671">PartBunch::updateMoments</a></div><div class="ttdeci">void updateMoments()</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00338">PartBunch.h:338</a></div></div>
 <div class="ttc" id="aclassPartBunch_html_a3b7a8ffe1cc13d15b143d8de8edf96e7"><div class="ttname"><a href="classPartBunch.html#a3b7a8ffe1cc13d15b143d8de8edf96e7">PartBunch::getTotalCharge</a></div><div class="ttdeci">double getTotalCharge() const</div><div class="ttdoc">Get the total charge across all particle containers.</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00457">PartBunch.h:457</a></div></div>
-<div class="ttc" id="aclassPartBunch_html_a434e5e49229a11f06bf7b0358684e9dd"><div class="ttname"><a href="classPartBunch.html#a434e5e49229a11f06bf7b0358684e9dd">PartBunch::calcBeamParameters</a></div><div class="ttdeci">void calcBeamParameters()</div><div class="ttdoc">Update moments and set rmin_m / rmax_m from the primary (first) container.</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8cpp_source.html#l00336">PartBunch.cpp:336</a></div></div>
+<div class="ttc" id="aclassPartBunch_html_a434e5e49229a11f06bf7b0358684e9dd"><div class="ttname"><a href="classPartBunch.html#a434e5e49229a11f06bf7b0358684e9dd">PartBunch::calcBeamParameters</a></div><div class="ttdeci">void calcBeamParameters()</div><div class="ttdoc">Update moments and set rmin_m / rmax_m from the primary (first) container.</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8cpp_source.html#l00338">PartBunch.cpp:338</a></div></div>
 <div class="ttc" id="aclassPartBunch_html_a589949f752f83cd067fb5930a4e10b6a"><div class="ttname"><a href="classPartBunch.html#a589949f752f83cd067fb5930a4e10b6a">PartBunch::getT</a></div><div class="ttdeci">double getT() const</div><div class="ttdoc">Get the current simulation time.</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00651">PartBunch.h:651</a></div></div>
 <div class="ttc" id="aclassPartBunch_html_a74549190646a1d08d79b9421f4f203ee"><div class="ttname"><a href="classPartBunch.html#a74549190646a1d08d79b9421f4f203ee">PartBunch::calcNumPartsOutside</a></div><div class="ttdeci">size_t calcNumPartsOutside(Vector_t&lt; double, Dim &gt;)</div><div class="ttdoc">Stub; logs and returns 0.</div><div class="ttdef"><b>Definition</b> <a href="PartBunch_8h_source.html#l00512">PartBunch.h:512</a></div></div>
 <div class="ttc" id="aclassStatWriter_html"><div class="ttname"><a href="classStatWriter.html">StatWriter</a></div><div class="ttdef"><b>Definition</b> <a href="StatWriter_8h_source.html#l00024">StatWriter.h:24</a></div></div>
@@ -516,7 +521,7 @@ $(document).ready(function(){initNavTree('DataSink_8cpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1e943b2a5906122ddf396bc604857988.html">Structure</a></li><li class="navelem"><a class="el" href="DataSink_8cpp.html">DataSink.cpp</a></li>
-    <li class="footer">Generated on Wed May 20 2026 14:08:27 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 1 2026 10:40:53 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

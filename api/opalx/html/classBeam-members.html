@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (93a612ec5182)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (dc2a29eed580)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -138,8 +138,10 @@ $(document).ready(function(){initNavTree('classBeam.html',''); initResizable(); 
   <tr class="even"><td class="entry"><a class="el" href="classObject.html#a5ec68ba1c3f450f8ea2b139f193c5a39">getOpalName</a>() const</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classObject.html#a489e6b0505923e64c18a8bb83062d5e3">getParent</a>() const</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBeam.html#a03e6460760866b6c5de7d3fa91037f3b">getParticleName</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classBeam.html#ab4c3630a14c5b30c74fba250ddc32cb5">getReference</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBeam.html#aabbee58452515951ea8c7020587fef0f">hasExplicitEnergy</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classBeam.html#ae4c133f81b7528f089bdde1340b6f44f">getPolarization</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBeam.html#ab4c3630a14c5b30c74fba250ddc32cb5">getReference</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classBeam.html#aabbee58452515951ea8c7020587fef0f">hasExplicitEnergy</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBeam.html#a40cf16676d6185c207f5b56f6f38ca7c">hasPolarization</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classObject.html#aa6e71ce6385ca4963129458e9c51ae91">increment</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classObject.html#ae7e75b2311e00969ae6308e899d32686">isBuiltin</a>() const</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classObject.html#a3cf52e93c67b1772ecbe486811eb5f65">isDirty</a>() const</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
@@ -182,15 +184,16 @@ $(document).ready(function(){initNavTree('classBeam.html',''); initResizable(); 
   <tr class="even"><td class="entry"><a class="el" href="classObject.html#afe5c431c6bdf03bc49beb95433bf9b38">timeStamp</a></td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classObject.html#aefe23441c2db5e86ad1322d3df15ce65">unregisterReference</a>(Invalidator *a)</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBeam.html#a8e37cab990f7b4aa87f7cd481949e873">update</a>()</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classBeam.html#ae00ca4866a8f1f721da45ce7c26c6d74">~Beam</a>()</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDefinition.html#a37def2c2ca8cdc02e9f614657169e654">~Definition</a>()</td><td class="entry"><a class="el" href="classDefinition.html">Definition</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classObject.html#ae8f5483f459e46687bd01e6f9977afd3">~Object</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classBeam.html#a33e49c730d6f5567affc860df32ecd55">validatePolarization</a>() const</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBeam.html#ae00ca4866a8f1f721da45ce7c26c6d74">~Beam</a>()</td><td class="entry"><a class="el" href="classBeam.html">Beam</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classDefinition.html#a37def2c2ca8cdc02e9f614657169e654">~Definition</a>()</td><td class="entry"><a class="el" href="classDefinition.html">Definition</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classObject.html#ae8f5483f459e46687bd01e6f9977afd3">~Object</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 20 2026 14:08:28 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 1 2026 10:40:54 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

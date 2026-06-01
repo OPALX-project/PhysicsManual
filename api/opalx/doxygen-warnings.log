@@ -316,7 +316,7 @@ Possible candidates:
   'Histogram & ParticleBinning::Histogram< size_type, bin_index_type, value_type, UseDualView, Properties >::operator=(const Histogram &other)' at line 144 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/BinHisto.h
   'KOKKOS_INLINE_FUNCTION ArrayReduction & ParticleBinning::ArrayReduction< SizeType, IndexType, N >::operator=(const ArrayReduction &rhs)' at line 55 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/ParallelReduceTools.h
   'HostArrayReduction & ParticleBinning::HostArrayReduction< SizeType, IndexType >::operator=(const HostArrayReduction &rhs)' at line 287 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/Binning/ParallelReduceTools.h
-  'void Beam::operator=(const Beam &)' at line 109 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/Beam.h
+  'void Beam::operator=(const Beam &)' at line 117 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/Beam.h
   'void BinningCmd::operator=(const BinningCmd &)' at line 99 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BinningCmd.h
   'const Ray & Ray::operator=(const Ray &a)=delete' at line 764 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.cpp
   'void BoundaryGeometry::operator=(const BoundaryGeometry &)' at line 216 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Structure/BoundaryGeometry.h
@@ -476,13 +476,13 @@ Possible candidates:
 Possible candidates:
   'void interpolation::MVector< Tmplt >::build_vector(size_t size)' at line 195 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
   'void interpolation::MVector< Tmplt >::build_vector(const Tmplt *data_start, const Tmplt *data_end)' at line 196 of file /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Interpolation/MVector.h
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:131: warning: Found unknown command '\beta'
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:131: warning: Found unknown command '\gamma'
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:226: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:137: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:137: warning: Found unknown command '\gamma'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:228: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+warning: Included by graph for 'AbstractObjects/Expressions.h' not generated, too many nodes (51), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Included by graph for 'OpalData.h' not generated, too many nodes (87), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Included by graph for 'Attributes.h' not generated, too many nodes (78), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Included by graph for 'AbstractObjects/Expressions.h' not generated, too many nodes (51), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Included by graph for 'Physics.h' not generated, too many nodes (80), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Included by graph for 'Physics.h' not generated, too many nodes (82), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:87: warning: argument 'w' of command @param is not found in the argument list of gsl_eigen_nonsymm(gsl_matrix *A, gsl_vector_complex *eval, gsl_eigen_nonsymm_workspace *)
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:56: warning: argument 'balance' of command @param is not found in the argument list of gsl_eigen_nonsymm_params(int, int, gsl_eigen_nonsymm_workspace *)
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLEigen.h:56: warning: argument 'compute_shur' of command @param is not found in the argument list of gsl_eigen_nonsymm_params(int, int, gsl_eigen_nonsymm_workspace *)
@@ -504,7 +504,7 @@ warning: Included by graph for 'Physics.h' not generated, too many nodes (80), t
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLIntegration.h:106: warning: argument 'workspace' of command @param is not found in the argument list of gsl_integration_qag(const gsl_function *f, double a, double b, double epsabs, double epsrel, size_t, int, gsl_integration_workspace *, double *result, double *abserr)
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Utilities/GSLSpline.h:35: warning: argument 'size' of command @param is not found in the argument list of gsl_spline_alloc(const int type, size_t)
 warning: Included by graph for 'OpalException.h' not generated, too many nodes (108), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Included by graph for 'Options.h' not generated, too many nodes (65), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+warning: Included by graph for 'Options.h' not generated, too many nodes (67), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:277: warning: argument 'scale' of command @param is not found in the argument list of Astra1DDynamic::applyField(std::shared_ptr< ParticleContainer_t > pc, double)
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:277: warning: argument 'pc' from the argument list of Astra1DDynamic::applyField has multiple @param documentation sections
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Fields/Astra1DDynamic.cpp:377: warning: argument 'R' from the argument list of Astra1DDynamic::getFieldDerivative has multiple @param documentation sections
@@ -771,17 +771,17 @@ warning: Included by graph for 'Options.h' not generated, too many nodes (65), t
   parameter 'revTrack'
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Distribution/MultiVariateGaussian.h:44: warning: The following parameter of MultiVariateGaussian::MultiVariateGaussian(std::shared_ptr< ParticleContainer_t > pc, const Vector_t< double, 3 > &meanR, const Vector_t< double, 3 > &meanP, const Vector_t< double, 3 > &sigmaR, const Vector_t< double, 3 > &sigmaP, const Vector_t< double, 3 > &cutoffR, const Vector_t< double, 3 > &cutoffP, bool fixMeanR=true, bool fixMeanP=true) is not documented:
   parameter 'pc'
-warning: Call graph for 'ParallelTracker::execute' not generated, too many nodes (67), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:999: warning: argument 'pusher' from the argument list of ParallelTracker::kickParticles has multiple @param documentation sections
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:999: warning: argument 'pc' from the argument list of ParallelTracker::kickParticles has multiple @param documentation sections
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:964: warning: argument 'pusher' from the argument list of ParallelTracker::pushParticles has multiple @param documentation sections
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:964: warning: argument 'pc' from the argument list of ParallelTracker::pushParticles has multiple @param documentation sections
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:226: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:226: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:131: warning: Found unknown command '\beta'
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:131: warning: Found unknown command '\gamma'
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:131: warning: Found unknown command '\beta'
-/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:131: warning: Found unknown command '\gamma'
+warning: Call graph for 'ParallelTracker::execute' not generated, too many nodes (68), threshold is 50. Consider increasing DOT_GRAPH_MAX_NODES.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:1004: warning: argument 'pusher' from the argument list of ParallelTracker::kickParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:1004: warning: argument 'pc' from the argument list of ParallelTracker::kickParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:969: warning: argument 'pusher' from the argument list of ParallelTracker::pushParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/Algorithms/ParallelTracker.cpp:969: warning: argument 'pc' from the argument list of ParallelTracker::pushParticles has multiple @param documentation sections
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:228: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/PartBunch.cpp:228: warning: Found recursive @copybrief or @copydoc relation for argument 'PartBunch::gatherLoadBalanceStatistics'.
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:137: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:137: warning: Found unknown command '\gamma'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:137: warning: Found unknown command '\beta'
+/home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/PartBunch/ParticleContainer.hpp:137: warning: Found unknown command '\gamma'
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:145: warning: argument 'R' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:145: warning: argument 't' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)
 /home/runner/work/PhysicsManual/PhysicsManual/.external/OPALX/src/AbsBeamline/Component.h:145: warning: argument 'A' of command @param is not found in the argument list of Component::getPotential(const Vector_t< double, 3 > &, const double &, Vector_t< double, 3 > &, double &)

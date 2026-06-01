@@ -3,11 +3,12 @@ var classParticleContainer =
     [ "Base", "classParticleContainer.html#ab9be86caa0a7125ac12020372d1d76b8", null ],
     [ "bin_index_type", "classParticleContainer.html#aaf67b531c4ad7b532bdebddb702046d7", null ],
     [ "qm_view_type", "classParticleContainer.html#aae2e5e8effddcb9de403f860fec4a5e3", null ],
+    [ "spin_vector_type", "classParticleContainer.html#a59c74a76962fc64ef5913cfc8ec3d431", null ],
     [ "QMStorageMode", "classParticleContainer.html#a911940db7b85790ef5834cadad9e7870", [
       [ "SingleValue", "classParticleContainer.html#a911940db7b85790ef5834cadad9e7870a462e5bf0507732d749734221759b2fc1", null ],
       [ "Attributes", "classParticleContainer.html#a911940db7b85790ef5834cadad9e7870a287234a1ff35a314b5b6bc4e5828e745", null ]
     ] ],
-    [ "ParticleContainer", "classParticleContainer.html#ae150265b6fc23cabf22cc9d95fc765a1", null ],
+    [ "ParticleContainer", "classParticleContainer.html#ab65573067e474b8a8b0758f814c2f0e9", null ],
     [ "~ParticleContainer", "classParticleContainer.html#ad1dfb8501346a35de015ce5fe91cd193", null ],
     [ "allocateParticles", "classParticleContainer.html#aff1e57dd424145eb8b2e9f0f3adf6426", null ],
     [ "applyFractionalStep", "classParticleContainer.html#a72724390663777343ba0be3e9c5e8159", null ],
@@ -55,6 +56,7 @@ var classParticleContainer =
     [ "getToLabTrafo", "classParticleContainer.html#a39459d75a1b21a371fcc73b088a86ab7", null ],
     [ "getTotalCharge", "classParticleContainer.html#a8f4ffe31ffbc29bf422bffdaf0bdc113", null ],
     [ "getTotalMass", "classParticleContainer.html#a3cfece7c5ece93356115fd402c317db1", null ],
+    [ "hasSpin", "classParticleContainer.html#ad6029f4f4448ea13653a84f2dd69a74b", null ],
     [ "isMomentsDirty", "classParticleContainer.html#a13c3ef9111af21503ce553bd05027374", null ],
     [ "isUnitlessPositions", "classParticleContainer.html#af8e6c4297a685f68a108d0d9af312e9f", null ],
     [ "markMomentsClean", "classParticleContainer.html#a93becfc2332d10aea3c59d8b089fd75e", null ],
@@ -95,6 +97,7 @@ var classParticleContainer =
     [ "P", "classParticleContainer.html#ab4b642e9e73955f89fa8bdd33d2467b4", null ],
     [ "Phi", "classParticleContainer.html#a490e9d033ae14039b3bd1d5f5e9485a3", null ],
     [ "pl_m", "classParticleContainer.html#a895a0e08527eb6fa42162eea8cf8885d", null ],
+    [ "Pol", "classParticleContainer.html#a6dc9e0ab8dfc3e3a2b2db455636e9ad8", null ],
     [ "QAttr", "classParticleContainer.html#addd215f2c6e09c0c957980289fd91449", null ],
     [ "qmStorageMode_m", "classParticleContainer.html#a7654e4886f5dcc53c2b8cc18872586d1", null ],
     [ "QView_m", "classParticleContainer.html#a2cb5b4e063414fe2894a574ae0c95575", null ],
@@ -102,6 +105,7 @@ var classParticleContainer =
     [ "refPartP_m", "classParticleContainer.html#a057e8229a57127c5427d63830b84f476", null ],
     [ "refPartR_m", "classParticleContainer.html#a615db72ebb377d7d1f88617e96f02829", null ],
     [ "Sp", "classParticleContainer.html#a7d3fa5925423b27a1c8d9e20396bd0b0", null ],
+    [ "spinEnabled_m", "classParticleContainer.html#a337044511adbc537124fad2789f9c395", null ],
     [ "sPos_m", "classParticleContainer.html#a186be8ee87353f742afe5449977fb562", null ],
     [ "toLabTrafo_m", "classParticleContainer.html#a701ec224535860986587271be7705089", null ]
 ];

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,7 +52,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../sections/beam-matter-interactions/index.html" rel="next">
+<link href="../../sections/spin-tracking/index.html" rel="next">
 <link href="../../sections/beam-beam/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -41,10 +60,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-87b7f55de2e0c9887283481eb31a794c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-48abc47ddc2cbc14860ddec9e9fdb395.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -157,26 +205,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../sections/spin-tracking/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Spin Tracking</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../sections/beam-matter-interactions/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/gamma-gamma/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">γ-γ Physics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/literature/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Literature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sections/sandbox/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sandbox</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Sandbox</span></span></a>
   </div>
 </li>
     </ul>
@@ -184,8 +238,29 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-decay-timing" id="toc-sec-decay-timing" class="nav-link active" data-scroll-target="#sec-decay-timing"><span class="header-section-number">6.1</span> Decay timing: relativistic Markov law</a></li>
+  <li><a href="#sec-pion-decay" id="toc-sec-pion-decay" class="nav-link" data-scroll-target="#sec-pion-decay"><span class="header-section-number">6.2</span> Pion decay: <span class="math inline">\(\pi^\pm \to \mu^\pm + \nu_\mu\)</span></a>
+  <ul class="collapse">
+  <li><a href="#two-body-kinematics" id="toc-two-body-kinematics" class="nav-link" data-scroll-target="#two-body-kinematics"><span class="header-section-number">6.2.1</span> Two-body kinematics</a></li>
+  <li><a href="#isotropic-direction" id="toc-isotropic-direction" class="nav-link" data-scroll-target="#isotropic-direction"><span class="header-section-number">6.2.2</span> Isotropic direction</a></li>
+  <li><a href="#v-a-polarization-of-the-daughter-muon" id="toc-v-a-polarization-of-the-daughter-muon" class="nav-link" data-scroll-target="#v-a-polarization-of-the-daughter-muon"><span class="header-section-number">6.2.3</span> V-A polarization of the daughter muon</a></li>
+  </ul></li>
+  <li><a href="#sec-muon-decay" id="toc-sec-muon-decay" class="nav-link" data-scroll-target="#sec-muon-decay"><span class="header-section-number">6.3</span> Muon decay: <span class="math inline">\(\mu^\pm \to e^\pm + \nu + \bar\nu\)</span></a>
+  <ul class="collapse">
+  <li><a href="#energy-marginal-michel-spectrum" id="toc-energy-marginal-michel-spectrum" class="nav-link" data-scroll-target="#energy-marginal-michel-spectrum"><span class="header-section-number">6.3.1</span> Energy marginal: Michel spectrum</a></li>
+  <li><a href="#joint-distribution-and-the-v-a-asymmetry" id="toc-joint-distribution-and-the-v-a-asymmetry" class="nav-link" data-scroll-target="#joint-distribution-and-the-v-a-asymmetry"><span class="header-section-number">6.3.2</span> Joint distribution and the V-A asymmetry</a></li>
+  <li><a href="#inverse-cdf-sampling-of-costheta" id="toc-inverse-cdf-sampling-of-costheta" class="nav-link" data-scroll-target="#inverse-cdf-sampling-of-costheta"><span class="header-section-number">6.3.3</span> Inverse-CDF sampling of <span class="math inline">\(\cos\theta\)</span></a></li>
+  </ul></li>
+  <li><a href="#sec-decay-boost" id="toc-sec-decay-boost" class="nav-link" data-scroll-target="#sec-decay-boost"><span class="header-section-number">6.4</span> Lorentz boost to the lab frame</a></li>
+  <li><a href="#sec-decay-numerics" id="toc-sec-decay-numerics" class="nav-link" data-scroll-target="#sec-decay-numerics"><span class="header-section-number">6.5</span> Numerical implementation</a></li>
+  <li><a href="#sec-decay-validation" id="toc-sec-decay-validation" class="nav-link" data-scroll-target="#sec-decay-validation"><span class="header-section-number">6.6</span> Validation</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/decay-processes/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -209,8 +284,153 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This section describes how <em>OPALX</em> models the spontaneous decay of unstable charged particles along the trajectory. Two channels are currently implemented: charged pion decay <span class="math inline">\(\pi^\pm \to \mu^\pm + \nu_\mu\)</span> (two-body, <a href="#sec-pion-decay" class="quarto-xref"><span>Section 6.2</span></a>) and muon decay <span class="math inline">\(\mu^\pm \to e^\pm + \nu + \bar\nu\)</span> (three-body, polarized, <a href="#sec-muon-decay" class="quarto-xref"><span>Section 6.3</span></a>). Both samplers share a common timing kernel (<a href="#sec-decay-timing" class="quarto-xref"><span>Section 6.1</span></a>) and a common Lorentz boost to the lab frame (<a href="#sec-decay-boost" class="quarto-xref"><span>Section 6.4</span></a>).</p>
+<p>Decay is implemented as a <em>global process</em> applied once per tracker step, after the momentum kick. Particles flagged for decay in a given step are marked for deletion from the parent container and replaced by daughters created in a paired container; downstream tracking continues on the daughters with their new species mass, charge, and, where applicable, polarization vector defined as in the spin-tracking section.</p>
+<section id="sec-decay-timing" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-decay-timing"><span class="header-section-number">6.1</span> Decay timing: relativistic Markov law</h2>
+<p>For each particle, the per-step decay probability follows the relativistic Markov law: time dilation extends the rest-frame lifetime <span class="math inline">\(\tau_0\)</span> to a lab-frame lifetime <span class="math inline">\(\gamma\tau_0\)</span>, and the exponential survival function gives <span id="eq-decay-prob"><span class="math display">\[
+  p_{\text{decay}}(\Delta t)
+  = 1 - \exp\!\big({-\Delta t}\big/{\gamma\,\tau_0}\big),
+\tag{6.1}\]</span></span> where <span class="math inline">\(\gamma = \sqrt{1 + |\vec P|^2}\)</span> is computed per-particle from the stored momentum <span class="math inline">\(\vec P\)</span> in <span class="math inline">\(\beta\gamma\)</span> units. Each step OPALX draws <span class="math inline">\(u \sim U(0,1)\)</span> and marks the particle for decay if <span class="math inline">\(u &lt; p_{\text{decay}}\)</span>; the parent is then collected into a compact view (alongside its position, momentum, and — when spin tracking is active — polarization) before daughters are sampled.</p>
+<p>Rest-frame lifetimes used in OPALX (<code>Physics.h</code>):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Species</th>
+<th><span class="math inline">\(\tau_0\)</span> [s]</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\mu^\pm\)</span></td>
+<td><span class="math inline">\(2.1969811\times 10^{-6}\)</span></td>
+<td><span class="citation" data-cites="pdgMuon2024">(<a href="../literature/index.html#ref-pdgMuon2024" role="doc-biblioref">Particle Data Group 2024d</a>)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\pi^\pm\)</span></td>
+<td><span class="math inline">\(2.6033\times 10^{-8}\)</span></td>
+<td><span class="citation" data-cites="pdgPion2024">(<a href="../literature/index.html#ref-pdgPion2024" role="doc-biblioref">Particle Data Group 2024a</a>)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Note that <span class="math inline">\(\Delta t\)</span> in <a href="#eq-decay-prob" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> is the <em>tracker</em> step in lab time, not a proper-time interval; the time-dilation factor <span class="math inline">\(\gamma\)</span> performs the conversion. For the small per-step decay probabilities typical in storage-ring or beamline applications, <span class="math inline">\(1 - e^{-x} \approx x\)</span>, so this reduces to the familiar <span class="math inline">\(p \approx \Delta t / (\gamma\tau_0)\)</span> — but the exponential form remains correct for the rare large-<span class="math inline">\(\Delta t\)</span> steps near a stopper or beam dump.</p>
+</section>
+<section id="sec-pion-decay" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-pion-decay"><span class="header-section-number">6.2</span> Pion decay: <span class="math inline">\(\pi^\pm \to \mu^\pm + \nu_\mu\)</span></h2>
+<section id="two-body-kinematics" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="two-body-kinematics"><span class="header-section-number">6.2.1</span> Two-body kinematics</h3>
+<p>The pion is a pseudoscalar (spin <span class="math inline">\(0\)</span>, parity <span class="math inline">\(-\)</span>). In the pion rest frame, energy-momentum conservation in a two-body decay against a massless neutrino fixes the daughter muon momentum uniquely <span class="citation" data-cites="pdgKinematics2024">(<a href="../literature/index.html#ref-pdgKinematics2024" role="doc-biblioref">Particle Data Group 2024b</a>)</span>: <span id="eq-pion-twobody"><span class="math display">\[
+  p^* = \frac{M_\pi^{\,2} - m_\mu^{\,2}}{2\,M_\pi},
+  \qquad
+  E^* = \frac{M_\pi^{\,2} + m_\mu^{\,2}}{2\,M_\pi}.
+\tag{6.2}\]</span></span> Numerically, with the PDG masses in <code>Physics.h</code>, <span class="math inline">\(p^* \approx 29.79\;\mathrm{MeV}/c\)</span> and <span class="math inline">\(E^* \approx 109.78\;\mathrm{MeV}\)</span>.</p>
+</section>
+<section id="isotropic-direction" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="isotropic-direction"><span class="header-section-number">6.2.2</span> Isotropic direction</h3>
+<p>Since the parent pion is spin-<span class="math inline">\(0\)</span>, the rest-frame decay direction is isotropic. OPALX samples <span class="math inline">\(\cos\theta^* \sim U(-1, 1)\)</span> and <span class="math inline">\(\phi^* \sim U(0, 2\pi)\)</span>, then constructs the rest-frame momentum <span class="math inline">\(\vec p^{\,*}_\mu = p^*\,(\sin\theta^*\cos\phi^*,
+\sin\theta^*\sin\phi^*, \cos\theta^*)\)</span> before boosting.</p>
+</section>
+<section id="v-a-polarization-of-the-daughter-muon" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="v-a-polarization-of-the-daughter-muon"><span class="header-section-number">6.2.3</span> V-A polarization of the daughter muon</h3>
+<p>The decay <span class="math inline">\(\pi \to \mu\,\nu_\mu\)</span> proceeds through the V-A charged current. In the pion rest frame the neutrino is massless and emerges with definite helicity (<span class="math inline">\(-\)</span> for <span class="math inline">\(\nu_\mu\)</span>, <span class="math inline">\(+\)</span> for <span class="math inline">\(\bar\nu_\mu\)</span>); angular-momentum conservation with the spin-<span class="math inline">\(0\)</span> pion then forces the muon to carry the <em>opposite</em> helicity. The resulting muon polarization vector in the muon rest frame is therefore <span id="eq-pion-helicity"><span class="math display">\[
+  \vec P_\mu = h\,\hat p^{\,*}_\mu,
+  \qquad
+  h = \begin{cases}
+    +1 &amp; \text{for}\ \pi^- \to \mu^- \\
+    -1 &amp; \text{for}\ \pi^+ \to \mu^+
+  \end{cases}
+\tag{6.3}\]</span></span> The convention follows the standard accelerator notation in which positive helicity means <span class="math inline">\(\vec P\)</span> parallel to the daughter momentum.</p>
+<p>A subtle but useful point: the boost that takes the muon from the pion rest frame to the lab is along <span class="math inline">\(\hat p^{\,*}_\mu\)</span> itself, so the projection of <span class="math inline">\(\vec P_\mu\)</span> along that axis is invariant under the boost. Writing the rest-frame unit vector <span class="math inline">\(\hat p^{\,*}_\mu\)</span> directly into the per-particle polarization storage is therefore the exact lab-frame value of <span class="math inline">\(\vec P_\mu\)</span> — no additional spin rotation is required at boost time. This is what makes the daughter-muon polarization computation cheap.</p>
+</section>
+</section>
+<section id="sec-muon-decay" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="sec-muon-decay"><span class="header-section-number">6.3</span> Muon decay: <span class="math inline">\(\mu^\pm \to e^\pm + \nu + \bar\nu\)</span></h2>
+<p>Muon decay is a three-body weak process. With two unobserved neutrinos, the daughter electron is described by a non-trivial joint energy-angle distribution. We use the standard Michel parameterization in the limit of an unpolarized electron with massless neutrinos <span class="citation" data-cites="pdgMuonDecayParams2024">(<a href="../literature/index.html#ref-pdgMuonDecayParams2024" role="doc-biblioref">Particle Data Group 2024c</a>)</span>.</p>
+<section id="energy-marginal-michel-spectrum" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="energy-marginal-michel-spectrum"><span class="header-section-number">6.3.1</span> Energy marginal: Michel spectrum</h3>
+<p>Define the reduced electron energy <span class="math inline">\(x = 2\,E_e / m_\mu \in [0, 1]\)</span>. The energy marginal of the differential decay rate is the Michel spectrum, <span id="eq-michel-spectrum"><span class="math display">\[
+  f(x) = 2\,x^2\,(3 - 2x), \qquad x \in [x_{\min}, 1],
+\tag{6.4}\]</span></span> with the kinematic threshold <span class="math inline">\(x_{\min} = m_e / (m_\mu / 2)
+\approx 9.7\times 10^{-3}\)</span>. The spectrum peaks at <span class="math inline">\(x = 1\)</span> with <span class="math inline">\(f_{\max} = 2\)</span>. OPALX samples <span class="math inline">\(x\)</span> by rejection against this upper bound.</p>
+</section>
+<section id="joint-distribution-and-the-v-a-asymmetry" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="joint-distribution-and-the-v-a-asymmetry"><span class="header-section-number">6.3.2</span> Joint distribution and the V-A asymmetry</h3>
+<p>For a muon with rest-frame polarization vector <span class="math inline">\(\vec P\)</span>, the joint differential rate factorizes in the standard V-A form <span class="citation" data-cites="pdgMuonDecayParams2024">(<a href="../literature/index.html#ref-pdgMuonDecayParams2024" role="doc-biblioref">Particle Data Group 2024c</a>)</span> <span id="eq-muon-joint"><span class="math display">\[
+  \frac{d\Gamma}{dx\,d\!\cos\theta}
+  \;\propto\; f(x)\,\big[\,1 + \alpha(x)\,\cos\theta\,\big],
+\tag{6.5}\]</span></span> where <span class="math inline">\(\theta\)</span> is the angle between the electron momentum and <span class="math inline">\(\hat{\vec P}\)</span> in the muon rest frame, and the asymmetry coefficient is <span id="eq-muon-asymmetry"><span class="math display">\[
+  \alpha(x) = s\,|\vec P|\;\frac{2x - 1}{3 - 2x},
+  \qquad
+  s = \begin{cases} +1 &amp; \text{for}\ \mu^- \\ -1 &amp; \text{for}\ \mu^+ \end{cases}
+\tag{6.6}\]</span></span> The sign <span class="math inline">\(s\)</span> reflects the conventional V-A coupling — for <span class="math inline">\(\mu^-\)</span> the high-energy electron is preferentially emitted <em>along</em> <span class="math inline">\(\hat{\vec P}\)</span>, while for <span class="math inline">\(\mu^+\)</span> the high-energy positron prefers the opposite direction. This is the V-A signature that motivates spin-dependent muon decay tracking in the first place.</p>
+</section>
+<section id="inverse-cdf-sampling-of-costheta" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="inverse-cdf-sampling-of-costheta"><span class="header-section-number">6.3.3</span> Inverse-CDF sampling of <span class="math inline">\(\cos\theta\)</span></h3>
+<p>The conditional <a href="#eq-muon-joint" class="quarto-xref">Equation&nbsp;<span>6.5</span></a> is linear in <span class="math inline">\(\cos\theta\)</span>, so the conditional CDF is quadratic and explicitly invertible. Writing <span class="math inline">\(c \equiv \cos\theta\)</span>, the normalized conditional density on <span class="math inline">\([-1, 1]\)</span> is <span id="eq-muon-conditional"><span class="math display">\[
+  p(c \mid x, \vec P) = \tfrac{1}{2}\,(1 + \alpha\,c),
+\tag{6.7}\]</span></span> with CDF <span id="eq-muon-cdf"><span class="math display">\[
+  F(c) = \tfrac{1}{2}(c + 1) + \tfrac{\alpha}{4}(c^2 - 1) .
+\tag{6.8}\]</span></span> For <span class="math inline">\(u \sim U(0, 1)\)</span>, setting <span class="math inline">\(F(c) = u\)</span> gives the quadratic <span id="eq-muon-cosCDF"><span class="math display">\[
+  \frac{\alpha}{4}\,c^{2} + \frac{1}{2}\,c
+  - \Big(\frac{\alpha}{4} + \frac{1}{2} - u\Big) = 0,
+\tag{6.9}\]</span></span> solved analytically and the root in <span class="math inline">\([-1, 1]\)</span> selected. The degenerate limit <span class="math inline">\(\alpha \to 0\)</span> (unpolarized muon or zero V-A asymmetry at <span class="math inline">\(x = \tfrac{1}{2}\)</span>) recovers the uniform sampling <span class="math inline">\(c = 2u - 1\)</span>, as expected.</p>
+<p>The azimuth <span class="math inline">\(\phi\)</span> around <span class="math inline">\(\hat{\vec P}\)</span> is uniform on <span class="math inline">\([0, 2\pi)\)</span>, and the rest-frame electron momentum direction in the <span class="math inline">\(\hat{\vec P}\)</span>-aligned local frame is <span class="math inline">\((\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)\)</span>. A single rotation taking <span class="math inline">\(\hat z \to \hat{\vec P}\)</span> then realigns this vector with the lab-frame Cartesian axes (which are the axes the polarization vector itself is referenced to, see the spin-tracking section); the rotated rest-frame momentum is fed to the Lorentz boost of the next section.</p>
+</section>
+</section>
+<section id="sec-decay-boost" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sec-decay-boost"><span class="header-section-number">6.4</span> Lorentz boost to the lab frame</h2>
+<p>Both decay samplers share the same lab-frame boost. With the parent momentum stored as <span class="math inline">\(\vec P_{parent}\)</span> in <span class="math inline">\(\beta\gamma\)</span> (dimensionless) units, <span id="eq-boost-prep"><span class="math display">\[
+  \gamma = \sqrt{1 + |\vec P_{parent}|^{2}},
+  \qquad
+  \vec\beta = \frac{\vec P_{parent}}{\gamma},
+\tag{6.10}\]</span></span> the spatial part of the daughter four-momentum boosts as <span id="eq-lorentz-boost"><span class="math display">\[
+  \vec p_{\,\text{lab}} = \vec p_{\,\text{RF}}
+  + \Bigg[
+      \frac{(\gamma - 1)\,\vec\beta \cdot \vec p_{\,\text{RF}}}{\beta^{\,2}}
+      + \gamma\,E_{\text{RF}}
+    \Bigg]\,\vec\beta .
+\tag{6.11}\]</span></span> The energy <span class="math inline">\(E_{\text{RF}}\)</span> is the daughter rest-frame energy (<span class="math inline">\(E_e = x\,m_\mu/2\)</span> for muon decay, <span class="math inline">\(E^*\)</span> from <a href="#eq-pion-twobody" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> for pion decay). At storage, OPALX writes the daughter momentum back in <span class="math inline">\(\beta\gamma\)</span> units of the <em>daughter</em> species mass: <span class="math inline">\(\vec P_{\,\text{daughter}} = \vec p_{\,\text{lab}} / m_d\)</span>, so that the downstream Boris pusher and T-BMT pusher consume it without unit conversion.</p>
+<p>The polarization vector of the daughter muon from pion decay is written directly in the rest frame (<a href="#eq-pion-helicity" class="quarto-xref">Equation&nbsp;<span>6.3</span></a>) and, as noted above, requires no boost rotation because the daughter momentum direction is the boost axis. For muon decay the daughter electron polarization is not stored — the rest of the simulation treats decay electrons as unpolarized — but the muon decay sampler needs the <em>parent</em> polarization, which is read from the muon container’s polarization view at decay time.</p>
+</section>
+<section id="sec-decay-numerics" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="sec-decay-numerics"><span class="header-section-number">6.5</span> Numerical implementation</h2>
+<p>The runtime cost of the decay process is dominated by the rejection sampling of the Michel spectrum; everything else is closed-form.</p>
+<ul>
+<li><strong>Decay flagging.</strong> Per-particle Bernoulli draw against <a href="#eq-decay-prob" class="quarto-xref">Equation&nbsp;<span>6.1</span></a>; survivors retain their state, marked particles are compacted into a dense view of <span class="math inline">\((\vec R, \vec P,
+\Delta t, \vec P_{\text{pol}})\)</span> tuples by a Kokkos parallel scan.</li>
+<li><strong>Michel <span class="math inline">\(x\)</span>.</strong> Rejection against <span class="math inline">\(f_{\max} = 2\)</span>; average acceptance is <span class="math inline">\(\int_0^1 f(x)\,dx / f_{\max}\;\approx\;0.41\)</span>, so the rejection loop is short and predictable.</li>
+<li><strong>Muon <span class="math inline">\(\cos\theta\)</span>.</strong> Closed-form root of <a href="#eq-muon-cosCDF" class="quarto-xref">Equation&nbsp;<span>6.9</span></a> — no rejection, no iteration.</li>
+<li><strong>Pion <span class="math inline">\(\cos\theta\)</span>.</strong> A single uniform draw.</li>
+<li><strong>Daughter momentum.</strong> Stored as <span class="math inline">\(\vec P_{\text{daughter}} = \vec p_{\,\text{lab}} / m_d\)</span>, consistent with the rest of OPALX’s <span class="math inline">\(\beta\gamma\)</span> convention.</li>
+</ul>
+<p>Random numbers are sourced from a Kokkos <code>XorShift64_Pool</code> seeded per-container, so each rank’s decay stream is reproducible and statistically independent across MPI ranks.</p>
+</section>
+<section id="sec-decay-validation" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="sec-decay-validation"><span class="header-section-number">6.6</span> Validation</h2>
+<p>The samplers are verified by distribution-level unit tests that compare <span class="math inline">\(10^{4}\)</span>–<span class="math inline">\(10^{6}\)</span> generated daughters against the analytic forms above.</p>
+<ul>
+<li><p><strong>Pion decay.</strong> <a href="opalx/unit_tests/Physics/TestPionDecaySpectrum.cpp">TestPionDecaySpectrum.cpp</a> checks that every daughter muon has <span class="math inline">\(|\vec p| = p^*\)</span> from <a href="#eq-pion-twobody" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> within machine precision, that the rest-frame <span class="math inline">\(\cos\theta\)</span> histogram is statistically uniform on <span class="math inline">\([-1, 1]\)</span> (verifying the spin-<span class="math inline">\(0\)</span> assumption), and that the lab-frame energy spectrum after a boost along <span class="math inline">\(\hat z\)</span> is a flat box on <span class="math inline">\([E_-, E_+]\)</span> with endpoints <span class="math inline">\(E_\pm = \gamma E^* \pm \beta\gamma\,p^*\)</span>.</p></li>
+<li><p><strong>Muon decay.</strong> <a href="opalx/unit_tests/Physics/TestMuonDecaySpectrum.cpp">TestMuonDecaySpectrum.cpp</a> fires fully-polarized muons at rest, fixes the reduced energy <span class="math inline">\(x\)</span>, and compares the daughter <span class="math inline">\(\cos\theta\)</span> histogram against the analytic linear-in-<span class="math inline">\(c\)</span> slope <span class="math inline">\(\alpha(x)\)</span> from <a href="#eq-muon-asymmetry" class="quarto-xref">Equation&nbsp;<span>6.6</span></a>. The same test is run for <span class="math inline">\(\mu^-\)</span> and <span class="math inline">\(\mu^+\)</span> to confirm the V-A sign flip.</p></li>
+</ul>
+<p>These tests are run automatically as part of the ctest suite and guard the kinematic and polarization correctness of the samplers against regressions.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-pdgPion2024" class="csl-entry" role="listitem">
+Particle Data Group. 2024a. <em>Review of Particle Physics: Charged Pion Listings</em>. Particle Data Group. <a href="https://pdg.lbl.gov/2024/listings/rpp2024-list-pi-plus-minus.pdf">https://pdg.lbl.gov/2024/listings/rpp2024-list-pi-plus-minus.pdf</a>.
+</div>
+<div id="ref-pdgKinematics2024" class="csl-entry" role="listitem">
+Particle Data Group. 2024b. <em>Review of Particle Physics: Kinematics</em>. Particle Data Group. <a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-kinematics.pdf">https://pdg.lbl.gov/2024/reviews/rpp2024-rev-kinematics.pdf</a>.
+</div>
+<div id="ref-pdgMuonDecayParams2024" class="csl-entry" role="listitem">
+Particle Data Group. 2024c. <em>Review of Particle Physics: Muon Decay Parameters</em>. Particle Data Group. <a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-muon-decay-params.pdf">https://pdg.lbl.gov/2024/reviews/rpp2024-rev-muon-decay-params.pdf</a>.
+</div>
+<div id="ref-pdgMuon2024" class="csl-entry" role="listitem">
+Particle Data Group. 2024d. <em>Review of Particle Physics: Muon Listings</em>. Particle Data Group. <a href="https://pdg.lbl.gov/2024/listings/rpp2024-list-muon.pdf">https://pdg.lbl.gov/2024/listings/rpp2024-list-muon.pdf</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -620,8 +840,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../sections/beam-matter-interactions/index.html" class="pagination-link" aria-label="Beam Matter Interactions">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Beam Matter Interactions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../sections/spin-tracking/index.html" class="pagination-link" aria-label="Spin Tracking">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Spin Tracking</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -630,4 +850,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/decay-processes/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OPALX-project/PhysicsManual/edit/main/sections/decay-processes/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OPALX-project/PhysicsManual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

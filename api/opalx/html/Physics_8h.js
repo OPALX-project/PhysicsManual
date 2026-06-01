@@ -2,6 +2,7 @@ var Physics_8h =
 [
     [ "a0", "Physics_8h.html#a8652eee10e39466222c256e137564868", null ],
     [ "a_e", "Physics_8h.html#abc1b1bec52382665121187b7e5696138", null ],
+    [ "a_mu", "Physics_8h.html#a49727ed9815f0b1054580bbe44a11bb0", null ],
     [ "a_p", "Physics_8h.html#a7b077d0ea9e416e75bc5473a5888a7d6", null ],
     [ "alpha", "Physics_8h.html#ab639aef14caa1a17aedf618fae09d9dd", null ],
     [ "amu", "Physics_8h.html#a5f2296e787ee54e4d01d72a5f3497018", null ],

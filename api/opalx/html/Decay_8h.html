@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (93a612ec5182)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (dc2a29eed580)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -145,7 +145,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="382,108,130,155,129,149,381,103"/>
 <area shape="rect" href="TestDecay_8cpp.html" title=" " alt="" coords="393,152,507,177"/>
 <area shape="poly" title=" " alt="" coords="453,118,453,152,447,152,447,118"/>
-<area shape="rect" href="TestMuonDecaySpectrum_8cpp.html" title="Distribution&#45;level test of MuonDecay against the analytic Michel spectrum." alt="" coords="153,152,368,177"/>
+<area shape="rect" href="TestMuonDecaySpectrum_8cpp.html" title="Distribution&#45;level test of MuonDecay against the polarized V&#45;A angular spectrum." alt="" coords="153,152,368,177"/>
 <area shape="poly" title=" " alt="" coords="408,111,293,154,291,149,406,106"/>
 <area shape="rect" href="TrackRun_8cpp.html" title=" " alt="" coords="532,152,640,177"/>
 <area shape="poly" title=" " alt="" coords="485,108,565,149,563,154,482,113"/>
@@ -166,7 +166,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for particle decay processes.  <a href="classDecay.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structDecay_1_1DecayedParentViews" id="r_structDecay_1_1DecayedParentViews"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDecay.html#structDecay_1_1DecayedParentViews">Decay::DecayedParentViews</a></td></tr>
-<tr class="memdesc:structDecay_1_1DecayedParentViews"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compact views of the kinematics of parents marked for decay.  <a href="classDecay.html#structDecay_1_1DecayedParentViews">More...</a><br /></td></tr>
 <tr class="separator:structDecay_1_1DecayedParentViews"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
@@ -181,15 +180,15 @@ Classes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Compact views of the kinematics of parents marked for decay. </p>
+<div class="textblock"><p>Compact views of the kinematics of parents marked for decay. Pol is length-0 when the parent container does not track spin. </p>
 
-<p class="definition">Definition at line <a class="el" href="Decay_8h_source.html#l00064">64</a> of file <a class="el" href="Decay_8h_source.html">Decay.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Decay_8h_source.html#l00067">67</a> of file <a class="el" href="Decay_8h_source.html">Decay.h</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for Decay::DecayedParentViews:</div>
 <div class="dyncontent">
 <div class="center"><img src="structDecay_1_1DecayedParentViews__coll__graph.png" border="0" usemap="#aDecay_1_1DecayedParentViews_coll__map" alt="Collaboration graph"/></div>
 <map name="aDecay_1_1DecayedParentViews_coll__map" id="aDecay_1_1DecayedParentViews_coll__map">
-<area shape="rect" title="Compact views of the kinematics of parents marked for decay." alt="" coords="5,5,204,111"/>
+<area shape="rect" title=" " alt="" coords="5,5,204,131"/>
 </map>
 </div>
 <table class="fieldtable">
@@ -204,6 +203,12 @@ dt</td>
 <a id="a4f74f08cdfc2c0aa6e7b742b2de70105" name="a4f74f08cdfc2c0aa6e7b742b2de70105"></a>View&lt; <a class="el" href="TestBinning_8cpp.html#a85288a0d331794ed0a966fd0666c9d5b">Vector</a>&lt; double, 3 &gt; * &gt;</td>
 <td class="fieldname">
 P</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9a5093d43cc5acf1d4fe3270806ee7c4" name="a9a5093d43cc5acf1d4fe3270806ee7c4"></a>View&lt; <a class="el" href="TestBinning_8cpp.html#a85288a0d331794ed0a966fd0666c9d5b">Vector</a>&lt; float, 3 &gt; * &gt;</td>
+<td class="fieldname">
+Pol</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -222,7 +227,7 @@ R</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_2caad919a0aeb565771294ab3a0f5392.html">Processes</a></li><li class="navelem"><a class="el" href="dir_6e6736cf3db537b56d2205e4767ecb34.html">GlobalProcesses</a></li><li class="navelem"><a class="el" href="Decay_8h.html">Decay.h</a></li>
-    <li class="footer">Generated on Wed May 20 2026 14:08:28 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 1 2026 10:40:53 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

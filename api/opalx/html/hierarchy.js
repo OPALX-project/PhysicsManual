@@ -625,6 +625,7 @@ var hierarchy =
     [ "interpolation::SolveFactory", "classinterpolation_1_1SolveFactory.html", null ],
     [ "LinearComptonBenchmark::SpectrumConfig", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1SpectrumConfig", null ],
     [ "LinearComptonBenchmark::SpectrumHistogram", "namespaceLinearComptonBenchmark.html#structLinearComptonBenchmark_1_1SpectrumHistogram", null ],
+    [ "SpinTBMTPusher", "classSpinTBMTPusher.html", null ],
     [ "interpolation::SquarePolynomialVector", "classinterpolation_1_1SquarePolynomialVector.html", null ],
     [ "Statement", "classStatement.html", [
       [ "CompoundStatement", "classCompoundStatement.html", null ],
@@ -683,6 +684,7 @@ var hierarchy =
       [ "RFCavityTest", "classRFCavityTest.html", null ],
       [ "RandomTest", "classRandomTest.html", null ],
       [ "SolenoidPlacementTest", "classSolenoidPlacementTest.html", null ],
+      [ "SpinTBMTPusherTest", "classSpinTBMTPusherTest.html", null ],
       [ "TestMultipoleT", "classTestMultipoleT.html", null ],
       [ "TestMultipoleTCurvedConstRadius", "classTestMultipoleTCurvedConstRadius.html", null ],
       [ "TestMultipoleTStraight", "classTestMultipoleTStraight.html", null ],

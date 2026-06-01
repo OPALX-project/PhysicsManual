@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (93a612ec5182)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (dc2a29eed580)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -111,7 +111,7 @@ Collaboration diagram for ParticleProperties:</div>
 <div class="dyncontent">
 <div class="center"><img src="classParticleProperties__coll__graph.png" border="0" usemap="#aParticleProperties_coll__map" alt="Collaboration graph"/></div>
 <map name="aParticleProperties_coll__map" id="aParticleProperties_coll__map">
-<area shape="rect" title=" " alt="" coords="41,511,265,716"/>
+<area shape="rect" title=" " alt="" coords="41,511,265,736"/>
 <area shape="rect" href="classBiMap.html" title=" " alt="" coords="77,208,229,448"/>
 <area shape="poly" title=" " alt="" coords="156,448,156,494,151,494,151,448"/>
 <area shape="rect" href="structBiMap_1_1left__view.html" title="Left&#45;map view with find/at helpers." alt="" coords="5,5,141,145"/>
@@ -136,6 +136,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af12ac127fc5fe241febac002b74e54f7" id="r_af12ac127fc5fe241febac002b74e54f7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleProperties.html#af12ac127fc5fe241febac002b74e54f7">getParticleLifetime</a> (const <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6">ParticleType</a> &amp;type)</td></tr>
 <tr class="memdesc:af12ac127fc5fe241febac002b74e54f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the mean rest-frame lifetime [s]. Throws if the particle is stable.  <br /></td></tr>
 <tr class="separator:af12ac127fc5fe241febac002b74e54f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15f8365a40db2bd65a946b9294267bf" id="r_ae15f8365a40db2bd65a946b9294267bf"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParticleProperties.html#ae15f8365a40db2bd65a946b9294267bf">getParticleAnomaly</a> (const <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6">ParticleType</a> &amp;type)</td></tr>
+<tr class="separator:ae15f8365a40db2bd65a946b9294267bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -152,6 +154,39 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00048">48</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae15f8365a40db2bd65a946b9294267bf" name="ae15f8365a40db2bd65a946b9294267bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae15f8365a40db2bd65a946b9294267bf">&#9670;&#160;</a></span>getParticleAnomaly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ParticleProperties::getParticleAnomaly </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6">ParticleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the magnetic moment anomaly G = (g-2)/2. Zero for species that are spin-0, not yet tabulated, or unsupported. </p>
+
+<p class="definition">Definition at line <a class="el" href="ParticleProperties_8cpp_source.html#l00058">58</a> of file <a class="el" href="ParticleProperties_8cpp_source.html">ParticleProperties.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="Physics_8h_source.html#l00102">Physics::a_e</a>, <a class="el" href="Physics_8h_source.html#l00135">Physics::a_mu</a>, <a class="el" href="Physics_8h_source.html#l00114">Physics::a_p</a>, <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6ae0ec5d44902b126bf951b93e2523f3be">ANTIPROTON</a>, <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a8d72736f85f9c0ba9022eb25d01ce16e">ELECTRON</a>, <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a8997592660692925abb55e8fc27822e7">MUON</a>, <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6aa7d45ee417b9041b85574196531228a8">POSITRON</a>, and <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a4a67a9fed9cade138734b2a9ed8c9a11">PROTON</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Beam_8cpp_source.html#l00342">Beam::update()</a>.</p>
+
+</div>
+</div>
 <a id="ac1987a9b0fec1632a680cb2093407c3e" name="ac1987a9b0fec1632a680cb2093407c3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1987a9b0fec1632a680cb2093407c3e">&#9670;&#160;</a></span>getParticleCharge()</h2>
 
@@ -178,9 +213,9 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ParticleProperties_8cpp_source.html#l00040">40</a> of file <a class="el" href="ParticleProperties_8cpp_source.html">ParticleProperties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00098">particleCharge_m</a>.</p>
+<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00113">particleCharge_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00044">getParticleChargeInCoulomb()</a>, and <a class="el" href="Beam_8cpp_source.html#l00275">Beam::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00044">getParticleChargeInCoulomb()</a>, and <a class="el" href="Beam_8cpp_source.html#l00342">Beam::update()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +287,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ParticleProperties_8cpp_source.html#l00048">48</a> of file <a class="el" href="ParticleProperties_8cpp_source.html">ParticleProperties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ParticleProperties_8cpp_source.html#l00032">getParticleTypeString()</a>, and <a class="el" href="ParticleProperties_8h_source.html#l00108">particleLifetime_m</a>.</p>
+<p class="reference">References <a class="el" href="ParticleProperties_8cpp_source.html#l00032">getParticleTypeString()</a>, and <a class="el" href="ParticleProperties_8h_source.html#l00123">particleLifetime_m</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -292,9 +327,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ParticleProperties_8cpp_source.html#l00036">36</a> of file <a class="el" href="ParticleProperties_8cpp_source.html">ParticleProperties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00080">particleMass_m</a>.</p>
+<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00095">particleMass_m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Beam_8cpp_source.html#l00275">Beam::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Beam_8cpp_source.html#l00342">Beam::update()</a>.</p>
 
 </div>
 </div>
@@ -324,9 +359,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ParticleProperties_8cpp_source.html#l00023">23</a> of file <a class="el" href="ParticleProperties_8cpp_source.html">ParticleProperties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00058">bmParticleType_s</a>, <a class="el" href="BiMap_8h_source.html#l00094">BiMap&lt; Left, Right &gt;::right</a>, and <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6ae1aa4ed51b22a39ce1649671f6b68268">UNNAMED</a>.</p>
+<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00073">bmParticleType_s</a>, <a class="el" href="BiMap_8h_source.html#l00094">BiMap&lt; Left, Right &gt;::right</a>, and <a class="el" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6ae1aa4ed51b22a39ce1649671f6b68268">UNNAMED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Processes_2GlobalProcesses_2MuonDecay_8h_source.html#l00017">MuonDecay::MuonDecay()</a>, <a class="el" href="PartBunch_8cpp_source.html#l00022">PartBunch&lt; T, Dim &gt;::PartBunch()</a>, <a class="el" href="PionDecay_8h_source.html#l00016">PionDecay::PionDecay()</a>, and <a class="el" href="Beam_8cpp_source.html#l00275">Beam::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Processes_2GlobalProcesses_2MuonDecay_8h_source.html#l00017">MuonDecay::MuonDecay()</a>, <a class="el" href="PartBunch_8cpp_source.html#l00022">PartBunch&lt; T, Dim &gt;::PartBunch()</a>, <a class="el" href="PionDecay_8h_source.html#l00016">PionDecay::PionDecay()</a>, <a class="el" href="Beam_8cpp_source.html#l00342">Beam::update()</a>, <a class="el" href="Beam_8cpp_source.html#l00215">Beam::validatePolarization()</a>, and <a class="el" href="TrackRun_8cpp_source.html#l00603">TrackRun::wireDaughterContainers()</a>.</p>
 
 </div>
 </div>
@@ -356,9 +391,9 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ParticleProperties_8cpp_source.html#l00032">32</a> of file <a class="el" href="ParticleProperties_8cpp_source.html">ParticleProperties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00058">bmParticleType_s</a>, and <a class="el" href="BiMap_8h_source.html#l00092">BiMap&lt; Left, Right &gt;::left</a>.</p>
+<p class="reference">References <a class="el" href="ParticleProperties_8h_source.html#l00073">bmParticleType_s</a>, and <a class="el" href="BiMap_8h_source.html#l00092">BiMap&lt; Left, Right &gt;::left</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00048">getParticleLifetime()</a>, and <a class="el" href="Decay_8cpp_source.html#l00142">Decay::setDaughterContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00048">getParticleLifetime()</a>, and <a class="el" href="Decay_8cpp_source.html#l00161">Decay::setDaughterContainer()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +458,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassBiMap_html"><div class="ttname"><a href="classBiMap.html">BiMap</a></div><div class="ttdoc">Simple bidirectional map with lookup in both directions.</div><div class="ttdef"><b>Definition</b> <a href="BiMap_8h_source.html#l00028">BiMap.h:28</a></div></div>
 <div class="ttc" id="aclassBiMap_html_a14a6d89264b7556991fdf930c4c79f35"><div class="ttname"><a href="classBiMap.html#a14a6d89264b7556991fdf930c4c79f35">BiMap::insert</a></div><div class="ttdeci">void insert(const Left &amp;left, const Right &amp;right)</div><div class="ttdoc">Insert or overwrite a left/right association.</div><div class="ttdef"><b>Definition</b> <a href="BiMap_8h_source.html#l00099">BiMap.h:99</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00058">58</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00073">73</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00023">getParticleType()</a>, and <a class="el" href="ParticleProperties_8cpp_source.html#l00032">getParticleTypeString()</a>.</p>
 
@@ -458,7 +493,7 @@ Here is the call graph for this function:</div>
 <div class="line">        {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a002101f8725e5c78d9f30d87f3fa4c87">ParticleType::ALPHA</a>, 2.0},       {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a453276ee992ed07dc207ed08b2b221ce">ParticleType::CARBON</a>, 6.0},</div>
 <div class="line">        {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a3bec06b35c5513cd8645f281d6c43e1e">ParticleType::XENON</a>, 54.0},      {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6aa6c86a6d04e82db1c19b283ae3926085">ParticleType::URANIUM</a>, 92.0}}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00098">98</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00113">113</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00040">getParticleCharge()</a>.</p>
 
@@ -486,9 +521,9 @@ Here is the call graph for this function:</div>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">        {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a8997592660692925abb55e8fc27822e7">ParticleType::MUON</a>, <a class="code hl_variable" href="namespacePhysics.html#ab516489a603d6afc80d90046490f100d">Physics::tau_mu</a>}, {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a472da2461a5bf595ead72d945905cf35">ParticleType::PION</a>, <a class="code hl_variable" href="namespacePhysics.html#aecd2f458b66279193113b0c6d8506c61">Physics::tau_pi</a>}}</div>
 <div class="ttc" id="anamespacePhysics_html_ab516489a603d6afc80d90046490f100d"><div class="ttname"><a href="namespacePhysics.html#ab516489a603d6afc80d90046490f100d">Physics::tau_mu</a></div><div class="ttdeci">constexpr double tau_mu</div><div class="ttdoc">Muon mean lifetime at rest [s] (PDG)</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00132">Physics.h:132</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_aecd2f458b66279193113b0c6d8506c61"><div class="ttname"><a href="namespacePhysics.html#aecd2f458b66279193113b0c6d8506c61">Physics::tau_pi</a></div><div class="ttdeci">constexpr double tau_pi</div><div class="ttdoc">Charged pion mean lifetime at rest [s] (PDG)</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00138">Physics.h:138</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_aecd2f458b66279193113b0c6d8506c61"><div class="ttname"><a href="namespacePhysics.html#aecd2f458b66279193113b0c6d8506c61">Physics::tau_pi</a></div><div class="ttdeci">constexpr double tau_pi</div><div class="ttdoc">Charged pion mean lifetime at rest [s] (PDG)</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00141">Physics.h:141</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00108">108</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00123">123</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00048">getParticleLifetime()</a>.</p>
 
@@ -530,21 +565,21 @@ Here is the call graph for this function:</div>
 <div class="line">        {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a453276ee992ed07dc207ed08b2b221ce">ParticleType::CARBON</a>, <a class="code hl_variable" href="namespacePhysics.html#ae051faa2cee4f7cb3e4e6e1bdf15bb0b">Physics::m_c</a>},</div>
 <div class="line">        {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6a3bec06b35c5513cd8645f281d6c43e1e">ParticleType::XENON</a>, <a class="code hl_variable" href="namespacePhysics.html#a25bab62a4d0ef05fe1f2daf0a0cec8a1">Physics::m_xe</a>},</div>
 <div class="line">        {<a class="code hl_enumvalue" href="ParticleProperties_8h.html#aac131bb68c5a04ddaf7416181937cde6aa6c86a6d04e82db1c19b283ae3926085">ParticleType::URANIUM</a>, <a class="code hl_variable" href="namespacePhysics.html#a481602e9e5a865f25b39506575347f35">Physics::m_u</a>}}</div>
-<div class="ttc" id="anamespacePhysics_html_a25bab62a4d0ef05fe1f2daf0a0cec8a1"><div class="ttname"><a href="namespacePhysics.html#a25bab62a4d0ef05fe1f2daf0a0cec8a1">Physics::m_xe</a></div><div class="ttdeci">constexpr double m_xe</div><div class="ttdoc">The xenon-129 (fully-stripped) rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00144">Physics.h:144</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_a3fc1a0266b9148e3541a7aae5546b804"><div class="ttname"><a href="namespacePhysics.html#a3fc1a0266b9148e3541a7aae5546b804">Physics::m_alpha</a></div><div class="ttdeci">constexpr double m_alpha</div><div class="ttdoc">The alpha particle rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00147">Physics.h:147</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_a25bab62a4d0ef05fe1f2daf0a0cec8a1"><div class="ttname"><a href="namespacePhysics.html#a25bab62a4d0ef05fe1f2daf0a0cec8a1">Physics::m_xe</a></div><div class="ttdeci">constexpr double m_xe</div><div class="ttdoc">The xenon-129 (fully-stripped) rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00147">Physics.h:147</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_a3fc1a0266b9148e3541a7aae5546b804"><div class="ttname"><a href="namespacePhysics.html#a3fc1a0266b9148e3541a7aae5546b804">Physics::m_alpha</a></div><div class="ttdeci">constexpr double m_alpha</div><div class="ttdoc">The alpha particle rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00150">Physics.h:150</a></div></div>
 <div class="ttc" id="anamespacePhysics_html_a481602e9e5a865f25b39506575347f35"><div class="ttname"><a href="namespacePhysics.html#a481602e9e5a865f25b39506575347f35">Physics::m_u</a></div><div class="ttdeci">constexpr double m_u</div><div class="ttdoc">The uranium-238 (fully-stripped) rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00126">Physics.h:126</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_a8e0ffb1f5f8deac4470d6fcad9a38a9e"><div class="ttname"><a href="namespacePhysics.html#a8e0ffb1f5f8deac4470d6fcad9a38a9e">Physics::m_pi</a></div><div class="ttdeci">constexpr double m_pi</div><div class="ttdoc">The charged pion rest mass in GeV (PDG)</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00135">Physics.h:135</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_a8e0ffb1f5f8deac4470d6fcad9a38a9e"><div class="ttname"><a href="namespacePhysics.html#a8e0ffb1f5f8deac4470d6fcad9a38a9e">Physics::m_pi</a></div><div class="ttdeci">constexpr double m_pi</div><div class="ttdoc">The charged pion rest mass in GeV (PDG)</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00138">Physics.h:138</a></div></div>
 <div class="ttc" id="anamespacePhysics_html_aa2cc6ab6ed7a560af4f4758d1d6d6b94"><div class="ttname"><a href="namespacePhysics.html#aa2cc6ab6ed7a560af4f4758d1d6d6b94">Physics::m_p</a></div><div class="ttdeci">constexpr double m_p</div><div class="ttdoc">The proton rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00105">Physics.h:105</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_aacc8165939ff0aa5fa97f521adfa0cea"><div class="ttname"><a href="namespacePhysics.html#aacc8165939ff0aa5fa97f521adfa0cea">Physics::m_h3p</a></div><div class="ttdeci">constexpr double m_h3p</div><div class="ttdoc">The H3+ rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00156">Physics.h:156</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_aafb3e5261748403d1f91a3b4e23323fa"><div class="ttname"><a href="namespacePhysics.html#aafb3e5261748403d1f91a3b4e23323fa">Physics::m_h2p</a></div><div class="ttdeci">constexpr double m_h2p</div><div class="ttdoc">The H2+ rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00153">Physics.h:153</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_aacc8165939ff0aa5fa97f521adfa0cea"><div class="ttname"><a href="namespacePhysics.html#aacc8165939ff0aa5fa97f521adfa0cea">Physics::m_h3p</a></div><div class="ttdeci">constexpr double m_h3p</div><div class="ttdoc">The H3+ rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00159">Physics.h:159</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_aafb3e5261748403d1f91a3b4e23323fa"><div class="ttname"><a href="namespacePhysics.html#aafb3e5261748403d1f91a3b4e23323fa">Physics::m_h2p</a></div><div class="ttdeci">constexpr double m_h2p</div><div class="ttdoc">The H2+ rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00156">Physics.h:156</a></div></div>
 <div class="ttc" id="anamespacePhysics_html_abca8a8ee5662bf31d91f165c570c2a12"><div class="ttname"><a href="namespacePhysics.html#abca8a8ee5662bf31d91f165c570c2a12">Physics::m_e</a></div><div class="ttdeci">constexpr double m_e</div><div class="ttdoc">The electron rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00093">Physics.h:93</a></div></div>
 <div class="ttc" id="anamespacePhysics_html_ac4b06c9982418bbd465d6401bc4a4841"><div class="ttname"><a href="namespacePhysics.html#ac4b06c9982418bbd465d6401bc4a4841">Physics::m_hm</a></div><div class="ttdeci">constexpr double m_hm</div><div class="ttdoc">The H- rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00123">Physics.h:123</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_acb27f74c81e67e0fc59ac0179b855dda"><div class="ttname"><a href="namespacePhysics.html#acb27f74c81e67e0fc59ac0179b855dda">Physics::m_h</a></div><div class="ttdeci">constexpr double m_h</div><div class="ttdoc">The hydrogen atom rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00150">Physics.h:150</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_acb27f74c81e67e0fc59ac0179b855dda"><div class="ttname"><a href="namespacePhysics.html#acb27f74c81e67e0fc59ac0179b855dda">Physics::m_h</a></div><div class="ttdeci">constexpr double m_h</div><div class="ttdoc">The hydrogen atom rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00153">Physics.h:153</a></div></div>
 <div class="ttc" id="anamespacePhysics_html_acdc70b451c1ff248a0fd3218b77a01e2"><div class="ttname"><a href="namespacePhysics.html#acdc70b451c1ff248a0fd3218b77a01e2">Physics::m_mu</a></div><div class="ttdeci">constexpr double m_mu</div><div class="ttdoc">The muon rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00129">Physics.h:129</a></div></div>
 <div class="ttc" id="anamespacePhysics_html_ae051faa2cee4f7cb3e4e6e1bdf15bb0b"><div class="ttname"><a href="namespacePhysics.html#ae051faa2cee4f7cb3e4e6e1bdf15bb0b">Physics::m_c</a></div><div class="ttdeci">constexpr double m_c</div><div class="ttdoc">The carbon-12 (fully-stripped) rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00120">Physics.h:120</a></div></div>
-<div class="ttc" id="anamespacePhysics_html_aec96d4f5f23c4bfd9c8079cbca0ab7ca"><div class="ttname"><a href="namespacePhysics.html#aec96d4f5f23c4bfd9c8079cbca0ab7ca">Physics::m_d</a></div><div class="ttdeci">constexpr double m_d</div><div class="ttdoc">The deuteron rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00141">Physics.h:141</a></div></div>
+<div class="ttc" id="anamespacePhysics_html_aec96d4f5f23c4bfd9c8079cbca0ab7ca"><div class="ttname"><a href="namespacePhysics.html#aec96d4f5f23c4bfd9c8079cbca0ab7ca">Physics::m_d</a></div><div class="ttdeci">constexpr double m_d</div><div class="ttdoc">The deuteron rest mass in GeV.</div><div class="ttdef"><b>Definition</b> <a href="Physics_8h_source.html#l00144">Physics.h:144</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00080">80</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ParticleProperties_8h_source.html#l00095">95</a> of file <a class="el" href="ParticleProperties_8h_source.html">ParticleProperties.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ParticleProperties_8cpp_source.html#l00036">getParticleMass()</a>.</p>
 
@@ -560,7 +595,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classParticleProperties.html">ParticleProperties</a></li>
-    <li class="footer">Generated on Wed May 20 2026 14:08:29 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 1 2026 10:40:55 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

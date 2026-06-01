@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (93a612ec5182)</span>
+   <div id="projectname">OPALX (Object Oriented Parallel Accelerator Library for Exascal)<span id="projectnumber">&#160;master (dc2a29eed580)</span>
    </div>
    <div id="projectbrief">OPALX</div>
   </td>
@@ -468,56 +468,58 @@ $(document).ready(function(){initNavTree('MultiVariateGaussian_8cpp_source.html'
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                Pview(k) += P0;</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            });</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;markMomentsDirty();</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <a class="code hl_function" href="classSamplingBase.html#ad9ed1ce858a5c8e58c4209ba8118756c">fillPolarization</a>(nlocalCurrent, nlocal);</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classMultiVariateGaussian.html#a2126e6cfa8d7692932f4743e6fc91eec">samplerTimer_m</a>);</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>}</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;markMomentsDirty();</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    IpplTimings::stopTimer(<a class="code hl_variable" href="classMultiVariateGaussian.html#a2126e6cfa8d7692932f4743e6fc91eec">samplerTimer_m</a>);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
 </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
-<div class="foldopen" id="foldopen00374" data-start="{" data-end="}">
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="classMultiVariateGaussian.html#a18f70677ac84f4ded0ba3116f011ae0c">  374</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classMultiVariateGaussian.html#a18f70677ac84f4ded0ba3116f011ae0c">MultiVariateGaussian::emitParticles</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt) {</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="comment">// One-shot delayed emission for multivariate Gaussian sources.</span></div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tStart = t;</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tEnd   = t + dt;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a>) {</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    }</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt;= 0.0) {</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keywordflow">if</span> (!(tStart &lt;= <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &amp;&amp; <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt; tEnd)) {</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>) {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    }</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="keywordtype">size_t</span> Ndist = <a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>-&gt;<a class="code hl_function" href="classDistribution.html#a776919ee03f26046f0aac77e95fa998a">getNumParticles</a>();</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <span class="keywordflow">if</span> (Ndist == 0) {</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    }</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalBefore = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="foldopen" id="foldopen00376" data-start="{" data-end="}">
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="classMultiVariateGaussian.html#a18f70677ac84f4ded0ba3116f011ae0c">  376</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classMultiVariateGaussian.html#a18f70677ac84f4ded0ba3116f011ae0c">MultiVariateGaussian::emitParticles</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">double</span> dt) {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="comment">// One-shot delayed emission for multivariate Gaussian sources.</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tStart = t;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> tEnd   = t + dt;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a>) {</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    }</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt;= 0.0) {</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    }</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">if</span> (!(tStart &lt;= <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &amp;&amp; <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a> &lt; tEnd)) {</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    }</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>) {</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    }</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="keywordtype">size_t</span> Ndist = <a class="code hl_variable" href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">opalDist_m</a>-&gt;<a class="code hl_function" href="classDistribution.html#a776919ee03f26046f0aac77e95fa998a">getNumParticles</a>();</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    <span class="keywordflow">if</span> (Ndist == 0) {</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    }</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> dummyNr(0.0);</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <a class="code hl_function" href="classMultiVariateGaussian.html#ad7aa5c532798b8c90de08e13b4e8462b">generateParticles</a>(Ndist, dummyNr);</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalAfter = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nNew        = nlocalAfter - nlocalBefore;</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keywordflow">if</span> (nNew &gt; 0) {</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> fracDt = tEnd - <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a>;</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        <span class="keyword">auto</span> dtview         = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;dt.getView();</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> offset = nlocalBefore;</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        Kokkos::parallel_for(</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                <span class="stringliteral">&quot;MultiVariateGaussian_setDt&quot;</span>, nNew,</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>                KOKKOS_LAMBDA(<span class="keyword">const</span> <span class="keywordtype">size_t</span> j) { dtview(offset + j) = fracDt; });</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        Kokkos::fence();</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    }</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>}</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalBefore = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <a class="code hl_variable" href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">hasEmittedOnce_m</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <a class="code hl_typedef" href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t&lt;double, 3&gt;</a> dummyNr(0.0);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <a class="code hl_function" href="classMultiVariateGaussian.html#ad7aa5c532798b8c90de08e13b4e8462b">generateParticles</a>(Ndist, dummyNr);</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nlocalAfter = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;getLocalNum();</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nNew        = nlocalAfter - nlocalBefore;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordflow">if</span> (nNew &gt; 0) {</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> fracDt = tEnd - <a class="code hl_variable" href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">t0_m</a>;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <span class="keyword">auto</span> dtview         = <a class="code hl_variable" href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">pc_m</a>-&gt;dt.getView();</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> offset = nlocalBefore;</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        Kokkos::parallel_for(</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                <span class="stringliteral">&quot;MultiVariateGaussian_setDt&quot;</span>, nNew,</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                KOKKOS_LAMBDA(<span class="keyword">const</span> <span class="keywordtype">size_t</span> j) { dtview(offset + j) = fracDt; });</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        Kokkos::fence();</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    }</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>}</div>
 </div>
 <div class="ttc" id="aComponent_8cpp_html_af2090682b58787f3464d7bf5b07b3ea8"><div class="ttname"><a href="Component_8cpp.html#af2090682b58787f3464d7bf5b07b3ea8">gmsg</a></div><div class="ttdeci">Inform * gmsg</div><div class="ttdef"><b>Definition</b> <a href="changes_8cpp_source.html#l00007">changes.cpp:7</a></div></div>
 <div class="ttc" id="aDistributionMoments_8h_html_a716e97cb94129a4800d15dc3d2fa4063"><div class="ttname"><a href="DistributionMoments_8h.html#a716e97cb94129a4800d15dc3d2fa4063">Vector_t</a></div><div class="ttdeci">ippl::Vector&lt; T, Dim &gt; Vector_t</div><div class="ttdef"><b>Definition</b> <a href="DistributionMoments_8h_source.html#l00031">DistributionMoments.h:31</a></div></div>
@@ -535,7 +537,7 @@ $(document).ready(function(){initNavTree('MultiVariateGaussian_8cpp_source.html'
 <div class="ttc" id="aclassDistribution_html_aeb88018ab7ef1256559e16c5dfd4d2d0"><div class="ttname"><a href="classDistribution.html#aeb88018ab7ef1256559e16c5dfd4d2d0">Distribution::getAvrgpz</a></div><div class="ttdeci">double getAvrgpz() const</div><div class="ttdef"><b>Definition</b> <a href="Distribution_8h_source.html#l00265">Distribution.h:265</a></div></div>
 <div class="ttc" id="aclassDistribution_html_af44013387550a835bb03761c3b1a4bd5"><div class="ttname"><a href="classDistribution.html#af44013387550a835bb03761c3b1a4bd5">Distribution::correlationMatrix_m</a></div><div class="ttdeci">Matrix_t correlationMatrix_m</div><div class="ttdef"><b>Definition</b> <a href="Distribution_8h_source.html#l00125">Distribution.h:125</a></div></div>
 <div class="ttc" id="aclassDistribution_html_aff51ed461f236eeb8e1dac90fb717dd6"><div class="ttname"><a href="classDistribution.html#aff51ed461f236eeb8e1dac90fb717dd6">Distribution::getCutoffR</a></div><div class="ttdeci">ippl::Vector&lt; double, 3 &gt; getCutoffR() const</div><div class="ttdef"><b>Definition</b> <a href="Distribution_8h_source.html#l00249">Distribution.h:249</a></div></div>
-<div class="ttc" id="aclassMultiVariateGaussian_html_a18f70677ac84f4ded0ba3116f011ae0c"><div class="ttname"><a href="classMultiVariateGaussian.html#a18f70677ac84f4ded0ba3116f011ae0c">MultiVariateGaussian::emitParticles</a></div><div class="ttdeci">void emitParticles(double t, double dt) override</div><div class="ttdoc">Time-stepped emission hook for one-shot delayed injection.</div><div class="ttdef"><b>Definition</b> <a href="MultiVariateGaussian_8cpp_source.html#l00374">MultiVariateGaussian.cpp:374</a></div></div>
+<div class="ttc" id="aclassMultiVariateGaussian_html_a18f70677ac84f4ded0ba3116f011ae0c"><div class="ttname"><a href="classMultiVariateGaussian.html#a18f70677ac84f4ded0ba3116f011ae0c">MultiVariateGaussian::emitParticles</a></div><div class="ttdeci">void emitParticles(double t, double dt) override</div><div class="ttdoc">Time-stepped emission hook for one-shot delayed injection.</div><div class="ttdef"><b>Definition</b> <a href="MultiVariateGaussian_8cpp_source.html#l00376">MultiVariateGaussian.cpp:376</a></div></div>
 <div class="ttc" id="aclassMultiVariateGaussian_html_a1f303565f95d6b8b0a42d6919089c709"><div class="ttname"><a href="classMultiVariateGaussian.html#a1f303565f95d6b8b0a42d6919089c709">MultiVariateGaussian::normMax_m</a></div><div class="ttdeci">Vector_t&lt; double, 6 &gt; normMax_m</div><div class="ttdef"><b>Definition</b> <a href="MultiVariateGaussian_8h_source.html#l00155">MultiVariateGaussian.h:155</a></div></div>
 <div class="ttc" id="aclassMultiVariateGaussian_html_a20e70743cd50fde400516c802ff178b0"><div class="ttname"><a href="classMultiVariateGaussian.html#a20e70743cd50fde400516c802ff178b0">MultiVariateGaussian::sigmaP_m</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; sigmaP_m</div><div class="ttdef"><b>Definition</b> <a href="MultiVariateGaussian_8h_source.html#l00177">MultiVariateGaussian.h:177</a></div></div>
 <div class="ttc" id="aclassMultiVariateGaussian_html_a2126e6cfa8d7692932f4743e6fc91eec"><div class="ttname"><a href="classMultiVariateGaussian.html#a2126e6cfa8d7692932f4743e6fc91eec">MultiVariateGaussian::samplerTimer_m</a></div><div class="ttdeci">IpplTimings::TimerRef samplerTimer_m</div><div class="ttdoc">Timer for performance profiling.</div><div class="ttdef"><b>Definition</b> <a href="MultiVariateGaussian_8h_source.html#l00105">MultiVariateGaussian.h:105</a></div></div>
@@ -577,10 +579,11 @@ $(document).ready(function(){initNavTree('MultiVariateGaussian_8cpp_source.html'
 <div class="ttc" id="aclassSamplingBase_html"><div class="ttname"><a href="classSamplingBase.html">SamplingBase</a></div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00015">SamplingBase.hpp:15</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a21c9bf55679a6a2b0d0c5c30c20887d7"><div class="ttname"><a href="classSamplingBase.html#a21c9bf55679a6a2b0d0c5c30c20887d7">SamplingBase::P0_m</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; P0_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00023">SamplingBase.hpp:23</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a644b972689300f7176c99b3bc9c3d04a"><div class="ttname"><a href="classSamplingBase.html#a644b972689300f7176c99b3bc9c3d04a">SamplingBase::R0_m</a></div><div class="ttdeci">Vector_t&lt; double, 3 &gt; R0_m</div><div class="ttdoc">Emission source offset: position R0, momentum P0, start time t0 (applied in sample step).</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00022">SamplingBase.hpp:22</a></div></div>
-<div class="ttc" id="aclassSamplingBase_html_a69e7abdaa2d451f1250e96c87360606e"><div class="ttname"><a href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">SamplingBase::hasEmittedOnce_m</a></div><div class="ttdeci">bool hasEmittedOnce_m</div><div class="ttdoc">For one-shot emitters (e.g. Gaussian at delayed t0): guard to avoid double sampling.</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00028">SamplingBase.hpp:28</a></div></div>
+<div class="ttc" id="aclassSamplingBase_html_a69e7abdaa2d451f1250e96c87360606e"><div class="ttname"><a href="classSamplingBase.html#a69e7abdaa2d451f1250e96c87360606e">SamplingBase::hasEmittedOnce_m</a></div><div class="ttdeci">bool hasEmittedOnce_m</div><div class="ttdoc">For one-shot emitters (e.g. Gaussian at delayed t0): guard to avoid double sampling.</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00033">SamplingBase.hpp:33</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a8711b5cac5a21827723d5c8c35bee87e"><div class="ttname"><a href="classSamplingBase.html#a8711b5cac5a21827723d5c8c35bee87e">SamplingBase::computeLocalEmitCount</a></div><div class="ttdeci">size_t computeLocalEmitCount(size_t totalToSample) const</div><div class="ttdoc">Computes the number of particles this rank should emit so that the global total equals totalToSample ...</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8cpp_source.html#l00006">SamplingBase.cpp:6</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_a8769bb22cf5c1f4dcd5fd38a5d33febb"><div class="ttname"><a href="classSamplingBase.html#a8769bb22cf5c1f4dcd5fd38a5d33febb">SamplingBase::emissionModel_m</a></div><div class="ttdeci">std::string emissionModel_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00025">SamplingBase.hpp:25</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_acc2d8f02845ed8483a9d78503f580850"><div class="ttname"><a href="classSamplingBase.html#acc2d8f02845ed8483a9d78503f580850">SamplingBase::opalDist_m</a></div><div class="ttdeci">Distribution_t * opalDist_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00019">SamplingBase.hpp:19</a></div></div>
+<div class="ttc" id="aclassSamplingBase_html_ad9ed1ce858a5c8e58c4209ba8118756c"><div class="ttname"><a href="classSamplingBase.html#ad9ed1ce858a5c8e58c4209ba8118756c">SamplingBase::fillPolarization</a></div><div class="ttdeci">void fillPolarization(size_t startIdx, size_t count)</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00063">SamplingBase.hpp:63</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_af31ecce2a95676da3a4c7502b3cb444f"><div class="ttname"><a href="classSamplingBase.html#af31ecce2a95676da3a4c7502b3cb444f">SamplingBase::t0_m</a></div><div class="ttdeci">double t0_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00024">SamplingBase.hpp:24</a></div></div>
 <div class="ttc" id="aclassSamplingBase_html_afec10301afb89d46e75ab27e1bada714"><div class="ttname"><a href="classSamplingBase.html#afec10301afb89d46e75ab27e1bada714">SamplingBase::pc_m</a></div><div class="ttdeci">std::shared_ptr&lt; ParticleContainer_t &gt; pc_m</div><div class="ttdef"><b>Definition</b> <a href="SamplingBase_8hpp_source.html#l00017">SamplingBase.hpp:17</a></div></div>
 <div class="ttc" id="anamespaceOptions_html_add25cbd96b6ba4bbbc8da3a9805c3dcd"><div class="ttname"><a href="namespaceOptions.html#add25cbd96b6ba4bbbc8da3a9805c3dcd">Options::seed</a></div><div class="ttdeci">int seed</div><div class="ttdoc">The current random seed.</div><div class="ttdef"><b>Definition</b> <a href="Options_8cpp_source.html#l00037">Options.cpp:37</a></div></div>
@@ -590,7 +593,7 @@ $(document).ready(function(){initNavTree('MultiVariateGaussian_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4043ae54a69fe9133a0541b78a48bd8d.html">Distribution</a></li><li class="navelem"><a class="el" href="MultiVariateGaussian_8cpp.html">MultiVariateGaussian.cpp</a></li>
-    <li class="footer">Generated on Wed May 20 2026 14:08:26 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jun 1 2026 10:40:52 for OPALX (Object Oriented Parallel Accelerator Library for Exascal) by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
