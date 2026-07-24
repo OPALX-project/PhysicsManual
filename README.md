@@ -1,3 +1,5 @@
+The complete physics manual is not part of the [unified manual](https://github.com/OPALX-project/opalx-manual) and will not be a separate repository anymore. 
+
 # PhysicsManual
 
 Describes the underlying physics of OPALX.
